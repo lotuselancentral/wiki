@@ -1,6 +1,9 @@
 <?php
 /** Komi (Коми)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -106,7 +109,7 @@ $messages = array(
 'upload'    => 'Файл сӧвтны',
 'uploadbtn' => 'Файл сӧвтны',
 
-# Image description page
+# File description page
 'filehist-datetime' => 'Кадпас/кад',
 'filehist-user'     => 'Вӧлысь',
 'filehist-comment'  => 'Пасйӧд',
@@ -125,8 +128,10 @@ $messages = array(
 # Special:AllPages
 'allarticles' => 'Став гижӧдъяс',
 
-# Delete/protect/revert
-'deletepage'          => 'Лист бокӧс бырӧдны',
+# Delete
+'deletepage' => 'Лист бокӧс бырӧдны',
+
+# Protect
 'protect-level-sysop' => 'Администраторъяс сӧмын',
 
 # Contributions

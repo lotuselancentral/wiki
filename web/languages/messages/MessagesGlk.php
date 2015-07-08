@@ -1,6 +1,9 @@
 <?php
 /** Gilaki (گیلکی)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -54,7 +57,10 @@ $messages = array(
 'nstab-category' => 'رج',
 
 # Search results
-'searchresults' => 'واموج‌دموجˇ نتایج',
+'searchresults'       => 'واموج‌دموجˇ نتایج',
+'searchresults-title' => 'واموج‌دموجˇ نتایج، «$1»ˇ واسی',
+'searchsubtitle'      => "شمه '''[[:$1]]''' ره واموتید ([[Special:Prefixindex/$1|هنه‌شرانی (صفحه‌هایی) کی «$1» همره سرأ گیفته بیدی (شوروع بیدی).]]{{int:pipe-separator}}
+[[Special:WhatLinksHere/$1|او هنه‌شرانی (صفحه‌هایی) کی به «$1» خال (لینک) بدأیید]])",
 
 # Special:AllPages
 'allpagessubmit' => 'بشو',

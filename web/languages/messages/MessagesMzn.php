@@ -1,6 +1,9 @@
 <?php
 /** Mazanderani (مَزِروني)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -100,8 +103,8 @@ $2، $1', # $1 date, $2 time
 # Upload
 'upload' => 'فایل بار بی یلدن',
 
-# Special:ImageList
-'imagelist' => 'هارشی ئون ره لیست',
+# Special:ListFiles
+'listfiles' => 'هارشی ئون ره لیست',
 
 'disambiguations' => 'گجگجی بایری ولگ ئون',
 
@@ -152,7 +155,7 @@ $2، $1', # $1 date, $2 time
 # Special:Import
 'import-interwiki-submit' => 'بیاردن',
 
-# Special:NewImages
+# Special:NewFiles
 'ilsubmit' => 'سرک بنک',
 
 # Multipage image navigation

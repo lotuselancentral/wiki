@@ -1,6 +1,9 @@
 <?php
 /** Urdu (اردو)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -11,6 +14,7 @@
  * @author محبوب عالم
  */
 
+$fallback8bitEncoding = 'windows-1256';
 $rtl = true;
 $defaultUserOptionOverrides = array(
 	# Swap sidebar to right side by default
@@ -28,8 +32,8 @@ $namespaceNames = array(
 	NS_USER_TALK => 'تبادلۂ_خیال_صارف',
 	# NS_PROJECT set by $wgMetaNamespace
 	NS_PROJECT_TALK => 'تبادلۂ_خیال_$1',
-	NS_IMAGE => 'تصویر',
-	NS_IMAGE_TALK => 'تبادلۂ_خیال_تصویر',
+	NS_FILE => 'تصویر',
+	NS_FILE_TALK => 'تبادلۂ_خیال_تصویر',
 	NS_MEDIAWIKI => 'میڈیاوکی',
 	NS_MEDIAWIKI_TALK => 'تبادلۂ_خیال_میڈیاوکی',
 	NS_TEMPLATE => 'سانچہ',
@@ -42,8 +46,39 @@ $namespaceNames = array(
 
 $messages = array(
 # User preference toggles
-'tog-fancysig'     => '(سادہ دستخط بلا خودکار ربط)',
-'tog-ccmeonemails' => 'دیگر صارفین کو ارسال کردہ برقی خطوط کی نقول مجھے ارسال کریں۔',
+'tog-underline'               => 'ربط کی خط کشیدگی:',
+'tog-highlightbroken'         => 'غیر فعال روابط کی شکلبندی <a href="" class="new">اس طرح</a> (alternative: اس طرح<a href="" class="internal">?</a>)
+کرو',
+'tog-justify'                 => 'سطور کی برابری',
+'tog-hideminor'               => 'حالیہ تبدیلیوں میں معمولی ترمیمات چُھپاؤ',
+'tog-extendwatchlist'         => 'زیرِنظرفہرست کو پھیلاؤ تاکہ اِس میں تمام ترمیمات نظر آئیں، نہ کہ صرف حالیہ ترین',
+'tog-usenewrc'                => 'افزودہ حالیہ تبدیلیاں استعمال کرو (JavaScript چاہئے ہوگا)',
+'tog-numberheadings'          => 'سرخیوں کو خود نمبر دو',
+'tog-showtoolbar'             => 'تدوینی اوزاردان دکھاؤ ( JavaScript چاہئے)',
+'tog-editondblclick'          => 'طقین پر صفحات کی ترمیم (JavaScript چاہئے)',
+'tog-editsection'             => '[ترمیم] روابط کے ذریعے سطری ترمیم کاری فعال کرو',
+'tog-editsectiononrightclick' => 'سطری عنوانات پر دایاں طق کے ذریعے سطری ترمیم کاری فعال بناؤ',
+'tog-showtoc'                 => 'فہرستِ مندرجات دکھاؤ (3 سے زیادہ سرخیوں والے صفحات کیلئے)',
+'tog-rememberpassword'        => 'اِس شمارندہ پر میری داخلہ کاری معلومات یاد رکھو',
+'tog-editwidth'               => 'تدوینی خانہ کو اتنا چوڑا کرو کہ یہ پوری سکرین پر محیط ہوجائے',
+'tog-watchcreations'          => 'میرے مرتب شدہ صفحات کو میری زیرِنظرفہرست میں شامل کیا کرو',
+'tog-watchdefault'            => 'میرے ترمیم شدہ صفحات کو میری زیرِنظرفہرست میں شامل کیا کرو',
+'tog-watchmoves'              => 'میں جن صفحات کو منتقل کرتا ہوں، اُن کو میری زیرِنظرفہرست میں شامل کیا کرو',
+'tog-watchdeletion'           => 'میں جن صفحات کو حذف کروں، اُن کو میری زیرِنظرفہرست میں شامل کیا کرو',
+'tog-minordefault'            => 'تمام ترمیمات کو ہمیشہ بطورِ معمولی ترمیم نشانزد کیا کرو',
+'tog-previewontop'            => 'تدوینی خانہ سے پہلے نمائش دکھاؤ',
+'tog-previewonfirst'          => 'پہلی ترمیم پر نمائش دکھاؤ',
+'tog-nocache'                 => 'بطن کارئ صفحہ غیر فعال بناؤ',
+'tog-enotifwatchlistpages'    => 'جب میری زیرِنظرفہرست پر کوئی صفحہ میں تبدیلی واقع ہو تو مجھے برقی ڈاک بھیجو',
+'tog-enotifusertalkpages'     => 'جب میرا تبادلۂ خیال صفحہ میں تبدیلی واقع ہو تو مجھے برقی ڈاک بھیجو',
+'tog-enotifminoredits'        => 'صفحات میں معمولی ترمیمات کے بارے میں بھی مجھے برقی ڈاک بھیجو',
+'tog-enotifrevealaddr'        => 'خبرداری برقی خطوط میں میرا برقی ڈاک پتہ ظاہر کرو',
+'tog-shownumberswatching'     => 'دیکھنے والے صارفین کی تعداد دکھاؤ',
+'tog-fancysig'                => '(سادہ دستخط بلا خودکار ربط)',
+'tog-externaleditor'          => 'ہمیشہ بیرونی تدوین کار استعمال کرو (صرف ماہرین کیلئے، اِس کیلئے شمارندہ پر خاص ترتیبات درکار ہوتی ہیں)',
+'tog-externaldiff'            => 'Use external diff by default (for experts only, needs special settings on your computer)',
+'tog-showjumplinks'           => 'Enable "jump to" accessibility links',
+'tog-ccmeonemails'            => 'دیگر صارفین کو ارسال کردہ برقی خطوط کی نقول مجھے ارسال کریں۔',
 
 'underline-always' => 'ہمیشہ',
 'underline-never'  => 'کبھی نہیں',
@@ -98,7 +133,7 @@ $messages = array(
 'mytalk'        => 'میری گفتگو',
 'anontalk'      => 'اس IP کیلیے بات چیت',
 'navigation'    => 'رہنمائی',
-'and'           => 'اور',
+'and'           => '&#32;اور',
 
 'returnto'          => 'واپس $1۔',
 'tagline'           => '{{SITENAME}} سے',
@@ -174,6 +209,7 @@ $messages = array(
 
 'badaccess'        => 'خطائے اجازت',
 'badaccess-group0' => 'آپ متمنی عمل کا اجراء کرنے کے مُجاز نہیں۔',
+'badaccess-groups' => 'آپ کا درخواست‌کردہ عمل {{PLURAL:$2|گروہ|گروہوں میں سے ایک}}: $1 کے صارفین تک محدود ہے.',
 
 'versionrequired'     => 'میڈیا ویکی کا $1 نسخہ لازمی چاہئیے.',
 'versionrequiredtext' => 'اِس صفحہ کو استعمال کرنے کیلئے میڈیاویکی کا $1 نسخہ چاہئیے.
@@ -192,6 +228,8 @@ $messages = array(
 'editsection-brackets'    => '[$1]',
 'editold'                 => 'ترمیم',
 'viewsourceold'           => 'مآخذ دیکھئے',
+'editlink'                => 'تدوین کریں',
+'viewsourcelink'          => 'مآخذ دیکھئے',
 'editsectionhint'         => 'تدوینِ حصّہ: $1',
 'toc'                     => 'فہرست',
 'showtoc'                 => 'دکھائیں',
@@ -202,11 +240,11 @@ $messages = array(
 'feedlinks'               => 'Feed:',
 'feed-invalid'            => 'Invalid subscription feed type.',
 'feed-unavailable'        => 'Syndication feeds are not available',
-'site-rss-feed'           => '$1 RSS Feed',
-'site-atom-feed'          => '$1 Atom Feed',
-'page-rss-feed'           => '"$1" RSS Feed',
-'page-atom-feed'          => '"$1" Atom Feed',
-'feed-atom'               => 'ایٹم',
+'site-rss-feed'           => '$1 آر.ایس.ایس فیڈ',
+'site-atom-feed'          => '$1 اٹوم فیڈ',
+'page-rss-feed'           => '"$1" آر.ایس.ایس فیڈ',
+'page-atom-feed'          => '"$1" اٹوم فیڈ',
+'feed-atom'               => 'اٹوم',
 'feed-rss'                => 'آر ایس ایس',
 'red-link-title'          => '$1 (صفحہ موجود نہیں)',
 
@@ -319,7 +357,6 @@ The reason given is "\'\'$2\'\'".',
 'remembermypassword'         => 'مجھے یاد رکھیں',
 'yourdomainname'             => 'آپکا ڈومین',
 'externaldberror'            => 'یا تو توثیقی ڈیٹابیس میں خطا واقع ہوئی اور یا آپ کو بیرونی کھاتہ بتاریخ کرنے کی اِجازت نہیں ہے.',
-'loginproblem'               => '<b>داخلے میں کوئی مسلہ درپیش ہے</b><br />دوبارہ اندراج کیجیۓ!',
 'login'                      => 'داخل ہوں',
 'nav-login-createaccount'    => 'کھاتہ کھولیں یا اندراج کریں',
 'loginprompt'                => '{{SITENAME}} میں داخلے کیلۓ آپکے پاس قند (کوکیز) مجازہوناچاہیں۔',
@@ -383,20 +420,25 @@ HTML tags جانچئے.',
 'accountcreated'             => 'تخلیقِ کھاتہ',
 'accountcreatedtext'         => 'تخیلقِ کھاتۂ صارف براۓ $1۔',
 
+# Password reset dialog
+'oldpassword' => 'پرانا کلمۂ شناخت:',
+'newpassword' => 'نیا کلمۂ شناخت',
+'retypenew'   => 'نیا کلمۂ شناخت دوبارہ درج کریں:',
+
 # Edit page toolbar
 'headline_sample' => 'شہ سرخی',
 'headline_tip'    => 'شہ سرخی درجہ دوم',
 
 # Edit pages
-'summary'              => 'خلاصہ',
-'subject'              => 'مضمون/شہ سرخی',
+'summary'              => 'خلاصہ:',
+'subject'              => 'مضمون/شہ سرخی:',
 'minoredit'            => 'معمولی ترمیم',
 'watchthis'            => 'یہ صفحہ زیر نظر کیجیۓ',
 'savearticle'          => 'محفوظ',
 'preview'              => 'نمائش',
 'showpreview'          => 'نمائش',
 'anoneditwarning'      => 'آپ {{SITENAME}} میں داخل نہیں ہوۓ لہذا آپکا IP پتہ اس صفحہ کے تاریخچہ ء ترمیم میں محفوظ ہوجاۓ گا۔',
-'summary-preview'      => 'نمائش خلاصہ',
+'summary-preview'      => 'نمائش خلاصہ:',
 'whitelistedittext'    => 'ترمیم و تدوین کے لیۓ آپکا [[Special:UserLogin|داخل ہونا]] لا زمی ہے۔',
 'loginreqtitle'        => 'داخلہ / اندراج لازم',
 'loginreqlink'         => 'داخلہ',
@@ -441,41 +483,97 @@ HTML tags جانچئے.',
 'compareselectedversions' => 'منتخب متـن کا موازنہ',
 
 # Search results
-'searchresults'         => 'تلاش کا نتیجہ',
-'searchresulttext'      => 'ویکیپیڈیا میں تلاش کے بارے میں مزید معلومات کے لیۓ، ویکیپیڈیا میں تلاش کا صفحہ دیکھیۓ۔',
-'searchsubtitle'        => "آپ کی تلاش براۓ '''[[:$1]]'''",
-'searchsubtitleinvalid' => "آپ کی تلاش براۓ '''$1'''",
-'noexactmatch'          => '"$1" کے عنوان سے کوئی صفحہ موجود نہیں۔ آپ اگر چاہیں تو اس نام سے  [[:$1|صفحہ بنا سکتے ہیں]]',
-'prevn'                 => 'پچھلے $1',
-'nextn'                 => 'اگلے $1',
-'viewprevnext'          => 'دیکھیں($1) ($2) ($3)۔',
-'powersearch'           => 'تلاش کریں',
+'searchresults'             => 'تلاش کا نتیجہ',
+'searchresulttext'          => 'ویکیپیڈیا میں تلاش کے بارے میں مزید معلومات کے لیۓ، ویکیپیڈیا میں تلاش کا صفحہ دیکھیۓ۔',
+'searchsubtitle'            => "آپ کی تلاش براۓ '''[[:$1]]'''",
+'searchsubtitleinvalid'     => "آپ کی تلاش براۓ '''$1'''",
+'noexactmatch'              => '"$1" کے عنوان سے کوئی صفحہ موجود نہیں۔ آپ اگر چاہیں تو اس نام سے  [[:$1|صفحہ بنا سکتے ہیں]]',
+'prevn'                     => 'پچھلے $1',
+'nextn'                     => 'اگلے $1',
+'viewprevnext'              => 'دیکھیں($1) ($2) ($3)۔',
+'searchhelp-url'            => 'Help:فہرست',
+'search-result-size'        => '$1 ({{PLURAL:$2|1 لفظ|$2 الفاظ}})',
+'search-result-score'       => 'توافق: $1%',
+'search-redirect'           => '(رجوع مکرر $1)',
+'search-section'            => '(حصہ $1)',
+'search-suggest'            => 'کیا آپ کا مطلب تھا: $1',
+'search-interwiki-caption'  => 'ساتھی منصوبے',
+'search-interwiki-default'  => '$1 نتائج:',
+'search-interwiki-more'     => '(مزید)',
+'search-mwsuggest-enabled'  => 'بمع تجاویز',
+'search-mwsuggest-disabled' => 'تجاویز نہیں',
+'search-relatedarticle'     => 'متعلقہ',
+'mwsuggest-disable'         => 'AJAX تجاویز غیرفعال',
+'searchrelated'             => 'متعلقہ',
+'searchall'                 => 'تمام',
+'showingresultstotal'       => "نیچے دکھارہا ہے {{PLURAL:$4|'''$3''' میں سے '''$3''' نتیجہ|'''$3''' میں سے '''$1 - $2''' نتائج}}",
+'search-nonefound'          => 'استفسار کے مطابق نتائج نہیں ملے.',
+'powersearch'               => 'پیشرفتہ تلاش',
+'powersearch-legend'        => 'پیشرفتہ تلاش',
+'powersearch-ns'            => 'جائے نام میں تلاش:',
+'powersearch-redir'         => 'فہرستِ رجوع مکرر',
+'powersearch-field'         => 'تلاش برائے',
+'search-external'           => 'بیرونی تلاش',
+'searchdisabled'            => '{{SITENAME}} تلاش غیرفعال.
+آپ فی الحال گوگل کے ذریعے تلاش کرسکتے ہیں.
+یاد رکھئے کہ اُن کے {{SITENAME}} اشاریے ممکناً پرانے ہوسکتے ہیں.',
 
 # Preferences page
-'preferences'       => 'ترجیحات',
-'mypreferences'     => 'میری ترجیہات',
-'prefsnologin'      => 'نا داخل شدہ حالت',
-'changepassword'    => 'کلمۂ شناخت تبدیل کریں',
-'math'              => 'ریاضی',
-'datetime'          => 'تاریخ و وقت',
-'prefs-rc'          => 'حالیہ تبدیلیاں',
-'prefs-misc'        => 'دیگر',
-'saveprefs'         => 'محفوظ',
-'oldpassword'       => 'پرانا کلمۂ شناخت:',
-'newpassword'       => 'نیا کلمۂ شناخت',
-'retypenew'         => 'نیا کلمۂ شناخت دوبارہ درج کریں:',
-'rows'              => 'قـطاریں:',
-'searchresultshead' => 'تلاش',
-'savedprefs'        => 'آپ کی ترجیہات محفوظ کر لی گئی ہیں۔',
-'timezonelegend'    => 'منطقۂ وقت',
-'localtime'         => 'مقامی وقت',
-'allowemail'        => 'دوسرے صارفین کو برقی خظ لکھنے کا اختیار دیں',
-'default'           => 'طے شدہ',
-'files'             => 'فائلیں',
+'preferences'               => 'ترجیحات',
+'mypreferences'             => 'میری ترجیہات',
+'prefs-edits'               => 'تدوینات کی تعداد:',
+'prefsnologin'              => 'نا داخل شدہ حالت',
+'prefsnologintext'          => 'ترجیحات ترتیب دینے کیلئے <span class="plainlinks">[{{fullurl:Special:UserLogin|returnto=$1}} داخل نوشتہ]</span> ہونا لازمی ہے.',
+'prefsreset'                => 'ترجیحات کو ذخیر سے نوطاقم کیا جاچکا ہے.',
+'qbsettings'                => 'فوری‌بار',
+'qbsettings-none'           => 'ہیچ',
+'changepassword'            => 'کلمۂ شناخت تبدیل کریں',
+'skin-preview'              => 'پیش منظر',
+'math'                      => 'ریاضی',
+'dateformat'                => 'شکلبندِ تاریخ',
+'datedefault'               => 'کوئی ترجیحات نہیں',
+'datetime'                  => 'تاریخ و وقت',
+'math_failure'              => 'تجزیہ میں ناکام',
+'math_unknown_error'        => 'نامعلوم غلطی',
+'math_unknown_function'     => 'نامعلوم فعل',
+'math_syntax_error'         => 'نحوی غلطی',
+'math_image_error'          => 'PNG; کی تحویل ناکام
+latex، dvips، gs کی صحیح تنصیب کی جانچ کرنے کے بعد دوبارہ تحویل کی کوشش کیجئے.',
+'prefs-personal'            => 'نمایۂ صارف',
+'prefs-rc'                  => 'حالیہ تبدیلیاں',
+'prefs-watchlist'           => 'زیرِنظر فہرست',
+'prefs-watchlist-days'      => 'زیرِنظر فہرست میں نظر آنے والے ایام:',
+'prefs-watchlist-days-max'  => '(زیادہ سے زیادہ 7 دِن)',
+'prefs-watchlist-edits'     => 'عریض زیرِنظرفہرست میں نظر آنے والی تبدیلیوں کی زیادہ سے زیادہ تعداد:',
+'prefs-watchlist-edits-max' => '(زیادہ سے زیادہ تعداد: 1000)',
+'prefs-misc'                => 'دیگر',
+'prefs-resetpass'           => 'کلمۂ شناخت تبدیل کیجئے',
+'saveprefs'                 => 'محفوظ',
+'resetprefs'                => 'نامحفوظ تبدیلیاں صاف کرو',
+'prefs-edit-boxsize'        => 'تدوینی کھڑکی کی جسامت.',
+'rows'                      => 'صفیں:',
+'columns'                   => 'قطاریں:',
+'searchresultshead'         => 'تلاش',
+'recentchangesdays'         => 'حالیہ تبدیلیوں میں دکھائی جانے والے ایّام:',
+'recentchangesdays-max'     => '(زیادہ سے زیادہ $1 {{PLURAL:$1|دن|ایام}})',
+'recentchangescount'        => 'حالیہ تبدیلیاں، تواریخِ صفحہ اور نوشتہ جات میں دکھائی جانے والی ترمیمات کی تعداد:',
+'savedprefs'                => 'آپ کی ترجیحات محفوظ ہوگئیں۔',
+'timezonelegend'            => 'منطقۂ وقت',
+'localtime'                 => 'مقامی وقت:',
+'timezoneselect'            => 'منطقۂ وقت:',
+'allowemail'                => 'دوسرے صارفین کو برقی خظ لکھنے کا اختیار دیں',
+'prefs-searchoptions'       => 'اختیاراتِ تلاش',
+'prefs-namespaces'          => 'جائے نام',
+'default'                   => 'طے شدہ',
+'files'                     => 'فائلیں',
 
 # User rights
-'userrights'               => 'صارف کے حقوق کا انتظام', # Not used as normal message but as header for the special page itself
-'userrights-user-editname' => 'اسمِ رکنیت داخل کریں:',
+'userrights'               => 'حقوقِ صارف کی نظامت', # Not used as normal message but as header for the special page itself
+'userrights-lookup-user'   => 'گروہائے صارف کا انتظام',
+'userrights-user-editname' => 'کوئی اسم‌صارف داخل کیجئے:',
+'editinguser'              => "تبدیلئ حقوق برائے صارف '''[[User:$1|$1]]''' ([[User talk:$1|{{int:talkpagelinktext}}]]{{int:pipe-separator}}[[Special:Contributions/$1|{{int:contribslink}}]])",
+'userrights-groupsmember'  => 'رکنِ:',
+'userrights-reason'        => 'وجۂ تبدیلی:',
 
 'group-bot-member' => 'خودکار صارف',
 
@@ -522,7 +620,7 @@ HTML tags جانچئے.',
  
 جب کوئی صارف مستقل ایسی ملف زبراثقال کرتا رہے کہ جس کے اجازہ کے بارے میں غلط بیانی کی گئی ہو یا وہ مستقل ایسے عکس زبراثقال کرتا رہے کہ جنکے بارے میں کوئی بیان تحریر نہ کیا گیا ہو تو ایسی صورت میں پابندی لگاۓ جانے کا قوی امکان موجود ہے۔ 
 
-مِلَف (فائل) بھیجنے کیلیے درج ذیل ورقہ (فارم) استعمال کیجیے، اگر آپ اب تک ارسال کردہ تصاویر کو دیکھنا یا تلاش کرنا چاہتے ہیں تو [[Special:ImageList|ارسال کردہ تصاویر]] کے ربط پر جائیے۔ <br /> تمام ارسال و حذف کی گئی تصاویر کو [[Special:Log/upload|نوشتۂ منتقلی]] میں درج کر لیا جاتا ہے۔
+مِلَف (فائل) بھیجنے کیلیے درج ذیل ورقہ (فارم) استعمال کیجیے، اگر آپ اب تک ارسال کردہ تصاویر کو دیکھنا یا تلاش کرنا چاہتے ہیں تو [[Special:FileList|ارسال کردہ تصاویر]] کے ربط پر جائیے۔ <br /> تمام ارسال و حذف کی گئی تصاویر کو [[Special:Log/upload|نوشتۂ منتقلی]] میں درج کر لیا جاتا ہے۔
 
 تصویر کی منتقلی کے بعد، اسکو کسی صفحہ پر رکھنے کیلیے مندرجہ ذیل صورت میں رمـز (کوڈ) استعمال کیجیۓ۔
 
@@ -550,10 +648,10 @@ HTML tags جانچئے.',
 'destfilename'      => 'تعین شدہ اسم ملف:',
 'watchthisupload'   => 'یہ صفحہ زیر نظر کیجیۓ',
 
-# Special:ImageList
-'imagelist' => 'فہرست فائل',
+# Special:ListFiles
+'listfiles' => 'فہرست فائل',
 
-# Image description page
+# File description page
 'imagelinks'     => 'روابط',
 'linkstoimage'   => 'اس ملف (فائل) سے درج ذیل صفحات رابطہ رکھتے ہیں:',
 'nolinkstoimage' => 'ایسے کوئی صفحات نہیں جو اس ملف (فائل) سے رابطہ رکھتے ہوں۔',
@@ -571,13 +669,8 @@ HTML tags جانچئے.',
 'randompage' => 'بےترتیب صفحہ',
 
 # Statistics
-'statistics'    => 'اعداد و شمار',
-'sitestats'     => '{{SITENAME}} کے اعدادوشمار',
-'userstats'     => 'ارکان کے اعداد و شمار',
-'sitestatstext' => "{{SITENAME}}ا کے ذخیرے میں اب تک کل  '''$1''' صفحات ہیں۔ انمیں تبادلہءخیال صفحات ، {{SITENAME}}ا کے بارے میں صفحات ، سٹب صفحات ، پلٹائے گۓ صفحات اور چند دیگر ایسے صفحات شامل ہیں جو کہ ممکنہ طور پر مقالات یا مضامین نہیں کہے جاسکتے۔ ان تمام کو نکال کر  '''$2''' ایسے صفحات ہیں جو کہ بجاطور پر مقالات کے زمرے میں شامل کیۓ جاسکتے ہیں۔ 
-
-اگر صفحات کے تناسب سے دیکھا جاۓ تو ، {{SITENAME}}ا کی ابتداء سے اب تک کل '''$4''' صفحات صارفین کی جانب سے  مرتب کیۓ گۓ۔ گویا فی صفحہ '''$5''' بار تدوین ہوئی۔",
-'userstatstext' => "{{SITENAME}} میں '''$1''' مـثـبوت (رجسٹرڈ) صارف ہیں ، جنمیں  '''$2''' (یعنی '''$4%''') منتظمین میں شامل ہیں ، (دیکھیۓ $3) ۔",
+'statistics'              => 'اعداد و شمار',
+'statistics-header-users' => 'ارکان کے اعداد و شمار',
 
 'disambiguations' => 'ضد ابہام صفحات',
 
@@ -632,6 +725,11 @@ HTML tags جانچئے.',
 'categories'         => 'زمرہ',
 'categoriespagetext' => 'مندرجہ ذیل زمرہ جات اس وکی میں موجود ہیں۔',
 
+# Special:Log/newusers
+'newuserlogpage'          => 'نوشتۂ آمد صارف',
+'newuserlogpagetext'      => 'یہ نۓ صارفوں کی آمد کا نوشتہ ہے',
+'newuserlog-create-entry' => 'صارف جدید',
+
 # E-mail user
 'mailnologintext' => 'دیگر ارکان کو برقی خط ارسال کرنے کیلیۓ لازم ہے کہ آپ [[Special:UserLogin|داخل شدہ]] حالت میں ہوں اور آپ کی [[Special:Preferences|ترجیحات]] ایک درست برقی خط کا پتا درج ہو۔',
 'emailuser'       => 'صارف کو برقی خط لکھیں',
@@ -660,30 +758,35 @@ HTML tags جانچئے.',
 'changed'            => 'تبدیل کردیاگیا',
 'created'            => 'بنا دیا گیا',
 
-# Delete/protect/revert
-'deletepage'          => 'صفحہ ضائع کریں',
-'confirm'             => 'یقین',
-'excontent'           => "'$1':مواد تھا",
-'excontentauthor'     => "حذف شدہ مواد: '$1' (اور صرف '[[Special:Contributions/$2|$2]]' نے حصہ ڈالا)",
-'exblank'             => 'صفحہ خالی تھا',
-'historywarning'      => 'انتباہ: جو صفحہ آپ حذف کرنے جارہے ہیں اس سے ایک تاریخچہ منسلک ہے۔',
-'confirmdeletetext'   => 'آپ نے اس صفحے کو اس سے ملحقہ تاریخچہ سمیت حذف کرنے کا ارادہ کیا ہے۔ براۓ مہربانی تصدیق کرلیجیۓ کہ آپ اس عمل کے نتائج سے بخوبی آگاہ ہیں، اور یہ بھی یقین کرلیجیۓ کہ آپ ایسا [[{{MediaWiki:Policy-url}}|ویکیپیڈیا کی حکمت عملی]] کے دائرے میں رہ کر کر رہے ہیں۔',
-'actioncomplete'      => 'اقدام تکمیل کو پہنچا',
-'deletedtext'         => '"<nowiki>$1</nowiki>" کو حذف کر دیا گیا ہے ۔
+# Delete
+'deletepage'        => 'صفحہ ضائع کریں',
+'confirm'           => 'یقین',
+'excontent'         => "'$1':مواد تھا",
+'excontentauthor'   => "حذف شدہ مواد: '$1' (اور صرف '[[Special:Contributions/$2|$2]]' نے حصہ ڈالا)",
+'exblank'           => 'صفحہ خالی تھا',
+'historywarning'    => 'انتباہ: جو صفحہ آپ حذف کرنے جارہے ہیں اس سے ایک تاریخچہ منسلک ہے۔',
+'confirmdeletetext' => 'آپ نے اس صفحے کو اس سے ملحقہ تاریخچہ سمیت حذف کرنے کا ارادہ کیا ہے۔ براۓ مہربانی تصدیق کرلیجیۓ کہ آپ اس عمل کے نتائج سے بخوبی آگاہ ہیں، اور یہ بھی یقین کرلیجیۓ کہ آپ ایسا [[{{MediaWiki:Policy-url}}|ویکیپیڈیا کی حکمت عملی]] کے دائرے میں رہ کر کر رہے ہیں۔',
+'actioncomplete'    => 'اقدام تکمیل کو پہنچا',
+'deletedtext'       => '"<nowiki>$1</nowiki>" کو حذف کر دیا گیا ہے ۔
 حالیہ حذف شدگی کے تاریخ نامہ کیلیۓ  $2  دیکھیۓ',
-'deletedarticle'      => 'حذف شدہ "[[$1]]"',
-'dellogpage'          => 'نوشتۂ حذف شدگی',
-'dellogpagetext'      => 'حالیہ حذف شدگی کی فہرست درج ذیل ہے۔',
-'deletionlog'         => 'نوشتۂ حذف شدگی',
-'deletecomment'       => 'حذف کرنے کی وجہ',
-'rollback'            => 'ترمیمات سابقہ حالت پرواپس',
-'rollback_short'      => 'واپس سابقہ حالت',
-'rollbacklink'        => 'واپس سابقہ حالت',
-'rollbackfailed'      => 'سابقہ حالت پر واپسی ناکام',
-'cantrollback'        => 'تدوین ثانی کا اعادہ نہیں کیا جاسکتا؛ کیونکہ اس میں آخری بار حصہ لینے والا ہی اس صفحہ کا واحد کاتب ہے۔',
+'deletedarticle'    => 'حذف شدہ "[[$1]]"',
+'dellogpage'        => 'نوشتۂ حذف شدگی',
+'dellogpagetext'    => 'حالیہ حذف شدگی کی فہرست درج ذیل ہے۔',
+'deletionlog'       => 'نوشتۂ حذف شدگی',
+'deletecomment'     => 'حذف کرنے کی وجہ',
+
+# Rollback
+'rollback'       => 'ترمیمات سابقہ حالت پرواپس',
+'rollback_short' => 'واپس سابقہ حالت',
+'rollbacklink'   => 'واپس سابقہ حالت',
+'rollbackfailed' => 'سابقہ حالت پر واپسی ناکام',
+'cantrollback'   => 'تدوین ثانی کا اعادہ نہیں کیا جاسکتا؛ کیونکہ اس میں آخری بار حصہ لینے والا ہی اس صفحہ کا واحد کاتب ہے۔',
+
+# Protect
 'protectlogpage'      => 'نوشتۂ محفوظ شدگی',
 'protectedarticle'    => '"[[$1]]" کومحفوظ کردیا',
 'unprotectedarticle'  => '"[[$1]]" کوغیر محفوظ کیا',
+'prot_1movedto2'      => '[[$1]] بجانب [[$2]] منتقل',
 'protectcomment'      => 'محفوظ کرنے کی وجہ',
 'protect-default'     => '(طے شدہ)',
 'protect-level-sysop' => 'صرف منتظمین',
@@ -711,7 +814,6 @@ HTML tags جانچئے.',
 
 # What links here
 'whatlinkshere' => 'ادھر کس کا جوڑ ہے',
-'linklistsub'   => '(فہرست روابط)',
 'linkshere'     => 'یہاں درج ذیل صفحات رابطہ رکھتے ہیں:',
 'nolinkshere'   => 'یہاں کسی صفحہ کا ربط نہیں۔',
 
@@ -776,7 +878,7 @@ HTML tags جانچئے.',
 'previousdiff' => '> گذشتہ فرق',
 'nextdiff'     => '< اگلا فرق',
 
-# Special:NewImages
+# Special:NewFiles
 'newimages'    => 'نئی فائلوں کی گیلری',
 'showhidebots' => '($1 بوٹ)',
 'ilsubmit'     => 'تلاش',
@@ -795,16 +897,8 @@ HTML tags جانچئے.',
 # Delete conflict
 'deletedwhileediting' => 'انتباہ: آپ کے ترمیم شروع کرنے کے بعد یہ صفحہ حذف کیا جا چکا ہے!',
 
-# HTML dump
-'redirectingto' => 'کی جانب پلٹایا گیا [[:$1]]...',
-
 # action=purge
 'confirm_purge_button' => 'جی!',
-
-# AJAX search
-'searchnamed'   => "مضمون بنام ''$1'' کیلیۓ تلاش۔",
-'articletitles' => "''$1'' سے شروع ہونے والے مضامین",
-'hideresults'   => 'نتیجہ چھپائیں',
 
 # Auto-summaries
 'autosumm-blank'   => 'تمام مندرجات حذف',

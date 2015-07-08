@@ -1,5 +1,8 @@
 <?php
-/** Zhuang ((Cuengh))
+/** Zhuang (Sawcuengh)
+ *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
  *
  * @ingroup Language
  * @file
@@ -71,7 +74,7 @@ $messages = array(
 'username'    => 'Ciu bouxdeiz:',
 
 # Edit pages
-'summary'            => 'Saegmangj',
+'summary'            => 'Saegmangj:',
 'minoredit'          => 'Di-nej gaij noix',
 'watchthis'          => 'Demq mae-nej',
 'savearticle'        => 'Zonzdiuz mae-nej',
@@ -104,15 +107,15 @@ $messages = array(
 'move'              => 'Caen',
 'movethispage'      => 'Caen mae nej',
 
-# Special:Log
-'log-search-submit' => 'Bei',
-
 # Watchlist
 'watchlist'     => 'Gaeq gou demq',
 'mywatchlist'   => 'Gaeq gou demq',
 'watchnologin'  => 'Maengx laezhaej',
 'watch'         => 'Demq',
 'watchthispage' => 'Demq mae-nej',
+
+# Protect
+'prot_1movedto2' => '[[$1]] caen bei [[$2]]',
 
 # Restrictions (nouns)
 'restriction-move' => 'Caen',
@@ -132,6 +135,7 @@ $messages = array(
 # Move page
 'move-page-legend' => 'Caen doengh mae',
 'movearticle'      => 'Caen doengh mae:',
+'movenologin'      => 'Maengx laezhaej',
 'move-watch'       => 'Demq mae-nej',
 'movepagebtn'      => 'Caen doengh mae',
 'movedto'          => 'Caen bei',
@@ -142,7 +146,7 @@ $messages = array(
 'tooltip-pt-preferences' => 'Doenghgaeq gou hae',
 'tooltip-p-logo'         => 'Mae meh',
 
-# Special:NewImages
+# Special:NewFiles
 'ilsubmit' => 'Cwmh',
 
 # Multipage image navigation

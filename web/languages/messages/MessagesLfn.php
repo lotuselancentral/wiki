@@ -1,6 +1,9 @@
 <?php
 /** Lingua Franca Nova (Lingua Franca Nova)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -8,6 +11,22 @@
  * @author Malafaya
  * @author Urhixidur
  */
+
+$namespaceNames = array(
+	NS_SPECIAL          => 'Spesial',
+	NS_TALK             => 'Discute',
+	NS_USER             => 'Usor',
+	NS_USER_TALK        => 'Usor_Discute',
+	NS_PROJECT_TALK     => '$1_Discute',
+	NS_FILE             => 'Fix',
+	NS_FILE_TALK        => 'Fix_Discute',
+	NS_TEMPLATE         => 'Model',
+	NS_TEMPLATE_TALK    => 'Model_Discute',
+	NS_HELP             => 'Aida',
+	NS_HELP_TALK        => 'Aida_Discute',
+	NS_CATEGORY         => 'Categoria',
+	NS_CATEGORY_TALK    => 'Categoria_Discute',
+);
 
 $messages = array(
 # User preference toggles
@@ -49,8 +68,6 @@ $messages = array(
 'underline-always'  => 'A tota tempo',
 'underline-never'   => 'A no tempo',
 'underline-default' => 'Surfador costumal',
-
-'skinpreview' => '(Previde)',
 
 # Dates
 'sunday'        => 'soldi',
@@ -139,7 +156,7 @@ $messages = array(
 'mytalk'         => 'Me discutes',
 'anontalk'       => 'Discutes per esta IP',
 'navigation'     => 'Naviga',
-'and'            => 'e',
+'and'            => '&#32;e',
 
 # Metadata in edit box
 'metadata_help' => 'Metadata:',
@@ -201,8 +218,6 @@ $messages = array(
 # All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation template definition (see disambiguations).
 'aboutsite'            => 'Supra {{SITENAME}}',
 'aboutpage'            => 'Project:Supra',
-'bugreports'           => 'Reportas de defetos',
-'bugreportspage'       => 'Project:Reportas de defetos',
 'copyrightpage'        => '{{ns:project}}:Diretos de autor',
 'currentevents'        => 'Avenis presente',
 'currentevents-url'    => 'Project:Avenis presente',
@@ -228,6 +243,8 @@ $messages = array(
 'editsection'             => 'cambia',
 'editold'                 => 'edita',
 'viewsourceold'           => 'vide orijin',
+'editlink'                => 'cambia',
+'viewsourcelink'          => 'vide orijin',
 'editsectionhint'         => 'Edita sesion: $1',
 'toc'                     => 'Contenida',
 'showtoc'                 => 'mostra',
@@ -316,6 +333,13 @@ Ante alga otra eposta es enviada a la conta, tu va nesesa segue la instruis en l
 'emailconfirmlink'        => 'Aproba tu adirije de eposta',
 'loginlanguagelabel'      => 'Lingua: $1',
 
+# Password reset dialog
+'oldpassword'               => 'Sinia secreta vea:',
+'newpassword'               => 'Sinia secreta nova:',
+'retypenew'                 => 'Re-entra tu sinia secreta nova:',
+'resetpass-submit-loggedin' => 'Cambia la sinia secreta',
+'resetpass-temp-password'   => 'Sinia secreta tempora:',
+
 # Edit page toolbar
 'bold_sample'     => 'Testo en leteras forte',
 'bold_tip'        => 'Testo en leteras forte',
@@ -323,7 +347,7 @@ Ante alga otra eposta es enviada a la conta, tu va nesesa segue la instruis en l
 'italic_tip'      => 'Testo en leteras italica',
 'link_sample'     => 'Titulo de lia',
 'link_tip'        => 'Lia interna',
-'extlink_sample'  => 'http://www.esemplo.com titulo de lia',
+'extlink_sample'  => 'http://www.example.com titulo de lia',
 'extlink_tip'     => 'Lia esterna (recorda la prefis http://)',
 'headline_sample' => 'Testo de titulo',
 'headline_tip'    => 'Titulo de nivel 2',
@@ -337,8 +361,8 @@ Ante alga otra eposta es enviada a la conta, tu va nesesa segue la instruis en l
 'hr_tip'          => 'Linia orizonal (usa nonfrecuente)',
 
 # Edit pages
-'summary'                => 'Soma',
-'subject'                => 'Sujeto/titulo',
+'summary'                => 'Soma:',
+'subject'                => 'Sujeto/titulo:',
 'minoredit'              => 'Esta es un cambia minor',
 'watchthis'              => 'Oserva esta paje',
 'savearticle'            => 'Fisa paje',
@@ -347,7 +371,7 @@ Ante alga otra eposta es enviada a la conta, tu va nesesa segue la instruis en l
 'showdiff'               => 'Mostra diferes',
 'anoneditwarning'        => "'''Avisa:''' Tu no ia sinia per entra.
 Tu adirije de IP va es memorada en la istoria de revisas de esta paje.",
-'summary-preview'        => 'Previde soma',
+'summary-preview'        => 'Previde soma:',
 'blockedtitle'           => 'Usor es impedida',
 'blockedtext'            => "<big>'''Tu nom de usor o adirije de IP ia es impedida.'''</big>
 
@@ -393,25 +417,27 @@ Tu debe pensa ce es bon continua edita esta paje.
 La arcivo de sutraes per esta paje es asi per conveni:",
 
 # History pages
-'viewpagelogs'        => 'Vide la arcivo de esta paje',
-'currentrev'          => 'Cambia presente',
-'revisionasof'        => 'Revisa de $1',
-'revision-info'       => 'Revisa de $1 par $2',
-'previousrevision'    => '← Altera presedente',
-'nextrevision'        => 'Revisa plu nova→',
-'currentrevisionlink' => 'Revisa presente',
-'cur'                 => 'aora',
-'next'                => 'seguente',
-'last'                => 'dife',
-'page_first'          => 'prima',
-'page_last'           => 'final',
-'histlegend'          => 'Diferente eleje: Marca la caxas de radio de esta varias per compare e clica entra o la boton a la funda.<br />
+'viewpagelogs'           => 'Vide la arcivo de esta paje',
+'currentrev'             => 'Cambia presente',
+'currentrev-asof'        => 'Cambia presente a departi di $1',
+'revisionasof'           => 'Revisa de $1',
+'revision-info'          => 'Revisa de $1 par $2', # Additionally available: $3: revision id
+'previousrevision'       => '← Altera presedente',
+'nextrevision'           => 'Revisa plu nova→',
+'currentrevisionlink'    => 'Revisa presente',
+'cur'                    => 'aora',
+'next'                   => 'seguente',
+'last'                   => 'dife',
+'page_first'             => 'prima',
+'page_last'              => 'final',
+'histlegend'             => 'Diferente eleje: Marca la caxas de radio de esta varias per compare e clica entra o la boton a la funda.<br />
 (presente) = difere de la varia presente,
 (presedente) = difere con varia presedente, M = edita minor.',
-'histfirst'           => 'Prima',
-'histlast'            => 'Ultima',
-'historysize'         => '({{PLURAL:$1|1 otuple|$1 otuples}})',
-'historyempty'        => '(vacua)',
+'history-fieldset-title' => 'Surfa istoria',
+'histfirst'              => 'Prima',
+'histlast'               => 'Ultima',
+'historysize'            => '({{PLURAL:$1|1 otuple|$1 otuples}})',
+'historyempty'           => '(vacua)',
 
 # Revision feed
 'history-feed-title'          => 'Istoria de revises',
@@ -427,6 +453,8 @@ La arcivo de sutraes per esta paje es asi per conveni:",
 'compareselectedversions' => 'Compare varias elejeda',
 'editundo'                => 'desfa',
 'diff-multi'              => '({{PLURAL:$1|$1 revise|$1 revises}} medial no mostrada.)',
+'diff-with'               => '&#32;con $1 $2',
+'diff-with-final'         => '&#32;e $1 $2',
 
 # Search results
 'searchresults'             => 'Resultas de xerca',
@@ -434,6 +462,7 @@ La arcivo de sutraes per esta paje es asi per conveni:",
 'prevn'                     => '$1 presedente',
 'nextn'                     => '$1 seguente',
 'viewprevnext'              => 'Vide ($1) ($2) ($3)',
+'searchhelp-url'            => 'Help:Contenis',
 'search-result-size'        => '$1 ({{PLURAL:$2|1 parola|$2 parolas}})',
 'search-section'            => '(sesion $1)',
 'search-interwiki-default'  => 'Resultas de $1:',
@@ -446,11 +475,9 @@ La arcivo de sutraes per esta paje es asi per conveni:",
 # Preferences page
 'preferences'       => 'Preferis',
 'mypreferences'     => 'Me preferis',
+'skin-preview'      => 'Previde',
 'math'              => 'Matematica',
 'saveprefs'         => 'Fisa',
-'oldpassword'       => 'Sinia secreta vea:',
-'newpassword'       => 'Sinia secreta nova:',
-'retypenew'         => 'Re-entra tu sinia secreta nova:',
 'rows'              => 'Linias:',
 'columns'           => 'Colonas:',
 'searchresultshead' => 'Xerca',
@@ -475,6 +502,9 @@ La arcivo de sutraes per esta paje es asi per conveni:",
 # User rights log
 'rightslog' => 'Catalogo de diretos de usor',
 
+# Associated actions - in the sentence "You do not have permission to X"
+'action-edit' => 'edita esta paje',
+
 # Recent changes
 'nchanges'                       => '$1 {{PLURAL:$1|cambia|cambias}}',
 'recentchanges'                  => 'Cambias resente',
@@ -498,6 +528,8 @@ La arcivo de sutraes per esta paje es asi per conveni:",
 'newpageletter'                  => 'N',
 'boteditletter'                  => 'b',
 'rc_categories_any'              => 'Cualce',
+'rc-enhanced-expand'             => 'Mostra detalias (JavaScript es nesesada)',
+'rc-enhanced-hide'               => 'Asconde detalias',
 
 # Recent changes linked
 'recentchangeslinked'          => 'Cambias relateda',
@@ -516,12 +548,12 @@ Pajes a [[Special:Watchlist|tu lista de pajes oservada]] es en leteras '''forte'
 
 'upload-file-error' => 'Era interna',
 
-# Special:ImageList
+# Special:ListFiles
 'imgfile'        => 'fix',
-'imagelist'      => 'Lista de imajes',
-'imagelist_name' => 'Nom',
+'listfiles'      => 'Lista de imajes',
+'listfiles_name' => 'Nom',
 
-# Image description page
+# File description page
 'filehist'                  => 'Istoria de fix',
 'filehist-help'             => 'Clica a un data/tempo per vide la fix como el ia aperi alora.',
 'filehist-current'          => 'aora',
@@ -610,7 +642,6 @@ Pajes a [[Special:Watchlist|tu lista de pajes oservada]] es en leteras '''forte'
 'speciallogtitlelabel' => 'Titulo:',
 'log'                  => 'Lista de atas',
 'all-logs-page'        => 'Tota catalogos',
-'log-search-submit'    => 'Vade',
 
 # Special:AllPages
 'allpages'       => 'Tota pajes',
@@ -628,6 +659,9 @@ Pajes a [[Special:Watchlist|tu lista de pajes oservada]] es en leteras '''forte'
 'categories'         => 'Categorias',
 'categoriespagetext' => 'Es la categorias seguente en la vici.',
 
+# Special:LinkSearch
+'linksearch-ok' => 'Xerca',
+
 # Special:ListGroupRights
 'listgrouprights-group'   => 'Grupo',
 'listgrouprights-members' => '(lista de membros)',
@@ -638,26 +672,23 @@ Pajes a [[Special:Watchlist|tu lista de pajes oservada]] es en leteras '''forte'
 'emailto'   => 'Per',
 
 # Watchlist
-'watchlist'            => 'Pajes oservada',
-'mywatchlist'          => 'Me lista de pajes oservada',
-'watchlistfor'         => "(per '''$1''')",
-'nowatchlist'          => 'Tu ave no cosas en tu lista oservada',
-'addedwatch'           => 'Juntada a la lista de pajes oservada',
-'addedwatchtext'       => "La paje \"[[:\$1]]\" ia es juntada a tu [[Special:Watchlist|lista de pajes oservada]].
+'watchlist'         => 'Pajes oservada',
+'mywatchlist'       => 'Me lista de pajes oservada',
+'watchlistfor'      => "(per '''$1''')",
+'nowatchlist'       => 'Tu ave no cosas en tu lista oservada',
+'addedwatch'        => 'Juntada a la lista de pajes oservada',
+'addedwatchtext'    => "La paje \"[[:\$1]]\" ia es juntada a tu [[Special:Watchlist|lista de pajes oservada]].
 Cambias future a esta paje e se paje de discutes va es listada ala, e la paje va apera en leteras '''forte''' en la [[Special:RecentChanges|lista de cambias resente]] per es plu fasil oservada.
 
 Si tu vole sutrae la paje de tu lista de pajes oservada en la futur, clica a \"no oserva\" en la bara a la lado.",
-'removedwatch'         => 'Sutraeda de la lista de pajes oservada',
-'removedwatchtext'     => 'La paje "[[:$1]]" ia es sutraeda de tu lista de pajes oservada.',
-'watch'                => 'Oserva',
-'watchthispage'        => 'Oserva esta paje',
-'unwatch'              => 'Nonoserva',
-'watchlist-details'    => '{{PLURAL:$1|$1 paje|$1 pajes}} osservada, sin pajes de discutes.',
-'watchlistcontains'    => 'Tu lista oservada teni $1 {{PLURAL:$1|paje|pajes}}.',
-'wlshowlast'           => 'Mostra la $1 oras e $2 dias presedente $3',
-'watchlist-hide-bots'  => 'Asconde editas de bot',
-'watchlist-hide-own'   => 'Asconde me editas',
-'watchlist-hide-minor' => 'Asconde editas minor',
+'removedwatch'      => 'Sutraeda de la lista de pajes oservada',
+'removedwatchtext'  => 'La paje "[[:$1]]" ia es sutraeda de tu lista de pajes oservada.',
+'watch'             => 'Oserva',
+'watchthispage'     => 'Oserva esta paje',
+'unwatch'           => 'Nonoserva',
+'watchlist-details' => '{{PLURAL:$1|$1 paje|$1 pajes}} osservada, sin pajes de discutes.',
+'watchlistcontains' => 'Tu lista oservada teni $1 {{PLURAL:$1|paje|pajes}}.',
+'wlshowlast'        => 'Mostra la $1 oras e $2 dias presedente $3',
 
 # Displayed when you click the "watch" button and it is in the process of watching
 'watching'   => 'Oserva...',
@@ -666,24 +697,29 @@ Si tu vole sutrae la paje de tu lista de pajes oservada en la futur, clica a \"n
 'enotif_newpagetext' => 'Esta es un paje nova',
 'created'            => 'Creada',
 
-# Delete/protect/revert
-'deletepage'                  => 'Sutrae la paje',
-'confirm'                     => 'Aproba',
-'historywarning'              => 'Avisa! La paje ce tu intende sutrae, el ave un istoria:',
-'confirmdeletetext'           => 'Tu va pronto sutrae un paje con tota se istoria. Per favore, afirma ce tu intende esta, ce tu comprende la resultas, e ce tu fa esta en acorda con [[{{MediaWiki:Policy-url}}|la prometes]].',
-'actioncomplete'              => 'Ata completada',
-'deletedtext'                 => '"<nowiki>$1</nowiki>" ia es sutraeda.
+# Delete
+'deletepage'            => 'Sutrae la paje',
+'confirm'               => 'Aproba',
+'historywarning'        => 'Avisa! La paje ce tu intende sutrae, el ave un istoria:',
+'confirmdeletetext'     => 'Tu va pronto sutrae un paje con tota se istoria. Per favore, afirma ce tu intende esta, ce tu comprende la resultas, e ce tu fa esta en acorda con [[{{MediaWiki:Policy-url}}|la prometes]].',
+'actioncomplete'        => 'Ata completada',
+'deletedtext'           => '"<nowiki>$1</nowiki>" ia es sutraeda.
 Vide $2 per un catalogo de sutraes resente.',
-'deletedarticle'              => 'sutraeda "[[$1]]"',
-'dellogpage'                  => 'catalogo de sutraes',
-'deletecomment'               => 'Razona per esta sutrae:',
-'deleteotherreason'           => 'Otra/plu razona:',
-'deletereasonotherlist'       => 'Otra razona',
-'rollbacklink'                => 'retro',
+'deletedarticle'        => 'sutraeda "[[$1]]"',
+'dellogpage'            => 'catalogo de sutraes',
+'deletecomment'         => 'Razona per esta sutrae:',
+'deleteotherreason'     => 'Otra/plu razona:',
+'deletereasonotherlist' => 'Otra razona',
+
+# Rollback
+'rollbacklink' => 'retro',
+
+# Protect
 'protectlogpage'              => 'Catalogo de protejes',
 'protectedarticle'            => '"[[$1]]" protejeda',
 'unprotectedarticle'          => "''[[$1]]'' desprotejeda",
 'protect-title'               => 'Fisa nivel de proteje a "$1"',
+'prot_1movedto2'              => '[[$1]] es moveda a [[$2]]',
 'protect-legend'              => 'Aproba la proteje',
 'protectcomment'              => 'Razona per proteje',
 'protectexpiry'               => 'Fini:',
@@ -702,6 +738,7 @@ Asi es la ajustas presente per la paje '''$1''':",
 'protect-expiring'            => 'fini $1 (UTC)',
 'protect-cascade'             => 'Proteje pajes ce es incluida en esta paje (proteje cascadente)',
 'protect-cantedit'            => 'Tu no pote cambia la nivel de proteje de esta paje, per ce tu no ave la permite per edita el.',
+'protect-expiry-options'      => '1 ora:1 hour,1 dia:1 day,1 semana:1 week,2 semanas:2 weeks,1 mensa:1 month,3 mensas:3 months,6 mensas:6 months,1 anio:1 year,nonlimitada:infinite', # display1:time1,display2:time2,...
 'restriction-type'            => 'Permete:',
 'restriction-level'           => 'Nivel de restrinje:',
 
@@ -734,7 +771,6 @@ Asi es la ajustas presente per la paje '''$1''':",
 'whatlinkshere'           => 'Ce es liada a asi',
 'whatlinkshere-title'     => 'Pajes ci lia a "$1"',
 'whatlinkshere-page'      => 'Paje:',
-'linklistsub'             => '(Lista de lias)',
 'linkshere'               => "Esta pajes lia a '''[[:$1]]''':",
 'nolinkshere'             => "No pajes lia a '''[[:$1]]'''.",
 'isredirect'              => 'redirije paje',
@@ -870,7 +906,7 @@ En esta casos, tu va nesesa move o fusa la paje per mano, si desirada.",
 'show-big-image'       => 'Densia masima',
 'show-big-image-thumb' => '<small>Grandia de eesta previde: $1 × $2 pixeles</small>',
 
-# Special:NewImages
+# Special:NewFiles
 'newimages' => 'Imajes nova',
 'ilsubmit'  => 'Xerca',
 

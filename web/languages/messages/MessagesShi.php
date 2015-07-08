@@ -1,6 +1,9 @@
 <?php
 /** Tachelhit (Tašlḥiyt)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -90,7 +93,7 @@ $messages = array(
 'moredotdotdot'  => 'uggar...',
 'mypage'         => 'tawriqt niw',
 'mytalk'         => 'assays ino',
-'and'            => 'z',
+'and'            => '&#32;z',
 
 'tagline'          => 'mn {{SITENAME}}',
 'help'             => 'lmɜiwna',
