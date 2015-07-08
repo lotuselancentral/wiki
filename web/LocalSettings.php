@@ -58,11 +58,11 @@ $wgEnotifWatchlist = true; # UPO
 $wgEmailAuthentication = true;
 
 $wgDBtype           = "mysql";
-$wgDBserver         = "localhost";
-$wgDBname           = "wikilec";
-$wgDBuser           = "wikilec";
-$wgDBpassword       = "";
-$wgDBport           = "";
+$wgDBserver         = getenv('WIKILEC_DB_HOST');
+$wgDBname           = getenv('WIKILEC_DB_NAME');
+$wgDBuser           = getenv('WIKILEC_DB_USER');
+$wgDBpassword       = getenv('WIKILEC_DB_PASSWORD');
+$wgDBport           = getenv('WIKIPEC_DB_PORT');
 $wgDBprefix         = "wikilec_";
 
 # Schemas for Postgres
