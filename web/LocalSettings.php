@@ -45,8 +45,8 @@ $wgScriptPath       = "";
 $wgEnableEmail      = true;
 $wgEnableUserEmail  = true;
 
-$wgEmergencyContact = "";
-$wgPasswordSender = "";
+$wgEmergencyContact = 'webmaster@lotuselancentral.com';
+$wgPasswordSender = 'webmaster@lotuselancentral.com';
 
 ## For a detailed description of the following switches see
 ## http://meta.wikimedia.org/Enotif and http://meta.wikimedia.org/Eauthent
