@@ -119,7 +119,7 @@ $messages = array(
 'category-empty'         => "''Cayliib danjobam nihíl''",
 'listingcontinuesabbrev' => 'korb.',
 
-'mainpagetext' => "<big>'''MediaWiki coccebj installöx successua zo mii.'''</big>",
+'mainpagetext' => "'''MediaWiki coccebj installöx successua zo mii.'''",
 
 'about'          => 'Miixaz',
 'article'        => 'Artículo',
@@ -263,9 +263,9 @@ $messages = array(
 'nosuchaction'      => "Ne'dáár accion",
 'nosuchactiontext'  => 'Accion apualte URLsan z coccebj nepualat wiki zo san',
 'nosuchspecialpage' => "Ne'dáár páhina extrava",
-'nospecialpagetext' => "<big>'''Meccan páhina extrava invalida.'''</big>
+'nospecialpagetext' => '<strong>Meccan páhina extrava invalida.</strong>
 
-Meccan páhina extrava valide pac [[Special:SpecialPages]] iti.",
+Meccan páhina extrava valide pac [[Special:SpecialPages]] iti.',
 
 # General errors
 'error'                => 'Römj',
@@ -328,8 +328,10 @@ $2',
 
 # Login and logout pages
 'logouttitle'                => 'Caitom cuípo',
-'logouttext'                 => "'''Me cuípo.'''<br />
-Mecontinudad usadad {{SITENAME}} anon jïx me caápo dajcaitom ö jömcaitom. Páhinám pac continudad displayom dajme caápo, jánclearom mecachede browser.",
+'logouttext'                 => "'''Me cuípo.'''
+
+Mecontinudad usadad {{SITENAME}} anon jïx me caápo dajcaitom ö jömcaitom.
+Páhinám pac continudad displayom dajme caápo, jánclearom mecachede browser.",
 'welcomecreation'            => "== Q'$1! ==
 
 Mecaitom coccebj creatöx. Quiix hequáatlaácde {{SITENAME}} pos-poop.",
@@ -347,10 +349,10 @@ Mecaitom coccebj creatöx. Quiix hequáatlaácde {{SITENAME}} pos-poop.",
 'logout'                     => 'Cuípo',
 'userlogout'                 => 'Cuípo',
 'notloggedin'                => 'Necaápo',
-'nologin'                    => 'Menecaápo? $1.',
+'nologin'                    => "Menecaápo? '''$1'''.",
 'nologinlink'                => 'Xuatl ö',
 'createaccount'              => 'Xuatl',
-'gotaccount'                 => 'Mecaápo? $1.',
+'gotaccount'                 => "Mecaápo? '''$1'''.",
 'gotaccountlink'             => 'Caápo',
 'createaccountmail'          => 'caxuatl e-iitom',
 'badretype'                  => 'Quimx cánj zo misoj nematchöx.',
@@ -456,7 +458,7 @@ confirmom account zo coccebj de'me.",
 'summary-preview'           => 'Cuáxiitde abvuatl:',
 'subject-preview'           => 'Cuáxiitde subjectua/corridor:',
 'blockedtitle'              => 'Caitom blockámit',
-'blockedtext'               => "<big>'''Hexuatl jöx adressade IP cáablockom.'''</big>
+'blockedtext'               => "'''Hexuatl jöx adressade IP cáablockom.'''
 
 Block zo expondal $1. Rasonna zo coccebj: ''$2''.
 
@@ -487,7 +489,7 @@ Me IDde block coccebj $5. Includam 1 jöx 2 pac querinám iti.",
 'confirmedittitle'          => 'Confirmacionde e-iitom coccebj Neces ticpatlöx',
 'confirmedittext'           => "Me confirmöx menadressade de e-iitom ticpatlöx 'depre. Set' ö validatenan menadressade IP [[Special:Preferences|hequáatlaác]] mii.",
 'nosuchsectiontitle'        => "Ne'dáár partam",
-'nosuchsectiontext'         => "Me pos-xuniim ticpatlöx ne'dáár partam.  Zo necoccebj ne'dáár partam $1, meticpatlöx necoccebj xuniim.",
+'nosuchsectiontext'         => "Me pos-xuniim ticpatlöx ne'dáár partam.",
 'loginreqtitle'             => 'Caápo Neces',
 'loginreqlink'              => 'caápo',
 'loginreqpagetext'          => 'Zo coccebj Neces $1 cohuatlöx jömde páhinám.',
@@ -599,7 +601,7 @@ Informacion: (curt) = quiíxde vercion currentua,
 'revdelete-hide-comment'  => 'Camaát commentuade ticpatlöx',
 'revdelete-hide-user'     => 'Camaát IDde caitom/IDde IP',
 'revdelete-hide-image'    => 'Cohuatlöx contentua ciúchan',
-'revdelete-log'           => 'Commentuade log:',
+'revdelete-log'           => 'Ra:',
 'revdelete-logentry'      => 'quiixöx revicion visibilitiitde [[$1]]',
 'logdelete-logentry'      => 'quiixöx eventua visibilitiitde [[$1]]',
 
@@ -671,7 +673,7 @@ Informacion: (curt) = quiíxde vercion currentua,
 'userrights-editusergroup' => 'Ticpatlöx polám caitóm',
 'saveusergroups'           => 'Xuniim Polámde Caitom',
 'userrights-groupsmember'  => 'Ctamde:',
-'userrights-reason'        => "Rade'reset:",
+'userrights-reason'        => 'Ra:',
 
 # Groups
 'group'               => 'Polám:',
@@ -796,7 +798,7 @@ Informacion: (curt) = quiíxde vercion currentua,
 # File deletion
 'filedelete'         => 'Delatom $1',
 'filedelete-legend'  => 'Ciúchan delatan',
-'filedelete-comment' => 'Commentua:',
+'filedelete-comment' => 'Ra:',
 'filedelete-submit'  => 'Delatom',
 'filedelete-success' => "'''$1''' coccebj delatomöx.",
 

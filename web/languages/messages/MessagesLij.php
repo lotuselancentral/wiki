@@ -353,10 +353,10 @@ O to account o l'è stæto creoö. Non te ascordà de cangiâ e toe preferençe 
 'userlogin'                  => 'Intra / Registrate',
 'logout'                     => 'Sciorti',
 'userlogout'                 => 'Sciorti',
-'nologin'                    => "No ti g'hæ ancon accesso? $1.",
+'nologin'                    => "No ti g'hæ ancon accesso? '''$1'''.",
 'nologinlink'                => "Creâ 'n conto",
 'createaccount'              => "Creâ 'n nêuvo conto",
-'gotaccount'                 => "Ti g'hæ zà 'n conto d'accesso? $1.",
+'gotaccount'                 => "Ti g'hæ zà 'n conto d'accesso? '''$1'''.",
 'gotaccountlink'             => 'Intra',
 'badretype'                  => "E paròlle d'ordine che t'hæ scrîo son despægie.",
 'userexists'                 => "O nomme d'ûtente inserîo o l'è zà in ûso.<br />
@@ -441,7 +441,7 @@ Pe abilitâ l'invîo de messaggi e-mail pe quest'accesso, o se deive seguî l'is
 'anoneditwarning'        => "'''Attension:''' No ti t'hæ registròu. O têu indirisso IP o sajà misso inta stöja di cangiamenti da paggina.",
 'summary-preview'        => 'Anteprimma oggetto:',
 'blockedtitle'           => "L'utente o l'é bloccòu",
-'blockedtext'            => "<big>''''Sto nomme d'ûtente ou indirisso IP o l'è stæto bloccòu.'''</big>
+'blockedtext'            => "''''Sto nomme d'ûtente ou indirisso IP o l'è stæto bloccòu.'''
 
 O blòcco o l'è stæto fæto da \$1. A raxon dæta a l'è ''\$2''.
 
@@ -614,7 +614,8 @@ E paggine in osservassion son dipinte in '''grascietto'''.",
 'filesource'           => 'Reixe:',
 'uploadedfiles'        => 'Papê caregæ',
 'badfilename'          => 'O nomme do papê o l\'è stæto cangioö in "$1".',
-'fileexists'           => "Un papê co sto nomme o existe de zà, pe piaxei da unn'euggiâ a '''<tt>$1</tt>''' se non ti tei seguo de voleilo cangiâ.",
+'fileexists'           => "Un papê co sto nomme o existe de zà, pe piaxei da unn'euggiâ a '''<tt>[[:$1]]</tt>''' se non ti tei seguo de voleilo cangiâ.
+[[$1|thumb]]",
 'fileexists-forbidden' => 'Un papê co sto nomme o existe de zà, pe piaxei vanni in derrê e carega sto papê co un ätro nomme. [[File:$1|thumb|center|$1]]',
 'savefile'             => 'Sarva o papê',
 'uploadedimage'        => 'O s\'ha caregòu "[[$1]]"',
@@ -808,7 +809,7 @@ Ti te peu strinza a vista se ti te çerni un tipo de registro, un nomme de un ut
 'deletedtext'           => 'A paggina "<nowiki>$1</nowiki>" a l\'è stæta scassâa. Consûltâ o $2 pe \'na lista de-e paggine scassæ de reçente.',
 'deletedarticle'        => 'O s\'ha scassòu "[[$1]]"',
 'dellogpage'            => 'Registro de-e cose scassæ',
-'deletecomment'         => 'Raxon pe scassâ',
+'deletecomment'         => 'Raxon:',
 'deleteotherreason'     => 'Ûn âtro motivo',
 'deletereasonotherlist' => "Ûnn'âtra raxon",
 
@@ -826,7 +827,7 @@ L'ûrtimo cangiamento o ghe l'à fæto [[User:$3|$3]] ([[User talk:$3|Ciæti]]).
 'protectedarticle'            => 'o s\'ha protezûo "[[$1]]"',
 'prot_1movedto2'              => '[[$1]] mesciòu a [[$2]]',
 'protect-legend'              => 'Confermâ protession',
-'protectcomment'              => 'Motivo da protession:',
+'protectcomment'              => 'Raxon:',
 'protectexpiry'               => 'Scadensa:',
 'protect_expiry_invalid'      => 'Scadensa invalida.',
 'protect_expiry_old'          => 'Data de scadensa into passòu.',
@@ -895,7 +896,7 @@ $1',
 
 # Block/unblock
 'blockip'                     => "Blocca l'ûtente",
-'ipbreason'                   => 'Raxon do blòcco:',
+'ipbreason'                   => 'Raxon:',
 'ipboptions'                  => '2 ôe:2 hours,1 giorno:1 day,3 giorni:3 days,1 settemann-a:1 week,2 settemann-e:2 weeks,1 meise:1 month,3 meixi:3 months,6 meixi:6 months,1 anno:1 year,infinîo:infinite', # display1:time1,display2:time2,...
 'badipaddress'                => 'Indirisso IP non valido',
 'blockipsuccesssub'           => 'Affermaçion arriescïa',

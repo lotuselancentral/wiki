@@ -136,7 +136,7 @@ $messages = array(
 'hidden-category-category' => 'Categorias ascondeda', # Name of the category where hidden categories will be listed
 'listingcontinuesabbrev'   => 'cont.',
 
-'mainpagetext'      => "<big>'''MediaWiki es aora instalada.'''</big>",
+'mainpagetext'      => "'''MediaWiki es aora instalada.'''",
 'mainpagedocfooter' => 'Atenda la [http://meta.wikimedia.org/wiki/Help:Contents Gida per Usores] per informa supra la usa de la programa de vici.
 
 == Comensa ==
@@ -298,10 +298,10 @@ $messages = array(
 'userlogin'               => 'Sinia per entra',
 'logout'                  => 'Retira',
 'userlogout'              => 'Sinia per retira',
-'nologin'                 => 'Tu no ave un conta? $1.',
+'nologin'                 => "Tu no ave un conta? '''$1'''.",
 'nologinlink'             => 'Crea  un conta',
 'createaccount'           => 'Crea un conta',
-'gotaccount'              => 'Tu ave ja un conta? $1.',
+'gotaccount'              => "Tu ave ja un conta? '''$1'''.",
 'gotaccountlink'          => 'Sinia per entra',
 'youremail'               => 'Eposta:',
 'username'                => 'Nom de usor:',
@@ -381,7 +381,7 @@ Ante alga otra eposta es enviada a la conta, tu va nesesa segue la instruis en l
 Tu adirije de IP va es memorada en la istoria de revisas de esta paje.",
 'summary-preview'        => 'Previde soma:',
 'blockedtitle'           => 'Usor es impedida',
-'blockedtext'            => "<big>'''Tu nom de usor o adirije de IP ia es impedida.'''</big>
+'blockedtext'            => "'''Tu nom de usor o adirije de IP ia es impedida.'''
 
 La impedi ia es fada par $1.
 La razon donada es ''$2''.
@@ -402,7 +402,7 @@ Per crea la paje, comensa scrive en la caxa a su
 Si tu es asi par era, clica a la boton '''retro''' de tu surfador.",
 'noarticletext'          => 'Es aora no testo a esta paje.
 Tu pote [[Special:Search/{{PAGENAME}}|xerca per la titulo de esta paje]] en otra pajes,
-<span class="plainlinks">[{{fullurl:Special:Log|page={{urlencode:{{FULLPAGENAME}}}}}} xerca la arcivos relatada],
+<span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} xerca la arcivos relatada],
 o [{{fullurl:{{FULLPAGENAME}}|action=edit}} edita esta paje].',
 'previewnote'            => "'''Esta sola un previde; cambias no es fisada ja'''",
 'editing'                => 'En la prosede de edita $1',
@@ -636,7 +636,7 @@ Pajes a [[Special:Watchlist|tu lista de pajes oservada]] es en leteras '''forte'
 'mostcategories'          => 'Pajes con la plu categorias',
 'mostimages'              => 'Fixes a ce es la plu lias',
 'mostrevisions'           => 'Pajes con la plu revisas',
-'prefixindex'             => 'Catalogo de prefises',
+'prefixindex'             => 'Tota pajes con prefisa',
 'shortpages'              => 'Pajes corta',
 'longpages'               => 'Pajes longa',
 'deadendpages'            => 'Pajes sin sorti',
@@ -700,7 +700,7 @@ Cambias future a esta paje e se paje de discutes va es listada ala, e la paje va
 
 Si tu vole sutrae la paje de tu lista de pajes oservada en la futur, clica a \"no oserva\" en la bara a la lado.",
 'removedwatch'      => 'Sutraeda de la lista de pajes oservada',
-'removedwatchtext'  => 'La paje "[[:$1]]" ia es sutraeda de tu lista de pajes oservada.',
+'removedwatchtext'  => 'La paje "[[:$1]]" ia es sutraeda de [[Special:Watchlist|tu lista de pajes oservada]].',
 'watch'             => 'Oserva',
 'watchthispage'     => 'Oserva esta paje',
 'unwatch'           => 'Nonoserva',
@@ -725,7 +725,7 @@ Si tu vole sutrae la paje de tu lista de pajes oservada en la futur, clica a \"n
 Vide $2 per un catalogo de sutraes resente.',
 'deletedarticle'        => 'sutraeda "[[$1]]"',
 'dellogpage'            => 'catalogo de sutraes',
-'deletecomment'         => 'Razona per esta sutrae:',
+'deletecomment'         => 'Razona:',
 'deleteotherreason'     => 'Otra/plu razona:',
 'deletereasonotherlist' => 'Otra razona',
 
@@ -739,7 +739,7 @@ Vide $2 per un catalogo de sutraes resente.',
 'protect-title'               => 'Fisa nivel de proteje a "$1"',
 'prot_1movedto2'              => '[[$1]] es moveda a [[$2]]',
 'protect-legend'              => 'Aproba la proteje',
-'protectcomment'              => 'Razona per proteje',
+'protectcomment'              => 'Razona:',
 'protectexpiry'               => 'Fini:',
 'protect_expiry_invalid'      => 'Ora de fini no es legal.',
 'protect_expiry_old'          => 'Ora de fini es en la pasada.',
@@ -748,7 +748,7 @@ Vide $2 per un catalogo de sutraes resente.',
 'protect-locked-access'       => "Tu conta no ave permite per cambia niveles de proteje.
 Asi es la ajustas presente per la paje '''$1''':",
 'protect-cascadeon'           => 'Esta paje es aora protejeda per ce el es incluida en esta {{PLURAL:$1|paje|pajes}} ce ave proteje cascadente ativa. Tu pote cambia la nivel de proteje per esta paje, ma esta no va influense la proteje cascadente.',
-'protect-default'             => '(costumal)',
+'protect-default'             => 'Permete tota usores',
 'protect-fallback'            => 'Nesesa permite "$1"',
 'protect-level-autoconfirmed' => 'Impedi usores nova e nonenscriveda',
 'protect-level-sysop'         => 'Sola sysopes',
@@ -786,19 +786,20 @@ Asi es la ajustas presente per la paje '''$1''':",
 'sp-contributions-submit'      => 'Xerca',
 
 # What links here
-'whatlinkshere'           => 'Ce es liada a asi',
-'whatlinkshere-title'     => 'Pajes ci lia a "$1"',
-'whatlinkshere-page'      => 'Paje:',
-'linkshere'               => "Esta pajes lia a '''[[:$1]]''':",
-'nolinkshere'             => "No pajes lia a '''[[:$1]]'''.",
-'isredirect'              => 'redirije paje',
-'istemplate'              => 'inclui',
-'isimage'                 => 'lia de imaje',
-'whatlinkshere-prev'      => '{{PLURAL:$1|presesdente|$1 presedente}}',
-'whatlinkshere-next'      => '{{PLURAL:$1|seguente|$1 seguente}}',
-'whatlinkshere-links'     => '← lias',
-'whatlinkshere-hidelinks' => '$1 lias',
-'whatlinkshere-filters'   => 'Filtros',
+'whatlinkshere'            => 'Ce es liada a asi',
+'whatlinkshere-title'      => 'Pajes ci lia a "$1"',
+'whatlinkshere-page'       => 'Paje:',
+'linkshere'                => "Esta pajes lia a '''[[:$1]]''':",
+'nolinkshere'              => "No pajes lia a '''[[:$1]]'''.",
+'isredirect'               => 'redirije paje',
+'istemplate'               => 'inclui',
+'isimage'                  => 'lia de imaje',
+'whatlinkshere-prev'       => '{{PLURAL:$1|presesdente|$1 presedente}}',
+'whatlinkshere-next'       => '{{PLURAL:$1|seguente|$1 seguente}}',
+'whatlinkshere-links'      => '← lias',
+'whatlinkshere-hideredirs' => '$1 redirijes',
+'whatlinkshere-hidelinks'  => '$1 lias',
+'whatlinkshere-filters'    => 'Filtros',
 
 # Block/unblock
 'blockip'            => 'Impedi usor',
@@ -839,7 +840,7 @@ En esta casos, tu va nesesa move o fusa la paje per mano, si desirada.",
 'move-watch'       => 'Oserva esta paje',
 'movepagebtn'      => 'Move paje',
 'pagemovedsub'     => 'La move ia susede',
-'movepage-moved'   => '<big>\'\'\'"$1" ia es moveda a "$2"\'\'\'</big>', # The two titles are passed in plain text as $3 and $4 to allow additional goodies in the message.
+'movepage-moved'   => '\'\'\'"$1" ia es moveda a "$2"\'\'\'', # The two titles are passed in plain text as $3 and $4 to allow additional goodies in the message.
 'articleexists'    => 'Un paje con acel nom esiste ja, o la nom ce tu ia eleje no es un nom legal. Per favore, eleje un otra nom.',
 'talkexists'       => "'''La paje se mesma ia es moveda, ma la paje de discutes no pote es moveda, per ce un esiste ja a la titulo nova. Per favore, fusa los per mano'''",
 'movedto'          => 'moveda a',
@@ -848,7 +849,7 @@ En esta casos, tu va nesesa move o fusa la paje per mano, si desirada.",
 '1movedto2_redir'  => '[[$1]] es moveda a [[$2]] tra redirije',
 'movelogpage'      => 'Move arcive',
 'movelogpagetext'  => 'A su es un lista de pajes moveda',
-'movereason'       => 'Razona',
+'movereason'       => 'Razona:',
 'revertmove'       => 'retro',
 
 # Export
@@ -885,6 +886,7 @@ En esta casos, tu va nesesa move o fusa la paje per mano, si desirada.",
 'tooltip-ca-watch'                => 'Junta esta paje a tu lista de pajes oservada',
 'tooltip-ca-unwatch'              => 'Sutrae esta paje de tu lista de pajes oservada',
 'tooltip-search'                  => 'Xerca {{SITENAME}}',
+'tooltip-p-logo'                  => 'Visita la paje prima',
 'tooltip-n-mainpage'              => 'Visita la paje prima',
 'tooltip-n-portal'                => 'De la projeta, ce tu pote fa, do tu pote trova cosas',
 'tooltip-n-currentevents'         => 'Trova informa presedente de avenis nova',

@@ -174,7 +174,7 @@ S kann sai, dass es ää orrer meh Zaiche drin hot, wu in Sairetitel nid därfe 
 'remembermypassword'      => 'Mai Passwort uff dem Computer merke',
 'login'                   => 'Omelde',
 'nav-login-createaccount' => 'Aamelde / Benutzerkonto aaleche',
-'userlogin'               => 'Omelde',
+'userlogin'               => 'Omelde / Benutzerkonto anleche',
 'logout'                  => 'Abmelde',
 'userlogout'              => 'Abmelde',
 'nologinlink'             => 'E Benutzerkonto aaleche',
@@ -216,7 +216,7 @@ S kann sai, dass es ää orrer meh Zaiche drin hot, wu in Sairetitel nid därfe 
 'newarticletext'                   => "Du bisch eme Link nogange zu re Said, wu s no gar nit gebbt.  
 Zum die Said aaleche, kannscht do in dem Käschtel unne aafange mid schraiwe (guck[[{{MediaWiki:Helppage}}|Hilfe]] fer meh Informatione).
 Wenn do nid hin hoscht welle, no druck in Daim Browser uff '''Zrick'''.",
-'noarticletext'                    => 'Uff derre Said gebbt s noch ken Text. Du kannscht uff annere Saire [[Special:Search/{{PAGENAME}}|den Aitrach suche]], <span class="plainlinks">[{{fullurl:Special:Log|page={{urlencode:{{FULLPAGENAME}}}}}} de Logbuchaidrach suche, wu dezu ghert],
+'noarticletext'                    => 'Uff derre Said gebbt s noch ken Text. Du kannscht uff annere Saire [[Special:Search/{{PAGENAME}}|den Aitrach suche]], <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} de Logbuchaidrach suche, wu dezu ghert],
 orrer [{{fullurl:{{FULLPAGENAME}}|action=edit}} die Said bearwaide]</span>.',
 'previewnote'                      => "'''Denk dran, dass des numme e Vorschau isch.'''
 Dai Ännerunge sinn no nid gspaichert worre!",
@@ -458,7 +458,7 @@ Bitte du bstätiche, dass Du des wllscht du, dass Du verstehsch, was des hääß
 Guck $2 fer e Lischt vun de letschte Leschunge.',
 'deletedarticle'        => 'hot "[[$1]]" glescht',
 'dellogpage'            => 'Leschlogbuch',
-'deletecomment'         => 'Grund fer d Leschung:',
+'deletecomment'         => 'Grund:',
 'deleteotherreason'     => 'Annere/zusätzliche Grund:',
 'deletereasonotherlist' => 'Annere Grund',
 
@@ -469,7 +469,7 @@ Guck $2 fer e Lischt vun de letschte Leschunge.',
 'protectlogpage'              => 'Saireschutz-Logbuch',
 'protectedarticle'            => 'hot "[[$1]]" gschitzt',
 'modifiedarticleprotection'   => 'hot de Schutzstatus vun "[[$1]]" gännert',
-'protectcomment'              => 'Kommentar:',
+'protectcomment'              => 'Grund:',
 'protectexpiry'               => 'Bis:',
 'protect_expiry_invalid'      => 'Zaidraum isch nid gildich.',
 'protect_expiry_old'          => 'Zaidraum licht in de Vergangehääd.',
@@ -576,7 +576,7 @@ In denne Fäll misst mer d Dischbediersaid vun Hand kopiere.",
 'move-watch'       => 'Die Said beowachde',
 'movepagebtn'      => 'Seid verschiewe',
 'pagemovedsub'     => 'Verschiewung hot geklappt',
-'movepage-moved'   => '<big>\'\'\'"$1" isch verschowe worre uff "$2"\'\'\'</big>', # The two titles are passed in plain text as $3 and $4 to allow additional goodies in the message.
+'movepage-moved'   => '\'\'\'"$1" isch verschowe worre uff "$2"\'\'\'', # The two titles are passed in plain text as $3 and $4 to allow additional goodies in the message.
 'articleexists'    => 'E Said mid dem Name gebbt s schun, orrer de Name, wu du gewählt hoscht, isch nid gildich.
 Bitte nemm e annere Name.',
 'talkexists'       => "'''Die Said selwerschd, isch verschowe worre, awwer d Dischbediersaid hot nid kenne verschowe werre, wail s schun enni gebbt mid dem Name.

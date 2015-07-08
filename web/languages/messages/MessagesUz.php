@@ -110,7 +110,7 @@ $messages = array(
 'listingcontinuesabbrev' => 'davomi',
 
 'linkprefix'        => '/^(.*?)([a-zA-Z\\x80-\\xffʻʼ«„]+)$/sDu',
-'mainpagetext'      => "<big>'''MediaWiki muvaffaqiyatli o'rnatildi.'''</big>",
+'mainpagetext'      => "'''MediaWiki muvaffaqiyatli o'rnatildi.'''",
 'mainpagedocfooter' => "Wiki dasturini ishlatish haqida ma'lumot olish uchun  [http://meta.wikimedia.org/wiki/Help:Contents Foydalanuvchi qo'llanmasi] sahifasiga murojaat qiling.
 
 == Dastlabki qadamlar ==
@@ -214,8 +214,10 @@ $messages = array(
 'viewsourcetext'    => "Siz bu sahifaning manbasini ko'rishingiz va uni nusxasini olishingiz mumkin:",
 
 # Login and logout pages
-'logouttext'              => "'''Siz saytdan muvaffaqiyatli chiqdingiz.'''<br />
-{{SITENAME}} saytidan anonim holda foydalanishda davom etishindiz mumkin. Yoki siz yana hozirgi yoki boshqa foydalanuvchi nomi bilan qaytadan tizimga kirishingiz mumkin. Shuni e'tiborga olingki, ayrim sahifalar siz brauzeringiz keshini tozalamaguningizga qadar xuddi tizimga kirganingizdagidek ko'rinishda davom etaverishi mumkin.",
+'logouttext'              => "'''Siz saytdan muvaffaqiyatli chiqdingiz.'''
+
+{{SITENAME}} saytidan anonim holda foydalanishda davom etishindiz mumkin. Yoki siz yana hozirgi yoki boshqa foydalanuvchi nomi bilan qaytadan tizimga kirishingiz mumkin.
+Shuni e'tiborga olingki, ayrim sahifalar siz brauzeringiz keshini tozalamaguningizga qadar xuddi tizimga kirganingizdagidek ko'rinishda davom etaverishi mumkin.",
 'yourname'                => 'Foydalanuvchi nomi',
 'yourpassword'            => "Maxfiy so'z",
 'yourpasswordagain'       => "Maxfiy so'zni qayta kiriting",
@@ -226,10 +228,10 @@ $messages = array(
 'userlogin'               => 'Kirish / Hisob yaratish',
 'logout'                  => 'Chiqish',
 'userlogout'              => 'Chiqish',
-'nologin'                 => 'Hisobingiz yoʻqmi? $1.',
+'nologin'                 => "Hisobingiz yoʻqmi? '''$1'''.",
 'nologinlink'             => 'Hisob yaratish',
 'createaccount'           => 'Hisob yaratish',
-'gotaccount'              => 'Hisobingiz bormi? $1.',
+'gotaccount'              => "Hisobingiz bormi? '''$1'''.",
 'gotaccountlink'          => 'Kirish',
 'yourrealname'            => 'Haqiqiy ism *:',
 'loginsuccesstitle'       => 'Kirish muvaffaqiyatli amalga oshdi',
@@ -264,7 +266,7 @@ $messages = array(
 'showpreview'            => "Ko'rib chiqish",
 'showdiff'               => "O'zgarishlarni ko'rsatish",
 'anoneditwarning'        => "'''Diqqat:''' Siz tizimga kirmagansiz. Ushbu sahifa tarixida Sizning IP manzilingiz yozib qolinadi.",
-'blockedtext'            => "<big>'''Siz (foydalanuvchi ismingiz yoki IP manzilingiz) tahrir qilishdan chetlashtirildingiz.'''</big>
+'blockedtext'            => "'''Siz (foydalanuvchi ismingiz yoki IP manzilingiz) tahrir qilishdan chetlashtirildingiz.'''
 
 Sizni $1 chetlashtirdi. Bunga sabab: ''$2''.
 
@@ -277,7 +279,7 @@ Sizning hozirgi IP manzilingiz - $3, chetlashtirish raqamingiz - #$5. Arizaga bu
 'newarticletext'         => "Bu sahifa hali mavjud emas.
 Sahifani yaratish uchun quyida matn kiritishingiz mumkin (qo'shimcha axborot uchun [[{{MediaWiki:Helppage}}|yordam sahifasini]] ko'ring).
 Agar bu sahifaga xatolik sabab kelgan bo'lsangiz brauzeringizning '''orqaga''' tugmasini bosing.",
-'noarticletext'          => 'Bu sahifada hozircha hech qanday matn yoʻq. Siz bu sarlavhani boshqa sahifalardan [[Special:Search/{{PAGENAME}}|qidirishingiz]], <span class="plainlinks">[{{fullurl:Special:Log|page={{urlencode:{{FULLPAGENAME}}}}}} tegishli loglarga qarashingiz] yoki bu sahifani [{{fullurl:{{FULLPAGENAME}}|action=edit}} tahrirlashingiz]</span> mumkin.',
+'noarticletext'          => 'Bu sahifada hozircha hech qanday matn yoʻq. Siz bu sarlavhani boshqa sahifalardan [[Special:Search/{{PAGENAME}}|qidirishingiz]], <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} tegishli loglarga qarashingiz] yoki bu sahifani [{{fullurl:{{FULLPAGENAME}}|action=edit}} tahrirlashingiz]</span> mumkin.',
 'clearyourcache'         => "'''Etibor bering:''' O'zgartirishlaringiz ko'rish uchun, yangi moslamalaringizning saqlashdan keyin, brauser keshini tozalash kerak:<br />
 '''Mozilla / Firefox:''' ''Ctrl+Shift+R'', '''IE:''' ''Ctrl+F5'', '''Safari:''' ''Cmd+Shift+R'', '''Konqueror:''' ''F5'', '''Opera:''' ''Tools → Preferences'' orqali keshni tozalang.",
 'previewnote'            => "'''Bu shunchaki ko'rib chiqish. O'zgarishlar hali saqlangani yo'q!'''",
@@ -505,7 +507,7 @@ Agar siz bu sahifani kuzatuv ro'yxatingizdan o'chirmoqchi bo'lsangiz \"Kuzatmasl
 Yaqinda sodir etilgan yoʻqotishlar uchun $2ni koʻring.',
 'deletedarticle'        => '"[[$1]]" yoʻqotildi',
 'dellogpage'            => 'Yoʻqotish qaydlari',
-'deletecomment'         => "O'chirish sababi",
+'deletecomment'         => 'Sabab:',
 'deleteotherreason'     => 'Boshqa/qoʻshimcha sabab:',
 'deletereasonotherlist' => 'Boshqa sabab',
 
@@ -515,7 +517,7 @@ Yaqinda sodir etilgan yoʻqotishlar uchun $2ni koʻring.',
 # Protect
 'protectlogpage'         => 'Himoyalash qaydlari',
 'protect-level-sysop'    => 'Faqat administratorlar uchun',
-'protect-expiry-options' => '2 soat:2 hours,1 kun:1 day,3 kun:3 days,1 hafta:1 week,2 hafta:2 weeks,1 oy:1 month,3 oy:3 months,6 oy:6 months,1 yil:1 year,cheksiz:infinite', # display1:time1,display2:time2,...
+'protect-expiry-options' => '2 soat:2 hours,1 kun:1 day,1 hafta:1 week,2 hafta:2 weeks,1 oy:1 month,3 oy:3 months,6 oy:6 months,1 yil:1 year,cheksiz:infinite', # display1:time1,display2:time2,...
 
 # Restrictions (nouns)
 'restriction-edit' => 'Tahrirlash',
@@ -560,7 +562,7 @@ Yaqinda sodir etilgan yoʻqotishlar uchun $2ni koʻring.',
 'movearticle'    => "Sahifani ko'chirish",
 'movepagebtn'    => 'Sahifani koʻchir',
 'pagemovedsub'   => 'Koʻchirildi',
-'movepage-moved' => '<big>\'\'\'"$1" nomli sahifa "$2" nomli sahifaga koʻchirildi\'\'\'</big>', # The two titles are passed in plain text as $3 and $4 to allow additional goodies in the message.
+'movepage-moved' => '\'\'\'"$1" nomli sahifa "$2" nomli sahifaga koʻchirildi\'\'\'', # The two titles are passed in plain text as $3 and $4 to allow additional goodies in the message.
 '1movedto2'      => "[[$1]] [[$2]]ga ko'chirildi",
 'movelogpage'    => 'Koʻchirish qaydlari',
 'movereason'     => 'Sabab:',

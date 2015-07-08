@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Ezagren
  * @author Kurniasan
  */
 
@@ -180,10 +181,10 @@ $messages = array(
 'logout'                  => 'Log essu',
 'userlogout'              => 'Log essu',
 'notloggedin'             => 'Déppa log attama',
-'nologin'                 => "Dé' gaga akaun? $1.",
+'nologin'                 => "Dé' gaga akaun? '''$1'''.",
 'nologinlink'             => 'Ebbu akun',
 'createaccount'           => 'Ebbu akun',
-'gotaccount'              => 'Purani eŋka akun? $1.',
+'gotaccount'              => "Purani eŋka akun? '''$1'''.",
 'gotaccountlink'          => 'Log attama',
 'youremail'               => 'E-mail:',
 'username'                => 'Aseŋ papaké:',
@@ -236,7 +237,7 @@ $messages = array(
 'revdelete-hide-text'    => 'Tapoïki text revisië',
 'revdelete-hide-comment' => 'Tapo komentar mapadecéŋ',
 'revdelete-hide-user'    => 'Tapo aseŋ papakéna/IPna papadéceŋë',
-'revdelete-log'          => 'Komentarna logeë:',
+'revdelete-log'          => 'Saba:',
 'revdelete-content'      => 'lise',
 'revdelete-uname'        => 'aseŋ papaké',
 'revdelete-hid'          => 'tapo $1',
@@ -264,7 +265,7 @@ $messages = array(
 # Search results
 'searchsubtitle'        => "Masappa iko '''[[:$1]]'''",
 'searchsubtitleinvalid' => "Massappa iko '''$1'''",
-'viewprevnext'          => 'Ita ($1) ($2) ($3)',
+'viewprevnext'          => 'Ita ($1 ) ($2) ($3)',
 'searchhelp-url'        => 'Help:Lise',
 'search-redirect'       => '(redirect $1)',
 

@@ -607,10 +607,6 @@ class Sanitizer {
 			# http://msdn.microsoft.com/workshop/author/dhtml/overview/recalc.asp
 			if( $attribute == 'style' ) {
 				$value = Sanitizer::checkCss( $value );
-				if( $value === false ) {
-					# haxx0r
-					continue;
-				}
 			}
 
 			if ( $attribute === 'id' ) {
@@ -658,24 +654,57 @@ class Sanitizer {
 	 * @return mixed
 	 */
 	static function checkCss( $value ) {
-		$stripped = Sanitizer::decodeCharReferences( $value );
+		$value = Sanitizer::decodeCharReferences( $value );
 
 		// Remove any comments; IE gets token splitting wrong
-		$stripped = StringUtils::delimiterReplace( '/*', '*/', ' ', $stripped );
+		$value = StringUtils::delimiterReplace( '/*', '*/', ' ', $value );
 
-		$value = $stripped;
-
-		// ... and continue checks
-		$stripped = preg_replace( '!\\\\([0-9A-Fa-f]{1,6})[ \\n\\r\\t\\f]?!e',
-			'codepointToUtf8(hexdec("$1"))', $stripped );
-		$stripped = str_replace( '\\', '', $stripped );
-		if( preg_match( '/(?:expression|tps*:\/\/|url\\s*\().*/is',
-				$stripped ) ) {
-			# haxx0r
-			return false;
+		// Decode escape sequences and line continuation
+		// See the grammar in the CSS 2 spec, appendix D.
+		static $decodeRegex, $reencodeTable;
+		if ( !$decodeRegex ) {
+			$space = '[\\x20\\t\\r\\n\\f]';
+			$nl = '(?:\\n|\\r\\n|\\r|\\f)';
+			$backslash = '\\\\';
+			$decodeRegex = "/ $backslash 
+				(?:
+					($nl) |  # 1. Line continuation
+					([0-9A-Fa-f]{1,6})$space? |  # 2. character number
+					(.) | # 3. backslash cancelling special meaning
+					() | # 4. backslash at end of string
+				)/xu";
 		}
+		$value = preg_replace_callback( $decodeRegex,
+			array( __CLASS__, 'cssDecodeCallback' ), $value );
 
+		// Reject problematic keywords and control characters
+		if ( preg_match( '/[\000-\010\016-\037\177]/', $value ) ) {
+			return '/* invalid control char */';
+		} elseif ( preg_match( '! expression | filter\s*: | accelerator\s*: | url\s*\( !ix', $value ) ) {
+			return '/* insecure input */';
+		}
 		return $value;
+	}
+
+	static function cssDecodeCallback( $matches ) {
+		if ( $matches[1] !== '' ) {
+			// Line continuation
+			return '';
+		} elseif ( $matches[2] !== '' ) {
+			$char = codepointToUtf8( hexdec( $matches[2] ) );
+		} elseif ( $matches[3] !== '' ) {
+			$char = $matches[3];
+		} else {
+			$char = '\\';
+		}
+		if ( $char == "\n" || $char == '"' || $char == "'" || $char == '\\' ) {
+			// These characters need to be escaped in strings
+			// Clean up the escape sequence to avoid parsing errors by clients
+			return '\\' . dechex( ord( $char ) ) . ' ';
+		} else {
+			// Decode unnecessary escape
+			return $char;
+		}
 	}
 
 	/**

@@ -8,6 +8,7 @@
  * @file
  *
  * @author JeanVoisin
+ * @author Peter17
  * @author PieRRoMaN
  * @author RoyAlcatraz
  * @author Urhixidur
@@ -44,7 +45,7 @@ $messages = array(
 'tog-enotifrevealaddr'        => "Montrer mon adresse e-mail dans les e-mails d'avertissement",
 'tog-shownumberswatching'     => 'Montrer le montant de guetteurs',
 'tog-fancysig'                => 'Signature brute (sans liens préparés)',
-'tog-externaleditor'          => 'User un autre éditeur comme réglage ordinaire',
+'tog-externaleditor'          => 'Utiliser par défaut un éditeur de texte externe (pour les utilisateurs avancés, nécessite des réglages spécifiques sur votre ordinateur)',
 'tog-externaldiff'            => 'User un autre comparateur comme réglage ordinaire',
 'tog-showjumplinks'           => 'Mettre les "liens vites" en haut de la page',
 'tog-uselivepreview'          => "User la vue d'avance vite (JavaScript) (En assai)",
@@ -119,7 +120,7 @@ $messages = array(
 'category-media-header' => 'Média dans classe "$1"',
 'category-empty'        => "''À présent, cette classe a ni articles ni média.''",
 
-'mainpagetext'      => "<big>'''Vous avez bien installé MediaWiki.'''</big>",
+'mainpagetext'      => "'''Vous avez bien installé MediaWiki.'''",
 'mainpagedocfooter' => 'Lisez la [http://meta.wikimedia.org/wiki/Help:Contents Guide des Useurs] pour apprendre à user le wiki software.
 
 == Pour Commencer ==
@@ -247,7 +248,7 @@ $messages = array(
 # Short words for each namespace, by default used in the namespace tab in monobook
 'nstab-user'     => 'Useur',
 'nstab-media'    => 'Média',
-'nstab-special'  => 'Espécial',
+'nstab-special'  => 'Page espécial',
 'nstab-project'  => 'Info',
 'nstab-image'    => 'Dossier',
 'nstab-template' => 'Patron',
@@ -315,14 +316,18 @@ Demande: $2',
 'protectedinterface'   => "Cette page crée le texte de l'interface pour le software, et est barrée pour empêcher l'abus.",
 'editinginterface'     => "'''Attention:'''  Vous êtes après changer une page qu'est usée pour créer le texte de l'interface pour le software.  Si vous changerait cette page, vous changerait des autres pages aussi.",
 'sqlhidden'            => '(Demande SQL cachée)',
-'cascadeprotected'     => 'Cette page est protégée parce que c\'est sus {{PLURAL:$1|la page suivante|les pages suivantes}} {{PLURAL:$1|qu\'est protégée|qui sont protégées}} avec l’option "protection en cascade":',
+'cascadeprotected'     => 'Cette page est protégée parce qu’elle est incluse par {{PLURAL:$1|la page suivante, qui est protégée|les pages suivantes, qui sont protégées}} avec l’option « protection en cascade » activée :
+$2',
 'namespaceprotected'   => 'Vous avez pas la permission de changer les pages dans l\'espace de noms "$1".',
 'customcssjsprotected' => "Vous avez pas la permission de changer cette page parce qu'alle contient le réglage d'un autre useur.",
 'ns-specialprotected'  => "Vous pouvez pas changer les pages dans l'espace de noms {{ns:special}}.",
 
 # Login and logout pages
 'logouttitle'                => 'Déconnecter',
-'logouttext'                 => "'''Vous êtes déconnecté asteur.'''<br /> Vous pouvez continuer à user {{SITENAME}} sans nom ou vous pouvez connecter encore une fois avec le même nom ou un autre nom.<br />Notez: certaines pages pourriont être vues comme si vous êtes connecté, jusqu'à vous videz l'information de votre navigateur.",
+'logouttext'                 => "'''Vous êtes déconnecté asteur.'''
+
+Vous pouvez continuer à user {{SITENAME}} sans nom ou vous pouvez connecter encore une fois avec le même nom ou un autre nom.
+Notez: certaines pages pourriont être vues comme si vous êtes connecté, jusqu'à vous videz l'information de votre navigateur.",
 'welcomecreation'            => '== Bonjour, $1! ==
 
 Votre compte a été créé.  Oubliez pas de changer votre réglage sus {{SITENAME}}.',
@@ -340,10 +345,10 @@ Votre compte a été créé.  Oubliez pas de changer votre réglage sus {{SITENA
 'logout'                     => 'Déconnecter',
 'userlogout'                 => 'Déconnecter',
 'notloggedin'                => 'Pas connecté',
-'nologin'                    => 'Vous avez pas de compte? $1.',
+'nologin'                    => "Vous avez pas de compte? '''$1'''.",
 'nologinlink'                => 'Créez un compte',
 'createaccount'              => 'Créer un compte',
-'gotaccount'                 => 'Vous avez un compte déjà? $1.',
+'gotaccount'                 => "Vous avez un compte déjà? '''$1'''.",
 'gotaccountlink'             => 'Connectez',
 'createaccountmail'          => 'par e-mail',
 'badretype'                  => 'Les mots de passe que vous avez mis sont pas pareils.',
@@ -364,7 +369,7 @@ Votre compte a été créé.  Oubliez pas de changer votre réglage sus {{SITENA
 'noname'                     => "Vous avez pas mis un bon nom d'useur.",
 'loginsuccesstitle'          => 'Vous êtes connecté',
 'loginsuccess'               => "'''Asteur vous êtes connecté à {{SITENAME}} comme \"\$1\".'''",
-'nosuchuser'                 => 'Y a aucun useur avec le nom "$1".  Regardez donc l\'espellage, ou créez un nouveau compte.',
+'nosuchuser'                 => 'Y a aucun utilisateur avec le nom "$1".  Les noms d\'utilisateur respectent les majuscules et minuscules. Vérifiez l\'orthographe, ou créez un nouveau compte.',
 'nosuchusershort'            => 'Y a aucun useur avec le nom "<nowiki>$1</nowiki>".  Regardez donc l\'espellage.',
 'nouserspecified'            => "Il faut mettre un nom d'useur.",
 'wrongpassword'              => "Mauvais mot de passe.  Assayez encore s'il vous plaît.",
@@ -440,7 +445,7 @@ Si quèqu\'une d\'autre a demandé ce mot de passe ou si vous vous rappelez de v
 'summary-preview'           => "Vue d'avance de la description:",
 'subject-preview'           => "Vue d'avance du sujet:",
 'blockedtitle'              => "L'useur est bloqué",
-'blockedtext'               => "<big>'''Votre compte d'useur (ou votre adresse IP) est bloqué.'''</big>
+'blockedtext'               => "'''Votre compte d'useur (ou votre adresse IP) est bloqué.'''
 
 Le blocage a été fait par $1.  La raison donnée est ''$2''.  
 
@@ -468,7 +473,7 @@ Votre numéro de blocage est #$5.  Mettez donc cette information dans toutes vos
 'confirmedittitle'          => 'Il faut confirmer votre adresse e-mail pour faire des changements.',
 'confirmedittext'           => "Il faut confirmer votre adresse e-mail pour faire des changements.  Mettez et confirmez un adresse e-mail dans votre [[Special:Preferences|réglage de compte]], s'il vous plaît.",
 'nosuchsectiontitle'        => 'Aucune section pareille',
-'nosuchsectiontext'         => "Vous avez assayé de faire des changements dans une section qu'existe pas.  Le système peut pas sauver des changements dans une section qu'existe pas.",
+'nosuchsectiontext'         => "Vous avez assayé de faire des changements dans une section qu'existe pas.",
 'loginreqtitle'             => 'Il faut connecter.',
 'loginreqlink'              => 'connecter',
 'loginreqpagetext'          => 'Il faut $1 pour voir des autres pages.',
@@ -479,7 +484,8 @@ Votre numéro de blocage est #$5.  Mettez donc cette information dans toutes vos
 Pour créer la page, mettez des mots dans la boëte en bas (voyez la [[{{MediaWiki:Helppage}}|page d'aide]] pour plus d'information). 
 Si vous êtes ici par erreur, cliquez le bouton \"back\" sus votre navigateur.",
 'anontalkpagetext'          => "----''Ça ici, c'est la page de discussion pour un useur sans nom qu'a pas encore créé un compte ou qui l'use pas.  Ça fait, il faut user l'adresse IP numérique pour l'identifier.  Une adresse comme ça pourrait être usée par plusieurs useurs.  Si vous êtes un useur sans nom et vous croyez que des messages sans rapport ont été envoyés à vous, [[Special:UserLogin|créer un compte ou connecter]] pour empêcher la confusion avec des autres useurs sans nom dans l'avenir.''",
-'noarticletext'             => 'À présent, y a pas de texte sus cette page. Vous pouvez [[Special:Search/{{PAGENAME}}|charcher pour le titre de cette page]] dans des autres pages ou [{{fullurl:{{FULLPAGENAME}}|action=edit}} changer cette page].',
+'noarticletext'             => 'À présent, y a pas de texte sus cette page.
+Vous pouvez [[Special:Search/{{PAGENAME}}|charcher pour le titre de cette page]] dans des autres pages, <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} charcher dans les notes parents], ou [{{fullurl:{{FULLPAGENAME}}|action=edit}} changer cette page]</span>.',
 'clearyourcache'            => "'''Notez:''' Après que vous avez sauvé votres changements, il foudra peut-être dépasser le cache de votre navigateur pour voir les changements.  '''Mozilla / Firefox / Safari:''' Tenez le bouton ''Shift'' en pèsant ''Reload'', ou pèsez ''Ctrl-Shift-R'' (''Cmd-Shift-R'' sus Apple Mac); '''IE:''' Tenez ''Ctrl'' en pèsant ''Refresh'', ou pèsez ''Ctrl-F5''; '''Konqueror:''' Simplement pèsez le bouton ''Reload'', ou pèsez ''F5''; Pour les useurs de '''Opera''', il foudra peut-être vider complètement le cache dans ''Tools→Preferences''.",
 'usercssjsyoucanpreview'    => "'''Conseil:''' Usez le bouton \"Vue d'avance\" pour tester votre nouvelle feuille CSS/JS avant de la sauver.",
 'usercsspreview'            => "'''Rappelez-vous que vous êtes après regarder votre feuille CSS qu'a pas encore été sauvée!'''",
@@ -518,7 +524,7 @@ Il foudra que vous mettez vos changements dans le texte qu'est là asteur.
 'readonlywarning'           => "'''ATTENTION: La base d'information a été barrée, ça fait, vous serez pas capable de sauver votres changements asteur.  Vous ferait mieux de copier et coller le texte dans un dossier texte et le sauver pour plus tard.'''",
 'protectedpagewarning'      => "'''ATTENTION: Cette page a été barrée pour que ça peuve être changée juste par les administrateurs.'''",
 'semiprotectedpagewarning'  => "'''Notez:'''  Cette page a été barrée pour que ça peuve être changé juste par les useurs connectés.",
-'cascadeprotectedwarning'   => "'''Attention:'''  Cette page est barrée pour que ça peuve être changé juste par les administrateurs parce que cette page est comprise dans {{PLURAL:$1|une page protégée|des pages protégées}} avec la protection en cascade.",
+'cascadeprotectedwarning'   => "'''Attention :''' Cette page est protégée (ne peut être modifiée que par les administrateurs) parce qu’elle est incluse par {{PLURAL:$1|une page protégée|des pages protégées}} avec la protection en cascade activée :",
 'templatesused'             => 'Patrons usés sus cette page:',
 'templatesusedpreview'      => "Patrons usés dans cette vue d'avance:",
 'templatesusedsection'      => 'Patrons usés dans cette section:',
@@ -527,7 +533,7 @@ Il foudra que vous mettez vos changements dans le texte qu'est là asteur.
 'edittools'                 => "<!-- Le texte que vous mettez ici va être montré sous les boëttes de changements ou d'import de dossier. -->",
 'nocreatetitle'             => 'Création de page limitée',
 'nocreatetext'              => "La création des pages est limitée.  Vous pouvez changer une page qu'a été déjà créée ou [[Special:UserLogin|connecter ou créer un compte]].",
-'nocreate-loggedin'         => 'Vous avez pas la permission de créer des nouvelles pages sus ce wiki.',
+'nocreate-loggedin'         => 'Vous avez pas la permission de créer des nouvelles pages.',
 'permissionserrors'         => 'Erreur de permissions',
 'permissionserrorstext'     => 'Vous avez pas la permission de faire ça pour {{PLURAL:$1|cette raison|ces raisons}}:',
 'recreate-deleted-warn'     => "'''Attention: Vous êtes après recréer une page qu'a déjà été ôtée.'''  
@@ -582,7 +588,7 @@ Assayez de [[Special:Search|charcher dans le wiki]] pour des nouvelles pages.',
 'revisiondelete'              => 'Ôter/rétablir les changements',
 'revdelete-nooldid-title'     => 'Aucun changement choisi',
 'revdelete-nooldid-text'      => 'Vous avez pas choisi le ou les changement(s) pour user cette fonction.',
-'revdelete-selected'          => "'''{{PLURAL:$2|Changement choisi|Changements choisis}} de '''$1:''''''",
+'revdelete-selected'          => "'''{{PLURAL:$2|Changement choisi|Changements choisis}} de [[:$1]]'''",
 'logdelete-selected'          => "'''{{PLURAL:$1|Événement de notes choisi|Événements de notes choisis}}:'''",
 'revdelete-text'              => "'''La liste des changements va sauver les versions ôtées, mais le public pourra pas voir certains morceaux de ces versions.'''
 
@@ -596,7 +602,7 @@ Des autres administrateurs sus ce wiki ont la permission de voir et de rétablir
 'revdelete-suppress'          => "Ôter de l'information des administrateurs et les autres useurs",
 'revdelete-hide-image'        => "Cacher l'information du dossier",
 'revdelete-unsuppress'        => 'Ôter les restrictions des versions rétablies',
-'revdelete-log'               => 'Remarque de notes:',
+'revdelete-log'               => 'Raison:',
 'revdelete-submit'            => 'Appliquer à la version choisie',
 'revdelete-logentry'          => 'La visibilité pour la version a été changée pour [[$1]]',
 'logdelete-logentry'          => "La visibilité de l'événement a été changée pour [[$1]]",

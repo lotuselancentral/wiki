@@ -117,7 +117,7 @@ $messages = array(
 'category-empty'         => "''Bu kategoriyada henez bulunmêêr bir yazı yaki media.''",
 'listingcontinuesabbrev' => '(devam)',
 
-'mainpagetext'      => "<big>'''MediaWiki başarılan kuruldu.'''</big>",
+'mainpagetext'      => "'''MediaWiki başarılan kuruldu.'''",
 'mainpagedocfooter' => "Vikilän iş uurunda bilgi almaa için [http://meta.wikimedia.org/wiki/Help:Contents User's Guide] sayfasına bakınız
 
 == Eni başlayanlar için ==
@@ -308,10 +308,10 @@ Kullanıcı adınız '''var nicä içersin'''gagauzça nışan, boşluk . Savaş
 'logout'                     => 'Sessiyanı kapat',
 'userlogout'                 => 'Oturmaa kapat',
 'notloggedin'                => 'Sessiya diil açık',
-'nologin'                    => 'Henez aza olmadınız? $1.',
+'nologin'                    => "Henez aza olmadınız? '''$1'''.",
 'nologinlink'                => 'Esap yarat',
 'createaccount'              => 'Eni esap aç',
-'gotaccount'                 => 'Taa ilerdä esap açtınızmı? $1.',
+'gotaccount'                 => "Taa ilerdä esap açtınızmı? '''$1'''.",
 'gotaccountlink'             => 'Herliim ilerdän esap açtıysanız girin bu baalantıdan.',
 'createaccountmail'          => 'e-maillan',
 'badretype'                  => 'Parollar angılarını girdiniz uymêêr.',
@@ -396,7 +396,7 @@ O zamana kadar ani e-maildaki instrukțiyalar yapılmaycêk hem doorulanmaycêk 
 'summary-preview'        => 'Ön siir özeti:',
 'subject-preview'        => 'Konu/başlık ön siiri:',
 'blockedtitle'           => 'Kullanıcı kösteklendi.',
-'blockedtext'            => '<big>Kullanıcı adınız yaki parolunuz $1 tarafından kösteklendi.</big>
+'blockedtext'            => 'Kullanıcı adınız yaki parolunuz $1 tarafından kösteklendi.
 
 Sizi köstek edän önderci: $1. Köstek sebebi: \'\'$2\'\'.
 
@@ -664,7 +664,7 @@ Gelecektä, bu sayfaya hem ilgili konuşmaa sayfasına yapılacêk diişmäkler 
 
 Ne zaman neetlendiniz sayfayı bakmaa listasınnan çıkarmaa tuşlayın "sayfaya bakmaa durgun" baalantısına.',
 'removedwatch'      => 'Bakmaa listanızdan silindi',
-'removedwatchtext'  => '"<nowiki>$1</nowiki>" yapraı siir listanızdan silindi.',
+'removedwatchtext'  => '"[[:$1]]" yapraı siir listanızdan silindi.',
 'watch'             => 'Bak',
 'watchthispage'     => 'Bak bu sayfaya',
 'unwatch'           => 'Durgun sayfa izlemää',
@@ -685,7 +685,7 @@ Lütfen doorulayın ani siz neetlenersiniz bunu yapmaa, annêêrsiniz onun rezul
 Yakın zamanda silinenleri görmää deyni: $2.',
 'deletedarticle'        => '"$1" silindi',
 'dellogpage'            => 'Silmää jurnalı',
-'deletecomment'         => 'Silmää sebep',
+'deletecomment'         => 'Sebep',
 'deleteotherreason'     => 'Başka/ek sebep:',
 'deletereasonotherlist' => 'Başka sebep',
 
@@ -696,7 +696,7 @@ Yakın zamanda silinenleri görmää deyni: $2.',
 'protectlogpage'              => 'Korunmak jurnalı',
 'prot_1movedto2'              => '[[$1]] sayfasın eni adı: [[$2]]',
 'protect-legend'              => 'Korunmaa doorula',
-'protectcomment'              => 'Korunma altına almaa sebep:',
+'protectcomment'              => 'Sebep',
 'protectexpiry'               => 'Bitmää datası:',
 'protect_expiry_invalid'      => 'Yannış bitmää datası.',
 'protect_expiry_old'          => 'Bitmää datası geçti.',
@@ -713,7 +713,7 @@ Burada bitki seçimner '''$1''' yazı diiştirmää deyni:",
 'protect-expiring'            => 'bitmää datası $1 (UTC)',
 'protect-cascade'             => 'Bu sayfaya girän sayfaları koru (kaskad korunmaa)',
 'protect-cantedit'            => 'Siz bu yazının korunmak düzeyin bilmärsiniz diiştirmää, neçin ki sizin onu düzmää izniniz yok.',
-'protect-expiry-options'      => '15 minut:15 minutes,1 saat:1 hour,3 saat:3 hours,24 saat:24 hours,48 saat:48 hours,1 afta:1 week,1 ay:1 month,zamansız:infinite', # display1:time1,display2:time2,...
+'protect-expiry-options'      => '1 saat:1 hour,1 day:1 day,1 afta:1 week,1 ay:1 month,3 months:3 months,6 months,6 months,zamansız:infinite', # display1:time1,display2:time2,...
 'restriction-type'            => 'İzin:',
 'restriction-level'           => 'Yasaklama düzeyi:',
 
