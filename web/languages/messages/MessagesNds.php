@@ -7,6 +7,8 @@
  * @ingroup Language
  * @file
  *
+ * @author Geitost
+ * @author Kaganer
  * @author Purodha
  * @author Slomox
  * @author The Evil IP address
@@ -242,7 +244,7 @@ $messages = array(
 'tog-enotifminoredits'        => 'Schriev mi en Nettbreef, ok wenn dat blots en lütte Ännern weer',
 'tog-enotifrevealaddr'        => 'Miene Nettbreefadress in Bestätigungsnettbreven wiesen',
 'tog-shownumberswatching'     => 'Wies de Tall vun Brukers, de op disse Siet oppasst',
-'tog-oldsig'                  => 'Vörschau von de Ünnerschrift, de nu gellt:',
+'tog-oldsig'                  => 'Gellen Ünnerschrift',
 'tog-fancysig'                => 'Signatur as Wikitext behanneln (ahn automaatsch Lenk)',
 'tog-externaleditor'          => 'Extern Editor as Standard bruken (Blots för Lüüd, de sik dormit utkennt. Dor mutt noch mehr op dien Reekner instellt warrn, dat dat geiht. [//www.mediawiki.org/wiki/Manual:External_editors Wiedere Informatschonen hierto.])',
 'tog-externaldiff'            => 'Extern Warktüüch to’n Wiesen vun Ünnerscheden as Standard bruken (Blots för Lüüd, de sik dormit utkennt. Dor mutt noch mehr op dien Reekner instellt warrn, dat dat geiht. [//www.mediawiki.org/wiki/Manual:External_editors Wiedere Informatschonen hierto.])',
@@ -539,7 +541,7 @@ De letzte Datenbankaffraag weer:
 ut de Funkschoon <tt>$2</tt>.
 MySQL mell den Fehler <tt>$3: $4</tt>.',
 'dberrortextcl'        => 'Dor weer en Syntaxfehler in de Datenbankaffraag.
-De letzte Datenbankaffraag weer: $1 ut de Funktschoon <tt>$2</tt>.
+De letzte Datenbankaffraag weer: $1 ut de Funkschoon <tt>$2</tt>.
 MySQL mell den Fehler: <tt>$3: $4</tt>.',
 'laggedslavemode'      => 'Wohrschau: Disse Siet is villicht nich mehr op den ne’esten Stand.',
 'readonly'             => 'Datenbank is sparrt',
@@ -557,6 +559,8 @@ Wenn dat nich de Fall is, denn hest du villicht en Fehler in de Software funnen.
 'readonly_lag'         => 'De Datenbank is automaatsch sperrt worrn, dat sik de opdeelten Datenbankservers mit den Hööft-Datenbankserver afglieken köönt.',
 'internalerror'        => 'Internen Fehler',
 'internalerror_info'   => 'Internen Fehler: $1',
+'fileappenderrorread'  => '$1 kunn nich leest warrn wiel dat Hentofögen.',
+'fileappenderror'      => 'Dat weer nich mööglich, "$1" an "$2" totofögen.',
 'filecopyerror'        => 'De Software kunn de Datei ‚$1‘ nich na ‚$2‘ koperen.',
 'filerenameerror'      => 'De Software kunn de Datei ‚$1‘ nich na ‚$2‘ ümnömen.',
 'filedeleteerror'      => 'De Software kunn de Datei ‚$1‘ nich wegsmieten.',
@@ -566,7 +570,7 @@ Wenn dat nich de Fall is, denn hest du villicht en Fehler in de Software funnen.
 'unexpected'           => 'Unvermoodten Weert: ‚$1‘=‚$2‘.',
 'formerror'            => 'Fehler: De Software kunn dat Formular nich verarbeiden',
 'badarticleerror'      => 'Disse Aktschoon kann op disse Siet nich anwennt warrn.',
-'cannotdelete'         => 'De Software kunn de angevene Siet nich wegsmieten. (Mööglicherwies is de al vun en annern wegsmeten worrn.)',
+'cannotdelete'         => 'De Software kunn "$1" nich wegsmieten. Mööglicherwies is de al vun en annern wegsmeten worrn.',
 'badtitle'             => 'Ungülligen Titel',
 'badtitletext'         => 'De Titel vun de opropene Siet weer ungüllig, leddig, oder en ungülligen Spraaklink vun en annern Wiki.',
 'perfcached'           => 'Disse Daten kamen ut den Cache un sünd mööglicherwies nich aktuell:',
@@ -589,6 +593,7 @@ Wenn du Text översetten wist, de betherto noch gornich översett is, denn maak 
 'cascadeprotected'     => 'Disse Siet is sperrt un kann nich ännert warrn. Dat kummt dorvun dat se in disse {{PLURAL:$1|Siet|Sieden}} inbunnen is, de över Kaskadensperr schuult {{PLURAL:$1|is|sünd}}:
 $2',
 'namespaceprotected'   => "Du hest keen Rechten, Sieden in’n Naamruum '''$1''' to ännern.",
+'customcssprotected'   => "Du hest keen Rechten, düsse CSS-Sied to bearbeiden, wieldat se de persöönlichen Instellen vun en annern Bruker to'n Inhaalt hett.",
 'ns-specialprotected'  => 'Spezialsieden köönt nich ännert warrn.',
 'titleprotected'       => "Disse Siet is gegen dat nee Opstellen vun [[User:$1|$1]] schuult worrn.
 As Grund is angeven: ''$2''.",
@@ -609,7 +614,7 @@ Vergeet nich, de Sied för di persönlich [[Special:Preferences|intostellen]].',
 'yourname'                   => 'Dien Brukernaam',
 'yourpassword'               => 'Dien Passwoort',
 'yourpasswordagain'          => 'Passwoort nochmal ingeven',
-'remembermypassword'         => 'Mit disse Broswer duersam inloggen (för maximal $1 {{PLURAL:$1|Dag|Daag}})',
+'remembermypassword'         => 'Mit dissen Browser duersam inloggen (för maximal $1 {{PLURAL:$1|Dag|Daag}})',
 'yourdomainname'             => 'Diene Domään:',
 'externaldberror'            => 'Dat geev en Fehler bi de externe Authentifizerungsdatenbank oder du dröffst dien extern Brukerkonto nich ännern.',
 'login'                      => 'Anmellen',
@@ -680,7 +685,9 @@ Wenn du dat Brukerkonto gor nich hebben wullst, denn is disse Naricht egaal för
 'usernamehasherror'          => 'In Brukernaams dröff dat Teken # nich vörkamen',
 'login-throttled'            => 'Du hest to faken versöcht, di ünner dissen Brukernaam antomellen.
 Tööv en Stoot, ehrdat du dat noch wedder versöchst.',
+'login-abort-generic'        => 'Dien Anmellen harr keen Spood. Dat is afbroken worrn.',
 'loginlanguagelabel'         => 'Spraak: $1',
+'suspicious-userlogout'      => 'Dien Anfraag, di aftomellen, worr aflehnt, wieldat se vermoodlich vun en Browser oder Cache-Proxy sennt worrn is, de nich mehr funkschoneert.',
 
 # E-mail sending
 'php-mail-error-unknown' => 'Unbekennten Fehler in PHP sien mail()-Funkschoon',
@@ -701,6 +708,10 @@ Tööv en Stoot, ehrdat du dat noch wedder versöchst.',
 'resetpass-wrong-oldpass'   => 'Dat Passwoord (temporär oder aktuell) gellt nich.
 Villicht hest du dien Passwoord al ännert oder noch wedder en nee temporär Passwoord anfeddert.',
 'resetpass-temp-password'   => 'Temporär Passwoord:',
+
+# Special:PasswordReset
+'passwordreset'        => 'Passwoord torüchsetten',
+'passwordreset-legend' => 'Passwoord torüchsetten',
 
 # Edit page toolbar
 'bold_sample'     => 'Fetten Text',
@@ -814,7 +825,7 @@ De jüngste Indrag in dat Sperr-Logbook wart ünnen wiest:',
 'userinvalidcssjstitle'            => "'''Wohrschau:''' Dat gifft keen Skin „$1“. Denk dor an, dat .css- un .js-Sieden  för Brukers mit en lütten Bookstaven anfangen mööt, to’n Bispeel ''{{ns:user}}:Brukernaam/vector.css'' un nich ''{{ns:user}}:Brukernaam/Vector.css''.",
 'updated'                          => '(Ännert)',
 'note'                             => "'''Wohrschau:'''",
-'previewnote'                      => "'''Dit is blots en Vörschau, de Siet is noch nich spiekert!'''",
+'previewnote'                      => "Dit is bloots en Vörschau, de Sied is noch nich spiekert!'''",
 'previewconflict'                  => 'Disse Vörschau wiest den Inholt vun dat Textfeld baven; so warrt de Siet utseihn, wenn du nu spiekerst.',
 'session_fail_preview'             => "'''Deit uns leed! Wi kunnen dien Ännern nich spiekern. Diene Sitzungsdaten weren weg.
 Versöök dat noch wedder. Wenn dat noch jümmer nich geiht, denn versöök di [[Special:UserLogout|aftomellen]] un denn wedder antomellen.'''",
@@ -914,9 +925,7 @@ De Grund weer: ''$2''",
 'currentrev'             => 'Aktuelle Version',
 'currentrev-asof'        => 'Aktuelle Version vun’n $1',
 'revisionasof'           => 'Version vun $1',
-'revision-info'          => '<div id="viewingold-warning" style="background: #ffbdbd; border: 1px solid #BB7979; font-weight: bold; padding: .5em 1em;">
-Dit is en ole Version vun disse Siet, so as $2 de $1 ännert hett. De Version kann temlich stark vun de <a href="{{FULLURL:{{FULLPAGENAME}}}}" title="{{FULLPAGENAME}}">aktuelle Version</a> afwieken.
-</div>',
+'revision-info'          => "Verschoon vun'n $4, Klock $5 vun $2",
 'previousrevision'       => 'Nächstöllere Version→',
 'nextrevision'           => 'Ne’ere Version →',
 'currentrevisionlink'    => 'aktuelle Version',
@@ -1053,7 +1062,7 @@ Seh to, dat de Versionsgeschicht vun’n Artikel vun de Historie her bi de Reeg 
 'mergelogpagetext'   => 'Dit is dat Logbook över de tohoopföhrten Versionshistorien.',
 
 # Diffs
-'history-title'            => 'Versionshistorie vun „$1“',
+'history-title'            => 'Verschoonsgeschicht vun „$1“',
 'difference'               => '(Ünnerscheed twischen de Versionen)',
 'lineno'                   => 'Reeg $1:',
 'compareselectedversions'  => 'Ünnerscheed twischen den utwählten Versionen wiesen',
@@ -1449,9 +1458,9 @@ Dat kann nich wedder ungeschehn maakt warrn.',
 Dat du hoochladene Datein söken un ankieken kannst, gah na de [[Special:FileList|List vun hoochladene Datein]]. Dat Hoochladen un nee Hoochladen vun Datein warrt ok in dat [[Special:Log/upload|Hoochlade-Logbook]] fasthollen. Dat Wegsmieten in dat [[Special:Log/delete|Wegsmiet-Logbook]].
 
 Üm en Datei in en Sied to bruken, schriev dat hier in de Sied rin:
-* '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:datei.jpg]]</nowiki></tt>''' för de Datei in vulle Grött
-* '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:datei.jpg|200px|thumb|left|Beschrieven]]</nowiki></tt>''' för dat Bild in en Breed vun 200 Pixels in en lütt Kassen op de linke Sied mit ''Beschrieven'' as Text ünner dat Bild
-* '''<tt><nowiki>[[</nowiki>{{ns:media}}<nowiki>:File.ogg]]</nowiki></tt>''' för en direkten Lenk op de Datei, ahn dat se wiest warrt.",
+* '''<code><nowiki>[[</nowiki>{{ns:file}}<nowiki>:datei.jpg]]</nowiki></code>''' för de Datei in vulle Grött
+* '''<code><nowiki>[[</nowiki>{{ns:file}}<nowiki>:datei.jpg|200px|thumb|left|Beschrieven]]</nowiki></code>''' för dat Bild in en Breed vun 200 Pixels in en lütt Kassen op de linke Sied mit ''Beschrieven'' as Text ünner dat Bild
+* '''<code><nowiki>[[</nowiki>{{ns:media}}<nowiki>:File.ogg]]</nowiki></code>''' för en direkten Lenk op de Datei, ahn dat se wiest warrt.",
 'upload-permitted'            => 'Verlöövte Dateitypen: $1.',
 'upload-preferred'            => 'Vörtagene Dateitypen: $1.',
 'upload-prohibited'           => 'Verbadene Dateitypen: $1.',
@@ -1479,17 +1488,17 @@ Kiek bi de [[Special:NewFiles|Galerie vun ne’e Datein]] för en Översicht mit
 'large-file'                  => 'Datein schöölt opbest nich grötter wesen as $1. Disse Datei is $2 groot.',
 'largefileserver'             => 'De Datei is grötter as de vun’n Server verlöövte Bövergrenz för de Grött.',
 'emptyfile'                   => 'De hoochladene Datei is leddig. De Grund kann en Tippfehler in de Dateinaam ween. Kontrolleer, of du de Datei redig hoochladen wullst.',
-'fileexists'                  => "En Datei mit dissen Naam existeert al, prööv '''<tt>[[:$1]]</tt>''', wenn du di nich seker büst of du dat ännern wullst.
-[[$1|thumb]]",
-'filepageexists'              => "En Sied, de dat Bild beschrifft, gifft dat al as '''<tt>[[:$1]]</tt>''', dat gifft aver keen Datei mit dissen Naam. De Text, den du hier ingiffst, warrt nich op de Sied övernahmen. Du musst de Sied na dat Hoochladen noch wedder extra ännern.",
-'fileexists-extension'        => "Dat gifft al en Datei mit en ähnlichen Naam: [[$2|thumb]]
-* Naam vun diene Datei: '''<tt>[[:$1]]</tt>'''
-* Naam vun de Datei, de al dor is: '''<tt>[[:$2]]</tt>'''
-Blot dat Ennen vun de Datei is bi dat Groot-/Lütt-Schrieven anners. Kiek na, wat de Datein villicht desülven sünd.",
+'fileexists'                  => 'En Datei mit dissen Naam existeert al, prööv <strong>[[:$1]]</strong>, wenn du di nich seker büst of du dat ännern wullst.
+[[$1|thumb]]',
+'filepageexists'              => 'En Sied, de dat Bild beschrifft, gifft dat al as <strong>[[:$1]]</strong>, dat gifft aver keen Datei mit dissen Naam. De Text, den du hier ingiffst, warrt nich op de Sied övernahmen. Du musst de Sied na dat Hoochladen noch wedder extra ännern.',
+'fileexists-extension'        => 'Dat gifft al en Datei mit en ähnlichen Naam: [[$2|thumb]]
+* Naam vun diene Datei: <strong>[[:$1]]</strong>
+* Naam vun de Datei, de al dor is: <strong>[[:$2]]</strong>
+Blot dat Ennen vun de Datei is bi dat Groot-/Lütt-Schrieven anners. Kiek na, wat de Datein villicht desülven sünd.',
 'fileexists-thumbnail-yes'    => "De Datei schient en Bild to wesen, dat lütter maakt is ''(thumbnail)''. [[$1|thumb]]
-Kiek di de Datei '''<tt>[[:$1]]</tt>''' an.
+Kiek di de Datei <strong>[[:$1]]</strong> an.
 Wenn dat dat Bild in vulle Grött is, denn bruukst du keen extra Vörschaubild hoochladen.",
-'file-thumbnail-no'           => "De Dateinaam fangt an mit '''<tt>$1</tt>'''. Dat düüdt dor op hen, dat dat en lütter maakt Bild ''(thumbnail, Duumnagel-Bild)'' is.
+'file-thumbnail-no'           => "De Dateinaam fangt an mit <strong>$1</strong>. Dat düüdt dor op hen, dat dat en lütter maakt Bild ''(thumbnail, Duumnagel-Bild)'' is.
 Kiek na, wat du dat Bild nich ok in vulle Grött hest un laad dat ünner’n Originalnaam hooch oder änner den Dateinaam.",
 'fileexists-forbidden'        => 'En Datei mit dissen Naam gifft dat al un kann nich överschreven warrn.
 Wenn du ehr liekers hoochladen wullt, gah trüch un laad de Datei ünner en annern Naam hooch. [[File:$1|thumb|center|$1]]',
@@ -1566,7 +1575,7 @@ Kann angahn, dat dat beter geiht, wenn du dat to en Tiet versöchst, to de op de
 'filehist-filesize'         => 'Dateigrött',
 'filehist-comment'          => 'Kommentar',
 'filehist-missing'          => 'Datei fehlt',
-'imagelinks'                => 'Dateiverwiesen',
+'imagelinks'                => 'Dateibruuk',
 'linkstoimage'              => 'Disse {{PLURAL:$1|Sied|Sieden}} bruukt dit Bild:',
 'linkstoimage-more'         => 'Mehr as {{PLURAL:$1|ene Sied|$1 Sieden}} wiest na disse Datei.
 Disse List wiest blot {{PLURAL:$1|den eersten Lenk|de eersten $1 Lenken}} op disse Datei.
@@ -1615,7 +1624,7 @@ De [$2 Bildsied vun dor] warrt ünnen wiest.',
 
 # MIME search
 'mimesearch'         => 'MIME-Söök',
-'mimesearch-summary' => 'Disse Sied verlööft dat Filtern vun Datein na’n MIME-Typ. Du musst jümmer den Medien- un den Subtyp ingeven, to’n Bispeel: <tt>image/jpeg</tt>.',
+'mimesearch-summary' => 'Disse Sied verlööft dat Filtern vun Datein na’n MIME-Typ. Du musst jümmer den Medien- un den Subtyp ingeven, to’n Bispeel: <code>image/jpeg</code>.',
 'mimetype'           => 'MIME-Typ:',
 'download'           => 'Dalladen',
 
@@ -1796,8 +1805,8 @@ Kiek ok bi de [[Special:WantedCategories|wünschten Kategorien]].',
 'linksearch-pat'   => 'Söökmunster:',
 'linksearch-ns'    => 'Naamruum:',
 'linksearch-ok'    => 'Söken',
-'linksearch-text'  => 'Wildcards as to’n Bispeel <tt>*.wikipedia.org</tt> köönt bruukt warrn.<br />
-Ünnerstütt Protokollen: <tt>$1</tt>',
+'linksearch-text'  => 'Wildcards as to’n Bispeel <code>*.wikipedia.org</code> köönt bruukt warrn.<br />
+Ünnerstütt Protokollen: <code>$1</code>',
 'linksearch-line'  => '$1 hett en Lenk vun $2',
 'linksearch-error' => 'Wildcards dröfft blot an’n Anfang vun de URL stahn.',
 
@@ -2177,7 +2186,7 @@ Ok den Grund för dat Blocken indregen.',
 'badipaddress'                    => 'De IP-Adress hett en falsch Format.',
 'blockipsuccesssub'               => 'Blocken hett Spood',
 'blockipsuccesstext'              => 'De IP-Adress „[[Special:Contributions/$1|$1]]“ is nu blockt.<br />
-Op de [[Special:IPBlockList|IP-Blocklist]] is en List vun alle Blocks to finnen.',
+Op de [[Special:BlockList|IP-Blocklist]] is en List vun alle Blocks to finnen.',
 'ipb-edit-dropdown'               => 'Blockgrünn ännern',
 'ipb-unblock-addr'                => '„$1“ freegeven',
 'ipb-unblock'                     => 'IP-Adress/Bruker freegeven',
@@ -2557,7 +2566,7 @@ $1',
 'mediawarning'         => "'''Wohrschau:''' Disse Soort Datein kann bööswilligen Programmkood bargen. Dör dat Rünnerladen un Opmaken vun de Datei kann dien Reekner Schaden nehmen.",
 'imagemaxsize'         => 'Biller op de Bildsied begrenzen op:',
 'thumbsize'            => 'Grött vun dat Duumnagel-Bild:',
-'widthheightpage'      => '$1×$2, {{PLURAL:$3|Ene Siet|$3 Sieden}}',
+'widthheightpage'      => '$1 × $2, {{PLURAL:$3|Ene Siet|$3 Sieden}}',
 'file-info'            => 'Grött: $1, MIME-Typ: $2',
 'file-info-size'       => '$1 × $2 Pixel, Grött: $3, MIME-Typ: $4',
 'file-nohires'         => '<small>Gifft dat Bild nich grötter.</small>',

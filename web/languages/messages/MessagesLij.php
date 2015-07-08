@@ -718,7 +718,7 @@ E pàgine che t'æ in oservaçion inti [[Special:Watchlist|oservæ speciâli]] s
 'filesource'           => 'Reixe:',
 'uploadedfiles'        => 'Papê caregæ',
 'badfilename'          => 'O nomme do papê o l\'è stæto cangioö in "$1".',
-'fileexists'           => "Un papê co sto nomme o existe de zà, pe piaxei da unn'euggiâ a '''<tt>[[:$1]]</tt>''' se non ti tei seguo de voleilo cangiâ.
+'fileexists'           => "Un papê co sto nomme o existe de zà, pe piaxei da unn'euggiâ a <strong>[[:$1]]</strong> se non ti tei seguo de voleilo cangiâ.
 [[$1|thumb]]",
 'fileexists-forbidden' => 'Un papê co sto nomme o existe de zà, pe piaxei vanni in derrê e carega sto papê co un ätro nomme. [[File:$1|thumb|center|$1]]',
 'savefile'             => 'Sarva o papê',
@@ -1036,7 +1036,7 @@ $1',
 'badipaddress'                => 'Indirisso IP non valido',
 'blockipsuccesssub'           => 'Affermaçion arriescïa',
 'blockipsuccesstext'          => "[[Special:Contributions/$1|$1]] o l'è stæto affermoö.
-<br />Veddi [[Special:IPBlockList|Lista de i indirissi IP affermæ]] te cangia e affermaçioin.",
+<br />Veddi [[Special:BlockList|Lista de i indirissi IP affermæ]] te cangia e affermaçioin.",
 'ipblocklist'                 => 'Utenti blocæ',
 'anononlyblock'               => 'Non ti tè registroö. Non ti peu fanni de i cangiamenti! (Registräse o non vegne ninte!)',
 'emailblock'                  => 'posta elettronega affermaä',

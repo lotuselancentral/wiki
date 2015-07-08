@@ -33,7 +33,7 @@ $wgConf = new SiteConfiguration;
 /** @endcond */
 
 /** MediaWiki version number */
-$wgVersion = '1.18.0';
+$wgVersion = '1.18.6';
 
 /** Name of the site. It must be changed in LocalSettings.php */
 $wgSitename         = 'MediaWiki';
@@ -1410,6 +1410,8 @@ $wgQueryCacheLimit = 1000;
 $wgWantedPagesThreshold = 1;
 /** Enable slow parser functions */
 $wgAllowSlowParserFunctions = false;
+/** Allow schema updates */
+$wgAllowSchemaUpdates = true;
 
 /**
  * Do DELETE/INSERT for link updates instead of incremental
@@ -1511,6 +1513,8 @@ $wgParserCacheType = CACHE_ANYTHING;
  * given, giving a callable function which will generate a suitable cache object.
  *
  * The other parameters are dependent on the class used.
+ * - CACHE_DBA uses $wgTmpDirectory by default. The 'dir' parameter let you
+ *   overrides that.
  */
 $wgObjectCaches = array(
 	CACHE_NONE => array( 'class' => 'EmptyBagOStuff' ),
@@ -2350,6 +2354,18 @@ $wgBreakFrames = false;
 $wgEditPageFrameOptions = 'DENY';
 
 /**
+ * Disallow framing of API pages directly, by setting the X-Frame-Options
+ * header. Since the API returns CSRF tokens, allowing the results to be
+ * framed can compromise your user's account security.
+ * Options are:
+ *   - 'DENY': Do not allow framing. This is recommended for most wikis.
+ *   - 'SAMEORIGIN': Allow framing by pages on the same domain.
+ *   - false: Allow all framing.
+ */
+
+$wgApiFrameOptions = 'DENY';
+
+/**
  * Disable output compression (enabled by default if zlib is available)
  */
 $wgDisableOutputCompression = false;
@@ -2488,13 +2504,6 @@ $wgResourceLoaderMaxage = array(
 		'client' => 5 * 60, // 5 minutes
 	),
 );
-
-/**
- * Whether to embed private modules inline with HTML output or to bypass
- * caching and check the user parameter against $wgUser to prevent
- * unauthorized access to private modules.
- */
-$wgResourceLoaderInlinePrivateModules = true;
 
 /**
  * The default debug mode (on/off) for of ResourceLoader requests. This will still

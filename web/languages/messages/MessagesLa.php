@@ -7,9 +7,11 @@
  * @ingroup Language
  * @file
  *
+ * @author Amahoney
  * @author Andrew Dalby
  * @author Dferg
  * @author Esteban97
+ * @author Kaganer
  * @author LeighvsOptimvsMaximvs
  * @author McDutchie
  * @author MissPetticoats
@@ -171,15 +173,15 @@ $messages = array(
 'tog-editsectiononrightclick' => 'Paginarum segmenta dextero percussu in titulis redigenda (JavaScript poscitur)',
 'tog-showtoc'                 => 'Indicem plurium quam III segmentorum paginis praebere',
 'tog-rememberpassword'        => 'Memorare tesserae meae hoc in navigatro inter conventa ({{PLURAL:$1|die|diebus}} $1 tenus)',
-'tog-watchcreations'          => 'Paginas quas creo in paginarum custoditarum indicem addere',
-'tog-watchdefault'            => 'Paginas quas recenseo in paginarum custoditarum indicem addere',
-'tog-watchmoves'              => 'Paginas quas moveo in paginarum custoditarum indicem addere',
-'tog-watchdeletion'           => 'Paginas quas deleo in paginarum custoditarum indicem addere',
+'tog-watchcreations'          => 'Paginas quas creo et fasciculos quos impono in paginarum custoditarum indicem addere',
+'tog-watchdefault'            => 'Paginas et fasciculos quos recenseo in paginarum custoditarum indicem addere',
+'tog-watchmoves'              => 'Paginas et fasciculos quos moveo in paginarum custoditarum indicem addere',
+'tog-watchdeletion'           => 'Paginas et fasciculos quos deleo in paginarum custoditarum indicem addere',
 'tog-minordefault'            => 'Notare omnes recensiones quasi minores',
 'tog-previewontop'            => 'Monstrare praevisum ante capsam recensiti, non post ipsam',
 'tog-previewonfirst'          => 'Praevisum monstrare recensione incipiente',
 'tog-nocache'                 => 'Sistere paginas apothecare',
-'tog-enotifwatchlistpages'    => 'Mittere mihi litteras electronicas si pagina a me custodita mutatur',
+'tog-enotifwatchlistpages'    => 'Mittere mihi litteras electronicas si pagina a me custodita vel fasciculus a me custoditus mutatur',
 'tog-enotifusertalkpages'     => 'Mittere mihi litteras electronicas si mea disputatio mutatur',
 'tog-enotifminoredits'        => 'Mittere mihi litteras electronicas etiam pro recensionibus minoribus',
 'tog-enotifrevealaddr'        => 'Monstrare inscriptio mea electronica in nuntiis notificantibus',
@@ -278,8 +280,8 @@ $messages = array(
 'newwindow'     => '(in fenestra nova aperietur)',
 'cancel'        => 'Abrogare',
 'moredotdotdot' => 'Plus...',
-'mypage'        => 'Pagina mea',
-'mytalk'        => 'Disputatio mea',
+'mypage'        => 'Pagina',
+'mytalk'        => 'Disputatio',
 'anontalk'      => 'Disputatio huius IP',
 'navigation'    => 'Navigatio',
 'and'           => '&#32;et',
@@ -493,8 +495,8 @@ Ratio data est "\'\'$2\'\'".',
 Ignote continues {{grammar:ablative|{{SITENAME}}}} uti, aut conventum novum vel sub eodem vel novo nomine [[Special:UserLogin|aperias]].
 Nota bene paginas fortasse videantur quasi tuum conventum esset apertum, priusquam navigatrum purgaveris.",
 'welcomecreation'            => '== Salve, $1! ==
-Ratio tua iam creata est.
-Noli oblivisci [[Special:Preferences|praeferentias tuas]] apud {{grammar:accusative|{{SITENAME}}}} mutare.',
+Ratio tua creata est.
+Noli oblivisci [[Special:Preferences|praeferentias]] tuas apud {{grammar:accusative|{{SITENAME}}}} mutare.',
 'yourname'                   => 'Nomen usoris:',
 'yourpassword'               => 'Tessera:',
 'yourpasswordagain'          => 'Tesseram adfirmare:',
@@ -513,7 +515,7 @@ Noli oblivisci [[Special:Preferences|praeferentias tuas]] apud {{grammar:accusat
 'createaccount'              => 'Rationem novam creare',
 'gotaccount'                 => "Habesne iam rationem? '''$1'''.",
 'gotaccountlink'             => 'Conventum aperi',
-'userlogin-resetlink'        => 'Tesserae tuae oblitus esne?',
+'userlogin-resetlink'        => 'Num tesserae tuae oblitus es?',
 'createaccountmail'          => 'ab inscriptione electronica',
 'createaccountreason'        => 'Causa:',
 'badretype'                  => 'Tesserae quas scripsisti inter se non congruunt.',
@@ -522,7 +524,7 @@ Nomen usoris alium selige.',
 'loginerror'                 => 'Error factus est in aperiendo conventum',
 'nocookiesnew'               => "Ratio usoris creata est, sed conventum non apertum est. {{SITENAME}} ''Cookies'' utitur in usorum conventa aperiendo. Cookies tua debiles sunt. Eis potestatem fac, tum conventum aperi cum nomine usoris tesseraque tua nova.",
 'nocookieslogin'             => "{{SITENAME}} ''Cookies'' utitur in usorum conventa aperiendo. Cookies tua debiles sunt. Eis potestatem fac, tum conare denuo.",
-'noname'                     => 'Nominem usoris ratum non designavisti.',
+'noname'                     => 'Nomen usoris ratum non designavisti.',
 'loginsuccesstitle'          => 'Conventum prospere apertum est',
 'loginsuccess'               => "'''Apud {{grammar:accusative|{{SITENAME}}}} agnosceris nomine \"\$1\".'''",
 'nosuchuser'                 => 'Usor "$1" non est.
@@ -664,7 +666,7 @@ aut [{{fullurl:{{FULLPAGENAME}}|action=edit}} hanc paginam creare]</span>.',
 'userpage-userdoesnotexist'        => 'Usor "<nowiki>$1</nowiki>" non est. Visne re vera hanc paginam creare vel recensere?',
 'updated'                          => '(Novata)',
 'note'                             => "'''Nota:'''",
-'previewnote'                      => "'''Memento hanc paginam solum praevisum esse, neque iam servatam!'''",
+'previewnote'                      => "'''Memento hanc paginam solum praevisam esse, neque iam servatam!'''",
 'editing'                          => 'Recensio paginae "$1"',
 'editingsection'                   => 'Recensens $1 (partem)',
 'editingcomment'                   => 'Recensens $1 (nova pars)',
@@ -686,7 +688,7 @@ Nobis etiam spondes te esse ipsum horum verborum scriptorem primum, aut ex opere
 '''NOLI OPERIBUS SUB IURE DIVULGANDI UTI SINE POTESTATE!'''",
 'copyrightwarning2'                => "Nota bene omnia contributa apud {{grammar:accusative|{{SITENAME}}}} ab aliis recenseri, mutari vel removi posse.
 Nisi vis verba tua crudelissime recenseri, noli ea submittere.<br />
-Nobis etiam spondes te esse ipsum horum verborum scriptorem primum, aut ex opere in \"dominio publico\" vel ex  libere fonte simili exscripsisse (vide singula apud \$1).
+Nobis etiam spondes te esse ipsum horum verborum scriptorem primum, aut ex opere in \"dominio publico\" vel ex libere fonte simili exscripsisse (vide singula apud \$1).
 '''NOLI OPERIBUS SUB IURE DIVULGANDI UTI SINE POTESTATE!'''",
 'protectedpagewarning'             => "'''CAVE: Haec pagina protecta est ut magistratus soli eam recenseant.'''",
 'templatesused'                    => '{{PLURAL:$1|Formula hac in pagina adhibita:|Formulae hac in pagina adhibitae:}}',
@@ -808,12 +810,13 @@ Titulus: '''({{int:cur}})''' = dissimilis ab emendatione novissima,
 'revertmerge' => 'Inconfundere',
 
 # Diffs
-'history-title'            => 'Historia paginae "$1"',
+'history-title'            => '$1: Historia paginae',
 'difference'               => '(Dissimilitudo inter emendationes)',
 'lineno'                   => 'Linea $1:',
 'compareselectedversions'  => 'Conferre emendationes selectas',
 'showhideselectedversions' => 'Monstrare/celare emendationes selectas',
 'editundo'                 => 'abrogare',
+'diff-multi'               => '(Inter has {{PLURAL:$1|una emendatio|$1 emendationes}} ab {{PLURAL:$2|uno usore|$2 usoribus}} {{PLURAL:$1|facta|factae}} non {{PLURAL:$1|videtur|videntur}})',
 
 # Search results
 'searchresults'                  => 'Eventum investigationis',
@@ -882,7 +885,7 @@ Conare praefixare tua inquisitionem cum ''all:'' ut quaeras contenta omnia (pagi
 
 # Preferences page
 'preferences'               => 'Praeferentiae',
-'mypreferences'             => 'Praeferentiae meae',
+'mypreferences'             => 'Praeferentiae',
 'prefs-edits'               => 'Numerus recensionum:',
 'prefsnologin'              => 'Conventum non est apertum',
 'prefsnologintext'          => '<span class="plainlinks">[{{fullurl:{{#Special:UserLogin}}|returnto=$1}} Conventum aperire]</span> debes ad praeferentias tuas modificandum.',
@@ -988,12 +991,12 @@ Si vis id dare, opera tua tibi ascribentur.',
 'group-suppress'      => 'Censurae',
 'group-all'           => '(omnes)',
 
-'group-user-member'          => 'Usor',
-'group-autoconfirmed-member' => 'Usor adfirmatus automaticale',
-'group-bot-member'           => 'Automaton',
-'group-sysop-member'         => 'Magistratus',
-'group-bureaucrat-member'    => 'Grapheocrates',
-'group-suppress-member'      => 'Censura',
+'group-user-member'          => '{{GENDER:$1|Usor}}',
+'group-autoconfirmed-member' => '{{GENDER:$1|Usor adfirmatus automaticale}}',
+'group-bot-member'           => '{{GENDER:$1|Automaton}}',
+'group-sysop-member'         => '{{GENDER:$1|Magistratus}}',
+'group-bureaucrat-member'    => '{{GENDER:$1|Grapheocrates}}',
+'group-suppress-member'      => '{{GENDER:$1|Censura}}',
 
 'grouppage-user'          => '{{ns:project}}:Usores',
 'grouppage-autoconfirmed' => '{{ns:project}}:Usores adfirmati automaticale',
@@ -1130,9 +1133,9 @@ Si vis id dare, opera tua tibi ascribentur.',
 Ut fasciculos antea impositos videas aut quaeras, adi ad [[Special:FileList|indicem fasciculorum impositorum]]. Fasciculi impositi et deleti quoque in [[Special:Log/upload|notatione fasciculorum impositorum]] notantur.
 
 Ad fasciculum in pagina includendum, utere nexu:
-*'''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:Fasciculus.jpg]]</nowiki></tt>''' aut
-*'''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:Fasciculus.png|verba alia]]</nowiki></tt>''' aut
-*'''<tt><nowiki>[[</nowiki>{{ns:media}}<nowiki>:Fasciculus.ogg]]</nowiki></tt>''' pro nexum ad fasciculum directum.",
+*'''<code><nowiki>[[</nowiki>{{ns:file}}<nowiki>:Fasciculus.jpg]]</nowiki></code>''' aut
+*'''<code><nowiki>[[</nowiki>{{ns:file}}<nowiki>:Fasciculus.png|verba alia]]</nowiki></code>''' aut
+*'''<code><nowiki>[[</nowiki>{{ns:media}}<nowiki>:Fasciculus.ogg]]</nowiki></code>''' pro nexum ad fasciculum directum.",
 'upload-permitted'    => 'Genera fasciculorum licita: $1.',
 'upload-preferred'    => 'Genera fasciculorum suasa: $1.',
 'upload-prohibited'   => 'Typi fasciculorum vetiti: $1.',
@@ -1171,7 +1174,7 @@ Vide etiam [[Special:NewFiles|pinacothecam fasciculorum recentissimorum imposito
 'upload-unknown-size' => 'Magnitudo ignota',
 
 'license'           => 'Typus permissionis:',
-'license-header'    => 'Typus permissionis:',
+'license-header'    => 'Potestas usoris',
 'nolicense'         => 'Nulla selecta',
 'license-nopreview' => '(Praevisum monstrari non potest)',
 
@@ -1663,7 +1666,7 @@ Si pagina nova cum ipso nomine post deletionem creata est, emendationes restitut
 # Contributions
 'contributions'       => 'Conlationes usoris',
 'contributions-title' => 'Conlationes usoris $1',
-'mycontris'           => 'Conlationes meae',
+'mycontris'           => 'Conlationes',
 'contribsub2'         => 'Pro $1 ($2)',
 'nocontribs'          => 'Nullae mutationes inventae sunt ex his indiciis.',
 'uctop'               => ' (vertex)',
@@ -1704,7 +1707,9 @@ Si pagina nova cum ipso nomine post deletionem creata est, emendationes restitut
 # Block/unblock
 'blockip'                     => 'Usorem obstruere',
 'blockip-legend'              => 'Usorem vel locum IP obstruere',
-'blockiptext'                 => 'Forma infera utere ut quendam usorem vel locum IP obstruas ne plus scribere potest. Hoc non nisi secundum [[{{MediaWiki:Policy-url}}|consilium]] fieri potest. Rationem certam subscribe (exempli gratia titulos paginarum quas iste usor modo vandalorum recensuit).',
+'blockiptext'                 => 'Forma infera utere ut quendam usorem vel locum IP obstruas ne plus scribere potest.
+Hoc non nisi secundum [[{{MediaWiki:Policy-url}}|consilium]] fieri potest.
+Rationem certam subscribe (exempli gratia titulos paginarum quas iste usor modo vandalorum recensuit).',
 'ipadressorusername'          => 'Locus IP aut nomen usoris:',
 'ipbexpiry'                   => 'Exitus:',
 'ipbreason'                   => 'Causa:',
@@ -1729,7 +1734,7 @@ Si pagina nova cum ipso nomine post deletionem creata est, emendationes restitut
 'badipaddress'                => 'Locus IP male formatus',
 'blockipsuccesssub'           => 'Locus prospere obstructus est',
 'blockipsuccesstext'          => '[[Special:Contributions/$1|$1]] obstructus est.
-<br />Vide [[Special:IPBlockList|indicem usorum obstructorum]] ut obstructos revideas.',
+<br />Vide [[Special:BlockList|indicem usorum obstructorum]] ut obstructos revideas.',
 'ipb-edit-dropdown'           => 'Causas obstructionum recensere',
 'ipb-unblock-addr'            => 'Deobstruere $1',
 'ipb-unblock'                 => 'Deobstruere nomen usoris vel locum IP',
@@ -1914,7 +1919,7 @@ Paginae nomen petitum "[[:$1]]" iam existit. Vin tu eam delere ut pagina illic m
 # Tooltip help for the actions
 'tooltip-pt-userpage'             => 'Pagina usoris tua',
 'tooltip-pt-mytalk'               => 'Pagina disputationis tua',
-'tooltip-pt-preferences'          => 'Praeferentiae meae',
+'tooltip-pt-preferences'          => 'Praeferentiae tuae',
 'tooltip-pt-watchlist'            => 'Paginae quae custodis ut eorum mutationes facilius vides',
 'tooltip-pt-mycontris'            => 'Index conlationum tuarum',
 'tooltip-pt-login'                => 'Te conventum aperire hortamur, non autem requisitum',
@@ -2006,7 +2011,7 @@ Paginae nomen petitum "[[:$1]]" iam existit. Vin tu eam delere ut pagina illic m
 'imagemaxsize'         => "Magnitudo maxima fasciculorum:<br />
 ''(in pagina descriptionis fasciculi)''",
 'thumbsize'            => 'Magnitudo pollicisunguis:',
-'widthheightpage'      => '$1×$2, $3 {{PLURAL:$3|pagina|paginae}}',
+'widthheightpage'      => '$1 × $2, $3 {{PLURAL:$3|pagina|paginae}}',
 'file-info'            => 'magnitudo fasciculi: $1, typus MIME: $2',
 'file-info-size'       => '$1 × $2 elementa imaginalia, magnitudo fasciculi: $3, typus MIME: $4',
 'file-nohires'         => '<small>Nulla maior resolutio exstat.</small>',
