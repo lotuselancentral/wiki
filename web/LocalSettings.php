@@ -101,7 +101,7 @@ $wgProxyKey = "";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook':
-$wgDefaultSkin = 'wikilec';
+$wgDefaultSkin = 'vector';
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
