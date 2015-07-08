@@ -155,7 +155,7 @@ $messages = array(
 'create-this-page'  => "Fa'tinas i påhina",
 'delete'            => "Na'suha",
 'deletethispage'    => "Na'suha i påhina",
-'undelete_short'    => "Po'lu tatte {{PLURAL:$1|unu na tinilaika|$1 na tinilaika siha}}",
+'undelete_short'    => "Po'lo tåtte {{PLURAL:$1|unu na tinilaika|$1 na tinilaika siha}}",
 'protect'           => 'Protehi',
 'protect_change'    => 'tulaika proteksion-ña',
 'protectthispage'   => 'Protehi i påhina este',
@@ -282,7 +282,7 @@ Ha nå'i i rason ''$2''.",
 
 # Login and logout pages
 'logouttitle'                => "Logout ni muna'sesetbi",
-'logouttext'                 => "<strong>Malog-out hao på'go.</strong>
+'logouttext'                 => "'''Malog-out hao på'go.'''
 
 Siña hao kumontinua manu'usa {{SITENAME}} sin nå'an, pat siña uma'log ta'lo pat siña un usa otra na nå'an muna'sesetbi.
 Fanapunta na pålu na påhina siha para u na'annok na ma'log-in hao, asta ki un funas iyo-mu browser cache.",
@@ -298,7 +298,7 @@ Munga mamalefa tumulaika ga'ña-mu {{SITENAME}}.",
 'loginproblem'               => "<b>Guåha problema gi iyo-mu login.</b><br />Chagi ta'lo!",
 'login'                      => 'Log in',
 'nav-login-createaccount'    => "Hålom / fa'tinas kuenta-mu",
-'loginprompt'                => 'Un nesita mansedi cookies para un log in gi {{SITENAME}}.',
+'loginprompt'                => "Un nesita muna'sedi cookies para un log in gi {{SITENAME}}.",
 'userlogin'                  => "Hålom / fa'tinas kuenta-mu",
 'logout'                     => 'Log out',
 'userlogout'                 => 'Log out',
@@ -416,15 +416,17 @@ Yanggen un yemme' \"Såtba\" ta'lo, masåtba tinilaika-mu sin titulo.",
 'blockedtitle'                     => "Machoma' i muna'sesetbi",
 'blockedtext'                      => "<big>'''Machomma' i na'an-mu muna'sesetbi pat IP-mu.'''</big>
 
-Manchomma' as $1. Pot i rason: ''$2''.
+Manchomma' as $1. 
+Pot i rason: ''$2''.
 
 * Matutuhon manchomma' gi: $8
 * Para u funhayan manchomma' gi: $6
-* Hayi para u chomma': $7
+* Håyi para u chomma': $7
 
 Siña un kuentusi si $1 pat otru na [[{{MediaWiki:Grouppage-sysop}}|administradot]] para un diskuti i chinemma'.
 Ti siña un usa i ramientan 'e-mail i muna'sesetbi,' solo guåha e-mail address minaolek gi i [[Special:Preferences|priferensia i kuenta-mu]] ya ti machomma' hao manu'usa ha'.
-På'go, $3 iyo-mu IP, ya machomma' i ID #$5. Pot fabot, na'hålom i dos gi todus i finaisen-mu siha.",
+På'go, $3 iyo-mu IP, ya machomma' i ID #$5. 
+Pot fabot, na'hålom i infotmasion gi sanhilo' gi i finaisen-mu siha.",
 'autoblockedtext'                  => "Machomma' på'go iyo-mu IP sa' guåha otru na muna'sestbi ni ha u'usa ha', ya machomma' gue' as $1.
 Ha na'i i rason:
 
@@ -466,12 +468,12 @@ An un muna'sesetbi taina'an hao ya manñiente hao na guåha na kommentu ti prisi
 'userpage-userdoesnotexist'        => 'Ti marehistra i kuenata muna\'sesetbi "$1". Pot fabot chek kao malago\' hao un fa\'tinas/tulaika este na påhina.',
 'usercsspreview'                   => "'''Hasso fan na un ripapasa iyo-mu CSS muna'sesetbi, trabiha ti masåtba ha'!'''",
 'userjspreview'                    => "'''Hasso fan na un chachagi/ripapasa iyo-mu JavaScript muna'sesetbi, trabiha ti masåtba ha'!'''",
-'note'                             => '<strong>Fanapunta:</strong>',
-'previewnote'                      => '<strong>Annok este para manripasa;
-ti masåtba trabiha i tinilaika-mu!</strong>',
+'note'                             => "'''Fanapunta:'''",
+'previewnote'                      => "'''Annok este para manripasa;
+ti masåtba trabiha i tinilaika-mu!'''",
 'previewconflict'                  => "Este na ripasu ha na'annok i tinige' gi i kahon tumulaika gi sanhilo' kumu para u annok an un såtba ha'.",
-'session_fail_preview'             => "<strong>Dispensa! Ti siña in na'fo'na i tinilaika-mu sa' guåha fina'lingun infotmasion sesion.
-Pot fabot chagi ta'lo. Yanggen ti siña u såtba ta'lo, chagi muna'logout yan na'login ta'lo.</strong>",
+'session_fail_preview'             => "'''Dispensa! Ti siña in na'fo'na i tinilaika-mu sa' guåha fina'lingun infotmasion sesion.
+Pot fabot chagi ta'lo. Yanggen ti siña u såtba ta'lo, chagi muna'logout yan na'login ta'lo.'''",
 'editing'                          => 'Tumulaika $1',
 'editingsection'                   => 'Tumulaika $1 (patte)',
 'editingcomment'                   => 'Tulalaika $1 (komentu)',
@@ -483,17 +485,17 @@ Para un nesita muna'daña i tinilaika-mu yan i guinaha.
 '''I tinige' gi hilo' ha'''' para u såtba annai un yemme' \"Såtba i påhina\".",
 'yourtext'                         => "Tinige'-mu",
 'storedversion'                    => 'Tinilaika masåtba',
-'editingold'                       => "<strong>ADAHI: Un tulalaika un ribision påhina gus bihu.
-Yanggen un såtba ha', para u fana'malingu i tinilaika siha despues di enao na ribision.</strong>",
+'editingold'                       => "'''ADAHI: Un tulalaika un ribision påhina gus bihu.
+Yanggen un såtba ha', para u fana'malingu i tinilaika siha despues di enao na ribision.'''",
 'yourdiff'                         => 'Diferensia',
 'copyrightwarning'                 => "Pot fabot, fanapunta fan na makonsidera manmasotta todus i kontribusion gi {{SITENAME}} papa' i $2 (atan $1 para i attikulu siha).
 Yanggen munga hao na matulaika i tinige'-mu yan malamaña ya mana'apåttao ta'lo maseha månu, pues munga ma po'lu guini.<br />
 Un promette ham lokkue' na hågu ha' i tituge', pat un kopia ha' gi un lugat publika pat otru na lugat dibåtde.
-<strong>MUNGA MANFA'BURESI NA GAIDIRECHU I MANTITUGE'!</strong>",
+'''MUNGA MANFA'BURESI NA GAIDIRECHU I MANTITUGE'!'''",
 'copyrightwarning2'                => "Pot fabot, fanapunta fan na siña i otru na muna'sesetbi siha tumulaika/munasuha todus i kontribusion gi {{SITENAME}}.
 Yanggen munga hao na matulaika i tinige'-mu yan malamaña ya mana'apåttao ta'lo maseha månu, pues munga ma po'lu guini.<br />
 Un promette ham lokkue' na hågu ha' i tituge', pat un kopia ha' gi un lugat publika pat otru na lugat dibåtde (atan $1 para i attikulu siha).
-<strong>MUNGA MANFA'BURESI NA GAIDIRECHU I MANTITUGE'!</strong>",
+'''MUNGA MANFA'BURESI NA GAIDIRECHU I MANTITUGE'!'''",
 'templatesused'                    => "I plantiyas siha ni ma'usa gi påhina:",
 'templatesusedpreview'             => "I plantiyas ni ma'usa gi ripasu:",
 'templatesusedsection'             => "Plantiyas siha ni ma'usa gi este na seksion:",
@@ -571,8 +573,8 @@ Komu administradot {{SITENAME}} siña un atan ha';
 fana'an guåha attikulo gi [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} log muna'susuha].</div>",
 'rev-delundel'                => "na'annok/nå'na'",
 'revisiondelete'              => "Na'suha/para håfa muna'suha i tinilaika",
-'revdelete-selected'          => "{{PLURAL:$2|Tinilaika ma'ayek|Tinilaika manma'ayek}} gi [[:$1]]:",
-'logdelete-selected'          => "{{PLURAL:$1|Kasun log ni ma'ayek|Kasun log ni manma'ayek}}:",
+'revdelete-selected'          => "'''{{PLURAL:$2|Tinilaika ma'ayek|Tinilaika manma'ayek}} gi [[:$1]]:'''",
+'logdelete-selected'          => "'''{{PLURAL:$1|Kasun log ni ma'ayek|Kasun log ni manma'ayek}}:'''",
 'revdelete-legend'            => "Po'lo i chinemma' lini'e'on siha",
 'revdelete-hide-text'         => "Nå'na' i tinige' ribision",
 'revdelete-hide-comment'      => "Nå'na' i kommentun tinilaika",
@@ -909,7 +911,7 @@ Masumma '''\$5''' na medianun tinilaika kada påhina, yan '''\$6''' na inatan ka
 'addedwatchtext'       => "Mana'suha i påhina \"[[:\$1]]\" para iyo-mu [[Special:Watchlist|Listan pinilan]].
 I tinilaika siha mo'na gi tiempo kontodu i påhinan kombetsasion siha para u fana'lista guihi, yan para u '''na'potpot''' i påhina gi halom [[Special:RecentChanges|i listan tinilaika gi halacha]] para un ayek ha' mas libianu.",
 'removedwatch'         => "Mana'suha gi listan pinilan",
-'removedwatchtext'     => 'Mana\'suha i påhina "[[:$1]]" gi listan pinilan-mu.',
+'removedwatchtext'     => 'Mana\'suha i påhinan "[[:$1]]" gi [[Special:Watchlist|listan pinilan-mu]].',
 'watch'                => 'Pulan',
 'watchthispage'        => 'Pulan este na påhina',
 'unwatch'              => 'Basta mapulan',
@@ -943,9 +945,9 @@ Chek $2 para i historian muna\'suha gi halacha.',
 'protect_expiry_invalid'      => 'Lachi i oran funhåyan.',
 'protect_expiry_old'          => 'Esta maloffan i oran funhåyan.',
 'protect-unchain'             => "Na'suha i petmisun kinanya",
-'protect-text'                => 'Siña un tulaika i nibet proteksion ni påhina <strong><nowiki>$1</nowiki></strong>.',
-'protect-locked-access'       => 'Ti nahong i petmisu kuenta-mu tumulaika nibet proteksion ni påhina siha.
-Estague taiguini i nibet i påhina <strong>$1</strong>:',
+'protect-text'                => "Siña un tulaika i nibet proteksion ni påhina '''<nowiki>$1</nowiki>'''.",
+'protect-locked-access'       => "Ti nahong i petmisu kuenta-mu tumulaika nibet proteksion ni påhina siha.
+Estague taiguini i nibet i påhina '''$1''':",
 'protect-fallback'            => 'Afuetsas "$1" na petmisu',
 'protect-level-autoconfirmed' => "Chomma' i muna'sesetbi siha ti manma'rehistra",
 'protect-expiring'            => 'munhåyan gi $1 (UTC)',
@@ -979,7 +981,7 @@ Estague taiguini i nibet i påhina <strong>$1</strong>:',
 
 # What links here
 'whatlinkshere'       => "Håfa ha na'chetton guini",
-'whatlinkshere-title' => "I påhina siha ni mana'chetton yan $1",
+'whatlinkshere-title' => 'I påhina siha ni mana\'chetton yan "$1"',
 'linklistsub'         => '(Listan inachetton siha)',
 'linkshere'           => "Umachetton i sigienten påhina siha yan '''[[:$1]]''':",
 'nolinkshere'         => "Taya' umachetton yan '''[[:$1]]'''.",
@@ -992,26 +994,27 @@ Estague taiguini i nibet i påhina <strong>$1</strong>:',
 # Block/unblock
 'blockip'            => "Chomma' i muna'sesetbi",
 'ipboptions'         => "2 oras:2 hours,1 diha:1 day,3 na diha siha:3 days,1 simana:1 week,2 na simana siha:2 weeks,1 mes:1 month,3 na mes siha:3 months,6 na mes siha:6 months,1 sakkan:1 year,taifinakpo':infinite", # display1:time1,display2:time2,...
-'ipblocklist'        => "Listan i manmachomma' ni IP yan na'an muna'sesetbi siha",
+'ipblocklist'        => "IP yan na'an muna'sesetbi ni manmachomma' siha",
 'ipblocklist-submit' => 'Aligao',
-'blocklink'          => 'futot',
+'blocklink'          => "chomma'",
 'unblocklink'        => "båsta machomma'",
 'contribslink'       => 'kontrib',
 'blocklogpage'       => "Log ni manmachomma'",
 'blocklogentry'      => "ha chomma' [[$1]] ya u funhayan gi $2 $3",
 
 # Move page
-'movepagetext'     => "Anggen un usa i sigiente fotma, para un tulaika i na'an i påhina, kontodu historia-ña.
-Madirihi i na'an orihinat para i nuebu.
-Ti matulaika i inachetton siha ni umachetton yan i na'an orihinat;
-na'seguro na un chek kao guåha i mandopble pat manmayulang na inachetton.
+'movepagetext'     => "U'usa i sigiente fotma para u matulaika i na'an i påhina, tumulaika historia-ña para i nuebu na nå'an.
+Para u madirihi i titulon orihinåt para i nuebu.
+Siña ha' un tulaika i påhina siha ni manmadirihi guatu i titulon orihinåt.
+Yanggen munga hao, na'seguro na un chek i pahinan madirihi [[Special:DoubleRedirects|doble]] pat [[Special:BrokenRedirects|manmayamak]] siha.
 Hågu ha' responsible muna'seguro na manmakontinua para i destinasion-ñiha i inachetton siha.
 
-Na'nota fan na anggen guåha esta otru påhina mafa'na'an i titulo nuebu, '''ti''' para makånya i påhina, solu tåya' ha' gi sanhalom destinasion pat tåya' historia-ña tinilika eyu i mana'dirihi. Kumeke'ilek-ña este na siña un tulaika tatte i na'an i påhina an guåha linachi-mu, ya ti siña un na'overwrite i påhina siha ni manggaige esta.
+Fanapunta fan na anggen guåha esta otru påhina mafa'na'an i titulo nuebu, '''ti''' para makånya i påhina, solu tåya' ha' gi sanhalom destinasion pat tåya' historia-ña tinilika eyu ni mana'dirihi. 
+Kumeke'ilek-ña este na siña un tulaika tatte i na'an i påhina an guåha linachi-mu, ya ti siña un na'overwrite i påhina siha ni manggaige esta.
 
 '''Adahi!'''
 Fa'na'an tinilaika dinidok yan ti maekspekta sempre anggen mageftungo' i påhina;
-na'seguro fan na un komprende i hiniyong i bida-mu sempre.",
+na'seguro fan na un komprende i humuyongña i bidada-mu sempre.",
 'movepagetalktext' => "Para u kånya i påhinan kombetsasion ni i påhina \"solo:\"
 *Guåha esta un påhinan kombetsasion ni parehu i na'an-ña, pat
 *Un funas i matka gi sanpapa' na kahon.
@@ -1040,7 +1043,8 @@ Ayek fan otru nå'an-ña.",
 'allmessages' => 'Mensahen sistema siha',
 
 # Thumbnails
-'thumbnail-more' => "Na'lamoddong",
+'thumbnail-more'  => "Na'lamoddong",
+'thumbnail_error' => "Guåha na linachi mama'titinas i thumbnail: $1",
 
 # Import log
 'importlogpage' => 'Impotta i log',

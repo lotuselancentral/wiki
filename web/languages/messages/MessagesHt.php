@@ -6,6 +6,7 @@
  *
  * @author Jvm
  * @author Masterches
+ * @author Urhixidur
  */
 
 $fallback = 'fr';
@@ -156,7 +157,7 @@ $messages = array(
 
 * [http://www.mediawiki.org/wiki/Manual:Configuration_settings Lis paramèt yo pou konfigirazyon]
 * [http://www.mediawiki.org/wiki/Manyèl:FAQ MediaWiki FAQ]
-* [http://lists.wikimedia.org/mailman/listinfo/mediawiki-announce Lis diskisyon pou chak ki parèt sou MediaWiki]',
+* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce Lis diskisyon pou chak ki parèt sou MediaWiki]',
 
 'about'          => 'Apwopo',
 'article'        => 'Atik',
@@ -202,7 +203,7 @@ $messages = array(
 'deletethispage'    => 'Delete paj sa',
 'undelete_short'    => 'Restore {{PLURAL:$1|1 yon modifikasyon| $1 modifikasyon yo}}',
 'protect'           => 'Pwoteje',
-'protect_change'    => 'Chanje pwoteksyon',
+'protect_change'    => 'Chanje pwoteksyon paj sa',
 'protectthispage'   => 'Pwoteje paj sa',
 'unprotect'         => 'Depwoteje',
 'unprotectthispage' => 'Depwoteje paj sa',
@@ -286,7 +287,7 @@ $messages = array(
 'restorelink'             => '{{PLURAL:$1|yon revizion efase|$1 revizion efase yo}}',
 'feedlinks'               => 'Nouri:',
 'feed-invalid'            => 'Souskripsyon tip nouri envalid.',
-'feed-unavailable'        => 'Sendikasyon nouri yo pa avalab nan {{SITENAME}}',
+'feed-unavailable'        => 'Flo sendikasyon yo pa disponib',
 'site-rss-feed'           => 'Flow RSS depi $1',
 'site-atom-feed'          => 'Flow Atom depi $1',
 'page-rss-feed'           => 'Flow RSS pou "$1"',
@@ -337,11 +338,11 @@ $1',
 Administratè a ki te fème l bay rezon sa a : $1',
 'missing-article'      => 'Bazdone an pa twouve tèks yon paj li te dwèt twouve toutbon; non li se « $1 » $2.
 
-Li sanble ke ou swiv yon lyen ki pa egziste ankò depi chanjman ki te fèt nan paj an oubyen istorik yon paj ki te efase.
+Li sanble ke ou swiv yon lyen ki pa egziste ankò depi chanjman ki te fèt nan paj sa oubyen istorik ou swiv yon paj ki te ja efase.
 
-Si rezon sa yo pa koresponn ak sityasyon ou an, ou gen dwa twouve yon erè nan lojisyèl nou an.
+Si rezon sa yo pa koresponn ak sityasyon ou an, ou gen dwa twouve kèk erè nan lojisyèl nou an.
 
-Souple, kontakte yon administratè, ba l adrès, lyen tout bagay pou li kapab twouve erè sa.',
+Souple, kontakte yon [[Special:ListUsers/sysop|administratè]], ba l adrès sa, lyen tout bagay pou li kapab twouve erè sa.',
 'missingarticle-rev'   => '(chanjman # : $1)',
 'missingarticle-diff'  => '(Diferans : $1, $2)',
 'readonly_lag'         => 'Bazdone a bloke otomatikman pandan lòt sèvè segondè yo ap travay pou bay lanmen nan sèvè prensipal an.',
@@ -373,7 +374,7 @@ Demann : $2',
 'protectedpagetext'    => 'Paj sa pwoteje pou anpeche tout modifikasyon nou ta kapab fè sou li. Gade paj diskisyon sou li pito.',
 'viewsourcetext'       => 'Ou kapab gade epitou modifye kontni atik sa a pou ou travay anlè li :',
 'protectedinterface'   => 'Paj sa ap bay tèks pou entèfas lojisyèl an e li pwoteje pou anpeche move itilizasyon nou ta kapab fè ak li.',
-'editinginterface'     => "'''Pòte atansyon :''' ou ap modifye yon paj ki itilize nan kreyasyon tèks entèfas lojisyèl an. Chanjman yo ap ritounen, li ap depann de kèk sityasyon, nan tout paj ke lòt itilizatè yo kapab wè tou. Pou tradiksyon yo, nap envite w itilize pwojè MediaWiki pou mesaj entènasyonal yo (tradiksyon) nan paj sa [http://translatewiki.net/wiki/Main_Page?setlang=fr Betawiki].",
+'editinginterface'     => "'''Pòte atansyon :''' ou ap modifye yon paj ki itilize nan kreyasyon tèks entèfas lojisyèl an. Chanjman yo ap ritounen, li ap depann de kèk sityasyon, nan tout paj ke lòt itilizatè yo kapab wè tou. Pou tradiksyon yo, nap envite w itilize pwojè MediaWiki pou mesaj entènasyonal yo (tradiksyon) nan paj sa [http://translatewiki.net/wiki/Main_Page?setlang=fr translatewiki.net].",
 'sqlhidden'            => '(Demann SQL an kache)',
 'cascadeprotected'     => 'Paj sa pwoteje kounye a paske l nan {{PLURAL:$1|paj ki douvan l|paj yo ki douvan l}}, paske {{PLURAL:$1|l te pwoteje|yo te pwoteje}} ak opsyon « pwoteksyon pou tout paj ki nan premye paj an - kaskad » aktive :
 $2',
@@ -384,17 +385,18 @@ $2',
 Rezon li bay yo se « ''$2'' ».",
 
 # Virus scanner
-'virus-badscanner'     => 'Move konfigirasyon : eskanè viris sa, nou pa konenn l : <i>$1</i>',
+'virus-badscanner'     => "Move konfigirasyon : eskanè viris sa, nou pa konenn l : ''$1''",
 'virus-scanfailed'     => 'Rechèch an pa ritounen pyès rezilta (kòd $1)',
 'virus-unknownscanner' => 'antiviris nou pa konnen :',
 
 # Login and logout pages
 'logouttitle'                => 'Dekoneksyon-Sòti',
-'logouttext'                 => "'''Monchè oubyen machè, ou dekonekte kounye a.'''<br />
-Ou mèt kontinye itilize {{SITENAME}} san ou konekte w, oubyen si ou rekonekte w ankò ak menm non an oubyen yon lòt.",
+'logouttext'                 => "'''Monchè oubyen machè, ou dekonekte kounye a.'''
+
+Ou mèt kontinye itilize {{SITENAME}} san ou pa bezwen konekte w, oubyen si ou [[Special:UserLogin|rekonekte]] w ankò ak menm non an oubyen yon lòt.",
 'welcomecreation'            => '== Byenvini, $1 ! ==
 
-Kont ou an kreye. Pa bliye pèsonalize l nan preferans ou an sou paj sa {{SITENAME}}.',
+Kont ou an kreye. Pa bliye pèsonalize l nan  [[Special:Preferences|preferans ou an sou paj sa {{SITENAME}}]].',
 'loginpagetitle'             => 'Koneksyon itilizatè',
 'yourname'                   => 'Non itilizatè ou an :',
 'yourpassword'               => 'Mopas ou an :',
@@ -405,7 +407,7 @@ Kont ou an kreye. Pa bliye pèsonalize l nan preferans ou an sou paj sa {{SITENA
 'loginproblem'               => '<b>Pwoblèm idantifikasyon nan sistèm an.</b><br />Tanpri, eseye ankò !',
 'login'                      => 'Idantifikasyon',
 'nav-login-createaccount'    => 'Kreye yon kont oubyen konekte ou',
-'loginprompt'                => 'Ou dwèt aksepte (aktive) koukiz (cookies) yopou ou kapab konekte nan {{SITENAME}}.',
+'loginprompt'                => 'Ou dwèt aksepte (aktive) koukiz (cookies) yopou ou kapab [[Special:UserLogin|konekte nan {{SITENAME}}]].',
 'userlogin'                  => 'Kreye yon kont oubyen konekte ou',
 'logout'                     => 'Dekonekte ou',
 'userlogout'                 => 'Dekoneksyon',
@@ -430,26 +432,26 @@ Kont ou an kreye. Pa bliye pèsonalize l nan preferans ou an sou paj sa {{SITENA
 'email'                      => 'Imèl',
 'prefs-help-realname'        => '(pa enpòtan) : si ou mete li, li ke posib pou nou ba ou rekonpans pou kèk kontrisyon ou yo.',
 'loginerror'                 => 'Erè nan idantifikasyon ou an',
-'prefs-help-email'           => '(pa nesesè) : li pèmèt lòt itilizatè yo kontakte w pa imèl (lyen an nan paj itilizatè ou yo); moun sa a pa kapab wè imèl ou an. Imèl sa sèvi tou pou voye mopas ou an lè li rive ou bliye l.',
+'prefs-help-email'           => 'Adrès imèl pa nesesè, men li ap pèmèt lòt itilizatè yo kontakte w pa imèl (lyen an nan paj itilizatè ou yo); moun sa a pa kapab wè imèl ou an. Imèl sa sèvi tou pou voye mopas ou an lè li rive ou bliye l.',
 'prefs-help-email-required'  => 'Nou bezwen ou bay yon adrès imèl. Souple, chache yonn.',
 'nocookiesnew'               => "Kont itilizatè a kreye, men ou pa konekte. {{SITENAME}} ap itilize koukiz (''cookies'') pou konekte l.Li sanble ou dezaktive fonksyon sa. Tanpri, aktive fonksyon sa epi rekonekte ou ak menm non epi mopas ou yo.",
 'nocookieslogin'             => "{{SITENAME}} ap itilize koukiz (''cookies'') pou li kapab konekte kò l. Men li sanble ou dezaktive l; tanpri, aktive fonksyon sa epi rekonekte w.",
 'noname'                     => 'Ou pa bay sistèm an yon non itilizatè ki bon.',
 'loginsuccesstitle'          => 'Ou byen idantifye nan sistèm an',
 'loginsuccess'               => 'Ou konekte kounye a nan {{SITENAME}} epi idantifyan sa a « $1 ».',
-'nosuchuser'                 => 'Itilizatè « $1 » pa egziste.
-Byen gade ke ou byen ekri non ou, oubyen kreye yon nouvo kont.',
+'nosuchuser'                 => 'Itilizatè "$1" sa pa egziste.
+Byen gade ke ou byen ekri non ou, oubyen [[Special:UserLogin/signup|kreye yon nouvo kont sou non ou]].',
 'nosuchusershort'            => 'Pa genyen kontribitè ak non « <nowiki>$1</nowiki> » sa a. Byen gade lòtograf ou an.',
 'nouserspecified'            => 'Ou dwèt mete non itilizatè ou an.',
 'wrongpassword'              => 'Mopas an pa korèk. Eseye ankò.',
 'wrongpasswordempty'         => 'Ou pa antre mopas ou an. Eseye ankò.',
 'passwordtooshort'           => 'Mopas ou an two kout. Li dwèt kontni $1 karaktè{{PLURAL:$1||}} oubyen plis epitou li dwèt diferan de non itilizatè ou an.',
-'mailmypassword'             => 'Voye mwen yon nouvo mopas',
+'mailmypassword'             => 'Voye mwen yon nouvo mopas pa imèl',
 'passwordremindertitle'      => 'Nouvo mopas tanporè, li pap dire (yon kout tan) pou pajwèb sa a {{SITENAME}}',
-'passwordremindertext'       => 'Kèk moun (ou menm?) ki genyen adrès IP sa a $1 mande ke nou voye ou yon nouvo mopas pou {{SITENAME}} ($4).
-Mopas itilizatè « $2 » se kounye a « $3 ».
+'passwordremindertext'       => 'Kèk moun (ou menm oubyen yon moun ki genyen adrès IP sa a $1) mande ke nou voye ou yon nouvo mopas pou {{SITENAME}} ($4).
+Mopas itilizatè "$2" se kounye a "$3".
 
-Nou konseye ou konekte ou epi modifye mopas sa a rapidman.
+Nou konseye ou konekte ou epi modifye mopas sa a rapidman, si posib kounye a.
 
 Si se pa ou menm ki mande modifye mopas ou an oubyen si ou konnen mopas ou an e ke ou pa ta vle modifye li, pa konsidere mesaj sa a epi kontinye ak mopas ou a.',
 'noemail'                    => 'Pa genyen pyès adrès imèl ki anrejistre pou itilizatè sa a « $1 ».',
@@ -462,9 +464,9 @@ Anvan yon lòt imèl voye, swiv komand ki nan mesaj imèl an epi konfime ke kont
 'acct_creation_throttle_hit' => 'Eskize nou, ou ja kreye {{PLURAL:$1|$1 kont|$1 kont}}. Ou pa kapab kreye dòt ankò.',
 'emailauthenticated'         => 'Adrès imèl ou an otantifye nan sistèm nou an depi $1.',
 'emailnotauthenticated'      => '<strong>Nou pa kapab idantifye</strong> adrès imèl ou an. Pyès mesaj imèl ke voyen pou chak fonksyon sa yo.',
-'noemailprefs'               => '<strong>Ou pa bay pyès adrès imèl nan mesaj preferans ou an,</strong> fonksyon sa yo pe ke disponib.',
+'noemailprefs'               => 'Ou pa bay pyès adrès imèl nan mesaj preferans ou an, fonksyon sa yo pe ke disponib.',
 'emailconfirmlink'           => 'Konfime adrès imèl ou an',
-'invalidemailaddress'        => 'Nou pa kapab aksepte adrès imèl sa paske li sanble fòma l pa bon ditou. Tanpri, mete yon adrès ki bon oubyen pa ranpli seksyon sa.',
+'invalidemailaddress'        => 'Nou pa kapab aksepte adrès imèl sa paske li sanble fòma l pa bon ditou. Tanpri, mete yon adrès ki nan yon bon fòma oubyen pa ranpli seksyon sa.',
 'accountcreated'             => 'Kont ou an kreye',
 'accountcreatedtext'         => 'Kont itilizatè $1 an kreye.',
 'createaccount-title'        => 'Kreyasyon yon kont pou {{SITENAME}}',
@@ -480,7 +482,7 @@ Pa pòte atansyon pou mesaj sa si kont sa kreye pa erè.',
 'resetpass_submit'        => 'Chanje mopas epitou anrejistre',
 'resetpass_success'       => 'Nou chanje mopas ou an ak siksè ! Nap anrejistre ou kounye a...',
 'resetpass_bad_temporary' => 'Mopas tanporè sa pa bon ditou. Li sanble ou deja chanje mopas ou an oubyen ou mande yon lòt mopas tanporè.',
-'resetpass_forbidden'     => 'Nou pa kapab chanje mopas yo nan wiki sa',
+'resetpass_forbidden'     => 'Nou pa kapab chanje mopas yo nan sistèm sa',
 'resetpass_missing'       => 'Ou pa bay pyès done',
 
 # Edit page toolbar
@@ -509,9 +511,9 @@ Pa pòte atansyon pou mesaj sa si kont sa kreye pa erè.',
 'minoredit'                        => 'Modifikasyon sa a pa enpòtan',
 'watchthis'                        => 'Swiv paj sa a',
 'savearticle'                      => 'Anrejistre',
-'preview'                          => 'Previzyalize (kout zye)',
-'showpreview'                      => 'Previzyalizasyon',
-'showlivepreview'                  => 'Kout zye rapid, voye zye rapid',
+'preview'                          => 'Gade pou wè',
+'showpreview'                      => 'Gade pou wè',
+'showlivepreview'                  => 'Gade pou wè (Kout zye rapid)',
 'showdiff'                         => 'Montre chanjman yo',
 'anoneditwarning'                  => "'''Pòte atansyon :''' ou pa idantifye nan sistèm an. Adrès IP ou a ap anrejistre nan istorik paj sa a.",
 'missingsummary'                   => "'''Souple :''' ou poko bay rezimz modifikasyon ou fè an
@@ -524,13 +526,15 @@ Si ou klike sou \"Pibliye\", edisyon ou an pap genyen yon tit.",
 'blockedtitle'                     => 'itilizatè a bloke.',
 'blockedtext'                      => "<big>'''Kont itilizatè ou an (oubyen adrès IP ou an) bloke.'''</big>
 
-Blokaj an fèt pa $1 pou rezon sa : ''$2''.
+Blokaj an fèt pa $1.
+Rezon li bay se : ''$2''.
 
-Ou mèt kontakte $1 oubyen yon lòt [[{{MediaWiki:Grouppage-sysop}}|administratè]] pou diskite plis. Ou pa kapab itilize fonksyon  « Voye yon imèl ba itilizatè sa a » eksepte si ou mete yon adrès imèl nan paj  [[Special:Preferences|preferans ou an]]. Adrès IP ou an kounye a se $3 e idantifyan blokaj ou an se #$5. Mete souple referans adrès sa a nan demann ou yo.
 
 * Komansman blokaj an : $8
 * Dat pou blokaj an fini : $6
-* Kont bloke a : $7.",
+* Kont bloke a : $7.
+
+Ou mèt kontakte $1 oubyen yon lòt [[{{MediaWiki:Grouppage-sysop}}|administratè]] pou diskite plis. Ou pa kapab itilize fonksyon  « Voye yon imèl ba itilizatè sa a » eksepte si ou mete yon adrès imèl nan paj  [[Special:Preferences|preferans ou an]]. Adrès IP ou an kounye a se $3 e idantifyan blokaj ou an se #$5. Mete souple referans adrès sa a nan demann ou yo.",
 'autoblockedtext'                  => 'Adrès IP ou an bloke otomatikman pa yon lòt itilizatè, li menm men bloke pa l pa $1.
 
 Rezon bagay sa yo :
@@ -539,16 +543,17 @@ Rezon bagay sa yo :
 
 * Komansman blokaj an : $8
 * Tan li pral fini : $6
+* Moun ki te bloke a : $7
 
 Ou mèt kontakte $1 oubyen yonn nan [[{{MediaWiki:Grouppage-sysop}}|administratè yo]] pou diskite sityasyon blokaj sa.
 
 Si toutfwa ou te bay yon adrès imèl ki te bon nan preferans ou yo ( [[Special:Preferences|préférences]]) epitou ou kapab itilize l, ou mèt itilize fonksyon "voye yon mesaj ba itilizatè sa" pou ou kontakte administratè a.
 
-Idantifyan, non ou an nan kilès ou bloke a se $5. Ou dwèt mete enfòmasyon sa yo nan demann ou an.',
+Adrès IP ou an kounye a se $3. Idantifyan, non ou an nan kilès ou bloke a se $5. Ou dwèt mete enfòmasyon sa yo nan demann ou an.',
 'blockednoreason'                  => 'Li pa bay pyès rezon pou aksyon sa',
 'blockedoriginalsource'            => "Wè kòd sous '''$1''' pli ba :",
 'blockededitsource'                => "Kontni '''modifikasyon ou yo''' nan '''$1''' ekri pli ba :",
-'whitelistedittitle'               => 'Ou dwèt konekte w pou ou kapab edite ak modifye atik sa, kontni sa',
+'whitelistedittitle'               => 'Ou dwèt konekte w pou ou kapab edite epi modifye tèks sa, kontni sa',
 'whitelistedittext'                => 'Ou dwèt gen fonksyon sa $1 pou ou kapab genyen dwa pou modifye kontni sa.',
 'confirmedittitle'                 => 'Adrès imèl ou an dwèt valide pou ou kapab modifye kontni sa',
 'confirmedittext'                  => 'Ou dwèt konfime adrès imèl ou an anvan ou modifye paj {{SITENAME}} sa. Antre epi valide adrès elektwonik ou an ak èd ou kapab twouve nan paj sa [[Special:Preferences|preferans]].',
@@ -570,30 +575,34 @@ Si se paske ou komèt yon erè ke ou ap twouve ou nan paj sa a, klike anlè bout
 'userpage-userdoesnotexist'        => 'Kont itilizatè « $1 » sa pa anrejistre. Verifye toutbon ke ou vle kreye paj sa.',
 'clearyourcache'                   => "'''Note bagay sa:''' depi ou pibliye paj sa, ou dwèt fòse chajman, rafrechi paj an; ou mèt bliye kontni kach sistèm bwozè (navigatè entènèt ou an) kounye a pou ou kapab wè chanjman yo : '''Mozilla / Firefox / Konqueror / Safari :''' mentni touch ''lèt kapital'' ak klike sou bouton ''Rafrechi/Aktyalize'' oubyen peze ''Maj-Ctrl-R'' (''Maj-Cmd-R'' sou sistèm Apple Mac) ; '''Internet Explorer / Opera :''' mentni touch ''Ctrl'' pandan ou ap prese bouton ''Rafrechi/Aktyalize'' oubyen peze ''Ctrl-F5''.",
 'usercssjsyoucanpreview'           => "'''Bagay ki ap sèvi w :''' Itilize bouton « Voye kout zye » pou teste nouvo fèy CSS/JS anvan ou anrejistre l.",
-'usercsspreview'                   => "'''Sonje ke ou ap voye yon kout zye sou sa w ekri nan fèy CSS sa, li poko anrejistre !'''",
+'usercsspreview'                   => "'''Sonje ke ou ap voye yon kout zye sou sa w ekri nan fèy CSS sa.'''
+''Li poko anrejistre !'''",
 'userjspreview'                    => "'''Sonje ke ou ap voye kout zye sou fèy JavaScript ou ekri an, li poko anrejistre !'''",
 'userinvalidcssjstitle'            => "'''Pòte atnasyon :''' estil \"\$1\" sa pa egziste. Raple ou ke paj pèsonèl ou yo ak ekstansyon .css epi .js ap itilize tit/sijè nan lèt miniskil, pa egzanp  {{ns:user}}:Foo/monobook.css se pa {{ns:user}}:Foo/Monobook.css.",
 'updated'                          => '(Li gen dènye vèsyon sou li)',
-'note'                             => '<strong>Nòt :</strong>',
-'previewnote'                      => '<strong>Atansyon, tèks sa a se yon previzyalizasyon, li poko anrejistre !</strong>',
+'note'                             => "'''Nòt :'''",
+'previewnote'                      => "'''Atansyon, tèks sa a se yon previzyalizasyon, li poko anrejistre !'''",
 'previewconflict'                  => 'Kout zye sa ap montre tèks ki nan bwat anwo pou ou wè modifikasyon ou an jan l ap parèt lè li ke pibliye.',
-'session_fail_preview'             => '<strong>Ekskize nou ! Nou pa kapab anrejistre modifikasyon ou an paske nou sanble pèdi kèk enfòmasyon koneksyon sou kont ou an, sou sesyon ou an. Eseye yon fwa ankò. Si li pa mache, dekonekte ou, apre ou ap konekte ou ankò.</strong>',
-'session_fail_preview_html'        => "<strong>Eskize nou ! Nou pa kapab anrejistre modifikasyon ou an paske nou pèdi yon pati nan enfomasyon sou sesyon ou an.</strong>
+'session_fail_preview'             => "'''Ekskize nou ! Nou pa kapab anrejistre modifikasyon ou an paske nou sanble pèdi kèk enfòmasyon koneksyon sou kont ou an, sou sesyon ou an. Eseye yon fwa ankò. Si li pa mache, dekonekte ou, apre ou ap konekte ou ankò.'''",
+'session_fail_preview_html'        => "'''Eskize nou ! Nou pa kapab anrejistre modifikasyon ou an paske nou pèdi yon pati nan enfomasyon sou sesyon ou an.'''
 
 ''HTML san foma, jan l ye a aktive nan wiki sa {{SITENAME}} , bouton pou gade sa lap bay an kache pou anpeche atak pa JavaScript.''
 
-<strong>Si ou panse ke modifikasyon ou an bon toutbon, ou mèt eseye anko. Si sistèm an pa aksepte l fwa la s, dekonekte w, rekonekte w anko.</strong>",
+'''Si ou panse ke modifikasyon ou an bon toutbon, ou mèt eseye anko. Si sistèm an pa aksepte l fwa la s, dekonekte w, rekonekte w anko.'''",
+'token_suffix_mismatch'            => "'''Modifikasyon ou fè an sanble pa aksepte paske navigatè, bwozè ou a melanje karaktè ponktyasyon yo nan idantifyan pou tèks sa. Modofikasyon pa aksepte pou li pa jenere kèk pwoblèm nan tèks ki te nan paj an. Pwoblèm sa kapab rive lè ou ap pase pa yon sèvè pwoksi (proxy).'''",
 'editing'                          => 'Modifikasyon pou $1',
 'editingsection'                   => 'Modifikasyon pou $1 (seksyon)',
 'editingcomment'                   => 'Modifikasyon pou $1 (komantè)',
 'editconflict'                     => 'Batay ant modifikasyon : $1',
+'explainconflict'                  => '<b>Paj sa te anrejistre apre ou te komanse modifye l.Zòn modifikasyon an nan pati ki sitye anwo, jan l anrejistre nan sistèm nou an kounye a. Modifikasyon ou pòte yo ap parèt anba. Ou dwèt fè modifikasyon ou fè yo nan tèks ki te deja anrejistre a. Sèl tèks ki nan pati siperyè a, anwo ke ap anrejistre toutbon.</b><br />',
 'yourtext'                         => 'Tèks ou an',
 'storedversion'                    => 'Vèsyon ki anrejistre',
 'yourdiff'                         => 'Diferans',
-'copyrightwarning'                 => 'Souple, raple ou ke tout piblikasyon ki fèt nan {{SITENAME}} piblye anba kontra $2 an (wè $1 pou konnen plis). Si ou pa ta vle ke sa ou ekri pataje oubyen  modifye, ou pa dwèt soumèt yo isit.<br />
-Ou ap pwomèt tou ke sa ou ap ekri a se ou menm menm ki ekri li oubyen ke ou kopye li de yon sous ki nan domèn piblik, ou byen you sous ki lib. <strong>PA ITILIZE TRAVAY MOUN KI PA BAY OTORIZASYON PA LI TOUTBON !</strong>',
-'longpagewarning'                  => "'''AVÈTISMAN : paj sa a genyen yon gwosè ki pase $1 kio ;
-Kèk bwozè (firefox,ie,opera,safari...) pa kapab afiche byen byen modifikasyon ki parèt nan paj ki genyen plis oubyen près 32 Ko. Oumèt dekoupe paj an nan 2 mòso oubyen ak seksyon pli piti.'''",
+'copyrightwarning'                 => "Souple, raple ou ke tout piblikasyon ki fèt nan {{SITENAME}} piblye anba kontra $2 an (wè $1 pou konnen plis). Si ou pa ta vle ke sa ou ekri pataje oubyen  modifye, ou pa dwèt soumèt yo isit.<br />
+Ou ap pwomèt tou ke sa ou ap ekri a se ou menm menm ki ekri li oubyen ke ou kopye li de yon sous ki nan domèn piblik, ou byen you sous ki lib. '''PA ITILIZE TRAVAY MOUN KI PA BAY OTORIZASYON PA LI TOUTBON !'''",
+'longpagewarning'                  => "'''AVÈTISMAN : paj sa a genyen yon gwosè ki pase $1 Kio ;
+Kèk bwozè (firefox,ie,opera,safari...) pa kapab afiche byen byen modifikasyon ki parèt nan paj ki genyen plis oubyen près 32 Kio. Oumèt dekoupe paj an nan 2 mòso oubyen ak seksyon pli piti.'''",
+'longpageerror'                    => "'''ERÈ : Tèks ou anrejistre a ap fè $1 Ko, tay sa a depase kapasite limit nou kapab aksepte kounye a: $2 Ko. Nou pa kapab anrejistre tèks sa. Eseye ritounen nan paj ou te ye anvan pou kopye modifikasyon ou yo.'''",
 'protectedpagewarning'             => "'''Pote atansyon : paj sa a pwoteje.
 Sèl itilizatè yo ki genyen estati administratè kapab modifye l.'''",
 'templatesused'                    => 'Modèl ki itilize nan paj sa a :',
@@ -652,7 +661,7 @@ Mande ou byen si ou ap byen fè kreye li ankò toutbon (gade jounal paj sa a pou
 'rev-delundel'              => 'montre/kache',
 'revisiondelete'            => 'Efase/Restore, remèt vèsyon sa',
 'revdelete-nooldid-title'   => 'Pa genyen sib, destinasyon pou revizyon sa',
-'revdelete-selected'        => "{{PLURAL:$2|Vèsyon ou seleksyone|Vèsyon ou seleksyone yo}} de '''$1''' :",
+'revdelete-selected'        => "'''{{PLURAL:$2|Vèsyon ou seleksyone|Vèsyon ou seleksyone yo}} de $1 :'''",
 'revdelete-legend'          => 'Mete restriksyon nan vizibilite yo :',
 'revdelete-hide-text'       => 'Kache tèks anba vèsyon sa',
 'revdelete-hide-name'       => 'Kache aksyon an ak sib li',
@@ -729,7 +738,7 @@ Mande ou byen si ou ap byen fè kreye li ankò toutbon (gade jounal paj sa a pou
 'recentchangeslinked-summary'  => "Paj espesyal sa a ap montre dènye chanjman nan paj ki genyen lyen sou yo. Paj yo ki nan [[Special:Watchlist|lis swivi]] ou an ap ekri '''fonse'''",
 
 # Upload
-'upload'        => 'Chaje fichye an',
+'upload'        => 'Chaje yon fichye',
 'uploadbtn'     => 'Chaje fichye a',
 'uploadlogpage' => 'Istorik chajman pou fichye miltimedya',
 'uploadedimage' => 'chaje « [[$1]] »',
@@ -750,8 +759,8 @@ Mande ou byen si ou ap byen fè kreye li ankò toutbon (gade jounal paj sa a pou
 'linkstoimage'              => '{{PLURAL:$1|Paj ki ap swiv an|Paj yo ki ap swiv}} genyen imaj sa a :',
 'nolinkstoimage'            => 'Pyès paj pa genyen imaj sa a.',
 'sharedupload'              => 'Fichye sa a pataje e li kapab itilize pa lòt pwojè yo.',
-'noimage'                   => 'Pa genyen pyès fichye ki genyen non sa a, ou mèt $1.',
-'noimage-linktext'          => 'chaje li',
+'noimage'                   => 'Pa genyen pyès fichye ki genyen non sa a, men ou mèt $1.',
+'noimage-linktext'          => 'chaje yonn',
 'uploadnewversion-linktext' => 'Kopye yon nouvo vèsyon pou fichye sa a',
 
 # MIME search
@@ -811,6 +820,8 @@ Mande ou byen si ou ap byen fè kreye li ankò toutbon (gade jounal paj sa a pou
 'ancientpages'            => 'Atik ki pli vye yo',
 'move'                    => 'Renonmen',
 'movethispage'            => 'Renonmen paj an (bay yon lòt non)',
+'pager-newer-n'           => '{{PLURAL:$1|ki fèk fèt|$1 ki fèk fèt yo}}',
+'pager-older-n'           => '{{PLURAL:$1|pi vye|$1 pi vye yo}}',
 
 # Book sources
 'booksources' => 'Ouvraj referans yo',
@@ -848,11 +859,11 @@ Mande ou byen si ou ap byen fè kreye li ankò toutbon (gade jounal paj sa a pou
 'addedwatchtext'       => 'Paj « <nowiki>$1</nowiki> » an byen ajoute nan [[Special:Watchlist|lis swivi ou an]].
 Pwochen modifikasyon nan paj sa a ke make na lis swivi ou an, paj an ke parèt <b>fonse </b> nan [[Special:RecentChanges|chanjman ki fèk fèt]] pou ou kapab wè yo pli fasilman.',
 'removedwatch'         => 'Retire nan lis swivi',
-'removedwatchtext'     => 'Paj « [[:$1]] » byen retire nan lis swivi ou an.',
+'removedwatchtext'     => 'Paj "[[:$1]]" byen retire nan [[Special:Watchlist|lis swivi ou an]].',
 'watch'                => 'Swiv',
 'watchthispage'        => 'Swiv paj sa a',
 'unwatch'              => 'Pa swiv ankò',
-'watchlist-details'    => 'Ou ap swiv <b>$1</b> {{PLURAL:$1|paj|paj}}, san konte paj diskisyon yo.',
+'watchlist-details'    => 'Ou ap swiv {{PLURAL:$1|paj|paj}}, san konte paj diskisyon yo.',
 'wlshowlast'           => 'Montre dènye $1 zè yo, dènye $2 jou yo, oubyen $3.',
 'watchlist-hide-bots'  => 'Kache kontribisyon wobo yo (Bòt)',
 'watchlist-hide-own'   => 'kache modifikasyon mwen yo',
@@ -882,9 +893,9 @@ Gade $2 pou wè yon lis efasman resan.',
 'protect_expiry_invalid'      => 'Dat ou mete a pou li ekspire pa bon',
 'protect_expiry_old'          => 'dat ekspirasyon an ja pase;',
 'protect-unchain'             => 'Debloàke pèmisyon yo pou renonmen, deplase',
-'protect-text'                => 'Ou mèt konsilte epi modifye nivo pwoteksyon paj sa a <strong><nowiki>$1</nowiki></strong>.',
-'protect-locked-access'       => 'Ou pa genyen dwa ki ap pèmèt ou modifye pwoteksyon paj sa a.
-Men reglaj pou paj <strong>$1</strong> an kounye a:',
+'protect-text'                => "Ou mèt konsilte epi modifye nivo pwoteksyon paj sa a '''<nowiki>$1</nowiki>'''.",
+'protect-locked-access'       => "Ou pa genyen dwa ki ap pèmèt ou modifye pwoteksyon paj sa a.
+Men reglaj pou paj '''$1''' an kounye a:",
 'protect-cascadeon'           => 'paj sa a pwoteje kounye a paske li nan {{PLURAL:$1|paj swivan|paj swivan yo}}, {{PLURAL:$1|ki li menm menm te pwoteje|ki yo menm menm te pwoteje}} epi opsyon pwoteksyon "enbrike" aktif. Ou mèt chanje nivo pwoteksyon paj sa a san ke li modifye pwoteksyon enbrike an.',
 'protect-default'             => '(pa genyen pwoteksyon)',
 'protect-fallback'            => 'Li bezwen pèmisyon "$1"',
@@ -913,12 +924,15 @@ Men reglaj pou paj <strong>$1</strong> an kounye a:',
 'month'         => 'depi mwa (ak mwa anvan yo) :',
 'year'          => 'Depi lane (ak anvan tou) :',
 
+'sp-contributions-newbies'     => 'Montre sèlman kontribisyon nouvo itilizatè yo',
 'sp-contributions-newbies-sub' => 'Lis kontribisyon pou nouvo itilizatè yo. Paj ki efase pe ke ap montre.',
 'sp-contributions-blocklog'    => 'jounal blokaj yo',
+'sp-contributions-search'      => 'Chache kontribisyon yo',
+'sp-contributions-username'    => 'Adrès IP oubyen non itilizatè:',
 
 # What links here
 'whatlinkshere'       => 'Paj ki lye nan paj sa a',
-'whatlinkshere-title' => 'Paj ki genyen lyen ki ap mennen nan $1',
+'whatlinkshere-title' => 'Paj ki genyen lyen ki ap mennen nan "$1"',
 'linklistsub'         => '(Lis lyen yo)',
 'linkshere'           => 'Paj yo ki anba ap mene nan <b>[[:$1]]</b> :',
 'nolinkshere'         => 'Pyès paj genyen lyen pou paj sa a <b>[[:$1]]</b>.',
@@ -931,7 +945,7 @@ Men reglaj pou paj <strong>$1</strong> an kounye a:',
 # Block/unblock
 'blockip'       => 'Bloke yon adrès IP oubyen yon itilizatè',
 'ipboptions'    => '2 zè:2 hours,1 jou:1 day,3 jou:3 days,1 semèn:1 week,2 semèn:2 weeks,1 mwa:1 month,3 mwa:3 months,6 mwa:6 months,1 lane:1 year,ki pap janm fini:infinite', # display1:time1,display2:time2,...
-'ipblocklist'   => 'Lis itilizatè yo ki bloke',
+'ipblocklist'   => 'Lis IP itilizatè yo ki bloke',
 'blocklink'     => 'Bloke',
 'unblocklink'   => 'Debloke',
 'contribslink'  => 'Kontribisyon yo',
@@ -943,11 +957,11 @@ Men reglaj pou paj <strong>$1</strong> an kounye a:',
 'movepagetext'     => "Itilize fòmilè a pou renonmen yon paj, li ap deplase tout istorik li nan nouvo non an.
 Tit anvan ke yon paj redireksyon pou ale nan nouvo paj an. Lyen vè tit anvan an pe ke chanje;
 souple, gade byen ke deplasman sa a pa kreye yon redireksyon de fwa.
-Ou dwèt asire ou ke lyen yon korèk, ke yo genyen yon bon destinasyon sou yo.
+Ou dwèt asire ou ke lyen yo korèk, ke yo genyen yon bon destinasyon sou yo nan [[Special:DoubleRedirects|de fwa]] oubyen [[Special:BrokenRedirects|redireksyon ki pa bon]]..
 
 Yon paj pe ke deplase si nouvo paj an egziste deja, eksepte si paj sa vid ou byen ke li menm se yon lèot redireksyon (fo pa li genyen yon istorik na li tou).
 
-'''Atansyon !'''
+'''Pòte Atansyon !'''
 Sa ou ap fè a kapab pwovoke yon gwo chanjman nan òganizasyon lòt paj yo.
 Byen gade ke ou mezire tout konsekans aksyon ke ou ap fè a.",
 'movepagetalktext' => 'Paj diskisyon ki asosye, si li egziste, ke otomatikman renonmen tou, <b>eksepte: </b>
@@ -1028,7 +1042,7 @@ Nan pozisyon sa a, ou ke dwèt renonmen oubyen fizyone ou menm menm paj an si ou
 
 # Browsing diffs
 'previousdiff' => '← Diferans anvan',
-'nextdiff'     => 'Diferans swivan →',
+'nextdiff'     => 'Diferans apre →',
 
 # Media information
 'file-info-size'       => '($1 × $2 piksèl, lajè fichye a : $3, tip MIME li ye : $4)',
@@ -1061,7 +1075,7 @@ Nenpòt lòt lyen nan menm lign nan konsidere kòm yon eksèpsyon, i.e. paj kote
 
 # External editor support
 'edit-externally'      => 'Modifye fichye sa a epi yon aplikasyon pa ou (ki pa nan sistèm an, sou machin ou pa egzanp).',
-'edit-externally-help' => 'Wè [http://www.mediawiki.org/wiki/Manual:External_editors komannd ak enstriksyon yo] pou plis enfòmasyon oubyen pou konnen plis.',
+'edit-externally-help' => '(Gade [http://www.mediawiki.org/wiki/Manual:External_editors komannd ak enstriksyon yo] pou plis enfòmasyon oubyen pou konnen plis)',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'tout',
