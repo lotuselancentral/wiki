@@ -9,6 +9,7 @@
  *
  * @author Flrn
  * @author Hanberke
+ * @author Kaganer
  * @author Runningfridgesrule
  * @author The Evil IP address
  */
@@ -63,9 +64,9 @@ $messages = array(
 'tog-enotifminoredits'        => 'Sahypalardaky ujypsyzja özgerdişlerde-de maňa e-poçta iber',
 'tog-enotifrevealaddr'        => 'E-poçta adresimi bildiriş e-poçtalarynda görkez.',
 'tog-shownumberswatching'     => 'Gözegçilikde saklaýan ulanyjylaryň sanyny görkez',
-'tog-oldsig'                  => 'Bar bolan goluň deslapky syny:',
+'tog-oldsig'                  => 'Bar bolan gol:',
 'tog-fancysig'                => 'Gola wikitekst hökmünde çemeleş (awtomatik çykgytsyz)',
-'tog-externaleditor'          => 'Başga programmalar bilen redaktirle (diňe hünärmenler üçin, kompýuteriňizde ýörite sazlamalar talap edilýär)',
+'tog-externaleditor'          => 'Gaýybana daşarky redaktor ulan (diňe hünärmenler üçin, kompýuteriňizde ýörite sazlamalar talap edilýär. [http://www.mediawiki.org/wiki/Manual:External_editors Jikme-jik.])',
 'tog-externaldiff'            => 'Başga programmalaryň üsti bilen deňeşdir (diňe hünärmenler üçin, kompýuteriňizde ýörite sazlamalar talap edilýär)',
 'tog-showjumplinks'           => '"Git" çykgydyny işlet',
 'tog-uselivepreview'          => 'Gönümel deslapky syny ulan (JavaScript) (Synag edilýär)',
@@ -639,7 +640,7 @@ Bu sahypany döretmek/redaktirlemek isleýän bolsaňyz, onda esewan boluň.',
 'blocked-notice-logextract'        => 'Bu ulanyjy şu wagt blokirlengi.
 Salgylanmak üçin iň soňky blokirleme gündeligi ýazgysy aşakda berilýär:',
 'clearyourcache'                   => "'''Bellik:''' Ýazdyranyňyzdan soň, üýtgeşmeleri görmek üçin brauzeriňiziň keşini arassalaň:
-'''Mozilla / Firefox / Safari:''' ''Shift''-e basyp, ''Reload''-a tyklaň ýa-da ýa ''Ctrl-F5''-e ýa-da ''Ctrl-R''-a basyň (Macintosh üçin ''Command-R'');
+'''Mozilla / Firefox / Safari:''' ''Shift''-e basyp, ''Reload''-a tyklaň ýa-da ýa ''Ctrl-F5''-e ýa-da ''Ctrl-R''-a basyň (Mac üçin ''Command-R'');
 '''Konqueror:''' ''Reload''-a tyklaň ýa-da ''F5''-e basyň;
 '''Opera:''' ''Gurallar → Ileri tutmalar''dan keşi arassalaň;
 '''Internet Explorer:''' ''Ctrl''-a basyp, ''Refresh''-i tyklaň ýa-da ''Ctrl-F5''-e basyň.",
@@ -1994,11 +1995,11 @@ sessiýaňyzyň birugsat ele geçirilmezligi üçin bu iş goýbolsun edildi.
 
 # Protect
 'protectlogpage'              => 'Gorag gündeligi',
-'protectlogtext'              => 'Aşakdaky sanaw gulplanan we açylan sahypalaryň sanawydyr.
-Häzirki wagtda gorag astynda duran sahypalaryň sanawy üçin [[Special:ProtectedPages|goragly sahypa sanawyna]] serediň.',
+'protectlogtext'              => 'Aşakdaky sanaw sahypa goraglaryndaky üýtgeşmeleriň sanawydyr.
+Häzirki wagtda hereket edýän sahypa goraglary üçin [[Special:ProtectedPages|goragly sahypa sanawyna]] serediň.',
 'protectedarticle'            => 'gorag astyna aldy: "[[$1]]"',
 'modifiedarticleprotection'   => 'gorag derejesini üýtgetdi: "[[$1]]"',
-'unprotectedarticle'          => 'goragyny aýyrdy: "[[$1]]"',
+'unprotectedarticle'          => 'goragy aýryldy: "[[$1]]"',
 'movedarticleprotection'      => 'gorag sazlamalaryny "[[$2]]" sahypasyndan "[[$1]]" sahypasyna geçirdi',
 'protect-title'               => '"$1" üçin gorag derejesini üýtget',
 'prot_1movedto2'              => '[[$1]] sahypasy [[$2]] sahypasyna göçürildi',
@@ -2208,7 +2209,7 @@ Aşakda blokirlemäniň takyk sebäbini ýazyň (meselem: wandalizm eden sahypal
 'ipusubmit'                       => 'Bu blokirlemäni aýyr',
 'unblocked'                       => '[[User:$1|$1]] - blokirlenmesi aýyryldy',
 'unblocked-id'                    => '$1 blokirlemesi aýyryldy',
-'ipblocklist'                     => 'Blokirlenen IP adresleri we ulanyjy atlary',
+'ipblocklist'                     => 'Blokirlenen ulanyjylar',
 'ipblocklist-legend'              => 'Blokirlenen ulanyjy gözle',
 'ipblocklist-username'            => 'Ulanyjy ady ýa-da IP adresi:',
 'ipblocklist-sh-userblocks'       => 'hasap blokirlemelerini $1',
@@ -2441,7 +2442,7 @@ Wersiýalaryň seneleri we awtorlaryň atlary saklanyljakdyr.
 'import-interwiki-namespace' => 'Niýetlenilýän at giňişligi:',
 'import-upload-filename'     => 'Faýlyň ady:',
 'import-comment'             => 'Teswir:',
-'importtext'                 => 'Faýly çeşme wikiden [[Special:Export|eksportirleme funksiýasyny]] ulanmak arkaly eksportirlemegiňizi haýyş edýäris.
+'importtext'                 => 'Faýly düýp wikiden [[Special:Export|eksportirleme funksiýasyny]] ulanmak arkaly eksportirläň.
 Kompýuteriňize ýazdyryň we şu ýere ýükläň.',
 'importstart'                => 'Sahypalar importirlenýär...',
 'import-revision-count'      => '$1 {{PLURAL:$1|wersiýa|wersiýa}}',
@@ -2493,7 +2494,7 @@ Kompýuteriňize ýazdyryň we şu ýere ýükläň.',
 Onuň çeşmesini görüp bilersiňiz',
 'tooltip-ca-history'              => 'Bu sahypanyň ozalky wersiýalary',
 'tooltip-ca-protect'              => 'Sahypany goraga al',
-'tooltip-ca-unprotect'            => 'Sahypanyň goragyny aýyr',
+'tooltip-ca-unprotect'            => 'Bu sahypanyň goragyny üýtget',
 'tooltip-ca-delete'               => 'Sahypany öçür',
 'tooltip-ca-undelete'             => 'Bu sahypadaky özgerdişleri öçürilmänkäki ýagdaýyna yzyna dikelt',
 'tooltip-ca-move'                 => 'Sahypanyň adyny üýtget',
@@ -2637,7 +2638,7 @@ $1',
 Ony işletseňiz iş ulgamyňyza howp astyna salmagyňyz mümkin.",
 'imagemaxsize'         => "Surat ölçeginiň çägi:<br />''(faýl düşündiriş sahypalary üçin)''",
 'thumbsize'            => 'Miniatýura ölçegi:',
-'widthheightpage'      => '$1×$2, $3 {{PLURAL:$3|sahypa|sahypa}}',
+'widthheightpage'      => '$1 × $2, $3 {{PLURAL:$3|sahypa|sahypa}}',
 'file-info'            => 'faýl ölçegi: $1, MIME tipi: $2',
 'file-info-size'       => '$1 × $2 piksel, faýlyň ölçegi: $3, MIME tipli: $4',
 'file-nohires'         => '<small>Wersiýanyň mundan uly ölçegi ýok.</small>',

@@ -7,10 +7,12 @@
  * @ingroup Language
  * @file
  *
+ * @author Boulaur
  * @author Cedric31
  * @author ChrisPtDe
  * @author Fryed-peach
  * @author Jfblanc
+ * @author Kaganer
  * @author Spacebirdy
  * @author Горан Анђелковић
  * @author לערי ריינהארט
@@ -304,7 +306,7 @@ $messages = array(
 'tog-editsection'             => 'Modificar una seccion via los ligams [modificar]',
 'tog-editsectiononrightclick' => 'Modificar una seccion en fasent un clic drech sus son títol (JavaScript)',
 'tog-showtoc'                 => "Afichar l'ensenhador (per las paginas de mai de 3 seccions)",
-'tog-rememberpassword'        => 'Se remembrar de mon senhal sus aqueste ordenador (al maximum $1 {{PLURAL:$1|jorn|jorns}})',
+'tog-rememberpassword'        => 'Se remembrar de mon senhal sus aqueste ordinator (al mai $1 {{PLURAL:$1|jorn|jorns}})',
 'tog-watchcreations'          => 'Apondre las paginas que creï a ma lista de seguiment',
 'tog-watchdefault'            => 'Apondre las paginas que modifiqui a ma lista de seguiment',
 'tog-watchmoves'              => 'Apondre las paginas que tòrni nomenar a ma lista de seguiment',
@@ -456,7 +458,7 @@ $messages = array(
 'vector-action-move'       => 'Tornar nomenar',
 'vector-action-protect'    => 'Protegir',
 'vector-action-undelete'   => 'Restablir',
-'vector-action-unprotect'  => 'Desprotegir',
+'vector-action-unprotect'  => 'Suprimir la proteccion',
 'vector-view-create'       => 'Crear',
 'vector-view-edit'         => 'Modificar',
 'vector-view-history'      => "Veire l'istoric",
@@ -525,6 +527,7 @@ Tròp d’utilizaires cercan a accedir a aquesta pagina.
 Esperatz un moment abans d'ensajar d’accedir a aquesta pagina.
 
 $1",
+'pool-errorunknown' => 'Error desconeguda',
 
 # All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation template definition (see disambiguations).
 'aboutsite'            => 'A prepaus de {{SITENAME}}',
@@ -725,6 +728,7 @@ Verificatz qu'avètz plan ortografiat lo nom, o [[Special:UserLogin/signup|creat
 'wrongpasswordempty'         => 'Lo senhal picat èra void. Se vos plai, ensajatz tornarmai.',
 'passwordtooshort'           => 'Vòstre senhal deu conténer al mens {{PLURAL:$1|1 caractèr|$1 caractèrs}}.',
 'password-name-match'        => 'Vòstre senhal deu èsser diferent de vòstre nom d’utilizaire.',
+'password-login-forbidden'   => "L'usatge d'aquestes nom d'utilizaire e senhal es pas autorisat",
 'mailmypassword'             => 'Mandar un senhal novèl per corrièr electronic',
 'passwordremindertitle'      => 'Senhal temporari novèl sus {{SITENAME}}',
 'passwordremindertext'       => "Qualqu'un (probablament vos, amb l'adreça IP $1) a demandat un senhal novèl
@@ -884,7 +888,7 @@ o <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} 
 'userpage-userdoesnotexist-view'   => "Lo compte d'utilizaire « $1 » es pas enregistrat.",
 'blocked-notice-logextract'        => 'Aqueste utilizaire es actualament blocat.
 La darrièra entrada del jornal dels blocatges es indicada çaijós a títol d’informacion :',
-'clearyourcache'                   => "'''Nòta :''' Aprèp aver publicat la pagina, vos cal forçar son recargament complet tot ignorant lo contengut actual de l'amagatal de vòstre navigador per veire los cambiaments : '''Mozilla / Firefox / Konqueror / Safari :''' mantenètz la tòca ''Majuscula'' (''Shift'') en clicant lo boton ''Actualizar'' (''Reload,'') o quichatz ''Maj-Ctrl-R'' (''Maj-Cmd-R'' sus Apple Mac) ; '''Internet Explorer / Opera :''' mantenètz la tòca ''Ctrl'' en clicant lo boton ''Actualizar'' o quichatz ''Ctrl-F5''.",
+'clearyourcache'                   => "'''Nòta :''' Aprèp aver publicat la pagina, vos cal forçar son recargament complet tot ignorant lo contengut actual de l'amagatal de vòstre navigador per veire los cambiaments : '''Mozilla / Firefox / Konqueror / Safari :''' mantenètz la tòca ''Majuscula'' (''Shift'') en clicant lo boton ''Actualizar'' (''Reload,'') o quichatz sus ''Maj-Ctrl-R'' (''Maj-Cmd-R'' sus Apple) ; '''Internet Explorer / Opera :''' mantenètz la tòca ''Ctrl'' en clicant lo boton ''Actualizar'' o quichatz sus ''Ctrl-F5''.",
 'usercssyoucanpreview'             => "'''Astúcia :''' Utilizatz lo boton 'Previsualizacion' per testar vòstre fuèlh css/js novèl abans de l'enregistrar.",
 'userjsyoucanpreview'              => "'''Astúcia :''' Utilizatz lo boton 'Previsualizacion' per testar vòstre fuèlh css/js novèl abans de l'enregistrar.",
 'usercsspreview'                   => "'''Remembratz-vos que sètz a previsualizar vòstre pròpri fuèlh CSS !'''
@@ -1165,11 +1169,13 @@ Asseguratz-vos qu'aqueste cambiament pòsca conservar la continuitat de l'istori
 # Diffs
 'history-title'            => 'Istoric de las versions de « $1 »',
 'difference'               => '(Diferéncias entre las versions)',
+'difference-multipage'     => '(Diferéncias entre las paginas)',
 'lineno'                   => 'Linha $1 :',
 'compareselectedversions'  => 'Comparar las versions seleccionadas',
 'showhideselectedversions' => 'Afichar/amagar las versions seleccionadas',
 'editundo'                 => 'desfar',
 'diff-multi'               => '({{PLURAL:$1|Una revision intermediària amagada|$1 revisions intermediàrias amagadas}}) per ({{PLURAL:$2|un utilizaire pas afichada|$2 utilizaires pas afichadas}})',
+'diff-multi-manyusers'     => '({{PLURAL:$1|Una revision intermediària amagada|$1 revisions intermediàrias amagadas}}) per ({{PLURAL:$2|un utilizaire pas afichada|$2 utilizaires pas afichadas}})',
 
 # Search results
 'searchresults'                    => 'Resultats de la recèrca',
@@ -1354,7 +1360,13 @@ Tanben podètz causir de permetre a d’autres de vos contactar amb l'ajuda de v
 'prefs-advancedsearchoptions'   => 'Opcions avançadas',
 'prefs-advancedwatchlist'       => 'Opcions avançadas',
 'prefs-displayrc'               => "Opcions d'afichatge",
+'prefs-displaysearchoptions'    => "Opcions d'afichatge",
+'prefs-displaywatchlist'        => "Opcions d'afichatge",
 'prefs-diffs'                   => 'Diferéncias',
+
+# User preference: e-mail validation using jQuery
+'email-address-validity-valid'   => "L'adreça electronica sembla bona",
+'email-address-validity-invalid' => 'entrar una adreça electronica valida',
 
 # User rights
 'userrights'                   => "Gestion dels dreches d'utilizaire",
@@ -1374,7 +1386,7 @@ Tanben podètz causir de permetre a d’autres de vos contactar amb l'ajuda de v
 'userrights-no-interwiki'      => "Sètz pas abilitat per modificar los dreches dels utilizaires sus d'autres wikis.",
 'userrights-nodatabase'        => 'La banca de donadas « $1 » existís pas o es pas en local.',
 'userrights-nologin'           => "Vos cal [[Special:UserLogin|vos connectar]] amb un compte d'administrator per balhar los dreches d'utilizaire.",
-'userrights-notallowed'        => "Vòstre compte es pas abilitat per modificar de dreches d'utilizaire.",
+'userrights-notallowed'        => "Al vòstre compte li es pas permés de modificar de dreches d'utilizaire.",
 'userrights-changeable-col'    => 'Los gropes que podètz cambiar',
 'userrights-unchangeable-col'  => 'Los gropes que podètz pas cambiar',
 
@@ -1676,7 +1688,8 @@ PICT # misc.
 'upload-success-subj'         => 'Importacion capitada',
 'upload-success-msg'          => 'Çò mandat es disponible aicí : [[:{{ns:file}}:$1]]',
 'upload-failure-subj'         => 'Problèma de mandadís',
-'upload-failure-msg'          => 'I a agut un problèma amb vòstre mandadís :$1',
+'upload-failure-msg'          => 'I a agut un problèma amb vòstre mandadís [$2]: $1',
+'upload-warning-subj'         => 'Avertiment al moment del telecargament',
 
 'upload-proto-error'        => 'Protocòl incorrècte',
 'upload-proto-error-text'   => "L’impòrt requerís d'URLs començant per <code>http://</code> o <code>ftp://</code>.",
@@ -1738,6 +1751,7 @@ Un clic en tèsta de colomna càmbia l’òrdre d’afichatge.',
 'listfiles_search_for'  => 'Recèrca del mèdia nomenat :',
 'imgfile'               => 'fichièr',
 'listfiles'             => 'Lista dels imatges',
+'listfiles_thumb'       => 'Apercebut',
 'listfiles_date'        => 'Data',
 'listfiles_name'        => 'Nom',
 'listfiles_user'        => 'Utilizaire',
@@ -1887,6 +1901,8 @@ Las entradas <del>barradas</del> son estadas resolgudas.',
 'nmembers'                => '$1 {{PLURAL:$1|membre|membres}}',
 'nrevisions'              => '$1 {{PLURAL:$1|revision|revisions}}',
 'nviews'                  => '$1 {{PLURAL:$1|consultacion|consultacions}}',
+'nimagelinks'             => 'Utilisat sus $1 {{PLURAL:$1|pagina|paginas}}',
+'ntransclusions'          => 'Utilisat sus $1 {{PLURAL:$1|pagina|paginas}}',
 'specialpage-empty'       => 'Aquesta pagina es voida.',
 'lonelypages'             => 'Paginas orfanèlas',
 'lonelypagestext'         => 'Las paginas seguentas son pas ligadas o enclusas a partir d’autras paginas de {{SITENAME}}.',
@@ -2078,6 +2094,7 @@ L'adreça electronica qu'avètz indicada dins [[Special:Preferences|vòstras pre
 # Watchlist
 'watchlist'            => 'Ma lista de seguiment',
 'mywatchlist'          => 'Lista de seguiment',
+'watchlistfor2'        => 'Per $1 ($2)',
 'nowatchlist'          => "Vòstra lista de seguiment conten pas cap d'article.",
 'watchlistanontext'    => 'Per poder afichar o editar los elements de vòstra lista de seguiment, vos cal vos $1.',
 'watchnologin'         => 'Vos sètz pas identificat(ada)',
@@ -2199,7 +2216,8 @@ La darrièra modificacion es estada efectuada per [[User:$3|$3]] ([[User talk:$3
 'rollback-success'  => 'Anullacion de las modificacions de $1 ; retorn a la version de $2.',
 
 # Edit tokens
-'sessionfailure' => 'Vòstra sesilha de connexion sembla aver de problèmas ;
+'sessionfailure-title' => 'La session capitèt mal',
+'sessionfailure'       => 'Vòstra sesilha de connexion sembla aver de problèmas ;
 aquesta accion es estada anullada en prevencion d’un piratatge de sesilha.
 Clicatz sus « Precedent » e tornatz cargar la pagina d’ont venètz, puèi ensajatz tornarmai.',
 
@@ -2331,6 +2349,7 @@ $1",
 'sp-contributions-newbies-title'       => 'Las contribucions de l’utilizaire pels comptes novèls',
 'sp-contributions-blocklog'            => 'Istoric dels blocatges',
 'sp-contributions-deleted'             => 'contribucions suprimidas',
+'sp-contributions-uploads'             => 'importat',
 'sp-contributions-logs'                => 'jornals',
 'sp-contributions-talk'                => 'Discutir',
 'sp-contributions-userrights'          => 'gerir los dreches',
@@ -2339,6 +2358,7 @@ $1",
 La darrièra intrada del jornal dels blocatges es indicada çaijós a títol d’informacion :',
 'sp-contributions-search'              => 'Cercar las contribucions',
 'sp-contributions-username'            => 'Adreça IP o nom d’utilizaire :',
+'sp-contributions-toponly'             => 'Mostrar sonque las contribucions que son lo darrièr cambiament',
 'sp-contributions-submit'              => 'Cercar',
 
 # What links here
@@ -2350,7 +2370,7 @@ La darrièra intrada del jornal dels blocatges es indicada çaijós a títol d�
 'nolinkshere-ns'           => "Cap de pagina conten pas de ligam cap a '''[[:$1]]''' dins l’espaci de nom causit.",
 'isredirect'               => 'pagina de redireccion',
 'istemplate'               => 'inclusion',
-'isimage'                  => 'ligam del fichièr',
+'isimage'                  => 'Paginas ligadas al fichièr',
 'whatlinkshere-prev'       => '{{PLURAL:$1|precedent|$1 precedents}}',
 'whatlinkshere-next'       => '{{PLURAL:$1|seguent|$1 seguents}}',
 'whatlinkshere-links'      => '← ligams',
@@ -2409,7 +2429,7 @@ a partir d'una adreça IP precedentament blocada.",
 'ipusubmit'                       => 'Suprimir aqueste blocatge',
 'unblocked'                       => '[[User:$1|$1]] es estat desblocat',
 'unblocked-id'                    => 'Lo blocatge $1 es estat levat',
-'ipblocklist'                     => 'Adreças IP e dels utilizaires blocats',
+'ipblocklist'                     => 'Utilizaires o adreças IP blocats',
 'ipblocklist-legend'              => 'Cercar un utilizaire blocat',
 'ipblocklist-username'            => 'Nom de l’utilizaire o adreça IP :',
 'ipblocklist-sh-userblocks'       => '$1 los comptes blocats',
@@ -2861,7 +2881,7 @@ $1",
 Se l'executatz, vòstre sistèma pòt èsser compromés.",
 'imagemaxsize'         => "Format maximal dels imatges :<br />''(per las paginas de descripcion d’imatges)''",
 'thumbsize'            => 'Talha de la miniatura :',
-'widthheightpage'      => '$1×$2, $3 {{PLURAL:$3|pagina|paginas}}',
+'widthheightpage'      => '$1 × $2, $3 {{PLURAL:$3|pagina|paginas}}',
 'file-info'            => 'Talha del fichièr: $1, tipe MIME: $2',
 'file-info-size'       => '$1 × $2 pixèl, talha del fichièr: $3, tipe MIME: $4',
 'file-nohires'         => '<small>Pas de resolucion mai nauta disponibla.</small>',
@@ -3341,6 +3361,7 @@ Ensajatz la previsualizacion normala.',
 'version-specialpages'             => 'Paginas especialas',
 'version-parserhooks'              => 'Extensions del parser',
 'version-variables'                => 'Variablas',
+'version-skins'                    => 'Abilhatges',
 'version-other'                    => 'Divèrs',
 'version-mediahandlers'            => 'Supòrts mèdia',
 'version-hooks'                    => 'Croquets',
@@ -3352,6 +3373,7 @@ Ensajatz la previsualizacion normala.',
 'version-hook-subscribedby'        => 'Definit per',
 'version-version'                  => '(Version $1)',
 'version-license'                  => 'Licéncia',
+'version-poweredby-others'         => 'autres',
 'version-software'                 => 'Logicial installat',
 'version-software-product'         => 'Produch',
 'version-software-version'         => 'Version',
@@ -3420,6 +3442,10 @@ Picatz lo nom del fichièr sens lo prefix « {{ns:file}}: ».',
 'tags-hitcount-header'    => 'Modificacions balisadas',
 'tags-edit'               => 'modificar',
 'tags-hitcount'           => '$1 {{PLURAL:$1|cambiament|cambiaments}}',
+
+# Special:ComparePages
+'compare-page1' => 'Pagina 1',
+'compare-page2' => 'Pagina 2',
 
 # Database error messages
 'dberr-header'      => 'Aqueste wiki a un problèma',

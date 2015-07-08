@@ -7,10 +7,12 @@
  * @ingroup Language
  * @file
  *
+ * @author Kaganer
  * @author Purodha
  * @author Slomox
  * @author The Evil IP address
  * @author Urhixidur
+ * @author Zylbath
  * @author לערי ריינהארט
  */
 
@@ -241,10 +243,10 @@ $messages = array(
 'tog-enotifminoredits'        => 'Schriev mi en Nettbreef, ok wenn dat blots en lütte Ännern weer',
 'tog-enotifrevealaddr'        => 'Miene Nettbreefadress in Bestätigungsnettbreven wiesen',
 'tog-shownumberswatching'     => 'Wies de Tall vun Brukers, de op disse Siet oppasst',
-'tog-oldsig'                  => 'Vörschau von de Ünnerschrift, de nu gellt:',
+'tog-oldsig'                  => 'Gellen Ünnerschrift',
 'tog-fancysig'                => 'Signatur as Wikitext behanneln (ahn automaatsch Lenk)',
-'tog-externaleditor'          => 'Jümmer extern Editor bruken (blot för Lüüd, de sik dor mit utkennt, dor mutt noch mehr op dien Reekner instellt warrn, dat dat geiht)',
-'tog-externaldiff'            => 'Extern Warktüüch to’n Wiesen vun Ünnerscheden as Standard bruken (blot för Lüüd, de sik dor mit utkennt, dor mutt noch mehr op dien Reekner instellt warrn, dat dat geiht)',
+'tog-externaleditor'          => 'Extern Editor as Standard bruken (Blots för Lüüd, de sik dormit utkennt. Dor mutt noch mehr op dien Reekner instellt warrn, dat dat geiht. [http://www.mediawiki.org/wiki/Manual:External_editors Wiedere Informatschonen hierto.])',
+'tog-externaldiff'            => 'Extern Warktüüch to’n Wiesen vun Ünnerscheden as Standard bruken (Blots för Lüüd, de sik dormit utkennt. Dor mutt noch mehr op dien Reekner instellt warrn, dat dat geiht. [http://www.mediawiki.org/wiki/Manual:External_editors Wiedere Informatschonen hierto.])',
 'tog-showjumplinks'           => '„Wesseln-na“-Lenken tolaten',
 'tog-uselivepreview'          => 'Live-Vörschau bruken (JavaScript) (Experimental)',
 'tog-forceeditsummary'        => 'Segg mi bescheid, wenn ik keen Tosamenfaten geven heff, wat ik allens ännert heff',
@@ -373,7 +375,7 @@ un dat [http://meta.wikimedia.org/wiki/MediaWiki_User%27s_Guide Brukerhandbook] 
 'vector-action-move'             => 'Schuven',
 'vector-action-protect'          => 'Schulen',
 'vector-action-undelete'         => 'Wedderhalen',
-'vector-action-unprotect'        => 'Freegeven',
+'vector-action-unprotect'        => 'Siedenschuul ännern',
 'vector-simplesearch-preference' => 'Verbeterte Söökvörslääg anstellen (blot mit’n Skin Vector)',
 'vector-view-create'             => 'Opstellen',
 'vector-view-edit'               => 'Ännern',
@@ -409,8 +411,8 @@ un dat [http://meta.wikimedia.org/wiki/MediaWiki_User%27s_Guide Brukerhandbook] 
 'protect'           => 'Schulen',
 'protect_change'    => 'ännern',
 'protectthispage'   => 'Siet schulen',
-'unprotect'         => 'Freegeven',
-'unprotectthispage' => 'Schuul opheben',
+'unprotect'         => 'Siedenschuul ännern',
+'unprotectthispage' => 'Siedenschuul ännern',
 'newpage'           => 'Ne’e Siet',
 'talkpage'          => 'Diskuschoon',
 'talkpagelinktext'  => 'Diskuschoon',
@@ -438,6 +440,15 @@ un dat [http://meta.wikimedia.org/wiki/MediaWiki_User%27s_Guide Brukerhandbook] 
 'jumpto'            => 'Wesseln na:',
 'jumptonavigation'  => 'Navigatschoon',
 'jumptosearch'      => 'Söök',
+'view-pool-error'   => "Dat deit uns leed, man de Servers sünd in'n Momang överladen. 
+To vele Brukers versöökt, düsse Siet to besöken.
+Bitte tööv en poor Minuten, ehrder du dat nochmal versöchst.
+
+
+$1",
+'pool-timeout'      => 'Tietafloop wiel dat Töven op de Sparren',
+'pool-queuefull'    => 'Pooltöövslang is vull',
+'pool-errorunknown' => 'Unbekannten Fehler',
 
 # All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation template definition (see disambiguations).
 'aboutsite'            => 'Över {{SITENAME}}',
@@ -519,14 +530,15 @@ En List vun de Spezialsieden gifft dat ünner [[Special:SpecialPages|{{int:speci
 'error'                => 'Fehler',
 'databaseerror'        => 'Fehler in de Datenbank',
 'dberrortext'          => 'Dor weer en Syntaxfehler in de Datenbankaffraag.
+De Grund kann en Programmeerfehler ween
 De letzte Datenbankaffraag weer:
 
 <blockquote><tt>$1</tt></blockquote>
 
-ut de Funktschoon <tt>$2</tt>.
+ut de Funkschoon <tt>$2</tt>.
 MySQL mell den Fehler <tt>$3: $4</tt>.',
 'dberrortextcl'        => 'Dor weer en Syntaxfehler in de Datenbankaffraag.
-De letzte Datenbankaffraag weer: $1 ut de Funktschoon <tt>$2</tt>.
+De letzte Datenbankaffraag weer: $1 ut de Funkschoon <tt>$2</tt>.
 MySQL mell den Fehler: <tt>$3: $4</tt>.',
 'laggedslavemode'      => 'Wohrschau: Disse Siet is villicht nich mehr op den ne’esten Stand.',
 'readonly'             => 'Datenbank is sparrt',
@@ -544,6 +556,8 @@ Wenn dat nich de Fall is, denn hest du villicht en Fehler in de Software funnen.
 'readonly_lag'         => 'De Datenbank is automaatsch sperrt worrn, dat sik de opdeelten Datenbankservers mit den Hööft-Datenbankserver afglieken köönt.',
 'internalerror'        => 'Internen Fehler',
 'internalerror_info'   => 'Internen Fehler: $1',
+'fileappenderrorread'  => '$1 kunn nich leest warrn wiel dat Hentofögen.',
+'fileappenderror'      => 'Dat weer nich mööglich, "$1" an "$2" totofögen.',
 'filecopyerror'        => 'De Software kunn de Datei ‚$1‘ nich na ‚$2‘ koperen.',
 'filerenameerror'      => 'De Software kunn de Datei ‚$1‘ nich na ‚$2‘ ümnömen.',
 'filedeleteerror'      => 'De Software kunn de Datei ‚$1‘ nich wegsmieten.',
@@ -553,7 +567,7 @@ Wenn dat nich de Fall is, denn hest du villicht en Fehler in de Software funnen.
 'unexpected'           => 'Unvermoodten Weert: ‚$1‘=‚$2‘.',
 'formerror'            => 'Fehler: De Software kunn dat Formular nich verarbeiden',
 'badarticleerror'      => 'Disse Aktschoon kann op disse Siet nich anwennt warrn.',
-'cannotdelete'         => 'De Software kunn de angevene Siet nich wegsmieten. (Mööglicherwies is de al vun en annern wegsmeten worrn.)',
+'cannotdelete'         => 'De Software kunn "$1" nich wegsmieten. Mööglicherwies is de al vun en annern wegsmeten worrn.',
 'badtitle'             => 'Ungülligen Titel',
 'badtitletext'         => 'De Titel vun de opropene Siet weer ungüllig, leddig, oder en ungülligen Spraaklink vun en annern Wiki.',
 'perfcached'           => 'Disse Daten kamen ut den Cache un sünd mööglicherwies nich aktuell:',
@@ -597,7 +611,7 @@ Vergeet nich, de Sied för di persönlich [[Special:Preferences|intostellen]].',
 'yourname'                   => 'Dien Brukernaam',
 'yourpassword'               => 'Dien Passwoort',
 'yourpasswordagain'          => 'Passwoort nochmal ingeven',
-'remembermypassword'         => 'Duersam inloggen (for a maximum of $1 {{PLURAL:$1|day|days}})',
+'remembermypassword'         => 'Mit dissen Browser duersam inloggen (för maximal $1 {{PLURAL:$1|Dag|Daag}})',
 'yourdomainname'             => 'Diene Domään:',
 'externaldberror'            => 'Dat geev en Fehler bi de externe Authentifizerungsdatenbank oder du dröffst dien extern Brukerkonto nich ännern.',
 'login'                      => 'Anmellen',
@@ -666,6 +680,7 @@ Wenn du dat Brukerkonto gor nich hebben wullst, denn is disse Naricht egaal för
 'login-throttled'            => 'Du hest to faken versöcht, di ünner dissen Brukernaam antomellen.
 Tööv en Stoot, ehrdat du dat noch wedder versöchst.',
 'loginlanguagelabel'         => 'Spraak: $1',
+'suspicious-userlogout'      => 'Dien Anfraag, di aftomellen, worr aflehnt, wieldat se vermoodlich vun en Browser oder Cache-Proxy sennt worrn is, de nich mehr funkschoneert.',
 
 # E-mail sending
 'php-mail-error-unknown' => 'Unbekennten Fehler in PHP sien mail()-Funkschoon',
@@ -788,7 +803,12 @@ oder <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}
 'userpage-userdoesnotexist-view'   => 'Dat Brukerkonto „$1“ gifft dat nich.',
 'blocked-notice-logextract'        => 'Disse Bruker is opstunns sperrt.
 De jüngste Indrag in dat Sperr-Logbook wart ünnen wiest:',
-'clearyourcache'                   => "'''Denk doran:''' No den Spiekern muttst du dien Browser noch seggen, de niege Version to laden: '''Mozilla/Firefox:''' ''Strg-Shift-R'', '''IE:''' ''Strg-F5'', '''Safari:''' ''Cmd-Shift-R'', '''Konqueror:''' ''F5''.",
+'clearyourcache'                   => "'''Dink doran:''' Maak na dat Spiekern den Browser-Cache leddig, üm dien Ännern sehn to könen:
+* '''Firefox/ Safari:''' ''Umschaltung'' drücken un gliektiedig ''Aktualisieren'' anklicken oder ''Strg+F5'' oder ''Strg+R'' (''Befehlstaste-R'' op den Mac) drücken
+* '''Google Chrome:''' ''Umschaltung+Strg+R'' (''Befehlstaste-R'' op den Mac) drücken
+* '''Internet Explorer:''' ''Strg+F5'' drücken oder ''Strg'' drücken un gliektiedig ''Aktualisieren'' anklicken
+* '''Opera:''' ''Extras → Internetspuren löschen … → Individuelle Auswahl → Den kompletten Cache löschen''
+* '''Konqueror:''' ''Aktualisieren'' anklicken oder ''F5'' drücken",
 'usercssyoucanpreview'             => "'''Tipp:''' Bruuk den Vörschau-Knoop, üm dien nieg CSS vör dat Spiekern to testen.",
 'userjsyoucanpreview'              => "'''Tipp:''' Bruuk den Vörschau-Knoop, üm dien nieg JS vör dat Spiekern to testen.",
 'usercsspreview'                   => "'''Denk doran, dat du blots en Vörschau vun dien CSS ankickst, dat is noch nich spiekert!'''",
@@ -840,7 +860,7 @@ Bruker mit Sysop-Rechten doran arbeiden könnt.'''",
 'semiprotectedpagewarning'         => "'''Henwies:''' Disse Siet is sparrt. Blots anmellt Brukers köönt de Siet ännern.",
 'cascadeprotectedwarning'          => "'''Wohrschau:''' Disse Siet is so sparrt, dat blot Brukers mit Admin-Status ehr ännern köönt. Dat liggt dor an, dat se in disse {{PLURAL:$1|kaskadensparrte Siet|kaskadensparrten Sieden}} inbunnen is:",
 'titleprotectedwarning'            => "'''WOHRSCHAU: Disse Sied is schuult, dat blot welk [[Special:ListGroupRights|Brukergruppen]] ehr anleggen köönt.'''",
-'templatesused'                    => 'Vörlagen de in disse Siet bruukt warrt:',
+'templatesused'                    => '{{PLURAL:$1|De folgen Vörlaag warrt|De folgen Vörlääg warrt}} vun düsse Siet bruukt.',
 'templatesusedpreview'             => 'Vörlagen de in disse Vörschau bruukt warrt:',
 'templatesusedsection'             => 'Vörlagen de in dissen Afsnitt bruukt warrt:',
 'template-protected'               => '(schuult)',
@@ -914,6 +934,7 @@ Legende:
 (Letzte) = Ünnerscheed to de vörige Version,
 L = Lütte Ännern",
 'history-fieldset-title' => 'Versionsgeschicht dörkieken',
+'history-show-deleted'   => 'blots löschte Verschonen',
 'histfirst'              => 'Öllste',
 'histlast'               => 'Ne’este',
 'historysize'            => '({{PLURAL:$1|1 Byte|$1 Bytes}})',
@@ -984,6 +1005,8 @@ As Administrater kannst du [$1 mit dissen Lenk] den Ünnerscheed ankieken.',
 $1",
 'logdelete-success'           => "'''Sichtborkeit in Logbook mit Spood ännert.'''",
 'revdel-restore'              => 'Sichtborkeit ännern',
+'revdel-restore-deleted'      => 'löschte Verschonen',
+'revdel-restore-visible'      => 'sichtbore Verschonen',
 'pagehist'                    => 'Versionshistorie',
 'deletedhist'                 => 'wegsmetene Versionen',
 'revdelete-content'           => 'Inholt',
@@ -1380,6 +1403,10 @@ Dat kann nich wedder ungeschehn maakt warrn.',
 'recentchanges-legend'              => 'Optionen för toletzt ännert',
 'recentchangestext'                 => 'Op disse Sied warrt de Sieden wiest, de toletzt ännert worrn sünd.',
 'recentchanges-feed-description'    => 'Behool mit dissen Feed de ne’esten Ännern op dit Wiki in’t Oog.',
+'recentchanges-label-newpage'       => "Düsse Ännern stell en ne'e Siet op",
+'recentchanges-label-minor'         => 'Dat is en lütte Ännern',
+'recentchanges-label-bot'           => 'Düsse Ännern worr maakt vun en Bot',
+'recentchanges-label-unpatrolled'   => 'Düsse Ännern is noch nich kontrolleert worrn',
 'rcnote'                            => "Hier sünd de letzten '''$1''' Ännern vun {{PLURAL:$2|den letzten Dag|de letzten '''$2''' Daag}} (Stand $5, $4). ('''N''' - Ne’e Sieden; '''L''' - Lütte Ännern)",
 'rcnotefrom'                        => 'Dit sünd de Ännern siet <b>$2</b> (bet to <b>$1</b> wiest).',
 'rclistfrom'                        => 'Wies ne’e Ännern siet $1',
@@ -1513,7 +1540,7 @@ Kiek na, wat de Siet ok online is, tööv en Stoot un versöök dat denn noch we
 Kann angahn, dat dat beter geiht, wenn du dat to en Tiet versöchst, to de op de Siet nich ganz so veel los is.',
 
 'license'            => 'Lizenz:',
-'license-header'     => 'Lizenz:',
+'license-header'     => 'Lizenz',
 'nolicense'          => 'nix utwählt',
 'license-nopreview'  => '(Vörschau nich mööglich)',
 'upload_source_url'  => ' (gellen, apen togängliche URL)',
@@ -2109,6 +2136,7 @@ $1',
 De jüngste Indrag in dat Sperr-Logbook wart ünnen wiest:',
 'sp-contributions-search'         => 'Na Brukerbidrääg söken',
 'sp-contributions-username'       => 'IP-Adress oder Brukernaam:',
+'sp-contributions-toponly'        => 'Blots aktuelle Verschonen wiesen',
 'sp-contributions-submit'         => 'Söken',
 
 # What links here
@@ -2175,7 +2203,7 @@ Op de [[Special:IPBlockList|IP-Blocklist]] is en List vun alle Blocks to finnen.
 'ipusubmit'                       => 'Disse Sperr opheven',
 'unblocked'                       => '[[User:$1|$1]] freegeven',
 'unblocked-id'                    => 'Sperr $1 freegeven',
-'ipblocklist'                     => 'List vun blockte IP-Adressen un Brukernaams',
+'ipblocklist'                     => 'Sparrte Brukers',
 'ipblocklist-legend'              => 'Blockten Bruker finnen',
 'ipblocklist-username'            => 'Brukernaam oder IP-Adress:',
 'ipblocklist-sh-userblocks'       => 'Brukersperren $1',
@@ -2479,6 +2507,7 @@ All Transwiki-Import-Akschonen staht later ok in dat [[Special:Log/import|Import
 'tooltip-rollback'                => 'Rullt all Ännern vun’n letzten Bruker an disse Sied mit een Klick trüch.',
 'tooltip-undo'                    => 'Rullt dit een Ännern trüch un wiest den Text in de Vörschau, dat en Grund för’t Ännern angeven warrn kann.',
 'tooltip-preferences-save'        => 'Instellungen spiekern',
+'tooltip-summary'                 => 'Giff en korte Tosamenfattung in',
 
 # Stylesheets
 'common.css'   => '/** CSS-Kood hier binnen warrt för all Stilvörlagen (Skins) inbunnen */',
@@ -2578,7 +2607,7 @@ $1',
 'mediawarning'         => "'''Wohrschau:''' Disse Soort Datein kann bööswilligen Programmkood bargen. Dör dat Rünnerladen un Opmaken vun de Datei kann dien Reekner Schaden nehmen.",
 'imagemaxsize'         => 'Biller op de Bildsied begrenzen op:',
 'thumbsize'            => 'Grött vun dat Duumnagel-Bild:',
-'widthheightpage'      => '$1×$2, {{PLURAL:$3|Ene Siet|$3 Sieden}}',
+'widthheightpage'      => '$1 × $2, {{PLURAL:$3|Ene Siet|$3 Sieden}}',
 'file-info'            => 'Grött: $1, MIME-Typ: $2',
 'file-info-size'       => '$1 × $2 Pixel, Grött: $3, MIME-Typ: $4',
 'file-nohires'         => '<small>Gifft dat Bild nich grötter.</small>',

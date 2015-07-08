@@ -9,6 +9,7 @@
  *
  * @author Albonio
  * @author Artomo
+ * @author Kaganer
  * @author Lakaoso
  * @author Malafaya
  * @author Reedy
@@ -548,7 +549,7 @@ o [{{fullurl:{{FULLPAGENAME}}|action=edit}} redaktar ica pagino]</span>.',
 Voluntez konfirmez se vu volas krear/redaktar ica pagino.',
 'userpage-userdoesnotexist-view'   => 'Uzanto-nomo "$1" no registragesis.',
 'clearyourcache'                   => "'''Atencez: Pos registragar, vu probable mustas renovigar la tempala-magazino di vua navigilo por vidar la chanji.'''
-'''Mozilla / Firefox / Safari:''' tenez ''Shift'' kliktante ''Reload'', o presez sive  ''Ctrl-F5'' sive ''Ctrl-R'' (''Command-R'' ye Macintosh);
+'''Mozilla / Firefox / Safari:''' tenez ''Shift'' kliktante ''Reload'', o presez sive  ''Ctrl-F5'' sive ''Ctrl-R'' (''Command-R'' ye Mac);
 '''Konqueror''': kliktez ''Reload'' o presez ''F5'';
 '''Opera:''' vakuigez la tempala-magazino en ''Tools → Preferences'';
 '''Internet Explorer:''' tenez ''Ctrl'' kliktante ''Refresh,'' o presez ''Ctrl-F5''.",
@@ -1455,7 +1456,7 @@ Vu darfos adjuntar kauso en la rezumo.',
 'nextdiff'     => 'Plu recenta versiono →',
 
 # Media information
-'widthheightpage'      => '$1×$2, $3 {{PLURAL:$3|pagino|pagini}}',
+'widthheightpage'      => '$1 × $2, $3 {{PLURAL:$3|pagino|pagini}}',
 'file-nohires'         => '<small>Ne existas grandeso plu granda.</small>',
 'show-big-image'       => 'Grandeso kompleta',
 'show-big-image-thumb' => '<small>Dimensioni di ca previdajo: $1 × $2 pixel-i</small>',

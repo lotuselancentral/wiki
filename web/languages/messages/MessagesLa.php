@@ -10,8 +10,10 @@
  * @author Andrew Dalby
  * @author Dferg
  * @author Esteban97
+ * @author Kaganer
  * @author LeighvsOptimvsMaximvs
  * @author McDutchie
+ * @author MissPetticoats
  * @author Omnipaedista
  * @author OrbiliusMagister
  * @author Ornil
@@ -183,10 +185,10 @@ $messages = array(
 'tog-enotifminoredits'        => 'Mittere mihi litteras electronicas etiam pro recensionibus minoribus',
 'tog-enotifrevealaddr'        => 'Monstrare inscriptio mea electronica in nuntiis notificantibus',
 'tog-shownumberswatching'     => 'Numerum usorum custodientium monstrare',
-'tog-oldsig'                  => 'Praevisum subscriptionis ad tempus adhibitae:',
+'tog-oldsig'                  => 'Subscriptio ad tempus adhibita:',
 'tog-fancysig'                => 'Subscriptio vicitext (sine nexu automatico)',
-'tog-externaleditor'          => 'Utere editore externo semper',
-'tog-externaldiff'            => 'Utere dissimilitudine externa semper',
+'tog-externaleditor'          => 'Utere editore externo semper (pro peritus solo, requirat speciales optiones in calculone. [http://www.mediawiki.org/wiki/Manual:External_editors More information.])',
+'tog-externaldiff'            => 'Utere editore dissimilitudine externa semper (pro peritus solo, requirat speciales optiones in calculone. [http://www.mediawiki.org/wiki/Manial:External_editors More information.])',
 'tog-showjumplinks'           => 'Sinere nexus ostendi forma "salire ad" monstrata',
 'tog-uselivepreview'          => 'Praevisum viventem adhibere (JavaScript)',
 'tog-forceeditsummary'        => 'Si recensionem non summatim descripsero, me roga si continuare velim',
@@ -300,7 +302,7 @@ $messages = array(
 'vector-action-move'       => 'Movere',
 'vector-action-protect'    => 'Protegere',
 'vector-action-undelete'   => 'Restituere',
-'vector-action-unprotect'  => 'Deprotegere',
+'vector-action-unprotect'  => 'Protectionem mutare',
 'vector-view-create'       => 'Creare',
 'vector-view-edit'         => 'Recensere',
 'vector-view-history'      => 'Historiam inspicere',
@@ -334,8 +336,8 @@ $messages = array(
 'protect'           => 'Protegere',
 'protect_change'    => 'mutare',
 'protectthispage'   => 'Protegere hanc paginam',
-'unprotect'         => 'Deprotegere',
-'unprotectthispage' => 'Deprotegere hanc paginam',
+'unprotect'         => 'Protectionem mutare',
+'unprotectthispage' => 'Protectionem huius paginae mutare',
 'newpage'           => 'Nova pagina',
 'talkpage'          => 'Disputare hanc paginam',
 'talkpagelinktext'  => 'Disputatio',
@@ -500,6 +502,7 @@ Noli oblivisci [[Special:Preferences|praeferentias tuas]] apud {{grammar:accusat
 'nav-login-createaccount'    => 'Conventum aperire / conventum creare',
 'loginprompt'                => 'Cookies potestatem facere debes ut conventum aperire.',
 'userlogin'                  => 'Conventum aperire / conventum creare',
+'userloginnocreate'          => 'Conventum aperire',
 'logout'                     => 'Conventum concludere',
 'userlogout'                 => 'Conventum concludere',
 'notloggedin'                => 'Conventum non est apertum',
@@ -509,6 +512,7 @@ Noli oblivisci [[Special:Preferences|praeferentias tuas]] apud {{grammar:accusat
 'gotaccount'                 => "Habesne iam rationem? '''$1'''.",
 'gotaccountlink'             => 'Conventum aperi',
 'createaccountmail'          => 'ab inscriptione electronica',
+'createaccountreason'        => 'Causa:',
 'badretype'                  => 'Tesserae quas scripsisti inter se non congruunt.',
 'userexists'                 => 'Nomen usoris quod selegisti iam est.
 Nomen usoris alium selige.',
@@ -579,7 +583,7 @@ Hunc nuntium ignorare potes, si nolis hac ratione uti.',
 'image_sample'    => 'Exemplum.jpg',
 'image_tip'       => 'Fasciculus in pagina impositus',
 'media_sample'    => 'Exemplum.ogg',
-'media_tip'       => 'Nexus ad fasciculum mediorum',
+'media_tip'       => 'Nexus ad fasciculum',
 'sig_tip'         => 'Subscriptio tua cum indicatione temporis',
 'hr_tip'          => 'Linea horizontalis (noli saepe uti)',
 
@@ -675,7 +679,7 @@ Nobis etiam spondes te esse ipsum horum verborum scriptorem primum, aut ex opere
 '''NOLI OPERIBUS SUB IURE DIVULGANDI UTI SINE POTESTATE!'''",
 'copyrightwarning2'                => "Nota bene omnia contributa apud {{grammar:accusative|{{SITENAME}}}} ab aliis recenseri, mutari vel removi posse.
 Nisi vis verba tua crudelissime recenseri, noli ea submittere.<br />
-Nobis etiam spondes te esse ipsum horum verborum scriptorem primum, aut ex opere in \"dominio publico\" vel ex  libere fonte simili exscripsisse (vide singula apud \$1).
+Nobis etiam spondes te esse ipsum horum verborum scriptorem primum, aut ex opere in \"dominio publico\" vel ex libere fonte simili exscripsisse (vide singula apud \$1).
 '''NOLI OPERIBUS SUB IURE DIVULGANDI UTI SINE POTESTATE!'''",
 'protectedpagewarning'             => "'''CAVE: Haec pagina protecta est ut magistratus soli eam recenseant.'''",
 'templatesused'                    => '{{PLURAL:$1|Formula hac in pagina adhibita:|Formulae hac in pagina adhibitae:}}',
@@ -759,6 +763,9 @@ Titulus: '''({{int:cur}})''' = dissimilis ab emendatione novissima,
 'revdelete-hide-text'        => 'Celare textum emendationis',
 'revdelete-hide-image'       => 'Celare contentum fasciculi',
 'revdelete-hide-comment'     => 'Celare summarium emendationis',
+'revdelete-radio-same'       => 'non mutare',
+'revdelete-radio-set'        => 'Ita vero',
+'revdelete-radio-unset'      => 'Minime',
 'revdelete-log'              => 'Causa:',
 'revdelete-logentry'         => 'mutavit visibilitatem emendationis paginae [[$1]]',
 'revdel-restore'             => 'visibilitatem mutare',
@@ -934,7 +941,7 @@ Conare praefixare tua inquisitionem cum ''all:'' ut quaeras contenta omnia (pagi
 'prefs-registration'        => 'Dies creationis rationis:',
 'yourrealname'              => 'Nomen verum:',
 'yourlanguage'              => 'Lingua:',
-'yourvariant'               => 'Differentia:',
+'yourvariant'               => 'Differentia linguae contentorum:',
 'yournick'                  => 'Subscriptio nova:',
 'badsig'                    => 'Subscriptio cruda non est valida; scrutina affixa HTML.',
 'badsiglength'              => 'Subscriptio tua nimis longa est.
@@ -1278,7 +1285,7 @@ Contenta [$2 paginae descriptionis fasciculi] subter monstrantur.',
 'statistics-users-active-desc' => 'Usores qui {{PLURAL:$1|proxima die|proximis $1 diebus}} actionem perfecerunt',
 'statistics-mostpopular'       => 'Paginae plurimum visae',
 
-'disambiguations'      => 'Paginae disambiguationis',
+'disambiguations'      => 'Paginae quae ad paginas discretivas nectunt',
 'disambiguationspage'  => 'Template:Discretiva',
 'disambiguations-text' => "Paginae subter ad '''paginam discretivam''' nectunt.
 Eae ad aptas paginas magis nectendae sunt.<br />
@@ -1463,6 +1470,7 @@ Inscriptio electronica quam in [[Special:Preferences|praeferentiis tuis]] dedis 
 # Watchlist
 'watchlist'          => 'Paginae custoditae',
 'mywatchlist'        => 'Paginae custoditae',
+'watchlistfor2'      => 'Pro $1 $2',
 'nowatchlist'        => 'Nullas paginas custodis.',
 'watchlistanontext'  => 'Necesse est $1 ad indicem paginarum custoditarum inspiciendum vel recensendum.',
 'watchnologin'       => 'Conventum non est apertum',
@@ -1699,7 +1707,9 @@ Si pagina nova cum ipso nomine post deletionem creata est, emendationes restitut
 # Block/unblock
 'blockip'                      => 'Usorem obstruere',
 'blockip-legend'               => 'Usorem vel locum IP obstruere',
-'blockiptext'                  => 'Forma infera utere ut quendam usorem vel locum IP obstruas ne plus scribere potest. Hoc non nisi secundum [[{{MediaWiki:Policy-url}}|consilium]] fieri potest. Rationem certam subscribe (exempli gratia titulos paginarum quas iste usor modo vandalorum recensuit).',
+'blockiptext'                  => 'Forma infera utere ut quendam usorem vel locum IP obstruas ne plus scribere potest.
+Hoc non nisi secundum [[{{MediaWiki:Policy-url}}|consilium]] fieri potest.
+Rationem certam subscribe (exempli gratia titulos paginarum quas iste usor modo vandalorum recensuit).',
 'ipaddress'                    => 'Locus IP:',
 'ipadressorusername'           => 'Locus IP aut nomen usoris:',
 'ipbexpiry'                    => 'Exitus:',
@@ -2031,7 +2041,7 @@ Paginae nomen petitum "[[:$1]]" iam existit. Vin tu eam delere ut pagina illic m
 'imagemaxsize'         => "Magnitudo maxima fasciculorum:<br />
 ''(in pagina descriptionis fasciculi)''",
 'thumbsize'            => 'Magnitudo pollicisunguis:',
-'widthheightpage'      => '$1×$2, $3 {{PLURAL:$3|pagina|paginae}}',
+'widthheightpage'      => '$1 × $2, $3 {{PLURAL:$3|pagina|paginae}}',
 'file-info'            => 'magnitudo fasciculi: $1, typus MIME: $2',
 'file-info-size'       => '$1 × $2 elementa imaginalia, magnitudo fasciculi: $3, typus MIME: $4',
 'file-nohires'         => '<small>Nulla maior resolutio exstat.</small>',

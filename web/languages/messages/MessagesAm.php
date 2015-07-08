@@ -207,7 +207,7 @@ $messages = array(
 'vector-view-create'       => 'አዲስ ፍጠር',
 'vector-view-edit'         => 'አርም',
 'vector-view-history'      => ' ታሪኩን አሳይ',
-'vector-view-view'         => ' የተነበበ',
+'vector-view-view'         => 'ለማንበብ',
 'vector-view-viewsource'   => 'ጥሬ ኮድ ለመመልከት',
 
 'errorpagetitle'    => 'ስህተት',
@@ -291,7 +291,7 @@ $1',
 
 'badaccess'        => 'ያልተፈቀደ - አይቻልም',
 'badaccess-group0' => 'የጠየቁት አድራጎት እንዲፈጸም ፈቃድ የለዎም።',
-'badaccess-groups' => ' ጥያቂዎት ለሚተሉት ተጥቃሚዎች የተገደበ ነው  {{PLURAL:$2|ማህበር|ከማህበራት ላንዱ}}: $1.',
+'badaccess-groups' => 'የጠየቁት አድራጎት ለ$1 {{PLURAL:$2|ማዕረግ ላላቸው|ማዕረጎች ላሏቸው}} አባላት ብቻ ይፈቀዳል።',
 
 'versionrequired'     => 'የMediaWiki ዝርያ $1 ያስፈልጋል።',
 'versionrequiredtext' => 'ይህንን ገጽ ለመጠቀም የMediaWiki ዝርያ $1 ያስፈልጋል። [[Special:Version|የዝርያውን ገጽ]] ይዩ።',
@@ -2325,9 +2325,7 @@ $3
 'filepath-page'    => 'ፋይሉ፦',
 'filepath-submit'  => 'መንገድ',
 'filepath-summary' => 'ይህ ልዩ ገጽ ለ1 ፋይል ሙሉ መንገድ ይሰጣል።<br />
-ስዕል በሙሉ ማጉላት ይታያል፤ ሌላ አይነት ፋይል በሚገባው ፕሮግራም በቀጥታ ይጀመራል።
-
-የፋይሉ ስም («{{ns:file}}:» የሚለው ባዕድ መነሻ ሳይኖር) ከዚህ ታች ይግባ፦',
+ስዕል በሙሉ ማጉላት ይታያል፤ ሌላ አይነት ፋይል በሚገባው ፕሮግራም በቀጥታ ይጀመራል።',
 
 # Special:FileDuplicateSearch
 'fileduplicatesearch'          => 'ለቅጂ ፋይሎች መፈልግ',

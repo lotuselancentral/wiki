@@ -34,7 +34,7 @@ if ( !defined( 'MW_PHP4' ) ) {
 /** @endcond */
 
 /** MediaWiki version number */
-$wgVersion = '1.17.0';
+$wgVersion = '1.17.5';
 
 /** Name of the site. It must be changed in LocalSettings.php */
 $wgSitename         = 'MediaWiki';
@@ -2414,13 +2414,6 @@ $wgResourceLoaderMaxage = array(
 );
 
 /**
- * Whether to embed private modules inline with HTML output or to bypass
- * caching and check the user parameter against $wgUser to prevent
- * unauthorized access to private modules.
- */
-$wgResourceLoaderInlinePrivateModules = true;
-
-/**
  * The default debug mode (on/off) for of ResourceLoader requests. This will still
  * be overridden when the debug URL parameter is used.
  */
@@ -2926,11 +2919,6 @@ $wgPasswordSalt = true;
  * words are allowed.
  */
 $wgMinimalPasswordLength = 1;
-
-/**
- * Enabes or disables JavaScript-based suggestions of password strength
- */
-$wgLivePasswordStrengthChecks = false;
 
 /**
  * Maximum number of Unicode characters in signature

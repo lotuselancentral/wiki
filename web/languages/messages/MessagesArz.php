@@ -1228,11 +1228,11 @@ $1",
 'searchprofile-images'             => 'مالتيميديا',
 'searchprofile-everything'         => 'كل شىء',
 'searchprofile-advanced'           => 'متقدم',
-'searchprofile-articles-tooltip'   => 'ابحث فى $1',
+'searchprofile-articles-tooltip'   => 'دور فى $1',
 'searchprofile-project-tooltip'    => 'دور فى $1',
-'searchprofile-images-tooltip'     => 'ابحث عن الصور',
-'searchprofile-everything-tooltip' => 'ابحث فى كل المحتوى (شاملا صفحات النقاش)',
-'searchprofile-advanced-tooltip'   => 'ابحث فى النطاقات المخصصة',
+'searchprofile-images-tooltip'     => 'دور على الصور',
+'searchprofile-everything-tooltip' => 'دور فى  كل المحتوى (شامل صفحات النقاش)',
+'searchprofile-advanced-tooltip'   => 'دور فى النطاقات المخصصة',
 'search-result-size'               => '$1 ({{PLURAL:$2|1 كلمه|$2 كلام}})',
 'search-result-score'              => 'الارتباط: $1%',
 'search-redirect'                  => '(تحويله $1)',
@@ -1518,15 +1518,15 @@ $1",
 'action-reupload-shared'      => 'الكتابة على هذا الملف فى مستودع مشترك',
 'action-upload_by_url'        => 'رفع هذا الملف من عنوان مسار',
 'action-writeapi'             => 'استخدام API الكتابة',
-'action-delete'               => 'حذف هذه الصفحة',
-'action-deleterevision'       => 'حذف هذه المراجعة',
+'action-delete'               => 'إمسح الصفحه دى',
+'action-deleterevision'       => 'إمسح النسخه دى',
 'action-deletedhistory'       => 'رؤية تاريخ هذه الصفحة المحذوف',
-'action-browsearchive'        => 'البحث فى الصفحات المحذوفة',
+'action-browsearchive'        => 'التدوير فى الصفحات الممسوحة',
 'action-undelete'             => 'استرجاع هذه الصفحة',
 'action-suppressrevision'     => 'مراجعة واسترجاع هذه المراجعة المخفية',
 'action-suppressionlog'       => 'رؤية هذا السجل الخاص',
 'action-block'                => 'منع  اليوزر ده من التعديل',
-'action-protect'              => 'تغيير مستويات الحماية لهذه الصفحة',
+'action-protect'              => 'تغيير مستويات الحماية للصفحه دى',
 'action-import'               => 'استيراد هذه الصفحة من ويكى آخر',
 'action-importupload'         => 'استيراد هذه الصفحة من ملف مرفوع',
 'action-patrol'               => 'التعليم على تعديلات الآخرين كمراجعة',
@@ -2540,7 +2540,7 @@ $1 ممنوع فعلا. عايز تغير الإعدادات؟',
 'move-page-legend'             => 'انقل الصفحة',
 'movepagetext'                 => "لو استعملت النموذج ده ممكن تغير اسم الصفحه، و تنقل تاريخها للاسم الجديد.
 هاتبتدى تحويله من العنوان القديم للصفحه بالعنوان الجديد.
-لكن،  الوصلات فى الصفحات اللى بتتوصل بالصفحه دى مش ها تتغير؛ اتأكد من ان مافيش  [[Special:BrokenRedirects|وصلات مقطوعه]] ، أو [[Special:DoubleRedirects|وصلات متتاليه]] ، للتأكد من أن المقالات تتصل مع بعضها بشكل مناسب.
+لكن،  الوصلات فى الصفحات اللى بتتوصل بالصفحه دى مش ها تتغيير؛  اتأكد من ان مافيش  [[Special:BrokenRedirects|وصلات مقطوعه]] ، أو [[Special:DoubleRedirects|وصلات متتاليه]] ، للتأكد من أن المقالات تتصل مع بعضها بشكل مناسب.
 
 لاحظ ان الصفحه مش هاتتنقل لو كان فيه صفحه بالاسم الجديد، إلا إذا كانت صفحة فاضيه، أو صفحة تحويل، ومالهاش تاريخ. و ده معناه أنك مش ها تقدر تحط صفحه مكان صفحه، كمان ممكن ارجاع الصفحه لمكانها فى حال تم النقل بشكل غلط.
 
@@ -3478,8 +3478,7 @@ $1',
 'filepath-page'    => 'الملف:',
 'filepath-submit'  => 'المسار',
 'filepath-summary' => 'الصفحة المخصوصة دى بتعرض المسار الكامل  بتاع ملف.
-الصور بتتعرض  بدقة كاملة، أنواع الملفات التانية ح تشتغل فى البرنامج بتاعهم مباشرة.
-دخل اسم الملف  من غير البريفيكس "{{ns:file}}:"',
+الصور بتتعرض  بدقة كاملة، أنواع الملفات التانية ح تشتغل فى البرنامج بتاعهم مباشرة.',
 
 # Special:FileDuplicateSearch
 'fileduplicatesearch'          => 'دور على الملفات المتكررة',

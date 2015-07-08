@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Ianusius
  * @author Kghbln
  * @author MichaelFrey
  * @author SVG
@@ -18,7 +19,7 @@ $separatorTransformTable = array( ',' => "'", '.' => ',' );
 
 $messages = array(
 # General errors
-'actionthrottledtext' => 'Im Rahmen einer Anti-Spam-Massnahme kann diese Aktion in einem kurzen Zeitabstand nur begrenzt oft ausgeführt werden. Diese Grenze hast du überschritten.
+'actionthrottledtext' => 'Im Rahmen einer Anti-Spam-Massnahme oder aufgrund eines Missbrauchsfilters kann diese Aktion in einem kurzen Zeitabstand nur begrenzt oft ausgeführt werden. Diese Grenze hast du überschritten.
 Bitte versuche es in ein paar Minuten erneut.',
 
 # Login and logout pages
@@ -106,7 +107,7 @@ Die Ausgabe kann durch die Auswahl des Logbuchtyps, des Benutzers oder des Seite
 
 # Media information
 'imagemaxsize'         => "Maximale Bildgrösse:<br />''(für Dateibeschreibungsseiten)''",
-'thumbsize'            => 'Standardgrösse der Vorschaubilder (Thumbnails):',
+'thumbsize'            => 'Standardgrösse der Vorschaubilder:',
 'file-info'            => 'Dateigrösse: $1, MIME-Typ: $2',
 'file-info-size'       => '$1 × $2 Pixel, Dateigrösse: $3, MIME-Typ: $4',
 'svg-long-desc'        => 'SVG-Datei, Basisgrösse: $1 × $2 Pixel, Dateigrösse: $3',

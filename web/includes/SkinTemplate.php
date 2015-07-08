@@ -324,8 +324,11 @@ class SkinTemplate extends Skin {
 		$lang = $wgLang->getCode();
 		$dir  = $wgLang->getDir();
 		if ( $lang !== $wgContLang->getCode() || $dir !== $wgContLang->getDir() ) {
-			$attrs = " lang='$lang' dir='$dir'";
-
+			$escUserlang = htmlspecialchars( $userlang );
+			$escUserdir = htmlspecialchars( $userdir );
+			// Attributes must be in double quotes because htmlspecialchars() doesn't
+			// escape single quotes
+			$attrs = " lang=\"$escUserlang\" dir=\"$escUserdir\"";
 			$tpl->set( 'userlangattributes', $attrs );
 
 			// The content of SpecialPages should be presented in the
@@ -549,11 +552,22 @@ class SkinTemplate extends Skin {
 
 		/* set up the default links for the personal toolbar */
 		$personal_urls = array();
-		$page = $wgRequest->getVal( 'returnto', $this->thisurl );
-		$query = $wgRequest->getVal( 'returntoquery', $this->thisquery );
-		$returnto = "returnto=$page";
-		if( $this->thisquery != '' )
-			$returnto .= "&returntoquery=$query";
+
+		# Due to bug 32276, if a user does not have read permissions, 
+		# $wgOut->getTitle() will just give Special:Badtitle, which is 
+		# not especially useful as a returnto parameter. Use the title 
+		# from the request instead, if there was one.
+		$page = Title::newFromURL( $wgRequest->getVal( 'title', '' ) );
+		$page = $wgRequest->getVal( 'returnto', $page );
+		$returnto = '';
+		if( strval( $page ) !== '' ) {
+			$returnto = "returnto=$page";
+			$query = $wgRequest->getVal( 'returntoquery', $this->thisquery );
+			if( $query != '' ) {
+				$returnto .= "&returntoquery=$query";
+			}
+		}
+
 		if( $this->loggedin ) {
 			$personal_urls['userpage'] = array(
 				'text' => $this->username,

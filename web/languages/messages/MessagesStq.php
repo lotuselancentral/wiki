@@ -7,6 +7,8 @@
  * @ingroup Language
  * @file
  *
+ * @author Kaganer
+ * @author Kghbln
  * @author Maartenvdbent
  * @author Mucalexx
  * @author Purodha
@@ -46,7 +48,7 @@ $messages = array(
 'tog-newpageshidepatrolled'   => 'Kontrollierde Sieden ap ju Lieste „Näie Sieden“ ferbierge',
 'tog-extendwatchlist'         => 'Uutgediende Beooboachtengslieste tou Anwiesenge fon aal Annerengen',
 'tog-usenewrc'                => 'Fermeerde Deerstaalenge fon do "Lääste Annerengen" (bruukt Javascript)',
-'tog-numberheadings'          => 'Uurschrifte automatisk nuumerierje',
+'tog-numberheadings'          => 'Uurskrifte automatisk nuumerierje',
 'tog-showtoolbar'             => 'Beoarbaidengs-Reewen anwiese',
 'tog-editondblclick'          => 'Sieden mäd Dubbeldklik beoarbaidje (JavaScript)',
 'tog-editsection'             => 'Links toun Beoarbaidjen fon eenpelde Ousatse anwiese',
@@ -480,7 +482,7 @@ Uurpröif ju Skrieuwwiese (Groot-/Littekskrieuwenge beoachtje) of [[Special:User
 Ignorier disse E-Mail, in dän Fal du ju nit sälwen anfoarderd hääst of wan du dien oold Paaswoud wier betoanke kuust. Dät oolde Paaswoud blift dan wieders gultich.',
 'noemail'                    => 'Benutser "$1" häd neen Email-Adrässe anroat of häd ju E-Mail-Funktion deaktivierd.',
 'noemailcreate'              => 'Du moast ne gultige E-Mail-Adresse anreeke',
-'passwordsent'               => 'N näi temporär Paaswoud wuude an ju Email-Adrässe fon Benutser "$1" soand. Mäldje die jädden deermäd, soo gau as du dät kriegen hääst. Dät oolde Paaswoud blift uk ätters gultich.',
+'passwordsent'               => 'N näi temporär Paaswoud wuude an ju Email-Adrässe fon Benutser "$1" soand. Mäldje die jädden deermäd, so gau as du dät kriegen hääst. Dät oolde Paaswoud blift uk ätters gultich.',
 'blocked-mailpassword'       => 'Ju fon die ferwoande IP-Adresse is foar dät Annerjen fon Sieden speerd. Uum n Misbruuk tou ferhinnerjen, wuude ju Muugelkhaid tou ju Anfoarderenge fon n näi Paaswoud ieuwenfals speerd.',
 'eauthentsent'               => 'Ne Bestäätigengs-Email wuude an ju anroate Adrässe fersoand. Aleer n Email fon uur
 Benutsere uur ju {{SITENAME}}-Mailfunktion ämpfangd wäide kon, mout ju Adrässe un hiere
@@ -636,7 +638,7 @@ of <span class="plainlinks">in do touheerige [{{fullurl:{{#special:Log}}|page={{
 'blocked-notice-logextract'        => 'Dissen Benutser is apstuuns speerd.
 Foar Information foulget n aktuellen Iendraach uut dät Benutser-Logbouk:',
 'clearyourcache'                   => "'''Bemäärkenge: Ätter dät Fäästlääsen kon dät nöödich weese, dän Browser-Cache loostoumoakjen, uum do Annerengen sjo tou konnen.'''
-'''Mozilla / Firefox / Safari:''' hoold ''Shift'' deel un klik ''Reload,'' of tai ''Ctrl-F5'' of ''Ctrl-R'' (''Command-R'' ap n Macintosh); '''Konqueror: '''klik ''Reload'' of tai ''F5;'' '''Opera:''' moak dän cache loos in ''Tools → Preferences;'' '''Internet Explorer:''' hoold ''Ctrl'' deel un klik ''Refresh,'' of tai ''Ctrl-F5.''",
+'''Mozilla / Firefox / Safari:''' hoold ''Shift'' deel un klik ''Reload,'' of tai ''Ctrl-F5'' of ''Ctrl-R'' (''Command-R'' ap n Mac); '''Konqueror: '''klik ''Reload'' of tai ''F5;'' '''Opera:''' moak dän cache loos in ''Tools → Preferences;'' '''Internet Explorer:''' hoold ''Ctrl'' deel un klik ''Refresh,'' of tai ''Ctrl-F5.''",
 'usercssyoucanpreview'             => "'''Tipp:''' Benutse dän  „{{int:showpreview}}“-Knoop, uum dien näi CSS foar dät Spiekerjen tou tästjen.",
 'userjsyoucanpreview'              => "'''Tipp:''' Benutse dän „{{int:showpreview}}“-Knoop, uum dien näi JavaScript foar dät Spiekerjen tou tästjen.",
 'usercsspreview'                   => "== Foarbekiek fon dien Benutser-CSS ==
@@ -837,7 +839,7 @@ Uur Administratore ap {{SITENAME}} hääbe Tougriep ap dän ferstatte Inhoold un
 'revdelete-radio-set'         => 'Jee',
 'revdelete-radio-unset'       => 'Noa',
 'revdelete-suppress'          => 'Gruund fon ju Läskenge uk foar Administratore ferstopped',
-'revdelete-unsuppress'        => 'Ienschränkengen foar wier häärstoalde Versione aphieuwje',
+'revdelete-unsuppress'        => 'Ienskränkengen foar wier häärstoalde Versione aphieuwje',
 'revdelete-log'               => 'Gruund:',
 'revdelete-submit'            => 'Ap uutwäälde  {{PLURAL:$1|Version|Versione}} anweende',
 'revdelete-logentry'          => 'Versionsansicht annerd foar [[$1]]',
@@ -933,7 +935,7 @@ Staal deertruch sicher, dät ju Versionsgeskichte fon n Artikkel historisk akroa
 'searchsubtitle'                   => 'Dien Säikanfroage: „[[:$1|$1]]“ ([[Special:Prefixindex/$1|aal mäd „$1“ ounfangende Sieden]]{{int:pipe-separator}}[[Special:WhatLinksHere/$1|aal Sieden, do ätter „$1“ ferlinkje]])',
 'searchsubtitleinvalid'            => 'Foar dien Säikanfroage „$1“.',
 'toomanymatches'                   => 'Ju Antaal fon Säikresultoate is tou groot, fersäik ne näie Oufroage.',
-'titlematches'                     => 'Uureenstämmengen mäd Uurschrifte',
+'titlematches'                     => 'Uureenstämmengen mäd Uurskrifte',
 'notitlematches'                   => 'Neen Uureenstimmengen',
 'textmatches'                      => 'Uureenstämmengen mäd Texte',
 'notextmatches'                    => 'Neen Uureenstimmengen',
@@ -1319,9 +1321,9 @@ Mäd uur Benutsere koast du uk uur do Benutserdiskussionssieden Kontakt apnieme,
 'upload_directory_missing'    => 'Dät Upload-Ferteeknis ($1) failt un kuud truch dän Webserver uk nit moaked wäide.',
 'upload_directory_read_only'  => 'Die Webserver häd neen Skrieuwgjuchte foar dät Upload-Ferteeknis ($1).',
 'uploaderror'                 => 'Failer bie dät Hoochleeden',
-'upload-recreate-warning'     => "'''Woarschauenge: ne Doatäi fon dissen Noome wuud al läsked of ferschäuwen.'''
+'upload-recreate-warning'     => "'''Woarskauenge: ne Doatäi fon dissen Noome wuud al läsked of ferskäuwen.'''
 
-Der foulget n Uutsuch uut dät Läsk- un Ferschuuwengs-Logbouk fon disse Doatäi.",
+Der foulget n Uutsuch uut dät Läsk- un Ferskuuwengs-Logbouk fon disse Doatäi.",
 'uploadtext'                  => "Bruuk dit Formular uum näie Doatäie hoochtouleeden.
 
 Gung tou ju [[Special:FileList|Lieste fon hoochleedene Doatäie]], uum foarhoundene Doatäie tou säiken un antouwiesen. Sjuch uk dät [[Special:Log/upload|Doatäi-]] un [[Special:Log/delete|Läsk-Logbouk]].
@@ -1355,7 +1357,7 @@ Beoachtje, dät, juust as bie normoale Sieden-Inhoolde, uur Benutsere dien Doat�
 'uploadedfiles'               => 'Hoochleedene Doatäie',
 'ignorewarning'               => 'Woarskauenge ignorierje un Doatäi daach spiekerje',
 'ignorewarnings'              => 'Woarskauengen ignorierje',
-'minlength1'                  => 'Bieldedoatäien mouten mindestens tjoo Bouksteeuwen foar dän (eersten) Punkt hääbe.',
+'minlength1'                  => 'Bieldedoatäien mouten mindestens tjo Bouksteeuwen foar dän (eersten) Punkt hääbe.',
 'illegalfilename'             => 'Die Doatäinoome "$1" änthaalt ap minste een nit toulät Teeken. Benaam jädden ju Doatäi uum un fersäik, hier fon näien hoochtouleeden.',
 'badfilename'                 => 'Die Datäi-Noome is automatisk annerd tou "$1".',
 'filetype-mime-mismatch'      => 'Doatäi-Fergratterenge stimt nit mäd dän MIME-Typ uureen.',
@@ -2267,7 +2269,7 @@ Die oolde Tittel wäd deerätter tou dän näie fäärelaitje.
 Staal sicher, dät di in n Anslus aal  [[Special:DoubleRedirects|dubbelde]] of [[Special:BrokenRedirects|breekene Fäärelaitengen]] wröigest.
 Du bäst deerfoar feroantwoudelk, dät Links uk fääre ap dät korrekte Siel ferwiese.
 
-Ju Siede wäd ‘’‘nit’‘’ferschäuwen, sowied et al ne Siede mäd dän foarsäine Tittel rakt, of ju moaste loos weese of ne Fäärelaitenge sunner Versionsgeskichte.
+Ju Siede wäd ‘’‘nit’‘’ferskäuwen, sowied et al ne Siede mäd dän foarsäine Tittel rakt, of ju moaste loos weese of ne Fäärelaitenge sunner Versionsgeskichte.
 Dät betjut, dät du ju Uumenaamenge tourääch traale koast, wan du n Failer moaked hääst. Du koast deerjuun neen Siede uurskrieuwe.
 
 '''WOARSKAUENGE!'''
@@ -2601,7 +2603,7 @@ $1',
 'mediawarning'         => "'''Woarskauenge:''' Disse Oard fon Doatäi kon n skoadelken Programcode änthoolde. Truch dät Deelleeden un Eepenjen fon disse Doatäi kon dän Computer Skoade toubroacht wäide.",
 'imagemaxsize'         => "Maximoale Bieldegrööte:<br />''(foar Doatäibeskrieuwengssieden)''",
 'thumbsize'            => 'Grööte fon do Foarskaubielden (thumbnails):',
-'widthheightpage'      => '$1×$2, {{PLURAL:$3|1 Siede|$3 Sieden}}',
+'widthheightpage'      => '$1 × $2, {{PLURAL:$3|1 Siede|$3 Sieden}}',
 'file-info'            => 'Doatäigrööte: $1, MIME-Typ: $2',
 'file-info-size'       => '$1 × $2 Pixel, Doatäigrööte: $3, MIME-Typ: $4',
 'file-nohires'         => '<small>Neen haagere Aplöösenge foarhounden.</small>',
