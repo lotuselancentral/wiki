@@ -8,6 +8,7 @@
  * @file
  *
  * @author Khalid Mahmood
+ * @author ZaDiak
  */
 
 $fallback8bitEncoding = 'windows-1256';
@@ -296,7 +297,7 @@ $messages = array(
 ایدے چ کم از کم {{PLURAL:$1|$1|اک ھندسہ}} تے کنجی تواڈے ورتن آلے ناں تو مختلف ہونی چائیدی اے۔',
 'mailmypassword'            => 'نئی کنجی ای میل کرو',
 'passwordremindertitle'     => '{{SITENAME}} لئی نوی عارضی کنجی',
-'passwordremindertext'      => 'کسے نے (غالبن تسی $1 آئی پی پتے توں) نوی کنجی ($4){{SITENAME}} واسطے منگی۔ اک عارضی کنجی ورتن والے "$2" دے لئی بنائی گئی سی تے "$3" تے سیٹ کر دتی گئی سی۔ اگر اے تواڈا کم اے تے توانوں اندر آکے اک نوی کنجی چننی پۓ گی۔
+'passwordremindertext'      => 'کسے نے (غالبن تسی $1 آئی پی پتے توں) نوی کنجی ($4){{SITENAME}} واسطے منگی۔ اک عارضی کنجی ورتن والے "$2" دے لئی بنائی گئی سی تے "$3" تے سیٹ کر دتی گئی سی۔ اگر اے تواڈا کم اے تے توانوں اندر آکے اک نوی $5 کنجی چننی پۓ گی۔
 
 اگر کسے ہور نے اے درخواست کیتی اے یا تسی اپنی پرانی کنجی لب لئی اے تے تسی اینوں بدلنا نئیں چاندے تے تسی اس سنعے نوں چھڈو تے پرانی کنجی استعمال کرو۔',
 'noemail'                   => 'اس ورتن والے "$1" دا کوئی ای میل پتہ نئیں ہے گا۔',
@@ -661,28 +662,26 @@ $messages = array(
 'listfiles_description' => 'تفصیل',
 
 # File description page
-'filehist'                       => 'پچھلی حالت',
-'filehist-help'                  => 'فائل نو اس ویلے دی حالت وچ ویکھن واسطے تاریخ/ویلے تے کلک کرو۔',
-'filehist-deleteall'             => 'سب نوں مٹاؤ',
-'filehist-deleteone'             => 'مٹاؤ',
-'filehist-revert'                => 'واپس',
-'filehist-current'               => 'موجودہ',
-'filehist-datetime'              => 'تاریخ/ویلہ',
-'filehist-thumb'                 => 'نکی مورت',
-'filehist-thumbtext'             => '$1 ورثن دی نکی مورت',
-'filehist-user'                  => 'ورتن والا',
-'filehist-dimensions'            => 'پاسے',
-'filehist-filesize'              => 'فائل دا ناپ',
-'filehist-comment'               => 'راۓ',
-'imagelinks'                     => 'کتھے کتھے جوڑ اے',
-'linkstoimage'                   => 'تھلے دتے گۓ {{PLURAL:$1|$1 صفحے}} اس فائل نال جڑدے نے',
-'nolinkstoimage'                 => 'اس فائل نال جڑیا کوئی صفحہ نہیں۔',
-'sharedupload'                   => 'اے فائل مشترکہ اپلوڈ اے تے اے دوجے منصوبے وی استعمال کر سکدے نے۔',
-'shareduploadduplicate-linktext' => 'دوجی فائل',
-'shareduploadconflict-linktext'  => 'دوجی فائل',
-'noimage'                        => 'اس ناں دی کوئی فائل نہيں، مگر تسی $1 بنا سکدے او۔',
-'noimage-linktext'               => 'اک چڑھاؤ',
-'uploadnewversion-linktext'      => 'اس فائل دا نوا ورژن چھڑھاؤ',
+'filehist'                  => 'پچھلی حالت',
+'filehist-help'             => 'فائل نو اس ویلے دی حالت وچ ویکھن واسطے تاریخ/ویلے تے کلک کرو۔',
+'filehist-deleteall'        => 'سب نوں مٹاؤ',
+'filehist-deleteone'        => 'مٹاؤ',
+'filehist-revert'           => 'واپس',
+'filehist-current'          => 'موجودہ',
+'filehist-datetime'         => 'تاریخ/ویلہ',
+'filehist-thumb'            => 'نکی مورت',
+'filehist-thumbtext'        => '$1 ورثن دی نکی مورت',
+'filehist-user'             => 'ورتن والا',
+'filehist-dimensions'       => 'پاسے',
+'filehist-filesize'         => 'فائل دا ناپ',
+'filehist-comment'          => 'راۓ',
+'imagelinks'                => 'کتھے کتھے جوڑ اے',
+'linkstoimage'              => 'تھلے دتے گۓ {{PLURAL:$1|$1 صفحے}} اس فائل نال جڑدے نے',
+'nolinkstoimage'            => 'اس فائل نال جڑیا کوئی صفحہ نہیں۔',
+'sharedupload'              => 'اے فائل $1 مشترکہ اپلوڈ اے تے اے دوجے منصوبے وی استعمال کر سکدے نے۔', # $1 is the repo name, $2 is shareduploadwiki(-desc)
+'noimage'                   => 'اس ناں دی کوئی فائل نہيں، مگر تسی $1 بنا سکدے او۔',
+'noimage-linktext'          => 'اک چڑھاؤ',
+'uploadnewversion-linktext' => 'اس فائل دا نوا ورژن چھڑھاؤ',
 
 # File reversion
 'filerevert-legend'  => 'فائل پچھلی حالت چ لے جاؤ',
@@ -1194,6 +1193,7 @@ $messages = array(
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # EXIF tags

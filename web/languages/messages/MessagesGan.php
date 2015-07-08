@@ -7,12 +7,33 @@
  * @ingroup Language
  * @file
  *
+ * @author Philip <philip.npc@gmail.com>
  * @author Symane
- * @author Urhixidur
  * @author Vipuser
  */
 
-$fallback = 'zh-hant';
+$fallback = 'gan-hant';
+
+$namespaceNames = array(
+	NS_MEDIA            => 'Media',
+	NS_SPECIAL          => 'Special',
+	NS_MAIN             => '',
+	NS_TALK             => 'Talk',
+	NS_USER             => 'User',
+	NS_USER_TALK        => 'User_talk',
+	# NS_PROJECT set by $wgMetaNamespace
+	NS_PROJECT_TALK     => '$1_talk',
+	NS_FILE             => 'File',
+	NS_FILE_TALK        => 'File_talk',
+	NS_MEDIAWIKI        => 'MediaWiki',
+	NS_MEDIAWIKI_TALK   => 'MediaWiki_talk',
+	NS_TEMPLATE         => 'Template',
+	NS_TEMPLATE_TALK    => 'Template_talk',
+	NS_HELP             => 'Help',
+	NS_HELP_TALK        => 'Help_talk',
+	NS_CATEGORY         => 'Category',
+	NS_CATEGORY_TALK    => 'Category_talk'
+);
 
 $messages = array(
 # User preference toggles
@@ -21,7 +42,7 @@ $messages = array(
 'tog-justify'                 => '對到段落',
 'tog-hideminor'               => '該朝子嗰改動弆到嗰細修改',
 'tog-extendwatchlist'         => '增加監視清單來顯示全部用得正嗰改動，不光係最晏嗰改動',
-'tog-usenewrc'                => '加強該朝子嗰改動(JavaScript)',
+'tog-usenewrc'                => '更高級嗰最晏嗰改動(JavaScript)',
 'tog-numberheadings'          => '標題自動編號',
 'tog-showtoolbar'             => '顯示編輯工具欄(JavaScript)',
 'tog-editondblclick'          => '按兩下改吖(JavaScript)',
@@ -29,7 +50,7 @@ $messages = array(
 'tog-editsectiononrightclick' => '可以按右鍵來編寫隻把子段落(JavaScript)',
 'tog-showtoc'                 => '超過三隻標題就顯到目錄',
 'tog-rememberpassword'        => '到箇隻電腦記到我嗰密碼',
-'tog-editwidth'               => '編輯欄嗰最闊度',
+'tog-editwidth'               => '加闊編輯框到適合整個屏幕',
 'tog-watchcreations'          => '拿我開嗰頁面加到我嗰監視列表',
 'tog-watchdefault'            => '拿我改嗰頁面加到我嗰監視列表',
 'tog-watchmoves'              => '拿我動嗰頁面加到我嗰監視列表',
@@ -193,7 +214,7 @@ $messages = array(
 'toolbox'           => '工具盒',
 'userpage'          => '眵吖用戶頁',
 'projectpage'       => '眵吖計劃頁',
-'imagepage'         => '眵吖媒體頁',
+'imagepage'         => '眵吖文件頁',
 'mediawikipage'     => '眵吖消息頁',
 'templatepage'      => '眵吖模板頁',
 'viewhelppage'      => '眵吖幫助頁',
@@ -259,7 +280,7 @@ $messages = array(
 'restorelink'             => '$1隻拕刪吥嗰版本',
 'feedlinks'               => '鎖定:',
 'feed-invalid'            => '冇用嗰鎖定類型。',
-'feed-unavailable'        => '同步訂閱源到{{SITENAME}}用伓正',
+'feed-unavailable'        => '同步訂閱源冇得用',
 'site-rss-feed'           => '$1嗰RSS訊息',
 'site-atom-feed'          => '$1嗰Atom訊息',
 'page-rss-feed'           => '"$1"嗰RSS訊息',
@@ -315,6 +336,7 @@ $1',
 如果不係咁，倷可能係尋到軟件裡頭嗰bug。
 請記得 URL 嗰地址，向[[Special:ListUsers/sysop|管理員]]報告。',
 'missingarticle-rev'   => '（修訂#: $1）',
+'missingarticle-diff'  => '(差異: $1, $2)',
 'readonly_lag'         => '附屬資料庫服務器拿緩存更新到主服務器，資料庫自動鎖到嘞',
 'internalerror'        => '內部錯誤',
 'internalerror_info'   => '內部錯誤: $1',
@@ -409,7 +431,9 @@ $2',
 'passwordtooshort'           => '倷嗰密碼伓對或太短嘞，佢最少要有$1隻字符，哈要同用戶名伓一樣。',
 'mailmypassword'             => '寄隻新密碼',
 'passwordremindertitle'      => '{{SITENAME}}嗰密碼提醒',
-'passwordremindertext'       => '有人(可能係倷，IP位址$1)要偶俚拿新嗰{{SITENAME}} ($4) 嗰登入密碼寄到倷。眼下用戶"$2"嗰密碼係"$3"。請仰上就登入同到換吥密碼。要係別嗰人發嗰請求，或者倷尋回嘞倷嗰密碼，伓想改佢，倷可以嫑搭箇隻消息，繼續用舊密碼。',
+'passwordremindertext'       => '有人（可能係倷，IP位址$1）要我俚拿新嗰{{SITENAME}} ($4) 嗰登入密碼寄到倷。眼下用戶"$2"嗰密碼係"$3"。請仰上就登入同到換吥密碼。箇隻密碼回到{{PLURAL:$5|一日|$5日}}之後失效
+
+要係別嗰人發嗰請求，或者倷尋回嘞倷嗰密碼，伓想改佢，倷可以嫑搭箇隻消息，繼續用舊密碼。',
 'noemail'                    => '冇有用戶"$1"嗰email地址。',
 'passwordsent'               => '新嗰密碼已經寄到用戶"$1"嗰email去嘍。收到後請再登入過。',
 'blocked-mailpassword'       => '倷嗰IP地址拕封到嘞。用伓正密碼復原功能以防亂用。',
@@ -628,8 +652,8 @@ $2',
 'rev-deleted-comment'         => '(注釋挪吥嘞)',
 'rev-deleted-user'            => '(用戶名挪吥嘞)',
 'rev-deleted-event'           => '(項目挪吥嘞)',
-'rev-deleted-text-permission' => '<div class="mw-warning plainlinks">箇頁嗰改動從共用文檔挪吥嘞。到[{{fullurl:Special:Log/delete|page={{PAGENAMEE}}}} 刪除日誌] 裡度倷話伓定有詳細嗰資料。</div>',
-'rev-deleted-text-view'       => "<div class='mw-warning plainlinks'>箇頁嗰改動從共用文檔挪吥嘞。作為本站嗰管理員，倷查看得正；到[{{fullurl:Special:Log/delete|page={{PAGENAMEE}}}} 刪除日誌] 裡度有詳細嗰資料。 </div>",
+'rev-deleted-text-permission' => '箇頁嗰改動從共用文檔挪吥嘞。到[{{fullurl:Special:Log/delete|page={{PAGENAMEE}}}} 刪除日誌] 裡度倷話伓定有詳細嗰資料。',
+'rev-deleted-text-view'       => '箇頁嗰改動從共用文檔挪吥嘞。作為本站嗰管理員，倷查看得正；到[{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} 刪除日誌] 裡度有詳細嗰資料。',
 'rev-delundel'                => '顯示/弆到',
 'revisiondelete'              => '刪除/反刪除修改',
 'revdelete-nooldid-title'     => '冇目標修訂',
@@ -970,7 +994,7 @@ $2',
 'imagelinks'                => '檔案連結',
 'linkstoimage'              => '下頭嗰$1隻頁面連到箇隻檔案：',
 'nolinkstoimage'            => '冇頁面連結到箇隻檔案。',
-'sharedupload'              => '箇隻檔案係隻共用嗰上傳，佢可以應用到別嗰項目。',
+'sharedupload'              => '箇隻檔案係出自$1，佢可以應用到別嗰項目。', # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'shareduploadwiki'          => '更多信息請參看$1。',
 'shareduploadwiki-desc'     => '下頭顯示佢到$1許首嗰描述。',
 'shareduploadwiki-linktext' => '檔案描述頁',
@@ -1365,7 +1389,7 @@ $NEWPAGE
 'contributions-title' => '$1嗰用戶貢獻',
 'mycontris'           => '我嗰貢獻',
 'contribsub2'         => '$1嗰貢獻 ($2)',
-'nocontribs'          => '冇尋到合到條件嗰改動。',
+'nocontribs'          => '冇尋到合到條件嗰改動。', # Optional parameter: $1 is the user name
 'uctop'               => '(頭上)',
 'month'               => '從箇月 (或更早):',
 'year'                => '從箇年 (或更早):',
@@ -1774,6 +1798,11 @@ $1',
 頭隻連結非要連到隻壞圖。
 之後同一行嗰連結會考慮係特殊，也就係話係幅圖都能到哪篇文章同時顯示得正。',
 
+# Variants for Gan language
+'variantname-gan-hans' => '简体',
+'variantname-gan-hant' => '繁體',
+'variantname-gan'      => '贛語原文',
+
 # Metadata
 'metadata'          => '元數據',
 'metadata-help'     => '箇隻檔案含到額外嗰信息。咁可能係數碼相機或掃描儀扤得。 要係改吥箇隻檔嗰源檔案，佢嗰資料伓見得會同改過後一樣。',
@@ -1785,6 +1814,7 @@ $1',
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # EXIF tags
@@ -2053,9 +2083,8 @@ $1',
 'confirmemail'            => '確認email地址',
 'confirmemail_noemail'    => '倷冇到倷嗰[[Special:Preferences|用戶設置]]設正一隻有效嗰電子郵件地址。',
 'confirmemail_text'       => '箇隻網站要求倷用email功能之前確認下倷嗰email地址。按吖下底嗰鍵來發封確認郵件到倷嗰郵箱。佢會附帶一隻代碼連結；請到倷嗰瀏覽器打開箇隻連結來確認倷嗰email地址係有效嗰。',
-'confirmemail_pending'    => '<div class="error">
-一隻確認代碼發到倷嗰郵箱，噉可能要等幾分鐘。
-要係冇收到，請申請過新嗰確認碼！</div>',
+'confirmemail_pending'    => '一隻確認代碼發到倷嗰郵箱，噉可能要等幾分鐘。
+要係冇收到，請申請過新嗰確認碼！',
 'confirmemail_send'       => '寄出確認碼',
 'confirmemail_sent'       => '確認郵件發出嘞。',
 'confirmemail_oncreate'   => '一隻確認碼發到倷嗰郵箱。箇隻代碼伓係話倷要仰上登入，但要係倷想用 wiki 嗰任何email嗰相關功能，就非要先提交箇隻代碼。',
@@ -2082,7 +2111,8 @@ $3
 'scarytranscludetoolong'  => '[對伓住，URL 太長]',
 
 # Trackbacks
-'trackbackbox'      => '<div id="mw_trackbacks">箇篇文章嗰引用:<br />$1</div>',
+'trackbackbox'      => '箇篇文章嗰引用:<br />
+$1',
 'trackbackremove'   => '([$1刪除])',
 'trackbacklink'     => '引用',
 'trackbackdeleteok' => '成功刪卟箇隻引用。',

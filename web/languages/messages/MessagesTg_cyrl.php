@@ -301,7 +301,7 @@ $messages = array(
 'versionrequiredtext' => 'Барои истифодаи ин саҳифа ба нусхаи $1 аз нармафзори МедиаВики ниёз доред. Барои иттилооъ аз нусхаи нармафзори насбшуда дар ин вики ба [[Special:Version|ин саҳифа]] нигаред.',
 
 'ok'                      => 'Бошад',
-'pagetitle'               => '$1 - Википедиа',
+'pagetitle-view-mainpage' => '{{SITENAME}}',
 'retrievedfrom'           => 'Баргирифта аз "$1"',
 'youhavenewmessages'      => 'Шумо $1 ($2) доред.',
 'newmessageslink'         => 'пайёмҳои нав',
@@ -712,12 +712,10 @@ $1',
 'rev-deleted-comment'         => '(тавзиҳот пок шуд)',
 'rev-deleted-user'            => '(номи корбар ҳазф шудааст)',
 'rev-deleted-event'           => '(амалӣ гузориш пок шуд)',
-'rev-deleted-text-permission' => '<div class="mw-warning plainlinks">
-Ин вироиш аз ин саҳифа аз таърихи умумии ин саҳифа ҳазф шудааст.
-Иттилооти марбутаро эҳтимолан метавонед дар [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} гузориши ҳазф] бубинед.</div>',
-'rev-deleted-text-view'       => '<div class="mw-warning plainlinks">
-Ин вироиш аз ин саҳифа аз таърихи умумии ин саҳифа ҳазф шудааст.
-Шумо ҳамчун мудири {{SITENAME}} метавонед онро бубинед; иттилооти марбутаро эҳтимолан метавонед дар [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} гузориши ҳазф] бубинед.</div>',
+'rev-deleted-text-permission' => 'Ин вироиш аз ин саҳифа аз таърихи умумии ин саҳифа ҳазф шудааст.
+Иттилооти марбутаро эҳтимолан метавонед дар [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} гузориши ҳазф] бубинед.',
+'rev-deleted-text-view'       => 'Ин вироиш аз ин саҳифа аз таърихи умумии ин саҳифа ҳазф шудааст.
+Шумо ҳамчун мудири {{SITENAME}} метавонед онро бубинед; иттилооти марбутаро эҳтимолан метавонед дар [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} гузориши ҳазф] бубинед.',
 'rev-delundel'                => 'намоиш/пинҳон',
 'revisiondelete'              => 'Нусхаҳои ҳазф/эҳёӣ',
 'revdelete-nooldid-title'     => 'Нусхаи мақсади номӯътабар',
@@ -1155,30 +1153,27 @@ $1',
 'listfiles_description' => 'Тавсифот',
 
 # File description page
-'filehist'                       => 'Таърихи файл',
-'filehist-help'                  => 'Рӯи таърихҳо клик кунед то нусхаи марбути парвандаро бубинед.',
-'filehist-deleteall'             => 'ҳазфи ҳама',
-'filehist-deleteone'             => 'ҳазф',
-'filehist-revert'                => 'вогардонӣ',
-'filehist-current'               => 'нусхаи феълӣ',
-'filehist-datetime'              => 'Таърих',
-'filehist-user'                  => 'Корбар',
-'filehist-dimensions'            => 'Андоза',
-'filehist-filesize'              => 'Андозаи парванда',
-'filehist-comment'               => 'Тавзеҳ',
-'imagelinks'                     => 'Пайвандҳои парванда',
-'linkstoimage'                   => '{{PLURAL:$1|Саҳифаҳои|$1 Саҳифаи}} зерин ба ин акс пайванданд:',
-'nolinkstoimage'                 => 'Ҳеҷ саҳифае ба ин акс пайванд надорад.',
-'sharedupload'                   => 'Ин парванда бо таври умумӣ бор карда шудааст ва шояд аз тарафи дигар лоиҳаҳо мавриди истифода бошад.',
-'shareduploadwiki'               => 'Лутфан барои иттилооти бештар ба $1 нигаред.',
-'shareduploadwiki-desc'          => 'Тавзеҳот дар мавриди $1 дар зер нишон дода шудааст.',
-'shareduploadwiki-linktext'      => 'саҳифаи тавсифи парванда',
-'shareduploadduplicate-linktext' => 'дигар парванда',
-'shareduploadconflict-linktext'  => 'дигар парванда',
-'noimage'                        => 'Ҳеҷ парвандае бо ин ном мавҷуд нест, шумо метавонед $1.',
-'noimage-linktext'               => 'онро бор кунед',
-'uploadnewversion-linktext'      => 'Бор кардани нусхаи ҷадидӣ ин парванда',
-'imagepage-searchdupe'           => 'Ҷустуҷӯ барои парвандаҳои такрорӣ',
+'filehist'                  => 'Таърихи файл',
+'filehist-help'             => 'Рӯи таърихҳо клик кунед то нусхаи марбути парвандаро бубинед.',
+'filehist-deleteall'        => 'ҳазфи ҳама',
+'filehist-deleteone'        => 'ҳазф',
+'filehist-revert'           => 'вогардонӣ',
+'filehist-current'          => 'нусхаи феълӣ',
+'filehist-datetime'         => 'Таърих',
+'filehist-user'             => 'Корбар',
+'filehist-dimensions'       => 'Андоза',
+'filehist-filesize'         => 'Андозаи парванда',
+'filehist-comment'          => 'Тавзеҳ',
+'imagelinks'                => 'Пайвандҳои парванда',
+'linkstoimage'              => '{{PLURAL:$1|Саҳифаҳои|$1 Саҳифаи}} зерин ба ин акс пайванданд:',
+'nolinkstoimage'            => 'Ҳеҷ саҳифае ба ин акс пайванд надорад.',
+'sharedupload'              => 'Ин парванда бо таври умумӣ бор карда шудааст ва шояд аз тарафи дигар лоиҳаҳо мавриди истифода бошад.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
+'shareduploadwiki'          => 'Лутфан барои иттилооти бештар ба $1 нигаред.',
+'shareduploadwiki-desc'     => 'Тавзеҳот дар мавриди $1 дар зер нишон дода шудааст.',
+'shareduploadwiki-linktext' => 'саҳифаи тавсифи парванда',
+'noimage'                   => 'Ҳеҷ парвандае бо ин ном мавҷуд нест, шумо метавонед $1.',
+'noimage-linktext'          => 'онро бор кунед',
+'uploadnewversion-linktext' => 'Бор кардани нусхаи ҷадидӣ ин парванда',
 
 # File reversion
 'filerevert'                => 'Вогардонии $1',
@@ -1359,7 +1354,8 @@ $1',
 'special-categories-sort-abc'   => 'муратаб кардани алифбоӣ',
 
 # Special:DeletedContributions
-'deletedcontributions' => 'Ҳиссагузориҳои ҳазфшудаи корбар',
+'deletedcontributions'       => 'Ҳиссагузориҳои ҳазфшудаи корбар',
+'deletedcontributions-title' => 'Ҳиссагузориҳои ҳазфшудаи корбар',
 
 # Special:LinkSearch
 'linksearch'       => 'Ҷусутҷӣ пайвандҳои веб',
@@ -1624,7 +1620,7 @@ $1',
 'contributions' => 'Ҳиссагузории корбар',
 'mycontris'     => 'Хиссагузории ман',
 'contribsub2'   => 'Барои $1 ($2)',
-'nocontribs'    => 'Ҳеҷ тағйире бо ин мушаххасот пайдо нашуд.',
+'nocontribs'    => 'Ҳеҷ тағйире бо ин мушаххасот пайдо нашуд.', # Optional parameter: $1 is the user name
 'uctop'         => '(боло)',
 'month'         => 'Дар ин моҳ (ва қабл аз он):',
 'year'          => 'Дар ин сол (ва қабл аз он):',
@@ -2056,6 +2052,7 @@ $1',
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # EXIF tags
@@ -2324,7 +2321,7 @@ $1',
 'confirmemail'             => 'Тасдиқи нишонаи почтаи электронӣ',
 'confirmemail_noemail'     => 'Шумо дар саҳифаи [[Special:Preferences|тарҷиҳоти корбарии]] худ нишонаи почтаи электронии мӯътабареро ворид накардаед.',
 'confirmemail_text'        => '{{SITENAME}} таъйиди эътибои почтаи электронии шуморо пеш аз истифода хидмати электронӣ талаб мекунад. Тугмаи зеринро фаъол кунед то номаи таъйидӣ ба почтаи электронии шумо фиристода шавад. Ин нома пайвандеро дар бар мегирад, ки коде дорад; пайвандро дар мурургар боз кунед, то ки почтаи электрониатон  дар ҳақиқат таъйид шавад.',
-'confirmemail_pending'     => '<div class="error">Як коди таъйиди пештар барои шумо тариқи почтаи электронӣ фиристода шуда буд; агар ба наздики шумо ҳисоберо эчод карда бошед, шояд якчанд дақиқа пеш аз дархост кардани коди ҷадид омадани коди таъйидии қаблиро интизор шавед.</div>',
+'confirmemail_pending'     => 'Як коди таъйиди пештар барои шумо тариқи почтаи электронӣ фиристода шуда буд; агар ба наздики шумо ҳисоберо эчод карда бошед, шояд якчанд дақиқа пеш аз дархост кардани коди ҷадид омадани коди таъйидии қаблиро интизор шавед.',
 'confirmemail_send'        => 'Фиристодани коди тасдиқ',
 'confirmemail_sent'        => 'Номаи электронии тасдиқ фиристода шуд.',
 'confirmemail_oncreate'    => 'Як коди таъйидие ба почтаи электронии шумо фиристода шуд.
@@ -2375,8 +2372,9 @@ $5
 'scarytranscludetoolong'  => '[URL-Нишонаи интернетии мавриди назар беш аз андоза дароз буд; бубахшед]',
 
 # Trackbacks
-'trackbackbox'      => '<div id="mw_trackbacks">Бозтоби ин саҳифа дар вебнавиштҳо:<br />$1</div>',
-'trackbackremove'   => ' ([$1 Ҳазф])',
+'trackbackbox'      => 'Бозтоби ин саҳифа дар вебнавиштҳо:<br />
+$1',
+'trackbackremove'   => '([$1 Ҳазф])',
 'trackbacklink'     => 'Бозтоб',
 'trackbackdeleteok' => 'Бозтоби саҳифа бо муваффақият ҳазф шуд.',
 

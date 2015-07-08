@@ -52,14 +52,20 @@ $namespaceAliases = array(
 );
 
 $specialPageAliases = array(
-	'DoubleRedirects'           => array( 'КафонзафЁтафтфксне' ),
-	'BrokenRedirects'           => array( 'СиньтьфЁтафтфксне' ),
+	'DoubleRedirects'           => array( 'КафонзафШашфтфксне' ),
+	'BrokenRedirects'           => array( 'СиньтьфШашфтфксне' ),
+	'Disambiguations'           => array( 'Лама Смусть' ),
+	'Userlogin'                 => array( 'ТииньСувама' ),
+	'Userlogout'                => array( 'ТииньЛисема' ),
+	'CreateAccount'             => array( 'Сёрматфтомс' ),
+	'Preferences'               => array( 'Латцематне' ),
 	'Watchlist'                 => array( 'Мельгеванома' ),
 	'Recentchanges'             => array( 'УлхкомбаньПолафнематне' ),
 	'Upload'                    => array( 'Тонгома' ),
 	'Listfiles'                 => array( 'НяйфКярькс' ),
 	'Newimages'                 => array( 'ОдНяйфне' ),
 	'Listusers'                 => array( 'ЛувомТиихне' ),
+	'Listgrouprights'           => array( 'ЛувомаПолгаВидексне' ),
 	'Statistics'                => array( 'Статистик' ),
 	'Randompage'                => array( 'Кодама повсь', 'Кодама повсь лопа' ),
 	'Lonelypages'               => array( 'СькамоньЛопат', 'УрозЛопат' ),
@@ -71,13 +77,67 @@ $specialPageAliases = array(
 	'Unusedimages'              => array( 'Апак нолдак тевсНяйфне' ),
 	'Wantedpages'               => array( 'ВешевиЛопат', 'СиньтьфСюлмафкст' ),
 	'Wantedcategories'          => array( 'ВешевиКатегориет' ),
+	'Wantedfiles'               => array( 'ВешевиФайлхт' ),
+	'Wantedtemplates'           => array( 'ВешевиШаблотт' ),
+	'Mostlinked'                => array( 'СембодаСюлмафт' ),
+	'Mostlinkedcategories'      => array( 'СембодаСюлмафтКатегориет' ),
+	'Mostlinkedtemplates'       => array( 'СембодаСюлмафтШаблотт' ),
+	'Mostimages'                => array( 'СембодаНяйфне' ),
+	'Mostcategories'            => array( 'СембодаКатегориет' ),
+	'Mostrevisions'             => array( 'СембодаВерзиет' ),
+	'Fewestrevisions'           => array( 'КържаВерзиет' ),
+	'Shortpages'                => array( 'НюрьхкяняЛопат' ),
+	'Longpages'                 => array( 'КувакаЛопат' ),
 	'Newpages'                  => array( 'ОдЛопат' ),
 	'Ancientpages'              => array( 'КунардоньЛопат' ),
+	'Deadendpages'              => array( 'ПеньЛопат' ),
 	'Protectedpages'            => array( 'АралафЛопат' ),
 	'Protectedtitles'           => array( 'АралафКонякст' ),
 	'Allpages'                  => array( 'СембеЛопат' ),
 	'Prefixindex'               => array( 'ВалынгольксИндекс' ),
+	'Ipblocklist'               => array( 'IPСёлгоматЛувома' ),
 	'Specialpages'              => array( 'БашкаЛопат' ),
+	'Contributions'             => array( 'Путксне' ),
+	'Emailuser'                 => array( 'АдресТиись' ),
+	'Confirmemail'              => array( 'КемокстакАдрес' ),
+	'Whatlinkshere'             => array( 'МезеньСюлмафкстТяса' ),
+	'Recentchangeslinked'       => array( 'УлхкомбаньПолафнематСюлмафт' ),
+	'Movepage'                  => array( 'ШашфттЛопа' ),
+	'Blockme'                   => array( 'Сёлгомак' ),
+	'Booksources'               => array( 'КинигаЛисьмот' ),
+	'Categories'                => array( 'Категориет' ),
+	'Export'                    => array( 'Вимс' ),
+	'Version'                   => array( 'Верзие' ),
+	'Allmessages'               => array( 'СембеПачфтематне' ),
+	'Log'                       => array( 'Лувома', 'Лувомат' ),
+	'Blockip'                   => array( 'СёлгомаIP' ),
+	'Undelete'                  => array( 'Мърдафтомс' ),
+	'Import'                    => array( 'Сувафтомс' ),
+	'Lockdb'                    => array( 'ПякстамсДатабазать' ),
+	'Unlockdb'                  => array( 'ПанжемсДатабазать' ),
+	'Userrights'                => array( 'ТииньВидексонза' ),
+	'MIMEsearch'                => array( 'MIMEВешендема' ),
+	'FileDuplicateSearch'       => array( 'ФайлКафонзафВешендема' ),
+	'Unwatchedpages'            => array( 'МельгеваномафтомаЛопат' ),
+	'Listredirects'             => array( 'ЛувомаШашфтфксне' ),
+	'Revisiondelete'            => array( 'ВерзиеНардамс' ),
+	'Unusedtemplates'           => array( 'Апак нолдак тевсШаблотт' ),
+	'Randomredirect'            => array( 'Кона повсьШашфтфкс' ),
+	'Mypage'                    => array( 'МоньЛопазе' ),
+	'Mytalk'                    => array( 'МоньКорхнемазе' ),
+	'Mycontributions'           => array( 'МоньПутксне' ),
+	'Listadmins'                => array( 'ЛувомаСистемонь вятиксне' ),
+	'Listbots'                  => array( 'ЛувомаРоботт програпне' ),
+	'Popularpages'              => array( 'СидестаЛопатне' ),
+	'Search'                    => array( 'Вешендема' ),
+	'Resetpass'                 => array( 'ПолафттСувама', 'ПолафттСувама вал' ),
+	'Withoutinterwiki'          => array( 'Интервикифтома' ),
+	'MergeHistory'              => array( 'ШоворемсИсториять' ),
+	'Filepath'                  => array( 'ФайлКиц' ),
+	'Invalidateemail'           => array( 'Аф кемокстамс адресть' ),
+	'Blankpage'                 => array( 'ШаваЛопа' ),
+	'LinkSearch'                => array( 'СюлмафксВешендема' ),
+	'DeletedContributions'      => array( 'НардафПутксне' ),
 );
 
 $messages = array(
@@ -475,6 +535,10 @@ $2',
 'badsig'                     => 'Аф кондясти казяма кядьтяшксоце; ванк HTML тяштьксне.',
 'badsiglength'               => 'Тонь тяшкстамаце пяк кувака.
 Аф эряви путомс $1 {{PLURAL:$1|тяшкста|тяшкста}} лама.',
+'yourgender'                 => 'Симанкс:',
+'gender-unknown'             => 'Аф содаф',
+'gender-male'                => 'Аля вайме',
+'gender-female'              => 'Ава вайме',
 'email'                      => 'Электрононь адресце',
 'prefs-help-realname'        => 'Афкуксонь лемце путомась аф лувови эрявикс. Афкуксонь лемцень тязк путомада меле тонь лемце кармай эвондама лопаса тонь петнемацень ала.',
 'loginerror'                 => 'Сувама эльбятькс',
@@ -495,11 +559,10 @@ $2',
 'passwordtooshort'           => 'Тонь сувама валце аф кондясти эли кувалмоц аф саты. Тяса аф эряви путомс {{PLURAL:$1|1 тяшкста|$1 тяшкста}} кържа. Сувама валонцты эряви явовомс тонь тиить лемдот.',
 'mailmypassword'             => 'Кучт од сувама вал',
 'passwordremindertitle'      => 'Од ёткопингонь сувама валсь {{SITENAME}}с суваманди',
-'passwordremindertext'       => 'Кивок (улема, тон IP адреста $1) вешсь од сувама валсь {{SITENAME}} ($4)с суваманди.
-"$2" тиить ёткапингонь сувама валоц тифоль ни ди сон тяни "$3".
-Тондейть эряви сувамс эди путомс од сувама валть.
+'passwordremindertext'       => 'Кивок (улема, тон IP адресста $1) вешсь од сувама валсь {{SITENAME}} ($4)с суваманди.
+"$2" тиить ёткапингонь сувама валоц тифоль ни ди сон тяни "$3". Улендяряль тя афкукс тонь мяльце тянь тиемс, тондейть эряви сувамс эди путомс од сувама валть. Тонь ёткапингонь сувама валце сирелгоды {{PLURAL:$5|фкя шис|$5 шис}}.
 
-Улендяряй киге иля кучсь тя вешфксть эли тон мяляфтсак тонь сувама валцень эди тонь тяни аш мяльце сонь полафтома, тят тие мезеге тя пачфтемась самда меле ди киртть тонь ётай сувама валце.',
+Улендяряй киге иля кучсь тя вешфксть эли тон мяляфтсак тонь сувама валцень эди тонь тяни аш мяльце сонь полафтома, тят тие мезеге тя пачфтемась самда меле ди киртть тонь ингольдень сувама валцень.',
 'noemail'                    => '"$1" тиить электрононь адресоц аш.',
 'passwordsent'               => 'Од сувама валсь кучфоль "$1" тиить электрононь адресонцты.
 Сувак сонь кундамда меле.',
@@ -621,7 +684,9 @@ $2',
 'loginreqlink'                     => 'сувамс',
 'loginreqpagetext'                 => 'Тондейть эряви $1 иля лопат ваноманкса.',
 'accmailtitle'                     => 'Сувама вал кучф.',
-'accmailtext'                      => 'Тиить "$1" сувама валоц кучф $2 адрести.',
+'accmailtext'                      => "Апак арьсек тиф [[User talk:$1|$1]]нь сувама валоц кучфоль $2с.
+
+Тя од сёрматфтомать сувама валть ули кода полафтомс ''[[Special:ChangePassword|сувама валонь полафтома]]'' лопаса сувамда меле.",
 'newarticle'                       => '(Од)',
 'newarticletext'                   => "Тон сать лопас кона нинге изь тие.
 Сёрматк паксяв алу тя лопать тиеманкса
@@ -777,16 +842,10 @@ $3 макссь туфталсь - ''$2''",
 'rev-deleted-comment'         => '(мяльполаткс нардаф)',
 'rev-deleted-user'            => '(тиить лемоц нардаф)',
 'rev-deleted-event'           => '(сёрматфсь нардаф)',
-'rev-deleted-text-permission' => '<div class="mw-warning plainlinks">
-Тя лопать верзиенц нардазь марстонь аркивста.
-Шарьхкотьфнемат, шятьта, улихть
-[{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} нардамань лувомаса].
-</div>',
-'rev-deleted-text-view'       => '<div class="mw-warning plainlinks">
-Тя лопать верзиенц нардазь марстонь пърдафксста.
-Тондейть кода {{SITENAME}}-ть оцюнянцты ули кода ваномонза;
-ванк [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} нардамань лувомаса].
-</div>',
+'rev-deleted-text-permission' => "Тя лопать верзиенц '''нардазь'''.
+Шарьхкотьфнемат, шятьта, улихть [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} нардамань лувомаса].",
+'rev-deleted-text-view'       => "Тя лопать верзиенц '''нардазь'''.
+Тондейть кода оцюнянцты ули кода ваномонза; ванк сяда лама информацие [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} нардамань лувомаса].",
 'rev-delundel'                => 'няфтемс/кяшемс',
 'revisiondelete'              => 'Нардамс/мърдафтомс илякстоптоматнень',
 'revdelete-nooldid-title'     => 'Аф лац верзиень кочкама',
@@ -1025,6 +1084,7 @@ $3 макссь туфталсь - ''$2''",
 'prefs-resetpass'           => 'Полафтомс сувама валцень',
 'saveprefs'                 => 'Ванфтомс',
 'resetprefs'                => 'Валхтомс апак ванфтт полафнематнень',
+'restoreprefs'              => 'Мърдафтомс васень латцематне',
 'textboxsize'               => 'Петнема',
 'prefs-edit-boxsize'        => 'Петнема вальмоть келец.',
 'rows'                      => 'Луфт (строкат):',
@@ -1047,6 +1107,13 @@ $3 макссь туфталсь - ''$2''",
 'timezoneoffset'            => 'Явома¹:',
 'servertime'                => 'Серверонь пинге:',
 'guesstimezone'             => 'Сёрмадомс интернет полатксста',
+'timezoneregion-africa'     => 'Африк',
+'timezoneregion-america'    => 'Америк',
+'timezoneregion-antarctica' => 'Антарктик',
+'timezoneregion-arctic'     => 'Арктик',
+'timezoneregion-asia'       => 'Азия',
+'timezoneregion-europe'     => 'Явроп',
+'timezoneregion-pacific'    => 'Сетьме океан',
 'allowemail'                => 'Электрононь сёрматнень иля тиихнень эзда тиемс мярьговикс',
 'prefs-searchoptions'       => 'Вешендема арафнемат',
 'prefs-namespaces'          => 'Лемботмот',
@@ -1348,41 +1415,36 @@ $3 макссь туфталсь - ''$2''",
 'listfiles_count'       => 'Верзиет',
 
 # File description page
-'filehist'                       => 'Файлонь историясь',
-'filehist-help'                  => 'Люпштак шить/пингть лангс ся пингонь файлть верзинц няфтеманкса.',
-'filehist-deleteall'             => 'нардамс сембе',
-'filehist-deleteone'             => 'нардамс',
-'filehist-revert'                => 'мърдафтомс',
-'filehist-current'               => 'тя пингонь',
-'filehist-datetime'              => 'Ши/Пинге',
-'filehist-thumb'                 => 'Миниатюр',
-'filehist-thumbtext'             => 'Миниатюронь верзиец тиф $1',
-'filehist-nothumb'               => 'Миниатюр аш',
-'filehist-user'                  => 'Тии',
-'filehist-dimensions'            => 'Кувалма',
-'filehist-filesize'              => 'Файлонь кувалмоц',
-'filehist-comment'               => 'Мяльполаткс',
-'imagelinks'                     => 'Файл сюлмафкст',
-'linkstoimage'                   => 'Сай {{PLURAL:$1|лопась сюлмаф|$1 лопатне сюлмафт}} вага тя файлть мархта:',
-'linkstoimage-more'              => '$1-да лама {{PLURAL:$1|лопа сюлмаф|лопат сюлмафт}} тя файлть мархта.
+'filehist'                  => 'Файлонь историясь',
+'filehist-help'             => 'Люпштак шить/пингть лангс ся пингонь файлть верзинц няфтеманкса.',
+'filehist-deleteall'        => 'нардамс сембе',
+'filehist-deleteone'        => 'нардамс',
+'filehist-revert'           => 'мърдафтомс',
+'filehist-current'          => 'тя пингонь',
+'filehist-datetime'         => 'Ши/Пинге',
+'filehist-thumb'            => 'Миниатюр',
+'filehist-thumbtext'        => 'Миниатюронь верзиец тиф $1',
+'filehist-nothumb'          => 'Миниатюр аш',
+'filehist-user'             => 'Тии',
+'filehist-dimensions'       => 'Кувалма',
+'filehist-filesize'         => 'Файлонь кувалмоц',
+'filehist-comment'          => 'Мяльполаткс',
+'imagelinks'                => 'Файл сюлмафкст',
+'linkstoimage'              => 'Сай {{PLURAL:$1|лопась сюлмаф|$1 лопатне сюлмафт}} вага тя файлть мархта:',
+'linkstoimage-more'         => '$1-да лама {{PLURAL:$1|лопа сюлмаф|лопат сюлмафт}} тя файлть мархта.
 Тя лувомаса няфневихть {{PLURAL:$1|васенце лопань сюлмафксоц|васенце $1 лопань сюлмафкссна}} аньцек тя файлть мархта.
 Вага тяса [[Special:WhatLinksHere/$2|пяшксе лувомась]].',
-'nolinkstoimage'                 => 'Лопат сюлмафт тя файлть мархта ашет.',
-'morelinkstoimage'               => 'Ванк [[Special:WhatLinksHere/$1|сяда лама сюлмафкст]] тя файлонди.',
-'redirectstofile'                => 'Сай {{PLURAL:$1|файлсь шашфтфоль|$1 файлхне шашфтфольхть}} тя файлонди:',
-'duplicatesoffile'               => 'Сай {{PLURAL:$1|файлсь ащи кафонзафксокс|$1 файлхне ащихть кафонзафксокс}} тя файлонди ([[Special:FileDuplicateSearch/$2|сяда лама информацие]]):',
-'sharedupload'                   => 'Тя файлсь тонгозь марстонь файл пърдафксс ди сонь ули кода сувафтомс иля проектс.',
-'shareduploadwiki'               => 'Ванк $1 лама информацие ванома.',
-'shareduploadwiki-desc'          => 'Сёрмадома сонць $1 коряс марстонь репозиториса ванк ала.',
-'shareduploadwiki-linktext'      => 'файл колга информациень лопа',
-'shareduploadduplicate'          => 'Тя файлсь $1-нь кафонзафкс марстонь репозиториста.',
-'shareduploadduplicate-linktext' => 'тага фкя файл',
-'shareduploadconflict'           => 'Тя файлть сяка лемоц кода $1 марстонь репозиториста.',
-'shareduploadconflict-linktext'  => 'тага фкя файл',
-'noimage'                        => 'Тя лем мархта файл аш, интай тондейть ули кода $1.',
-'noimage-linktext'               => 'тонгодемс тянь',
-'uploadnewversion-linktext'      => 'Тонгодемс тя файлонь од верзиенц',
-'imagepage-searchdupe'           => 'Вешендемс кафонзаф файлхне',
+'nolinkstoimage'            => 'Лопат сюлмафт тя файлть мархта ашет.',
+'morelinkstoimage'          => 'Ванк [[Special:WhatLinksHere/$1|сяда лама сюлмафкст]] тя файлонди.',
+'redirectstofile'           => 'Сай {{PLURAL:$1|файлсь шашфтфоль|$1 файлхне шашфтфольхть}} тя файлонди:',
+'duplicatesoffile'          => 'Сай {{PLURAL:$1|файлсь ащи кафонзафксокс|$1 файлхне ащихть кафонзафксокс}} тя файлонди ([[Special:FileDuplicateSearch/$2|сяда лама информацие]]):',
+'sharedupload'              => 'Тя файлсь $1ста ди сонь ули кода сувафтомс иля проектс.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
+'shareduploadwiki'          => 'Ванк $1 лама информацие ванома.',
+'shareduploadwiki-desc'     => 'Сёрмадома сонць $1 коряс марстонь репозиториса ванк ала.',
+'shareduploadwiki-linktext' => 'файл колга информациень лопа',
+'noimage'                   => 'Тя лем мархта файл аш, интай тондейть ули кода $1.',
+'noimage-linktext'          => 'тонгодемс тянь',
+'uploadnewversion-linktext' => 'Тонгодемс тя файлонь од верзиенц',
 
 # File reversion
 'filerevert'                => 'Мърдафтомс $1',
@@ -1581,7 +1643,8 @@ $3 макссь туфталсь - ''$2''",
 'special-categories-sort-abc'   => 'арафтомс алфавитонь коряс',
 
 # Special:DeletedContributions
-'deletedcontributions' => 'Нардаф тиихнень путкссна',
+'deletedcontributions'       => 'Нардаф тиихнень путкссна',
+'deletedcontributions-title' => 'Нардаф тиихнень путкссна',
 
 # Special:LinkSearch
 'linksearch'       => 'Ушеширень сюлмафксне',
@@ -1879,7 +1942,7 @@ $1',
 'contributions-title' => 'Тиить путксонза $1нди',
 'mycontris'           => 'Монь путксне',
 'contribsub2'         => '$1 ($2)-нди',
-'nocontribs'          => 'Тя вешфксть коряс кодамога полафтомат исть мув.',
+'nocontribs'          => 'Тя вешфксть коряс кодамога полафтомат исть мув.', # Optional parameter: $1 is the user name
 'uctop'               => '(прянь)',
 'month'               => 'Ковста (ди сядынголе):',
 'year'                => 'Кизоста (ди сядынголе):',
@@ -2074,8 +2137,8 @@ $1 сёлкф ни. Мяльце полафтомс латцематнень?',
 'talkexists'                   => "'''Тя лопать шашфтомац анок, аньцек сонь корхнема лопац аф шашфтови, сяс мес од лемса фкя лопа ульсь ни. Эняльттяма, шоворьфтть синь кядьвельде.'''",
 'movedto'                      => 'шашфтфоль',
 'movetalk'                     => 'Шашфтт сотф мархтонза корхнема лопать',
-'move-subpages'                => 'Шашфтт сембе сублопатне кда эрявихть',
-'move-talk-subpages'           => 'Шашфтт сембе корхнема лопатнень сублопасна кда эрявихть',
+'move-subpages'                => 'Шашфтт сембе сублопатне ($1с сявомок)',
+'move-talk-subpages'           => 'Шашфтт сембе корхнема лопатнень сублопасна ($1с сявомок) кда эрявихть',
 'movepage-page-exists'         => 'Лопась $1 ульсь ни и сон эслек одукс аф сёрмадови.',
 'movepage-page-moved'          => 'Лопась $1 шашфтфоль $2-с.',
 'movepage-page-unmoved'        => 'Лопать $1 аш кода шашфтомс $2-с.',
@@ -2368,6 +2431,7 @@ $1',
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # EXIF tags
@@ -2651,8 +2715,8 @@ $1',
 Люпштак пунять ала кемокстамань сёрмать тонь электрононь адресозот кучеманди.
 Сёрмаса ули сюлмафкссь кодть мархта;
 нолдак сюлмафкстьтонь содама машинацень вальмасонза тонь электрононь адресцень кемокстаманди.',
-'confirmemail_pending'     => '<div class="error">Кемокстамань кодсь кучфоль ни тонь электрононь адресозот;
-кда тон тиеть тон сёрматфтомацень улхкомба ди тондейть, улема, эряви учемс мъзярошка минутт мъзярс сон латцеви тага фкя весть од кодть аф вешезь.</div>',
+'confirmemail_pending'     => 'Кемокстамань кодсь кучфоль ни тонь электрононь адресозот;
+кда тон тиеть тон сёрматфтомацень улхкомба ди тондейть, улема, эряви учемс мъзярошка минутт мъзярс сон латцеви тага фкя весть од кодть аф вешезь.',
 'confirmemail_send'        => 'Кучемс кемокстамань кодсь',
 'confirmemail_sent'        => 'Кемокстамань сёрмась кучф.',
 'confirmemail_oncreate'    => 'Кемокстамань кодсь кучфоль тон электрононь адресот.
@@ -2689,10 +2753,9 @@ $5
 'scarytranscludetoolong'  => '[URL вельф кувака]',
 
 # Trackbacks
-'trackbackbox'      => '<div id="mw_trackbacks">Тя лопанди меки кеворемат:<br />
-$1
-</div>',
-'trackbackremove'   => ' ([$1 Нардафкс])',
+'trackbackbox'      => 'Тя лопанди меки кеворемат:<br />
+$1',
+'trackbackremove'   => '([$1 Нардафкс])',
 'trackbacklink'     => 'Меки кеворема',
 'trackbackdeleteok' => 'Меки кеворемать нардамась мольсь лац.',
 

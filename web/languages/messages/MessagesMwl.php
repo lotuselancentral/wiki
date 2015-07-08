@@ -15,7 +15,6 @@
 
 $fallback = 'pt';
 
-
 $namespaceNames = array(
 	NS_MEDIA            => 'Media',
 	NS_SPECIAL          => 'Special',
@@ -82,6 +81,8 @@ $messages = array(
 'tog-highlightbroken'         => 'Formatar lhigaçones cobradas <a href="" class="new">assi</a> (alternatiba: assi<a href="" class="internal">?</a>).',
 'tog-justify'                 => 'Justeficar parágrafos',
 'tog-hideminor'               => 'Scunder eidiçones secundárias nas redadeiras alteraçones',
+'tog-hidepatrolled'           => 'Scunder eidiçones bejiadas nas redadeiras alteraçones',
+'tog-newpageshidepatrolled'   => 'Scunder eidiçones bejiadas de la lista de páiginas nuobas',
 'tog-numberheadings'          => 'Numerar outomaticamiente cabeçailhos',
 'tog-showtoolbar'             => 'Amostrar barra de eidiçon (percisa JavaScript)',
 'tog-editondblclick'          => 'Eiditar páiginas al carregar dues bezes (percisa JavaScript)',
@@ -373,6 +374,10 @@ Puode tener un ó mais carateres que nun puoden ser outelizados an títalos.',
 'yourrealname'            => 'Nome berdadeiro:',
 'yourlanguage'            => 'Lhéngua:',
 'yournick'                => 'Assinatura:',
+'yourgender'              => 'Sexo:',
+'gender-unknown'          => 'Nun specificado',
+'gender-male'             => 'Home',
+'gender-female'           => 'Mulhier',
 'email'                   => 'Morada Eiletrónica',
 'prefs-help-realname'     => 'L nome berdadeiro ye oupcional.
 Causo l çponiblizes, este será outelizado pa te dar crédito pul tou trabalho.',
@@ -392,10 +397,11 @@ Por fabor, spurmenta outra beç.',
 Debe de tener pul menos {{PLURAL:$1|1 caracter|$1 caracteres}} i ser defrente de l tou nome de outelizador.',
 'mailmypassword'          => 'Ambiar nuoba palabra chabe por carta eiletrónica',
 'passwordremindertitle'   => 'Nuoba palabra chabe temporária an {{SITENAME}}',
-'passwordremindertext'    => 'Alguien (l mais cierto tu, a partir de la morada de IP $1) pediu que le fusse ambiada ua nuoba palabra chabe pa {{SITENAME}} ($4).
-La palabra chabe temporária pa l outilizador "$2" ye, a partir d\'agora, "$3". Causo essa tenga sido l tou perpósito, entra na tue cuonta i cria ua nuoba palabra chabe.
+'passwordremindertext'    => 'Alguém (l mais cierto tu, a partir de la morada de IP $1) pediu que le fusse ambiada ua nouba palabra-chabe pa {{SITENAME}} ($4).
+Fui criada ua palabra-chabe temporária pa l outelizador "$2", i fui puosta outra beç cumo "$3". Causo tengas feito cun este perpósito, entra na tue cuonta i scolhe ua nouba palabra-chabe agora.
+La tue palabra-chabe temporária queda fuora de balidade {{PLURAL:$5|nun die|an $5 dies}}.
 
-Causo tenga sido outra pessona a fazer este pedido, ou causo tu yá te tengas lhembrado de la tue palabra chabe i nun la queiras demudar, nun fagas causo desta mensaige i cuntina a outelizar la tue palabra chabe antiga.',
+Causo tenga sido outra pessona a fazer este pedido, ó causo tu yá te tengas lhembrado de la palabra-chabe i nun queiras demudar-la, squece esta mensaige i cuntina a outelizar la palabra-chabe antiga.',
 'noemail'                 => 'Nun eisiste morada eiletrónica pa l outelizador "$1".',
 'passwordsent'            => 'Ua nuoba palabra chabe stá a ambiada pa la morada de correio eiletrónico de l outelizador "$1".
 Por fabor, bolta a fazer la outenticaçon al recebir-la.',
@@ -486,6 +492,8 @@ Pode boltar atrás i editar unha página yá eisistente, o [[Special:UserLogin|a
 
 Bei bien se ye aprópiado cuntinar a eiditar esta páigina.
 L registro de quando esta páigina fui botada fuora ye amostrado a seguir, por quemodidade:",
+'deleted-notice'                   => 'Esta páigina fui apagada. 
+Ambaixo stá l registro de las eileminaçones pa refréncia.',
 
 # History pages
 'viewpagelogs'           => 'Ber registros pa esta páigina',
@@ -554,6 +562,7 @@ Tu puodes [[:\$1|criar esta páigina]].",
 'nextn'                     => 'próssimos $1',
 'viewprevnext'              => 'Ber ($1) ($2) ($3)',
 'searchhelp-url'            => 'Help:Conteúdos',
+'searchprofile-images'      => 'Fexeiros',
 'searchprofile-everything'  => 'Todo',
 'searchprofile-advanced'    => 'Abançado',
 'search-result-size'        => '$1 ({{PLURAL:$2|1 palabra|$2 palabras}})',
@@ -575,14 +584,29 @@ Tu puodes [[:\$1|criar esta páigina]].",
 'powersearch-field'         => 'Percurar',
 
 # Preferences page
-'preferences'    => 'Perfréncias',
-'mypreferences'  => 'Las mies perfréncias',
-'skin-preview'   => 'Amostrar',
-'dateformat'     => 'Formato de la data',
-'prefs-personal' => 'Calantriç',
-'prefs-rc'       => 'Redadeiras alteraçones',
-'saveprefs'      => 'Grabar',
-'rows'           => 'Lhinhas:',
+'preferences'               => 'Perfréncias',
+'mypreferences'             => 'Las mies perfréncias',
+'skin'                      => 'Maçcarilha',
+'skin-preview'              => 'Amostrar',
+'math'                      => 'Matemática',
+'dateformat'                => 'Formato de la data',
+'datetime'                  => 'Data i hora',
+'prefs-personal'            => 'Calantriç',
+'prefs-rc'                  => 'Redadeiras alteraçones',
+'saveprefs'                 => 'Grabar',
+'textboxsize'               => 'Oupçones de eidiçon',
+'rows'                      => 'Lhinhas:',
+'timezoneregion-africa'     => 'África',
+'timezoneregion-america'    => 'América',
+'timezoneregion-antarctica' => 'Antártida',
+'timezoneregion-arctic'     => 'Ártico',
+'timezoneregion-asia'       => 'Ásia',
+'timezoneregion-atlantic'   => 'Ouceano Atlântico',
+'timezoneregion-australia'  => 'Oustrália',
+'timezoneregion-europe'     => 'Ouropa',
+'timezoneregion-indian'     => 'Ouceano Índico',
+'timezoneregion-pacific'    => 'Ouceano Pacífico',
+'files'                     => 'Fexeiros',
 
 # User rights
 'userrights-groupsmember' => 'Nembro de:',
@@ -685,7 +709,7 @@ Páiginas que steian ne ls [[Special:Watchlist|tous begiados]] son amostradas an
 'imagelinks'                => 'Lhigaçones de Fexeiros',
 'linkstoimage'              => '{{PLURAL:$1|Esta páigina lhigan|Estas $1 páiginas lhigan}} este fexeiro:',
 'nolinkstoimage'            => 'Nanhua páigina apunta pa este fexeiro.',
-'sharedupload'              => 'Este fexeiro stá cumpartido i puode ser outelizado por outros porjetos.',
+'sharedupload'              => 'Este fexeiro ye de $1 i puode ser outelizado por outros porjetos.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'shareduploadwiki-desc'     => 'La çcriçon an $1 ye amostrada ambaixo.',
 'shareduploadwiki-linktext' => 'páigina de çcriçon de fexeiro',
 'noimage'                   => 'Nun eisiste nanhun fexeiro cun este nome, mas puodes $1',
@@ -878,7 +902,7 @@ Esta ye la cunfiguraçon atual pa la páigina '''$1''':",
 
 # Contributions
 'contributions'       => 'Cuntribuiçones de l outelizador',
-'contributions-title' => 'Upas de l outelizador $1',
+'contributions-title' => 'Upas {{GENDER:$1|de l outelizador|de la outelizadora}} $1',
 'mycontris'           => 'Las mies upas',
 'contribsub2'         => 'Pa $1 ($2)',
 'uctop'               => '(rebison atual)',
@@ -1065,6 +1089,7 @@ Causo l fexeiro tenga sido demudado a partir de l sou stado oureginal, alguns de
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # External editor support

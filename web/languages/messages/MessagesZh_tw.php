@@ -38,113 +38,22 @@ $namespaceNames = array(
 	NS_CATEGORY_TALK    => '分類討論'
 );
 
-
-$bookstoreList = array(
-	'博客來書店' => 'http://www.books.com.tw/exep/prod/booksfile.php?item=$1',
-	'三民書店' => 'http://www.sanmin.com.tw/page-qsearch.asp?ct=search_isbn&qu=$1',
-	'天下書店' => 'http://www.cwbook.com.tw/search/result1.jsp?field=2&keyWord=$1',
-	'新絲路書店' => 'http://www.silkbook.com/function/Search_list_book_data.asp?item=5&text=$1'
-);
-
 $messages = array(
 # User preference toggles
-'tog-underline'               => '鏈結標注底線',
-'tog-highlightbroken'         => '毀壞的鏈結格式<a href="" class="new">像這樣</a> (或者像這個<a href="" class="internal">?</a>)',
-'tog-justify'                 => '段落對齊',
-'tog-hideminor'               => '近期變動中隱藏細微修改',
-'tog-extendwatchlist'         => '增強監視清單以顯示所有可用更改',
-'tog-usenewrc'                => '增強版近期變動 (JavaScript)',
-'tog-numberheadings'          => '標題自動編號',
-'tog-showtoolbar'             => '顯示編輯工具欄',
-'tog-editondblclick'          => '雙擊編輯頁面 (JavaScript)',
-'tog-editsection'             => '允許通過點擊[編輯]連結編輯段落',
-'tog-editsectiononrightclick' => '允許右擊標題編輯段落 (JavaScript)',
-'tog-showtoc'                 => '顯示目錄 (針對一頁超過3個標題的頁面)',
-'tog-rememberpassword'        => '在這部電腦上記住我的密碼',
-'tog-editwidth'               => '編輯欄位已有最大寬度',
-'tog-watchcreations'          => '將我建立的頁面加入監視列表',
-'tog-watchdefault'            => '將我更改的頁面加入監視列表',
-'tog-watchmoves'              => '將我移動的頁面加入監視列表',
-'tog-watchdeletion'           => '將我刪除的頁面加入監視列表',
-'tog-minordefault'            => '預設將編輯設定為細微修改',
-'tog-previewontop'            => '在編輯框上方顯示預覽',
-'tog-previewonfirst'          => '第一次編輯時顯示原文內容的預覽',
-'tog-nocache'                 => '停用頁面快取',
-'tog-enotifwatchlistpages'    => '當我監視的頁面改變時發電子郵件給我',
-'tog-enotifusertalkpages'     => '當我的對話頁發生改變時發電子郵件給我',
-'tog-enotifminoredits'        => '即使是頁面的細微修改也向我發電子郵件',
-'tog-enotifrevealaddr'        => '在通知郵件中顯示我的電子郵件位址',
-'tog-shownumberswatching'     => '顯示監視數目',
-'tog-fancysig'                => '使用原始簽名 (不產生自動連結)',
-'tog-externaleditor'          => '預設使用外部編輯器',
-'tog-externaldiff'            => '預設使用外部差異比對',
-'tog-showjumplinks'           => '啟用「跳轉到」訪問連結',
-'tog-uselivepreview'          => '使用即時預覽 (JavaScript) (試驗中)',
-'tog-forceeditsummary'        => '當沒有輸入摘要時提醒我',
-'tog-watchlisthideown'        => '監視列表中隱藏我的編輯',
-'tog-watchlisthidebots'       => '監視列表中隱藏機器人的編輯',
-'tog-watchlisthideminor'      => '監視列表中隱藏細微修改',
-'tog-nolangconversion'        => '不進行用字轉換',
-'tog-ccmeonemails'            => '當我寄電子郵件給其他使用者時，也寄一份複本到我的信箱。',
-'tog-diffonly'                => '在比較兩個修訂版本差異時不顯示頁面內容',
-'tog-showhiddencats'          => '顯示隱藏分類',
-'tog-norollbackdiff'          => '進行回退後略過差異比較',
-
-'underline-always'  => '總是使用',
-'underline-never'   => '從不使用',
-'underline-default' => '瀏覽器預設',
-
-# Dates
-'sunday'        => '星期日',
-'monday'        => '星期一',
-'tuesday'       => '星期二',
-'wednesday'     => '星期三',
-'thursday'      => '星期四',
-'friday'        => '星期五',
-'saturday'      => '星期六',
-'sun'           => '日',
-'mon'           => '一',
-'tue'           => '二',
-'wed'           => '三',
-'thu'           => '四',
-'fri'           => '五',
-'sat'           => '六',
-'january'       => '1月',
-'february'      => '2月',
-'march'         => '3月',
-'april'         => '4月',
-'may_long'      => '5月',
-'june'          => '6月',
-'july'          => '7月',
-'august'        => '8月',
-'september'     => '9月',
-'october'       => '10月',
-'november'      => '11月',
-'december'      => '12月',
-'january-gen'   => '一月',
-'february-gen'  => '二月',
-'march-gen'     => '三月',
-'april-gen'     => '四月',
-'may-gen'       => '五月',
-'june-gen'      => '六月',
-'july-gen'      => '七月',
-'august-gen'    => '八月',
-'september-gen' => '九月',
-'october-gen'   => '十月',
-'november-gen'  => '十一月',
-'december-gen'  => '十二月',
-'jan'           => '1月',
-'feb'           => '2月',
-'mar'           => '3月',
-'apr'           => '4月',
-'may'           => '5月',
-'jun'           => '6月',
-'jul'           => '7月',
-'aug'           => '8月',
-'sep'           => '9月',
-'oct'           => '10月',
-'nov'           => '11月',
-'dec'           => '12月',
+'tog-underline'            => '鏈結標注底線',
+'tog-hideminor'            => '近期變動中隱藏細微修改',
+'tog-usenewrc'             => '增強版近期變動 (JavaScript)',
+'tog-watchcreations'       => '將我建立的頁面加入監視列表',
+'tog-watchdefault'         => '將我更改的頁面加入監視列表',
+'tog-watchmoves'           => '將我移動的頁面加入監視列表',
+'tog-watchdeletion'        => '將我刪除的頁面加入監視列表',
+'tog-minordefault'         => '預設將編輯設定為細微修改',
+'tog-enotifwatchlistpages' => '當我監視的頁面改變時發電子郵件給我',
+'tog-shownumberswatching'  => '顯示監視數目',
+'tog-uselivepreview'       => '使用即時預覽 (JavaScript) (試驗中)',
+'tog-watchlisthideminor'   => '監視列表中隱藏細微修改',
+'tog-ccmeonemails'         => '當我寄電子郵件給其他使用者時，也寄一份複本到我的信箱。',
+'tog-norollbackdiff'       => '進行回退後略過差異比較',
 
 # Categories related messages
 'category_header'               => '類別「$1」中的頁面',
@@ -416,7 +325,7 @@ $2',
 'loginsuccesstitle'          => '登入成功',
 'loginsuccess'               => '你現在以 "$1"的身份登入{{SITENAME}}。',
 'nosuchuser'                 => '找不到使用者 "$1"。
-檢查您的拼寫，或者用下面的表格建立一個新帳號。',
+檢查您的拼寫，或者用下面的表格[[Special:UserLogin/signup|建立一個新帳號]]。',
 'nosuchusershort'            => '沒有一個名為「<nowiki>$1</nowiki>」的使用者。請檢查您輸入的文字是否有錯誤。',
 'nouserspecified'            => '你需要指定一個使用者帳號。',
 'wrongpassword'              => '您輸入的密碼錯誤，請再試一次。',
@@ -621,12 +530,10 @@ $2',
 'rev-deleted-comment'         => '(註釋已移除)',
 'rev-deleted-user'            => '(使用者名已移除)',
 'rev-deleted-event'           => '(項目已移除)',
-'rev-deleted-text-permission' => '<div class="mw-warning plainlinks">該頁面修訂已經被從公共文件中移除。
-在[{{fullurl:Special:Log/delete|page={{PAGENAMEE}}}} 刪除日誌]中您可能會檢視到詳細的訊息。</div>',
-'rev-deleted-text-view'       => "<div class='mw-warning plainlinks'>
-該頁面修訂已經被從公共文件中移除。作為此網站的管理員，您可以檢視它；
-在[{{fullurl:Special:Log/delete|page={{PAGENAMEE}}}} 刪除日誌]中您可能會檢視到詳細的訊息。
-</div>",
+'rev-deleted-text-permission' => '該頁面修訂已經被從公共文件中移除。
+在[{{fullurl:Special:Log/delete|page={{PAGENAMEE}}}} 刪除日誌]中您可能會檢視到詳細的訊息。',
+'rev-deleted-text-view'       => '該頁面修訂已經被從公共文件中移除。作為此網站的管理員，您可以檢視它；
+在[{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} 刪除日誌]中您可能會檢視到詳細的訊息。',
 'rev-delundel'                => '顯示/隱藏',
 'revisiondelete'              => '刪除/復原刪除修訂',
 'revdelete-nooldid-title'     => '沒有目標修訂',
@@ -942,7 +849,7 @@ $2',
 'filehist-comment'          => '註解',
 'imagelinks'                => '連結',
 'nolinkstoimage'            => '沒有頁面連接到本檔案。',
-'sharedupload'              => '該檔案是一個共享上傳，它可能在其它項目中被應用。',
+'sharedupload'              => '該檔案是一個共享上傳，它可能在其它項目中被應用。 $2', # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'shareduploadwiki'          => '請參閱$1以了解其相關資訊。',
 'shareduploadwiki-linktext' => '檔案描述頁面',
 'noimage'                   => '不存在此名稱的檔案，您可以$1。',
@@ -1339,7 +1246,7 @@ $1',
 'contributions' => '使用者編修記錄',
 'mycontris'     => '我的編修記錄',
 'contribsub2'   => '$1的編修記錄 ($2)',
-'nocontribs'    => '沒有找到符合特徵的更改。',
+'nocontribs'    => '沒有找到符合特徵的更改。', # Optional parameter: $1 is the user name
 'uctop'         => ' (最新修改)',
 'month'         => '從該月份 (或更早):',
 'year'          => '從該年份 (或更早):',
@@ -1645,6 +1552,8 @@ $1',
 'tooltip-watch'                   => '將此頁加入您的監視列表',
 'tooltip-recreate'                => '重建該頁面，無論是否被刪除。',
 'tooltip-upload'                  => '開始上傳',
+'tooltip-rollback'                => '『{{int:rollbacklink}}』可以一按恢復上一位貢獻者對這個頁面的編輯',
+'tooltip-undo'                    => '『{{int:editundo}}』可以在編輯模式上開啟編輯表格以便復原。它容許在摘要中加入原因。',
 
 # Stylesheets
 'common.css'   => '/* 此處的 CSS 將應用於所有的面板 */',
@@ -2051,9 +1960,7 @@ Variants for Chinese language
 'confirmemail_text'       => '此網站要求您在使用郵件功能之前驗證您的電子郵件地址。
 點擊以下按鈕可向您的郵箱發送一封確認郵件。該郵件包含有一行代碼連結；
 請在您的瀏覽器中加載此連結以確認您的電子郵件地址是有效的。',
-'confirmemail_pending'    => '<div class="error">
-一個確認代碼已經被發送到您的郵箱，您可能需要等幾分鐘才能收到。如果無法收到，請在申請一個新的確認碼！
-</div>',
+'confirmemail_pending'    => '一個確認代碼已經被發送到您的郵箱，您可能需要等幾分鐘才能收到。如果無法收到，請在申請一個新的確認碼！',
 'confirmemail_send'       => '郵發確認代碼',
 'confirmemail_sent'       => '確認郵件已發送。',
 'confirmemail_oncreate'   => '一個確認代碼已經被發送到您的郵箱。該代碼並不要求您進行登錄，
@@ -2074,11 +1981,9 @@ Variants for Chinese language
 'scarytranscludetoolong'  => '[抱歉，URL 地址太長]',
 
 # Trackbacks
-'trackbackbox'      => '<div id="mw_trackbacks">
-此頁面的引用:<br />
-$1
-</div>',
-'trackbackremove'   => '([$1删除])',
+'trackbackbox'      => '此頁面的引用:<br />
+$1',
+'trackbackremove'   => '([$1刪除])',
 'trackbacklink'     => '迴響',
 'trackbackdeleteok' => 'Trackback 刪除成功。',
 

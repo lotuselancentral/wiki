@@ -46,6 +46,8 @@ $messages = array(
 'tog-highlightbroken'         => 'Formatigez ruptita ligili <a href="" class="new">tale</a> (alternativo: tale<a href="" class="internal">?</a>)',
 'tog-justify'                 => 'Adjustigez paragrafi',
 'tog-hideminor'               => 'Celez mikra redaktaji de recenta chanji',
+'tog-hidepatrolled'           => 'Celez patroliita redakti en recenta chanji',
+'tog-newpageshidepatrolled'   => 'Celez patroliita pagini en la listo di nova pagino',
 'tog-usenewrc'                => 'Usez augmentita Recenta chanji (JavaScript bezonesas)',
 'tog-numberheadings'          => 'Autonumerez tituli',
 'tog-showtoolbar'             => 'Montrez redaktilo (JavaScript bezonesas)',
@@ -72,6 +74,7 @@ $messages = array(
 'tog-watchlisthideown'        => 'Celez mea redaktaji de la surveyaji',
 'tog-watchlisthidebots'       => 'Celez redaktaji da roboti de la surveyaji',
 'tog-watchlisthideminor'      => 'Celez mikra redaktaji de la surveyaji',
+'tog-watchlisthidepatrolled'  => 'Celez patroliita chanji en la surveyo-listo',
 'tog-ccmeonemails'            => 'Sendez a me exemplero di e-posti quin me sendos ad altra uzanti',
 'tog-showhiddencats'          => 'Montrar celita kategorii',
 'tog-norollbackdiff'          => 'Omisar difero-komparo pos retrorulo',
@@ -227,6 +230,7 @@ $messages = array(
 'aboutsite'            => 'Pri {{SITENAME}}',
 'aboutpage'            => 'Project:Pri {{SITENAME}}',
 'copyright'            => 'La kontenajo esas disponebla sub $1.',
+'copyrightpagename'    => '{{SITENAME}} kopiyuro',
 'currentevents'        => 'Aktualaji',
 'currentevents-url'    => 'Project:Aktualaji',
 'disclaimers'          => 'Legala averto',
@@ -300,15 +304,15 @@ $1',
 'nodb'                => 'Onu ne povas selektar datumaro $1',
 'cachederror'         => "Co esas kopiuro registragita ye la ''cache'' di la solicitita pagino, ed ol povus ne esar aktuala.",
 'readonly'            => 'Datumaro esas blokusita',
-'enterlockreason'     => 'Explikez la motivo por la blokusado, inkluzante 
+'enterlockreason'     => 'Explikez la motivo por la blokuso, inkluzante 
 evaluo pri kande eventos la desblokuso',
 'missingarticle-rev'  => '(versiono#: $1)',
 'missingarticle-diff' => '(Difero: $1, $2)',
 'internalerror'       => 'Interna eroro',
 'internalerror_info'  => 'Interna eroro: $1',
-'filecopyerror'       => 'Onu ne povis kopiar la arkivo "$1" a "$2".',
-'filerenameerror'     => 'Onu ne povas rinomizar la arkivo "$1" ad "$2".',
-'filedeleteerror'     => 'Onu ne povis efacar la arkivo "$1".',
+'filecopyerror'       => 'Ne povis kopiar l\'arkivo "$1" a "$2".',
+'filerenameerror'     => 'Ne povas rinomizar l\'arkivo "$1" ad "$2".',
+'filedeleteerror'     => 'Onu ne povis efacar l\'arkivo "$1".',
 'filenotfound'        => 'Onu ne povas trovar la arkivo "$1".',
 'unexpected'          => 'Nevartita valoro: "$1"="$2".',
 'formerror'           => 'Eroro: Onu ne povis sendar la kontenajo di la formularo',
@@ -350,7 +354,7 @@ Voluntez, ne obliviez chanjor vua preferaji.',
 'createaccount'              => 'Krear nova konto',
 'gotaccount'                 => 'Ka vu ja havas konto? $1.',
 'gotaccountlink'             => 'Enirar',
-'createaccountmail'          => 'per elek-posto',
+'createaccountmail'          => 'per e-posto',
 'badretype'                  => 'La pasovorti vu donis ne esas sama.',
 'userexists'                 => 'La uzantonomo, quan vu skribis, ja selektesis antee.
 Voluntez, elektez ula diferanta uzantonomo.',
@@ -363,6 +367,10 @@ Voluntez, elektez ula diferanta uzantonomo.',
 'yournick'                   => 'Signaturo:',
 'badsiglength'               => 'Vua signaturo es tro longa.
 Ol mustas ne havar plu kam $1 {{PLURAL:$1|litero|literi}}.',
+'yourgender'                 => 'Genro:',
+'gender-unknown'             => 'Nespecigita',
+'gender-male'                => 'Maskula',
+'gender-female'              => 'Femina',
 'email'                      => 'Elek-posto',
 'loginerror'                 => 'Eroro enirante',
 'prefs-help-email-required'  => 'E-postala adreso es bezonata.',
@@ -403,6 +411,7 @@ Voluntez enirar altrafoye pos recevar ol.',
 'resetpass_success'         => 'Vua chanjo di pasovorto sucesis! Nun, vu eniras...',
 'resetpass-submit-loggedin' => 'Chanjar pasovorto',
 'resetpass-temp-password'   => 'Provizora pasovorto:',
+'resetpass-logentry'        => 'chanjis la pasovorto di $1',
 
 # Edit page toolbar
 'bold_sample'     => 'Dika literi',
@@ -451,7 +460,9 @@ Vua IP-adreso registragesos en la versionaro di ca pagino.",
 'loginreqlink'                     => 'enirar',
 'loginreqpagetext'                 => 'Vu mustas $1 por vidar altra pagini.',
 'accmailtitle'                     => 'Pasovorto sendita.',
-'accmailtext'                      => 'La kontrolajo por "$1" sendesis a $2.',
+'accmailtext'                      => "Hazarde genitita pasovorto por [[User talk:$1|$1]] sendesis ad $2.
+
+La pasovorto por ica nova konto povas chanjesar che la ''[[Special:ChangePassword|chanjar pasovorto]]'' pagino pos on eniras.",
 'newarticle'                       => '(nova)',
 'newarticletext'                   => 'Vu sequis ligilo a pagino qua ne existas ankore.
 Por krear ica pagino, voluntez startar skribar en la infra buxo.
@@ -549,6 +560,9 @@ Surskriburo: '''({{int:cur}})''' = diferi kun l'aktuala versiono,
 'revdelete-hid'          => 'celis $1',
 'revdelete-unhid'        => 'revelis $1',
 'logdelete-log-message'  => '$1 por $2 {{PLURAL:$2|evento|eventi}}',
+
+# History merging
+'mergehistory-reason' => 'Motivo:',
 
 # Merge log
 'revertmerge' => 'Desmixar',
@@ -649,6 +663,13 @@ Probez prefixizar vua demando kun ''all:'' por serchar omna kontenajo (inkluzant
 'timezoneoffset'            => 'Difero¹:',
 'servertime'                => 'Kloko en la servanto:',
 'guesstimezone'             => 'Obtenar la kloko dil "browser"',
+'timezoneregion-africa'     => 'Afrika',
+'timezoneregion-america'    => 'Amerika',
+'timezoneregion-asia'       => 'Azia',
+'timezoneregion-atlantic'   => 'Atlantiko',
+'timezoneregion-australia'  => 'Australia',
+'timezoneregion-europe'     => 'Europa',
+'timezoneregion-pacific'    => 'Pacifico',
 'allowemail'                => 'Permisez e-posti de altra uzanti',
 'prefs-namespaces'          => 'Nomari',
 'defaultns'                 => 'Serchar en la spaco-nomi omise:',
@@ -745,7 +766,7 @@ Videz rezumo plu vidala en la [[Special:NewFiles|galerio di nova arkivi]].',
 'filename'          => 'Arkivo-nomo',
 'filedesc'          => 'Titulo',
 'fileuploadsummary' => 'Rezumo:',
-'filestatus'        => "Stando di ''copyright'':",
+'filestatus'        => 'Stando di kopiyuro:',
 'filesource'        => 'Fonto:',
 'uploadedfiles'     => 'Adkargita arkivi',
 'ignorewarning'     => 'Ignorar la averto e gardar la arkivo irgakaze.',
@@ -767,20 +788,20 @@ Videz rezumo plu vidala en la [[Special:NewFiles|galerio di nova arkivi]].',
 'listfiles_count' => 'Versioni',
 
 # File description page
-'filehist'                       => 'Historio dil arkivo',
-'filehist-help'                  => 'Kliktez sur la dato/horo por vidar arkivo quale ol aparis ye ta tempo.',
-'filehist-current'               => 'aktuala',
-'filehist-datetime'              => 'Dato/Horo',
-'filehist-user'                  => 'Uzanto',
-'filehist-dimensions'            => 'Dimensioni',
-'filehist-filesize'              => 'Grandeso dil arkivo',
-'filehist-comment'               => 'Komento',
-'imagelinks'                     => 'Ligili al arkivo',
-'linkstoimage'                   => 'La {{PLURAL:$1|pagino|$1 pagini}} infre ligas a ca arkivo:',
-'nolinkstoimage'                 => 'Nula pagino ligas a ca pagino.',
-'shareduploadduplicate-linktext' => 'altra arkivo',
-'shareduploadconflict-linktext'  => 'altra arkivo',
-'uploadnewversion-linktext'      => 'Adkargez nova versiono dil arkivo',
+'filehist'                  => 'Historio dil arkivo',
+'filehist-help'             => 'Kliktez sur la dato/horo por vidar arkivo quale ol aparis ye ta tempo.',
+'filehist-current'          => 'aktuala',
+'filehist-datetime'         => 'Dato/Horo',
+'filehist-user'             => 'Uzanto',
+'filehist-dimensions'       => 'Dimensioni',
+'filehist-filesize'         => 'Grandeso dil arkivo',
+'filehist-comment'          => 'Komento',
+'imagelinks'                => 'Ligili al arkivo',
+'linkstoimage'              => 'La {{PLURAL:$1|pagino|$1 pagini}} infre ligas a ca arkivo:',
+'nolinkstoimage'            => 'Nula pagino ligas a ca pagino.',
+'sharedupload'              => 'Ca arkivo esas de $1 e posible esas uzata da altra projekti.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
+'uploadnewversion-linktext' => 'Adkargez nova versiono dil arkivo',
+'shared-repo-from'          => 'ek $1', # $1 is the repository name
 
 # File reversion
 'filerevert-comment' => 'Komento:',
@@ -890,7 +911,8 @@ Videz rezumo plu vidala en la [[Special:NewFiles|galerio di nova arkivi]].',
 'categories' => 'Kategorii',
 
 # Special:DeletedContributions
-'deletedcontributions' => 'Efacita uzanto-kontributadi',
+'deletedcontributions'       => 'Efacita uzanto-kontributadi',
+'deletedcontributions-title' => 'Efacita uzanto-kontributadi',
 
 # Special:LinkSearch
 'linksearch'    => 'Extera ligili',
@@ -1040,7 +1062,7 @@ restauris ad lasta versiono da $2.',
 'contributions-title' => 'Uzanto-kontributadi di $1',
 'mycontris'           => 'Mea kontributadi',
 'contribsub2'         => 'Pro $1 ($2)',
-'nocontribs'          => 'Ne trovesis chanji qui fitez ita kriterii.',
+'nocontribs'          => 'Ne trovesis chanji qui fitez ita kriterii.', # Optional parameter: $1 is the user name
 'uctop'               => ' (lasta modifiko)',
 'month'               => 'De monato (e plu frue):',
 'year'                => 'De yaro (e plu frue):',
@@ -1077,6 +1099,14 @@ restauris ad lasta versiono da $2.',
 'ipbexpiry'          => 'Expiro:',
 'ipbreason'          => 'Motivo:',
 'ipbreasonotherlist' => 'Altra motivo',
+'ipbreason-dropdown' => '*Ordinara motivi por blokuso
+** Insertar nevera informi
+** Efacar kontenajo de pagini
+** Insertadar ligili ad extera reti
+** Insertar radoto aden pagini
+** Timidiganta ago
+** Trouzar multa konti
+** Neaceptebla uzanto-nomo',
 'ipbanononly'        => 'Blokusez nur anonimala uzanti',
 'ipbcreateaccount'   => 'Preventez kreo di konti',
 'ipbsubmit'          => 'Blokusar ica uzanto',
@@ -1398,5 +1428,9 @@ Vu darfos adjuntar kauso en la rezumo.',
 
 # Special:BlankPage
 'blankpage' => 'Pagino sen-skribura',
+
+# Special:Tags
+'tag-filter-submit' => 'Filtrez',
+'tags-edit'         => 'redaktar',
 
 );

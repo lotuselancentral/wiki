@@ -307,7 +307,9 @@ $messages = array(
 'template-protected'               => '(тӧрлаташ чарыме)',
 'template-semiprotected'           => '(верын аралыме)',
 'hiddencategories'                 => 'Тиде лаштык $1 {{PLURAL:$1|шылтыме категорийыш|шылтыме категорийыш}} лектеш:',
-'permissionserrorstext-withaction' => "Тыйын '''$2''' кертмешет шагал. Амалже:",
+'permissionserrorstext-withaction' => "Тыйын '''$2''' кертмешет шагал. Тиде {{PLURAL:$1|амал ден|амал дене}}:",
+'deleted-notice'                   => 'Тиде лаштык шӧрымӧ лийын.
+Тиде лаштыклан шӧрымӧ нерген журнал ӱлнӧ ончыктымо.',
 
 # History pages
 'viewpagelogs'           => 'Тиде лаштык лан журнал-влак ончыкташ',
@@ -467,6 +469,7 @@ $messages = array(
 'imagelinks'                => 'Файл деке ссылке-влак',
 'linkstoimage'              => 'Тиде {{PLURAL:$1|$1 лаштык саде файл дене кылдалтын|$1 лаштык-влак саде файл дене кылдалтыныт}}:',
 'nolinkstoimage'            => 'Тиде файл дене кылдалтше ик лаштыкат уке.',
+'sharedupload'              => 'Тиде файлын верже: $1, туге гынат, тудым моло веренат кучылташ лиеш.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'shareduploadwiki-desc'     => 'Ӱлнӧ $1 возымо ончыктымо.',
 'shareduploadwiki-linktext' => 'файлын умылтартыш лаштыкыште',
 'uploadnewversion-linktext' => 'Тиде файлын у версийжим пурташ',
@@ -589,7 +592,7 @@ $messages = array(
 'protect-text'                => "Тыште тый '''<nowiki>$1</nowiki>''' лаштыкын шыгыремдымашыжым ончалаш да тӧрлаташ кертат.",
 'protect-locked-access'       => "Тыйын лаштыкын шыгыремдымашыжым тӧрлаш кертмешет шагал.
 Ӱлнӧ '''$1''' лаштыкын кызытсе настройкыже-влак.",
-'protect-cascadeon'           => 'Тиде лаштыкым кылдалтше аралтышан лаштыкыш пурымыжылан кӧра кызыт аралыме. Тый тиде лаштыкын шыгыремдымашыжым тӧрлатен кертат, тидын годым кылдалтше аралтыш огеш вашталт.',
+'protect-cascadeon'           => 'Тиде лаштыкым кыдалтше аралтышан {{PLURAL:$1|лаштыкыш, куштыжо|лаштык-влакыш, куштыжо}} пурымылан кӧра кызыт аралыме. Тый тиде лаштыкын шыгыремдымашыжым тӧрлатен кертат, тидын годым кылдалтше аралтыш огеш вашталт.',
 'protect-default'             => 'Чыла пайдаланыше лан йӧным пуаш',
 'protect-fallback'            => '«$1» кертеж кӱлеш',
 'protect-level-autoconfirmed' => 'Регистрацийым эртыдыме да у пайдаланыше-влак деч петыраш',
@@ -802,6 +805,7 @@ $messages = array(
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # External editor support

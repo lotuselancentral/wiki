@@ -406,6 +406,10 @@ Tavs lietotāja konts ir izveidots. Neaizmirsti, ka ir iespējams mainīt [[Spec
 'badsig'                     => "Kļūdains ''paraksta'' kods; pārbaudi HTML (ja tāds ir lietots).",
 'badsiglength'               => 'Paraksts ir pārāk garš.
 Tam ir jābūt īsākam par  $1 {{PLURAL:$1|simbolu|simboliem}}.',
+'yourgender'                 => 'Dzimums:',
+'gender-unknown'             => 'Nav norādīts',
+'gender-male'                => 'Vīrietis',
+'gender-female'              => 'Sieviete',
 'email'                      => 'E-pasts',
 'prefs-help-realname'        => 'Īstais vārds nav obligāts.
 Ja tu izvēlies to norādīt, šo lietos lai identificētu tavu darbu (ieguldījumu {{grammar:lokatīvs|{{SITENAME}}}}).',
@@ -429,6 +433,7 @@ Ja tu izvēlies to norādīt, šo lietos lai identificētu tavu darbu (ieguldīj
 ludza, lai nosutam Tev jaunu {{SITENAME}} ($4) paroli.
 Lietotajam $2 pagaidu parole tagad ir $3.
 Ludzu, nomaini paroli, kad esi veiksmigi iekluvis ieksa.
+Tavas pagaidu paroles deriiguma terminsh beigsies peec {{PLURAL:$5|vienas dienas|$5 dienaam}}.
 
 Ja paroles pieprasījumu bija nosūtījis kāds cits, vai arī tu atcerējies savu veco paroli, šo var ignorēt. Vecā parole joprojām darbojas.',
 'noemail'                    => 'Lietotājs "$1" nav reģistrējis e-pasta adresi.',
@@ -531,7 +536,9 @@ Lūdzu iekļauj šos visos ziņojumos, kurus sūti adminiem, apspriežot šo blo
 'loginreqtitle'             => 'Nepieciešama ieiešana',
 'loginreqlink'              => 'login',
 'accmailtitle'              => 'Parole izsūtīta.',
-'accmailtext'               => '$1 parole tika nosūtīta uz $2.',
+'accmailtext'               => "Nejauši ģenerēta parole lietotājam [[User talk:$1|$1]], tika nosūtīta uz $2.
+
+Šī konta paroli, pēc ielogošanās var nomainīt ''[[Special:ChangePassword|šeit]]''.",
 'newarticle'                => '(Jauns raksts)',
 'newarticletext'            => "Tu šeit nonāci sekojot saitei uz, pagaidām vēl neuzrakstītu, lapu.
 Lai izveidotu lapu, sāc rakstīt teksta logā apakšā (par teksta formatēšanu un sīkākai informācija skatīt [[{{MediaWiki:Helppage}}|palīdzības lapu]]).
@@ -660,11 +667,16 @@ Iespējams, tā ir izdzēsta vai pārdēvēta.
 Mēģiniet [[Special:Search|meklēt]], lai atrastu saistītas lapas!',
 
 # Revision deletion
-'rev-deleted-comment'  => '(komentārs nodzēsts)',
-'rev-deleted-user'     => '(lietotāja vārds nodzēsts)',
-'rev-delundel'         => 'rādīt/slēpt',
-'revdelete-hide-image' => 'Paslēpt faila saturu',
-'revdel-restore'       => 'mainīt redzamību',
+'rev-deleted-comment'       => '(komentārs nodzēsts)',
+'rev-deleted-user'          => '(lietotāja vārds nodzēsts)',
+'rev-delundel'              => 'rādīt/slēpt',
+'revdelete-nologtype-title' => 'Nav dots žurnāla veids.',
+'revdelete-nologid-title'   => 'Nederīgs žurnāla ieraksts',
+'revdelete-hide-image'      => 'Paslēpt faila saturu',
+'revdel-restore'            => 'mainīt redzamību',
+
+# History merging
+'mergehistory-reason' => 'Iemesls:',
 
 # Diffs
 'history-title'           => '"$1" versiju hronoloģija',
@@ -982,11 +994,10 @@ Uzklikšķinot uz kādas kolonnas virsraksta, var sakārtot pēc kāda cita para
 'imagelinks'                => 'Failu saites',
 'linkstoimage'              => '{{PLURAL:$1|Šajā lapā ir saite|Šajās $1 lapās ir saites}} uz šo failu:',
 'nolinkstoimage'            => 'Nevienā lapā nav norāžu uz šo attēlu.',
-'sharedupload'              => 'Šis fails ir augšupielādēts koplietojams citos projektos.',
+'sharedupload'              => 'Šis fails ir augšupielādēts koplietojams citos projektos.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'noimage'                   => 'Ar šādu nosaukumu nav neviena faila, bet tu vari [$1].',
 'noimage-linktext'          => 'augšuplādēt to',
 'uploadnewversion-linktext' => 'Augšupielādēt jaunu šī faila versiju',
-'imagepage-searchdupe'      => 'Meklēt šī faila kopijas',
 
 # File reversion
 'filerevert'                => 'Atjaunot $1',
@@ -1143,7 +1154,8 @@ Skatīt arī [[Special:WantedCategories|''sarkanās'' kategorijas]].",
 'categoriesfrom'     => 'Parādīt kategorijas sākot ar:',
 
 # Special:DeletedContributions
-'deletedcontributions' => 'Izdzēstais lietotāju devums',
+'deletedcontributions'       => 'Izdzēstais lietotāju devums',
+'deletedcontributions-title' => 'Izdzēstais lietotāju devums',
 
 # Special:LinkSearch
 'linksearch' => 'Ārējās saites',
@@ -1371,7 +1383,7 @@ kāds cits iespējams to ir atjaunojis ātrāk.',
 'contributions-title' => 'Lietotāja $1 devums',
 'mycontris'           => 'Mans devums',
 'contribsub2'         => 'Lietotājs: $1 ($2)',
-'nocontribs'          => 'Netika atrastas izmaiņas, kas atbilstu šiem kritērijiem.',
+'nocontribs'          => 'Netika atrastas izmaiņas, kas atbilstu šiem kritērijiem.', # Optional parameter: $1 is the user name
 'uctop'               => '(pēdējā izmaiņa)',
 'month'               => 'No mēneša (un senāki):',
 'year'                => 'No gada (un senāki):',
@@ -1494,8 +1506,8 @@ Ja tomēr vēlēsies, tad tev šī diskusiju lapa būs jāpārvieto vai jāapvie
 'talkexists'              => "'''Šī lapa pati tika pārvietota veiksmīgi, bet tās diskusiju lapu nevarēja pārvietot, tapēc, ka jaunā nosaukuma lapai jau ir diskusiju lapa. Lūdzu apvieno šīs diskusiju lapas manuāli.'''",
 'movedto'                 => 'pārvietota uz',
 'movetalk'                => 'Pārvietot arī diskusiju lapu, ja tāda ir.',
-'move-subpages'           => 'Pārvietot visas apakšlapas, ja tādas ir',
-'move-talk-subpages'      => 'Pārvietot visas diskusiju lapas apakšlapas, ja tādas ir',
+'move-subpages'           => 'Pārvietot apakšlapas (līdz $1 gab.)',
+'move-talk-subpages'      => 'Pārvietot diskusiju lapas apakšlapas (līdz $1 gab.)',
 'movepage-page-exists'    => 'Lapa $1 jau eksistē un to nevar pārrakstīt automātiski.',
 'movepage-page-moved'     => 'Lapa $1 tika pārvietota uz $2.',
 'movepage-page-unmoved'   => 'Lapu $1 nevarēja pārvietot uz $2.',
@@ -1680,6 +1692,7 @@ Pārējie lauki, pēc noklusējuma, būs paslēpti.
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # EXIF tags
@@ -1739,8 +1752,8 @@ Pārējie lauki, pēc noklusējuma, būs paslēpti.
 Spied uz zemāk esošās pogas, lai uz tavu e-pasta adresi nosūtītu apstiprināšanas e-pastu. 
 Tajā būs saite ar kodu; spied uz tās saites vai atver to savā interneta pārlūkā, 
 lai apstiprinātu tavas e-pasta adreses derīgumu.',
-'confirmemail_pending'     => '<div class="error">Apstiprināšanas kods jau tev tika nosūtīts pa e-pastu;
-ja tu nupat izveidoji savu kontu, varētu drusku pagaidīt, kamēr tas kods pienāk, pirms mēģināt dabūt jaunu.</div>',
+'confirmemail_pending'     => 'Apstiprināšanas kods jau tev tika nosūtīts pa e-pastu;
+ja tu nupat izveidoji savu kontu, varētu drusku pagaidīt, kamēr tas kods pienāk, pirms mēģināt dabūt jaunu.',
 'confirmemail_send'        => 'Nosūtīt apstiprināšanas kodu',
 'confirmemail_sent'        => 'Apstiprināšanas e-pasts nosūtīts.',
 'confirmemail_oncreate'    => 'Apstiprinājuma kods tika nosūtīts uz tavu e-pasta adresi.
@@ -1874,5 +1887,8 @@ Var arī lietot [[Special:Watchlist/edit|standarta izmainīšanas lapu]].',
 # Special:BlankPage
 'blankpage'              => 'Tukša lapa',
 'intentionallyblankpage' => 'Šī lapa ar nodomu ir atstāta tukša.',
+
+# Database error messages
+'dberr-header' => 'Šim viki ir problēma',
 
 );

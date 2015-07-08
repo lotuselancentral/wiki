@@ -38,6 +38,8 @@ $messages = array(
 'tog-highlightbroken'         => 'Ig-format in gubâ nga mga sumpay <a href="" class="new">hin sugad hini</a> (alternatibo: hin sugad hini<a href="" class="internal">?</a>)',
 'tog-justify'                 => 'Ig-justify an mga parrapho',
 'tog-hideminor'               => 'Tago-a an mga gagmay nga pagliwat ha mga bag-o pa la nga mga kabag-ohan',
+'tog-hidepatrolled'           => 'Tago-a in mga gin-patrol o binantayan nga mga pagliwat ha mga dipala naiha nga mga kabag-ohan',
+'tog-newpageshidepatrolled'   => 'Tago-a an mga gin-patrol o binantayan nga mga pakli tikang han talaan hin bag-o nga pakli',
 'tog-extendwatchlist'         => 'Padako-a an angay timan-an agod makita an tanan nga kabag-ohan, diri la an gibag-ohi',
 'tog-usenewrc'                => 'Gamit hin mga gin-enhans o gindugngan nga gibag-ohi nga mga kabag-ohan (nakinahanglan hin JavaScript)',
 'tog-numberheadings'          => 'Auto-nga-ihap nga mga pagngaran',
@@ -249,6 +251,7 @@ $messages = array(
 
 'ok'                      => 'OK',
 'pagetitle'               => '$1 - {{SITENAME}}',
+'pagetitle-view-mainpage' => '{{SITENAME}}',
 'retrievedfrom'           => 'Ginkuha tikang ha "$1"',
 'youhavenewmessages'      => 'Mayda ka $1 ($2).',
 'newmessageslink'         => 'bag-o nga mga mensahe',
@@ -313,6 +316,7 @@ MySQL nagbalik hin sayop nga "$3: $4".',
 'logout'                  => 'Gawas',
 'userlogout'              => 'Gawas',
 'yourlanguage'            => 'Yinaknan:',
+'gender-male'             => 'Lalaki',
 'loginerror'              => 'Sayop hin pagsakob',
 'loginlanguagelabel'      => 'Yinaknan: $1',
 
@@ -360,7 +364,7 @@ MySQL nagbalik hin sayop nga "$3: $4".',
 'imagelinks'        => 'Mga sumpay',
 'linkstoimage'      => 'Nasumpay hini nga fayl an mga nasunod nga mga pakli:',
 'nolinkstoimage'    => 'Waray mga pakli nga nasumpay hini nga fayl.',
-'sharedupload'      => 'Ini nga fayl ginsaro nga pagkarga ngan puyde gamiton hin iba nga mga proyekto.',
+'sharedupload'      => 'Ini nga fayl tikang han $1 ngan puyde magamit ha iba nga mga proyekto.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'shareduploadwiki'  => 'Alayon pagkita han $1 para hin dugang nga impormasyon.',
 
 # Unused templates

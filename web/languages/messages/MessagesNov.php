@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Chrisportelli
  * @author MF-Warburg
  * @author Malafaya
  * @author Nov ialiste
@@ -100,7 +101,7 @@ $messages = array(
 'printableversion' => 'Printindi versione',
 'permalink'        => 'Permananti linke',
 'print'            => 'Printa',
-'edit'             => 'Modifika',
+'edit'             => 'Immodifika',
 'editthispage'     => 'Modifika disi pagine',
 'delete'           => 'Ekarta',
 'deletethispage'   => 'Ekarta disi pagine',
@@ -236,12 +237,13 @@ Proba [[Special:Search|sercho sur li wiki]] por relatet pagines.',
 'powersearch'           => 'Sercha',
 
 # Preferences page
-'preferences'       => 'Preferos',
-'mypreferences'     => 'Men preferos',
-'prefsnologin'      => 'Non ensignatat',
-'prefsnologintext'  => 'Vu mus es [[Special:UserLogin|ensignatat]] por determina useren preferos.',
-'prefs-rc'          => 'Resenti chanjos',
-'searchresultshead' => 'Sercha',
+'preferences'           => 'Preferos',
+'mypreferences'         => 'Men preferos',
+'prefsnologin'          => 'Non ensignatat',
+'prefsnologintext'      => 'Vu mus es [[Special:UserLogin|ensignatat]] por determina useren preferos.',
+'prefs-rc'              => 'Resenti chanjos',
+'searchresultshead'     => 'Sercha',
+'timezoneregion-africa' => 'Afrika',
 
 # Recent changes
 'nchanges'        => '$1 {{PLURAL:$1|chanjo|chanjos}}',
@@ -281,8 +283,9 @@ Proba [[Special:Search|sercho sur li wiki]] por relatet pagines.',
 # Random page
 'randompage' => 'Arbitriari pagine',
 
-'brokenredirects'     => 'Rupteti ri-adresos',
-'brokenredirectstext' => 'Li sekuenti ri-adresos linka a non-existanti pagines:',
+'brokenredirects'      => 'Rupteti ri-adresos',
+'brokenredirectstext'  => 'Li sekuenti ri-adresos linka a non-existanti pagines:',
+'brokenredirects-edit' => '(editja)',
 
 'fewestrevisions' => 'Artikles kun minim multi revisiones',
 
