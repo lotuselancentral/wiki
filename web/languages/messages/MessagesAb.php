@@ -1,5 +1,5 @@
 <?php
-/** Abkhazian (Аҧсуа)
+/** Abkhazian (Аҧсшәа)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -218,7 +218,7 @@ $messages = array(
 # Groups
 'group-user' => 'Алахәылацәа',
 
-'group-user-member' => 'алахәыла',
+'group-user-member' => '{{GENDER:$1|алахәыла}}',
 
 'grouppage-sysop' => '{{ns:project}}:Администраторцәа',
 

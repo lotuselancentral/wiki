@@ -7,6 +7,8 @@
  * @ingroup Language
  * @file
  *
+ * @author Erdemaslancan
+ * @author Ohpuu
  * @author Warbola
  */
 
@@ -251,7 +253,7 @@ agā [{{fullurl:{{FULLPAGENAME}}|action=edit}} sīe līed īž lūodõ]</span>.'
 Sa võid [[Special:Search/{{PAGENAME}}|vȯtšõ pēļizkēra frāzõ]] mūšti lēḑist,
 <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} vȯtšõ tämstõ log failidi],
 agā [{{fullurl:{{FULLPAGENAME}}|action=edit}} sīe līed īž lūodõ]</span>.',
-'previewnote'                      => "''' Algid undõgid, ku se um setku jedmõl-vaņtlimi!'''
+'previewnote'                      => "'''Algid undõgid, ku se um setku jedmõl-vaņtlimi!'''
 Sin redigīerimizt äb ūo vel sa-gläbdõd !",
 'editing'                          => 'Redigīerimiz pǟl um $1',
 'editingsection'                   => 'Redigīerimiz pǟl um $1 sektsij līedst',
@@ -309,7 +311,7 @@ Legend: '''({{int:cur}})''' = vaiţīd līdzinţõmizõks lǟndz redaktsijõks,,
 'revertmerge' => 'Kīeld jarā kubbõ vieddimi',
 
 # Diffs
-'history-title'           => 'Līed "$1" mõitõkst istōrij',
+'history-title'           => 'Līed mõitõkst istōrij "$1"',
 'difference'              => '(Vaiţīd redaktsijõd vail)',
 'lineno'                  => 'Rīnda $1:',
 'compareselectedversions' => 'Līdzinţ vēļdõt redaktsijḑi',
@@ -443,7 +445,7 @@ Legend: '''({{int:cur}})''' = vaiţīd līdzinţõmizõks lǟndz redaktsijõks,,
 'filehist-user'             => 'kȭlbatiji',
 'filehist-dimensions'       => 'Sūrit',
 'filehist-comment'          => 'Komentār',
-'imagelinks'                => 'Siḑīmõd fail jūrõ',
+'imagelinks'                => 'Fail kȭlbatõmi',
 'linkstoimage'              => 'Sīen bīldan {{PLURAL:$1|sidūb se lēḑ|$1 sidābõd ne lēḑõd}}:',
 'nolinkstoimage'            => 'Äbmingi lēḑ äb sidā sīe bīlda pǟlõ',
 'sharedupload'              => 'Se fail um võttõd ovātõst $1 ja siedā võib vȱlda kȭlbatõd ka mūši projektis.',

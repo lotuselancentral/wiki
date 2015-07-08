@@ -467,8 +467,11 @@ class NewParserTest extends MediaWikiTestCase {
 	public function setParserTestFile( $filename ) {
 		$this->file = $filename;
 	}
-	
-	/** @dataProvider parserTestProvider */
+
+	/**
+	 * @group medium
+	 * @dataProvider parserTestProvider
+	 */
 	public function testParserTest( $desc, $input, $result, $opts, $config ) {
 		if ( !preg_match( '/' . $this->regex . '/', $desc ) ) return; //$this->markTestSkipped( 'Filtered out by the user' );
 
@@ -548,6 +551,10 @@ class NewParserTest extends MediaWikiTestCase {
 	/**
 	 * Run a fuzz test series
 	 * Draw input from a set of test files
+	 *
+	 * @todo @fixme Needs some work to not eat memory until the world explodes
+	 *
+	 * @group ParserFuzz
 	 */
 	function testFuzzTests() {
 		

@@ -10,6 +10,8 @@
  * @author Aelske
  * @author Benopat
  * @author Cicero
+ * @author Geitost
+ * @author Kaganer
  * @author Matthias
  * @author Ooswesthoesbes
  * @author Pahles
@@ -163,7 +165,7 @@ $messages = array(
 'tog-hidepatrolled'           => 'Gemarkeerde wieziginge verberge in recente wieziginge',
 'tog-newpageshidepatrolled'   => "Gemarkeerde pagina's verberge in de lies mit nuuj pagina's",
 'tog-extendwatchlist'         => 'Oetgebreide volglies gebroeke óm alle verangeringe te zeen en neet allein de lèste',
-'tog-usenewrc'                => 'Oetgebreide recènte verangeringe (Javascript nudig)',
+'tog-usenewrc'                => 'Tuun verangeringe per pagina in recènte verangeringe en volglies (Javascript nudig)',
 'tog-numberheadings'          => 'Köpkes automatisch nummere',
 'tog-showtoolbar'             => 'Laot edit toolbar zeen',
 'tog-editondblclick'          => "Bewirk pagina's bie 'ne dobbelklik (JavaScript)",
@@ -171,17 +173,17 @@ $messages = array(
 'tog-editsectiononrightclick' => "Secties bewirke mit 'ne rechtermoesklik op sectietitels (JavaScript nudig)",
 'tog-showtoc'                 => "Inhaudsopgaaf veur pagina's mit mie es 3 köpkes",
 'tog-rememberpassword'        => 'Mien wachwaord onthouwe veur later sessies (hoegstens $1 {{PLURAL:$1|daag|daag}})',
-'tog-watchcreations'          => "Pagina's die ich aanmaak automatisch volge",
-'tog-watchdefault'            => "Voog pagina's die se bewirks toe aan dien volglies",
-'tog-watchmoves'              => "Pagina's die ich verplaats automatisch volge",
-'tog-watchdeletion'           => "Pagina's die ich ewegsjaf automatisch volge",
+'tog-watchcreations'          => "Volg autematis pagina's die ich aanmaak en bestenj die ich upload",
+'tog-watchdefault'            => "Voog pagina's em bestenj die se bewirks toe aan dien volglies",
+'tog-watchmoves'              => "Volg autematis pagina's en bestenj die ich verplaats",
+'tog-watchdeletion'           => "Volg autematis pagina's en bestenj die ich ewegsjaf",
 'tog-minordefault'            => 'Markeer sjtanderd alle bewirkinge es klein',
 'tog-previewontop'            => 'Veurvertuin baove bewèrkingsveld tuine',
 'tog-previewonfirst'          => 'Preview laote zien bie de ierste bewirking',
 'tog-nocache'                 => 'Zèt de browserpaginacaching oet',
-'tog-enotifwatchlistpages'    => "'ne E-mail nao mich versjikke bie bewirkinge van pagina's op mien volglies",
+'tog-enotifwatchlistpages'    => "Versjik 'ne e-mail nao mich bie bewirkinge van pagina's en bestenj op mien volglies",
 'tog-enotifusertalkpages'     => "'ne E-mail nao mich versjikke es emes mien euverlèkpagina verangert",
-'tog-enotifminoredits'        => "'ne E-mail nao mich versjikke bie klein bewirkinge op pagina's op mien volglies",
+'tog-enotifminoredits'        => "Versjik  mich 'ne e-mail bie klein bewirkinge op pagina's en bestenj op mien volglies",
 'tog-enotifrevealaddr'        => 'Mien e-mailadres tuine in e-mailberichte',
 'tog-shownumberswatching'     => "'t Aantal gebroekers tuine die dees pagina volg",
 'tog-oldsig'                  => 'Bestaonde ongerteikening:',
@@ -779,11 +781,11 @@ De kans [[Special:Search/{{PAGENAME}}|nao dees term zeuke]] in anger pagina\'s o
 'userpage-userdoesnotexist-view'   => 'Gebroeker "$1" is neet geregistreerd.',
 'blocked-notice-logextract'        => "Deze gebroeker is noe geblok.
 De leste bloklogregel wuuertj hiejónger t'r raodpleging gegaeve:",
-'clearyourcache'                   => "Lèt op:''' Nao 't opsjlaon mós te diene browserbuffer wisse óm de verangeringe te zeen:
-* '''Firefox / Safari:''' haoj ''Shift'' ingedrök terwielse op ''Vernuuj'' kliks of dröks op ''Ctrl-F5'' of ''Ctrl-R'' (''Command-R'' op 'ne Mac)
-* '''Google Chrome:''' drök op ''Ctrl-Shift-R'' (''Command-Shift-R'' op 'ne Mac)
-* '''Internet Explorer:''' haoj ''Ctrl'' ingedrök terwielse op ''Vernuuj'' kliks of dröks op ''Ctrl-F5''
-* '''Konqueror: '''klik op ''Reload'' of drök op ''F5''
+'clearyourcache'                   => "Lèt op:''' Nao 't opsjlaon mós te diene browsercache wisse óm de verangeringe te zeen:
+* '''Firefox / Safari:''' hauw ''Shift'' ingedrök terwiels te op ''Vernuuj'' kliks of duujs op ''Ctrl-F5'' of ''Ctrl-R'' (''Command-R'' op 'ne Mac)
+* '''Google Chrome:''' duuj op ''Ctrl-Shift-R'' (''Command-Shift-R'' op 'ne Mac)
+* '''Internet Explorer:''' hauw ''Ctrl'' ingeduujt terwiels te op ''Vernuuj'' kliks of duujs op ''Ctrl-F5''
+* '''Konqueror: '''klik op ''Reload'' of duuj op ''F5''
 * '''Opera:''' laeg diene cache in ''Extra → Veurkäöre''",
 'usercssyoucanpreview'             => "'''Tip:''' Gebroek de knóp '{{int:showpreview}}' om dien nuuj CSS te teste veurdets te opsjleis.",
 'userjsyoucanpreview'              => "'''Tip:''' Gebroek de knóp '{{int:showpreview}}' om dien nuuj JS te teste veurdets te opsjleis.",
@@ -1040,7 +1042,7 @@ Controleer de logbeuk.",
 # Suppression log
 'suppressionlog'     => 'Verbergingslogbook',
 'suppressionlogtext' => 'De ongerstaonde lies bevat de verwiederinge en blokkades die veur beheerders verborge zeen.
-In de [[Special:BlockList|IP-blokkeerlies]] zeen de hudige blokkades te bekieke.',
+In de [[Special:BlockList|blokkeerlies]] zeen de hudige blokkades te bekieke.',
 
 # History merging
 'mergehistory'                     => "Gesjiedenis van pagina's samevoege",
@@ -1072,7 +1074,7 @@ Wees zeker det deze wieziging de gesjiedenisdoorloupendheid van de pagina zal be
 'mergelogpagetext'   => "Hiejonger zuut geer 'ne lies van recente samevoeginge van 'ne paginagesjiedenis nao 'ne angere.",
 
 # Diffs
-'history-title'            => 'Gesjiedenis van "$1"',
+'history-title'            => '$1: bewèrkingseuverzich',
 'difference'               => '(Versjil tösje bewirkinge)',
 'difference-multipage'     => '(Versjil tösje paazjes)',
 'lineno'                   => 'Tekslien $1:',
@@ -1309,12 +1311,12 @@ Deze informatie is zichbaar veur angere gebroekers.',
 'group-suppress'      => 'Toezichhajers',
 'group-all'           => '(alle)',
 
-'group-user-member'          => 'Gebroeker',
-'group-autoconfirmed-member' => 'Geregistreerde gebroeker',
-'group-bot-member'           => 'Bot',
-'group-sysop-member'         => 'Administrator',
-'group-bureaucrat-member'    => 'Bureaucraat',
-'group-suppress-member'      => 'Toezichhajer',
+'group-user-member'          => '{{GENDER:$1|gebroeker}}',
+'group-autoconfirmed-member' => '{{GENDER:$1|geregistreerde gebroeker}}',
+'group-bot-member'           => '{{GENDER:$1|bot}}',
+'group-sysop-member'         => '{{GENDER:$1|administrator}}',
+'group-bureaucrat-member'    => '{{GENDER:$1|bureaucraat}}',
+'group-suppress-member'      => '{{GENDER:$1|toezichhajer}}',
 
 'grouppage-user'          => '{{ns:project}}:Gebroekers',
 'grouppage-autoconfirmed' => '{{ns:project}}:Geregistreerde gebroekers',
@@ -1536,18 +1538,18 @@ Aangeweze {{PLURAL:\$3|bestandjstype|bestandjstypes}}zeen \$2.",
 'largefileserver'             => "'t Bestandj is groter dan de instelling van de server toestuit.",
 'emptyfile'                   => "'t Besjtand wats re höbs geupload is laeg. Dit kump waorsjienliek door 'n typfout in de besjtandsnaom. Kiek estebleef ofs te dit besjtand wirkelik wils uploade.",
 'windows-nonascii-filename'   => 'Deze wiki ongersteunt gein bestandjsname mit speciaal teikes.',
-'fileexists'                  => "D'r is al e besjtand mit dees naam, bekiek '''<tt>[[:$1]]</tt>''' of se dat besjtand mesjien wils vervange.
+'fileexists'                  => "D'r is al e besjtand mit dees naam, bekiek <strong>[[:$1]]</strong> of se dat besjtand mesjien wils vervange.
 [[$1|thumb]]",
-'filepageexists'              => "De besjrievingspagina veur dit besjtand besjteit al op '''<tt>[[:$1]]</tt>''', meh d'r besjteit gein besjtand mit deze naam. De samevatting dies te höbs opgegaeve zal neet op de besjrievingspagina versjiene. Bewirk de pagina handjmaotig óm dien besjrieving dao te tuine.
+'filepageexists'              => "De besjrievingspagina veur dit besjtand besjteit al op <strong>[[:$1]]</strong>, meh d'r besjteit gein besjtand mit deze naam. De samevatting dies te höbs opgegaeve zal neet op de besjrievingspagina versjiene. Bewirk de pagina handjmaotig óm dien besjrieving dao te tuine.
 [[$1|thumb]]",
 'fileexists-extension'        => "'n bestand met dezelfde naam bestuit al: [[$2|thumb]]
-* Naam van 't geüploade bestand: '''<tt>[[:$1]]</tt>'''
-* Naam van 't bestaonde bestand: '''<tt>[[:$2]]</tt>'''
+* Naam van 't geüploade bestand: <strong>[[:$1]]</strong>
+* Naam van 't bestaonde bestand: <strong>[[:$2]]</strong>
 Lèver 'ne angere naam te keze.",
 'fileexists-thumbnail-yes'    => "'t Liek 'n afbeilding van 'n verkleinde grootte te zeen ''(thumbnail)''. [[$1|thumb]]
-Lèver 't bestand '''<tt>[[:$1]]</tt>''' te controlere.
+Lèver 't bestand <strong>[[:$1]]</strong> te controlere.
 Es 't gecontroleerde bestand dezelfde afbeilding van oorspronkelike grootte is, is 't neet noodzakelik 'ne extra thumbnail te uploade.",
-'file-thumbnail-no'           => "De bestandsnaam begint met '''<tt>$1</tt>'''.
+'file-thumbnail-no'           => "De bestandsnaam begint met <strong>$1</strong>.
 't Liek 'n verkleinde afbeelding te zeen ''(thumbnail)''.
 Esse deze afbeelding in volledige resolutie höbs, upload dae afbeelding den. Wiezig anges estebleef de bestandsnaam.",
 'fileexists-forbidden'        => "d'r Besteit al 'n bestand met deze naam det neet kin waere euevergesjreve. Upload dien bestand onger 'ne angere naam.
@@ -1623,7 +1625,7 @@ De veiligheid kin neet waere gekónterleerdj.",
 'img-auth-nopathinfo'       => 'PATH_INFO óntbrèk.
 Diene server is neet ingesteld om dees informatie door te gaeve.
 Misjien gebroek deze CGI, en dan wört img_auth neet ongersteund.
-Zuuch [//www.mediawiki.org/wiki/Manual:Image_Authorization aafbeildingsrechte] veur mee informatie.',
+Zuuch https://www.mediawiki.org/wiki/Manual:Image_Authorization aafbeildingsrechte veur mee informatie.',
 'img-auth-notindir'         => "'t Ópgevraogdje paad is neet de ingestelde uploadmap.",
 'img-auth-badtitle'         => 'Kèn geine geldige paginanaam make van "$1".',
 'img-auth-nologinnWL'       => 'Doe bös neet aangemeld en "$1" steit neet op de witte lies.',
@@ -1742,7 +1744,7 @@ De [$2 pagina mit de besjtandjsbesjrieving] wurt hiejónger weergegaeve.',
 
 # MIME search
 'mimesearch'         => 'Zeuk op MIME-type',
-'mimesearch-summary' => "Deze pagina maak het filtere van bestenj veur 't MIME-type meugelik. Inveur: contenttype/subtype, bv <tt>image/jpeg</tt>.",
+'mimesearch-summary' => "Deze pagina maak het filtere van bestenj veur 't MIME-type meugelik. Inveur: contenttype/subtype, bv <code>image/jpeg</code>.",
 'mimetype'           => 'MIME-type:',
 'download'           => 'Downloade',
 
@@ -1934,7 +1936,7 @@ Zuuch ouch [[Special:WantedCategories|neet-bestaondje categorieë mit verwiezing
 'linksearch-ok'    => 'Zeuk',
 'linksearch-text'  => 'Wildcards wie "*.wikipedia.org" of "*.org" zeen toegestaon.
 Haet mèndestes e toepleveldomein, wie beveurbeildj "*.org".<br />
-Óngerstäönendje protocolle: <tt>$1</tt> (veug dees neet tou in dien zeukópdrach).',
+Óngerstäönendje protocolle: <code>$1</code> (veug dees neet tou in dien zeukópdrach).',
 'linksearch-line'  => '$1 gelink vanaaf $2',
 'linksearch-error' => 'Wildcards zijn alleen toegestaan aan het begin van een hostnaam.',
 
@@ -2340,7 +2342,7 @@ De leste bloklogregel wuuertj hiejónger t'r raodpleging gegaeve:",
 'badipaddress'                    => "'t IP-adres haet 'n ongeldige opmaak.",
 'blockipsuccesssub'               => 'Blokkaad gelök',
 'blockipsuccesstext'              => '[[Special:Contributions/$1|$1]] is geblokkeerd.<br />
-Zuug de [[Special:IPBlockList|lies van geblokkeerde IP-adresse]].',
+Zuug de [[Special:BlockList|lies van geblokkeerde IP-adresse]].',
 'ipb-blockingself'                => "Doe steis óp 't pöntj dichzelf te blokke! Wèts se zeker desse det wils doon?",
 'ipb-confirmhideuser'             => "Doe steis óp 't pöntj 'ne verbórge gebroeker te blokke. Hieveur waere gebroekersname in alle liesre en logbookregels verbórge. Wèts se zeker desse door wils gaon?",
 'ipb-edit-dropdown'               => 'Bewerk lies van rejer',
@@ -2389,7 +2391,7 @@ Zuug de [[Special:IPBlockList|lies van geblokkeerde IP-adresse]].',
 'blocklog-showsuppresslog'        => "Deze gebroeker is al geblok gewaes en d'r zeen (deil van) bewerkinge van deze gebroeker verbórge. 't Verbèrgingslogbook steit hieónger:",
 'blocklogentry'                   => '"[[$1]]" is geblokkeerd veur d\'n tied van $2 $3',
 'reblock-logentry'                => 'haet de instellinge veur de blokkaasj veur [[$1]] gewiezig. Deze verlöp noe op $2 om $3',
-'blocklogtext'                    => "Dit is 'n log van blokkades van gebroekers. Automatisch geblokkeerde IP-adresse sjtoon hie neet bie. Zuug de [[Special:BlockList|Lies van geblokkeerde IP-adresse]] veur de lies van op dit mement wèrkende blokkades.",
+'blocklogtext'                    => "Dit is 'n log van blokkades van gebroekers. Automatisch geblokkeerde IP-adresse sjtoon hie neet bie. Zuug de [[Special:BlockList|Lies van geblokkeerde adresse]] veur de lies van op dit mement wèrkende blokkades.",
 'unblocklogentry'                 => 'blokkade van $1 opgeheve',
 'block-log-flags-anononly'        => 'allein anoniem',
 'block-log-flags-nocreate'        => 'aanmake gebroekers geblokkeerd',
@@ -2777,9 +2779,9 @@ $1",
 
 # Media information
 'mediawarning'         => "'''Waorsjuwing''': Dit bestandj kin 'n anger kood höbbe, door 't te doorveure in dien systeem kin 't gecompromeerde dinger oplevere.",
-'imagemaxsize'         => "Meximale aafbeildjingsaafmaeting:<b r/>''(veur besjrievingspaasj)''",
+'imagemaxsize'         => "Meximaal aafbeildjingsaafmaeting:<br />''(veur besjrievingspaasj)''",
 'thumbsize'            => 'Gruutde vanne thumbnail:',
-'widthheightpage'      => "$1×$2, $3 {{PLURAL:$3|pazjena|pazjena's}}",
+'widthheightpage'      => "$1 × $2, $3 {{PLURAL:$3|pazjena|pazjena's}}",
 'file-info'            => 'bestandsgruutde: $1, MIME-type: $2',
 'file-info-size'       => '$1 × $2 pixels, besjtandjgruutde: $3, MIME-type: $4',
 'file-info-size-pages' => "$1 × $2 pixels, bestandjsgreudje: $3, MIME-type: $4, $5 {{PLURAL:$5|pagina|pagina's}}",

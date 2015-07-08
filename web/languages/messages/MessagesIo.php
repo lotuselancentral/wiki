@@ -9,6 +9,7 @@
  *
  * @author Albonio
  * @author Artomo
+ * @author Kaganer
  * @author Lakaoso
  * @author Malafaya
  * @author Reedy
@@ -875,9 +876,9 @@ Videz rezumo plu vidala en la [[Special:NewFiles|galerio di nova arkivi]].',
 'uploadedfiles'       => 'Adkargita arkivi',
 'ignorewarning'       => 'Ignorar la averto e gardar la arkivo irgakaze.',
 'badfilename'         => 'La imajo-nomo chanjesis a "$1".',
-'fileexists'          => "Arkivo kun ica nomo ja existas.
-Volutez kontrolar '''<tt>[[:$1]]</tt>''' se vu ne esas certa pri chanjar olu.
-[[$1|thumb]]",
+'fileexists'          => 'Arkivo kun ica nomo ja existas.
+Volutez kontrolar <strong>[[:$1]]</strong> se vu ne esas certa pri chanjar olu.
+[[$1|thumb]]',
 'uploadwarning'       => 'Averto pri la adkargo di arkivo',
 'savefile'            => 'Registragar arkivo',
 'uploadedimage'       => 'adkargita "[[$1]]"',
@@ -1251,7 +1252,7 @@ restauris ad lasta versiono da $2.',
 'badipaddress'       => 'IP-adreso ne esas valida',
 'blockipsuccesssub'  => 'Blokusado sucesis',
 'blockipsuccesstext' => '[[Special:Contributions/$1|$1]] blokusesis.<br />
-Videz [[Special:IPBlockList|IP-blokuslisto]] por revizor blokusadi.',
+Videz [[Special:BlockList|IP-blokuslisto]] por revizor blokusadi.',
 'ipb-edit-dropdown'  => 'Redaktar blokuso-motivi',
 'unblockip'          => 'Desblokusar uzanto',
 'unblockiptext'      => 'Uzez la sequanta formularo por restaurar la skribo-aceso ad IP-adreso qua blokusesis antee.',
@@ -1429,7 +1430,7 @@ Vu darfos adjuntar kauso en la rezumo.',
 'nextdiff'     => 'Plu recenta versiono →',
 
 # Media information
-'widthheightpage' => '$1×$2, $3 {{PLURAL:$3|pagino|pagini}}',
+'widthheightpage' => '$1 × $2, $3 {{PLURAL:$3|pagino|pagini}}',
 'file-nohires'    => '<small>Ne existas grandeso plu granda.</small>',
 'show-big-image'  => 'Grandeso kompleta',
 

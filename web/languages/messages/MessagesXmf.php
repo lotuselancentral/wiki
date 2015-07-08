@@ -11,6 +11,7 @@
  * @author Andrijko Z.
  * @author Dato deutschland
  * @author Dawid Deutschland
+ * @author Kaganer
  * @author Kilavagora
  * @author Lika2672
  * @author Machirkholi
@@ -195,8 +196,8 @@ $messages = array(
 'helppage'             => 'Help:დინორე',
 'mainpage'             => 'დუდხასჷლა',
 'mainpage-description' => 'დუდხასჷლა',
-'portal'               => 'საზოგადოებაშ ხასჷლეფი',
-'portal-url'           => 'Project:საზოგადოებაშ ხასილეფ',
+'portal'               => 'ჯარალუაშ ხასჷლეფი',
+'portal-url'           => 'Project:ჯარალუაშ ხასჷლეფი',
 'privacy'              => 'ანონიმურობაშ პოლიტიკა',
 'privacypage'          => 'Project:ანონიმურობაშ პოლიტიკა',
 
@@ -540,7 +541,7 @@ $messages = array(
 'filehist-dimensions'       => 'განზომილებეფ',
 'filehist-filesize'         => 'ფაილიშ ზომა',
 'filehist-comment'          => 'კომენტარ',
-'imagelinks'                => 'ფაილეფიშ რცხუეფ',
+'imagelinks'                => 'ფაილი გჷმორინაფილი რე',
 'linkstoimage'              => 'გეყ’ვენჯი {{PLURAL:$1|ხასილა|ხასილეფ}} მერცხილ რე თე ფაილშა',
 'nolinkstoimage'            => 'ვა რე თე ფაილწკუმა მერსხილ ხასილეფ.',
 'sharedupload'              => 'თე ფაილ რე $1-შე დო შილებე თენა შხვა პროექტეფც ხოლო გიმირინაუფუდასინ',
@@ -742,7 +743,7 @@ $messages = array(
 'contribslink'             => 'ნახანდ',
 'blocklogpage'             => 'ბლოკირეფიშ ერკებულ',
 'blocklogentry'            => 'ბლოკირ რე [[$1]] ბლოკირაფაშ ვადაშ ათე გულა ბორჯით: $2 $3.',
-'unblocklogentry'          => '$1–შა ბლოკიშ მონწყუმა',
+'unblocklogentry'          => '$1-შა ბლოკიშ მონწყუმა',
 'block-log-flags-nocreate' => 'ანგარიშიშ გონწყუმა მეჭყვადილ რე',
 
 # Move page
@@ -867,7 +868,7 @@ $messages = array(
 # Media information
 'file-info-size' => '$1 × $2 პიქსელ, ფაილიშ ზომა: $3, MIME ტიპ: $4',
 'file-nohires'   => '<small> უმოს მაღალ გიშაგორანჯალა ვა რე შელებუან.</small>',
-'svg-long-desc'  => 'SVG ფაილ, ნომინალურო $1×$2 პიქსელ, ფაილიშ ზიმა: $3',
+'svg-long-desc'  => 'SVG ფაილ, ნომინალურო $1 × $2 პიქსელ, ფაილიშ ზიმა: $3',
 'show-big-image' => 'რსული გიშაგორანჯალა',
 
 # Special:NewFiles
@@ -928,7 +929,7 @@ $messages = array(
 'version' => 'ვერსია',
 
 # Special:SpecialPages
-'specialpages' => 'სპეციალურ ხასილეფ',
+'specialpages' => 'გჷშაკერძაფილი ხასჷლეფი',
 
 # External image whitelist
 'external_image_whitelist' => '"#ქჷდიტე თე ღოზი კოკობო მუჭო რენ თეში<pre>
