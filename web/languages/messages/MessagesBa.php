@@ -202,7 +202,7 @@ $messages = array(
 'preview'        => 'Ҡарап сығыу',
 'showpreview'    => 'Ҡарап сығырға',
 'showdiff'       => 'Индерелгән үҙгәрештәр',
-'previewnote'    => '<strong>Ҡарап сығыу өлгөһө, әлегә үҙгәрештәр яҙҙырылмаған!</strong>',
+'previewnote'    => "'''Ҡарап сығыу өлгөһө, әлегә үҙгәрештәр яҙҙырылмаған!'''",
 'editing'        => 'Мөхәрирләү  $1',
 'editingsection' => 'Мөхәрирләү  $1 (секция)',
 'editingcomment' => 'Мөхәрирләү $1 (комментарий)',
@@ -263,7 +263,7 @@ $messages = array(
 # E-mail user
 'emailuser'    => 'Ҡатнашыусыға хат',
 'emailfrom'    => 'Кемдән',
-'emailto'      => 'Кемгә',
+'emailto'      => 'Кемгә:',
 'emailmessage' => 'Хәбәр',
 
 # Watchlist

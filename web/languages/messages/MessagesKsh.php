@@ -116,10 +116,10 @@ $messages = array(
 'tog-highlightbroken'         => 'Zeich de Links op Sigge, die et noch nit jitt, esu met: „<a href="" class="new">Lemma</a>“ aan.<br />Wann De dat nit wells, weed et esu: „Lemma<a href="" class="internal">?</a>“ jezeich.',
 'tog-justify'                 => 'Dun de Avschnedde em Blocksatz aanzeije',
 'tog-hideminor'               => 'Dun de klein Mini-Änderunge (<strong>M</strong>) en de Liss  met „{{int:Recentchanges}}“ <strong>nit</strong> aanzeije',
-'tog-extendwatchlist'         => 'Verjrößer de Oppassliss för jede Aat vun müjjelich Änderunge ze zeije',
+'tog-extendwatchlist'         => 'Verjrößer de Oppassliss för jede Aat vun müjjeliche Änderunge ze zeije',
 'tog-usenewrc'                => 'Dun de opgemotzte Liss met „{{int:Recentchanges}}“ aanzeije (bruch Java_Skripp)',
 'tog-numberheadings'          => 'Dun de Üvverschrefte automatisch nummereere',
-'tog-showtoolbar'             => 'Zeich de Werkzeuchliss zom Ändere aan (bruch Java_Skripp)',
+'tog-showtoolbar'             => 'Zeich de Werkzüchliss zom Ändere aan (bruch Java_Skripp)',
 'tog-editondblclick'          => 'Sigge met Dubbel-Klicke ändere (bruch Java_Skripp)',
 'tog-editsection'             => 'Maach [{{int:Editsection}}]-Links aan de Avschnedde dran',
 'tog-editsectiononrightclick' => 'Avschnedde met Räächs-Klicke op de Üvverschrefte ändere (bruch Java_Skripp)',
@@ -127,7 +127,7 @@ $messages = array(
 'tog-rememberpassword'        => 'Op Duur aanmelde',
 'tog-editwidth'               => 'Maach dat Feld zom Tex enjevve su breid wie et jeiht',
 'tog-watchcreations'          => 'Dun de Sigge, die ich neu aanläje, för ming Oppassliss vürschlage',
-'tog-watchdefault'            => 'Dun de Sigge för ming Oppassliss vürschlage, die ich aanpacke un ändere',
+'tog-watchdefault'            => 'Dun de Sigge för ming Oppassliss vürschlage, die ich aanpacken un änder',
 'tog-watchmoves'              => 'Dun ming selfs ömjenante Sigge automatisch för ming Oppassliss vürschlage',
 'tog-watchdeletion'           => 'Dun Sigge, die ich fottjeschmesse han, för ming Oppassliss vürschlage',
 'tog-minordefault'            => 'Dun all ming Änderunge jedes Mol als klein Mini-Änderunge vürschlage',
@@ -143,15 +143,15 @@ $messages = array(
 'tog-externaleditor'          => 'Nemm jedes Mol en extern Editor-Projramm (Doför bruchs de spezjell Enstellunge op Dingem Kompjutor)',
 'tog-externaldiff'            => 'Nemm jedes Mol en extern Diff-Projramm (Doför bruchs de spezjell Enstellunge op Dingem Kompjutor)',
 'tog-showjumplinks'           => '„Jangk-noh“-Links usjevve, die bei em „Zojang ohne Barrikad“ helfe dun',
-'tog-uselivepreview'          => 'Zeich de „Lebendije Vör-Aansich zeije“ (bruch Java_Skripp) (em Usprobierstadium)',
+'tog-uselivepreview'          => 'Dun de „Lebendije Vör-Aansich zeije“ (bruch Java_Skripp) (em Usprobierstadium)',
 'tog-forceeditsummary'        => 'Froch noh, wann en däm Feld „Koot zosammejefass, Quell“ beim Avspeichere nix dren steiht',
 'tog-watchlisthideown'        => 'Dun ming eije Änderunge <strong>nit</strong> en minger Oppassliss aanzeije',
 'tog-watchlisthidebots'       => 'Dun jedes Mol dä Bots ehr Änderunge <strong>nit</strong> en minger Oppassliss zeije',
 'tog-watchlisthideminor'      => 'Dun jedes Mol de klein Mini-Änderunge <strong>nit</strong> en minger Oppassliss zeije',
 'tog-nolangconversion'        => 'Sprochevariante nit ömwandele',
 'tog-ccmeonemails'            => 'Scheck mer en Kopie, wann ich en E-mail an ene andere Metmaacher scheck',
-'tog-diffonly'                => 'Zeich beim Versione Verjliche nur de Ungerscheed aan (ävver pack nit noch de janze Sigg dodronger)',
-'tog-showhiddencats'          => 'Verstoche Saachjroppe aanzeije',
+'tog-diffonly'                => 'Zeich beim Versione Verjliche nur de Ungerscheid aan (ävver pack nit noch de janze Sigg dodronger)',
+'tog-showhiddencats'          => 'Donn Verstoche Saachjroppe aanzeije',
 
 'underline-always'  => 'jo, ongershtriishe',
 'underline-never'   => 'nä',
@@ -222,7 +222,7 @@ $messages = array(
 'category-subcat-count'          => 'En dä Saachrupp hee {{PLURAL:$2|es ein Ungerjrupp dren:|sin $2 Ungerjruppe dren, {{PLURAL:$1|un dovun weed hee nur ein|un dovun weede $1 hee|ävver dovun weed hee keine}} aanjezeich:|sin kein Ungerjruppe dren.}}',
 'category-subcat-count-limited'  => 'En dä Saachrupp hee {{PLURAL:$1|es ein Ungerjrupp dren:|sin $1 Ungerjruppe dren:|sin kein Ungerjruppe dren.}}',
 'category-article-count'         => 'En dä Saachrupp hee {{PLURAL:$2|es ein Sigg dren:|sin $2 Sigge dren, {{PLURAL:$1|un dovun weed hee nur ein|un dovun weede $1 hee|ävver dovun weed hee keine}} aanjezeich:|sin kein Sigge dren.}}',
-'category-article-count-limited' => 'En dä Saachrupp hee {{PLURAL:$1|es ein Sigg dren:|sin $1 Sigge dren:|es kein Sigg dren:}}',
+'category-article-count-limited' => 'En dä Saachrupp hee {{PLURAL:$1|es ein Sigg dren:|sin $1 Sigge dren:|es kein Sigg dren.}}',
 'category-file-count'            => 'En dä Saachrupp hee {{PLURAL:$2|es ein Datei dren:|sin $2 Dateie dren, {{PLURAL:$1|un dovun weed hee nur ein|un dovun weede $1 hee|ävver dovun weed hee kein}} aanjezeich:|es kein Datei dren.}}',
 'category-file-count-limited'    => 'En dä Saachrupp hee {{PLURAL:$1|es ein Datei dren:|sin $1 Dateie dren:|es kein Datei dren.}}',
 'listingcontinuesabbrev'         => '… (wigger)',
@@ -234,7 +234,7 @@ $messages = array(
 Dat es och all op Änglesch:
 * [http://www.mediawiki.org/wiki/Manual:Configuration_settings Configuration settings list]
 * [http://www.mediawiki.org/wiki/Manual:FAQ MediaWiki FAQ]
-* [http://lists.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki release mailing list]',
+* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki release mailing list]',
 
 'about'          => 'Üvver',
 'article'        => 'Atikkel',
@@ -248,7 +248,7 @@ Dat es och all op Änglesch:
 'qbmyoptions'    => 'Ming Sigge',
 'qbspecialpages' => 'Spezial Sigge',
 'moredotdotdot'  => 'Mieh&nbsp;…',
-'mypage'         => 'Ming Metmaacher-Sigg',
+'mypage'         => 'ming Metmaacher-Sigg',
 'mytalk'         => 'ming Klaafsigg',
 'anontalk'       => 'Klaaf för de IP-Adress',
 'navigation'     => 'Jangk noh',
@@ -288,15 +288,15 @@ Dat es och all op Änglesch:
 'talkpage'          => 'Üvver die Sigg hee schwaade',
 'talkpagelinktext'  => 'Klaaf',
 'specialpage'       => 'Sondersigg',
-'personaltools'     => 'Metmaacher Werkzeuch',
-'postcomment'       => 'Neu Avschnedd op de Klaafsigg',
+'personaltools'     => 'Metmaacher Werkzüch',
+'postcomment'       => 'Neu Avschnedd op de Klaafsigg donn',
 'articlepage'       => 'Aanluure wat op dä Sigg drop steiht',
 'talk'              => 'Klaaf',
 'views'             => 'Aansichte',
-'toolbox'           => 'Werkzeuch',
+'toolbox'           => 'Werkzüch',
 'userpage'          => 'Däm Metmaacher sing Sigg aanluure',
 'projectpage'       => 'De Projeksigg aanluure',
-'imagepage'         => 'Sigg för e Beld odder en anndere Medije-Dattei aanluure',
+'imagepage'         => 'De Sigg övver die Dattei aanluure',
 'mediawikipage'     => 'De Mediesigg aanluure',
 'templatepage'      => 'De Schablohn ier Sigk aanluere',
 'viewhelppage'      => 'De Hölpsigg aanluure',
@@ -347,12 +347,14 @@ Dat es och all op Änglesch:
 'versionrequiredtext' => 'De Version $1 vun MediaWiki Soffwär es nüdich, öm die Sigg hee bruche ze künne. Süch op [[Special:Version|de Versionssigg]], wat mer hee för ene Soffwärstand han.',
 
 'ok'                      => 'Jot!',
+'pagetitle'               => '$1 — {{SITENAME}}',
 'retrievedfrom'           => 'Die Sigg hee stamp us „$1“.',
 'youhavenewmessages'      => 'Do häs $1 ($2).',
 'newmessageslink'         => 'neu Metdeilunge op Dinger Klaafsigg',
-'newmessagesdifflink'     => 'Ungerscheed zor vürletzte Version',
+'newmessagesdifflink'     => 'Ungerscheid zor vürletzte Version',
 'youhavenewmessagesmulti' => 'Do häs neu Nachrichte op $1',
 'editsection'             => 'Ändere',
+'editsection-brackets'    => '[$1]',
 'editold'                 => 'Hee die Version ändere',
 'viewsourceold'           => 'Wikitex zeije',
 'editsectionhint'         => 'Avschnedd $1 ändere',
@@ -364,18 +366,20 @@ Dat es och all op Änglesch:
 'restorelink'             => '{{PLURAL:$1|eijn fottjeschmesse Änderung|$1 fottjeschmesse Änderunge|keij fottjeschmesse Änderunge}}',
 'feedlinks'               => 'Abonnomang-Kannal (<i lang="en">Feed</i>):',
 'feed-invalid'            => 'Esu en Zoot Abonnomang-Kannal (<i lang="en">Feed</i>) jitt et nit.',
-'feed-unavailable'        => 'Mer han kein esu en Abonnomangs-Kannäl (<i lang="en">Feeds</i>) en dämm Wiki aam Loufe.',
-'site-rss-feed'           => 'RSS-Abonnomang-Kannal (<i lang="en">Feed</i>) för de „$1“',
-'site-atom-feed'          => 'Atom-Abonnomang-Kannal (<i lang="en">Feed</i>) för de „$1“',
+'feed-unavailable'        => 'Mer han kein esu en Abonnomangs-Kannäl (<i lang="en">Feeds</i>) aam Loufe.',
+'site-rss-feed'           => 'RSS-Abonnomang-Kannal (Feed) för de „$1“',
+'site-atom-feed'          => 'Atom-Abonnomang-Kannal (Feed) för de „$1“',
 'page-rss-feed'           => 'RSS-Abonnomang-Kannal (<i lang="en">Feed</i>) för de Sigg „$1“',
 'page-atom-feed'          => 'Atom-Abonnomang-Kannal (<i lang="en">Feed</i>) för de Sigg „$1“',
+'feed-atom'               => 'Atom',
+'feed-rss'                => 'RSS',
 'red-link-title'          => '$1 — en Sigg, die et noch nit jitt',
 
 # Short words for each namespace, by default used in the namespace tab in monobook
 'nstab-main'      => 'Atikkel',
 'nstab-user'      => 'Metmaachersigg',
 'nstab-media'     => 'Medijesigg',
-'nstab-special'   => 'Spezial',
+'nstab-special'   => 'Söndersigg',
 'nstab-project'   => 'Projeksigg',
 'nstab-image'     => 'Datei',
 'nstab-mediawiki' => 'Tex',
@@ -385,7 +389,9 @@ Dat es och all op Änglesch:
 
 # Main script and global functions
 'nosuchaction'      => 'Die Aufgab (action) kenne mer nit',
-'nosuchactiontext'  => '<strong>Na su jet:</strong> De Aufgab us dä URL, die do hinger „<code>action=</code>“ dren steiht, jo die kennt hee dat Wiki jar nit.',
+'nosuchactiontext'  => '<strong>Na su jet:</strong> De Aufgab us dä URL, die do hinger „<code>action=</code>“ dren steiht, jo die kennt hee dat Wiki jar nit.
+Do künns Desch vertipp han, udder ene verkeehte Lengk hät Desch noh hee jebraat.
+Et künnt sesch och öm ene Fäähler en dä Sofware fum Wiki handelle.',
 'nosuchspecialpage' => "Esu en Sondersigg ha'mer nit",
 'nospecialpagetext' => 'De aanjefrochte Sondersigg jitt et nit, de [[Special:SpecialPages|Liss met de Sondersigge]] helf Der wigger.',
 
@@ -404,7 +410,8 @@ Dä letzte Befähl för de Daatebank es jewäse:
 <blockquote><code>$1</code></blockquote>
 un kohm us däm Projramm singe Funktion: „<code>$2</code>“.<br />
 MySQL meld dä Fähler: „<code>$3: $4</code>“.',
-'noconnect'            => 'Schad! Mer kunnte kein Verbindung met däm Daatebanksörver op „$1“ krije.',
+'noconnect'            => 'Schad! Dat Wiki hät e täschnesch Problem: Mer kunnte kein Verbindung met däm Daatebanksörver krije.<br />
+$1',
 'nodb'                 => 'Kunnt de Daatebank „$1“ nit uswähle',
 'cachederror'          => 'Dat hee es en Kopie vun dä Sigg us em Cache. Künnt sin, se es nit aktuell.',
 'laggedslavemode'      => '<strong>Opjepass:</strong> Künnt sin, dat hee nit dä neuste Stand vun dä Sigg aanjezeich weed.',
@@ -453,7 +460,7 @@ De Aanfroch es: „<code>$2</code>“<br />',
 'viewsourcetext'       => 'Hee es dä Sigg ier Wikitex zum Belooere un Koppeere:',
 'protectedinterface'   => 'Op dä Sigg hee steiht Tex usem Interface vun de Wiki-Soffwär. Dröm es die jäje Änderunge jeschötz, domet keine Mess domet aanjestallt weed.',
 'editinginterface'     => '<strong>Opjepass:</strong> 
-Op dä Sigg hee steiht Tex usem Interface vun de Wiki-Soffwär. Dröm es die jäje Änderunge jeschötz, domet keine Mess domet aanjestallt weed. Nor de Wiki-Köbese künne 
+Op dä Sigg hee steiht Tex usem Interface vun de Wiki-Soffwär. Dröm es die jäje Änderunge jeschötz, domet keine Mess domet aanjestallt weed. Nor de Wiki-Köbesse künne 
 se ändere. Denk dran, hee ändere deit et Ussinn un de Wööt ändere met dänne et Wiki op de Metmaacher un de Besöker drop aankütt!',
 'sqlhidden'            => "(Dä SQL_Befähl du'mer nit zeije)",
 'cascadeprotected'     => 'Die Sigg es jeschöz, un mer kann se nit ändere. Se es en en Schotz-Kaskad enjebonge, zosamme met dä {{PLURAL:$1|Sigg|Sigge}}:
@@ -464,16 +471,16 @@ $2',
 'titleprotected'       => "Dä Tittel för en Sigg eß verbodde, fum [[User:$1]], un dr Jrond wohr: ''„$2“''",
 
 # Virus scanner
-'virus-badscanner'     => 'Fääler en de Enstellunge: Dat Projramm <i>$1</i> fö noh Kompjuterwiere ze söke, dat kenne mer nit.',
+'virus-badscanner'     => "Fääler en de Enstellunge: Dat Projramm ''$1'' fö noh Kompjuterwiere ze söke, dat kenne mer nit.",
 'virus-scanfailed'     => 'Dat Söhke eß donevve jejange, dä Kood för dä Fähler es „$1“.',
 'virus-unknownscanner' => 'Dat Projamm fö noh Komjuterviere ze sööke kenne mer nit:',
 
 # Login and logout pages
 'logouttitle'                => 'Uslogge',
-'logouttext'                 => '<strong>Jetz bes de usjelogg</strong>
+'logouttext'                 => "'''Jetz bes de usjelogg'''
 
 Do künnts op de {{SITENAME}} wigger maache, als ene namelose Metmaacher. Do kanns De ävver och [[Special:UserLogin|widder enlogge]], als däselve oder och ene andere Metmaacher.
-Künnt sin, dat De de ein oder ander Sigg immer wigger aanjezeich kriss, wie wann de noch enjelogg wörs. Dun Dingem Brauser singe Cache fottschmieße oder leddich maache, öm us dä Nummer erus ze kumme!',
+Künnt sin, dat De de ein oder ander Sigg immer wigger aanjezeich kriss, wie wann de noch enjelogg wörs. Dun Dingem Brauser singe Cache fottschmieße oder leddich maache, öm us dä Nummer erus ze kumme!",
 'welcomecreation'            => '== Dach, $1! ==
 Dinge Zojang för hee es do.
 Do bes jetz aanjemeldt.
@@ -488,7 +495,7 @@ Denk dran, Do künnts Der [[Special:Preferences|Ding Enstellunge hee op de {{SIT
 'loginproblem'               => '<strong>Met däm Enlogge es jet scheiv jelaufe.</strong><br />Bes esu jod, un dun et noch ens versöke!',
 'login'                      => 'Enlogge',
 'nav-login-createaccount'    => 'Enlogge, Aanmälde',
-'loginprompt'                => 'Öm [[Special:UserLogin|op de {{SITENAME}} enlogge]] ze künne, muss De de Cookies en Dingem Brauser enjeschalt han.',
+'loginprompt'                => 'Öm op de {{SITENAME}} enlogge ze künne, muss De de Cookies en Dingem Brauser enjeschalt han.',
 'userlogin'                  => 'Enlogge odder Metmaacher wääde',
 'logout'                     => 'Uslogge',
 'userlogout'                 => 'Uslogge',
@@ -510,11 +517,12 @@ Denk dran, Do künnts Der [[Special:Preferences|Ding Enstellunge hee op de {{SIT
 'yourvariant'                => 'Ding Variant',
 'yournick'                   => 'Name för en Ding Ungerschreff:',
 'badsig'                     => 'Di Ungeschreff jëijd_esu nit — luer noh dem HTML do_dren un maach et rėshtėsh.',
-'badsiglength'               => 'Ding Unterschref darf nit länger wi {{PLURAL:$1|eij|$1|keij}} Zeische sin.',
-'email'                      => 'e-mail',
+'badsiglength'               => 'Ding „Unterschref“ es zoo lang.
+Et dörve darf nit nieh wi {{PLURAL:$1|eij|$1|keij}} Zeische do dren sin.',
+'email'                      => 'E-mail',
 'prefs-help-realname'        => '* Dinge richtije Name - kanns De fott looße - wann De en nenne wells, dann weed hee jebruch, öm Ding Beidräch domet ze schmöcke.',
 'loginerror'                 => 'Fähler beim Enlogge',
-'prefs-help-email'           => '* E-mail - kanns De fottlooße, un es för Andre nit ze sinn - mäht et ävver müjjelich, dat mer met Dir en Kontak kumme kann, ohne dat mer Dinge Name oder Ding E-Mail Adress kenne dät.',
+'prefs-help-email'           => '* Ding <i lang="en">e-mail</i> Adress - kanns De fottlooße, un se es för Andre nit ze sinn - mäht et ävver müjjelich, Der e neu Passwoot ze schecke, wann De et ens verjäße häß. Do kannß och zohlohße, dat mer Der domet övver Ding Metmaacherklaafsigg en <i lang="en">e-mail</i> schecke kann. Esu künne ander Metmaacher met Der en Kontak kumme, ohne dat se Dinge Name oder Ding <i lang="en">e-Mail</i> Adress kenne mööte.',
 'prefs-help-email-required'  => 'Do moß en jöltije E-Mail-Adress aanjevve.',
 'nocookiesnew'               => 'Dinge neue Metmaacher Name es enjerich, ävver dat automatisch Enlogge wor dann nix. 
 Schad.
@@ -525,9 +533,11 @@ Sök Der ene Brauser, dä et kann, dun se enschalte, un dann log Dich noch ens n
 'noname'                     => 'Dat jeiht nit als ene Metmaacher Name. Jetz muss De et noch ens versöke.',
 'loginsuccesstitle'          => 'Dat Enlogge hät jeflupp.',
 'loginsuccess'               => '<br />Do bes jetz enjelogg bei de <strong>{{SITENAME}}</strong>, un Dinge Metmaacher Name es „<strong>$1</strong>“.<br />',
-'nosuchuser'                 => 'Dat Passwood oder dä Metmaacher Name „$1“ wor verkihrt.
+'nosuchuser'                 => 'Dä Metmaacher Name „$1“ wor verkihrt.
+Jroß- un Kleinboochshtabe maache ene Ungerscheid!
+<br />
 Jetz muss De et noch ens versöke.
-Oder_<span class="plainlinks">[{{FULLURL:Special:UserLogin|type=signup}} ene neue Metmaacher aanmelde]</span>.',
+Udder donn_[[Special:UserLogin/signup|ene neue Metmaacher aanmelde]].',
 'nosuchusershort'            => 'Dä Metmaacher Name „<nowiki>$1</nowiki>“ wor verkihrt. Jetz muss De et noch ens versöke.',
 'nouserspecified'            => 'Dat jeiht nit als ene Metmaacher Name',
 'wrongpassword'              => 'Dat Passwood oder dä Metmaacher Name wor verkihrt. Jetz muss De et noch ens versöke.',
@@ -596,26 +606,26 @@ e-mail eijfach. Wann De en däm Wikki nit metmaache wells, och.',
 'resetpass'               => 'Neu Zweschepasswoot övver e-mail bekumme',
 'resetpass_announce'      => 'De beß jez enjelogg med ennem Zweschepasswoot, wat De övver e-mail krääje häs. Dat kanns De nit einfar_esu behallde. Alsu donn jetz e neu Passwoot för op Duur aanjevve.',
 'resetpass_text'          => '<!-- Donn der Täx hee dobei -->',
-'resetpass_header'        => 'Neu Passwood',
+'resetpass_header'        => 'Neu Passwood faßlääje',
 'resetpass_submit'        => 'E neu Zweschepasswood övvermeddele un aanmellde',
 'resetpass_success'       => 'Passwood jeändert. Jetz küdd_et Enlogge&nbsp;…',
 'resetpass_bad_temporary' => 'Da Zweschepasswoot es nix. Do häs ald ding Passwoot jeändert, udder De häs zweschedren ald widder e neu Passwoot pä e-mail jescheck bekumme.',
-'resetpass_forbidden'     => 'E Passwoot kann in de {{SITENAME}} nit jeändert wääde.',
+'resetpass_forbidden'     => 'E Passwoot kann nit jeändert wääde.',
 'resetpass_missing'       => "'''Fähler:''' Nix enjejovve, odder de Daate ussem Fomulaa sen fott.",
 
 # Edit page toolbar
-'bold_sample'     => 'Fett Schreff',
-'bold_tip'        => 'Fett Schreff',
+'bold_sample'     => 'Fätte Schreff',
+'bold_tip'        => 'Fätte Schreff',
 'italic_sample'   => 'Scheive Schreff',
 'italic_tip'      => 'Scheive Schreff',
 'link_sample'     => 'Anker Tex',
 'link_tip'        => 'Ene Link en de {{SITENAME}}',
-'extlink_sample'  => 'http://www.example.com/ Dä Anker Tex',
+'extlink_sample'  => 'http://www.example.com/dat_he_oohne_Zwescheräum Donoh dä Anker Tex',
 'extlink_tip'     => 'Ene Link noh drusse (denk dran, http:// aan dr Aanfang!)',
 'headline_sample' => 'Üvverschreff',
 'headline_tip'    => 'Üvverschreff op de bövverschte Ebene',
-'math_sample'     => 'Hee schriev de Formel eren',
-'math_tip'        => 'För mathematisch Formele nemm „LaTeX“',
+'math_sample'     => 'Hee schriev de Formel en „LaTeX“ Forrem eren',
+'math_tip'        => 'En mathematisch Formel',
 'nowiki_sample'   => 'Hee kütt dä Tex hen, dä vun de Wiki-Soffwär nit bearbeid, un en Rauh jelooße wääde soll',
 'nowiki_tip'      => 'Der Wiki-Code för et Fommatteere üvverjonn',
 'image_sample'    => 'Beispill.jpg',
@@ -634,7 +644,7 @@ e-mail eijfach. Wann De en däm Wikki nit metmaache wells, och.',
 'preview'                          => 'Vör-Ansich',
 'showpreview'                      => 'Vör-Aansich zeije',
 'showlivepreview'                  => 'Lebendije Vör-Aansich zeije',
-'showdiff'                         => 'De Ungerscheed zeije',
+'showdiff'                         => 'De Ungerscheide zeije',
 'anoneditwarning'                  => 'Weil De nit aanjemeldt bes, weed Ding IP-Adress opjezeichnet wääde.',
 'missingsummary'                   => '<strong>Opjepass:</strong> Do häs nix bei „Koot Zosammejefass, Quell“ enjejovve. Dun noch ens op „<b style="padding:2px; background-color:#ddd; color:black">De Sigg Avspeichere</b>“ klicke, öm Ding Änderunge ohne de Zosammefassung ze Speicheree. Ävver besser jiss De do jetz tirek ens jet en!',
 'missingcommenttext'               => 'Jevv en „Koot Zosammejefass, Quell“ aan!',
@@ -642,25 +652,25 @@ e-mail eijfach. Wann De en däm Wikki nit metmaache wells, och.',
 'summary-preview'                  => 'Vör-Aansich vun „Koot Zosammejefass, Quell“',
 'subject-preview'                  => 'Vör-Aansich vun de Üvverschreff',
 'blockedtitle'                     => 'Dä Metmaacher es jesperrt',
-'blockedtext'                      => '<big>\'\'\'Dinge Metmaacher-Name oder IP Adress es vun „$1“ jesperrt woode.\'\'\'</big>
+'blockedtext'                      => "<big>'''Dinge Metmaacher-Name oder IP Adress es vun „\$1“ jesperrt woode.'''</big>
 
-Als Jrund es enjedrage: „\'\'$2\'\'“
+Als Jrund es enjedrage: „''\$2''“
 
 Do kanns hee em Wiki immer noch lesse. Do sühß ävver di Sigg hee, wann De op rude Links klicks, neu Sigge aanlääje, odder Sigge ändere wells, denn doför bes De jetz jesperrt.
 
-Do kanns met $1 oder enem andere [[{{MediaWiki:Grouppage-sysop}}|Wiki-Köbes]] üvver dat Sperre schwaade, wann De wells.
-Do kanns ävver nor dann „\'\'E-Mail aan dä Metmaacher\'\'“ aanwende, wann De ald en E-Mail Adress en Dinge [[Special:Preferences|Enstellunge]] enjedrage un freijejovve häs un wann et E-mail schecke nit metjesperrt es.
+Do kanns met \$1 oder enem andere [[{{MediaWiki:Grouppage-sysop}}|Wiki-Köbes]] üvver dat Sperre schwaade, wann De wells.
+Do kanns ävver nor dann „''E-Mail aan dä Metmaacher''“ aanwende, wann De ald en E-Mail Adress en Dinge [[Special:Preferences|Enstellunge]] enjedrage un freijejovve häs un wann et E-mail schecke nit metjesperrt es.
 
 Dun en Ding Aanfroge nenne:
-* Dä Wiki-Köbeß, dä jesperrt hät: $1
-* Der Jrond för et Sperre: $2
-* Da wood jesperrt: $8
-* De Sperr soll loufe bes: $6
-* De Nommer vun dä Sperr: #$5
-* Ding IP-Adress is jetz: $3
-* Di Sperr es wäje odde jäje: $7
+* Dä Wiki-Köbeß, dä jesperrt hät: \$1
+* Der Jrond för et Sperre: \$2
+* Da wood jesperrt: \$8
+* De Sperr soll loufe bes: \$6
+* De Nommer vun dä Sperr: #\$5
+* Ding IP-Adress is jetz: \$3
+* Di Sperr es wäje odde jäje: \$7
 
-Do kanns och noch en et <span class="plainlinks">[{{fullurl:Special:IPBlockList|&action=search&limit=&ip=$3}}$5 Logboch met de Sperre ]</span> loore.',
+Do kanns och noch en et <span class=\"plainlinks\">[{{fullurl:Special:IPBlockList|&action=search&limit=&ip=%23}}\$5 Logboch met de Sperre]</span> loore.",
 'autoblockedtext'                  => "<big>'''Ding IP Adress es automattesch jesperrt woode.'''</big>
 <br />
 '''Se wor vun enem Metmaacher jebruch woode, dä vun „\$1“ jesperrt woode es.'''
@@ -681,11 +691,11 @@ Dun en Ding Aanfroge nenne:
 * Ding IP-Adress is jetz: \$3
 * Di Sperr es wäje odde jäje: \$7
 
-Do kanns och noch en et <span class=\"plainlinks\">[{{fullurl:Special:IPBlockList|&action=search&limit=&ip=%23}}\$5 Logboch met de Sperre ]</span> loore.",
+Do kanns och noch en et <span class=\"plainlinks\">[{{fullurl:Special:IPBlockList|&action=search&limit=&ip=%23}}\$5 {{int:ipblocklist}}]</span> loore.",
 'blockednoreason'                  => 'Keine Aanlass aanjejovve',
 'blockedoriginalsource'            => 'Dä orjenal Wiki Tex vun dä Sigg „<strong>$1</strong>“ steiht hee drunger:',
 'blockededitsource'                => 'Dä Wiki Tex vun <strong>Dinge Änderunge</strong> aan dä Sigg „<strong>$1</strong>“ steiht hee drunger:',
-'whitelistedittitle'               => '[[Special:UserLogin|Enlogge]] es nüdich för Sigge ze Ändere',
+'whitelistedittitle'               => 'Enlogge es nüdich för Sigge ze Ändere',
 'whitelistedittext'                => 'Do mööts ald $1, öm hee em Wiki Sigge ändere ze dürfe.',
 'confirmedittitle'                 => 'För et Sigge Ändere muss De Ding E-Mail Adress ald bestätich han.',
 'confirmedittext'                  => 'Do muss Ding E-Mail Adress ald bestätich han, ih dat De hee Sigge ändere darfs.
@@ -708,11 +718,11 @@ Wann De jar nit hee hen kumme wollts, dann jangk zeröck op die Sigg, wo De herj
 <i>Dat hee es de Klaaf Sigg för ene namenlose Metmaacher. Dä hät sich noch keine Metmaacher Name jejovve un 
 enjerich, ov deit keine bruche. Dröm bruche mer sing IP Adress öm It oder In en uns Lisste fasszehalde. 
 Su en IP Adress kann vun janz vill Metmaacher jebruch wääde, un eine Metmaacher kann janz flöck 
-zwesche de ungerscheedlichste IP Adresse wähßele, womöchlich ohne dat hä et merk. Wann Do jetz ene namenlose 
+zwesche de ungerscheidlichste IP Adresse wähßele, womöchlich ohne dat hä et merk. Wann Do jetz ene namenlose 
 Metmaacher bes, un fings, dat hee Saache an Dich jeschrevve wääde, wo Do jar nix met am Hot häs, dann bes Do 
 wahrscheinlich och nit jemeint. Denk villeich ens drüvver noh, datte Dich [[Special:UserLogin/signup|anmelde]] deis, 
 domet De dann donoh nit mieh met esu en Ömständ ze dun häs, wie de andere namenlose Metmaacher hee. Wann de aanjemelldt bes un deis [[Special:UserLogin|enlogge]], dann kam_mer Desch och dun alle andere Metmaacher ongerschejde.</i>',
-'noarticletext'                    => '<span class="plainlinks">Em Momang es keine Tex op dä Sigg. Jangk en de Texte vun ander Sigge [[Special:Search/{{PAGENAME}}|noh däm Titel söke]], oder [{{FULLURL:{{FULLPAGENAME}}|action=edit}} fang die Sigg aan] ze schrieve, oder jangk zeröck wo de her koms. Dinge Brauser hät ene Knopp doför.</span>',
+'noarticletext'                    => '<span class="plainlinks">Em Momang es keine Tex op dä Sigg. Jangk en de Texte vun ander Sigge [[Special:Search/{{PAGENAME}}|noh däm Titel söke]], odder [{{fullurl:Special:Log|page={{urlencode:{{FULLPAGENAME}}}}}} donn en de Logböcher doför loore], oder [{{FULLURL:{{FULLPAGENAME}}|action=edit}} fang die Sigg aan] ze schrieve, oder jangk zeröck wo de her koms. Do hät Dinge Brauser ene Knopp för.</span>',
 'userpage-userdoesnotexist'        => 'Enne Metmaacher „$1“ hammer nit, beß De secher, dat De die Metmaachersigg ändere oder aanläje wellss?.',
 'clearyourcache'                   => "<br clear=\"all\" style=\"clear:both\">
 '''Opjepass:'''
@@ -747,22 +757,22 @@ et ess en bunte Welt!",
 denk dran, dat ene Metmaacher eije Dateie för et Ussinn han kann, un dat die met kleine Buchstave 
 aanfange dun, alsu etwa: {{ns:user}}:Name/monobook.css, un {{ns:user}}:Name/monobook.js heiße.',
 'updated'                          => '(Aanjepack)',
-'note'                             => '<strong>Opjepass:</strong>',
-'previewnote'                      => '<strong>Hee kütt nor de Vör-Aansich - Ding Änderunge sin noch nit jesechert!</strong>',
+'note'                             => "'''Opjepass:'''",
+'previewnote'                      => "'''Hee kütt nor de Vör-Aansich - Ding Änderunge sin noch nit jesechert!'''",
 'previewconflict'                  => 'Hee die Vör-Aansich zeich dä Enhald vum bovvere Texfeld.
 Esu wööd dä Atikkel ussinn, wann De n jetz avspeichere däts.',
-'session_fail_preview'             => '<strong>Schad: Ding Änderunge kunnte mer su nix met aanfange.
+'session_fail_preview'             => "'''Schad: Ding Änderunge kunnte mer su nix met aanfange.
 Versök et jrad noch ens.
-Wann dat widder nit flupp, dann versök et ens met [[Special:UserLogout|Uslogge]] un widder Enlogge.</strong>',
-'session_fail_preview_html'        => "<strong>Schad: Ding Änderunge kunnte mer su nix met aanfange. De Daate vun Dinge Login-Säschen sin nit öntlich erüvver jekumme, oder einfach ze alt.</strong>
+Wann dat widder nit flupp, dann versök et ens met [[Special:UserLogout|Uslogge]] un widder Enlogge.'''",
+'session_fail_preview_html'        => "'''Schad: Ding Änderunge kunnte mer su nix met aanfange. De Daate vun Dinge Login-Säschen sin nit öntlich erüvver jekumme, oder einfach ze alt.'''
 
 ''Dat Wiki hee hät rüh HTML zojelooße, dröm weed de Vör-Aansich nit jezeich. Domet solls De jeschötz wääde - hoffe mer - un Aanjreffe met Java_Skripp jäje Dinge Kompjuter künne Der nix aandun.''
 
-<strong>Falls för Dich söns alles jod ussüht, versök et jrad noch ens. Wann dat widder nit flupp, dann versök et ens met [[Special:UserLogout|Uslogge]] un widder Enlogge.</strong>",
-'token_suffix_mismatch'            => '<strong>Ding Änderung ham_mer nit övvernomme. Dinge Brauser hät Sazzeijche em verstoche <i lang="en">Token</i> för et Ändere versout. Dat paßeet och ens, wann enne <i lang="en">Proxy</i> nit fungkßjeneet. Et Affspeichere wör do jefährlesch, do künt dä Sigge_Enhaldt kapott bei jon.</strong>',
+'''Falls för Dich söns alles jod ussüht, versök et jrad noch ens. Wann dat widder nit flupp, dann versök et ens met [[Special:UserLogout|Uslogge]] un widder Enlogge.'''",
+'token_suffix_mismatch'            => "'''Ding Änderung ham_mer nit övvernomme. Dinge Brauser hät Sazzeijche em verstoche <i lang=\"en\">Token</i> för et Ändere versout. Dat paßeet och ens, wann enne <i lang=\"en\">Proxy</i> nit fungkßjeneet. Et Affspeichere wör do jefährlesch, do künt dä Sigge_Enhaldt kapott bei jon.'''",
 'editing'                          => 'De Sigg „$1“ ändere',
 'editingsection'                   => 'Ne Avschnedd vun dä Sigg: „$1“ ändere',
-'editingcomment'                   => '„$1“ Ändere (ene neue Avschnedd schrieve)',
+'editingcomment'                   => '„$1“ ändere (ene neue Avschnedd schrieve)',
 'editconflict'                     => 'Problemche: „$1“ dubbelt bearbeidt.',
 'explainconflict'                  => '<br />Ene andere Metmaacher hät aan dä Sigg och jet jeändert, un zwar nohdäm Do et Ändere aanjefange häs. Jetz ha\'mer dr Dress am Jang, un Do darfs et widder uszoteere.
 <strong>Opjepass:</strong>
@@ -770,18 +780,18 @@ Wann dat widder nit flupp, dann versök et ens met [[Special:UserLogout|Uslogge]
 Do muss jetz Ding Änderunge och in dat <strong>bovvere</strong> Texxfeld eren bränge. Natörlich ohne dä 
 Andere ihr Saache kapott ze maache.
 <strong>Nor wat em bovvere Texfeld steiht,</strong> dat weed üvvernomme un avjespeichert, wann De „<b 
-style="padding:2px; background-color:#ddd; color:black">De Sigg Avspeichere</b>“ klicks. Bes dohin kanns De esu off 
-wie De wells op „<b style="padding:2px; background-color:#ddd; color:black">Vör-Aansich zeije</b>“ un „<b 
-style="padding:2px; background-color:#ddd; color:black">De Ungerscheed zeije</b>“ klicke, öm ze pröfe, watte ald 
+style="padding:2px; background-color:#ddd; color:black">{{int:savearticle}}</b>“ klicks. Bes dohin kanns De esu off 
+wie De wells op „<b style="padding:2px; background-color:#ddd; color:black">{{int:showdiff}}</b>“ un „<b 
+style="padding:2px; background-color:#ddd; color:black">{{int:showpreview}}</b>“ klicke, öm ze pröfe, watte ald 
 jods jemaat häs.
 
 Alles Klor?<br /><br />',
 'yourtext'                         => 'Dinge Tex',
 'storedversion'                    => 'De jespeicherte Version',
-'nonunicodebrowser'                => '<strong>Opjepass:</strong>
+'nonunicodebrowser'                => "'''Opjepass:'''
 Dinge Brauser kann nit öntlich met däm Unicode un singe Buchstave ömjonn.
-Bes esu jod un nemm ene andere Brauser för hee die Sigg!',
-'editingold'                       => '<strong>Opjepass!<br />
+Bes esu jod un nemm ene andere Brauser för hee die Sigg!",
+'editingold'                       => "'''Opjepass!<br />
 Do bes en ahle, üvverhollte Version vun dä Sigg hee am Ändere.
 Wann De die avspeichere deis,
 wie se es,
@@ -789,26 +799,26 @@ dann jonn all die Änderunge fleute,
 die zickdäm aan dä Sigg jemaht woode sin.
 Alsu:
 Bes De secher, watte mähs?
-</strong>',
-'yourdiff'                         => 'Ungerscheede',
+'''",
+'yourdiff'                         => 'Ungerscheide',
 'copyrightwarning'                 => 'Ding Beidräch stonn unger de [[$2]], süch $1. Wann De nit han wells, dat Dinge Tex ömjemodelt weed, un söns wohin verdeilt, dun en hee nit speichere. Mem Avspeichere sähs De och zo, dat et vun Dir selvs es, un/oder Do dat Rääch häs, en hee zo verbreide. Wann et nit stemmp, oder Do kanns et nit nohwiese, kann Dich dat en dr Bau bränge!',
 'copyrightwarning2'                => 'De Beidräch en de {{SITENAME}} künne vun andere Metmaacher ömjemodelt 
 oder fottjeschmesse wääde. Wann Der dat nit rääch es, schriev nix. Et es och nüdich, dat et vun Dir selvs es, oder dat Do dat Rääch häs, et hee öffentlich wigger ze jevve. Süch $1. Wann et nit stemmp, oder Do kanns et nit nohwiese, künnt Dich dat en dr Bau bränge!',
-'longpagewarning'                  => '<strong>Oppjepass:</strong> Dä Tex, dä De hee jescheck häs, dä es <strong>$1</strong> 
-Kilobyte jroß. Manch Brauser kütt nit domet klor, wann et mieh wie <strong>32</strong> Kilobyte sin. Do künnts De drüvver nohdenke, dat Dinge en kleiner Stöckche ze zerkloppe.',
-'longpageerror'                    => '<big><strong>Janz schlemme Fähler:</strong></big>
-Dä Tex, dä De hee jescheck häs, dä es <strong>$1</strong> Kilobyte jroß. 
-Dat sin mieh wie <strong>$2</strong> Kilobyte. Dat künne mer nit speichere!
-<strong>Maach kleiner Stöcke drus.</strong><br />',
+'longpagewarning'                  => "'''Oppjepass:''' Dä Tex, dä De hee jescheck häs, dä es '''$1''' 
+Kilobyte jroß. Manch Brauser kütt nit domet klor, wann et mieh wie '''32''' Kilobyte sin. Do künnts De drüvver nohdenke, dat Dinge en kleiner Stöckche ze zerkloppe.",
+'longpageerror'                    => "<big>'''Janz schlemme Fähler:'''</big>
+Dä Tex, dä De hee jescheck häs, dä es '''$1''' Kilobyte jroß. 
+Dat sin mieh wie '''$2''' Kilobyte. Dat künne mer nit speichere!
+'''Maach kleiner Stöcke drus.'''<br />",
 'readonlywarning'                  => '<strong>Opjepass:</strong>
 De Daatebank es jesperrt woode, wo Do ald am Ändere wors. 
 Dä.
 Jetz kanns De Ding Änderunge nit mieh avspeichere.
 Dun se bei Dir om Rechner fasshalde un versök et späder noch ens.',
-'protectedpagewarning'             => "'''Opjepass:''' Die Sigg hee es jäje Veränderunge jeschötz. Nor de Wiki-Köbese künne se ändere.</strong>",
+'protectedpagewarning'             => "'''Opjepass: Die Sigg hee es jäje Veränderunge jeschötz. Nor de Wiki-Köbesse künne se ändere.'''",
 'semiprotectedpagewarning'         => "'''Opjepass:''' Die Sigg hee es halv jesperrt, wie mer sage, dat heiß, Do muss aanjemeldt un enjelogg sin, wann De dran ändere wells.",
 'cascadeprotectedwarning'          => "'''Opjepaß:''' Die Sigg es jeschöz, un nur de Wiki-Köbesse künne se ändere. Se es en en Schotz-Kaskad enjebonge, zosamme met dä {{PLURAL:$1|Sigg|Sigge}}:",
-'titleprotectedwarning'            => '<strong> <span style="text-transform:uppercase"> Opjepaß! </span> Di Sigg hee is jesperrt woode. Bloß bestemmpte Metmaacher dörve di Sigg neu aanläje.</strong>',
+'titleprotectedwarning'            => "<span style=\"text-transform:uppercase\"> Opjepaß! </span> Di Sigg hee is jesperrt woode. Bloß [[Special:ListGroupRights|bestemmpte]] Metmaacher dörve di Sigg neu aanläje.'''",
 'templatesused'                    => 'De Schablone, die vun dä Sigg hee jebruch wääde, sinn:',
 'templatesusedpreview'             => 'Schablone en dä Vör-Aansich hee:',
 'templatesusedsection'             => 'Schablone en däm Avschnedd hee:',
@@ -818,7 +828,7 @@ Dun se bei Dir om Rechner fasshalde un versök et späder noch ens.',
 'edittools'                        => '<!-- Dä Tex hee zeich et Wiki unger däm Texfeld zom „Ändere/Bearbeide“ un beim Texfeld vum „Huhlade“. -->',
 'nocreatetitle'                    => 'Neu Sigge Aanläje eß nit einfach esu müjjelesch.',
 'nocreatetext'                     => 'Sigge neu aanläje es nor müjjelich, wann de [[Special:UserLogin|enjelogg]] bes. Der ohne kanns De ävver Sigge ändere, die ald do sin.',
-'nocreate-loggedin'                => 'Do häs nit dat Rääch, neu Sigge hee en däm Wiki aanzelääje.',
+'nocreate-loggedin'                => 'Do häs nit dat Rääch, neu Sigge aanzelääje.',
 'permissionserrors'                => 'Dat jeit nit, dat darfs de nit.',
 'permissionserrorstext'            => 'Do häs nit dat Rääch, dat ze maache, {{PLURAL:$1|dä Jrund es:|de Jründe sin:|oohne Jrund.}}',
 'permissionserrorstext-withaction' => 'Do häs nit dat Rääch för dä Opdraach „<code>action=$2</code>“,
@@ -839,9 +849,9 @@ woröm di Sigg dohmohls fottjeschmesse woode es:",
 'post-expand-template-argument-category'  => 'Sigge met övverjange Parrammeeter fun Schablone',
 
 # "Undo" feature
-'undo-success' => 'De Änderung könnte mer zeröck nämme. Beloor Der de Ungerscheed un dann donn di Sigg avspeichere, wann De dengks, et es en Oodenung esu.',
-'undo-failure' => '<span class="error">Dat kunnt mer nit zeröck nämme, dä Afschnedd wood enzwesche ald widder beärbeidt.</span>',
-'undo-norev'   => '<span class="error">Do ka\'mer nix zeröck nämme. Di Version jidd_et nit, odder se es verstoche odder fottjeschmesse woode.</span>',
+'undo-success' => 'De Änderung könnte mer zeröck nämme. Beloor Der de Ungerscheid un dann donn di Sigg avspeichere, wann De dengks, et es en Oodenung esu.',
+'undo-failure' => 'Dat kunnt mer nit zeröck nämme, dä Afschnedd wood enzwesche ald widder beärbeidt.',
+'undo-norev'   => "Do ka'mer nix zeröck nämme. Di Version jidd_et nit, odder se es verstoche odder fottjeschmesse woode.",
 'undo-summary' => 'De Änderung $1 fum [[Special:Contributions/$2|$2]] ([[User talk:$2|Klaaf]]) zeröck jenomme.',
 
 # Account creation failure
@@ -863,17 +873,21 @@ fottjeschmesse hät?',
 'previousrevision'    => '← De Version dovör zeije',
 'nextrevision'        => 'De Version donoh zeije →',
 'currentrevisionlink' => 'De neuste Version',
-'cur'                 => 'jetz',
+'cur'                 => 'met jetz',
 'next'                => 'wigger',
-'last'                => 'zerök',
+'last'                => 'met dovör',
 'page_first'          => 'Aanfang',
 'page_last'           => 'Engk',
 'histlegend'          => 'Hee kanns De Versione för et Verjliche ussöke: Dun met dä Knöpp die zweij markiere, 
-zwesche dänne De de Ungerscheed jezeich krije wells, dann dröck „<b style="padding:2px; background-color:#ddd; 
-color:black">Dun de markeete Versione verjliche</b>“ bei Dinge Taste, oder klick op ein vun dä Knöpp üvver oder 
-unger de Liss.
-Erklärung: (neu) = Verjliche met de neuste Version, (letz) = Verjliche met de Version ein doför, <b>M</b> = en 
-kleine <b>M</b>ini-Änderung.',
+zwesche dänne De de Ungerscheid jezeich krije wells, dann dröck „<b style="padding:2px; background-color:#ddd; 
+color:black">{{int:compareselectedversions}}</b>“ udder „<b style="padding:2px; background-color:#ddd; 
+color:black">{{int:visualcomparison}}</b>“ udder „<b style="padding:2px; background-color:#ddd; 
+color:black">{{int:wikicodecomparison}}</b>“ met Dinge Taste, oder klick op ein vun dä Knöpp üvver oder unger de Liss.<br />
+Verklierung:
+({{int:cur}}) = donn met de neuste Version verjliche,
+({{int:last}}) = donn met de Version ein doför verjliche,
+<b>M</b> = en klein <b>M</b>ini-Änderung,
+Dattum+Uhrzigg = don de Version fun dämm Daach un dä Zigg aanzeije.',
 'deletedrev'          => '[fott]',
 'histfirst'           => 'Ählste',
 'histlast'            => 'Neuste',
@@ -900,18 +914,18 @@ Jetz ka\'mer se nit mieh beluure. Als ene Wiki-Köbes kriss De se ävver doch ze
 'revisiondelete'              => 'Versione fottschmieße un widder zeröck holle',
 'revdelete-nooldid-title'     => 'Kein Version aanjejovve, oddeer en Stuß-Nommer',
 'revdelete-nooldid-text'      => 'Do häs kein Version aanjejovve, womet mer dat maache sulle. Odder de Nommer wohr Stuß, verkeeht, et jitt se nit, odder De wellß de neuste Version fott maache.',
-'revdelete-selected'          => '{{PLURAL:$2|Ein usjewählte Version|$2 usjewählte Versione|Kein Version usjewählt}} vun [[:$1]]:',
-'logdelete-selected'          => '{{PLURAL:$1|Dä ußjewählte Logboch-Endrach|De Ußjewählte Logboch-Endrähsch}}:',
-'revdelete-text'              => 'Dä fottjeschmesse Sigge ehre Enhald kanns De nit mieh aanluure. Se blieve ävver en de Liss met de Versione dren.
+'revdelete-selected'          => "'''{{PLURAL:$2|Ein usjewählte Version|$2 usjewählte Versione|Kein Version usjewählt}} vun [[:$1]]:'''",
+'logdelete-selected'          => "'''{{PLURAL:$1|Dä ußjewählte Logboch-Endrach|De Ußjewählte Logboch-Endrähsch}}:'''",
+'revdelete-text'              => "'''Dä fottjeschmesse Sigge ehre Enhald kanns De nit mieh aanluure. Se blieve ävver en de Liss met de Versione dren.'''
 
 Ene Wiki Köbes kann de fottjeschmessene Krom immer noch aanluere un kann en och widder herholle, usser wann bei 
-dem Wiki singe Installation dat anders fassjelaht woode es.',
+dem Wiki singe Installation dat anders fassjelaht woode es.",
 'revdelete-legend'            => 'Dä öffentlije Zojang enschränke',
 'revdelete-hide-text'         => 'Dä Tex vun dä Version versteiche',
 'revdelete-hide-name'         => 'Der Förjang, un och der Enndraach uss_em Logboch, versteiche',
 'revdelete-hide-comment'      => 'Dä Enhald vun „Koot Zosammejefass, Quell“ usblende',
 'revdelete-hide-user'         => 'Däm Bearbeider sing IP Adress oder Metmaacher Name versteiche',
-'revdelete-hide-restricted'   => 'Dun dat och för de Wiki Köbese esu maache wie för jede Andere',
+'revdelete-hide-restricted'   => 'Dun dat och för de Wiki-Köbesse esu maache wie för jede Andere',
 'revdelete-suppress'          => 'Donn dä Jrond och för de Wiki-Köbesse versteische',
 'revdelete-hide-image'        => 'De Enhallt vun däm Beld versteiche',
 'revdelete-unsuppress'        => 'De Beschrängkonge för der widderjehollte Versione ophevve',
@@ -961,16 +975,16 @@ Donn de Version makeere bes wohen (inklusive) dat övverdraare wäde sull. Donn 
 
 # Merge log
 'mergelog'           => 'Logboch fum Sigge zesamme Läje',
-'pagemerge-logentry' => 'Versione beß $3 fun „[[:$1]]“ zosamme jelaat met „[[:$2]]“',
+'pagemerge-logentry' => 'Versione beß $3 fun „[[$1]]“ zosamme jelaat met „[[$2]]“',
 'revertmerge'        => 'Dat Zosammelääje widder retuur maache',
 'mergelogpagetext'   => 'Dat hee is dat Logbooch fun de zesammejelaate Versione fun Sigge',
 
 # Diffs
 'history-title'           => 'Liss met Versione vun „$1“',
-'difference'              => '(Ungerscheed zwesche de Versione)',
+'difference'              => '(Ungerscheid zwesche de Versione)',
 'lineno'                  => 'Reih $1:',
 'compareselectedversions' => 'Dun de markeete Version verjliche',
-'editundo'                => 'zeröck nämme',
+'editundo'                => 'De letzte Änderung zeröck nämme',
 'diff-multi'              => '(Mer don hee {{PLURAL:$1|eij Version|$1 Versione|keij Version}} dozwesche beim Verjliesche översprenge)',
 
 # Search results
@@ -1007,7 +1021,10 @@ Do kanns se [[:$1|aanläje]], wann De wells.',
 'showingresultsnum'         => 'Unge {{PLURAL:$3|es ein|sin <strong>$3</strong>|sin <strong>kein</strong>}} vun de jefunge Endräch opjeliss, vun de Nummer <strong>$2</strong> av.',
 'showingresultstotal'       => "Hee {{PLURAL:$4|kütt der Treffer Numero '''$1''' uß|kumme de Treffer '''$1''' beß '''$2''' fun}} '''$3:'''",
 'nonefound'                 => '<strong>Opjepass:</strong>
-Wann beim Söke nix erus kütt, do kann dat dran lije, dat mer esu janz jewöhnliche Wööd, wie „hät“, „alsu“, „wääde“, un „sin“, uew. jar nit esu en de Daatebank dren han, dat se jefonge wääde künnte.',
+Standatmääßesch don mer nur en bestemmpte Appachtemangs söke.
+Donn „<code>all:</code>“ för Ding Wööt saze, wan de en alle Appachtemangs
+söke wells, och Klaafsigge, Schabloone, un esu, udder nemm dä zopaß
+Appachtemangs-Name.',
 'powersearch'               => 'Söke',
 'powersearch-legend'        => 'Extra Sööke',
 'powersearch-ns'            => 'Söök en de Apachtemangs:',
@@ -1026,10 +1043,10 @@ dat dänne ihr Daate topaktuell sin,
 
 # Preferences page
 'preferences'              => 'ming Enstellunge',
-'mypreferences'            => 'Ming Enstellunge',
+'mypreferences'            => 'ming Enstellunge',
 'prefs-edits'              => 'Aanzahl Änderunge am Wiki:',
 'prefsnologin'             => 'Nit Enjelogg',
-'prefsnologintext'         => 'Do mööts ald [[Special:UserLogin|enjelogg]] sin, öm Ding Enstellunge ze ändere.',
+'prefsnologintext'         => 'Do mööts ald <span class="plainlinks">[{{fullurl:Special:UserLogin|returnto=$1}} enjelogg]</span> sin, öm Ding Enstellunge ze ändere.',
 'prefsreset'               => 'De Enstellunge woodte jetz op Standard zeröck jesatz.',
 'qbsettings'               => '„Flöcke Links“',
 'qbsettings-none'          => 'Fottlooße, dat well ich nit sinn',
@@ -1037,7 +1054,7 @@ dat dänne ihr Daate topaktuell sin,
 'qbsettings-fixedright'    => 'Am rächte Rand fass aanjepapp',
 'qbsettings-floatingleft'  => 'Am linke Rand am Schwevve',
 'qbsettings-floatingright' => 'Am rächte Rand am Schwevve',
-'changepassword'           => 'Passwood ändere',
+'changepassword'           => 'Passwood *',
 'skin'                     => 'Et Ussinn',
 'math'                     => 'Mathematisch Formele',
 'dateformat'               => 'Em Datum sing Fomat',
@@ -1074,9 +1091,10 @@ Wiki-Köbes, enem Sörver-Minsch, oder luur ens en de
 'contextchars'             => 'Zëijshe uß de Ömjävung, pro Rëij:',
 'stub-threshold'           => 'Links passend för <a href="#" class="stub">klein Sigge</a> fomateere av esu vill Bytes:',
 'recentchangesdays'        => 'Aanzahl Dage en de Liss met de „Neuste Änderunge“ — als Standad:',
-'recentchangescount'       => 'Aanzahl Endräch en de Liss met de „Neuste Änderunge“, Fojangeheit un Logbööcher — als Standad:',
+'recentchangescount'       => 'Aanzahl Änderunge en de Liss met de „{{int:recentchanges}}“,
+de Versione uß de Fojangeheit, un de Logbööcher — als Standad:',
 'savedprefs'               => 'Ding Enstellunge sin jetz jesechert.',
-'timezonelegend'           => 'Ziggzone Ungerscheed',
+'timezonelegend'           => 'Ziggzon-Affstand',
 'timezonetext'             => '¹ Dat sin de Stunde un Minutte zwesche de Zigg op de Uhre bei Dir am Oot un däm Sörver, dä met UTC läuf.',
 'localtime'                => 'De Zigg op Dingem Kompjuter:',
 'timezoneoffset'           => 'Dä Ungerscheed¹ es:',
@@ -1114,10 +1132,10 @@ Wiki-Köbes, enem Sörver-Minsch, oder luur ens en de
 'group-user'          => 'Metmaacher',
 'group-autoconfirmed' => 'Bestätichte Metmaacher',
 'group-bot'           => 'Bots',
-'group-sysop'         => 'Wiki Köbese',
+'group-sysop'         => 'Wiki-Köbesse',
 'group-bureaucrat'    => 'Bürrokrade',
 'group-suppress'      => 'Kontrollettis',
-'group-all'           => '(all)',
+'group-all'           => '(jeede)',
 
 'group-user-member'          => 'Metmaacher',
 'group-autoconfirmed-member' => 'Bestätichte Metmaacher',
@@ -1141,7 +1159,7 @@ Wiki-Köbes, enem Sörver-Minsch, oder luur ens en de
 'right-createaccount'        => 'Ene neue Metmaacher endraage lohße',
 'right-minoredit'            => 'Eije Änderung als klein Mini-Änderung makeere',
 'right-move'                 => 'Sigge ömnenne',
-'right-move-subpages'        => 'Donn de Sigge met ier Ungersigge ömnenne',
+'right-move-subpages'        => 'Sigge, un ier Ungersigge, zosamme ömnenne',
 'right-suppressredirect'     => 'Kein automatesche Ömleidung aanlääje beim Ömnenne',
 'right-upload'               => 'Dateie huhlade',
 'right-reupload'             => 'En Datei ußtuusche, di ussem Wiki kütt',
@@ -1174,7 +1192,7 @@ Wiki-Köbes, enem Sörver-Minsch, oder luur ens en de
 'right-rollback'             => 'All de letzte Änderunge fom letzte Metmaacher aan ene Sigg retur maache',
 'right-markbotedits'         => 'Retur jemaate Änderonge als Bot-Änderung makeere',
 'right-noratelimit'          => 'Kein Beschränkunge dorch Jrenze (<i lang="en">[http://www.mediawiki.org/wiki/Manual:%24wgRateLimits $wgRateLimits]</i>)',
-'right-import'               => 'Sigge uß ander Wikis Empochteere',
+'right-import'               => 'Sigge uß ander Wikis empochteere',
 'right-importupload'         => 'Sigge övver et XML-Datei-Huhlade empochteere',
 'right-patrol'               => 'Anderlücks Änderunge aan Sigge als „nohjeloort“ makeere',
 'right-autopatrol'           => 'De eije Änderunge automattesch als „Nohjeloohrt“ makeere',
@@ -1188,7 +1206,7 @@ Wiki-Köbes, enem Sörver-Minsch, oder luur ens en de
 
 # User rights log
 'rightslog'      => 'Logboch för Änderunge aan Metmaacher-Räächde',
-'rightslogtext'  => 'Hee sin de Änderunge an Metmaacher ehre Räächde opjeliss. Op de Sigge üvver Metmaacher, Wiki_Köbese, Bürrokrade, Stewards, un esu, kanns De nohlese, wat domet es.',
+'rightslogtext'  => 'Hee sin de Änderunge an Metmaacher ehre Räächde opjeliss. Op de Sigge üvver Metmaacher, Wiki-Köbesse, Bürrokrade, Stewards, un esu, kanns De nohlese, wat domet es.',
 'rightslogentry' => 'hät däm Metmaacher „$1“ sing Räächde vun „$2“ op „$3“ ömjestallt.',
 'rightsnone'     => '(nix)',
 
@@ -1204,10 +1222,10 @@ Wiki-Köbes, enem Sörver-Minsch, oder luur ens en de
 'rcshowhidebots'                    => '$1 de Bots ehr Änderunge',
 'rcshowhideliu'                     => '$1 de aanjemeldte Metmaacher ehr Änderunge',
 'rcshowhideanons'                   => '$1 de namenlose Metmaacher ehr Änderunge',
-'rcshowhidepatr'                    => '$1 de aanjeluurte Änderunge',
+'rcshowhidepatr'                    => '$1 de nohjeluurte Änderunge',
 'rcshowhidemine'                    => '$1 ming eije Änderunge',
 'rclinks'                           => 'Zeich de letzte | $1 | Änderunge us de letzte | $2 | Dage, un dun | $3 |',
-'diff'                              => 'Ungerscheed',
+'diff'                              => 'Ungerscheid',
 'hist'                              => 'Versione',
 'hide'                              => 'Usblende:',
 'show'                              => 'Zeije:',
@@ -1284,22 +1302,31 @@ Sök Der statt „$1“ jet anders us,
 un dann muss de dat Dinge noch ens huhlade.',
 'badfilename'                 => 'De Datei es en „$1“ ömjedäuf.',
 'filetype-badmime'            => 'Dateie mem MIME-Typ „<code>$1</code>“ wulle mer nit huhjelade krijje.',
+'filetype-bad-ie-mime'        => 'Di Datei kam_mer nit huhlade, weil der Internet Explorrer se för en „$1“ 
+hallde deiht, wat nit erlaub, un müjjelelscherwies ene jefährlesche Dattei-Typp es.',
 'filetype-unwanted-type'      => "Dat Dateifommaat '''„<code>.$1</code>“''' wulle mer nit esu jään huhjelaade krijje. Leever {{PLURAL:$3|ham_mer|ham_mer ein fun|ham_mer nix}}: $2.",
 'filetype-banned-type'        => "Dat Dateifommaat '''„<code>.$1</code>“''' wulle mer nit huhjelaade krijje. Älaup {{PLURAL:$3|es|sin_er}}: $2.",
 'filetype-missing'            => 'Di Datei, di De huhlaade wells, hät keij Fommaat em Name, wi zem Beijspöll „<code>.jpg</code>“, esu jet hätte mer ävver jähn.',
 'large-file'                  => 'Dateie sullte nit jröößer wääde, wi $1, ävver Ding Datei es $2 jroß.',
 'largefileserver'             => 'De Datei es ze jroß. Jrößer wie däm Sörver sing Enstellung erlaub.',
 'emptyfile'                   => 'Wat De hee jetz huhjelade häs, hät kein Daate dren jehatt. Künnt sin, dat De Dich verdon häs, un dä Name wo verkihrt jeschrevve. Luur ens ov De wirklich <strong>die</strong> Datei hee huhlade wells.',
-'fileexists'                  => 'Et jitt ald en Datei met däm Name. Wann De op „Datei avspeichere“ klicks, weed se ersetz. Bes esu jod  un luur Der <strong><tt>$1</tt></strong> aan, wann De nit 100% secher bes.',
-'filepageexists'              => 'En Sigg övver di Datei met däm Tittel <strong><tt>$1</tt></strong> es ald doh, ävver en Datei met däm Name ham_mer nit. Dinge Tex kütt nit automattesch op di Sigg övver di Dattei. Di Sigg moß De wann nüüdesch noch ens extra ändere.',
-'fileexists-extension'        => '<table cellspacing="0" cellpadding="0" border="0"><tr><td colspan="2">Mer han ald en Dattei, di bahl jenou esu heijß:</td></tr><tr><td>Huh am laade sim_mer:&nbsp;</td><td><strong><tt>$1</tt></strong></td></tr><tr><td>Ald om ßörve eß:</td><td><strong><tt>$2</tt></strong></td></tr><tr><td colspan="2">Bes esu joot un söök Der ene ander Name fö di Datei us.</td></tr></table>',
+'fileexists'                  => "Et jitt ald en Datei met däm Name. Wann De op „Datei avspeichere“ klicks, weed se ersetz. Bes esu jod  un luur Der '''<tt>$1</tt>''' aan, wann De nit 100% secher bes.",
+'filepageexists'              => "En Sigg övver di Datei met däm Tittel '''<tt>$1</tt>''' es ald doh, ävver en Datei met däm Name ham_mer nit. Dinge Tex kütt nit automattesch op di Sigg övver di Dattei. Di Sigg moß De wann nüüdesch noch ens extra ändere.",
+'fileexists-extension'        => '<table cellspacing="0" cellpadding="0" border="0"><tr><td colspan="2">Mer han ald en Dattei, di bahl jenou esu heijß:</td></tr><tr><td>Huh am laade sim_mer:&nbsp;</td><td>\'\'\'<tt>$1</tt>\'\'\'</td></tr><tr><td>Ald om ßörve eß:</td><td>\'\'\'<tt>$2</tt>\'\'\'</td></tr><tr><td colspan="2">Bes esu joot un söök Der ene ander Name fö di Datei us.</td></tr></table>',
 'fileexists-thumb'            => "<center>'''Datei'''</center>",
-'fileexists-thumbnail-yes'    => 'Dat süühd uß, wi wann dat hee en Minni-Beldsche em Breefmarrke-Fommaat (<i><span lang="en">thumbnail</span></i>) wöhr. Don ens di Dattei <strong><tt>$1</tt></strong> prööfe. Wann dat de Orjinaaljrüß es, do moß keij för dat Beld keij extra Vör-Aansich huhjelade wäde.',
-'file-thumbnail-no'           => 'Dä Name fö di Datei fängk met <strong><tt>$1</tt></strong> aan. Dat süühd uß, wi wann dat en Minni-Beldsche em Breefmarrke-Fommaat (<i><span lang="en">thumbnail</span></i>) wöhr. Don ens di Dattei <strong><tt>$1</tt></strong> prööfe, of de nit e besser opjelööß Beld dofun häß, un don dat met singe Orjinaaljrüß huhlade, wann müjjelesch.',
+'fileexists-thumbnail-yes'    => "Dat süühd uß, wi wann dat hee en Minni-Beldsche em Breefmarrke-Fommaat (''<span lang=\"en\">thumbnail</span>'') wöhr. Don ens di Dattei '''<tt>\$1</tt>''' prööfe. Wann dat de Orjinaaljrüß es, do moß keij för dat Beld keij extra Vör-Aansich huhjelade wäde.",
+'file-thumbnail-no'           => "Dä Name fö di Datei fängk met '''<tt>\$1</tt>''' aan.
+Dat süühd uß, wi wann dat en Minni-Beldsche em Breefmarrke-Fommaat
+(''<span lang=\"en\">thumbnail</span>'') wöhr. Don ens di Dattei
+'''<tt>\$1</tt>''' prööfe, of de nit e besser opjelööß Beld
+dofun häß, un don dat met singe Orjinaaljrüß huhlade, wann müjjelesch.
+Söns donn besser ene andere Dateiname ußsöke.",
 'fileexists-forbidden'        => 'Et jitt ald en Datei met däm Name.
 Jangk zeröck un lad se unger enem andere Name huh. [[Image:$1|thumb|center|$1]]',
-'fileexists-shared-forbidden' => 'Et jitt ald en Datei met däm Name em jemeinsame Speicher.
-Jangk zeröck un lad se unger enem andere Name huh. [[Image:$1|thumb|center|$1]]',
+'fileexists-shared-forbidden' => 'Et jitt ald en Datei met däm Name em jemeinsame Speicher:
+[[Image:$1|thumb|center|$1]]
+Jangk zeröck un lad Ding Datei unger enem andere Name huh,
+wann De se noch han wells.',
 'file-exists-duplicate'       => 'Di Dattei hät dersellve Enhallt wi hee di {{PLURAL:$1|Datei|Dateie|}}:',
 'successfulupload'            => 'Et Huhlade hät jeflupp',
 'uploadwarning'               => 'Warnung beim Huhlade',
@@ -1307,7 +1334,7 @@ Jangk zeröck un lad se unger enem andere Name huh. [[Image:$1|thumb|center|$1]]
 'uploadedimage'               => 'hät huhjelade: „[[$1]]“',
 'overwroteimage'              => 'hät en neue Version huhjelade vun: „[[$1]]“',
 'uploaddisabled'              => 'Huhlade jesperrt',
-'uploaddisabledtext'          => 'Et Huhlade es jesperrt hee en däm Wiki.',
+'uploaddisabledtext'          => 'Et Huhlade es jesperrt.',
 'uploadscripted'              => 'En dä Datei es HTML dren oder Code vun enem Skripp, dä künnt Dinge Brauser en do verkihrte Hals krije un usführe.',
 'uploadcorrupt'               => 'Schad.
 <br />
@@ -1329,8 +1356,23 @@ De Einzelheite: $1',
 
 Bes esu joot un don Der övverlääje, of di Dattei mem sellve Name norr_ens huh ze lade en Odenung es.
 Hee es dat Logbooch met de fotjeschmesse Dateie, met däm Jrond, woröm di Dattei dohmohls fottjeschmesse woode es:",
-'filename-bad-prefix'         => 'Dä Datei ier Name fängk met <strong>„$1“</strong> aan. dat eß fä jewöhnlesch ene Name, dä en dijjitaale Kammerra iere Belder jitt. Esu en Name donn uns esu winnisch verzälle, dat mer se nit jän em Wiki han wulle.
-Bes esu joot un jiff dä enne Name, wo mer mieh met aanfange, öm ze wesse, wat en dä Datei dren es.',
+'filename-bad-prefix'         => "Dä Datei ier Name fängk met '''„$1“''' aan. dat eß fä jewöhnlesch ene Name, dä en dijjitaale Kammerra iere Belder jitt. Esu en Name donn uns esu winnisch verzälle, dat mer se nit jän em Wiki han wulle.
+Bes esu joot un jiff dä enne Name, wo mer mieh met aanfange, öm ze wesse, wat en dä Datei dren es.",
+'filename-prefix-blacklist'   => ' #<!-- Lohß di Reih jenou esu wie se es! --> <pre>
+#  Syntax:
+#   * Alles zwesche em #-Zeiche bes nohm Engk vun de Reih es ene Kommäntaa
+#   * Jede Reih met jet dren es ene typpesche Aanfang för ene Datteiname,
+#   * dä automattesch vun ene Dijjitahlkammera kütt
+CIMG # Casio
+DSC_ # Nikon
+DSCF # Fuji
+DSCN # Nikon
+DUW # - et ein udder andere mobile Tellefohn -
+IMG # - alljemein üplesch -
+JD # Jenoptik
+MGP # Pentax
+PICT # - diverse -
+ #</pre> <!-- Lohß di Reih jenou esu wie se es! -->',
 
 'upload-proto-error'      => 'Verkihrt Protokoll',
 'upload-proto-error-text' => 'Ene URL för en Datei fun huhzelade moß met <code>http://</code> uder <code>ftp://</code> aafange.',
@@ -1381,45 +1423,47 @@ Velleich probees De et och zo en Zick, wo winnijer loss es.',
 'filehist-dimensions'            => 'Pixelle Breed×Hühte (Dateiömfang)',
 'filehist-filesize'              => 'Dateiömfang',
 'filehist-comment'               => 'Aanmerkung',
-'imagelinks'                     => 'Jebruch en',
-'linkstoimage'                   => 'Hee {{PLURAL:$1|kütt di Sigg|kumme de Sigge|sin keij Sigge}}, die op die Datei linke dun:',
+'imagelinks'                     => 'Lenks op hee die Datei',
+'linkstoimage'                   => 'Hee {{PLURAL:$1|kütt di Sigg|kumme de $1 Sigge|sin keij Sigge}}, die op die Datei linke {{PLURAL:$1|deiht|dun|dun}}:',
 'nolinkstoimage'                 => 'Nix link op hee die Datei.',
 'morelinkstoimage'               => 'Belohr Der [[Special:WhatLinksHere/$1|de Links]] op di Datei.',
 'redirectstofile'                => 'Di {{PLURAL:$1|Datei heenoh leid|$1 Dateie leide}} op he di Datei öm:',
 'duplicatesoffile'               => 'De Datei{{PLURAL:$1||e|e}} hee noh {{PLURAL:$1|is en|sen}} dubbelte fon he dä Datei, un {{PLURAL:$1|hät|han|}} dersellve Enhalldt:',
-'sharedupload'                   => 'De Datei es esu parat jelaht, dat se en diverse, ungerscheedlije Projekte jebruch wääde kann.',
+'sharedupload'                   => 'De Datei es esu parat jelaht, dat se en diverse, ungerscheidlije Projekte jebruch wääde kann.',
 'shareduploadwiki'               => 'Mieh Informatione fings De op dä $1.',
 'shareduploadwiki-desc'          => 'Hee noh kütt dä Enhalt fun dä $1 uß dämm jemeinsame Beshtand.',
-'shareduploadwiki-linktext'      => 'Sigg övver de Datei',
+'shareduploadwiki-linktext'      => 'Sigg övver die Datei',
 'shareduploadduplicate'          => 'Di Datei es dubbelt met „$1“ ussem jemeinsame Beshtand.',
-'shareduploadduplicate-linktext' => 'fun dä ander Datei',
+'shareduploadduplicate-linktext' => 'hee dä Datei',
 'shareduploadconflict'           => 'Di Datei hät dersellve Namen wi „$1“ uss_em jemeinsame Beshtand.',
 'shareduploadconflict-linktext'  => 'di ander Datei',
 'noimage'                        => 'Mer han kein Datei met däm Name, kanns De ävver $1.',
-'noimage-linktext'               => 'Kanns De huhlade!',
+'noimage-linktext'               => 'huhlade!',
 'uploadnewversion-linktext'      => 'Dun en neu Version vun dä Datei huhlade',
 'imagepage-searchdupe'           => 'Sök noh dubelte Dateie',
 
 # File reversion
 'filerevert'                => '„$1“ zerök holle',
+'filerevert-backlink'       => '←&nbsp;$1',
 'filerevert-legend'         => 'Datei zeröck holle',
-'filerevert-intro'          => "Do bes di Datei '''[[Media:$1|$1]]''' op di [$4 Version fum $2 öm $3 Uhr] zeröck aam sätze.",
+'filerevert-intro'          => '<span class="plainlinks">Do bes di Datei \'\'\'[[Media:$1|$1]]\'\'\' op di [$4 Version fum $2 öm $3 Uhr] zeröck aam sätze.</span>',
 'filerevert-comment'        => 'Jrond:',
-'filerevert-defaultcomment' => 'Zerök jesaz op di Version fum $1 öm $3 Uhr',
+'filerevert-defaultcomment' => 'Zerök jesaz op di Version fum $1 öm $2 Uhr',
 'filerevert-submit'         => 'Zeröcknemme',
-'filerevert-success'        => "Di Dattei '''[[Media:$1|$1]]''' es jäz op di [$4 Version fum $2 öm $3 Uhr] zerök jesatz.",
+'filerevert-success'        => '<span class="plainlinks">Di Dattei \'\'\'[[Media:$1|$1]]\'\'\' es jäz op di [$4 Version fum $2 öm $3 Uhr] zerök jesatz.</span>',
 'filerevert-badversion'     => 'Mer han kei Version fun dä Datei för dä aanjejovve Zickpunk.',
 
 # File deletion
 'filedelete'                  => 'Schmieß „$1“ fott',
+'filedelete-backlink'         => '←&nbsp;$1',
 'filedelete-legend'           => 'Schmieß de Datei fott',
-'filedelete-intro'            => "Do beß di Datei '''„[[:Media:$1|$1]]“''' am Fottschmieße.",
-'filedelete-intro-old'        => 'Do schmiiß de Version $4 fum $2 öm $3 Uhr fun dä Datei „[[Media:$1|$1]]“ fott.',
+'filedelete-intro'            => "Do beß di Datei '''„[[Media:$1|$1]]“''' am Fottschmieße, un och all ier vörrije Versione, der Text övver se, un all de Änderunge draan.",
+'filedelete-intro-old'        => '<span class="plainlinks">Do schmiiß de Version [$4 fum $2 öm $3 Uhr] fun dä Datei „[[Media:$1|$1]]“ fott.</span>',
 'filedelete-comment'          => 'Der Jrund för et Fottschmieße:',
 'filedelete-submit'           => 'Fottschmieße',
 'filedelete-success'          => "'''„$1“''' es fottjeschmeße.",
-'filedelete-success-old'      => "Fun dä Datei '''„[[:Media:$1|$1]]“''' es jäz di Version fum $2 öm $3 Uhr fottjeschmeße woode.",
-'filedelete-nofile'           => "'''„$1“''' jidd_et nit en de {{SITENAME}}.",
+'filedelete-success-old'      => "Fun dä Datei '''„[[Media:$1|$1]]“''' es jäz di Version fum $2 öm $3 Uhr fottjeschmeße woode.",
+'filedelete-nofile'           => "„$1“''' jidd_et nit.",
 'filedelete-nofile-old'       => "Fun '''„$1“''' ham_mer kein arschiveete Version met dä Eijeschaffte.",
 'filedelete-iscurrent'        => 'Ih dat De de neuste Version fun dä Datei fottschmieße kanns, wat jrad versoht häs, do mos De ehts ens op en älldere Version zeröck jonn, di aanjezeish wäde soll, söns weet dat nix!',
 'filedelete-otherreason'      => 'Ander Jrund oder Zosätzlich:',
@@ -1431,7 +1475,7 @@ Velleich probees De et och zo en Zick, wo winnijer loss es.',
 'filedelete-edit-reasonlist'  => 'De Jrönde för et Fottschmieße beärbeide',
 
 # MIME search
-'mimesearch'         => 'Belder, Tön, uew. üvver ehr MIME-Typ söke',
+'mimesearch'         => 'Dateie üvver dänne ehre <span lang="en">MIME</span>-Typ söke',
 'mimesearch-summary' => 'Op hee dä Sondersigg könne de Dateie noh em MIME-Tüpp ußjesöök wäde.
 Mer moß immer der Medietüp un der Ongertüp aanjevve.
 Zem Beispell: <tt>image/jpeg</tt>
@@ -1447,9 +1491,9 @@ Zem Beispell: <tt>image/jpeg</tt>
 
 # Unused templates
 'unusedtemplates'     => 'Schablone oder Baustein, die nit jebruch wääde',
-'unusedtemplatestext' => 'Hee sin all de Schablone opjeliss, die em Appachtemeng „Schablon“ sin, die nit en 
+'unusedtemplatestext' => 'Hee sin all de Schablone opjeliss, die em Appachtemeng „{{ns:template}}“ sin, die nit en 
 ander Sigge enjefüg wääde. Ih De jet dovun fottschmieß, denk dran, se künnte och op en ander Aat jebruch 
-wääde, un luur Der die ander Links aan!',
+wääde, un luur Der der iehr ander Links aan!',
 'unusedtemplateswlh'  => 'ander Links',
 
 # Random page
@@ -1482,7 +1526,7 @@ wääde, un luur Der die ander Links aan!',
 'disambiguations-text' => 'En de Sigge hee noh sin Links dren op en „(Watt ėßß datt?)“-Sigg.
 De Links sollte eijentlesch op en Sigg jon, di tirek jemeint es.
 
-(En Atikel jellt als en „(Watt ėßß datt?)“-Sigg un weed hee jeliss, wann en dä Sigg [[MediaWiki:Disambiguationspage]] ene Link op en drop dren is. Alles wat keij Atikelle sin, weed dobei jaa nit eez metjezallt)',
+(En Atikel jellt als en „(Watt ėßß datt?)“-Sigg un weed hee jeliss, wann en dä Sigg [[MediaWiki:Disambiguationspage]] ene Link op en drop dren is. Alles wat keij Atikele sin, weed dobei jaa nit eez metjezallt)',
 
 'doubleredirects'            => 'Ömleitunge op Ömleitunge',
 'doubleredirectstext'        => 'Dubbel Ömleitunge sin immer verkihrt, weil däm Wiki sing Soffwär de eetse Ömleitung 
@@ -1496,7 +1540,7 @@ vun dä Sigg dovör.',
 'double-redirect-fixer'      => '(Opjaveleß)',
 
 'brokenredirects'        => 'Ömleitunge, die en et Leere jonn',
-'brokenredirectstext'    => 'Die Ömleitunge hee jonn op Sigge, die mer jar nit han:',
+'brokenredirectstext'    => 'Die Ömleitunge hee jonn op Sigge, die mer jaa nit han:',
 'brokenredirects-edit'   => '(ändere)',
 'brokenredirects-delete' => '(fottschmieße)',
 
@@ -1505,7 +1549,7 @@ vun dä Sigg dovör.',
 'withoutinterwiki-legend'  => 'Aanfang fum Sigge-Tittel',
 'withoutinterwiki-submit'  => 'Zeije',
 
-'fewestrevisions' => 'Arikele met de winnischste Versione',
+'fewestrevisions' => 'Atikele met de winnischste Versione',
 
 # Miscellaneous special pages
 'nbytes'                  => '$1 Byte{{PLURAL:$1||s|}}',
@@ -1515,14 +1559,14 @@ vun dä Sigg dovör.',
 'nrevisions'              => '{{PLURAL:$1|Ein Änderung|$1 Änderunge|Keij Änderung}}',
 'nviews'                  => '{{PLURAL:$1|Eine Avrof|$1 Avrofe|Keine Avrof}}',
 'specialpage-empty'       => 'Hee en dä Liss es nix dren.',
-'lonelypages'             => 'Atikelle, wo nix drop link',
-'lonelypagestext'         => 'The following pages are not linked from other pages in this wiki.',
-'uncategorizedpages'      => 'Atikelle, die en kein Saachjrupp sin',
+'lonelypages'             => 'Atikele, wo nix drop link',
+'lonelypagestext'         => 'De Sigge hee noh sin nörjenzwoh ennjebonge un et jonn och kein Linkß drop.',
+'uncategorizedpages'      => 'Atikele, die en kein Saachjrupp sin',
 'uncategorizedcategories' => 'Saachjruppe, die selvs en kein Saachjruppe sin',
-'uncategorizedimages'     => 'Belder, Tön, uew., die en kein Saachjruppe dren sin',
+'uncategorizedimages'     => 'Dateie, die en kein Saachjruppe dren sin',
 'uncategorizedtemplates'  => 'Schablone, die en kein Saachjruppe sen',
 'unusedcategories'        => 'Saachjruppe met nix dren',
-'unusedimages'            => 'Belder, Tön, uew., die nit en Sigge dren stäche',
+'unusedimages'            => 'Dateie, die nit en Sigge dren stäche',
 'popularpages'            => 'Sigge, die off avjerofe wääde',
 'wantedcategories'        => 'Saachjruppe, die mer noch nit han, die noch jebruch wääde',
 'wantedpages'             => 'Sigge, die mer noch nit han, die noch jebruch wääde',
@@ -1531,13 +1575,13 @@ vun dä Sigg dovör.',
 'mostlinkedcategories'    => 'Saachjruppe met de miehste Links drop',
 'mostlinkedtemplates'     => 'Schablone met de miehßte Lenks drop',
 'mostcategories'          => 'Atikkele met de miehste Saachjruppe',
-'mostimages'              => 'Belder, Tön, uew. met de miehste Links drop',
+'mostimages'              => 'Dateie met de miehste Links drop',
 'mostrevisions'           => 'Atikkele met de miehste Änderunge',
-'prefixindex'             => 'All Sigge, die dänne ehr Name met enem bestemmte Wood oder Tex aanfange deit',
-'shortpages'              => 'Atikelle zoteet vun koot noh lang',
-'longpages'               => 'Atikelle zoteet vun lang noh koot',
-'deadendpages'            => 'Atikelle ohne Links dren',
-'deadendpagestext'        => 'De Atikelle hee han kein Links op ander Atikelle em Wiki.',
+'prefixindex'             => 'All Sigge, dänne ehr Name met enem bestemmte Wood oder Tex aanfängk',
+'shortpages'              => 'Atikele zoteet vun koot noh lang',
+'longpages'               => 'Atikele zoteet vun lang noh koot',
+'deadendpages'            => 'Atikele ohne Links dren',
+'deadendpagestext'        => 'De Atikele hee han kein Links op ander Atikele em Wiki.',
 'protectedpages'          => 'Jeschötzte Sigge',
 'protectedpages-indef'    => 'Nor de Sigge zeije, woh alleins de Wiki-Köbesse draan dörrve',
 'protectedpagestext'      => '<!-- -->',
@@ -1568,6 +1612,7 @@ kein Saachjrupp dren ze finge.',
 # Book sources
 'booksources'               => 'Böcher',
 'booksources-search-legend' => 'Söök noh Bezochsquelle för Bööcher',
+'booksources-isbn'          => 'ISBN:',
 'booksources-go'            => 'Loß Jonn!',
 'booksources-text'          => 'Hee noh küdd_en Leßß met Websigge,
 wo mir fun de {{SITENAME}} nix wigger med ze donn hänn,
@@ -1586,9 +1631,10 @@ wadd_Er am Sööke sidt.',
 'all-logs-page'        => 'All Logböcher',
 'log-search-legend'    => 'En de Logböcher söke',
 'log-search-submit'    => 'Loß Jonn!',
-'alllogstext'          => "Dat hee es en jesamte Liss us all dä Logböcher.
-Dä Logböcher ehre Enhald ka'mer all noh de Aat, de Metmaacher, oder de Sigge ehr Name, un esu, einzel zoteet 
-aanluure.",
+'alllogstext'          => "Dat hee es en jesamte Liss us all dä Logböcher en de {{SITENAME}}.
+Dä Logböcher ehre Enhald ka'mer all noh de Aat, de Metmaacher,
+oder de Sigge ehr Name, un esu, einzel zoteet aanluure.
+Bei de Name moß mer op Jruß- un Kleinschreff aachjävve.",
 'logempty'             => '<i>Mer han kein zopass Endräch en däm Logboch.</i>',
 'log-title-wildcard'   => 'Sök noh Titelle, di aanfange met …',
 
@@ -1611,7 +1657,10 @@ eins vun all däm op eimol.',
 
 # Special:Categories
 'categories'                    => 'Saachjruppe',
-'categoriespagetext'            => 'Hee sin nur Saachjruppe met jät dren jeliss.',
+'categoriespagetext'            => 'Hee sin nur Saachjruppe jeliss, met jät dren.<br />
+Mer han_er eije Leßte för de
+[[Special:UnusedCategories|Saachjruppe met nix dren]], un de
+[[Special:WantedCategories|jewönschte un nit aanjelaate Saachjruppe]].',
 'categoriesfrom'                => 'Zeich Saachjruppe vun hee af:',
 'special-categories-sort-count' => 'Zoteere noh de Aanzahl',
 'special-categories-sort-abc'   => 'Zoteere nohm Alphabett',
@@ -1628,7 +1677,7 @@ Mieh övver de einzel Rääschte fenkt Er op de [[{{MediaWiki:Listgrouprights-he
 'listgrouprights-group'    => 'Jrupp',
 'listgrouprights-rights'   => 'Räächte',
 'listgrouprights-helppage' => 'Help:Jrupperäächte',
-'listgrouprights-members'  => '(Metjlederliss)',
+'listgrouprights-members'  => '(opliste)',
 
 # E-mail user
 'mailnologin'     => 'Keij E-Mail Adress',
@@ -1639,18 +1688,18 @@ schecke.',
 'emailpage'       => 'E-mail aan ene Metmaacher',
 'emailpagetext'   => 'Wann dä Metmaacher en E-mail Adress aanjejovve hätt en singe Enstellunge,
 un die deit et och, dann kanns De met däm Fomular hee unge en einzelne E-Mail aan dä Metmaacher schecke.
-Ding E-mail  Adress, die De en [[Special:Preferences|Ding eije Enstellunge]] aanjejovve häs,
-die weed als de Avsender Adress en die E-Mail enjedrage.
-Domet kann, wä die E-Mail kritt, drop antwoode, un die Antwood jeiht tirek aan Dich.
+Ding E-mail Adress, die De en [[Special:Preferences|Ding eije Enstellunge]] aanjejovve häs,
+die weed als em Avsender sing Adress en die E-Mail enjedrage.
+Domet kann, wä die E-Mail kritt, drop antwoote, un die Antwood jeiht tirek aan Dech.
 Alles klor?',
 'usermailererror' => 'Dat E-Mail-Objek jov ene Fähler us:',
 'defemailsubject' => 'E-Mail üvver de {{SITENAME}}.',
 'noemailtitle'    => 'Kein E-Mail Adress',
-'noemailtext'     => 'Dä Metmaacher hät kein E-Mail Adress enjedrage, oder hä well kein E-Mail krije.',
-'emailfrom'       => 'Vun',
-'emailto'         => 'Aan',
-'emailsubject'    => 'Üvver',
-'emailmessage'    => 'Dä Tex',
+'noemailtext'     => 'Dä Metmaacher hät kein jöltijje Adreß för sing <i lang="en">e-mail</i> enjedrage.<!-- oder hä well kein E-Mail krije. -->',
+'emailfrom'       => 'Vun:',
+'emailto'         => 'Aan:',
+'emailsubject'    => 'Üvverschreff:',
+'emailmessage'    => 'Dä Tex fun Dinge Nohresch:',
 'emailsend'       => 'Avschecke',
 'emailccme'       => 'Scheck mer en Kopie vun dä E-Mail.',
 'emailccsubject'  => 'En Kopie vun Dinger E-Mail aan $1: $2',
@@ -1667,11 +1716,12 @@ Alles klor?',
 'watchnologin'         => 'Nit enjelogg',
 'watchnologintext'     => 'Öm Ding Oppassliss ze ändere, mööts de ald [[Special:UserLogin|enjelogg]] sin.',
 'addedwatch'           => 'En de Oppassliss jedon',
-'addedwatchtext'       => "Die Sigg „[[:$1]]“ es jetz en Ding [[Special:Watchlist|Oppassliss]]. Av jetz, wann die Sigg 
-verändert weed, oder ehr Klaafsigg, dann weed dat en de Oppassliss jezeich. Dä Endrach för die Sigg kütt en 
-'''Fettschreff''' en de „[[Special:RecentChanges|Neuste Änderunge]]“, domet De dä do och flöck fings.
-Wann de dä widder loss wääde wells us Dinger Oppassliss, dann klick op „Nimieh drop oppasse“ wann De die Sigg om 
-Schirm häs.",
+'addedwatchtext'       => "Die Sigg „[[:$1]]“ es jetz en Ding [[Special:Watchlist|Oppassliss]].
+Av jetz, wann die Sigg verändert weed, oder ehr Klaafsigg, dann weed dat en de
+Oppassliss jezeich. Dä Endrach för die Sigg kütt en  '''Fettschreff''' en de
+„[[Special:RecentChanges|Neuste Änderunge]]“, domet De dä do och flöck fings.
+Wann de dä widder loss wääde wells us Dinger Oppassliss,
+dann klick op „Nimieh drop oppasse“ wann De die Sigg om Schirm häs.",
 'removedwatch'         => 'Us de Oppassliss jenomme',
 'removedwatchtext'     => 'Die Sigg „[[:$1]]“ es jetz us de [[Special:Watchlist|Oppassliss]] erusjenomme.',
 'watch'                => 'Drop Oppasse',
@@ -1764,7 +1814,7 @@ Do kanns hee noh Hölp luure:
 'delete-edit-reasonlist'      => 'De Jrönde för et Fottschmieße beärbeide',
 'delete-toobig'               => 'Di Sigg hät {{PLURAL:$1|ein Version|$1 Versione|jakein Version}}. Dat sinn_er ärsch fill. Domet unsere ßööver do nit draan en de Kneen jeit, dom_mer esu en Sigg nit fottschmieße.',
 'delete-warning-toobig'       => 'Di Sigg hät {{PLURAL:$1|ein Version|$1 Versione|jakein Version}}. Dat sinn_er ärsch fill. Wann De die all fottschmieße wells, dat kann dem Wiki sing Datenbangk schwer ußbremse.',
-'rollback'                    => 'Änderunge Zeröcknemme',
+'rollback'                    => 'Em Letzte sing Änderunge zeröcknemme',
 'rollback_short'              => 'Zeröcknemme',
 'rollbacklink'                => 'Zeröcknemme',
 'rollbackfailed'              => 'Dat Zeröcknemme jingk scheiv',
@@ -1772,7 +1822,7 @@ Do kanns hee noh Hölp luure:
 'alreadyrolled'               => 'Mer künne de letzte Änderunge vun dä Sigg „[[:$1]]“ vum Metmaacher „[[User:$2|$2]]“ ([[User talk:$2|Klaaf]] | [[Special:Contributions/$2|{{int:contribslink}}]]) nimieh zeröcknemme, dat hät ene Andere enzwesche ald jedon, udder de Sigg ömjeändert.
 
 De Neuste Änderung aan dä Sigg es jetz vun däm Metmaacher „[[User:$3|$3]]“ ([[User talk:$3|Klaaf]] | [[Special:Contributions/$3|{{int:contribslink}}]]).',
-'editcomment'                 => 'Bei dä Änderung stundt: „<i>$1</i>“.', # only shown if there is an edit comment
+'editcomment'                 => "Bei dä Änderung stundt: „''$1''“.", # only shown if there is an edit comment
 'revertpage'                  => 'Änderunge vun däm Metmaacher „[[Special:Contributions/$2|$2]]“ ([[User talk:$2|däm sing Klaafsigg]]) fottjeschmesse, un doför de letzte Version vum „[[User:$1|$1]]“ widder zeröckjehollt', # Additional available: $3: revid of the revision reverted to, $4: timestamp of the revision reverted to, $5: revid of the revision reverted from, $6: timestamp of the revision reverted from
 'rollback-success'            => 'De Änderungen vum $1 zeröckjenumme, un dobei de letzte Version vum $2 widder jehollt.',
 'sessionfailure'              => "Et jov wall e technisch Problem met Dingem Login. Dröm ha'mer dat us Vörsich jetz nit jemaht, domet mer nit villeich Ding Änderung däm verkihrte Metmaacher ungerjubele. Jangk zeröck un versök et noch ens.",
@@ -1788,19 +1838,19 @@ De Neuste Änderung aan dä Sigg es jetz vun däm Metmaacher „[[User:$3|$3]]�
 'protect_expiry_invalid'      => 'Die Duur för ze Schötz es Kappes, di künne mer nit verstonn.',
 'protect_expiry_old'          => 'Do häs De Desch verdonn. Die Zick för ze Schötze es doch ald eröm!',
 'protect-unchain'             => 'Et Schötze jäje Ömnenne extra enstelle looße',
-'protect-text'                => 'Hee kanns De dä Schotz jäje Veränderunge för de Sigg „<strong><nowiki>$1</nowiki></strong>“ aanluure un ändere.',
-'protect-locked-blocked'      => 'Do kanns nit der Siggeschotz ändere, esu lang wi Dinge Zojang zom Wiki jesperrt es. Hee es der aktuelle Stand fum Siggeschotz för di Sigg <strong>„$1“:</strong>',
-'protect-locked-dblock'       => 'De Datebank es jesperrt. Dröm künne mer der Siggeschotz nit ändere.
-Hee es der aktuelle Stand fum Siggeschotz för di Sigg <strong>„$1“:</strong>',
-'protect-locked-access'       => 'Do häs nit dat Rääsch, hee em Wiki Sigge ze schötze udder dä Schotz widder opzehevve.
-Di Sigg <strong>„$1“:</strong> es jetz jrad:',
+'protect-text'                => "Hee kanns De dä Schotz jäje Veränderunge för de Sigg „'''<nowiki>$1</nowiki>'''“ aanluure un ändere.",
+'protect-locked-blocked'      => "Do kanns nit der Siggeschotz ändere, esu lang wi Dinge Zojang zom Wiki jesperrt es. Hee es der aktuelle Stand fum Siggeschotz för di Sigg '''„$1“:'''",
+'protect-locked-dblock'       => "De Datebank es jesperrt. Dröm künne mer der Siggeschotz nit ändere.
+Hee es der aktuelle Stand fum Siggeschotz för di Sigg '''„$1“:'''",
+'protect-locked-access'       => "Do häs nit dat Rääsch, hee em Wiki Sigge ze schötze udder dä Schotz widder opzehevve.
+Di Sigg '''„$1“:''' es jetz jrad:",
 'protect-cascadeon'           => 'Die Sigg es en enne Schotz-Kaskad. Se es enjebonge en {{PLURAL:$1|die Sigg|$1 Sigge|kein Sigg}}, die per Kaskade-Schotz jeschötz {{PLURAL:$1|es|sin|es}}. Do kanns dä Schotz för die Sigg hee ändere, ävver di Kaskad blief bestonn. Dat hee sin die Sigge en dä Kaskad:',
-'protect-default'             => '-(Standaad)-',
+'protect-default'             => 'Jeede Metmaacher eraan lohße',
 'protect-fallback'            => 'Do weet dat Rääsch „$1“ jebruch.',
-'protect-level-autoconfirmed' => 'nor Metmaacher dranlooße, die sich aanjemeldt han',
-'protect-level-sysop'         => 'Nor de Wiki Köbese dranlooße',
+'protect-level-autoconfirmed' => 'Donn neu Metmaacher un namelose Metmaacher nit dranlooße',
+'protect-level-sysop'         => 'Nor de Wiki-Köbesse dranlooße',
 'protect-summary-cascade'     => 'met Schotz-Kaskad',
-'protect-expiring'            => 'bes $1 (UTC)',
+'protect-expiring'            => 'bes öm $2 Uhr (UTC) aam $3',
 'protect-cascade'             => 'Maach en Schoz-Kaskaade — all de Schablone en dä Sigg krijje dersellve Schoz, wi die Sigg sellver en kritt.',
 'protect-cantedit'            => 'Do kanns dä Siggeschotz hee nit ändere, esu lang wie De di Sigg nit ändere darfs.',
 'restriction-type'            => 'jespecht es:',
@@ -1827,18 +1877,18 @@ Di Sigg <strong>„$1“:</strong> es jetz jrad:',
 'viewdeletedpage'              => 'Fottjeschmesse Sigge aanzeije',
 'undeletepagetext'             => 'De Sigge heenoh sin fottjeschmesse, mer künne se ävver immer noch usem Müllemmer eruskrose.',
 'undelete-fieldset-title'      => 'Versione zeröck holle',
-'undeleteextrahelp'            => 'Öm de janze Sigg met all ehre Versione widder ze holle, looß all de Versione ohne Hökche, un klick op „<b style="padding:2px; background-color:#ddd; color:black">Zeröckholle!</b>“.
-Öm bloß einzel Versione zeröckzeholle, maach Hökche aan die Versione, die De widder han wells, un dann dun „<b style="padding:2px; background-color:#ddd; color:black">Zeröckholle!</b>“ klicke.
-Op „<b style="padding:2px; background-color:#ddd; color:black">De Felder usleere</b>“
-klick, wann De all Ding Hökche un Ding „Erklärung (för en et Logboch):“ widder fott han wells.',
+'undeleteextrahelp'            => 'Öm de janze Sigg met all ehre Versione widder ze holle, looß all de Versione ohne Hökche, un klick op „<b style="padding:2px; background-color:#ddd; color:black">{{int:Undeletebtn}}</b>“.<br />
+Öm bloß einzel Versione zeröckzeholle, maach Hökche aan die Versione, die De widder han wells, un dann dun „<b style="padding:2px; background-color:#ddd; color:black">{{int:Undeletebtn}}</b>“ klicke.<br />
+Op „<b style="padding:2px; background-color:#ddd; color:black">{{int:Undeletereset}}</b>“
+klicks De, wann De all Ding Hökche un Ding „{{int:Undeletecomment}}“ widder fott han wells.',
 'undeleterevisions'            => '{{PLURAL:$1|Ein Version|<strong>$1</strong> Versione|<strong>Kein</strong> Version}} en et Archiv jedon',
-'undeletehistory'              => 'Wann De die Sigg widder zeröckholls,
-dann kriss De all fottjeschmesse Versione widder.
+'undeletehistory'              => 'Wann De die Sigg widder zeröckhölls,
+dann kriss De all de fottjeschmesse Versione widder.
 Wann enzwesche en neu Sigg unger däm ahle Name enjerich woode es,
-dann wääde de zeröckjehollte Versione einfach als zosätzlije äldere Versione för die neu Sigg enjerich.
-Die neu Sigg weed nit ersetz.',
+dann wääde de zeröckjehollte Versione einfach als zosätzlije äldere
+Versione för die neu Sigg enjerich. Die neu Sigg weed nit ersetz.',
 'undeleterevdel'               => 'Dat Zeröckholle flupp nit, wann de neuste Version verstoche es udder verstoche Aandeile do dren sin. En esu en Fäll darrf de neuste Version kei Höksche krijje, udder se moß eets ens en en nommaale Version ömjewandelt wääde, di nit mieh verstoche es.',
-'undeletehistorynoadmin'       => 'Die Sigg es fottjeschmesse woode. Dä Jrund döför es en de Liss unge ze finge, jenau esu wie de Metmaacher, wo de Sigg verändert han, ih dat se fottjeschmesse wood. Wat op dä Sigg ehre fottjeschmesse ahle Versione stundt, dat künne nor de Wiki Köbese noch aansinn (un och widder zeröckholle)',
+'undeletehistorynoadmin'       => 'Die Sigg es fottjeschmesse woode. Dä Jrund döför es en de Liss unge ze finge, jenau esu wie de Metmaacher, wo de Sigg verändert han, ih dat se fottjeschmesse wood. Wat op dä Sigg ehre fottjeschmesse ahle Versione stundt, dat künne nor de Wiki-Köbesse noch aansinn (un och widder zeröckholle)',
 'undelete-revision'            => 'Fottjeschmeße Version fun dä Sigg „$1“ fum $2, et letz jändert fum $3:',
 'undeleterevision-missing'     => 'De Version stemmp nit. Dat wor ene verkihrte Link, oder de Version wood usem Archiv zeröck jehollt, oder fottjeschmesse.',
 'undelete-nodiff'              => 'Mer han kei ällder Version jefonge.',
@@ -1867,6 +1917,8 @@ un widder herjehollte Sigge.',
 'undelete-error-long'          => 'Mer wollte en Datei widder zeröckholle, ävver dobei sin_er Fääler opjefalle:
 
 $1',
+'undelete-show-file-confirm'   => 'Wells De dä Datei „<nowiki>$1</nowiki>“ ier fottjeschmesse Version vum $2 öm $3 Uhr werklesch sinn?',
+'undelete-show-file-submit'    => 'Jo',
 
 # Namespace form on various pages
 'namespace'      => 'Appachtemeng:',
@@ -1922,7 +1974,7 @@ Drag bei „Aanlass“ ene möchlichs jenaue Jrund en, wöröm dat Sperre passee
 'ipbreason'                       => 'Aanlass:',
 'ipbreasonotherlist'              => 'Ne andere Bejründung',
 'ipbreason-dropdown'              => '* Alljemein Jrönd för et Sperre
-** hät fekeehte Behouptunge udder Leeje en Atikelle jeschrevve
+** hät fekeehte Behouptunge udder Leeje en Atikele jeschrevve
 ** hät Sigge fottjeschmesse udder leddig jemaat
 ** hält sesch iewesch nit aan de Rejelle övver de Links op anger Websigge un jäje der Link-SPAM
 ** hät Sigge met Shtuß drop aajelaat
@@ -1933,15 +1985,15 @@ Drag bei „Aanlass“ ene möchlichs jenaue Jrund en, wöröm dat Sperre passee
 * Op en IP-Adräß betrocke Jrönd
 ** dat es en Proxy ßööver övver dänn de Lück zo vill Driß aanjestellt han',
 'ipbanononly'                     => 'Nor de namelose Metmaacher sperre',
-'ipbcreateaccount'                => 'et neu Aanmelde verbeede',
-'ipbemailban'                     => 'Et e-mail-Verschecke ongerbenge',
+'ipbcreateaccount'                => 'Et Neu-Aanmelde verbeede',
+'ipbemailban'                     => 'Et <i lang="en">e-mail</i>-Verschecke ongerbenge',
 'ipbenableautoblock'              => 'Dun automatisch de letzte IP-Adress sperre, die dä Metmaacher jehatt hät, un och all die IP-Adresse, vun wo dä versök, jet ze ändere.',
 'ipbsubmit'                       => 'Dun dä Metmaacher sperre',
 'ipbother'                        => 'För en ander Duur:',
 'ipboptions'                      => '1 Stund:1 hour,2 Stund:2 hours,3 Stund:3 hours,6 Stund:6 hours,12 Stund:12 hours,1 Dach:1 day,3 Däch:3 days,1 Woch:1 week,2 Woche:2 weeks,3 Woche:3 weeks,1 Mond:1 month,3 Mond:3 months,6 Mond:6 months,9 Mond:9 months,1 Johr:1 year,2 Johre:2 years,3 Johre:3 years,Unbejrenz:infinite', # display1:time1,display2:time2,...
 'ipbotheroption'                  => 'Söns wie lang',
 'ipbotherreason'                  => 'Ander Jrund oder Zosätzlich:',
-'ipbhidename'                     => 'Don däm Metmaacher singe Name versteiche: Em [[Special:Log/block|{{int:blocklogpage}}]], en de [[Special:IPBlockList|{{int:ipblocklist}}]], un en de [[Special:ListUsers|{{int:listusers}}]].',
+'ipbhidename'                     => ' Don däm Metmaacher singe Name versteiche: Em [[Special:Log/block|{{int:blocklogpage}}]], en de [[Special:IPBlockList|{{int:ipblocklist}}]], un en de [[Special:ListUsers|{{int:listusers}}]].',
 'ipbwatchuser'                    => 'Op däm Metmaacher sing Metmaachersigg un Klaafsigg oppasse',
 'badipaddress'                    => 'Wat De do jeschrevve häs, dat es kein öntlije IP-Adress.',
 'blockipsuccesssub'               => 'De IP-Adress es jetz jesperrt',
@@ -1951,11 +2003,11 @@ un och wann De se ändere wells.',
 'ipb-edit-dropdown'               => 'De Jründ för et Sperre beärrbejde',
 'ipb-unblock-addr'                => '„$1“ widder zohlohße',
 'ipb-unblock'                     => 'En IP-Addräß ov ene Metmaacher widder zohlohße',
-'ipb-blocklist-addr'              => 'All de Sperre för „$1“ aanzeije, die jrad bestonn',
+'ipb-blocklist-addr'              => 'De Sperre för „$1“ aanzeije, die jrad bestonn',
 'ipb-blocklist'                   => 'All de Sperre för Metmaacher un IP-Adresse aanzeije, die jrad bestonn',
 'unblockip'                       => 'Dä Medmacher widder maache looße',
 'unblockiptext'                   => 'Hee kanns De vörher jesperrte IP_Adresse oder Metmaacher widder freijevve, un dänne esu dat Rääch för ze Schrieve hee em Wiki widder jevve.',
-'ipusubmit'                       => 'Dun de Sperr för die Adress widder ophevve',
+'ipusubmit'                       => 'Sperr ophevve!',
 'unblocked'                       => '[[User:$1|$1]] wood widder zojelooße',
 'unblocked-id'                    => 'De Sperr met dä Nommer $1 es opjehovve',
 'ipblocklist'                     => 'Liss met jesperrte IP-Adresse un Metmaacher Name',
@@ -1974,14 +2026,14 @@ un och wann De se ändere wells.',
 'blocklink'                       => 'Sperre',
 'unblocklink'                     => 'widder freijevve',
 'contribslink'                    => 'Beidräch',
-'autoblocker'                     => 'Automatich jesperrt. Ding IP_Adress wood vör kootem vun däm Metmaacher „[[User:$1|$1]]“ jebruch. Dä es jesperrt woode wäje: „<i>$2</i>“',
+'autoblocker'                     => 'Automattisch jesperrt. Ding IP_Adress wood vör kootem vun däm Metmaacher „[[User:$1|$1]]“ jebruch. Dä es jesperrt woode wäje: „$2“',
 'blocklogpage'                    => 'Logboch met Metmaacher-Sperre',
 'blocklogentry'                   => 'hät „[[$1]]“ fö de Zick vun $2 jesperrt. $3',
 'blocklogtext'                    => 'Hee es dat Logboch för et Metmaacher Sperre un Freijevve.
 Automatich jesperrte IP-Adresse sin nit hee, ävver en de [[Special:IPBlockList|{{int:ipblocklist}}]] ze finge.',
 'unblocklogentry'                 => 'Metmaacher „$1“ freijejovve',
 'block-log-flags-anononly'        => 'nor de namelose Metmaacher sperre',
-'block-log-flags-nocreate'        => 'neu Metmaacher aanlääje es verbeede',
+'block-log-flags-nocreate'        => 'neu Metmaacher aanlääje es verbodde',
 'block-log-flags-noautoblock'     => 'nit automatesch all däm sing IP-Adresse sperre',
 'block-log-flags-noemail'         => 'och et E-Mail Verschecke sperre',
 'block-log-flags-angry-autoblock' => 'automatesch all däm sing IP-Adresse sperre, un noch mieh',
@@ -2007,7 +2059,7 @@ un verzäll dänne vun däm ärrje Risiko för de Secherheit fun dänne ehr Rä�
 # Developer tools
 'lockdb'              => 'Daatebank sperre',
 'unlockdb'            => 'Daatebank freijevve',
-'lockdbtext'          => 'Nohm Sperre kann keiner mieh Änderunge maache an sing Oppassliss, aan Enstellunge, Atikelle, uew. un neu Metmaacher jitt et och nit. Bes de secher, datte dat wells?',
+'lockdbtext'          => 'Nohm Sperre kann keiner mieh Änderunge maache an sing Oppassliss, aan Enstellunge, Atikele, uew. un neu Metmaacher jitt et och nit. Bes de secher, datte dat wells?',
 'unlockdbtext'        => 'Nohm Freijevve es de Daatebank nit mieh jesperrt, un all de normale Änderunge wääde widder müjjelich. Bes de secher, dat De dat wells?',
 'lockconfirm'         => 'Jo, ich well de Daatebank jesperrt han.',
 'unlockconfirm'       => 'Jo, ich well de Daatebank freijevve.',
@@ -2077,7 +2129,7 @@ Di Sigg „[[:$1]]“ jitt et ald. Wollts De se fottschmieße, öm hee di Sigg �
 'delete_and_move_reason'  => 'Fottjeschmesse, öm Platz för et Ömnenne ze maache',
 'selfmove'                => 'Du Doof! - dä ahle Name un dä neue Name es däselve - do hät et Ömnenne winnich Senn.',
 'immobile_namespace'      => 'Do künne mer Sigge nit hen ömnenne, dat Appachtemeng es speziell, un dä neue Name för de Sigg jeiht deswäje nit.',
-'imagenocrossnamespace'   => 'Bellder kam_mer nor in et Appachtemang „{{ns:image}}“ donn, noh wonaders hen kam_mer se och nit ömnemme!',
+'imagenocrossnamespace'   => 'Dateije kam_mer nor in et Appachtemang „{{ns:file}}“ donn, noh wonaders hen kam_mer se och nit ömnemme!',
 'imagetypemismatch'       => 'De neu Datei-Endong moß met däm Datei-Tüp zesamme passe',
 'imageinvalidfilename'    => 'Dä Ziel-Name för de Datei es verkeht',
 'fix-double-redirects'    => 'Don noh em Ömnenne de Ömleidunge automattesch ändere, di noch op dä ahle Tittel zeije, also de neu entshtande dubbelte Ömleidunge oplöse.',
@@ -2091,7 +2143,7 @@ Dat ka'mer en en ander Wiki — wann et och met dä MediaWiki-Soffwär läuf —
 Schriev de Titele vun dä Sigge en dat Feld för Tex enzejevve, unge, eine Titel en jede Reih.
 Dann dun onoch ussöke, ov De all de vörherije Versione vun dä Sigge han wells, oder nor de aktuelle met dä Informatione vun de letzte Änderung.
 
-En däm Fall künns De, för en einzelne Sigg, och ene tirekte Link bruche, zom Beispill „[[{{ns:special}}:Export/{{MediaWiki:Mainpage}}]]“ för de Sigg „[[{{MediaWiki:Mainpage}}]]“ ze exporteere.",
+En däm Fall künns De, för en einzelne Sigg, och ene tirekte Link bruche, zom Beispill „[[{{#Special:Export}}/{{MediaWiki:Mainpage}}]]“ för de Sigg „[[{{MediaWiki:Mainpage}}]]“ ze exporteere.",
 'exportcuronly'     => 'Bloß de aktuelle Version usjevve (un <strong>nit</strong> de janze ahle Versione onoch met dobei dun)',
 'exportnohistory'   => '----
 <strong>Opjepass:</strong> de janze Versione Exporteere es hee em Wiki avjeschalt. Schad, ävver et wör en 
@@ -2108,7 +2160,7 @@ zo jroße Lass för dä Sörver.',
 'allmessagesdefault'        => 'Dä standaadmäßije Tex',
 'allmessagescurrent'        => 'Esu es dä Tex jetz',
 'allmessagestext'           => 'Hee kütt en Liss met Texte, Texstöck, un Nachrichte em Appachtemeng „MediaWiki“ — Do draan Ändere löht et Wiki anders ußsin, dat darf dröm nit jede maache.
-Wenn De jenerell aan [http://www.mediawiki.org/wiki/Localisation MediaWiki singe Översezung] jet anders han wells, do jangk noh [http://translatewiki.net Betawiki].',
+Wenn De jenerell aan [http://www.mediawiki.org/wiki/Localisation MediaWiki singe Översezung] jet anders han wells, do jangk noh [http://translatewiki.net translatewiki.net].',
 'allmessagesnotsupportedDB' => '<strong>Dat wor nix!</strong> Mer künne „{{ns:special}}:Allmessages“ nit zeije, <code>$wgUseDatabaseMessages</code> es usjeschalt!',
 'allmessagesfilter'         => 'Fingk dat Stöck hee em Name:',
 'allmessagesmodified'       => 'Dun nor de Veränderte aanzeije',
@@ -2130,7 +2182,7 @@ Et Datum vun de Versione un de Metmaacher Name vun de Schriever wääde dobei me
 All de Trans Wiki Emporte wääde em [[Special:Log/import|Emport_Logboch]] fassjehallde.',
 'import-interwiki-history'   => 'All de Versione vun dä Sigg hee kopeere',
 'import-interwiki-submit'    => 'Huhlade!',
-'import-interwiki-namespace' => 'Dun de Sigge emporteere em Appachtemeng:',
+'import-interwiki-namespace' => 'Dun de Sigge emporteere en dat Appachtemeng:',
 'importtext'                 => 'Dun de Daate met däm „[[Special:Export|Export]]“ vun do vun enem Wiki Exporteere, dobei dun et - etwa bei Dir om Rechner - avspeichere, un dann hee huhlade.',
 'importstart'                => 'Ben Sigge am emporteere …',
 'import-revision-count'      => '({{PLURAL:$1|ein Version|$1 Versione|kein Version}})',
@@ -2153,6 +2205,9 @@ Dat ahle Versione Huhlade es avjeschalt, un es nit müjjelich.',
 'import-nonewrevisions'      => 'Et sin kein neue Versione do, för ze Importeere, weil all de Version hee ald fröjer emporteet wodte.',
 'xml-error-string'           => '$1 — en {{PLURAL:$2|eetz|$2-}}te Reih en de {{PLURAL:$3|eetz|$3-}}te Spalde, dat ess_et {{PLURAL:$4|eetz|$4-}}te Byte: $5',
 'import-upload'              => 'En XML-Datei impochteere',
+'import-token-mismatch'      => 'Schadt. Et senn nit alle Date hee aanjekumme.
+Bes esu joot, un versök et noch ens.',
+'import-invalid-interwiki'   => 'Us dämm jenannte Wiki künne mer nix Importeere.',
 
 # Import log
 'importlogpage'                    => 'Logboch met emporteerte Sigge',
@@ -2163,9 +2218,9 @@ Dat ahle Versione Huhlade es avjeschalt, un es nit müjjelich.',
 'import-logentry-interwiki-detail' => '{{PLURAL:$1|ein Version|$1 Versione|kein Version}} vun „$2“',
 
 # Tooltip help for the actions
-'tooltip-pt-userpage'             => 'Ming eije Metmaachersigg',
+'tooltip-pt-userpage'             => 'Don Ding eije Metmaachersigg aanzeije',
 'tooltip-pt-anonuserpage'         => 'Metmaachersigg för die IP-Adress, vun wo uß De jraad Ding Änderunge un Äjänzunge aam Wiki am maache bes',
-'tooltip-pt-mytalk'               => 'Dun ming eije Klaafsigg aanzeije',
+'tooltip-pt-mytalk'               => 'Dun Ding eije Klaafsigg aanzeije',
 'tooltip-pt-anontalk'             => 'Klaaf övver Änderunge, di vun dä IP-Adress uß jemaat wodte',
 'tooltip-pt-preferences'          => 'De eije Enstellunge',
 'tooltip-pt-watchlist'            => 'De Liss met de Sigge en Dinge eije Oppassliss',
@@ -2175,7 +2230,7 @@ Dat ahle Versione Huhlade es avjeschalt, un es nit müjjelich.',
 'tooltip-pt-logout'               => 'Uslogge',
 'tooltip-ca-talk'                 => 'Dun die Sigg met däm Klaaf övver hee de Sigg aanzeije',
 'tooltip-ca-edit'                 => 'De kanns die Sigg hee ändere — für em Avspeichere, donn eetß ens enen Bleck op de Vör-Aansich',
-'tooltip-ca-addsection'           => 'Donn ennen Beidrach zo dämm Klaaf hee afjävve.',
+'tooltip-ca-addsection'           => 'Donn hee enne neue Afschnett opmaache.',
 'tooltip-ca-viewsource'           => "Die Sigg es jeschötz. Dä Wikitex kam'mer ävver beloore.",
 'tooltip-ca-history'              => 'Ällder Versione vun dä Sigg',
 'tooltip-ca-protect'              => 'Dun die Sigg schötze',
@@ -2218,7 +2273,7 @@ Dat ahle Versione Huhlade es avjeschalt, un es nit müjjelich.',
 'tooltip-save'                    => 'Deit Ding Änderunge avspeichere.',
 'tooltip-preview'                 => 'Liss de Vör-Aansich vun dä Sigg un vun Dinge Änderunge ih datte en Avspeichere deis!',
 'tooltip-diff'                    => 'Zeich Ding Änderunge am Tex aan.',
-'tooltip-compareselectedversions' => 'Dun de Ungerscheed zwesche dä beids usjewählde Versione zeije.',
+'tooltip-compareselectedversions' => 'Dun de Ungerscheid zwesche dä beids usjewählde Versione zeije.',
 'tooltip-watch'                   => 'Op die Sigg hee oppasse.',
 'tooltip-recreate'                => 'En fottjeschmesse Sigg widder zeröckholle',
 'tooltip-upload'                  => 'Mem Dattei-Huhlaade loßlääje',
@@ -2262,7 +2317,7 @@ Dat ahle Versione Huhlade es avjeschalt, un es nit müjjelich.',
 
 # Spam protection
 'spamprotectiontitle' => 'SPAM_Schotz',
-'spamprotectiontext'  => 'De Sigg, die de avspeichere wells, die weed vun unsem SPAM_Schotz nit durchjelooße. Dat kütt miehts vun enem Link op en fremde Sigg.',
+'spamprotectiontext'  => 'De Sigg, die de avspeichere wells, die weed vun unsem SPAM_Schotz nit durchjelooße. Dat kütt miehts vun enem Link op en fremde Sigg, di op de Schwazze Leß shteiht.',
 'spamprotectionmatch' => 'Hee dä Tex hät dä SPAM_Schotz op der Plan jerofe: „<code>$1</code>“',
 'spambot_username'    => 'SPAM fottschmieße',
 'spam_reverting'      => 'De letzte Version ohne de Links op „$1“ widder zerröckjehollt.',
@@ -2314,13 +2369,14 @@ $1',
 'filedelete-archive-read-only'    => 'Unsere Webßöver kann udder darf nix en dat Aschif-Verzeichnis „$1“ eren schrieve.',
 
 # Browsing diffs
-'previousdiff' => '← De Ungerscheede dovör zeije',
-'nextdiff'     => 'De Ungerscheede donoh zeije →',
+'previousdiff' => '← De Änderung dovör zeije',
+'nextdiff'     => 'De Änderung donoh zeije →',
 
 # Media information
 'mediawarning'         => "<strong>Opjepass</strong>: En dä Datei künnt en <b>jefährlich Projrammstöck</b> dren stecke. Wa'mer et laufe looße dät, do künnt dä Sörver met för de Cracker opjemaht wääde. <hr />",
 'imagemaxsize'         => 'Belder op de Sigge, wo se beschrevve wääde, nit jrößer maache wie:',
 'thumbsize'            => 'Esu breid solle de klein Beldche (Thumbnails/Breefmarke) sin:',
+'widthheight'          => '$1×$2',
 'widthheightpage'      => '$1×$2, {{PLURAL:$3|eij Sigg|$3 Sigge|keij Sigge}}',
 'file-info'            => '(Dateiömfang: $1, MIME-Tüp: <code>$2</code>)',
 'file-info-size'       => '({{PLURAL:$1|Ei Pixel|$1 Pixelle}} breed × {{PLURAL:$2|Ei Pixel|$2 Pixelle}} huh, de Datei hät $3, dä MIME-Typ es: <code>$4</code>)',
@@ -2330,7 +2386,7 @@ $1',
 'show-big-image-thumb' => '<small>Di Vör-Aansich es $1 × $2 Pixelle jroß</small>',
 
 # Special:NewImages
-'newimages'             => 'Belder, Tön, uew. als Jalerie',
+'newimages'             => 'Neu Dateie als Jaleri',
 'imagelisttext'         => 'Hee küt en Liss vun <strong>$1</strong> Datei{{PLURAL:$1||e}}, zoteet $2.',
 'newimages-summary'     => 'Hee die Sigg zeig die zoletz huhjeladene Belder un Dateie aan.',
 'showhidebots'          => '(Bots $1)',
@@ -2384,6 +2440,7 @@ Donoh kumme, en däsellve Reih, Links op Sigge wo dat Beld trotz dämm jenehm e�
 'exif-jpeginterchangeformatlength' => 'Bytes aan JPEG-Date',
 'exif-transferfunction'            => 'Övverdrarongsfungxjohn',
 'exif-whitepoint'                  => 'Fun Hand met Messung',
+'exif-primarychromaticities'       => 'De drei Houpfärve ier Färf-Intensität',
 'exif-ycbcrcoefficients'           => 'YCbCr-Geweeschte',
 'exif-referenceblackwhite'         => 'Schwazz-Wiiß-Bezochs-Punk-Paare',
 'exif-datetime'                    => 'Zickpunk fum Affshpeischere',
@@ -2533,13 +2590,14 @@ Donoh kumme, en däsellve Reih, Links op Sigge wo dat Beld trotz dämm jenehm e�
 'exif-lightsource-9'   => 'Joodt Wedder',
 'exif-lightsource-10'  => 'Wedder met Wolke',
 'exif-lightsource-11'  => 'Schadde',
-'exif-lightsource-12'  => 'Taresleesch — selfs aam leuschte (D 5700–7100 K)',
-'exif-lightsource-13'  => 'Tareswiiß Leesch — selfs aam leuschte (N 4600–5400 K)',
+'exif-lightsource-12'  => 'Daresleesch — selfs aam leuschte (D 5700–7100 K)',
+'exif-lightsource-13'  => 'Daresleechs-Wiiß — selfs aam leuschte (N 4600–5400 K)',
 'exif-lightsource-14'  => 'Kaal Wieß Leesch — selfs aam leuschte (W 3900–4500 K)',
 'exif-lightsource-15'  => 'Wieß Leesch — selfs aam leuschte (WW 3200–3700 K)',
 'exif-lightsource-17'  => 'Standat Leech Tüp A',
 'exif-lightsource-18'  => 'Standat Leech Tüp B',
 'exif-lightsource-19'  => 'Standat Leech Tüp C',
+'exif-lightsource-23'  => 'D50',
 'exif-lightsource-24'  => 'Studio-Kunsleesch noh ISO-Norrem',
 'exif-lightsource-255' => 'Söns en Leechquell',
 
@@ -2552,6 +2610,8 @@ Donoh kumme, en däsellve Reih, Links op Sigge wo dat Beld trotz dämm jenehm e�
 'exif-sensingmethod-5' => 'Ene sequenzjelle Bereijschs-Sensor fö Färve',
 'exif-sensingmethod-7' => 'Ene trilinejare sequenzjelle Sensor fö Färve',
 'exif-sensingmethod-8' => 'Ene linejare sequenzjelle Sensor fö Färve',
+
+'exif-filesource-3' => 'DSC',
 
 'exif-scenetype-1' => 'Normal — e tirek fotmafeet Beld',
 
@@ -2618,7 +2678,7 @@ Donoh kumme, en däsellve Reih, Links op Sigge wo dat Beld trotz dämm jenehm e�
 
 # External editor support
 'edit-externally'      => 'Dun de Datei met enem externe Projramm bei Dr om Rechner bearbeide',
-'edit-externally-help' => 'Luur en de [http://www.mediawiki.org/wiki/Manual:External_editors Installationsaanweisunge] noh Hinwies, wie mer esu en extern Projramm ennrechte un installeere deit.',
+'edit-externally-help' => '(Luur en de [http://www.mediawiki.org/wiki/Manual:External_editors Installationsaanweisunge] noh mieh Hinwies)',
 
 # 'all' in various places, this might be different for inflected languages
 'recentchangesall' => 'all',
@@ -2635,10 +2695,9 @@ Donoh kumme, en däsellve Reih, Links op Sigge wo dat Beld trotz dämm jenehm e�
 'confirmemail_send'        => 'Scheck en E-Mail zem Bestätije',
 'confirmemail_sent'        => 'En E-Mail, för Ding E-Mail Adress ze bestätije, es ungerwähs.',
 'confirmemail_oncreate'    => 'Do häs jetz ene Kood för de Bestätijung med ene E-Mail zojeschek bekumme. För em Wiki jet ze maache, un för et Enlogge, do bruchs De der Kode nit, ävver domet de e-Mail övver et Wiki schecke un krijje kanns, doför moß De en ejmool ens bestätijje, domet secher es, dat Ding E-Mail Adress och rechtich jetipp wohr.',
-'confirmemail_sendfailed'  => "Beim E-Mail Adress Bestätije es jet donevve jejange, dä Sörver hatt e Problem met 
-sing Konfijuration, oder en Dinger E-Mail Adress es e Zeiche verkihrt, oder esu jet.
+'confirmemail_sendfailed'  => "Beim E-Mail Adress Bestätije es jet donevve jejange, künnt sin, en Dinger E-Mail Adress es e Zeiche verkihrt, oder esu jet.
 
-Dä E-Mail-Sörver saat: ''$1''",
+Dä E-Mail-Sörver hät jesaat: ''$1''",
 'confirmemail_invalid'     => 'Et es jet donevve jejange, Ding E-Mail Adress es un bliev nit bestätich. Mööchlech, dä Code wohr verkihrt, hä künnt avjelaufe jewäse sin, oder esu jet. Versöök et noch ens.',
 'confirmemail_needlogin'   => 'Do muss Dich $1, för de E-Mail Adress ze bestätije.',
 'confirmemail_success'     => 'Ding E-Mail Adress es jetz bestätich.
@@ -2700,11 +2759,15 @@ Trackbacks för hee di Sigg:<br />
 'trackbackdeleteok' => 'Trackback es fottjeschmesse.',
 
 # Delete conflict
-'deletedwhileediting' => '<strong>Opjepass:</strong> De Sigg wood fottjeschmesse, nohdäm Do ald aanjefange häs, dran ze Ändere.',
+'deletedwhileediting' => '<strong>Opjepass:</strong> De Sigg wood fottjeschmesse, nohdäm Do ald aanjefange häs, dran ze Ändere.
+Em <span class="plainlinks">[{{fullurl:Special:Log|type=delete&page=}}{{FULLPAGENAMEE}} Logboch vum Sigge-Fottschmieße]</span> künnt der Jrund shtonn.
+Wann De de Sigg avspeichere deis, weed se widder aanjelaat.',
 'confirmrecreate'     => 'Dä Metmaacher [[User:$1|$1]] ([[User talk:$1|Klaaf]]) hät die Sigg fottjeschmesse, nohdäm Do do dran et Ändere aanjefange häs. Dä Jrund:
 : „<i>$2</i>“
 Wells Do jetz met en neu Version die Sigg widder neu aanläje?',
 'recreate'            => 'Widder neu aanlääje',
+
+'unit-pixel' => 'px',
 
 # HTML dump
 'redirectingto' => 'Leit öm op: „[[:$1]]“',
@@ -2746,7 +2809,7 @@ $1',
 'autosumm-blank'   => 'Dä janze Enhald vun dä Sigg fottjemaht',
 'autosumm-replace' => "Dä jannze Enhallt fon dä Sigk ußjetuusch: '$1'",
 'autoredircomment' => 'Leit öm op „[[$1]]“',
-'autosumm-new'     => 'Neu Sigg: $1',
+'autosumm-new'     => 'De Sigg wood neu aanlelaat met däm Aanfang: $1',
 
 # Size units
 'size-bytes'     => '$1 Bytes',
@@ -2795,6 +2858,25 @@ De könnts Ding Oppassliss ävver och [[Special:Watchlist/edit|övver e Fomulaa 
 'watchlisttools-view' => 'Oppaßliß — Änderunge zeije',
 'watchlisttools-edit' => 'beloore un beärbede',
 'watchlisttools-raw'  => 'rüh beärbeijde | expochteere | empochteere',
+
+# Hebrew month names
+'hebrew-calendar-m1'  => 'Tishrei',
+'hebrew-calendar-m2'  => 'Cheshvan',
+'hebrew-calendar-m3'  => 'Kislev',
+'hebrew-calendar-m4'  => 'Tevet',
+'hebrew-calendar-m5'  => 'Shevat',
+'hebrew-calendar-m6'  => 'Adar',
+'hebrew-calendar-m6a' => 'Adar I',
+'hebrew-calendar-m6b' => 'Adar II',
+'hebrew-calendar-m7'  => 'Nisan',
+'hebrew-calendar-m8'  => 'Iyar',
+'hebrew-calendar-m9'  => 'Sivan',
+'hebrew-calendar-m10' => 'Tamuz',
+'hebrew-calendar-m11' => 'Av',
+'hebrew-calendar-m12' => 'Elul',
+
+# Signatures
+'timezone-utc' => 'UTC',
 
 # Core parser functions
 'unknown_extension_tag' => '„<code>$1</code>“ es en zosäzlejje Kennzeichnung, die kenne mer nit.',
@@ -2853,10 +2935,10 @@ Der Name moß ohne der Försatz „{{ns:image}}:“ aanjejovve wääde.',
 'specialpages-group-users'       => 'Metmaacher un denne ier Rääschte',
 'specialpages-group-highuse'     => 'Öff jebruchte Sigge',
 'specialpages-group-pages'       => 'Siggeliste',
-'specialpages-group-pagetools'   => 'Werrekzeuch för Sigge',
-'specialpages-group-wiki'        => 'Werrekzeuch un Date vum Systeem',
+'specialpages-group-pagetools'   => 'Werrekzüch för Sigge',
+'specialpages-group-wiki'        => 'Werrekzüch un Date vum Systeem',
 'specialpages-group-redirects'   => 'Sondersigge, die ömleite, söke, un finge',
-'specialpages-group-spam'        => 'Werrekzeuch jäje SPÄM',
+'specialpages-group-spam'        => 'Werrekzüch jäje SPÄM',
 
 # Special:BlankPage
 'blankpage'              => 'Vakat-Sigg',

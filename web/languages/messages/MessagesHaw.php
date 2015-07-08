@@ -147,7 +147,7 @@ $messages = array(
 'unprotect'        => 'E wehe ho‘omalu',
 'newpage'          => '‘Ao‘ao hou',
 'talkpage'         => 'Kūkākūkā i keia ‘ao‘ao',
-'talkpagelinktext' => 'kūkākūkā',
+'talkpagelinktext' => 'Kūkākūkā',
 'specialpage'      => '‘Ao‘ao kūikawā',
 'personaltools'    => 'Nā mea hana pilikino',
 'talk'             => 'Kūkākūkā',
@@ -162,6 +162,7 @@ $messages = array(
 'categorypage'     => 'Nānā i ka ‘ao‘ao mahele',
 'viewtalkpage'     => 'Nānā i ke kūkākūkā',
 'otherlanguages'   => "Ma nā leo 'ē a'e",
+'redirectedfrom'   => '(Hoʻoili mai $1)',
 'redirectpagesub'  => '‘Ao‘ao e alaka‘i ai',
 'protectedpage'    => '‘Ao‘ao ho‘omalu',
 'jumpto'           => 'Lele i:',
@@ -179,6 +180,7 @@ $messages = array(
 'disclaimerpage'       => 'Project:Nā a‘o ‘ana laulā',
 'edithelp'             => 'Kōkua me ka ho‘ololi ‘ana',
 'edithelppage'         => 'Help:Ho‘ololi',
+'helppage'             => 'Help:Papa kuhikuhi',
 'mainpage'             => 'Ka papa kinohi',
 'mainpage-description' => 'Ka papa kinohi',
 'policy-url'           => 'Project:Palapala',
@@ -237,37 +239,51 @@ $2',
 'ns-specialprotected' => '‘A‘ole hiki ke ho‘opololei i nā ‘ao‘ao kūikawā',
 
 # Login and logout pages
-'welcomecreation'         => '== E komo mai, $1! ==
-
-He mea ho‘ohana ‘oe. Mai poina e loli kāu makemake ma {{SITENAME}}.',
-'yourname'                => "Inoa mea ho'ohana",
-'yourpassword'            => "Hua'ōlelo huna",
-'yourpasswordagain'       => "Hua'ōlelo huna hou",
-'remembermypassword'      => "Ho'omana'o ia'u",
-'login'                   => 'E komo',
-'nav-login-createaccount' => 'E komo mai / E hana',
-'userlogin'               => 'E komo / E hana',
-'logout'                  => "E ha'alele",
-'userlogout'              => "E ha'alele",
-'notloggedin'             => 'Mai ‘e‘e',
-'nologinlink'             => "Lilo i mea ho'ohana",
-'createaccount'           => 'E hana',
-'gotaccountlink'          => 'E komo',
-'createaccountmail'       => 'no ka leka uila',
-'userexists'              => 'Lilo ka inoa mea ho‘ohana.
+'logouttitle'               => 'E haʻalele ka mea hoʻohana',
+'welcomecreation'           => '== E komo mai, $1! ==
+Hoʻokumu ʻia i kou waihona.
+Mai poina e loli kāu makemake ma {{SITENAME}}.',
+'loginpagetitle'            => 'ʻEʻe mea hoʻohana',
+'yourname'                  => "Inoa mea ho'ohana",
+'yourpassword'              => 'ʻŌlelo hūnā:',
+'yourpasswordagain'         => "Hua'ōlelo huna hou",
+'remembermypassword'        => "Ho'omana'o ia'u",
+'login'                     => 'E komo',
+'nav-login-createaccount'   => 'E komo mai / E hana',
+'loginprompt'               => 'Pono ʻoe e hoʻā i nā makana (cookies) no ka ʻeʻe ʻana i {{SITENAME}}.',
+'userlogin'                 => 'E komo / E hana',
+'logout'                    => "E ha'alele",
+'userlogout'                => "E ha'alele",
+'notloggedin'               => 'Mai ‘e‘e',
+'nologin'                   => 'ʻAʻohe āu waihona? $1.',
+'nologinlink'               => "Lilo i mea ho'ohana",
+'createaccount'             => 'E hana',
+'gotaccount'                => 'He waihona kou ʻē? $1.',
+'gotaccountlink'            => 'E komo',
+'createaccountmail'         => 'no ka leka uila',
+'userexists'                => 'Lilo ka inoa mea ho‘ohana.
 E koho i kekahi inoa, ke ‘olu‘olu.',
-'youremail'               => 'Leka uila:',
-'username'                => "Inoa mea ho'ohana:",
-'yourrealname'            => 'Inoa maoli:',
-'yourlanguage'            => "Kou 'ōlelo:",
-'yournick'                => 'Inoa kapakapa:',
-'email'                   => 'Leka uila',
-'mailmypassword'          => "Leka uila hua'ōlelo huna",
-'emailauthenticated'      => 'Ua hō‘oia ‘ia kāu leka uila ma $1.',
-'emailconfirmlink'        => 'E hō‘oia i kāu leka uila',
-'accountcreated'          => 'Ua lilo ‘ia ka mea ho‘ohana',
-'accountcreatedtext'      => 'Ua lilo ‘ia ka mea ho‘ohana no $1.',
-'loginlanguagelabel'      => "Kou 'ōlelo: $1",
+'youremail'                 => 'Leka uila:',
+'username'                  => "Inoa mea ho'ohana:",
+'yourrealname'              => 'Inoa maoli:',
+'yourlanguage'              => 'Kou ʻōlelo:',
+'yournick'                  => 'Inoa kapakapa:',
+'email'                     => 'Leka uila',
+'prefs-help-email-required' => 'Koina ka leka uila.',
+'loginsuccesstitle'         => 'ʻEʻe kūleʻa',
+'loginsuccess'              => "'''ʻEʻe ʻia ʻoe, ʻo \"\$1\", iā {{SITENAME}}.'''",
+'nouserspecified'           => 'Pono ʻoe e kāhuakomo i ka ʻōlelo ʻeʻe.',
+'wrongpassword'             => 'Hewa ka ʻōlelo hūnā.
+E ʻoluʻolu, e kūlia hou.',
+'wrongpasswordempty'        => 'Hakahaka ka ʻōlelo hūnā.
+E ʻoluʻolu, e kūlia hou.',
+'mailmypassword'            => 'Leka uila i ka huaʻōlelo huna',
+'passwordremindertitle'     => "He 'ōlelo hūnā kūikawā no {{SITENAME}}",
+'emailauthenticated'        => 'Ua hō‘oia ‘ia kāu leka uila ma $1.',
+'emailconfirmlink'          => 'E hō‘oia i kāu leka uila',
+'accountcreated'            => 'Ua lilo ‘ia ka mea ho‘ohana',
+'accountcreatedtext'        => 'Ua lilo ‘ia ka mea ho‘ohana no $1.',
+'loginlanguagelabel'        => "Kou 'ōlelo: $1",
 
 # Password reset dialog
 'resetpass_success' => 'Ua loli ‘ia kāu hua‘ōlelo huna! E ‘e‘e iā‘oe...',
@@ -277,6 +293,7 @@ E koho i kekahi inoa, ke ‘olu‘olu.',
 'bold_tip'        => 'Ho‘okā‘ele',
 'italic_sample'   => 'Ho‘ohiō',
 'italic_tip'      => 'Ho‘ohiō',
+'link_sample'     => 'Inoa loulou',
 'extlink_tip'     => 'Loulou kūwaho (e ho‘omana‘o i ka poʻo pāʻālua http://)',
 'headline_sample' => 'Po‘o‘ōlelo',
 'math_tip'        => 'Ha‘ilula makemakika (LaTeX)',
@@ -302,27 +319,42 @@ hō‘ike ‘ia i lalo:",
 'accmailtitle'           => 'Ua ho‘ouna ‘ia ka hua‘ōlelo huna',
 'newarticle'             => '(Hou)',
 'anontalkpagetext'       => "---''‘O kēia ke kūkākūkā no he mea ho‘ohana ‘a‘ohe i hō‘ike‘ia ka inoa i hana ʻia he mea ho‘ohana ai‘ole ‘a‘ole ho‘ohana ia. Pēlā, e pono mākou ke ho‘ohana ka wahi noho IP e hōʻoia ‘oia. Inā he mea ho‘ohana ‘a‘ohe i hō‘ike‘ia ka inoa ‘oe, ke ho‘olale nei ‘ia ‘oe [[Special:UserLogin|e hana he mea ho‘ohana ai‘ole e komo]].''",
-'previewnote'            => '<strong>‘O keia ka nāmua;
-‘a‘ole i mālama ‘ia ka ho‘ololi!</strong>',
+'noarticletext'          => 'ʻAʻohe a kēia ʻaoʻao kikokikona.
+Hiki iā ʻoe ke [[Special:Search/{{PAGENAME}}|huli no kēia poʻo ʻaoʻao]] i nā ʻaoʻao ʻē aʻe, <span class="plainlinks">ke [{{fullurl:SpecialLog|page={{urlencode:{{FULLPAGENAME}}}}}} huli i nā moʻolelo pili], a i ʻole ke [{{fullurl:{{FULLPAGENAME}}|action=edit}} hoʻololi i kēia ʻaoʻao]</span>.',
+'previewnote'            => "'''‘O keia ka nāmua;
+‘a‘ole i mālama ‘ia ka ho‘ololi!'''",
 'editing'                => 'Ke ho‘ololi nei iā $1',
 'editingsection'         => 'Ke ho‘opololei nei iā $1 (mahele)',
 'editingcomment'         => 'Ke ho‘ololi nei iā $1 (mana‘o)',
 'yourtext'               => 'Ko‘u ‘ōlelo',
 'yourdiff'               => 'Nā mea ‘oko‘a',
-'protectedpagewarning'   => '<strong>A‘o ‘ana:  Ua laka ‘ia kēia ‘ao‘ao, pēlā, hiki i nā "kahu" ke ho‘opololei wale nō.</strong>',
+'copyrightwarning'       => "Hoʻokuʻu nā mea lūlū iā {{SITENAME}} i ka $2 (no nā mea kikoʻī, ʻike ʻoe i $1).
+Inā ʻaʻole ʻoe makemake i nā poʻe aʻe e loli i kou kākau ʻana a ʻaʻole ʻoe makemake hoʻomalele hou i kou mau loli, inā mai waiho kou mau loli ma ʻaneʻi.<br />
+Ke hoʻohiki nei ʻoe iā kākou: ua kākau ʻoe i kēia kikokikona na ʻo ʻoe ponoʻī a i ʻole ua kope i kēia kikokikona mai ke kūmole kūʻokoʻa.
+'''MAI WAIHO NĀ HANA PONOKOPE ME ʻOLE KA ʻAE!'''",
+'protectedpagewarning'   => "'''A‘o ‘ana:  Ua laka ‘ia kēia ‘ao‘ao, pēlā, hiki i nā \"kahu\" ke ho‘opololei wale nō.'''",
 'template-protected'     => '(ho‘omalu ‘ia)',
 'template-semiprotected' => '(hapa-ho‘omalu ‘ia)',
+'edittools'              => '<!-- Eia ka ‘ōlelo e hō‘ike ‘ia malalo o nā palapala ho‘ololi ame nā palapala ho‘ohui. -->',
 
 # History pages
 'currentrev'          => 'Kāmua hou',
+'revisionasof'        => 'Ka loli ʻana ma $1',
+'previousrevision'    => '← Kāmua mua',
+'nextrevision'        => 'Kāmua hou →',
 'currentrevisionlink' => 'Kāmua hou',
 'cur'                 => 'hou',
 'last'                => 'hope',
+'page_first'          => 'mua',
+'page_last'           => 'hope',
 'deletedrev'          => '[ua kāpae ‘ia]',
 'histfirst'           => 'Kahiko loa',
 'histlast'            => 'Hou loa',
 'historysize'         => '({{PLURAL:$1|1 ‘ai|$1 ‘ai}})',
 'historyempty'        => '(‘ole)',
+
+# Revision feed
+'history-feed-item-nocomment' => '$1 ma $2', # user at time
 
 # Revision deletion
 'rev-delundel' => 'hō‘ike/hūnā',
@@ -332,20 +364,23 @@ hō‘ike ‘ia i lalo:",
 'editundo' => 'wehe',
 
 # Search results
-'noexactmatch' => "'''‘A‘ohe mo‘olelo me ka inoa \"\$1\".''' Hiki iā‘oe ke [[:\$1|hana i keia ‘ao‘ao]].",
-'prevn'        => 'mua $1',
-'nextn'        => 'hope $1',
-'viewprevnext' => 'Nānā i nā ($1) ($2) ($3)',
-'searchall'    => 'apau',
-'powersearch'  => 'Huli',
+'noexactmatch'       => "'''‘A‘ohe mo‘olelo me ka inoa \"\$1\".''' Hiki iā‘oe ke [[:\$1|hana i keia ‘ao‘ao]].",
+'prevn'              => 'mua $1',
+'nextn'              => 'hope $1',
+'viewprevnext'       => 'Nānā i nā ($1) ($2) ($3)',
+'search-result-size' => '$1 ({{PLURAL:$2|1 huaʻōlelo|$2 mau huaʻōlelo}})',
+'searchall'          => 'apau',
+'powersearch'        => 'Huli',
 
 # Preferences page
 'preferences'       => "Ka'u makemake",
 'mypreferences'     => 'Ka‘u makemake',
 'changepassword'    => 'E loli i ka palapala hua‘ōlelo',
 'prefs-rc'          => 'Nā loli hou',
+'newpassword'       => 'ʻŌlelo hūnā hou:',
 'searchresultshead' => 'Huli',
 'savedprefs'        => 'Ua mālama ‘ia kāu makemake',
+'default'           => 'paʻamau',
 
 # User rights
 'userrights' => 'Ho‘oponopono ‘ana o nā kuleana', # Not used as normal message but as header for the special page itself
@@ -358,8 +393,11 @@ hō‘ike ‘ia i lalo:",
 'group-sysop-member'      => 'Kahu',
 'group-bureaucrat-member' => 'Kuhina',
 
+'grouppage-sysop' => '{{ns:project}}:Nā kahu',
+
 # Recent changes
 'recentchanges'   => 'Nā loli hou',
+'rcnote'          => "ʻO {{PLURAL:$1|ka loli '''1'''|nā loli hope '''$1'''}} ma hope mai {{PLURAL:$2|ka lā ʻekahi|nā lā '''$2'''}} ma hope, ma $5, $4.",
 'rcshowhideminor' => '$1 i nā ho‘opololei iki',
 'rcshowhidebots'  => '$1 i nā lopako',
 'rcshowhideliu'   => '$1 i nā inoa mea ho‘ohana',
@@ -387,16 +425,20 @@ hō‘ike ‘ia i lalo:",
 
 # Image description page
 'filehist'            => 'Mo‘olelo o ka waihona',
+'filehist-current'    => 'o kēia manawa',
 'filehist-datetime'   => 'Manawa',
 'filehist-user'       => 'Mea ho‘ohana',
 'filehist-dimensions' => 'Nā nui',
 'filehist-filesize'   => 'Nui o ka waihona',
 'filehist-comment'    => 'Manaʻo',
-'imagelinks'          => 'Nā loulou',
+'imagelinks'          => 'Nā loulou faila',
 'linkstoimage'        => 'Loulou {{PLURAL:$1|kekahi ‘ao‘ao|kēia mau ‘ao‘ao $1}} i kēia waihona:',
 
 # Random page
 'randompage' => 'He akikala kaulele',
+
+# Statistics
+'statistics' => 'Papa helu',
 
 'brokenredirects-edit'   => '(e ho‘opololei)',
 'brokenredirects-delete' => '(e kāpae)',
@@ -405,7 +447,11 @@ hō‘ike ‘ia i lalo:",
 
 # Miscellaneous special pages
 'nbytes'            => '$1 {{PLURAL:$1|‘ai|‘ai}}',
+'nlinks'            => '$1 {{PLURAL:$1|loulou|loulou}}',
 'nmembers'          => '$1 {{PLURAL:$1|lālā|lālā}}',
+'wantedcategories'  => 'Nā māhele makemake',
+'shortpages'        => 'Nā ʻaoʻao pōkole',
+'longpages'         => 'Nā ʻaoʻao lōʻihi',
 'newpages'          => 'Nā ‘ao‘ao hou',
 'newpages-username' => "Inoa mea ho'ohana:",
 'ancientpages'      => 'Nā ‘ao‘ao kahiko loa',
@@ -413,11 +459,14 @@ hō‘ike ‘ia i lalo:",
 'movethispage'      => "E ho'ololi kēia",
 
 # Special:Log
-'log' => 'Nā mo‘olelo',
+'log'           => 'Nā mo‘olelo',
+'all-logs-page' => 'Nā moʻolelo āpau',
 
 # Special:AllPages
 'allpages'       => 'Nā ‘ao‘ao loa apau',
 'alphaindexline' => '$1 i $2',
+'nextpage'       => 'Mea aʻe ($1)',
+'prevpage'       => 'Mea ma mua aʻe ($1)',
 'allarticles'    => 'Nā mo‘olelo apau loa',
 'allpagesprev'   => 'Mua',
 'allpagesnext'   => 'Hope',
@@ -431,15 +480,19 @@ hō‘ike ‘ia i lalo:",
 
 # E-mail user
 'emailuser'    => 'E leka uila i kēia mea ho‘ohana',
-'emailmessage' => 'Memo',
+'emailmessage' => 'Memo:',
 
 # Watchlist
-'watchlist'     => "Ka'u papa nānā pono",
-'mywatchlist'   => 'Ka‘u papa nānā pono',
-'watchlistfor'  => "(no '''$1''')",
-'watch'         => 'E kia‘i',
-'watchthispage' => 'E nānā pono i kēia mea',
-'unwatch'       => 'E wehe kia‘i',
+'watchlist'            => "Ka'u papa nānā pono",
+'mywatchlist'          => 'Ka‘u papa nānā pono',
+'watchlistfor'         => "(no '''$1''')",
+'watch'                => 'E kia‘i',
+'watchthispage'        => 'E nānā pono i kēia mea',
+'unwatch'              => 'E wehe kia‘i',
+'watchlist-details'    => '{{PLURAL:$1|$1|$1}} a kāu papa nānā pono ʻaoʻao, me ke koe ʻana o nā ʻaoʻao kūkākūkā.',
+'watchlist-hide-bots'  => 'Hūnā i nā hoʻololi e nā lopako',
+'watchlist-hide-own'   => 'Hūnā i kaʻu mau hoʻololi',
+'watchlist-hide-minor' => 'Hūnā i nā ho‘opololei iki',
 
 # Displayed when you click the "watch" button and it is in the process of watching
 'watching'   => 'Ke kia‘i nei...',
@@ -448,7 +501,10 @@ hō‘ike ‘ia i lalo:",
 'changed' => 'ua loli ‘ia',
 
 # Delete/protect/revert
+'deletepage'             => 'Kāpae ʻaoʻao',
 'actioncomplete'         => 'Ua pau',
+'deletedtext'            => 'Ua kāpae ʻo "<nowiki>$1</nowiki>".
+E ʻike i $2 no ka papa o nā kāpae ʻana hou.',
 'deletedarticle'         => 'ua kāpae ‘ia "[[$1]]"',
 'dellogpage'             => 'Mo‘olelo kāpae',
 'dellogpagetext'         => 'He helu o nā mea i kāpae ʻia hou i lalo.',
@@ -456,6 +512,8 @@ hō‘ike ‘ia i lalo:",
 'deletecomment'          => 'Ke kumu e kāpae',
 'delete-edit-reasonlist' => 'Ho‘opololei i nā kumu no ke kāpae ‘ana',
 'rollbacklink'           => 'ho‘i',
+'protect-default'        => '(paʻamau)',
+'protect-cantedit'       => 'ʻAʻole ʻoe hoʻololi i nā pae malu o kēia ʻaoʻao no ka mea ʻaʻohe ʻae āu o ka hoʻopololei ʻana o kēia ʻaoʻao.',
 
 # Restrictions (nouns)
 'restriction-edit' => 'E ho‘opololei',
@@ -469,11 +527,16 @@ hō‘ike ‘ia i lalo:",
 'mycontris'     => "He aha ka'u i lūlū ai",
 'contribsub2'   => 'No $1 ($2)',
 'uctop'         => '(wēkiu)',
+'month'         => 'Mai mahina (ame mamua):',
+'year'          => 'Mai makahiki (ame mamua):',
+
+'sp-contributions-search' => 'Huli no nā haʻawina',
 
 # What links here
 'whatlinkshere'       => 'He aha e loulou iho ai',
 'whatlinkshere-page'  => '‘Ao‘ao:',
 'nolinkshere'         => "‘A‘ole he ‘ao‘ao e loulou ai iā '''[[:$1]]'''.",
+'isredirect'          => 'ʻaoʻao hoʻoili ʻana',
 'whatlinkshere-prev'  => '{{PLURAL:$1|mua|mua $1}}',
 'whatlinkshere-next'  => '{{PLURAL:$1|hope|hope $1}}',
 'whatlinkshere-links' => '← nā loulou',
@@ -494,7 +557,11 @@ hō‘ike ‘ia i lalo:",
 # Move page
 'move-page-legend'        => "E ho'ololi",
 'movearticle'             => "E ho'ololi",
+'newtitle'                => 'I ka inoa hou:',
+'move-watch'              => 'E nānā pono i kēia mea',
 'movepagebtn'             => "E ho'ololi",
+'pagemovedsub'            => 'Kūleʻa ka neʻe ʻana',
+'1movedto2'               => 'Ua hoʻoneʻe ʻo [[$1]] iā [[$2]]',
 'movereason'              => 'Kumu:',
 'delete_and_move'         => 'E kāpae a e ho‘ololi i ka inoa',
 'delete_and_move_confirm' => '‘Ae, e kāpae i ka ‘ao‘ao',
@@ -512,19 +579,24 @@ hō‘ike ‘ia i lalo:",
 'thumbnail-more' => 'ho‘onui',
 
 # Tooltip help for the actions
-'tooltip-pt-userpage'      => 'Ka‘u inoa mea ho‘ohana',
-'tooltip-pt-mytalk'        => 'ka‘u ‘ōlelo',
+'tooltip-pt-userpage'      => 'Kāu inoa mea ho‘ohana',
+'tooltip-pt-mytalk'        => 'Kāu ‘aoʻao ʻōlelo',
 'tooltip-pt-preferences'   => 'ka‘u makemake',
-'tooltip-pt-mycontris'     => 'Ka‘u mau ha‘awina',
+'tooltip-pt-watchlist'     => 'Ka papa o nā ʻaoʻao o kou nānā ʻana no nā loli',
+'tooltip-pt-mycontris'     => 'Kāu mau ha‘awina',
 'tooltip-pt-login'         => 'Pai ‘ia ‘oe e ‘e‘e, akā, ‘a‘ole he koina.',
 'tooltip-pt-logout'        => 'e ha‘alele',
 'tooltip-ca-talk'          => 'Kūkākūkā e pili ana i kekahi ‘ao‘ao.',
 'tooltip-ca-edit'          => 'Hiki iā‘oe ke ho‘opololei i kēia ‘ao‘ao. Imua o ka mālama, ho‘ohana i ka nāmua, ke ‘olu‘olu.',
+'tooltip-ca-viewsource'    => 'Pale ʻia kēia ʻaoʻao.
+Hiki iā ʻoe ke ʻikena i kāna molekumu.',
+'tooltip-ca-protect'       => 'Ho‘omalu i keia ‘ao‘ao',
 'tooltip-ca-delete'        => 'E kāpae i kēia mo‘olelo',
 'tooltip-ca-move'          => 'E ne‘e i kēia mo‘olelo',
 'tooltip-search'           => 'Huli iā {{SITENAME}}',
 'tooltip-n-mainpage'       => 'Hele i ka papa kinohi',
 'tooltip-n-portal'         => 'E pili ana i ka pelokeka, he aha e hana',
+'tooltip-n-currentevents'  => 'ʻIke i nā nū hou',
 'tooltip-n-recentchanges'  => 'Nā loli hou ma ka wiki.',
 'tooltip-n-randompage'     => 'Ho‘ouka i he akikala kaulele',
 'tooltip-n-help'           => 'Ka wahi e kōkua ai iā‘oe.',
@@ -532,6 +604,8 @@ hō‘ike ‘ia i lalo:",
 'tooltip-t-upload'         => 'Ho‘ouka i nā waihona',
 'tooltip-t-specialpages'   => 'Helu o nā papa nui apau',
 'tooltip-ca-nstab-project' => 'Nānā i ka ‘ao‘ao papahana',
+'tooltip-ca-nstab-help'    => 'Nānaina i ka ʻaoʻao kōkua',
+'tooltip-minoredit'        => 'Wae i kēia hoʻopololei me he hoʻopololei iki',
 'tooltip-save'             => 'Mālama i kāu ho‘opololei',
 
 # Media information
@@ -539,6 +613,9 @@ hō‘ike ‘ia i lalo:",
 
 # Special:NewImages
 'ilsubmit' => 'Huli',
+
+# External editor support
+'edit-externally-help' => '(E ʻike i nā [http://www.mediawiki.org/wiki/Manual:External_editors aʻo palapala no ka hoʻokuene ʻana])',
 
 # 'all' in various places, this might be different for inflected languages
 'recentchangesall' => 'apau',
@@ -549,6 +626,14 @@ hō‘ike ‘ia i lalo:",
 
 # action=purge
 'confirm_purge_button' => 'Hiki nō',
+
+# Multipage image navigation
+'imgmultipageprev' => '← mea ma mua aʻe',
+'imgmultipagenext' => 'mea aʻe →',
+
+# Table pager
+'table_pager_next' => 'Mea aʻe',
+'table_pager_prev' => 'Mea ma mua aʻe',
 
 # Auto-summaries
 'autosumm-replace' => "Ke pani nei i ka ‘ao‘ao me '$1'",

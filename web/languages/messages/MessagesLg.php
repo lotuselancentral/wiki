@@ -170,7 +170,7 @@ $messages = array(
 
 # Login and logout pages
 'logouttitle'                => 'Kuvaamu',
-'logouttext'                 => "<strong>Kati ovuddemu.</strong><br />
+'logouttext'                 => "'''Kati ovuddemu.'''<br />
 Osobola okusigala nga okozesa {{SITENAME}} nga atamanyise, ate osobola
 n'okuddamu okuyingira nga bw'obadde oba nga okozesezza ery'obwa memba
 eddala. Wekkaanye, empapula ezimu ziyinza okukweyolekera nga bwe
@@ -194,6 +194,7 @@ kalambula-neti yo.",
 'gotaccountlink'             => 'Yingira',
 'username'                   => "Ery'obwa memba:",
 'yourlanguage'               => 'Lulimi lwo:',
+'yournick'                   => 'Empaako yo (ssi ya tteeka):',
 'prefs-help-email'           => "* E-mail (ssi kya tteeka): Bw'ogiwayo, basobola okukutuukirira nga bayitira ku enfo yo ey'obwa memba oba olupapula lwo
 olwa 'yogera nange' nga ggwe tewetaaze kulaga bikufaako.",
 'loginsuccesstitle'          => 'Oyingidde',
@@ -253,7 +254,7 @@ Oba gwe oyagala okulukolawo, wandiika mu kabokisi wammanga.
 Bw'obanga tewagenderedde kutuuka wano, nyigabunyizi eppeesa ery'omu kalambula-neti yo
 erya '''ddayo'''.",
 'noarticletext'          => "Wano tewali kyawandiikidwawo, ky'obadde onoonya osobola [[Special:Search/{{PAGENAME}}| okukinoonyeza]] ku mpapula endala oba oyinza [{{fullurl:{{FULLPAGENAME}}|action=edit}} gwe okukiwandiikako] wano.",
-'previewnote'            => "<strong>Kuno kugezaamubugeza; by'okoze tebinnakazibwa!</strong>",
+'previewnote'            => "'''Kuno kugezaamubugeza; by'okoze tebinnakazibwa!'''",
 'editing'                => 'Kati okyuusa $1',
 'editingsection'         => 'Okyuusa $1 (kitundu)',
 'editingcomment'         => 'Kukyuusa $1 (obubaka)',
@@ -261,10 +262,10 @@ erya '''ddayo'''.",
 'copyrightwarning'       => "Genderera nti buli kyowandiika muno mu {{SITENAME}} kibalibwa ng'ekifugibwa $2 (okuyiga ebisingawo, laba $1).
 Obanga tewetegese okulaba by'owandiise nga babikyusakyusa n'okubisaasaanya nga bwe balaba, tobiwandiika muno.<br />
 Tukwesiga nti by'owandiika muno bibyo oba wabigya mu kya bonna oba awalala gye batalina bikugizo eby'obwa nannyini.
-<strong>TOTEEKAMU EBIRIKO EBIKUGIZO EBY'OBWA NANNYINI NGA BA NYINI BYO TEBAKUWADDE LUKUSA!</strong>",
+'''TOTEEKAMU EBIRIKO EBIKUGIZO EBY'OBWA NANNYINI NGA BA NYINI BYO TEBAKUWADDE LUKUSA!'''",
 'copyrightwarning2'      => "Genderera nti buli kyowandiika muno mu {{SITENAME}} abalala bayinza okubikyusa oba n'okubigiramu ddala. Obanga tewetegese okulaba by'owandiise nga babikyusakyusa n'okubisaasaanya nga bwe balaba, tobiwandiika muno.<br />
 Tukwesiga nti by'owandiika muno bibyo oba wabigya mu kya bonna oba awalala gye batalina bikugizo eby'obwa nannyini. (okuyiga ebisingawo, laba $1).
-<strong>TOTEEKAMU EBIRIKO EBIKUGIZO EBY'OBWA NANNYINI NGA BA NYINI BYO TEBAKUWADDE LUKUSA!</strong>",
+'''TOTEEKAMU EBIRIKO EBIKUGIZO EBY'OBWA NANNYINI NGA BA NYINI BYO TEBAKUWADDE LUKUSA!'''",
 'templatesused'          => 'Olupapula luno entiba ze lukozesa ze:',
 'template-protected'     => '(luno lusibidwa)',
 'template-semiprotected' => '(ebimu ku lupapula luno bisibidwa)',
@@ -305,9 +306,15 @@ oba ku gano agali ku lupapula luno.<br />
 
 # Preferences page
 'mypreferences'     => 'Enteekateeka yange',
+'prefs-personal'    => 'Ebikufaako',
+'saveprefs'         => 'Bino bikaze',
+'resetprefs'        => 'Gyawo enkyukakyuka ze sinnakaza',
 'oldpassword'       => 'Ekigambo ekikuumi ekikadde:',
 'newpassword'       => 'Ekigambo ekikuumi ekipya:',
+'retypenew'         => 'Ddamu ekikagambo ekikuumi ekipya ekyo:',
 'searchresultshead' => 'Noonya',
+'savedprefs'        => 'Enteekateeka yo ekazidwa.',
+'allowemail'        => 'Kkiriza bamemba abalala okukusindikira e-mail',
 
 # User rights
 'editinguser' => "Kukyuusa ebya memba '''[[User:$1|$1]]''' ([[User talk:$1|{{int:talkpagelinktext}}]] | [[Special:Contributions/$1|{{int:contribslink}}]])",
@@ -359,6 +366,7 @@ oba ku gano agali ku lupapula luno.<br />
 
 # Miscellaneous special pages
 'nbytes'            => '{{PLURAL:$1|bayiti|bayiti}} $1',
+'ncategories'       => '$1 {{PLURAL:$1|ttuluba|matuluba}}',
 'nmembers'          => '{{PLURAL:$1|memba|bamemba}} $1',
 'newpages'          => 'Empapula empya',
 'newpages-username' => "Ery'obwa memba:",
@@ -453,6 +461,7 @@ Bw\'oba oyagala okulekerawo okulugoberera, nyiga ku kigambo "Suula" awo ku bbali
 'move-watch'       => 'Goberera olupapula luno',
 'movepagebtn'      => 'Lusimbulize',
 'movelogpage'      => 'Ebikyusidwa manya',
+'movereason'       => 'Nsonga:',
 'revertmove'       => 'zaawo erinya ekkadde',
 
 # Export
