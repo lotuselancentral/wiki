@@ -1,0 +1,25 @@
+#!/bin/sh
+
+BRANCH=upstream
+WEB=web
+
+set -e
+set -u
+
+version="$1"
+versionMajorMinor=$(echo "$version" | cut -f1-2 -d.)
+url="https://releases.wikimedia.org/mediawiki/$versionMajorMinor/mediawiki-$version.tar.gz"
+tmpfile=$(mktemp)
+
+wget -O"$tmpfile" "$url"
+
+rm -rf "$WEB"
+mkdir -p "$WEB"
+
+tar xf "$tmpfile" -C "$WEB" --strip-components=1
+
+git add --all "$WEB"
+git commit --message "Import MediaWiki $version"
+git tag -m "Import MediaWiki $version" "mediawiki-$version"
+
+rm -f "$tmpfile"
