@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author *Surak*
  * @author Ahonc
  * @author Aleator
  * @author AlexSm
@@ -16,10 +17,12 @@
  * @author Aotake
  * @author Bangin
  * @author Bennylin
+ * @author Beta16
  * @author Boivie
  * @author Brest
  * @author BrokenArrow
  * @author Byrial
+ * @author Claudia Hattitten
  * @author Codex Sinaiticus
  * @author Dalibor Bosits
  * @author Darth Kule
@@ -33,6 +36,7 @@
  * @author GerardM
  * @author Hamilton Abreu
  * @author Helix84
+ * @author Holek
  * @author Huji
  * @author IAlex
  * @author INkubusse
@@ -47,6 +51,7 @@
  * @author Lejonel
  * @author Li-sung
  * @author Lloffiwr
+ * @author MF-Warburg
  * @author Malafaya
  * @author McDutchie
  * @author Meno25
@@ -60,11 +65,14 @@
  * @author Nike
  * @author Node ue
  * @author Octahedron80
+ * @author Onecountry
  * @author OsamaK
  * @author PhiLiP
  * @author Platonides
  * @author Prima klasy4na
+ * @author Prometheus.pyrphoros
  * @author Purodha
+ * @author Rancher
  * @author Raymond
  * @author Ryan Schmidt
  * @author SPQRobin
@@ -133,7 +141,7 @@ This is the toolbar: [[Image:Toolbar.png]]",
 'tog-externaldiff'            => "[[Special:Preferences]], tab 'Edit'. Offers user to use an external diff program by default.",
 'tog-showjumplinks'           => 'Toggle option used in [[Special:Preferences]]. The "jump to" part should be the same with {{msg-mw|jumpto}} (or you can use <nowiki>{{int:jumpto}}</nowiki>). Thess links are shown in some of the older skins as "jump to: navigation, search" but they are hidden by default (you can enable them with this option).',
 'tog-uselivepreview'          => 'Toggle option used in [[Special:Preferences]]. Live preview is an experimental feature (unavailable by default) to use edit preview without loading the page again.',
-'tog-forceeditsummary'        => 'Toggle option used in [[Special:Preferences]].',
+'tog-forceeditsummary'        => "Toggle option used in [[Special:Preferences]] to force an edit ''{{msg-mw|summary}}''.",
 'tog-watchlisthideown'        => "[[Special:Preferences]], tab 'Watchlist'. Offers user to hide own edits from watchlist.",
 'tog-watchlisthidebots'       => "[[Special:Preferences]], tab 'Watchlist'. Offers user to hide bot edits from watchlist.",
 'tog-watchlisthideminor'      => "[[Special:Preferences]], tab 'Watchlist'. Offers user to hide minor edits from watchlist.",
@@ -359,7 +367,8 @@ Also used as title of [[Special:Search]] page in [[Special:SpecialPages]].
 'history_short'     => 'Text used on the history tab.
 
 {{Identical|History}}',
-'updatedmarker'     => 'Displayed in the page history (of a page you are [[Special:Watchlist|watching]]), when the page has been edited since the last time you visited it.',
+'updatedmarker'     => 'Displayed in the page history (of a page you are [[Special:Watchlist|watching]]), when the page has been edited since the last time you visited it. This feature is used if [[mw:Manual:$wgShowUpdatedMarker|$wgShowUpdatedMarker]] is enabled.',
+'info_short'        => '{{Identical|Information}}',
 'printableversion'  => 'Display name for link in wiki menu that leads to a printable version of a content page. Example: see one but last menu item on [[Main Page]].',
 'permalink'         => 'Display name for a permanent link to the current revision of a page. When the page is edited, permalink will still link to this revision. Example: Last menu link on [[{{MediaWiki:Mainpage}}]]',
 'print'             => '{{Identical|Print}}',
@@ -375,18 +384,23 @@ Also used as title of [[Special:Search]] page in [[Special:SpecialPages]].
 'delete'            => 'Name of the Delete tab shown for admins. Should be in the imperative mood.
 
 {{Identical|Delete}}',
-'deletethispage'    => '{{Identical|Delete this page}}',
+'deletethispage'    => 'In the skins Classic/Standard, Cologne Blue and Nostalgia this is the text for link to delete the page in admin view.
+{{Identical|Delete this page}}',
 'undelete_short'    => "It is tab label. It's really can be named ''nstab-undelete''.",
 'protect'           => 'Name of protect tab displayed for admins
 
 {{Identical|Protect}}',
 'protect_change'    => 'Text on links for each entry in [[Special:ProtectedPages]] to change the protection of pages (only displayed to admins).
 {{Identical|Change}}',
-'protectthispage'   => '{{Identical|Protect this page}}',
+'protectthispage'   => 'In the skins Classic/Standard, Cologne Blue and Nostalgia this is the text for link to protect the page in admin view.
+{{Identical|Protect this page}}',
 'unprotect'         => 'Name of unprotect tab displayed for admins
 
 {{Identical|Unprotect}}',
-'unprotectthispage' => '{{Identical|Unprotect this page}}',
+'unprotectthispage' => 'In the skins Classic/Standard, Cologne Blue and Nostalgia this is the text for link to unprotect the page in admin view.
+{{Identical|Unprotect this page}}',
+'newpage'           => '{{Identical|New page}}',
+'talkpage'          => 'In the skins Classic/Standard, Cologne Blue and Nostalgia this is the text for link to discuss the page.',
 'talkpagelinktext'  => 'Used as name of links going to talk page in some places, like in [[Special:RecentChanges]], [[Special:Allmessages]], [[Special:Logs]], and [[Special:Watchlist/edit]].
 
 {{Identical|Talk}}',
@@ -397,11 +411,13 @@ Also used as title of [[Special:Search]] page in [[Special:SpecialPages]].
 'talk'              => 'Used as display name for the tab to all talk pages. These pages accompany all content pages and can be used for discussing the content page. Example: [[Talk:Example]].
 
 {{Identical|Discussion}}',
-'views'             => 'Subtitle for the list of available views, for the current page. In "monobook" skin the list of views are shown as tabs, so this sub-title is not shown.  To check when and where this message is displayed switch to "simple" skin.
+'views'             => 'Subtitle for the list of available views, for the current page. In "monobook" skin the list of views are shown as tabs, so this sub-title is not shown. For an example, see [http://translatewiki.net/wiki/Main_Page?useskin=simple Main Page using simple skin].
 
-\'\'\'Note:\'\'\' This is "views" as in "appearances"/"representations", \'\'\'not\'\'\' as in "visits"/"accesses".',
+\'\'\'Note:\'\'\' This is "views" as in "appearances"/"representations", \'\'\'not\'\'\' as in "visits"/"accesses".
+{{Identical|View}}',
 'toolbox'           => 'The title of the toolbox below the search menu.',
-'otherlanguages'    => 'This message is shown under the toolbox. It is used if there are interwiki links added to the page, like <tt><nowiki>[[</nowiki>en:Interwiki article]]</tt>.',
+'otherlanguages'    => 'This message is shown under the toolbox. It is used if there are interwiki links added to the page, like <tt><nowiki>[[</nowiki>en:Interwiki article]]</tt>.
+{{Identical|Otherlanguages}}',
 'redirectedfrom'    => 'The text displayed when a certain page is redirected to another page. Variable <tt>$1</tt> contains the name of the page user came from.',
 'redirectpagesub'   => 'Displayed under the page title of a page which is a redirect to another page, see [{{fullurl:Project:Translators|redirect=no}} Project:Translators] for example.
 
@@ -438,26 +454,25 @@ See also [[MediaWiki:Lastmodifiedatby/{{SUBPAGENAME}}]].',
 {{doc-important|Do not translate <tt>Project:</tt> part.}}",
 'disclaimers'          => 'Used as display name for the link to [[{{MediaWiki:Disclaimerpage}}]] shown at the bottom of every page on the wiki. Example [[{{MediaWiki:Disclaimerpage}}|{{MediaWiki:Disclaimers}}]].',
 'disclaimerpage'       => 'Used as page for that contains the site disclaimer. Used at the bottom of every page on the wiki. Example: [[{{MediaWiki:Disclaimerpage}}|{{MediaWiki:Disclaimers}}]].
-{{doc-important|Do not change <tt>Project:</tt> part.}}',
+{{doc-important|Do not change the "<tt>Project:</tt>" part.}}',
 'edithelp'             => 'This is the text that appears on the editing help link that is near the bottom of the editing page',
 'edithelppage'         => 'The help page displayed when a user clicks on editing help link which is present on the right of Show changes button.
-{{doc-important|Do not change <tt>Help:</tt> part.}}',
+{{doc-important|Do not change the "<tt>Help:</tt>" part.}}',
 'helppage'             => 'The link destination used by default in the sidebar, and in {{msg|noarticletext}}.
-{{doc-important|Do not change <tt>Help:</tt> part.}}
+{{doc-important|Do not change the "<tt>Help:</tt>" part.}}
 {{Identical|HelpContent}}',
 'mainpage'             => 'Defines the link and display name of the main page of the wiki. Shown as the top link in the navigation part of the interface. Please do not change it too often, that could break things!
 
 {{Identical|Main page}}',
 'mainpage-description' => 'The same as {{msg|mainpage|pl=yes}}, used as link text on [[MediaWiki:Sidebar]]. This makes it possible to the change the link destination (the message "mainpage") without changing the link text or without disabling translations.',
 'policy-url'           => 'Description: The URL of the project page describing the policies of the wiki. This is shown below every page (the left link).
-{{doc-important|Do not change "Project:" part.}}',
+{{doc-important|Do not change the "<tt>Project:</tt>" part.}}',
 'portal'               => "Display name for the 'Community portal', shown in the sidebar menu of all pages. The target page is meant to be a portal for users where useful links are to be found about the wiki's operation.",
 'portal-url'           => 'Description: The URL of the community portal. This is shown in the sidebar by default (removed on translatewiki.net).
-{{doc-important|Do not change "Project:" part.}}',
+{{doc-important|Do not change the "<tt>Project:</tt>" part.}}',
 'privacy'              => 'Used as page name and link at the bottom of each wiki page. The page contains a legal notice providing information about the use of personal information by the website owner.of the site. Example: [[Privacy policy]].',
 'privacypage'          => 'Used as page for that contains the privacy policy. Used at the bottom of every page on the wiki. Example: [[{{MediaWiki:Privacypage}}|{{MediaWiki:Privacy}}]].
-
-{{doc-important|Do not change <tt>Project:</tt> part.}}',
+{{doc-important|Do not change the "<tt>Project:</tt>" part.}}',
 
 'badaccess'        => 'Title shown within page indicating unauthorized access.',
 'badaccess-group0' => 'Shown when you are not allowed to do something.',
@@ -475,7 +490,7 @@ See also [[MediaWiki:Lastmodifiedatby/{{SUBPAGENAME}}]].',
 Do '''not''' replace SITENAME with a translation of Wikipedia or some encycopedic additions. The message has to be neutral for all projects.",
 'pagetitle-view-mainpage' => '{{optional}}',
 'retrievedfrom'           => 'Message which appears in the source of every page, but it is hidden. It is shown when printing. $1 is a link back to the current page: {{FULLURL:{{FULLPAGENAME}}}}.',
-'youhavenewmessages'      => 'The orange message appearing when someone edited your user talk page.
+'youhavenewmessages'      => 'The blue message appearing when someone edited your user talk page.
 The format is: "{{int:youhavenewmessages| [[MediaWiki:Newmessageslink/{{SUBPAGENAME}}|{{int:newmessageslink}}]] |[[MediaWiki:Newmessagesdifflink/{{SUBPAGENAME}}|{{int:newmessagesdifflink}}]]}}"',
 'newmessageslink'         => 'This is the first link displayed in an orange rectangle when a user gets a message on his talk page. Used in message {{msg-mw|youhavenewmessages}} (as parameter $1).
 
@@ -529,7 +544,7 @@ HTML markup cannot be used.
 'nstab-main'      => 'The name for the tab of the main namespace. Example: [[Example]]
 
 {{Identical|Page}}',
-'nstab-user'      => 'The name for the tab of the user namespace. Example: [[User:Example]]
+'nstab-user'      => 'The name for the tab of the user namespace. Example: [[User:Example]]. It is possible to use <nowiki>{{GENDER:{{BASEPAGENAME}}|male form|female form}}</nowiki> if needed.
 
 {{Identical|User page}}',
 'nstab-special'   => 'The name for the tab of the special namespace. Example: [[Special:Version]]',
@@ -651,7 +666,8 @@ $1 is a filename, I think.',
 'nologin'                    => 'A message shown in the log in form. $1 is a link to the account creation form, and the text of it is "[[MediaWiki:Nologinlink/{{SUBPAGENAME}}|{{int:nologinlink}}]]".',
 'nologinlink'                => 'Text of the link to the account creation form. Before that link, the message [[MediaWiki:Nologin/{{SUBPAGENAME}}]] appears.
 {{Identical|Create an account}}',
-'createaccount'              => 'The title of Special:CreateAccount, where users can register a new account. Used on Special:SpecialPages, and also on the submit button in the form where you register a new account.',
+'createaccount'              => 'The title of Special:CreateAccount, where users can register a new account. Used on Special:SpecialPages, and also on the submit button in the form where you register a new account.
+{{Identical|Create account}}',
 'gotaccount'                 => 'A message shown in the account creation form. $1 is a link to the log in form, and the text of it is "[[MediaWiki:Gotaccountlink/{{SUBPAGENAME}}|{{int:gotaccountlink}}]]".',
 'gotaccountlink'             => 'Text of the link to the log in form. Before that link, the message [[MediaWiki:Gotaccount/{{SUBPAGENAME}}]] appears.
 
@@ -666,7 +682,7 @@ $1 is a filename, I think.',
 
 <nowiki>{{</nowiki>[[Gender|GENDER]]<nowiki>}}</nowiki> is supported.',
 'nosuchuser'                 => 'Displayed when trying to log in with an unexisting username. When you are not allowed to create an account, the message {{msg|nosuchusershort}} is displayed.',
-'nosuchusershort'            => "Displayed when trying to log in with an unexisting username. This message is only shown when you can't create an account, otherwise the message {{msg|nosuchusershort}} is displayed.",
+'nosuchusershort'            => "Displayed when trying to log in with a non-existant username. This message is only shown when you can't create an account, otherwise the message {{msg|nosuchusershort}} is displayed.",
 'login-userblocked'          => 'This message supports GENDER, username is available in $1.',
 'wrongpasswordempty'         => 'Error message displayed when entering a blank password',
 'passwordtooshort'           => 'This message is shown at
@@ -706,9 +722,11 @@ Parameters:
 *Parameter $3 is a password (randomly generated).
 *Parameter $4 is a URL to the wiki',
 'login-throttled'            => 'Error message shown at [[Special:UserLogin]] after 5 wrong passwords. The hardcoded waiting time is 300 seconds.',
+'loginlanguagelabel'         => 'Used on [[Special:UserLogin]] if $wgLoginLanguageSelector is true.
+{{Identical|Language}}',
 
 # Password reset dialog
-'resetpass'                 => 'The caption of [[Special:Resetpass]]
+'resetpass'                 => 'The caption of [[Special:ChangePassword]]
 
 {{Identical|Change password}}',
 'resetpass_header'          => 'Header on box on special page [[Special:ChangePassword]].
@@ -717,14 +735,14 @@ Parameters:
 'oldpassword'               => "Used on the 'User profile' tab of 'my preferences'. This is the text next to an entry box for the old password in the 'change password' section.",
 'newpassword'               => '{{Identical|New password}}',
 'retypenew'                 => "Appears on the 'User profile' tab of the 'Preferences' special page in the 'Change password' section. It appears next to the text box for entering the new password a second time.",
-'resetpass_submit'          => 'Submit button on [[Special:Resetpass]]',
+'resetpass_submit'          => 'Submit button on [[Special:ChangePassword]]',
 'resetpass-submit-loggedin' => 'Button on [[Special:ResetPass]] to submit new password.
 
 {{Identical|Change password}}',
 'resetpass-submit-cancel'   => '{{Identical|Cancel}}
 
 Used on [[Special:ResetPass]]',
-'resetpass-wrong-oldpass'   => 'Error message shown on [[Special:Resetpass]] when the old password is not valid.',
+'resetpass-wrong-oldpass'   => 'Error message shown on [[Special:ChangePassword]] when the old password is not valid.',
 'resetpass-temp-password'   => 'The label of the input box for the temporary password (received by e-mail) on the form displayed after logging in with a temporary password.',
 
 # Edit page toolbar
@@ -781,7 +799,7 @@ Tip for internal links',
 'showpreview'                      => 'The text of the button to preview the page you are editing. See also {{msg|showdiff}} and {{msg|savearticle}} for the other buttons.',
 'showdiff'                         => 'Button below the edit page. See also {{msg|showpreview}} and {{msg|savearticle}} for the other buttons.',
 'anoneditwarning'                  => 'Shown when editing a page anonymously.',
-'missingsummary'                   => 'The text "sdit summary" is in {{msg-mw|summary}}.
+'missingsummary'                   => 'The text "edit summary" is in {{msg-mw|summary}}.
 The text "Save" is in {{msg-mw|savearticle}}.',
 'missingcommenttext'               => 'This message is shown, when the textbox by a new-section is empty.',
 'missingcommentheader'             => '
@@ -817,7 +835,8 @@ Parameters:
 'loginreqlink'                     => 'Take a look on inflection. Used as parameter in {{msg-mw|loginreqpagetext}}, {{msg-mw|whitelistedittext}}, {{msg-mw|watchlistanontext‎}} and {{msg-mw|Confirmemail needlogin}}.
 
 {{Identical|Log in}}',
-'loginreqpagetext'                 => '* $1 is a link to [[Special:UserLogin]] with {{msg-mw|loginreqlink}} as link description',
+'loginreqpagetext'                 => 'This message is displayed if an anonymous reader attempts to access a page which is only available to logged-in users.
+* $1 is a link to [[Special:UserLogin]] with {{msg-mw|loginreqlink}} as link description',
 'accmailtitle'                     => 'Page title when temporary password was sent to a user via email.',
 'accmailtext'                      => "The message shown when a temporary password has been sent to the user's email address.
 
@@ -835,11 +854,13 @@ See also {{msg-mw|Noarticletext-nopermission}}.',
 'clearyourcache'                   => 'Text at the top of .js/.css pages',
 'usercssyoucanpreview'             => "Text displayed on every css page. The 'Show preview' part should be the same as {{msg-mw|showpreview}} (or you can use <nowiki>{{int:showpreview}}</nowiki>).",
 'userjsyoucanpreview'              => 'Text displayed on every js page.',
+'usercsspreview'                   => 'Text displayed on preview of every user .css subpage',
+'userjspreview'                    => 'Text displayed on preview of every user .js subpage',
 'updated'                          => '{{Identical|Updated}}',
 'previewnote'                      => 'Note displayed when clicking on Show preview',
 'editing'                          => "Shown as page title when editing a page. \$1 is the name of the page that is being edited. Example: \"''Editing Main Page''\".",
 'editingsection'                   => 'The variable $1 is the page name.  This message displays at the top of the page when a user is editing a page section.',
-'explainconflict'                  => 'The text "Save page" is in {{msg-mw|savearticle}}.',
+'explainconflict'                  => 'Appears at the top of a page when there is an edit conflict.',
 'storedversion'                    => 'This is used in an edit conflict as the label for the top revision that has been stored, as opposed to your version that has not been stored which is shown at the bottom of the page.',
 'yourdiff'                         => '',
 'copyrightwarning'                 => 'Copyright warning displayed under the edit box in editor',
@@ -863,6 +884,7 @@ See also {{msg-mw|Noarticletext-nopermission}}.',
 Please report at [[Support]] if you are unable to properly translate this message. Also see [[bugzilla:14246]]',
 'recreate-moveddeleted-warn'       => 'Warning shown when creating a page which has already been deleted. See for example [[Test]].',
 'moveddeleted-notice'              => 'Shown on top of a deleted page in normal view modus ([http://translatewiki.net/wiki/Test example]).',
+'edit-conflict'                    => "An 'Edit conflict' happens when more than one edit is being made to a page at the same time. This would usually be caused by separate individuals working on the same page. However, if the system is slow, several edits from one individual could back up and attempt to apply simultaneously - causing the conflict.",
 
 # Parser/template warnings
 'expensive-parserfunction-warning'        => 'On some (expensive) [[MetaWikipedia:Help:ParserFunctions|parser functions]] (e.g. <code><nowiki>{{#ifexist:}}</nowiki></code>) there is a limit of how many times it may be used. This is an error message shown when the limit is exceeded.
@@ -914,12 +936,16 @@ Please report at [[Support]] if you are unable to properly translate this messag
 'last'                   => 'Link in page history
 
 {{Identical|Last}}',
-'page_first'             => "This is part of the navigation message on the top and bottom of Special pages which are lists of things in alphabetical order, e.g. the '[[Special:Categories|Categories]]' special page. It is followed by the message {{msg-mw|Viewprevnext}}.",
+'page_first'             => "This is part of the navigation message on the top and bottom of Special pages which are lists of things in alphabetical order, e.g. the '[[Special:Categories|Categories]]' special page. It is followed by the message {{msg-mw|Viewprevnext}}.
+{{Identical|First}}",
 'page_last'              => "This is part of the navigation message on the top and bottom of Special pages which are lists of things in alphabetical order, e.g. the '[[Special:Categories|Categories]]' special page. It is followed by the message {{msg-mw|Viewprevnext}}.
 
 {{Identical|Last}}",
 'histlegend'             => 'Text in history page. Refers to {{msg-mw|cur}}, {{msg-mw|last}}, and {{msg-mw|minoreditletter}}.',
 'history-fieldset-title' => 'Fieldset label in the edit history pages.',
+'history-show-deleted'   => 'CheckBox to show only per [[mw:Manual:RevisionDelete|RevisonDelete]] deleted versions.
+
+Used in History and [[Special:Contributions]].',
 'histfirst'              => 'Used in page history.',
 'histlast'               => 'Used in page history.',
 'historyempty'           => 'Text in page history for empty page revisions
@@ -1151,7 +1177,7 @@ Viewprevnext is sometimes preceded by the {{msg-mw|Showingresults}} or {{msg-mw|
 'searchmenu-new'                 => 'An option shown in a menu beside search form offering a red link to the not yet existing page having the specified title (when using the default MediaWiki search engine).',
 'searchhelp-url'                 => '{{Identical|HelpContent}}
 Description: The URL of the search help page.
-{{doc-important|Do not change "Help:" part.}}',
+{{doc-important|Do not change the "<tt>Help:</tt>" part.}}',
 'searchprofile-articles'         => "A quick link in the advanced search box on [[Special:Search]]. Clicking on this link starts a search in the content pages of the wiki.
 
 A 'content page' is a page that forms part of the purpose of the wiki. It includes the main page and pages in the main namespace and any other namespaces that are included when the wiki is customised. For example on Wikimedia Commons 'content pages' include pages in the file and category namespaces. On Wikinews 'content pages' include pages in the Portal namespace. For technical definition of 'content namespaces' see [http://www.mediawiki.org/wiki/Manual:Using_custom_namespaces#Content_namespaces Mediawiki].
@@ -1165,8 +1191,8 @@ Possible alternatives to the word 'content' are 'subject matter' or 'wiki subjec
 'searchprofile-advanced'         => 'An option in the [http://translatewiki.net/wiki/Special:Search Special:Search] page.
 
 {{Identical|Advanced}}',
-'searchprofile-articles-tooltip' => '{{Identical|Search in $1}}',
-'searchprofile-project-tooltip'  => '{{Identical|Search in $1}}',
+'searchprofile-articles-tooltip' => '$1 is list of namespaces. {{Identical|Search in $1}}',
+'searchprofile-project-tooltip'  => '$1 is list of namespaces. {{Identical|Search in $1}}',
 'search-result-size'             => 'Shown per line of a [[Special:Search|search result]]
 * $1 is the size of the page in bytes, but no need to add "byte" or similar as the unit is added by special function.
 * $2 is the sum of all words in this page.',
@@ -1203,7 +1229,7 @@ This is a search result (and I guess search engine) dependent messages. I do not
 'powersearch-ns'                 => 'Used in the extended search form at [[Special:Search]]',
 'powersearch-redir'              => 'Used in the extended search form at [[Special:Search]]',
 'powersearch-field'              => 'Used in the extended search form at [[Special:Search]]',
-'powersearch-togglelabel'        => 'Used in [http://translatewiki.net/w/i.php?title=Special:Search&advanced=1 Advanced search]. Synomym: "select" as verb.',
+'powersearch-togglelabel'        => 'Used in [http://translatewiki.net/w/i.php?title=Special:Search&advanced=1 Advanced search]. Synonym: "Select" as verb.',
 'powersearch-toggleall'          => '"All" refers to namespaces. It is used in Advanced search: http://translatewiki.net/w/i.php?title=Special:Search&advanced=1
 {{Identical|All}}',
 'powersearch-togglenone'         => '"None" refers to namespaces. It is used in Advanced search: http://translatewiki.net/w/i.php?title=Special:Search&advanced=1
@@ -1252,7 +1278,8 @@ This is a search result (and I guess search engine) dependent messages. I do not
 {{Identical|Save}}',
 'resetprefs'                    => 'Button for resetting changes in the preferences page.',
 'restoreprefs'                  => 'Used in [[Special:Preferences]]',
-'prefs-editing'                 => 'Title of a tab in [[Special:Preferences]].',
+'prefs-editing'                 => 'Title of a tab in [[Special:Preferences]].
+When changing this message, please also update {{msg-mw|vector-editwarning-warning}} which references to this message.',
 'rows'                          => 'Used on [[Special:Preferences]], "Editing" section in the "Size of editing window" fieldset',
 'columns'                       => 'Used on [[Special:Preferences]], "Editing" section in the "Size of editing window" fieldset',
 'searchresultshead'             => 'This is the label of the tab in [[Special:Preferences|my preferences]] which contains options for searching the wiki.
@@ -1289,7 +1316,9 @@ Shown as legend of the second fieldset of the tab 'Search' in [[Special:Preferen
 'uid'                           => '{{Identical|User ID}}',
 'prefs-memberingroups'          => 'This message is shown on [[Special:Preferences]], first tab. See also {{msg-mw|prefs-memberingroups-type}}.',
 'prefs-memberingroups-type'     => '{{optional}}
-$1 is list of group names, $2 is list of group member names. Label for these is {{msg-mw|prefs-memberingroups}}.',
+Parameters:
+* $1 is list of group names
+* $2 is list of group member names. Label for these is {{msg-mw|prefs-memberingroups}}.',
 'prefs-registration'            => 'Used in [[Special:Preferences]].',
 'prefs-registration-date-time'  => '{{optional}}
 Used in [[Special:Preferences]]. Parameters are:
@@ -1316,7 +1345,8 @@ Used in [[Special:Preferences]]. Parameters are:
 'gender-female'                 => 'Used in [[Special:Preferences]], first tab, as one of the selectable options of the {{msg-mw|gender}} prompt. Choosing it indicates that the grammatical gender of the user name should be "female" for those languages having a "normal" female grammatical gender.
 {{Identical|Female}}',
 'email'                         => '{{Identical|E-mail}}',
-'prefs-help-realname'           => 'In user preferences.',
+'prefs-help-realname'           => 'In user preferences.
+{{Identical|Real name attribution}}',
 'prefs-help-email'              => 'Shown as explanation text on [[Special:Preferences]] > {{int:prefs-personal}} > {{int:email}}.',
 'prefs-info'                    => "Header for the box giving basic information on the user account, displayed on the 'user profile' tab of the [[Special:Preferences|user preferences]] special page.",
 'prefs-signature'               => '{{Identical|Signature}}',
@@ -1347,8 +1377,15 @@ Used in [[Special:Preferences]], tab "Recent changes".',
 'editinguser'                    => "Appears on [[Special:UserRights]]. The '''last part''' of the message '''should remain completely untranslated''', but if your language has S-O-V word order, the verb can follow it.",
 'userrights-editusergroup'       => '{{Identical|Edit user groups}}',
 'saveusergroups'                 => 'Button text when editing user groups',
-'userrights-groupsmember'        => 'When editing user groups',
-'userrights-groupsmember-auto'   => 'Implicit is for groups that are automatically added to the user (such as "autoconfirmed"); cf. {{msg-mw|userrights-groupsmember}}',
+'userrights-groupsmember'        => 'Used when editing user groups in [[Special:Userrights]]. The messsage is followed by a list of group names.
+
+Parameters:
+* $1 - optional, for PLURAL use, the number of items in the list following the message. Avoid PLURAL, if your language can do without.',
+'userrights-groupsmember-auto'   => 'Used when editing user groups in [[Special:Userrights]]. The messsage is followed by a list of group names.
+"Implicit" is for groups that the user was automatically added to (such as "autoconfirmed"); cf. {{msg-mw|userrights-groupsmember}}
+
+Parameters:
+* $1 - optional, for PLURAL use, the number of items in the list following the message. Please avoid PLURAL, if your language can do without.',
 'userrights-groups-help'         => 'Instructions displayed on [[Special:UserRights]].',
 'userrights-reason'              => 'Text beside log field when editing user groups
 
@@ -1358,13 +1395,20 @@ Used in [[Special:Preferences]], tab "Recent changes".',
 See http://meta.wikimedia.org/w/index.php?title=Special%3ALog&type=rights for a usage of local databases: username@barwiki',
 'userrights-nologin'             => "Error displayed on [[Special:UserRights]] when you aren't logged in. If you are logged in, but don't have the correct permission, you see {{msg|userrights-notallowed|pl=yes}}.",
 'userrights-notallowed'          => "Error displayed on [[Special:UserRights]] when you don't have the permission.",
-'userrights-changeable-col'      => 'Used in [[Special:UserRights]].',
-'userrights-unchangeable-col'    => 'Used in [[Special:UserRights]].',
+'userrights-changeable-col'      => 'Used when editing user groups in [[Special:Userrights]]. The messsage is the head of a column of group assignements.
+
+Parameters:
+* $1 - optional, for PLURAL use, the number of items in the column following the message. Avoid PLURAL, if your language can do without.',
+'userrights-unchangeable-col'    => 'Used when editing user groups in [[Special:Userrights]]. The messsage is the head of a column of group assignements.
+
+Parameters:
+* $1 - optional, for PLURAL use, the number of items in the column following the message. Avoid PLURAL, if your language allows that.',
 'userrights-irreversible-marker' => '{{optional}}',
 
 # Groups
 'group'               => '{{Identical|Group}}',
-'group-user'          => 'Name of group',
+'group-user'          => 'Name of group
+{{Identical|User}}',
 'group-autoconfirmed' => 'Name of group. On Wikimedia sites autoconfirmed users are users which are older than 4 days. After those 4 days, they have more rights.',
 'group-bot'           => 'Name of group',
 'group-sysop'         => 'Name of group',
@@ -1444,7 +1488,7 @@ See also
 * {{msg|right-hideuser|pl=yes}}
 * {{msg|right-suppressrevision|pl=yes}}',
 'right-deletedhistory'        => '{{doc-right|deletedhistory}}',
-'right-deletedtext'           => '{{doc-right|deletedcontent}}',
+'right-deletedtext'           => '{{doc-right|deletedtext}}',
 'right-browsearchive'         => '{{doc-right|browsearchive}}',
 'right-undelete'              => '{{doc-right|undelete}}',
 'right-suppressrevision'      => 'This is a user right that is part of the [[mw:RevisionDelete|RevisionDelete]] feature.
@@ -1593,16 +1637,18 @@ Parameter $2 is a date and time.
 Parameter $3 is a date.
 Parameter $4 is a time.',
 'rclistfrom'                       => 'Used on [[Special:RecentChanges]]. Parameter $1 is a link to the revision of a specific date and time. The date and the time are the link description (without split of date and time, [[bugzilla:19104|Bug 19104]]). The corrosponding message is {{msg-mw|Rcnotefrom}}.',
-'rcshowhideminor'                  => 'Option text in [[Special:RecentChanges]]',
-'rcshowhidebots'                   => "Option text in [[Special:RecentChanges]]. $1 is the 'show/hide' command, with the text taken from either [[Mediawiki:Show]] or [[Mediawiki:Hide]].
-
+'rcshowhideminor'                  => "Option text in [[Special:RecentChanges]]. Parameters:
+* $1 is the 'show/hide' command, with the text taken from either {{msg-mw|show}} or {{msg-mw|hide}}.",
+'rcshowhidebots'                   => "Option text in [[Special:RecentChanges]]. Parameters:
+* $1 is the 'show/hide' command, with the text taken from either {{msg-mw|show}} or {{msg-mw|hide}}.
 {{Identical|$1 bots}}",
 'rcshowhideliu'                    => 'Option text in [[Special:RecentChanges]]',
-'rcshowhideanons'                  => "Option text in [[Special:RecentChanges]]
-* $1 is 'hide' or 'show'",
-'rcshowhidepatr'                   => "Option text in [[Special:RecentChanges]]. $1 is the 'show/hide' command, with the text taken from either [[Mediawiki:Show]] or [[Mediawiki:Hide]].",
-'rcshowhidemine'                   => 'Parameters:
-* $1 can be "show" or "hide"',
+'rcshowhideanons'                  => "Option text in [[Special:RecentChanges]]. Parameters:
+* $1 is the 'show/hide' command, with the text taken from either {{msg-mw|show}} or {{msg-mw|hide}}.",
+'rcshowhidepatr'                   => "Option text in [[Special:RecentChanges]]. Parameters:
+* $1 is the 'show/hide' command, with the text taken from either {{msg-mw|show}} or {{msg-mw|hide}}.",
+'rcshowhidemine'                   => "Option text in [[Special:RecentChanges]]. Parameters:
+* $1 is the 'show/hide' command, with the text taken from either {{msg-mw|show}} or {{msg-mw|hide}}.",
 'rclinks'                          => "Used on [[Special:RecentChanges]].
 * '''\$1''' is a list of different choices with number of pages to be shown.<br />&nbsp;Example: \"''50{{int:pipe-separator}}100{{int:pipe-separator}}250{{int:pipe-separator}}500\".
 * '''\$2''' is a list of clickable links with a number of days for which recent changes are to be displayed.<br />&nbsp;Example: \"''1{{int:pipe-separator}}3{{int:pipe-separator}}7{{int:pipe-separator}}14{{int:pipe-separator}}30''\".
@@ -1656,6 +1702,7 @@ Text displayed when uploading a file using [[Special:Upload]].",
 'filename'                    => '{{Identical|Filename}}',
 'filedesc'                    => '{{Identical|Summary}}',
 'fileuploadsummary'           => '{{Identical|Summary}}',
+'filereuploadsummary'         => 'Label of textearea in Special:Upload when uploading a new version of existing file.',
 'filesource'                  => 'On page [[Special:Upload]] if defined $wgUseCopyrightUpload for detailed copyright information forms. This is source of file.
 
 {{Identical|Source}}',
@@ -1702,7 +1749,8 @@ Parameters:
 * $1 is a link to the deletion log, with the text from {{msg|deletionlog}}.',
 'filename-prefix-blacklist'   => "Do not translate the file name prefixes before the hash mark (#). Leave all the wiki markup, including the spaces, as is. You can translate the text, including 'Leave this line exactly as it is'. The first line of this messages has one (1) leading space.",
 
-'upload-file-error' => 'Unused on core [http://svn.wikimedia.org/viewvc/mediawiki/trunk/phase3/includes/specials/SpecialUpload.php?r1=53161&r2=53282].
+'upload-proto-error-text' => '"Remote upload" is explained on [http://en.wikipedia.org/wiki/Uploading_and_downloading#Remote_upload Wikipedia].',
+'upload-file-error'       => 'Unused on core [http://svn.wikimedia.org/viewvc/mediawiki/trunk/phase3/includes/specials/SpecialUpload.php?r1=53161&r2=53282].
 
 Extensions making use of it:
 *ImportFreeImages
@@ -1775,7 +1823,8 @@ If \'scheme\' is difficult to translate, then you could use \'prefix\' instead.'
 {{Identical|Date}}',
 'filehist-thumb'                    => 'Shown in the file history list of a file description page.
 
-Example: [[:Image:Addon-icn.png]]',
+Example: [[:Image:Addon-icn.png]]
+{{Identical|Thumbnail}}',
 'filehist-thumbtext'                => "Shown in the file history list of a file description page.
 * '''$1''' is a time followed by a date, e.g. ''10:23, 18 april 2007''.
 * '''$2''' is the date,
@@ -1937,7 +1986,7 @@ Possible alternatives to the word 'content' are 'subject matter' or 'wiki subjec
 'statistics-mostpopular'       => 'Used in [[Special:Statistics]]',
 
 'disambiguations'      => 'Name of a special page displayed in [[Special:SpecialPages]].',
-'disambiguationspage'  => 'This message is the name of the template used for marking disambiguation pages. It is used by [[Special:Disambiguations]] to find all pages that links to disambiguation pages.
+'disambiguationspage'  => 'This message is the name of the template used for marking disambiguation pages. It is used by [[Special:Disambiguations]] to find all pages which link to disambiguation pages.
 
 {{doc-important|Don\'t translate the "Template:" part!}}',
 'disambiguations-text' => "This block of text is shown on [[:Special:Disambiguations]].
@@ -2016,7 +2065,8 @@ $1 is a page title",
 'usercreated'             => 'Used in [[Special:ListUsers]].
 * <code>$1</code> is a date
 * <code>$2</code> is a time',
-'newpages'                => 'Name of special page displayed in [[Special:SpecialPages]]',
+'newpages'                => 'Name of special page displayed in [[Special:SpecialPages]]
+{{Identical|New page}}',
 'newpages-username'       => '{{Identical|Username}}',
 'ancientpages'            => 'The page title of [[Special:Ancientpages]]. [[mw:Manual:Interface/Special pages title|mw manual]]',
 'move'                    => 'Name of Move tab. Should be in the imperative mood.
@@ -2024,6 +2074,12 @@ $1 is a page title",
 {{Identical|Move}}',
 'movethispage'            => '{{Identical|Move this page}}',
 'unusedimagestext'        => 'Header message of [[Special:UnusedFiles]]',
+'nopagetitle'             => 'Used as title of [[Special:MovePage]], when the oldtitle does not exist.
+
+The text is {{msg-mw|nopagetext}}.',
+'nopagetext'              => 'Used as text of [[Special:MovePage]], when the oldtitle does not exist.
+
+The title is {{msg-mw|nopagetitle}}.',
 'pager-newer-n'           => "This is part of the navigation message on the top and bottom of Special pages which are lists of things in date order, e.g. the User's contributions page. It is passed as the second argument of {{msg-mw|Viewprevnext}}. $1 is the number of items shown per page.",
 'pager-older-n'           => "This is part of the navigation message on the top and bottom of Special pages which are lists of things in date order, e.g. the User's contributions page. It is passed as the first argument of {{msg-mw|Viewprevnext}}. $1 is the number of items shown per page.",
 'suppress'                => '{{Identical|Oversight}}',
@@ -2035,6 +2091,7 @@ $1 is a page title",
 'booksources-go'            => 'Name of button in [[Special:BookSources]]
 
 {{Identical|Go}}',
+'booksources-invalid-isbn'  => 'This message is displayed after an invalid ISBN is entered on Special:Booksources.',
 
 # Special:Log
 'specialloguserlabel'  => 'Used in [[Special:Log]].
@@ -2116,7 +2173,9 @@ $1 is a list of internet protocols.',
 
 *$1 is the address of an external link
 *$2 is the page containing the external link',
-'linksearch-error' => 'Error message generated by [[Special:LinkSearch]].',
+'linksearch-error' => "Error message generated by [[Special:LinkSearch]].
+
+You can apparently use 'URL' instead of 'hostname'.",
 
 # Special:ListUsers
 'listusersfrom'      => 'identical with {{msg-mw|activeusers-from}}',
@@ -2180,12 +2239,14 @@ See also {{msg|listgrouprights-addgroup}}.',
 * $2 is the number of group names in $1.',
 
 # E-mail user
-'emailuser'       => 'Link in the sidebar',
+'emailuser'       => 'Link in the sidebar and title of [[Special:EmailUser|special page]]',
+'emailpage'       => "Title of special page [[Special:EmailUser]], when it is the destination of the sidebar link {{msg-mw|Emailuser}} on a user's page.",
 'emailpagetext'   => 'This is the text that is displayed above the e-mail form on [[Special:EmailUser]].
 
 Special:EmailUser appears when you click on the link "E-mail this user" in the sidebar, but only if there is an e-mail address in the recipient\'s user preferences. If there isn\'t then the message [[Mediawiki:Noemailtext]] will appear instead of Special:EmailUser.',
 'noemailtitle'    => 'The title of the message that appears instead of Special:EmailUser after clicking the "E-mail this user" link in the sidebar, if no e-mail can be sent to the user.',
-'noemailtext'     => 'The text of the message that appears instead of Special:EmailUser after clicking the "E-mail this user" link in the sidebar, if no e-mail can be sent to the user.',
+'noemailtext'     => 'The text of the message that appears in [[Special:EmailUser]] after clicking the "E-mail this user" link in the sidebar, if no e-mail can be sent to the user because he has not specified or not confirmed an e-mail address.',
+'nowikiemailtext' => 'This is an error message used in [[Special:Emailuser]] when called with a target user not consenting to be an e-mail recipient.',
 'email-legend'    => 'Title of the box in [[Special:EmailUser]]',
 'emailfrom'       => 'Field in [[Special:EmailUser]].
 {{Identical|From}}',
@@ -2240,12 +2301,15 @@ Possible alternatives to the word 'content' are 'subject matter' or 'wiki subjec
 'watching'   => 'Text displayed when clicked on the watch tab: [[MediaWiki:Watch/{{SUBPAGENAME}}|{{int:watch}}]]. It means the wiki is adding that page to your watchlist.',
 'unwatching' => 'Text displayed when clicked on the unwatch tab: [[MediaWiki:Unwatch/{{SUBPAGENAME}}|{{int:unwatch}}]]. It means the wiki is removing that page from your watchlist.',
 
-'changed'        => 'Possible value for $CHANGEDORCREATED in {{msg|enotif_subject}} and {{msg|enotif_body}}.',
-'created'        => 'Possible value for $CHANGEDORCREATED in {{msg|enotif_subject}} and {{msg|enotif_body}}.',
-'enotif_subject' => '$CHANGEDORCREATED can be one of {{msg|changed}} and {{msg|created}}.',
-'enotif_body'    => 'Text of a notification e-mail sent when a watched page has been edited or deleted.
+'enotif_newpagetext' => 'Part of text of a notification e-mail sent when a watched page has been created. See [[File:Screenshot_MediaWiki_e-mail_notifier.PNG|150px|right]]',
+'changed'            => 'Possible value for $CHANGEDORCREATED in {{msg|enotif_subject}} and {{msg|enotif_body}}.',
+'created'            => 'Possible value for $CHANGEDORCREATED in {{msg|enotif_subject}} and {{msg|enotif_body}}.',
+'enotif_subject'     => '$CHANGEDORCREATED can be one of {{msg|changed}} and {{msg|created}}. Can also be {{msg-mw|blog-added}} or {{msg-mw|blog-edited}} from Wikia.',
+'enotif_lastvisited' => '$1 is a URL address.',
+'enotif_lastdiff'    => '* $1 is a link to diff, shown as a plainlink',
+'enotif_body'        => 'Text of a notification e-mail sent when a watched page has been edited or deleted.[[File:Screenshot_MediaWiki_e-mail_notifier.PNG|150px|right]]
 
-* <tt>$CHANGEDORCREATED</tt> can be one of {{msg-mw|changed}}, {{msg-mw|created}}, or {{msg-mw|deleted}}.',
+* <tt>$CHANGEDORCREATED</tt> can be one of {{msg-mw|changed}}, {{msg-mw|created}}, or {{msg-mw|deleted}}. Can also be {{msg-mw|blog-added}} or {{msg-mw|blog-edited}} from Wikia.',
 
 # Delete
 'confirm'                => 'Submit button text for protection confirmation
@@ -2266,7 +2330,9 @@ $1 is the <b>approximate</b> number of revisions that the page has, the message 
 'deletedtext'            => 'Parameters:
 * $1 is a page that was deleted
 * $2 is {{msg-mw|deletionlog}}',
-'deletedarticle'         => "This is a ''logentry'' message. $1 is deleted page name.",
+'deletedarticle'         => "This is a ''logentry'' message. Parameters:
+* $1 is deleted page name.",
+'suppressedarticle'      => 'Part of a [[mw:Manual:RevisionDelete|RevisionDelete]] log entry.',
 'dellogpage'             => 'The name of the deletion log. Used as heading on [[Special:Log/delete]] and in the drop down menu for selecting logs on [[Special:Log]].
 
 {{Identical|Deletion log}}',
@@ -2287,26 +2353,28 @@ $1 is the <b>approximate</b> number of revisions that the page has, the message 
 {{Identical|Edit delete reasons}}',
 
 # Rollback
-'rollback'         => '{{Identical|Rollback}}',
-'rollback_short'   => '{{Identical|Rollback}}',
-'rollbacklink'     => '{{Identical|Rollback}}',
-'rollbackfailed'   => '{{Identical|Rollback}}',
-'cantrollback'     => '{{Identical|Revert}}
+'rollback'          => '{{Identical|Rollback}}',
+'rollback_short'    => '{{Identical|Rollback}}',
+'rollbacklink'      => '{{Identical|Rollback}}',
+'rollbackfailed'    => '{{Identical|Rollback}}',
+'cantrollback'      => '{{Identical|Revert}}
 {{Identical|Rollback}}',
-'alreadyrolled'    => "Appear when there's rollback and/or edit collision.
+'alreadyrolled'     => "Appear when there's rollback and/or edit collision.
 * $1: the page to be rollbacked
 * $2: the editor to be rollbacked of that page
 * $3: the editor that cause collision
 
 {{Identical|Rollback}}",
-'editcomment'      => 'Only shown if there is an edit comment',
-'revertpage'       => '{{Identical|Revert}}
+'editcomment'       => "Only shown if there is an edit ''{{msg-mw|summary}}''",
+'revertpage'        => '{{Identical|Revert}}
 Additionally available:
 * $3: revid of the revision reverted to,
 * $4: timestamp of the revision reverted to,
 * $5: revid of the revision reverted from,
 * $6: timestamp of the revision reverted from',
-'rollback-success' => 'This message shows up on screen after successful revert (generally visible only to admins). $1 describes user whose changes have been reverted, $2 describes user which produced version, which replaces reverted version.
+'revertpage-nouser' => 'This is a confirmation message a user sees after reverting, when the username of the version is hidden with RevisionDelete.
+In other cases the message {{msg-mw|revertpage}} is used.',
+'rollback-success'  => 'This message shows up on screen after successful revert (generally visible only to admins). $1 describes user whose changes have been reverted, $2 describes user which produced version, which replaces reverted version.
 {{Identical|Revert}}
 {{Identical|Rollback}}',
 
@@ -2315,6 +2383,10 @@ Additionally available:
 'protectlogtext'              => 'Text in [[Special:Log/protect]].',
 'protectedarticle'            => 'Text describing an action on [[Special:Log]]. $1 is a page title.',
 'modifiedarticleprotection'   => 'Text describing an action on [[Special:Log]]. $1 is a page title.',
+'movedarticleprotection'      => 'This is a log entry. It appears in the log if a protected page is renamed.
+
+Example:
+<code>00:51, 16 September 2010 Siebrand +(Talk • contribs • block) moved protection settings from "User:Siebrand/prot-move" to "User:Siebrand/prot-moved" ‎ (User:Siebrand/prot-move moved to User:Siebrand/prot-moved: prot_move test.)</code>',
 'protect-title'               => 'Title for the protection form. $1 is the title of the page to be (un)protected.',
 'prot_1movedto2'              => 'Message description: [[mw:Manual:Interface/1movedto2]]',
 'protect-backlink'            => '{{optional|Translate it only if you have to change it, i.e. for RTL wikis}}
@@ -2377,8 +2449,8 @@ This message was something like "unlock move protection" in the past.',
 {{Identical|Create}}',
 
 # Restriction levels
-'restriction-level-sysop'         => "Used on [[Special:ProtectedPages]] and [[Special:ProtectedTitles]]. An option in the drop-down box 'Restriction level'. See the [http://www.mediawiki.org/wiki/Project:Protected_titles help page on Mediawiki] and on [http://meta.wikimedia.org/wiki/Protect Meta] for more information.",
-'restriction-level-autoconfirmed' => "Used on [[Special:ProtectedPages]] and [[Special:ProtectedTitles]]. An option in the drop-down box 'Restriction level'. See the [http://www.mediawiki.org/wiki/Project:Protected_titles help page on Mediawiki] and on [http://meta.wikimedia.org/wiki/Protect Meta] for more information.",
+'restriction-level-sysop'         => "Used on [[Special:ProtectedPages]] and [[Special:ProtectedTitles]]. An option in the drop-down box 'Restriction level' and in brackets after each page name entry. See the [http://www.mediawiki.org/wiki/Project:Protected_titles help page on Mediawiki] and on [http://meta.wikimedia.org/wiki/Protect Meta] for more information.",
+'restriction-level-autoconfirmed' => "Used on [[Special:ProtectedPages]] and [[Special:ProtectedTitles]]. An option in the drop-down box 'Restriction level', and in brackets after each page name entry. See the [http://www.mediawiki.org/wiki/Project:Protected_titles help page on Mediawiki] and on [http://meta.wikimedia.org/wiki/Protect Meta] for more information.",
 'restriction-level-all'           => "Used on [[Special:ProtectedPages]] and [[Special:ProtectedTitles]]. An option in the drop-down box 'Restriction level'. See the [http://www.mediawiki.org/wiki/Project:Protected_titles help page on Mediawiki] and on [http://meta.wikimedia.org/wiki/Protect Meta] for more information.",
 
 # Undelete
@@ -2386,7 +2458,9 @@ This message was something like "unlock move protection" in the past.',
 
 {{Identical|View deleted pages}}',
 'undeletepage'               => 'Title of special page [[Special:Undelete]]. This special page is only visible to administrators.',
-'viewdeletedpage'            => '{{Identical|View deleted pages}}',
+'viewdeletedpage'            => 'Title of the [[Special:Undelete]].
+
+{{Identical|View deleted pages}}',
 'undeleteextrahelp'          => "Help message displayed when restoring history of a page. In your language, ''Restore'' is called ''[[MediaWiki:Undeletebtn/{{SUBPAGENAME}}|{{int:Undeletebtn}}]]'' ({{msg|Undeletebtn}}), ''Reset'' button is called ''[[MediaWiki:Undeletereset/{{SUBPAGENAME}}|{{int:Undeletereset}}]]'' ({{msg|Undeletereset}}).",
 'undelete-revision'          => 'Shown in "View and restore deleted pages" ([[Special:Undelete/$1]]).
 
@@ -2418,7 +2492,7 @@ This message was something like "unlock move protection" in the past.',
 'undelete-show-file-submit'  => '{{Identical|Yes}}',
 
 # Namespace form on various pages
-'namespace'      => '{{Identical|Namespace}}',
+'namespace'      => 'This message is located at [[Special:Contributions]].',
 'invert'         => 'Displayed in [[Special:RecentChanges|RecentChanges]], [[Special:RecentChangesLinked|RecentChangesLinked]] and [[Special:Watchlist|Watchlist]]
 
 {{Identical|Invert selection}}',
@@ -2428,6 +2502,7 @@ This message was something like "unlock move protection" in the past.',
 'contributions'       => "Display name for the 'User contributions', shown in the sidebar menu of all user pages and user talk pages. Also the page name of the target page. The target page shows an overview of the most recent contributions by a user.",
 'contributions-title' => 'The page title in your browser bar, but not the page title. See also {{msg|contributions}}. Parameter $1 is the username.',
 'mycontris'           => 'In the personal urls page section - right upper corner.',
+'contribsub2'         => 'Contributions for "user" (links)',
 'nocontribs'          => 'Optional parameter: $1 is the user name',
 'uctop'               => 'This message is used in [[Special:Contributions]]. It is used to show that a particular edit was the last made to a page. Example: 09:57, 11 February 2008 (hist) (diff) Pagename‎ (edit summary) (top)',
 'month'               => 'Used in [[Special:Contributions]] and history pages ([{{fullurl:Sandbox|action=history}} example]), as label for a dropdown box to select a specific month to view the edits made in that month, and the earlier months. See also {{msg|year}}.',
@@ -2446,7 +2521,9 @@ The link appears in a list of similar ones separated by {{msg-mw|pipe-separator}
 ( talk | block log | logs | deleted contributions | rights management )",
 'sp-contributions-userrights'     => "This is a link anchor used in [[Special:Contributions]]/''name'', if the user viewing the page has the right to set or alter user rights.",
 'sp-contributions-blocked-notice' => 'Shown on top of contributions special page of currently blocked users. Parameters:
-* $1 is the blocked user. Can be used for GENDER (optional)',
+* $1 is the blocked user. Can be used for GENDER (optional)
+Anon version: {{msg-mw|Sp-contributions-blocked-notice-anon}}',
+'sp-contributions-search'         => 'Used on [[Special:Contributions]]',
 'sp-contributions-username'       => 'This message appears whenever someone requests [[Special:Contributions]].
 
 {{Identical/IP address or username}}',
@@ -2529,7 +2606,7 @@ Parameter $1 is the message "[[MediaWiki:Hide/{{SUBPAGENAME}}|hide]]" or "[[Medi
 * Go to [[Special:BlockList]]
 * Click "unblock" for any block (but you can only see "unblock" if you have administrator rights)
 * It is now the button below the form',
-'unblocked'                    => 'Do not translate the namespace "User:".',
+'unblocked'                    => 'Do not translate the namespace "User:".  $1 - the IP address or username that was unblocked.',
 'ipblocklist'                  => 'Title of [[Special:Ipblocklist]].',
 'ipblocklist-sh-userblocks'    => 'Top selection button at [[Special:IPBlockList]], which means Show/Hide indefinite blocks
 
@@ -2572,6 +2649,7 @@ Usage:
 'noautoblockblock'             => '{{Identical|Autoblock disabled}}',
 'emailblock'                   => '{{Identical|E-mail blocked}}',
 'blocklist-nousertalk'         => 'Used in [[Special:IPBlockList]] when "Allow this user to edit own talk page while blocked" option hasn\'t been flagged. See also {{msg-mw|Block-log-flags-nousertalk}}.',
+'ipblocklist-empty'            => 'Shown on page [[Special:Blocklist]], if no blocks are to be shown.',
 'blocklink'                    => "Display name for a link that, when selected, leads to a form where a user can be blocked. Used in page history and recent changes pages. Example: \"''UserName (Talk | contribs | '''block''')''\".",
 'change-blocklink'             => 'Used to name the link on Special:Log',
 'contribslink'                 => 'Short for "contributions". Used as display name for a link to user contributions on history pages, [[Special:RecentChanges]], [[Special:Watchlist]], etc.',
@@ -2604,6 +2682,7 @@ See also {{msg-mw|Blocklistline}}.',
 'ipb-otherblocks-header'       => '[[File:Special.Block with other blocks from GlobalBlocking and TorBlocks.png|thumb|Example]]
 Used on [[Special:Block]] as header for other blocks, i.e. from GlobalBlocking or TorBlocks',
 'blockme'                      => 'The page title of [[Special:Blockme]], a feature which is disabled by default.',
+'proxyblocksuccess'            => '{{Identical|Done}}',
 'sorbs'                        => '{{optional}}',
 'cant-see-hidden-user'         => 'Used as (red) error message on Special:Block when you try to change (as sysop w/o the hideuser right) the block of a hidden user.',
 
@@ -2632,9 +2711,11 @@ Shown as subtitle of [[Special:MovePage/testpage]]. $1 is the title of the page 
 {{Identical|Move page}}',
 'movepagetext'                 => 'Introduction shown when moving a page ([[Special:MovePage]]).
 
-Special pages mentioned: {{msg-mw|Doubleredirects}}, {{msg-mw|Brokenredirects}}',
+Special pages mentioned: {{msg-mw|Doubleredirects}}, {{msg-mw|Brokenredirects}}
+
+See also {{msg-mw|Movepagetext-noredirectfixer|notext=1}}',
 'movepagetalktext'             => "Text on the special 'Move page'. This text only appears if the talk page is not empty.",
-'movearticle'                  => 'The text before the name of the page that you are moving.
+'movearticle'                  => 'The text before the name of the page that you are moving. Can be translated as "Page that is going to be moved"
 
 {{Identical|Move page}}',
 'movenologin'                  => '{{Identical|Not logged in}}',
@@ -2653,7 +2734,7 @@ Special pages mentioned: {{msg-mw|Doubleredirects}}, {{msg-mw|Brokenredirects}}'
 'movepage-moved-noredirect'    => 'The message is shown after pagemove if checkbox "{{int:move-leave-redirect}}" was unselected before moving.',
 'movetalk'                     => 'The text of the checkbox to watch the associated talk page to the page you are moving. This only appears when the talk page is not empty.',
 'move-subpages'                => 'The text of an option on the special page [[Special:MovePage|MovePage]]. If this option is ticked, any subpages will be moved with the main page to a new title.',
-'move-talk-subpages'           => 'The text of an option on the special page [[Special:MovePage|MovePage]]. If this option is ticked, any subpages will be moved with the talk page to a new title.',
+'move-talk-subpages'           => 'The text of an option on the special page [[Special:MovePage|MovePage]]. If this option is ticked, any talk subpages will be moved with the talk page to a new title.',
 '1movedto2'                    => "This is ''logentry'' message. $1 is the original page name, $2 is the destination page name.",
 '1movedto2_redir'              => "This is ''logentry'' message. $1 is the original page name, $2 is the destination page name.",
 'movelogpage'                  => 'Title of [[Special:Log/move]]. Used as heading on that page, and in the dropdown menu on log pages.',
@@ -2676,6 +2757,7 @@ Parameters:
 {{Related|Semiprotectedpagewarning}}',
 'semiprotectedpagemovewarning' => 'Related message: [[MediaWiki:Semiprotectedpagewarning/{{#titleparts:{{PAGENAME}}|1|2}}]]
 {{Related|Semiprotectedpagewarning}}',
+'move-over-sharedrepo'         => 'Notice when a file with that filename already exists on a shared repository, such as Wikimedia Commons.',
 
 # Export
 'export'           => 'Page title of [[Special:Export]], a page where a user can export pages from a wiki to a file.',
@@ -2685,6 +2767,7 @@ Parameters:
 
 {{Identical|Export}}',
 'export-addcat'    => '{{Identical|Add}}',
+'export-addnstext' => 'Message {{msg-mw|configure-setting-wgExportFromNamespaces}} refers to this one.',
 'export-addns'     => '{{Identical|Add}}',
 'export-download'  => 'A label of checkbox option in [[Special:Export]]',
 'export-templates' => 'A label of checkbox option in [[Special:Export]]',
@@ -2726,9 +2809,11 @@ Tooltip shown when hovering over a little sign of a thumb image, to go to the im
 *$1 is the path incl. filename of the missing image',
 
 # Special:Import
-'import'                  => 'The title of the special page [[Special:Import]];',
-'import-interwiki-submit' => '{{Identical|Import}}',
-'xml-error-string'        => ':$1: Some kind of message, perhaps name of the error?
+'import'                   => 'The title of the special page [[Special:Import]];',
+'import-interwiki-history' => 'This is an option on [[Special:Import]]. Usually, when unchecked, only the first version of a page is imported. When you check the option, all versions are imported. This is important often to check for licensing reasons.',
+'import-interwiki-submit'  => '{{Identical|Import}}',
+'import-upload-filename'   => 'Used on [[Special:Import]] as label for upload of an XML file containing the pages to import.',
+'xml-error-string'         => ':$1: Some kind of message, perhaps name of the error?
 :$2: line number
 :$3: columm number
 :$4: ?? $this->mByte . $this->mContext
@@ -2736,7 +2821,7 @@ Tooltip shown when hovering over a little sign of a thumb image, to go to the im
 ----
 :Example
 Import failed: XML import parse failure at line 1, col 1 (byte 3; "- <mediawiki xml"): Empty document',
-'import-upload'           => 'Used on [[Special:Import]].
+'import-upload'            => 'Used on [[Special:Import]].
 
 Related messages: {{msg|right-importupload|pl=yes}} (the user right for this).',
 
@@ -2821,6 +2906,7 @@ If the length of the translated message is over 60 characters (including spaces)
 # Stylesheets
 'common.css'   => 'CSS applied to all users.',
 'monobook.css' => 'CSS applied to users using Monobook skin.',
+'handheld.css' => 'Style that can be applied on [[w:handheld devices|handheld devices]] (e.g. mobile phones), <code>$wgHandheldStyle</code> is an optional configuration variable which specifies a style sheet file for handheld devices.',
 
 # Scripts
 'common.js'   => 'JS for all users.',
@@ -2889,12 +2975,12 @@ See also {{msg-mw|Anonuser}} and {{msg-mw|Siteusers}}.',
 'skinname-modern'      => '{{optional}}',
 
 # Math options
-'mw_math_png'    => 'In user preferences.',
-'mw_math_simple' => 'In [[Special:Preferences|user preferences]].',
-'mw_math_html'   => 'In user preferences.',
-'mw_math_source' => 'In user preferences (math)',
-'mw_math_modern' => 'In user preferences (math)',
-'mw_math_mathml' => 'In user preferences.',
+'mw_math_png'    => 'In user preferences. All mw_math_* messages MUST be different, things will break otherwise!',
+'mw_math_simple' => 'In [[Special:Preferences|user preferences]]. All mw_math_* messages MUST be different, things will break otherwise!',
+'mw_math_html'   => 'In user preferences. All mw_math_* messages MUST be different, things will break otherwise!',
+'mw_math_source' => 'In user preferences (math). All mw_math_* messages MUST be different, things will break otherwise!',
+'mw_math_modern' => 'In user preferences (math). All mw_math_* messages MUST be different, things will break otherwise!',
+'mw_math_mathml' => 'In user preferences. All mw_math_* messages MUST be different, things will break otherwise!',
 
 # Math errors
 'math_syntax_error' => '{{Identical|Syntax error}}',
@@ -2911,7 +2997,8 @@ The message appears after the name of the patroller.',
 'patrol-log-auto'      => 'Automated edit summary when patrolling.
 
 {{Identical|Automatic}}',
-'patrol-log-diff'      => 'The text of the diff link in [[MediaWiki:Patrol-log-line]] (inside $1 there)',
+'patrol-log-diff'      => 'The text of the diff link in [[MediaWiki:Patrol-log-line]] (inside $1 there)
+{{Identical|Revision}}',
 'log-show-hide-patrol' => '* $1 is one of {{msg|show}} or {{msg|hide}}',
 
 # Browsing diffs
@@ -2951,6 +3038,7 @@ The message appears after the name of the patroller.',
 * $2 is a time (example: ''12:15'')",
 
 # Video information, used by Language::formatTimePeriod() to format lengths in the above messages
+'video-dims'     => '{{optional}}',
 'seconds-abbrev' => '{{optional}}',
 'minutes-abbrev' => '{{optional}}',
 'hours-abbrev'   => 'Abbreviation for "hours"',
@@ -3004,23 +3092,36 @@ Variant option for wikis with variants conversion enabled.',
 Variant option for wikis with variants conversion enabled.',
 
 # Variants for Serbian language
-'variantname-sr-ec' => 'Varient Option for wikis with variants conversion enabled.',
-'variantname-sr-el' => 'Varient Option for wikis with variants conversion enabled.',
-'variantname-sr'    => 'Varient Option for wikis with variants conversion enabled.',
+'variantname-sr-ec' => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
+'variantname-sr-el' => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
+'variantname-sr'    => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
 
 # Variants for Kazakh language
-'variantname-kk-kz'   => 'Varient Option for wikis with variants conversion enabled.',
-'variantname-kk-tr'   => 'Varient Option for wikis with variants conversion enabled.',
-'variantname-kk-cn'   => 'Varient Option for wikis with variants conversion enabled.',
-'variantname-kk-cyrl' => 'Varient Option for wikis with variants conversion enabled.',
-'variantname-kk-latn' => 'Varient Option for wikis with variants conversion enabled.',
-'variantname-kk-arab' => 'Varient Option for wikis with variants conversion enabled.',
-'variantname-kk'      => 'Varient Option for wikis with variants conversion enabled.',
+'variantname-kk-kz'   => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
+'variantname-kk-tr'   => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
+'variantname-kk-cn'   => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
+'variantname-kk-cyrl' => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
+'variantname-kk-latn' => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
+'variantname-kk-arab' => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
+'variantname-kk'      => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
 
 # Variants for Kurdish language
-'variantname-ku-arab' => 'Varient Option for wikis with variants conversion enabled.',
-'variantname-ku-latn' => 'Varient Option for wikis with variants conversion enabled.',
-'variantname-ku'      => 'Varient Option for wikis with variants conversion enabled.',
+'variantname-ku-arab' => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
+'variantname-ku-latn' => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
+'variantname-ku'      => '{{optional}}
+Varient Option for wikis with variants conversion enabled.',
 
 # Variants for Tajiki language
 'variantname-tg-cyrl' => '{{optional}}',
@@ -3052,8 +3153,12 @@ The sentences are for explanation only and are not shown to the user.",
 'exif-planarconfiguration'         => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
 'exif-ycbcrsubsampling'            => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
 'exif-ycbcrpositioning'            => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-xresolution'                 => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-yresolution'                 => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
+'exif-xresolution'                 => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+This is the horizontal resolution in either dots/inch or dots/cm.',
+'exif-yresolution'                 => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+This is the vertical resolution in either dots/inch or dots/cm.',
 'exif-resolutionunit'              => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
 'exif-stripoffsets'                => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
 'exif-rowsperstrip'                => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
@@ -3069,30 +3174,62 @@ Exif is a format for storing metadata in image files. See this [http://en.wikipe
 'exif-referenceblackwhite'         => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
 'exif-datetime'                    => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
+Note, this message is also used for the XMP:ModifyDate property in XMP metadata. See page 35 of http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf
+
 Datetime is the time that the digital file was last changed.',
-'exif-imagedescription'            => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-make'                        => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-model'                       => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-software'                    => 'Short for "The software which was used to create this image".
+'exif-imagedescription'            => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+This property is the description or caption of the image. It is used for the exif ImageDescription property, the dc:description property in XMP (see http://www.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMPSpecificationPart1.pdf ), and the iptc-iim 2:120 caption/abstract property ( http://www.iptc.org/std/IIM/4.1/specification/IIMV4.1.pdf ).
+
+When an image has multiple differing descriptions, mediawiki follows the MWG guidelines when deciding which to show (Which typically means Exif takes precedence).',
+'exif-make'                        => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+The Manufacturer of the digital camera (or scanner) that took the photo.',
+'exif-model'                       => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+The model of camera (or scanner) used to take the picture.',
+'exif-software'                    => 'Short for "The software which was used to create or modify this image".
+
+The property can come from the Exif Software tag, PNG software chunk, iptc-iim 2:65 Software field, or XMP\'s xmp:CreatorTool field.
 
 Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-artist'                      => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+'exif-artist'                      => "Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
-{{Identical|Author}}',
-'exif-copyright'                   => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-exifversion'                 => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-flashpixversion'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-colorspace'                  => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-componentsconfiguration'     => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
+This message labels the author or artist of the work. Usually this means who took the photograph, or who drew the picture. The corresponding value field most commonly contains a single author, however it can contain an ordered (or unordered depending on which metadata standard is used to store the information) list of authors. Sometimes the persons position is prefixed before their name such as \"Photographer, John Smith\". The exif standard recommends multiple authors be specified by \"position, Author 1; position for author 2, Author 2's name\" however this doesn't seem to happen in practise very often. If multiple authors are specified using a non-exif standard, then a billeted (or numbered) list is used.
+
+This property can be specified by exif Artist tag, XMP's tiff:Artist, XMP's dc:creator, iptc-iim's 2:80 byline, PNG's author textual chunk, PNG's (unofficial) artist textual chunk. XMP's photoshop:AuthorsPosition and iptc 2:85 byline-title can also affect display of this property.
+
+{{Identical|Author}}",
+'exif-copyright'                   => "Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+Label for information contained in exif Copyright tag, XMP dc:rights, IPTC-iim 2:116, or PNG copyright textual chunk.
+
+Typically the copyright statement for the photograph/drawing/video (such as ''(c) 2010 John Smith. Released under GFDL''). Sometimes contains license information. See also {{msg-mw|exif-copyrightowner}}",
+'exif-exifversion'                 => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+Version of exif standard photo uses. Typically this is 2.22',
+'exif-flashpixversion'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+Version of flashpix used. Flashpix is a format used for storing some types of metadata in image. It is not as commonly used as EXIF, and mediawiki currently cannot read Flashpix data.',
+'exif-colorspace'                  => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+The colorspace of the photo. This tells the computer how to make the colours in the photo be more true to the original photo. Typical values for this are sRGB or uncalibrated. This only gives information on colour information given in the exif-colorspace property. However, colour information is often stored elsewhere in the photo.',
+'exif-componentsconfiguration'     => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+This contains how the information in the picture is stored. This is most commonly Y, Cr, Cb to specify luma, red, blue. RGB is also possible to specify Red, Green, Blue.',
 'exif-compressedbitsperpixel'      => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
 'exif-pixelydimension'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
 'exif-pixelxdimension'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
 'exif-makernote'                   => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-usercomment'                 => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-relatedsoundfile'            => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
+'exif-usercomment'                 => "Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+Comments by user. Sometimes used like ImageDescription when the ImageDescription contained non-ascii characters. (Technically ImageDescription is supposed to contain ascii characters. In practise utf-8 is used in ImageDescription, so this field isn't used too much.)",
+'exif-relatedsoundfile'            => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+Some cameras offer the option to record an audio "memo" for the photo they just took. If the user did that, the name of the file is labelled with this message.',
 'exif-datetimeoriginal'            => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
-The date and time when the original image data was generated.',
+The date and time when the original image data was generated. For example if it was a painting from 1773, scanned in to a computer in 2007, the datetimeoriginal would be 1773 and {{msg-mw|exif-datetimedigitized}} would have the 2007 date.',
 'exif-datetimedigitized'           => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 The date and time when the image was stored as digital data.',
@@ -3105,7 +3242,9 @@ This tag shows the detail of the fraction of a second (1/100s) at which the file
 'exif-subsectimedigitized'         => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 This tag shows the detail of the fraction of a second (1/100s) at which the file was stored as digital data, when the tag {{msg-mw|Exif-datetimedigitized}} is recorded to the whole second.',
-'exif-exposuretime'                => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
+'exif-exposuretime'                => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+The exposure time. Number of (or fraction of) seconds the film was exposed to light. The value for this property is formatted using {{msg-mw|exif-exposuretime-format}}',
 'exif-exposuretime-format'         => "Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 *$1 is the exposure time written as a fraction of a second, for example 1/640 of a second.
@@ -3114,21 +3253,32 @@ This tag shows the detail of the fraction of a second (1/100s) at which the file
 'exif-fnumber'                     => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 The [http://en.wikipedia.org/wiki/F_number F number] is the relative aperture of the camera.',
-'exif-fnumber-format'              => "Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+'exif-fnumber-format'              => "{{optional}}
+Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 *$1 is a number
 *f is the abbreviation used in English for 'f-number'.",
-'exif-exposureprogram'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-spectralsensitivity'         => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-isospeedratings'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
+'exif-exposureprogram'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+How the camera figured out what exposure to use. (If it was manually set, if its optimizing for fast shutter speed, etc).',
+'exif-spectralsensitivity'         => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+How sensitive each channel (colour) of the photo is to light. This tag is almost never used.',
+'exif-isospeedratings'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+The iso speed of the film used in the camera. This is basically a measure of how sensitive the film in the camera is to light.',
 'exif-oecf'                        => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
 'exif-shutterspeedvalue'           => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
-[http://en.wikipedia.org/wiki/Shutter_speed Shutter speed] is the time that the camera shutter is open.',
+[http://en.wikipedia.org/wiki/Shutter_speed Shutter speed] is the time that the camera shutter is open.
+
+This is the shutter speed measured in APEX units (negative base 2 log of shutter speed in seconds). See {{msg-mw|exif-exposuretime}} for this property in more traditional units of seconds.',
 'exif-aperturevalue'               => "Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
-The [http://en.wikipedia.org/wiki/Aperture aperture] of a camera is the hole through which light shines. This message can be translated 'Aperture width'.",
-'exif-brightnessvalue'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
+The [http://en.wikipedia.org/wiki/Aperture aperture] of a camera is the hole through which light shines. This message can be translated 'Aperture width'. Note, this is measured in APEX units which is 2*log<sub>2</sub>(f-number) . See {{msg-mw|exif-fnumber}} for this value in more traditional units.",
+'exif-brightnessvalue'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+How intense the illumination of the scene photographed is. Measured in APEX brightness units. See Annex C of Exif standard for details on the measurement system in use.',
 'exif-exposurebiasvalue'           => "Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 Another term for [http://en.wikipedia.org/wiki/Exposure_bias 'exposure bias'] is 'exposure compensation'.",
@@ -3150,14 +3300,17 @@ See this [http://en.wikipedia.org/wiki/Flash_(photography) Wikipedia article] fo
 'exif-focallength'                 => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 See this [http://en.wikipedia.org/wiki/Focal_length_(photography) Wikipedia article] for an explanation of the term.',
-'exif-focallength-format'          => "Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+'exif-focallength-format'          => "{{optional}}
+Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 *$1 is a number
 *mm is the abbreviation used in English for the unit of measurement of length 'millimetre'.",
 'exif-subjectarea'                 => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
-This exif property contains the position of the main subject of the picture in pixels from the upper left corner and additionally its width and height in pixels.',
-'exif-flashenergy'                 => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
+This exif property contains the position of the main subject. The first two numbers is the position of the subject in the picture in pixels from the upper left corner. If a third number is specified, it is a circle centred at the first two numbers. If four numbers are specified, the first two are coordinates of the centre of the subject as before, the third is the width of the rectangle, and the fourth is the height of the rectangle. It is rare for a photo to use this tag.',
+'exif-flashenergy'                 => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+How bright the flash is in beam candle power seconds.',
 'exif-spatialfrequencyresponse'    => '[http://en.wikipedia.org/wiki/Spatial_frequency Spatial frequency] is the number of edges per degree of the visual angle. The human eye scans the viewed scenary for edges and uses these edges to detect what it sees. Few edges make it hard to recognize the seen objects, but many edges do so too. A rate of about 4 to 6 edges per degree of the viewing range is seen as optimal for the recognition of objects.
 
 Spatial frequency response is a measure for the capability of camera lenses to depict spatial frequencies.',
@@ -3166,20 +3319,26 @@ Spatial frequency response is a measure for the capability of camera lenses to d
 Indicates the number of pixels in the image width (X) direction per FocalPlaneResolutionUnit on the camera focal plane.',
 'exif-focalplaneyresolution'       => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
 'exif-focalplaneresolutionunit'    => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-subjectlocation'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
+'exif-subjectlocation'             => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+Same as {{msg-mw|exif-subjectarea}} but only ever has two numbers as a value.',
 'exif-exposureindex'               => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
 'exif-sensingmethod'               => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-filesource'                  => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
-'exif-scenetype'                   => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].',
+'exif-filesource'                  => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+Determines if the image was recorded by a digital camera adhering to DSC standard (which is almost all digital cameras).',
+'exif-scenetype'                   => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+
+If the image is directly photographed (taken by a digital camera).',
 'exif-cfapattern'                  => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 CFA stands for [http://en.wikipedia.org/wiki/Color_filter_array color filter array].',
 'exif-customrendered'              => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 See also Wikipedia on [http://en.wikipedia.org/wiki/Image_processing image processing].',
-'exif-exposuremode'                => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
+'exif-exposuremode'                => "Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
-See also Wikipedia on [http://en.wikipedia.org/wiki/Exposure_(photography) exposure in photography].',
+See also Wikipedia on [http://en.wikipedia.org/wiki/Exposure_(photography) exposure in photography]. This tag shows if the photo's exposure was manually set or automatically determined.",
 'exif-whitebalance'                => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 See also Wikipedia on [http://en.wikipedia.org/wiki/Color_balance color balance].',
@@ -3189,23 +3348,56 @@ See also Wikipedia on [http://en.wikipedia.org/wiki/Digital_zoom digital zoom].'
 'exif-focallengthin35mmfilm'       => 'Exif is a format for storing metadata in image files. See this [http://en.wikipedia.org/wiki/Exchangeable_image_file_format Wikipedia article] and the example at the bottom of [http://commons.wikimedia.org/wiki/File:Phalacrocorax-auritus-020.jpg this page on Commons]. The tags are explained [http://www.awaresystems.be/imaging/tiff/tifftags/privateifd/exif.html briefly] and [http://www.kodak.com/global/plugins/acrobat/en/service/digCam/exifStandard2.pdf in further detail].
 
 See also Wikipedia on [http://en.wikipedia.org/wiki/Focal_length#In_photography focal length].',
-'exif-gpslatitude'                 => '{{Identical|Latitude}}',
-'exif-gpslongitude'                => '{{Identical|Longitude}}',
+'exif-imageuniqueid'               => 'A unique identifier for the image in the form of a 128-bit hexadecimal string. See http://www.exif.org/Exif2-2.PDF for details on exif properties.',
+'exif-gpsversionid'                => 'Version of the GPS IFD used to store location information. This is usually 2.2.0.0',
+'exif-gpslatituderef'              => 'In older versions of mediawiki this referred to if the latitude was North or South. This is no longer used in modern versions of mediawiki except for when using a foreign image repository that is using an older version of mediawiki since the information is now contained in {{msg-mw|exif-gpslatitude}}.',
+'exif-gpslatitude'                 => 'The latitude of the location from where the picture was taken from.',
+'exif-gpslongituderef'             => 'Same as {{msg-mw|exif-gpslatituderef}} but for longitude.',
+'exif-gpslongitude'                => 'The longitude of the location from where the picture was taken from.
+
+{{Identical|Longitude}}',
+'exif-gpsaltituderef'              => 'No longer used except for when using foreign image repository with old version of mediawiki. 0 for above sea level, 1 for below sea level.',
+'exif-gpsaltitude'                 => 'Altitude in meters that the image was taken at.',
+'exif-gpstimestamp'                => 'Time (does not include date) that GPS measurement was taken, in UTC. Since often this is at the same time as photo was taken, this is sometimes more reliable than {{msg-mw|exif-datetimeoriginal}}.',
+'exif-gpsmeasuremode'              => 'Is the measurement 2D (latitude and longitude) or 3D (latitude, longitude, and altitude).',
+'exif-gpsdop'                      => 'How accurate the GPS information is. See http://en.wikipedia.org/wiki/Dilution_of_precision_(GPS)',
+'exif-gpsdestlatitude'             => 'The latitude of the location shown in the picture, if it is different from latitude of the camera location. See {{msg-mw|exif-gpslatitude}}.
+
+{{Identical|Latitude}}',
+'exif-gpsdestlongitude'            => 'The longitude of the location shown in the picture, if it is different from longitude of the camera location. See {{msg-mw|exif-gpslongitude}}.
+
+{{Identical|Longitude}}',
+'exif-gpsdatestamp'                => 'Date (does not generally include time unless recorded in XMP) that GPS measurement was taken, in UTC. Since often this is at the same date as photo was taken, this is sometimes more reliable than {{msg-mw|exif-datetimeoriginal}}.',
 
 # EXIF attributes
 'exif-compression-6' => '{{optional}}',
 
 'exif-photometricinterpretation-2' => '{{optional}}',
+'exif-photometricinterpretation-6' => '{{optional}}',
 
 'exif-orientation-1' => '{{Identical|Normal}}
 0th row: top; 0th column: left',
 'exif-orientation-2' => '0th row: top; 0th column: right',
 'exif-orientation-3' => '0th row: bottom; 0th column: right',
 'exif-orientation-4' => '0th row: bottom; 0th column: left',
-'exif-orientation-5' => '0th row: left; 0th column: top',
-'exif-orientation-6' => '0th row: right; 0th column: top',
-'exif-orientation-7' => '0th row: right; 0th column: bottom',
-'exif-orientation-8' => '0th row: left; 0th column: bottom',
+'exif-orientation-5' => '0th row: left; 0th column: top
+
+CCW is an abbreviation for counter-clockwise',
+'exif-orientation-6' => '0th row: right; 0th column: top
+
+CW is an abbreviation for clockwise',
+'exif-orientation-7' => '0th row: right; 0th column: bottom
+
+CW is an abbreviation for clockwise',
+'exif-orientation-8' => '0th row: left; 0th column: bottom
+
+CCW is an abbreviation for counter-clockwise.',
+
+'exif-xyresolution-i' => '{{Optional}} Used to format {{msg-mw|exif-xresolution}} and {{msg-mw|exif-yresolution}} if the unit is dots per inch. $1 is the number of dots/in.',
+'exif-xyresolution-c' => '{{Optional}} Used to format {{msg-mw|exif-xresolution}} and {{msg-mw|exif-yresolution}} if the unit is dots per centimetre. $1 is the number of dots/cm.',
+
+'exif-colorspace-1'      => '{{Optional}} If it uses the standard sRGB colour space.',
+'exif-colorspace-ffff.h' => '{{optional}}',
 
 'exif-componentsconfiguration-1' => '{{optional}}',
 'exif-componentsconfiguration-2' => '{{optional}}',
@@ -3230,6 +3422,7 @@ See also Wikipedia on [http://en.wikipedia.org/wiki/Focal_length#In_photography 
 
 'exif-lightsource-0'  => '{{Identical|Unknown}}',
 'exif-lightsource-4'  => '{{Identical|Flash}}',
+'exif-lightsource-20' => '{{optional}}',
 'exif-lightsource-21' => '{{optional}}',
 'exif-lightsource-22' => '{{optional}}',
 'exif-lightsource-23' => '{{optional}}',
@@ -3290,6 +3483,17 @@ See also Wikipedia on [http://en.wikipedia.org/wiki/Focal_length#In_photography 
 
 Macro view is close-up photography. See [http://en.wikipedia.org/wiki/Macro_photography Wikipedia].',
 
+# Pseudotags used for GPSLatitudeRef and GPSDestLatitudeRef
+'exif-gpslatitude-n' => 'Very rarely used. Only used when using an old version of Mediawiki as a foreign image repo.',
+'exif-gpslatitude-s' => 'Very rarely used. Only used when using an old version of Mediawiki as a foreign image repo.',
+
+# Pseudotags used for GPSLongitudeRef and GPSDestLongitudeRef
+'exif-gpslongitude-e' => 'Very rarely used. Only used when using an old version of Mediawiki as a foreign image repo.',
+'exif-gpslongitude-w' => 'Very rarely used. Only used when using an old version of Mediawiki as a foreign image repo.',
+
+'exif-gpsmeasuremode-2' => 'Only latitude and longitude recorded, no altitude.',
+'exif-gpsmeasuremode-3' => 'Latitude, longitude, and altitude recorded.',
+
 # Pseudotags used for GPSSpeedRef
 'exif-gpsspeed-n' => "Knots: ''Knot'' is a unit of speed on water used for ships, etc., equal to one nautical mile per hour.",
 
@@ -3328,7 +3532,8 @@ $1 is a message from the e-mail delivery system.',
 'confirmemail_needlogin'   => 'Used on [[Special:ConfirmEmail]] when you are logged out.
 * $1 is a link to [[Special:UserLogin]] with {{msg-mw|loginreqlink}} as link description',
 'confirmemail_loggedin'    => 'Explanation on [[Special:ConfirmEmail]] on completion of confirmation.',
-'confirmemail_subject'     => 'Text in subject box of e-mail sent to user during e-mail address confirmation',
+'confirmemail_subject'     => 'Text in subject box of e-mail sent to user during e-mail address confirmation
+{{Identical|SITENAME e-mail address confirmation}}',
 'confirmemail_body'        => 'This message is sent as an e-mail to users when they add or change their e-mail adress in [[Special:Preferences]].
 *$1 is the IP address of the user that changed the e-mail address
 *$2 is the name of the user
@@ -3402,10 +3607,14 @@ Most languages use a space, but some Asian languages, such as Thai and Chinese, 
 'autosumm-new'     => 'The auto summary when creating a new page. $1 are the first X number of characters of the new page.',
 
 # Size units
-'size-bytes'     => 'Size (of a page, typically) in bytes.',
-'size-kilobytes' => 'Size (of a page, typically) in kibibytes (1 kibibyte = 1024 bytes).',
-'size-megabytes' => 'Size (of a file, typically) in mebibytes (1 mebibyte = 1024×1024 bytes).',
-'size-gigabytes' => 'Size (of a file, typically) in gibibytes (1 gibibyte = 1024×1024×1024 bytes).',
+'size-bytes'     => '{{optional}}
+Size (of a page, typically) in bytes.',
+'size-kilobytes' => '{{optional}}
+Size (of a page, typically) in kibibytes (1 kibibyte = 1024 bytes).',
+'size-megabytes' => '{{optional}}
+Size (of a file, typically) in mebibytes (1 mebibyte = 1024×1024 bytes).',
+'size-gigabytes' => '{{optional}}
+Size (of a file, typically) in gibibytes (1 gibibyte = 1024×1024×1024 bytes).',
 
 # Live preview
 'livepreview-loading' => '{{Identical|Loading}}',
@@ -3440,62 +3649,114 @@ Hint: the text "Remove Titles" is in {{msg-mw|watchlistedit-normal-submit}}',
 {{Identical|Edit raw watchlist}}',
 
 # Iranian month names
-'iranian-calendar-m1'  => 'Name of month in Iranian calender.',
-'iranian-calendar-m2'  => 'Name of month in Iranian calender.',
-'iranian-calendar-m3'  => 'Name of month in Iranian calender.',
-'iranian-calendar-m4'  => 'Name of month in Iranian calender.',
-'iranian-calendar-m5'  => 'Name of month in Iranian calender.',
-'iranian-calendar-m6'  => 'Name of month in Iranian calender.',
-'iranian-calendar-m7'  => 'Name of month in Iranian calender.',
-'iranian-calendar-m8'  => 'Name of month in Iranian calender.',
-'iranian-calendar-m9'  => 'Name of month in Iranian calender.',
-'iranian-calendar-m10' => 'Name of month in Iranian calender.',
-'iranian-calendar-m11' => 'Name of month in Iranian calender.',
-'iranian-calendar-m12' => 'Name of month in Iranian calender.',
+'iranian-calendar-m1'  => '{{optional}}
+Name of month in Iranian calender.',
+'iranian-calendar-m2'  => '{{optional}}
+Name of month in Iranian calender.',
+'iranian-calendar-m3'  => '{{optional}}
+Name of month in Iranian calender.',
+'iranian-calendar-m4'  => '{{optional}}
+Name of month in Iranian calender.',
+'iranian-calendar-m5'  => '{{optional}}
+Name of month in Iranian calender.',
+'iranian-calendar-m6'  => '{{optional}}
+Name of month in Iranian calender.',
+'iranian-calendar-m7'  => '{{optional}}
+Name of month in Iranian calender.',
+'iranian-calendar-m8'  => '{{optional}}
+Name of month in Iranian calender.',
+'iranian-calendar-m9'  => '{{optional}}
+Name of month in Iranian calender.',
+'iranian-calendar-m10' => '{{optional}}
+Name of month in Iranian calender.',
+'iranian-calendar-m11' => '{{optional}}
+Name of month in Iranian calender.',
+'iranian-calendar-m12' => '{{optional}}
+Name of month in Iranian calender.',
 
 # Hijri month names
-'hijri-calendar-m1'  => 'Name of month in Islamic calender.',
-'hijri-calendar-m2'  => 'Name of month in Islamic calender.',
-'hijri-calendar-m3'  => 'Name of month in Islamic calender.',
-'hijri-calendar-m4'  => 'Name of month in Islamic calender.',
-'hijri-calendar-m5'  => 'Name of month in Islamic calender.',
-'hijri-calendar-m6'  => 'Name of month in Islamic calender.',
-'hijri-calendar-m7'  => 'Name of month in Islamic calender.',
-'hijri-calendar-m8'  => 'Name of month in Islamic calender.',
-'hijri-calendar-m9'  => 'Name of month in Islamic calender.',
-'hijri-calendar-m10' => 'Name of month in Islamic calender.',
-'hijri-calendar-m11' => 'Name of month in Islamic calender.',
-'hijri-calendar-m12' => 'Name of month in Islamic calender.',
+'hijri-calendar-m1'  => '{{optional}}
+Name of month in Islamic calender.',
+'hijri-calendar-m2'  => '{{optional}}
+Name of month in Islamic calender.',
+'hijri-calendar-m3'  => '{{optional}}
+Name of month in Islamic calender.',
+'hijri-calendar-m4'  => '{{optional}}
+Name of month in Islamic calender.',
+'hijri-calendar-m5'  => '{{optional}}
+Name of month in Islamic calender.',
+'hijri-calendar-m6'  => '{{optional}}
+Name of month in Islamic calender.',
+'hijri-calendar-m7'  => '{{optional}}
+Name of month in Islamic calender.',
+'hijri-calendar-m8'  => '{{optional}}
+Name of month in Islamic calender.',
+'hijri-calendar-m9'  => '{{optional}}
+Name of month in Islamic calender.',
+'hijri-calendar-m10' => '{{optional}}
+Name of month in Islamic calender.',
+'hijri-calendar-m11' => '{{optional}}
+Name of month in Islamic calender.',
+'hijri-calendar-m12' => '{{optional}}
+Name of month in Islamic calender.',
 
 # Hebrew month names
-'hebrew-calendar-m1'      => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m2'      => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m3'      => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m4'      => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m5'      => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m6'      => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m6a'     => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m6b'     => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m7'      => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m8'      => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m9'      => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m10'     => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m11'     => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m12'     => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m1-gen'  => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m2-gen'  => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m3-gen'  => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m4-gen'  => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m5-gen'  => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m6-gen'  => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m6a-gen' => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m6b-gen' => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m7-gen'  => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m8-gen'  => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m9-gen'  => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m10-gen' => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m11-gen' => 'Name of month in Hebrew calender.',
-'hebrew-calendar-m12-gen' => 'Name of month in Hebrew calender.',
+'hebrew-calendar-m1'      => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m2'      => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m3'      => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m4'      => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m5'      => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m6'      => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m6a'     => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m6b'     => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m7'      => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m8'      => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m9'      => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m10'     => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m11'     => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m12'     => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m1-gen'  => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m2-gen'  => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m3-gen'  => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m4-gen'  => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m5-gen'  => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m6-gen'  => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m6a-gen' => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m6b-gen' => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m7-gen'  => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m8-gen'  => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m9-gen'  => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m10-gen' => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m11-gen' => '{{optional}}
+Name of month in Hebrew calender.',
+'hebrew-calendar-m12-gen' => '{{optional}}
+Name of month in Hebrew calender.',
 
 # Signatures
 'timezone-utc' => '{{optional}}',

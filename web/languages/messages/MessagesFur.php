@@ -243,6 +243,7 @@ $messages = array(
 'qbpageinfo'     => 'Contest',
 'qbmyoptions'    => 'Mês pagjinis',
 'qbspecialpages' => 'Pagjinis speciâls',
+'faq'            => 'Domandis plui frecuentis',
 
 # Vector skin
 'vector-action-addsection'   => 'Gnove sezion',
@@ -261,6 +262,7 @@ $messages = array(
 'vector-view-view'           => 'Lei',
 'vector-view-viewsource'     => 'Cjale risultive',
 'actions'                    => 'Azions',
+'namespaces'                 => 'Spazis dai nons',
 'variants'                   => 'Variants',
 
 'errorpagetitle'    => 'Erôr',
@@ -398,6 +400,7 @@ Chest in gjenar al è causât dal jessi lâts daûr dal leam a une pagjine che e
 Se la cause no samee jessi cheste, tu podaressis vê cjatât un problem tal software.
 Segnalilu par plasê a un [[Special:ListUsers/sysop|administrator]], notant la URL.',
 'missingarticle-rev' => '(numar de revision: $1)',
+'filedeleteerror'    => 'No si pues eliminâ il file "$1".',
 'filenotfound'       => 'No si pues cjatâ il file "$1".',
 'badtitle'           => 'Titul sbaliât',
 'badtitletext'       => 'Il titul de pagjine che tu âs inserît nol è valit, al è vuelit, o al veve un erôr tal colegament tra wiki diviersis o tra versions in altris lenghis.
@@ -537,7 +540,9 @@ Par plasê inclût la to direzion IP atuâl ($3) o il numar dal bloc (ID #$5) in
 'loginreqlink'                     => 'jentrâ',
 'loginreqpagetext'                 => 'Tu scugnis $1 par viodi lis altris pagjinis.',
 'accmailtitle'                     => 'Password mandade.',
-'accmailtext'                      => 'La password par "$1" e je stade mandade a $2.',
+'accmailtext'                      => "Une password gjenerade a câs par [[User talk:$1|$1]] e je stade mandade a $2.
+
+La password par cheste identitât e pues jessi cambiade su la pagjine ''[[Special:ChangePassword|cambie password]]'' daspò de jentrade.",
 'newarticle'                       => '(Gnûf)',
 'newarticletext'                   => "Tu âs seguît un leam a une pagjine che no esist ancjemò. Par creâ une pagjine, scomence a scrivi tal spazi ca sot (cjale il [[{{MediaWiki:Helppage}}|jutori]] par altris informazions). Se tu sês ca par erôr, frache semplicementri il boton '''Indaûr''' dal to sgarfadôr.",
 'anontalkpagetext'                 => "----''Cheste e je la pagjine di discussion di un utent anonim, che nol à ancjemò creât une identitât, o che no la vûl doprâ. Par identificâlu/e a doprin alore la so direzion IP. Lis direzions IP a podin però jessi condividudis di plui utents. Se tu sês un utent anonim e tu crodis che ti vedin fat coments che no si riferissin a ti, par plasê [[Special:UserLogin|cree une gnove identitâ o jentre]] cun chê che tu âs za cussì tu evitarâs in futûr di jessi confondût un altris utents anonims.''",
@@ -553,10 +558,10 @@ o ben [{{fullurl:{{FULLPAGENAME}}|action=edit}} cambiâ cheste pagjine]</span>.'
 'editingsection'                   => 'Cambiament di $1 (sezion)',
 'editingcomment'                   => 'Cambiament di $1 (gnove sezion)',
 'editconflict'                     => 'Conflit inte modifiche: $1',
-'explainconflict'                  => 'Cualchidun altri al à cambiât cheste pagjine di cuant che tu âs començât a modificâle.
+'explainconflict'                  => "Cualchidun altri al à cambiât cheste pagjine di cuant che tu âs començât a modificâle.
 La aree di test disore e conten il test de pagjine che esist cumò, i tiei cambiaments a son mostrâts inte aree disot.
 Tu varâs di inserî di gnûf i tiei cambiaments tal test esistint.
-<b>Dome</b> il test in alt al vignarà salvât cuant che tu frachis su "Salve pagjine".<br />',
+'''Dome''' il test in alt al vignarà salvât cuant che tu frachis su \"{{int:savearticle}}\".",
 'editingold'                       => "'''ATENZION: tu stâs cambiant une version vecje e no inzornade di cheste pagjine. Se tu la salvis, ducj i cambiaments fats di chê volte in ca a laran pierdûts.'''",
 'yourdiff'                         => 'Difarencis',
 'copyrightwarning'                 => "Note: ducj i contribûts a {{SITENAME}} a si considerin come dâts fûr sot de licence $2 (cjale $1 pai detais). Se no tu vuelis che i tiei tescj a podedin jessi modificâts e tornâts a dâ fûr di ognidun cence limits, no stâ mandâju a {{SITENAME}}.<br />
@@ -715,9 +720,9 @@ Leiende: (cur) = difarencis cun la version atuâl, (prec) = difarencis cun la ve
 'prefs-rc'                    => 'Ultins cambiaments & stubs',
 'prefs-watchlist'             => 'Tignudis di voli',
 'prefs-watchlist-days'        => 'Numar di zornadis di mostrâ inte liste des pagjinis tignudis di voli:',
-'prefs-watchlist-days-max'    => '(massim 7 zornadis)',
+'prefs-watchlist-days-max'    => 'Massim 7 zornadis',
 'prefs-watchlist-edits'       => 'Numar di modifichis di mostrâ inte liste slargjade:',
-'prefs-watchlist-edits-max'   => '(numar massim: 1000)',
+'prefs-watchlist-edits-max'   => 'Numar massim: 1000',
 'prefs-misc'                  => 'Variis',
 'prefs-resetpass'             => 'Cambie la peraule clâf',
 'saveprefs'                   => 'Salve lis preferencis',
@@ -869,7 +874,7 @@ Par includi une figure intune pagjine, dopre un leam inte form
 'filedesc'              => 'Descrizion',
 'fileuploadsummary'     => 'Somari:',
 'filestatus'            => 'Stât dal copyright:',
-'filesource'            => 'Surzint:',
+'filesource'            => 'Sorzint:',
 'uploadedfiles'         => 'Files cjamâts sù',
 'ignorewarning'         => 'Ignore avîs e salve instès il file.',
 'ignorewarnings'        => 'Ignore i avîs',
@@ -885,7 +890,7 @@ Par includi une figure intune pagjine, dopre un leam inte form
 'uploaddisabledtext'    => 'Lis cjamadis a son disativâts su cheste wiki.',
 'sourcefilename'        => 'Non dal file origjinâl:',
 'destfilename'          => 'Non dal file di destinazion:',
-'watchthisupload'       => 'Ten di voli',
+'watchthisupload'       => 'Ten di voli chest file',
 
 'upload-unknown-size' => 'Dimension no cognossude',
 
@@ -908,7 +913,7 @@ Par includi une figure intune pagjine, dopre un leam inte form
 'file-anchor-link'          => 'Figure',
 'filehist'                  => 'Storic dal file',
 'filehist-help'             => 'Frache suntune date/ore par viodi il file cemût che al jere in chel moment.',
-'filehist-current'          => 'corint',
+'filehist-current'          => 'atuâl',
 'filehist-datetime'         => 'Date/Ore',
 'filehist-thumb'            => 'Miniature',
 'filehist-thumbtext'        => 'Miniature de version dai $1',
@@ -924,7 +929,7 @@ Par includi une figure intune pagjine, dopre un leam inte form
 'shared-repo-from'          => 'di $1',
 
 # File reversion
-'filerevert-comment' => 'Coment:',
+'filerevert-comment' => 'Reson:',
 
 # File deletion
 'filedelete'                  => 'Elimine $1',
@@ -1177,7 +1182,7 @@ Par plasê, da la conferme che tu vuelis fâlu, che tu capissis lis conseguencis
 'actioncomplete'        => 'Azion completade',
 'deletedtext'           => '"<nowiki>$1</nowiki>" al è stât eliminât.
 Cjale $2 par une liste des ultimis eliminazions.',
-'deletedarticle'        => 'eliminât "$1"',
+'deletedarticle'        => 'eliminât "[[$1]]"',
 'dellogpage'            => 'Regjistri des eliminazions',
 'deletionlog'           => 'regjistri eliminazions',
 'reverted'              => 'Tornât ae version precedente',
@@ -1228,7 +1233,7 @@ Tu puedis cambiâ il nivel di protezion di cheste pagjine, ma chest nol varà ef
 'undeletebtn'               => 'Ripristine',
 'undeletelink'              => 'viôt/ripristine',
 'undeleteinvert'            => 'Invertìs selezion',
-'undeletecomment'           => 'Coment:',
+'undeletecomment'           => 'Reson:',
 'undeletedarticle'          => 'al à recuperât "[[$1]]"',
 'undelete-search-prefix'    => 'Mostre lis pagjinis che a scomencin cun:',
 'undelete-search-submit'    => 'Cîr',
@@ -1291,10 +1296,10 @@ Tu puedis cambiâ il nivel di protezion di cheste pagjine, ma chest nol varà ef
 'ipbsubmit'                => 'Bloche chest utent',
 'ipboptions'               => '2 oris:2 hours,1 zornade:1 day,3 zornadis:3 days,1 setemane:1 week,2 setemanis:2 weeks,1 mês:1 month,3 mês:3 months,6 mês:6 months,1 an:1 year,infinît:infinite',
 'badipaddress'             => 'La direzion IP no je valide',
-'ipblocklist'              => 'Utents e direzions IP blocadis',
+'ipblocklist'              => 'Utents blocâts',
 'ipblocklist-submit'       => 'Cîr',
 'blocklink'                => 'bloche',
-'unblocklink'              => 'sbloche',
+'unblocklink'              => 'disbloche',
 'change-blocklink'         => 'cambie bloc',
 'contribslink'             => 'contribûts',
 'blocklogpage'             => 'Regjistri dai blocs',
@@ -1361,7 +1366,8 @@ Sielç par plasê un altri non.',
 'allmessagesname'           => 'Non',
 'allmessagesdefault'        => 'Test predeterminât',
 'allmessagescurrent'        => 'Test curint',
-'allmessagestext'           => 'Cheste e je une liste dai messaçs di sisteme disponibii tal non dal spazi MediaWiki:',
+'allmessagestext'           => 'Cheste e je une liste dai messaçs di sisteme disponibii tal non dal spazi MediaWiki.
+Par plasê va su [http://www.mediawiki.org/wiki/Localisation MediaWiki Localisation] e [http://translatewiki.net translatewiki.net] se tu vuelis contribuî ae traduzion gjeneriche di MediaWiki.',
 'allmessages-language'      => 'Lenghe:',
 'allmessages-filter-submit' => 'Va',
 
@@ -1514,7 +1520,7 @@ Sielç par plasê un altri non.',
 # Bad image list
 'bad_image_list' => 'Il formât al è cussi:
 
-a vegnin considerâts dome i elements des listis (riis che a scomencin cul catatar *). 
+a vegnin considerâts dome i elements des listis (riis che a scomencin cul catatar *).
 Il prin leam intune rie al à di jessi un leam aun file indesiderâtI.
 I leams sucessîfs, su la stesse rie, a son considerâts come ecezions (ven a stâi pagjinis dulà che il file al pues jessi inserît normalmentri).',
 
@@ -1609,7 +1615,7 @@ Se il file al è stât cambiât rispiet al so stât origjinâl, cualchi informaz
 
 # Auto-summaries
 'autosumm-blank' => 'Pagjine disvuedade fûr par fûr',
-'autosumm-new'   => 'Gnove pagjine: $1',
+'autosumm-new'   => 'Creade la pagjine cun "$1"',
 
 # Live preview
 'livepreview-loading' => 'Daûr a cjamâ…',
