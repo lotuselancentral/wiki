@@ -251,7 +251,7 @@ $messages = array(
 'tog-minordefault'            => 'Merk i utgangspunktet alle redigeringer som mindre',
 'tog-previewontop'            => 'Flytt forhåndsvisningen foran redigeringsboksen',
 'tog-previewonfirst'          => 'Vis forhåndsvisning ved første redigering av en side',
-'tog-nocache'                 => 'Skru av mellomlagring av sider («caching»)',
+'tog-nocache'                 => 'Deaktiver nettlesermellomlagring av sider («caching»)',
 'tog-enotifwatchlistpages'    => 'Send meg en e-post når sider på overvåkningslisten blir endret',
 'tog-enotifusertalkpages'     => 'Send meg en e-post ved endringer av brukerdiskusjonssiden min',
 'tog-enotifminoredits'        => 'Send meg en e-post også ved mindre sideendringer',
@@ -259,8 +259,8 @@ $messages = array(
 'tog-shownumberswatching'     => 'Vis antall overvåkende brukere',
 'tog-oldsig'                  => 'Forhåndsvisning av nåværende signatur:',
 'tog-fancysig'                => 'Signatur som wikitekst uten automatisk lenke',
-'tog-externaleditor'          => 'Bruk ekstern behandler som standard (kun for viderekomne, krever spesielle innstillinger på din datamaskin)',
-'tog-externaldiff'            => 'Bruk ekstern differanse som standard (kun for viderekomne, krever spesielle innstillinger på din datamaskin)',
+'tog-externaleditor'          => 'Bruk ekstern behandler som standard (kun for viderekomne, krever spesielle innstillinger på din datamaskin. [http://www.mediawiki.org/wiki/Manual:External_editors Mer informasjon.])',
+'tog-externaldiff'            => 'Bruk ekstern differanse som standard (kun for viderekomne, krever spesielle innstillinger på din datamaskin. [http://www.mediawiki.org/wiki/Manual:External_editors Mer informasjon.])',
 'tog-showjumplinks'           => 'Slå på «gå til»-lenker',
 'tog-uselivepreview'          => 'Bruk levende forhåndsvisning (eksperimentell JavaScript)',
 'tog-forceeditsummary'        => 'Advar meg når jeg ikke gir noen redigeringsforklaring',
@@ -646,7 +646,7 @@ Ikke glem å endre [[Special:Preferences|innstillingene]] dine.',
 'notloggedin'                => 'Ikke logget inn',
 'nologin'                    => "Er du ikke registrert? '''$1'''.",
 'nologinlink'                => 'Opprett en konto',
-'createaccount'              => 'Opprett ny konto',
+'createaccount'              => 'Opprett konto',
 'gotaccount'                 => "Har du allerede et brukernavn? '''$1'''.",
 'gotaccountlink'             => 'Logg inn',
 'createaccountmail'          => 'per e-post',
@@ -853,7 +853,7 @@ Endringene dine har ikke blitt lagret ennå!",
 Den øverste boksen inneholder den nåværende tekst.
 Dine endringer vises i den nederste boksen.
 Du er nødt til å flette dine endringer sammen med den nåværende teksten.
-'''Kun''' teksten i den øverste tekstboksen blir lagret når du trykker «Lagre siden».",
+'''Kun''' teksten i den øverste tekstboksen blir lagret når du trykker «{{int:savearticle}}».",
 'yourtext'                         => 'Din tekst',
 'storedversion'                    => 'Den lagrede versjonen',
 'nonunicodebrowser'                => "'''ADVARSEL: Nettleseren din har ikke støtte for Unicode. Skru det på før du begynner å redigere artikler.'''",
@@ -898,9 +898,9 @@ Det siste loggelementet er oppgitt under som referanse:",
 'permissionserrorstext-withaction' => 'Du har ikke tillatelse til å $2 {{PLURAL:$1|på grunn av|av følgende grunner}}:',
 'recreate-moveddeleted-warn'       => "Advarsel: Du gjenskaper en side som tidligere har blitt slettet.'''
 
-Du burde vurdere hvorvidt det er passende å fortsette å redigere denne siden. 
+Du burde vurdere hvorvidt det er passende å fortsette å redigere denne siden.
 Slette- og flytteloggen for denne siden gjengis her:",
-'moveddeleted-notice'              => 'Denne siden har blitt slettet. 
+'moveddeleted-notice'              => 'Denne siden har blitt slettet.
 Slette- og flytteloggen vises nedenfor.',
 'log-fulllog'                      => 'Vis fullstendig logg',
 'edit-hook-aborted'                => 'Redigering avbrutt av en funksjon, uten forklaring.',
@@ -967,11 +967,11 @@ Forklaring: '''({{int:cur}})''' = forskjell fra nåværende revisjon, '''({{int:
 'history-feed-empty'          => 'Den etterspurte siden finnes ikke. Den kan ha blitt slettet fra wikien, eller fått et nytt navn. Prøv å [[Special:Search|søke]] etter beslektede sider.',
 
 # Revision deletion
-'rev-deleted-comment'         => '(kommentar fjernet)',
+'rev-deleted-comment'         => '(redigeringskommentar fjernet)',
 'rev-deleted-user'            => '(brukernavn fjernet)',
 'rev-deleted-event'           => '(fjernet loggoppføring)',
 'rev-deleted-user-contribs'   => '[brukernavn eller IP-adresse fjernet – redigeringen vises ikke blant bidragene]',
-'rev-deleted-text-permission' => "Denne revisjonen har blitt '''slettet'''. 
+'rev-deleted-text-permission' => "Denne revisjonen har blitt '''slettet'''.
 Det kan være detaljer i [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} slettingsloggen].",
 'rev-deleted-text-unhide'     => "Denne sideversjonen har blitt '''slettet'''.
 Det kan være detaljer i [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} slettingsloggen].
@@ -1201,9 +1201,9 @@ For å søke i alle, bruk prefikset ''all:'' (inkluderer diskusjonssider, maler,
 'prefs-rc'                      => 'Siste endringer',
 'prefs-watchlist'               => 'Overvåkningsliste',
 'prefs-watchlist-days'          => 'Dager som skal vises i overvåkningslisten:',
-'prefs-watchlist-days-max'      => '(maskimum 7 dager)',
+'prefs-watchlist-days-max'      => 'Maksimum 7 dager',
 'prefs-watchlist-edits'         => 'Antall redigeringer som skal vises i utvidet overvåkningsliste:',
-'prefs-watchlist-edits-max'     => '(maksimum antall: 1000)',
+'prefs-watchlist-edits-max'     => 'Maksimum antall: 1000',
 'prefs-watchlist-token'         => 'Nøkkel for overvåkningsliste',
 'prefs-misc'                    => 'Diverse',
 'prefs-resetpass'               => 'Endre passord',
@@ -1561,7 +1561,7 @@ Om du fortsatt ønsker å laste opp fila, gå tilbake og last den opp under et n
 'fileexists-shared-forbidden' => 'Ei fil med dette navnet finnes fra før i det delte fillageret.
 Om du fortsatt ønsker å laste opp fila, gå tilbake og last den opp under et nytt navn. [[File:$1|thumb|center|$1]]',
 'file-exists-duplicate'       => 'Denne filen er en dublett av følgende {{PLURAL:$1|fil|filer}}:',
-'file-deleted-duplicate'      => 'En fil identisk med denne filen ([[$1]]) har tidligere blitt slettet. Du bør sjekke denne filens slettehistorikk før du prøver å laste den opp på nytt.',
+'file-deleted-duplicate'      => 'En fil identisk med denne filen ([[:$1]]) har tidligere blitt slettet. Du bør sjekke denne filens slettehistorikk før du prøver å laste den opp på nytt.',
 'successfulupload'            => 'Opplastingen er gjennomført',
 'uploadwarning'               => 'Opplastingsadvarsel',
 'uploadwarning-text'          => 'Vennligst endre filbeskrivelsen nedenfor og prøv igjen.',
@@ -1614,22 +1614,23 @@ Om problemet fortsetter, kontakt en [[Special:ListUsers/sysop|administrator]].',
 'upload-http-error'         => 'En HTTP-feil oppstod: $1',
 
 # img_auth script messages
-'img-auth-accessdenied' => 'Ingen tilgang',
-'img-auth-nopathinfo'   => 'PATH_INFO mangler.
+'img-auth-accessdenied'     => 'Ingen tilgang',
+'img-auth-nopathinfo'       => 'PATH_INFO mangler.
 Tjeneren din er ikke satt opp til å gi denne informasjonen.
 Den er kanskje CGI-basert og støtter ikke img_auth.
 Se http://www.mediawiki.org/wiki/Manual:Image_Authorization.',
-'img-auth-notindir'     => 'Den ønskede stien finnes ikke i den oppsatte opplastingsmappa.',
-'img-auth-badtitle'     => 'Kunne ikke lage en gyldig tittel ut fra «$1».',
-'img-auth-nologinnWL'   => 'Du er ikke logget inn, og «$1» er ikke på hvitelista.',
-'img-auth-nofile'       => 'Filen «$1» finnes ikke.',
-'img-auth-isdir'        => 'Du prøver å få tilgang til mappa «$1».
+'img-auth-notindir'         => 'Den ønskede stien finnes ikke i den oppsatte opplastingsmappa.',
+'img-auth-badtitle'         => 'Kunne ikke lage en gyldig tittel ut fra «$1».',
+'img-auth-nologinnWL'       => 'Du er ikke logget inn, og «$1» er ikke på hvitelista.',
+'img-auth-nofile'           => 'Filen «$1» finnes ikke.',
+'img-auth-isdir'            => 'Du prøver å få tilgang til mappa «$1».
 Kun filtilgang tillates.',
-'img-auth-streaming'    => 'Sender «$1».',
-'img-auth-public'       => 'Funksjonen til img_auth.php er å lage filer fra en privat wiki.
+'img-auth-streaming'        => 'Sender «$1».',
+'img-auth-public'           => 'Funksjonen til img_auth.php er å lage filer fra en privat wiki.
 Denne wikien er satt opp som en offentlig wiki.
 For best mulig sikkerhet er img_auth.php slått av.',
-'img-auth-noread'       => 'Brukeren har ikke tilgang til å lese «$1».',
+'img-auth-noread'           => 'Brukeren har ikke tilgang til å lese «$1».',
+'img-auth-bad-query-string' => 'URL-en har en ugyldig spørrestreng.',
 
 # HTTP errors
 'http-invalid-url'      => 'Ugyldig internettadresse: $1',
@@ -1796,7 +1797,7 @@ Hver rad inneholder lenker til første og andre omdirigering, samt målet for de
 'brokenredirects-edit'   => 'rediger',
 'brokenredirects-delete' => 'slett',
 
-'withoutinterwiki'         => 'Sider uten lenker til andre språk',
+'withoutinterwiki'         => 'Sider uten språklenker',
 'withoutinterwiki-summary' => 'Følgende sider lenker ikke til andre språkversjoner:',
 'withoutinterwiki-legend'  => 'Prefiks',
 'withoutinterwiki-submit'  => 'Vis',
@@ -2541,7 +2542,8 @@ Besøk [http://translatewiki.net translatewiki.net] om du ønsker å bidra med o
 'import-interwiki-namespace' => 'Målnavnerom:',
 'import-upload-filename'     => 'Filnavn:',
 'import-comment'             => 'Kommentar:',
-'importtext'                 => 'Importer fila fra kildewikien med [[Special:Export|eksporteringsverktøyet]], lagre den på den egen datamaskin, og last den opp hit.',
+'importtext'                 => 'Importer fila fra kildewikien med [[Special:Export|eksporteringsverktøyet]].
+Lagre den på din egen datamaskin og last den opp her.',
 'importstart'                => 'Importerer sider&nbsp;…',
 'import-revision-count'      => '({{PLURAL:$1|Én revisjon|$1 revisjoner}})',
 'importnopages'              => 'Ingen sider å importere.',
@@ -2645,7 +2647,7 @@ Du kan se på kildeteksten',
 'nostalgia.css'   => '/* CSS i denne fila vil gjelde alle som bruker drakta Nostalgia */',
 'cologneblue.css' => '/* CSS i denne fila vil gjelde alle som bruker drakta Kølnerblå */',
 'monobook.css'    => '/* CSS i denne fila vil gjelde alle som bruker drakta Monobook */',
-'myskin.css'      => '/* CSS i denne fila vil gjelde alle som bruker drakta Myskin */',
+'myskin.css'      => '/* CSS i denne fila vil gjelde alle som bruker drakta MySkin */',
 'chick.css'       => '/* CSS i denne fila vil gjelde alle som bruker drakta Chick */',
 'simple.css'      => '/* CSS i denne fila vil gjelde alle som bruker drakta Simple */',
 'modern.css'      => '/* CSS i denne fila vil gjelde alle som bruker drakta Modern */',
@@ -2656,7 +2658,7 @@ Du kan se på kildeteksten',
 'nostalgia.js'   => '/* Javascript i denne fila vil gjelde for brukere av drakta Nostalgia */',
 'cologneblue.js' => '/* Javascript i denne fila vil gjelde for brukere av drakta Kølnerblå */',
 'monobook.js'    => '/* Javascript i denne fila vil gjelde for brukere av drakta Monobook */',
-'myskin.js'      => '/* Javascript i denne fila vil gjelde for brukere av drakta Myskin */',
+'myskin.js'      => '/* Javascript i denne fila vil gjelde for brukere av drakta MySkin */',
 'chick.js'       => '/* Javascript i denne fila vil gjelde for brukere av drakta Chick */',
 'simple.js'      => '/* Javascript i denne fila vil gjelde for brukere av drakta Simple */',
 'modern.js'      => '/* Javascript i denne fila vil gjelde for brukere av drakta Modern */',
@@ -2718,7 +2720,7 @@ Dette er sannsynligvis forårsaket av en lenke til et svartelistet eksternt nett
 'math_unknown_function' => 'ukjent funksjon',
 'math_lexing_error'     => 'lexerfeil',
 'math_syntax_error'     => 'syntaksfeil',
-'math_image_error'      => 'PNG-konversjon mislyktes',
+'math_image_error'      => 'PNG-konversjon mislyktes; sjekk at latex og dvipng (eller dvips + gs + convert) er korrekt installert',
 'math_bad_tmpdir'       => 'Kan ikke skrive til eller opprette midlertidig mappe',
 'math_bad_output'       => 'Kan ikke skrive til eller opprette resultatmappe',
 'math_notexvc'          => 'Mangler kjørbar texvc;
@@ -2847,8 +2849,8 @@ Andre vil skjules som standard.
 'exif-colorspace'                  => 'Fargerom',
 'exif-componentsconfiguration'     => 'Betydning av hver komponent',
 'exif-compressedbitsperpixel'      => 'Bildekompresjonsmodus',
-'exif-pixelydimension'             => 'Gyldig bildebredde',
-'exif-pixelxdimension'             => 'Gyldig bildehøyde',
+'exif-pixelydimension'             => 'Bildebredde',
+'exif-pixelxdimension'             => 'Bildehøyde',
 'exif-makernote'                   => 'Fabrikkmerknader',
 'exif-usercomment'                 => 'Brukerkommentarer',
 'exif-relatedsoundfile'            => 'Relatert lydfil',
@@ -2864,9 +2866,9 @@ Andre vil skjules som standard.
 'exif-spectralsensitivity'         => 'Spektralsensitivitet',
 'exif-isospeedratings'             => 'Filmhastighet (ISO)',
 'exif-oecf'                        => 'Optoelektronisk konversjonsfaktor',
-'exif-shutterspeedvalue'           => 'Lukkerhastighet',
-'exif-aperturevalue'               => 'Apertur',
-'exif-brightnessvalue'             => 'Lysstyrke',
+'exif-shutterspeedvalue'           => 'APEX lukkerhastighet',
+'exif-aperturevalue'               => 'APEX blenderåpning',
+'exif-brightnessvalue'             => 'APEX lysstyrke',
 'exif-exposurebiasvalue'           => 'Eksponeringsbias',
 'exif-maxaperturevalue'            => 'Maksimal blender',
 'exif-subjectdistance'             => 'Avstand til subjekt',
@@ -3012,6 +3014,8 @@ Rotert 90° mot klokka og vridd vertikalt',
 'exif-sensingmethod-5' => 'Fargesekvensiell områdesensor',
 'exif-sensingmethod-7' => 'Trilineær sensor',
 'exif-sensingmethod-8' => 'Fargesekvensiell linær sensor',
+
+'exif-filesource-3' => 'Digitalt stillbildekamera',
 
 'exif-scenetype-1' => 'Direktefotografert bilde',
 
@@ -3314,7 +3318,7 @@ Skriv inn filnavn uten «{{ns:file}}:»-prefikset.',
 'tag-filter'              => 'Filter for [[Special:Tags|tagger]]:',
 'tag-filter-submit'       => 'Filtrer',
 'tags-title'              => 'Tagger',
-'tags-intro'              => 'Denne siden lister opp taggene programvaren kan merke endrineg med, og hva de betyr.',
+'tags-intro'              => 'Denne siden lister opp taggene programvaren kan merke en endring med, og hva de betyr.',
 'tags-tag'                => 'Taggnavn',
 'tags-display-header'     => 'Utseende på endringslister',
 'tags-description-header' => 'Fullstendig betydning',
