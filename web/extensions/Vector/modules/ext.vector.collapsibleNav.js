@@ -1,7 +1,7 @@
 /*
  * Collapisble navigation for Vector
  */
-jQuery( function( $ ) {
+( function( $ ) {
 
 	/* Browser Support */
 
@@ -223,4 +223,4 @@ jQuery( function( $ ) {
 			}
 			return false;
 		} );
-} );
+} )( jQuery );

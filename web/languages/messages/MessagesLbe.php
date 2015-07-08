@@ -39,6 +39,9 @@ $namespaceNames = array(
 	NS_CATEGORY_TALK    => 'Категориялиясса_ихтилат',
 );
 
+// Remove Russian aliases
+$namespaceGenderAliases = array();
+
 $linkTrail = '/^([a-zабвгдеёжзийклмнопрстуфхцчшщъыьэюяӀ1“»]+)(.*)$/sDu';
 
 $messages = array(
@@ -96,7 +99,7 @@ $messages = array(
 # Special:Log
 'specialloguserlabel' => 'Гьурттучув:',
 
-# E-mail user
+# Email user
 'emailuser' => 'ГьурттучувначӀансса чагьар',
 
 # Watchlist

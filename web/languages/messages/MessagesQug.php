@@ -12,7 +12,26 @@
  * @author Sylvain2803
  */
 
-$fallback = 'qu';
+$fallback = 'qu, es';
+
+$namespaceNames = array(
+	NS_MEDIA            => 'Midya',
+	NS_SPECIAL          => 'Sapak',
+	NS_TALK             => 'Rimanakuy',
+	NS_USER             => 'Rurak',
+	NS_USER_TALK        => 'Rurakpa_rimanakuy',
+	NS_PROJECT_TALK     => '$1-pa_rimanakuy',
+	NS_FILE             => 'Rikcha',
+	NS_FILE_TALK        => 'Rikchapa_rimanakuy',
+	NS_MEDIAWIKI        => 'MediaWiki',
+	NS_MEDIAWIKI_TALK   => 'MediaWikipa_rimanakuy',
+	NS_TEMPLATE         => 'Plantilla',
+	NS_TEMPLATE_TALK    => 'Plantillapa_rimanakuy',
+	NS_HELP             => 'Yanapa',
+	NS_HELP_TALK        => 'Yanapapak_rimanakuy',
+	NS_CATEGORY         => 'Samiyachiy',
+	NS_CATEGORY_TALK    => 'Samiyachiy_rimanakuy',
+);
 
 $messages = array(
 # User preference toggles
@@ -23,7 +42,7 @@ $messages = array(
 'tog-hidepatrolled'          => 'mushuk killkaykunapak kamupi, ña rikushka killkaykunata pakana',
 'tog-newpageshidepatrolled'  => 'Mushuk pankakunapak kamupi, ña rikushka pankakunata pakana',
 'tog-extendwatchlist'        => 'Rikushka pankakunapak mushuk killkaykunapak kamupi, ama yallik mushuk killkaykunatalla rikuchina, tukuykunatami rikuchina',
-'tog-usenewrc'               => 'Mushuk killkaykunata ashtawan alli rikuchina (Javascriptwanlla)',
+'tog-usenewrc'               => 'Mushuk killkaykunata chapashka pankakunapak killkaykunatapash ashtawan alli rikuchina (Javascriptwanlla)',
 'tog-numberheadings'         => 'Uma killkaykunata yupayta churak antawata llankachina',
 'tog-showtoolbar'            => 'Llamkana antakunata rikuchina (Javascriptwanlla)',
 'tog-editondblclick'         => 'Ishkayta klik rurashpa pankapi killkanata kallarina (JavaScriptwanlla)',
@@ -326,10 +345,9 @@ Shina kakpika, shuk rurakka ña pankata pichankacha.',
 'badtitle'             => 'Pankapa shutika mana allichu',
 'badtitletext'         => 'Kay pankapa shutika mana allichu, icha illakmi kan. Icha mana alli llikata charin.',
 'viewsource'           => 'Pukyu killkata rikuna',
-'viewsourcefor'        => '$1-pak',
 'actionthrottled'      => 'Rurayta harkashka',
 'actionthrottledtext'  => 'Spam rurashpa nalli runakunaka ama yapata chaskikuna kachankapak, mana chayta kutin ñapash rurana ushapankichu. Ama shinachu kapay, ashata shuyashpa  (wakin minutoskuna) kutin rurapay.',
-'protectedpagetext'    => 'Kay pankata ama shukchinkapak harkashkami kan.',
+'protectedpagetext'    => 'Kay pankaka ama shukchinkapak harkashkami kan.',
 'viewsourcetext'       => 'Kay pankapak wiki killkayta rikunata, ishkachinatapash ushapankimi.',
 'protectedinterface'   => 'Kay pankaka kapak willaykunata charinmi, ama nalli runakunaka kaypi killkankapak harkashkami kapan.',
 
@@ -386,7 +404,7 @@ Shina kakpika, shuk rurakka ña pankata pichankacha.',
 'noarticletext'                    => 'Kunan pachapi, kay pankaka mana killkaykunata charin.
 Pakpak shutita [[Special:Search/{{PAGENAME}}|shuk pankakunapi maskanata]], <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} registroskunapi maskanata]pash ushankimi, kutin [{{fullurl:{{FULLPAGENAME}}|action=edit}} kay pankata kamarinata] ushankimi',
 'noarticletext-nopermission'       => 'Kunan pachapi kay pankaka mana killkashkakunata charinchu. Paypak shutita [[Special:Search/{{PAGENAME}}|shuk pankakunapi maskanata]] ushapankimi, shinalla <span class="plainlinks">pankakunapa wiñay kawsay kamupi [{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} tinkishka shukchiykunaka] maskana</span>',
-'previewnote'                      => 'Rikupay: kay killkaykunata mana churapankichu !',
+'previewnote'                      => 'Rikupay: kay killkaykunata nara allichipashkankichu !',
 'editing'                          => '$1 pankapi killkashpa',
 'editingsection'                   => '$1 rakipi killkashpa',
 'templatesused'                    => 'Kay pankaka {{PLURAL:$1|plantilla|plantillakuna}}ta llankachin:',
@@ -432,13 +450,9 @@ Kay (kaykunachu) kachashkakunaka cunkashkami kashka.",
 
 # Revision deletion
 'rev-delundel'           => 'Rikuchiy/pakay',
-'revdelete-logentry'     => 'Pita [[$1]] ñawpa killkaykunata rikunata ushanchu kutin kamachirka.',
 'revdel-restore'         => 'Rikuyukkunata shukchina',
 'revdel-restore-deleted' => 'pichashka shukchiykuna',
 'revdel-restore-visible' => 'Mana pakashka shukchiykuna',
-'revdelete-content'      => 'Tiyakkuna',
-'revdelete-hid'          => '$1-ta pakarka',
-'revdelete-log-message'  => '$1, $2 {{PLURAL:$2|mushuk killkay|mushuk killkaykuna}}pak',
 
 # Merge log
 'revertmerge' => 'Shukllachiyta kutichina',
@@ -597,7 +611,7 @@ Shuk rurakkunaka kikinpa e-chaski ''dirección''ta mana yachankachu.",
 'nbytes'        => '$1 {{PLURAL:$1|byte|byte}}',
 'nmembers'      => '$1 {{PLURAL:$1|panka|pankakuna}}',
 'prefixindex'   => 'Tukuy kallarikshutiyuk pankakunaka',
-'usercreated'   => '$1 punchapi $2 pachapi kamashka',
+'usercreated'   => '{{GENDER:$3|}}$1 punchapi $2 pachapi kamashka',
 'newpages'      => 'Mushuk pankakuna',
 'move'          => 'Apakuy',
 'movethispage'  => 'Kay pankaman shuk mushuk shutita karana',
@@ -629,18 +643,17 @@ Shuk rurakkunaka kikinpa e-chaski ''dirección''ta mana yachankachu.",
 'linksearch-line' => '$1 pankaka $2-manta tinkishkami kan',
 
 # Special:Log/newusers
-'newuserlogpage'          => 'Rurakkununata kamaykunapa kamu',
-'newuserlog-create-entry' => 'Mushuk rurak',
+'newuserlogpage' => 'Rurakkununata kamaykunapa kamu',
 
 # Special:ListGroupRights
 'listgrouprights-members' => '(Kay tantanakuypa rurakkunapa shutikuna)',
 
-# E-mail user
+# Email user
 'emailuser' => 'Kay rurakman e-chaskita kachana',
 
 # Watchlist
 'watchlist'         => 'Rikukushka pankakuna',
-'mywatchlist'       => 'Imata rikukuni',
+'mywatchlist'       => 'Imata chapakuni',
 'watchlistfor2'     => '$1-pak $2',
 'watch'             => 'rikupay',
 'watchthispage'     => 'Kay pankata rikukuna',
@@ -659,7 +672,6 @@ Shuk rurakkunaka kikinpa e-chaski ''dirección''ta mana yachankachu.",
 'actionfailed'          => 'Mana ushanchu',
 'deletedtext'           => '"$1" ñami pichashkami kan.
 $2 rikpika, ima pankakunaka pichashkami kan yachakupanki.',
-'deletedarticle'        => '"[[$1]]" pankata picharka',
 'dellogpage'            => 'Pichaykunapa kamu',
 'deletecomment'         => 'Imashpa:',
 'deleteotherreason'     => 'Yapa imashpa:',
@@ -676,16 +688,15 @@ $2 rikpika, ima pankakunaka pichashkami kan yachakupanki.',
 'protect_expiry_invalid'      => "''Ima pachakaman'' mana alli nishkami.",
 'protect_expiry_old'          => "''Ima pachakaman'' mana alli nishkami : kay pachaka ñawpak pachapi kapanmi !",
 'protect-default'             => 'Rukuy runakunaman ari nipay',
-'protect-fallback'            => '«$1» hayñita mutsupanki',
-'protect-level-autoconfirmed' => 'Mushuk rurakkunata mana shutiyuk rurakkunatapash wichkana',
-'protect-level-sysop'         => 'Kipukamayukkunalla',
+'protect-fallback'            => '«$1» hayñiyuk rurakkunallapak',
+'protect-level-autoconfirmed' => 'Kikin shutiyuk rurakkunallapak',
+'protect-level-sysop'         => 'Kipukamayukkunallapak',
 'protect-expiring'            => '$1 (UTC) pachakaman',
 'restriction-type'            => 'Hayñi:',
 
 # Undelete
 'undeletelink'     => 'Rikuna/pakarina',
 'undeleteviewlink' => 'rikuna',
-'undeletedarticle' => '«[[$1]]» kutin kamarka',
 
 # Namespace form on various pages
 'namespace'      => 'Shutipak kiti',
@@ -743,22 +754,20 @@ $2 rikpika, ima pankakunaka pichashkami kan yachakupanki.',
 'block-log-flags-nocreate' => 'Mushuk rurak shutipa kamayta wichkashkami',
 
 # Move page
-'movearticle'     => 'Kay pankama mushuk shutita karapana:',
-'newtitle'        => 'Kay mushuk shutiman',
-'move-watch'      => 'Kay ishkay pankakunata rikukuna',
-'movepagebtn'     => 'Kay pankaman mushuk shutita karapana:',
-'pagemovedsub'    => 'Shutita ñami shukchishka',
-'movepage-moved'  => '\'\'\'"$1" pankaka "$2"shutiman apakushka\'\'\'',
-'articleexists'   => 'Shuk pankaka ñami kay shutita charin, icha kay shutiyuk man alli kan.
+'movearticle'    => 'Kay pankama mushuk shutita karapana:',
+'newtitle'       => 'Kay mushuk shutiman',
+'move-watch'     => 'Kay ishkay pankakunata rikukuna',
+'movepagebtn'    => 'Kay pankaman mushuk shutita karapana:',
+'pagemovedsub'   => 'Shutita ñami shukchishka',
+'movepage-moved' => '\'\'\'"$1" pankaka "$2"shutiman apakushka\'\'\'',
+'articleexists'  => 'Shuk pankaka ñami kay shutita charin, icha kay shutiyuk man alli kan.
 Shuk shutita akllapay.',
-'talkexists'      => 'Kay pankapa shutita ñami shukchishkami kan, shinapash paypa rimanakuyta shuk rimanakuyka ñami tiyakpika mana apamushkami kan : makillawan kay ishkay rimanakuykunata tantachipay.',
-'movedto'         => 'Kayman apakushka :',
-'movetalk'        => 'Tinkishka rimanakuyta shinalla apakuna',
-'1movedto2'       => '«[[$1]]» «[[$2]]»-man apakushka',
-'1movedto2_redir' => '[[$1]] [[$2]]-man shuk pushayta pichashpami apakushka',
-'movelogpage'     => 'Shutikunata shukchiykunapa kamu',
-'movereason'      => 'Imashpa:',
-'revertmove'      => 'Kutichina',
+'talkexists'     => 'Kay pankapa shutita ñami shukchishkami kan, shinapash paypa rimanakuyta shuk rimanakuyka ñami tiyakpika mana apamushkami kan : makillawan kay ishkay rimanakuykunata tantachipay.',
+'movedto'        => 'Kayman apakushka :',
+'movetalk'       => 'Tinkishka rimanakuyta shinalla apakuna',
+'movelogpage'    => 'Shutikunata shukchiykunapa kamu',
+'movereason'     => 'Imashpa:',
+'revertmove'     => 'Kutichina',
 
 # Export
 'export' => 'Pankakunata apakuna',
@@ -827,17 +836,13 @@ Shuk shutita akllapay.',
 'tooltip-undo'                    => '"Kutichina" nikpika, kay hapishka killkayta kutichipanki, shinalla killkana pankapa "ñawpak rikuchiy" rikupanki : chaymanta, imashpa kay killkayta kutichipankichu rimanata ushapanki',
 'tooltip-summary'                 => 'Uchilla willayta killkana',
 
-# Patrol log
-'patrol-log-line' => '$1 $2 pankamanta alli kachirka $3',
-'patrol-log-diff' => '$1 mushuk killkata',
-
 # Browsing diffs
 'previousdiff' => 'Yallik ñawpakmi killkay',
 'nextdiff'     => 'Yalli mushukmi killkay',
 
 # Media information
 'file-info-size' => '$1 × $2 tawakukuna (pixelkuna); $3 llashakmi kan; MIME sami: $4',
-'file-nohires'   => '<small>Kay rikchapa shuk yallik hatun rikuchiyka mana tiyanchu.</small>',
+'file-nohires'   => 'Kay rikchapa shuk yallik hatun rikuchiyka mana tiyanchu.',
 'svg-long-desc'  => 'SVG archiwuka, $1 × $2 tawakukunayuk rimashka, $3 llashakmi.',
 'show-big-image' => 'Yallik hatun rikuchipay',
 

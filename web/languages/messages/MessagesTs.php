@@ -342,6 +342,7 @@ Ukomberiwa ku pota xigalana lexi eka [[Special:ListUsers/sysop|mulanguteri]], u 
 'badarticleerror'      => 'This action cannot be performed on this page.',
 'cannotdelete'         => 'Could not delete the page or file specified.
 It may have already been deleted by someone else.',
+'cannotdelete-title'   => 'Tluka "$1", ari suleki',
 'badtitle'             => 'Bad title',
 'badtitletext'         => 'The requested page title was invalid, empty, or an incorrectly linked inter-language or inter-wiki title.
 It may contain one or more characters which cannot be used in titles.',
@@ -351,8 +352,10 @@ Data here will not presently be refreshed.',
 Function: $1<br />
 Query: $2',
 'viewsource'           => 'Vona tsalwa-tumbuluxa',
+'viewsource-title'     => 'vona xihlovo xa $1',
 'protectedpagetext'    => 'Tluka leri riserheleriwile kusivele ndzulamiso.',
 'viewsourcetext'       => 'Unga langutisa naswona u kopa xihlovo xa tluka leri.',
+'viewyourtext'         => 'Unga langutisa naswona ukopa xihlovo xa "mindzulamiso yawena" eka tluka leri.',
 'protectedinterface'   => 'Tluka leri rina xihlanganisi xa software, naswona risirheleriwile kusivela kuthyakisiwa.',
 'editinginterface'     => "'''Tivonele:''' ulekululamiseni tlika leri tirhisiwaka ku komba matsalwa yo hlanganisa ya software.
 Kucinca eka tluka leri kunga onha kulanguteka ka matluka eka vatirhisi van'wana.
@@ -433,6 +436,9 @@ Loko ufike eka tluka leri hixihoxo, thlava bhatheni leyinge '''thlelela'''.",
 Unga [[Special:Search/{{PAGENAME}}|lavalava nhlokomhaka ya tluka leri]] eka matluka man\'wana,
 <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} lavalava eka nghula leyiyelanaka],
 kumbe [{{fullurl:{{FULLPAGENAME}}|action=edit}} u hlakarhelisa tluka leri]</span>.',
+'noarticletext-nopermission'       => 'Kuhava matsalwa eka tluka leri.
+Unga [[Special:Search/{{PAGENAME}}|lavalava nhlokomhaka ya tluka leri]] endzeni ka matluka man\'wana,
+kumbe u <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} lavalava eka nghula leyiyelanaka]</span>.',
 'previewnote'                      => "'''Lowu i ndzinganiso ntsena;
 kucinca a ku sihlayisiwa!'''",
 'editing'                          => 'Ulekululamiseni ka $1',
@@ -659,6 +665,7 @@ Nhlamuselo ya yona leyi nge ndzeni ka [$2 tluka ro hlamusela] hi yona leyi kombi
 'nbytes'        => '$1 {{PLURAL:$1|wa bayiti|wa tibayit}}',
 'nmembers'      => '$1 {{PLURAL:$1|museketeri| wa vaseketeri}}',
 'prefixindex'   => 'Matluka hinkwawo lama sungulaka hi',
+'usercreated'   => '{{GENDER:$3|u tumbuluxe}} hi siku ra $1 hinkarhi wa $2',
 'newpages'      => 'Matluka mantswa',
 'move'          => 'Yi sa kunwana',
 'movethispage'  => 'Yisa tluka leri ndhzawini yinwana',
@@ -688,13 +695,12 @@ Nhlamuselo ya yona leyi nge ndzeni ka [$2 tluka ro hlamusela] hi yona leyi kombi
 'linksearch-line' => '$1 yi khwekerisiwe kusuka eka $2',
 
 # Special:Log/newusers
-'newuserlogpage'          => 'Nghula ya nxaxamelo wa ku tumbuluxiwa ka vatirhisi',
-'newuserlog-create-entry' => 'Mutirhisi muntswa',
+'newuserlogpage' => 'Nghula ya nxaxamelo wa ku tumbuluxiwa ka vatirhisi',
 
 # Special:ListGroupRights
 'listgrouprights-members' => '(nxaxamelo wa valandzeri)',
 
-# E-mail user
+# Email user
 'emailuser' => 'rhumela mutirhisi loyi E-mail',
 
 # Watchlist
@@ -860,6 +866,7 @@ Unga vona xit\\holvo xa rona',
 
 # Media information
 'file-info-size' => '$1 × $2 ku anama na leha hi ti phikisele, Vukulu bya fayili: $3, muxaka waMIME: $4',
+'file-nohires'   => 'Xifaniso lexi axikuriseki kuhundza laha.',
 'svg-long-desc'  => 'Fayili ya SVG, vukulu lebyi ringaneke $1 × $2 hi ti phikisele, vukulu bya fayili: $3',
 'show-big-image' => 'kuleha na ku anama hixitalo',
 

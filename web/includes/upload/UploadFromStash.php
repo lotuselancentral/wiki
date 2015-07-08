@@ -2,11 +2,9 @@
 /**
  * Implements uploading from previously stored file.
  *
- * @file
- * @ingroup upload
+ * @ingroup Upload
  * @author Bryan Tong Minh
  */
-
 class UploadFromStash extends UploadBase {
 	protected $mFileKey, $mVirtualTempPath, $mFileProps, $mSourceType;
 
@@ -111,14 +109,9 @@ class UploadFromStash extends UploadBase {
 		return $this->mSourceType;
 	}
 
-	/**
-	 * File has been previously verified so no need to do so again.
-	 *
-	 * @return bool
+	/*
+	 * protected function verifyFile() inherited
 	 */
-	protected function verifyFile() {
-		return true;
-	}
 
 	/**
 	 * Stash the file.

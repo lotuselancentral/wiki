@@ -279,7 +279,6 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'internalerror'       => 'Interner Fehler',
 'internalerror_info'  => 'Interner Fehler: $1',
 'badtitle'            => 'Tidl net gildich',
-'viewsourcefor'       => 'fer $1',
 'ns-specialprotected' => 'Besunnere Bledder sinn net zum Ennere.',
 
 # Virus scanner
@@ -316,6 +315,9 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'passwordreset-username'     => 'Yuuser-Naame:',
 'passwordreset-emailelement' => 'Yuusernaame: $1
 Paesswatt fer nau: $2',
+
+# Special:ChangeEmail
+'changeemail-none' => '(ken)',
 
 # Edit page toolbar
 'bold_sample'     => 'Wadde fett gmarrickt',
@@ -378,8 +380,6 @@ Paesswatt fer nau: $2',
 'revdelete-radio-unset'      => 'Nee',
 'revdelete-log'              => 'Grund:',
 'pagehist'                   => 'Gschicht',
-'revdelete-uname'            => 'Yuuser-Naame',
-'revdelete-log-message'      => '$1 fer $2 {{PLURAL:$2|Version|Versione}}',
 'revdelete-otherreason'      => 'Annere Grind dezu:',
 'revdelete-reasonotherlist'  => 'Annere Grind',
 'revdelete-edit-reasonlist'  => "Grind fer's Lesche ennere",
@@ -520,6 +520,7 @@ Paesswatt fer nau: $2',
 'newpageletter'             => 'N',
 'boteditletter'             => 'W',
 'rc_categories_any'         => 'All',
+'rc-change-size-new'        => '$1 {{PLURAL:$1|Beit|Beit}} nooch daer Ennering',
 'newsectionsummary'         => 'Neier Abschnitt /* $1 */',
 
 # Recent changes linked
@@ -542,6 +543,9 @@ Paesswatt fer nau: $2',
 'upload-file-error'   => 'Interner Fehler',
 'upload-unknown-size' => 'Unbekannte Grees',
 'upload-http-error'   => 'En HTTP-Fehler iss kumme: $1',
+
+# File backend
+'backend-fail-backup' => 'Des Feil $1 iss net zwettgmacht warre.',
 
 # img_auth script messages
 'img-auth-nofile' => 'Feil „$1“ gebt es net.',
@@ -680,9 +684,9 @@ Paesswatt fer nau: $2',
 'listgrouprights-addgroup'     => 'Yuuser zu {{PLURAL:$2|daer Druppe|denne Druppe}} dezu duh: $1',
 'listgrouprights-addgroup-all' => 'Yuuser zu alle Druppe dezu duh',
 
-# E-mail user
+# Email user
 'emailuser'       => 'E-Poschd fer den Yuuser',
-'defemailsubject' => '{{SITENAME}}-E-Poschde',
+'defemailsubject' => '{{SITENAME}} - E-Poschde vun Yuuser „$1“',
 'emailusername'   => 'Yuuser-Naame:',
 'emailfrom'       => 'Vun:',
 'emailto'         => 'Fer:',
@@ -717,7 +721,6 @@ Paesswatt fer nau: $2',
 'delete-legend'          => 'Verwische',
 'deletedtext'            => '"$1" iss gelescht warre.
 Guck $2 fer e Lischt vun de letscht Leschunge.',
-'deletedarticle'         => 'hot „[[$1]]“ gelöscht',
 'dellogpage'             => 'Lischt vun gelöschte Bledder',
 'deletecomment'          => 'Grund:',
 'deleteotherreason'      => 'Annre Grind:',
@@ -811,8 +814,6 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'pagemovedsub'            => 'Blatt iss gezoge warre',
 'movepage-moved'          => "'''Es Blatt „$1“ iss gezoge warre uff „$2“'''",
 'movedto'                 => 'gezoge uff',
-'1movedto2'               => 'hot „[[$1]]“ nooch „[[$2]]“ gezoge',
-'1movedto2_redir'         => 'hot „[[$1]]“ nooch „[[$2]]“ gezoge unn debei e Weiderleiding iwwerschriwwe',
 'movereason'              => 'Grund:',
 'revertmove'              => 'zerick ziehe',
 'delete_and_move_confirm' => 'Ya, es Blatt lösche',
@@ -906,6 +907,13 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'noimages'     => 'Keene Feils gfunne.',
 'ilsubmit'     => 'Guck uff',
 
+# Video information, used by Language::formatTimePeriod() to format lengths in the above messages
+'seconds' => '{{PLURAL:$1|$1 Sekund|$1 Sekunde}}',
+'minutes' => '{{PLURAL:$1|$1 Minudd|$1 Minudde}}',
+'hours'   => '{{PLURAL:$1|ee Schtund|$1 Schtunde}}',
+'days'    => '{{PLURAL:$1|een Daag|$1 Daag}}',
+'ago'     => 'vor $1',
+
 # Metadata
 'metadata' => 'Metadaade',
 
@@ -934,9 +942,6 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 # Scary transclusion
 'scarytranscludetoolong' => '[URL iss zu lang]',
 
-# Trackbacks
-'trackbackremove' => '([$1 lösche])',
-
 # action=purge
 'confirm_purge_button' => 'OK',
 
@@ -946,7 +951,7 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 
 # Separators for various lists, etc.
 'ellipsis' => '…',
-'percent'  => '$1&nbsp;%',
+'percent'  => '$1&#160;%',
 
 # Multipage image navigation
 'imgmultipageprev' => '← letscht Blatt',
@@ -1015,5 +1020,8 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 # HTML forms
 'htmlform-reset'               => 'Enneringe losmache',
 'htmlform-selectorother-other' => 'Annere',
+
+# Feedback
+'feedback-message' => 'Melding:',
 
 );

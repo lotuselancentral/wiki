@@ -10,6 +10,7 @@
  * @author (vinny)
  * @author Gleki
  * @author Homo logos
+ * @author Inego (on jbo.wikipedia.org)
  * @author Malafaya
  * @author OldakQuill
  * @author PierreAbbat
@@ -331,7 +332,6 @@ $messages = array(
 # Delete
 'actioncomplete' => "mo'u pruce",
 'actionfailed'   => 'fliba lo nu pruce',
-'deletedarticle' => "pu daspo la'e lu [[$1]] li'u",
 'dellogpage'     => 'plivei fi loi nu daspo',
 'deletionlog'    => 'plivei fi loi nu daspo',
 
@@ -370,7 +370,6 @@ $messages = array(
 
 # Move page
 'movedto'    => 'te muvdu',
-'1movedto2'  => "le pu se cmene lu [[$1]] li'u cu ca se cmene lu [[$2]] li'u",
 'revertmove' => 'xruti',
 
 # Namespace 8 related
