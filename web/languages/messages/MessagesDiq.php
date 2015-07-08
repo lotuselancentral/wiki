@@ -18,6 +18,8 @@ $messages = array(
 'tog-highlightbroken'         => 'Gırêyanê vengan <a href="" class="new">wına</a> (alternative: wına<a href="" class="internal">?</a>) bımocne',
 'tog-justify'                 => 'Nuşte dı kıştan ser bıazne',
 'tog-hideminor'               => 'Vurnayışanê şenıkan pela vurnayışê peyêni de bınımne',
+'tog-hidepatrolled'           => 'Vurnayışanê qontrolkerdeyan pela „vurnayışê peyêni“ de bınımne',
+'tog-newpageshidepatrolled'   => 'Pelanê qontrolkerdeyan lista pelanê neweyan ra bınımne',
 'tog-extendwatchlist'         => 'Lista seyrkerdışi semedê, tenza tewr peyênan nê, diyayışê pêro vurnayışan hera ke',
 'tog-usenewrc'                => "Lista vurnayışanê peyênana herakerdiye (''JavaScript'' lazımo)",
 'tog-numberheadings'          => 'Sernuşteyan be xo numre cışane',
@@ -52,6 +54,7 @@ $messages = array(
 'tog-watchlisthideminor'      => 'Vurnayışanê qıckekan lista mına seyr-kerdışi de bınımne',
 'tog-watchlisthideliu'        => 'Lista seyrkerdışi ra vurnayışanê karberanê cıkewteyan bınımne',
 'tog-watchlisthideanons'      => 'Lista seyrkerdışi ra vurnayışanê karberanê anoniman bınımne',
+'tog-watchlisthidepatrolled'  => 'Lista seyrkerdışi ra vurnayışanê qontrolkerdeyan bınımne',
 'tog-ccmeonemails'            => 'E-mailanê ke ez karberanê binan rê rışenan, mı rê kopya inan bırışe',
 'tog-diffonly'                => 'Qıyasê verziyonan de tek ferqan bımocne, perra butıne nê',
 'tog-showhiddencats'          => 'Kategoriyanê dızdine bımocne',
@@ -530,6 +533,7 @@ Pe verbendi ''all:'', vaceyê xo bıvurni ki contenti hemi cıgeyro (pelanê mı
 'filehist-comment'          => 'Rexne',
 'imagelinks'                => 'Gıreyê dosya',
 'linkstoimage'              => 'Ena {{PLURAL:$1|pelge şın|$1 pelgayan şın}} ena dosya:',
+'sharedupload'              => 'Ena dosya $1 ra u belki projeyê binan dı hewitiyeno.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'noimage-linktext'          => 'Bar ke',
 'uploadnewversion-linktext' => 'Versiyonê newiyerê ena dosya bar ke',
 
@@ -855,12 +859,13 @@ Eg ena dosya, kondisyonê orcinali ra bıvuriya, belki detayanê hemi nıeseno.'
 'metadata-collapse' => 'extended details bınım',
 'metadata-fields'   => 'Ke tabloyê metadatayi nıeseno, ma EXIF metadata (eno mesaj dı) zerri pele resimi ri ken de. 
 Ma aya bini numnen.
-*kar
-*model
-*seatzemanoricinal
-*demoexposuri
-*famar
-*focaldergi', # Do not translate list items
+* make
+* model
+* datetimeoriginal
+* exposuretime
+* fnumber
+* isospeedratings
+* focallength', # Do not translate list items
 
 'exif-gaincontrol-0' => 'çino',
 

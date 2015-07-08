@@ -399,6 +399,10 @@ Prašuom pasėrėnktė kėtuoki varda.',
 'badsig'                     => 'Neteisings parašas; patėkrinkėt HTML žīmės.',
 'badsiglength'               => 'Tamstas parašos īr par ėlgs.
 Ana gal sodarītė ne daugiau kāp $1 {{PLURAL:$1|sėmbuolis|sėmbuolē|sėmbuoliu}}.',
+'yourgender'                 => 'Lītis:',
+'gender-unknown'             => 'Nier nuruodīta',
+'gender-male'                => 'Vīrs',
+'gender-female'              => 'Muoterėška',
 'email'                      => 'El. pašts',
 'prefs-help-realname'        => 'Tėkrs vards nier privaluoms, vuo jēgo Tamsta ana ivesėt, ons bus nauduojams Tamstas darba pažīmiejėmō.',
 'loginerror'                 => 'Prisėjongėma klaida',
@@ -707,7 +711,10 @@ Kėtė admėnėstratuorē šėtom pruojekte vėsdar galės pasėiktė pasliepta 
 'searchmenu-new'                   => "'''Sokortė poslapi „[[:$1]]“ šėtuo wiki!'''",
 'searchhelp-url'                   => 'Help:Torėnīs',
 'searchmenu-prefix'                => '[[Special:PrefixIndex/$1|Ėiškuotė poslapiu so šėtuom prīšdielio]]',
+'searchprofile-articles'           => 'Torėnė poslapē',
 'searchprofile-articles-and-proj'  => 'Torėnīs ė pruojėkta poslapē',
+'searchprofile-project'            => 'Pruojėkta poslapē',
+'searchprofile-images'             => 'Failā',
 'searchprofile-everything'         => 'Vėsks',
 'searchprofile-advanced'           => 'Prapliesta',
 'searchprofile-articles-tooltip'   => 'Ėiškuotė čiuonās: $1',
@@ -770,6 +777,7 @@ Kėtė admėnėstratuorē šėtom pruojekte vėsdar galės pasėiktė pasliepta 
 'prefs-resetpass'           => 'Keistė slaptažuodi',
 'saveprefs'                 => 'Ėšsauguotė',
 'resetprefs'                => 'Atstatītė nostatīmos',
+'restoreprefs'              => 'Atstatītė vėsus numatītūsius nustatīmus',
 'textboxsize'               => 'Redagavėms',
 'prefs-edit-boxsize'        => 'Redagavėma longa dėdoms.',
 'rows'                      => 'Eilotės:',
@@ -792,6 +800,15 @@ Kėtė admėnėstratuorē šėtom pruojekte vėsdar galės pasėiktė pasliepta 
 'timezoneoffset'            => 'Skėrtoms¹:',
 'servertime'                => 'Serverė čiesos:',
 'guesstimezone'             => 'Paimtė ėš naršīklės',
+'timezoneregion-africa'     => 'Afrėka',
+'timezoneregion-america'    => 'Amerėka',
+'timezoneregion-antarctica' => 'Antarktėda',
+'timezoneregion-asia'       => 'Azėjė',
+'timezoneregion-atlantic'   => 'Atlanta ondenīns',
+'timezoneregion-australia'  => 'Australėjė',
+'timezoneregion-europe'     => 'Euruopa',
+'timezoneregion-indian'     => 'Indėjės ondenīns',
+'timezoneregion-pacific'    => 'Ramosis ondenīns',
 'allowemail'                => 'Lēstė siūstė el. gramuotelės ėš kėtū nauduotuoju',
 'prefs-searchoptions'       => 'Paėiškuos nustatīmā',
 'prefs-namespaces'          => 'Vardū srėtīs',
@@ -974,34 +991,29 @@ Paspaude ont štolpelė ontraštės pakeisėt ėšruokavėma.',
 'listfiles_count'       => 'Versėjės',
 
 # File description page
-'filehist'                       => 'Abruozdielė istuorėjė',
-'filehist-help'                  => 'Paspauskėt ont datas/čiesa, ka paveizietomėt faila tuoki, kokis ons bova tū čiesu.',
-'filehist-deleteall'             => 'trintė vėsus',
-'filehist-deleteone'             => 'trintė šėta',
-'filehist-revert'                => 'sogōžėntė',
-'filehist-current'               => 'dabartėnis',
-'filehist-datetime'              => 'Data/Čiesos',
-'filehist-thumb'                 => 'Miniatiūra',
-'filehist-thumbtext'             => 'Versėjės $1 miniatiūra',
-'filehist-user'                  => 'Nauduotuos',
-'filehist-dimensions'            => 'Mierā',
-'filehist-filesize'              => 'Faila dėdoms',
-'filehist-comment'               => 'Kuomentars',
-'imagelinks'                     => 'Faila nūruodas',
-'linkstoimage'                   => '{{PLURAL:$1|Šėts poslapis|Šėtė poslapē}} nuruod i šėta faila:',
-'nolinkstoimage'                 => 'I faila neruod anėjuoks poslapis.',
-'sharedupload'                   => 'Tas fails īr ikelts bendram nauduojėmō ė gal būtė nauduojams kėtūs pruojektūs.',
-'shareduploadwiki'               => 'Veizėkiet $1 tolėmesnē infuormacėjē.',
-'shareduploadwiki-desc'          => 'Aprašīms ėš anuo $1 ruoduoms žemiau īr.',
-'shareduploadwiki-linktext'      => 'faila aprašīma poslapi',
-'shareduploadduplicate'          => 'Tas fails īr $1, esontė bendruojuo saugīkluo, doblėkats.',
-'shareduploadduplicate-linktext' => 'kėts fails',
-'shareduploadconflict'           => 'Tas fails tor līgē tuoki pati pavadinėma kāp ė $1 bendruojuo doumenū saugīkluo.',
-'shareduploadconflict-linktext'  => 'kėts fails',
-'noimage'                        => 'Nier faila so šėtokio pavadėnėmo. Tamsta galėt $1.',
-'noimage-linktext'               => 'ikeltė ana',
-'uploadnewversion-linktext'      => 'Ikeltė nauja faila versėje',
-'imagepage-searchdupe'           => 'Ėiškuotė doblikoutu failu',
+'filehist'                  => 'Abruozdielė istuorėjė',
+'filehist-help'             => 'Paspauskėt ont datas/čiesa, ka paveizietomėt faila tuoki, kokis ons bova tū čiesu.',
+'filehist-deleteall'        => 'trintė vėsus',
+'filehist-deleteone'        => 'trintė šėta',
+'filehist-revert'           => 'sogōžėntė',
+'filehist-current'          => 'dabartėnis',
+'filehist-datetime'         => 'Data/Čiesos',
+'filehist-thumb'            => 'Miniatiūra',
+'filehist-thumbtext'        => 'Versėjės $1 miniatiūra',
+'filehist-user'             => 'Nauduotuos',
+'filehist-dimensions'       => 'Mierā',
+'filehist-filesize'         => 'Faila dėdoms',
+'filehist-comment'          => 'Kuomentars',
+'imagelinks'                => 'Faila nūruodas',
+'linkstoimage'              => '{{PLURAL:$1|Šėts poslapis|Šėtė poslapē}} nuruod i šėta faila:',
+'nolinkstoimage'            => 'I faila neruod anėjuoks poslapis.',
+'sharedupload'              => 'Tas fails īr ėš $1 ė gal būtė nauduojams kėtūs pruojektūs.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
+'shareduploadwiki'          => 'Veizėkiet $1 tolėmesnē infuormacėjē.',
+'shareduploadwiki-desc'     => 'Aprašīms ėš anuo $1 ruoduoms žemiau īr.',
+'shareduploadwiki-linktext' => 'faila aprašīma poslapi',
+'noimage'                   => 'Nier faila so šėtokio pavadėnėmo. Tamsta galėt $1.',
+'noimage-linktext'          => 'ikeltė ana',
+'uploadnewversion-linktext' => 'Ikeltė nauja faila versėje',
 
 # File reversion
 'filerevert'         => 'Sogrōžėntė $1',
@@ -1740,6 +1752,7 @@ Vėsas kėtas nūoruodas tuo patiuo eilotie īr laikomas ėšėmtim, tas rēšk 
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # EXIF tags
@@ -1793,9 +1806,6 @@ Vėsas kėtas nūoruodas tuo patiuo eilotie īr laikomas ėšėmtim, tas rēšk 
 'confirmemail_text'      => 'Šėtom pruojektė īr rēkalėnga patvirtėntė el. pašta adresa prīš nauduojont el. pašta funkcėjės. Spauskėt žemiau esonti mīgtoka,
 kū Tamstas el. pašta adresu būtom ėšsiōsts patvirtėnėma kods.
 Gruomatuo bus atsiōsta nūruoda so kodu, katra nuējus, el. pašta adresos bus patvirtėnts.',
-'confirmemail_pending'   => '<div class="error">
-Patvirtėnima kods jau Tamstā nusiustas; jēgo nesenē sukūriet sava paskīra, tumet torietomiet palauktė anuo da keleta mėnotiu prīš prašont naujė koda.
-</div>',
 'confirmemail_send'      => 'Ėšsiōstė patvirtėnėma koda',
 'confirmemail_sent'      => 'Patvirtėnėma gruomata ėšsiōsta.',
 'confirmemail_needlogin' => 'Tamstā rēk $1, kū patvirtėntomiet sava el. pašta adresa.',
@@ -1817,7 +1827,7 @@ Patvirtėnėma kods bengs galiuotė $4.',
 'invalidateemail'        => 'El. pašta patvirtėnėma atšaukėms',
 
 # Trackbacks
-'trackbackremove' => ' ([$1 Trintė])',
+'trackbackremove' => '([$1 Trintė])',
 
 # Delete conflict
 'deletedwhileediting' => 'Diemesė: Šėts poslapis ėštrints po šėta, kumet pradiejot redagoutė!',
@@ -1916,5 +1926,8 @@ Tamsta tēpuogi galėt [[Special:Watchlist/raw|redagoutė grīnaji keravuojamu s
 
 # Special:BlankPage
 'blankpage' => 'Toščias poslapis',
+
+# Special:Tags
+'tags-edit' => 'taisītė',
 
 );

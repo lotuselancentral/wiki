@@ -116,6 +116,8 @@ $messages = array(
 'tog-highlightbroken'         => 'Muundo wa viungo vilivyovunjika <a href="" class="mpya">kama hii</a> (badala yake: kama hii<a href="" class="kwa ndani">?</a>).',
 'tog-justify'                 => 'Sawazisha ibara',
 'tog-hideminor'               => 'Ficha mabadilisho madogo ya hivi karibuni',
+'tog-hidepatrolled'           => 'Ficha kurasa zilizofanyiwa doria kwenye mabadiliko ya karibuni',
+'tog-newpageshidepatrolled'   => 'Ficha kurasa zilizofanyiwa doria kwenye orodha ya kurasa mpya',
 'tog-extendwatchlist'         => 'Tanua orodha ya maangalizi ili kuonyesha mabadiliko yote yaliyofanyika',
 'tog-usenewrc'                => 'Mabadiliko yaliyoongezeka hivi karibuni (JavaScript)',
 'tog-numberheadings'          => 'Vichwa vya habari vijipange namba-vyenyewe',
@@ -422,13 +424,13 @@ Tafadhali, ondoa kizuizi hicho, baadaye jaribu tena.',
 'mailmypassword'            => 'Nitume nywila mpya kwa barua pepe',
 'passwordremindertitle'     => 'Nywila mpya ya muda kwa {{SITENAME}}',
 'passwordremindertext'      => 'Mtu mmoja (yamkini wewe, kutoka anwani ya IP $1)
-ambaye ameulizia nywila mpya kwa {{SITENAME}} ($4).
-Nywila kwa mtumiaji "$2" sasa ni "$3".
-Inatakiwa uingie na ubadilishe nywila yako sasa.
+ameulizia nywila mpya kwa {{SITENAME}} ($4).
+Nywila ya muda kwa mtumiaji "$2" sasa ni "$3".
+Inatakiwa uingie na ubadilishe nywila yako sasa. Nywila yako ya muda itaishia baada ya siku {{PLURAL:$5|moja|$5}}.
 
 Kama mtu mwingine ametoa ombi hili au kama umekumbuka nywila yako na
 umeamua kutoibadilisha, unaweza kupuuza ujumbe huu na
-endelea kutumia nywila yako ya awali.',
+kuendelea kutumia nywila yako ya awali.',
 'noemail'                   => 'Hatuna anwani ya barua pepe kwa mtumiaji  "$1".',
 'passwordsent'              => 'Neno mpya la siri limeshatumia kwenye anwani ya baruapepe ya "$1".
 Tafadhali, ingia baada ya kulipokea.',
@@ -568,6 +570,8 @@ Ufunguo: (sasa) = tofauti na toleo la sasa, (kabla) = tofauti na toleo lililotan
 'searchmenu-legend'            => 'Hitiari za kutafuta',
 'searchhelp-url'               => 'Help:Yaliyomo',
 'searchmenu-prefix'            => '[[Special:PrefixIndex/$1|Tafuta kurasa kwenye eneo hili la wiki]]',
+'searchprofile-project'        => 'Kurasa za mradi',
+'searchprofile-images'         => 'Mafaili',
 'searchprofile-everything'     => 'Zote',
 'searchprofile-advanced'       => 'Hali ya juu',
 'searchprofile-images-tooltip' => 'Tafuta mafaili',
@@ -586,19 +590,29 @@ Ufunguo: (sasa) = tofauti na toleo la sasa, (kabla) = tofauti na toleo lililotan
 'powersearch-field'            => 'Tafuta huu:',
 
 # Preferences page
-'preferences'         => 'Mapendekezo',
-'mypreferences'       => 'Mapendekezo yangu',
-'changepassword'      => 'Badilisha neno la siri',
-'skin'                => 'Sura',
-'prefs-watchlist'     => 'Maangalizi',
-'saveprefs'           => 'Hifadhi',
-'rows'                => 'Mistari:',
-'columns'             => 'Safu:',
-'searchresultshead'   => 'Kutafuta',
-'timezonelegend'      => 'Ukanda saa',
-'timezoneselect'      => 'Ukanda saa:',
-'prefs-searchoptions' => 'Hitiari za kutafuta',
-'files'               => 'Mafaili',
+'preferences'               => 'Mapendekezo',
+'mypreferences'             => 'Mapendekezo yangu',
+'changepassword'            => 'Badilisha neno la siri',
+'skin'                      => 'Sura',
+'prefs-watchlist'           => 'Maangalizi',
+'saveprefs'                 => 'Hifadhi',
+'rows'                      => 'Mistari:',
+'columns'                   => 'Safu:',
+'searchresultshead'         => 'Kutafuta',
+'timezonelegend'            => 'Ukanda saa',
+'timezoneselect'            => 'Ukanda saa:',
+'timezoneregion-africa'     => 'Afrika',
+'timezoneregion-america'    => 'Marekani',
+'timezoneregion-antarctica' => 'Antaktika',
+'timezoneregion-arctic'     => 'Artiki',
+'timezoneregion-asia'       => 'Asia',
+'timezoneregion-atlantic'   => 'Bahari ya Atlantiki',
+'timezoneregion-australia'  => 'Australia',
+'timezoneregion-europe'     => 'Ulaya',
+'timezoneregion-indian'     => 'Bahari ya Hindi',
+'timezoneregion-pacific'    => 'Bahari ya Pasifiki',
+'prefs-searchoptions'       => 'Hitiari za kutafuta',
+'files'                     => 'Mafaili',
 
 # Groups
 'group'       => 'Kundi:',
@@ -619,6 +633,7 @@ Ufunguo: (sasa) = tofauti na toleo la sasa, (kabla) = tofauti na toleo lililotan
 'nchanges'                       => '{{PLURAL:$1|badiliko|mabadiliko}} $1',
 'recentchanges'                  => 'Mabadiliko ya karibuni',
 'recentchanges-legend'           => "Machaguo ya 'mabadaliko ya karibuni'",
+'recentchangestext'              => 'Orodha ya mabadilisho yaliyofanywa katika {{SITENAME}} siku zilizopita.',
 'recentchanges-feed-description' => 'Tumia tawanyiko hili kufuatilia mabadiliko yote ya hivi karibuni katika Wiki.',
 'rcnote'                         => "Yanayofuata ni {{PLURAL:$1|badiliko '''1'''|mabadiliko '''$1''' ya mwisho}} kutoka katika {{PLURAL:$2|siku iliyopita|siku '''$2''' zilizopita}}, hadi $5, $4.",
 'rcnotefrom'                     => "Hapo chini yaonekana mabadiliko tangu '''$2''' (tunaonyesha hadi '''$1''').",
@@ -672,7 +687,7 @@ Ufunguo: (sasa) = tofauti na toleo la sasa, (kabla) = tofauti na toleo lililotan
 'imagelinks'                => 'Viungo vya mafaili',
 'linkstoimage'              => '{{PLURAL:$1|Ukurasa huu|Kurasa hizi $1}} zimeunganishwa na faili hili:',
 'nolinkstoimage'            => 'Hakuna kurasa zozote zilizounganishwa na faili hii.',
-'sharedupload'              => 'Faili hii inaweza kushirikiwa na miradi mingine.',
+'sharedupload'              => 'Faili hili linatoka $1 na linaweza kushirikiwa na miradi mingine.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'shareduploadwiki-linktext' => 'ukurasa wa maelezo ya faili',
 'noimage'                   => 'Hakuna faili yenye jina hili, $1 kama unayo.',
 'noimage-linktext'          => 'pakia faili',
@@ -754,6 +769,7 @@ Ufunguo: (sasa) = tofauti na toleo la sasa, (kabla) = tofauti na toleo lililotan
 'deadendpages'            => 'Kurasa ambazo haziungi na ukurasa mwingine wowote',
 'protectedpages'          => 'Kurasa zinazolindwa',
 'listusers'               => 'Orodha ya Watumiaji',
+'usercreated'             => 'Iliwekewa tarehe $1 saa $2',
 'newpages'                => 'Kurasa mpya',
 'ancientpages'            => 'Kurasa za kale',
 'move'                    => 'Sogeza',
@@ -1057,6 +1073,7 @@ likifupishwa. Nyuga zingine zitafichwa kama chaguo-msingi.
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # EXIF tags
@@ -1124,5 +1141,8 @@ Kodi hizi za uthibitisho zitaishia mnamo $4.',
 'specialpages'               => 'Kurasa maalum',
 'specialpages-group-changes' => 'Mabadiliko ya karibuni na kumbukumbu',
 'specialpages-group-pages'   => 'Orodha za kurasa',
+
+# Special:Tags
+'tags-edit' => 'hariri',
 
 );

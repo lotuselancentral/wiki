@@ -221,6 +221,8 @@ $messages = array(
 'tog-highlightbroken'         => 'Форматирај покварене везе <a href="" class="new">овако</a> (алтернатива: овако<a href="" class="internal">?</a>).',
 'tog-justify'                 => 'Уравнај пасусе',
 'tog-hideminor'               => 'Сакриј мале измене у списку скорашњих измена',
+'tog-hidepatrolled'           => 'Сакриј патролиране измене у списку скорашњих измена',
+'tog-newpageshidepatrolled'   => 'Сакриј патролиране странице са списка нових страница',
 'tog-extendwatchlist'         => 'Проширује списак надгледања тако да показује све измене, не само најсвежије',
 'tog-usenewrc'                => 'Користи побољшан списак скорашњих измена (захтева JavaScript)',
 'tog-numberheadings'          => 'Аутоматски нумериши поднаслове',
@@ -255,6 +257,7 @@ $messages = array(
 'tog-watchlisthideminor'      => 'Сакриј мале измене са списка надгледања',
 'tog-watchlisthideliu'        => 'Сакриј измене пријављених корисника са списка надгледања',
 'tog-watchlisthideanons'      => 'Сакриј измене непријављених корисника са списка надгледања',
+'tog-watchlisthidepatrolled'  => 'Сакриј патролиране измене у списку надгледања',
 'tog-nolangconversion'        => 'Искључи конверзију варијанти',
 'tog-ccmeonemails'            => 'Пошаљи ми копије порука које шаљем другим корисницима путем е-поште',
 'tog-diffonly'                => 'Не приказуј садржај странице испод разлике странице',
@@ -618,6 +621,12 @@ $2',
 'badsig'                     => 'Грешка у потпису, проверите HTML тагове.',
 'badsiglength'               => 'Ваш потпис је предугачак. 
 Мора бити краћи од $1 {{PLURAL:$1|карактер|карактера}}.',
+'yourgender'                 => 'Пол:',
+'gender-unknown'             => 'Неназначен',
+'gender-male'                => 'Мушки',
+'gender-female'              => 'Женски',
+'prefs-help-gender'          => 'Необавезно: користи се за исправно обраћање софтвера корисницима, зависно од њиховог пола.
+Ова информација ће бити јавна.',
 'email'                      => 'Е-пошта',
 'prefs-help-realname'        => '* Право име (опционо): ако изаберете да дате име, ово ће бити коришћено за приписивање за ваш рад.',
 'loginerror'                 => 'Грешка при пријављивању',
@@ -640,9 +649,10 @@ $2',
 'mailmypassword'             => 'Пошаљи ми нову лозинку',
 'passwordremindertitle'      => '{{SITENAME}} подсетник за шифру',
 'passwordremindertext'       => 'Неко (вероватно ви, са ИП адресе $1) је захтевао да вам пошаљемо нову
-шифру за пријављивање на {{SITENAME}} ($4). 
-Привремена шифра за корисника „$2“ је сада „$3“. Уколико је ово
+шифру за пријављивање на {{SITENAME}} ($4). Привремена шифра за корисника 
+„$2“ је генерисана и сада је „$3“. Уколико је ово
 Ваш захтев, сада се пријавите и изаберите нову шифу.
+Ваша привремена шифра истиче за {{PLURAL:$5|једна дан|$5 дана}}.
 
 Уколико је неко други захтевао промену шифре, или сте ви заборавили вашу 
 шифру и више не желите да је мењате, можете игнорисати ову поруку и
@@ -690,6 +700,10 @@ $2',
 'resetpass-wrong-oldpass'   => 'Неисправна привремена или актуелна лозинка.
 Можда сте већ успешно променили лозинку или затражили нову привремену.',
 'resetpass-temp-password'   => 'Привремена шифра:',
+'resetpass-log'             => 'Историја промеан лозинки',
+'resetpass-logtext'         => 'Испод се налази историја кориника чије су лозинке мењали администратори.',
+'resetpass-logentry'        => 'лозинка за $1 је промењена',
+'resetpass-comment'         => 'Разлог за промену лозинке:',
 
 # Edit page toolbar
 'bold_sample'     => 'подебљан текст',
@@ -773,7 +787,9 @@ $2',
 'loginreqlink'                     => 'пријава',
 'loginreqpagetext'                 => 'Морате $1 да бисте видели остале стране.',
 'accmailtitle'                     => 'Лозинка је послата.',
-'accmailtext'                      => 'Лозинка за налог "$1" је послата на адресу $2.',
+'accmailtext'                      => "Случајно генерисана лозинка за [[User talk:$1|$1]] је послта на $2.
+
+Лозинка за овај нови налог може бити промењена на ''[[Special:ChangePassword|change password]]'' након логовања на њега.",
 'newarticle'                       => '(Нови)',
 'newarticletext'                   => "Пратили сте везу ка страници која још не постоји.
 Да бисте је направили, почните да куцате у пољу испод
@@ -927,18 +943,19 @@ $2',
 'rev-deleted-comment'         => '(коментар уклоњен)',
 'rev-deleted-user'            => '(корисничко име уклоњено)',
 'rev-deleted-event'           => '(историја уклоњена)',
-'rev-deleted-text-permission' => '<div class="mw-warning plainlinks">
-Ревизија ове странице је уклоњена за јавне архиве.
-Могуће да има више детаља у [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} историји брисања].
-</div>',
-'rev-deleted-text-view'       => '<div class="mw-warning plainlinks">
-Ревизија ове странице је уклоњена за јавне архиве.
-Као администратор, можете да је поглеате;
-Могуће да има више детаља у [{{fullurl:Special:Log/delete|page={{PAGENAMEE}}}} историји брисања].</div>',
+'rev-deleted-text-permission' => "Ова ревизија странице је '''обрисана'''.
+Могуће је да има даљих детаља у [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} историји брисања].",
+'rev-deleted-text-view'       => "Ова ревизија странице је '''обрисана'''.
+Пошто сте администратор, можете је видети; Даље детаље можете наћи у [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} историји брисања].",
+'rev-deleted-no-diff'         => "Не можете видети ову разлику измена зато што је једна од ревизија '''обрисана'''.
+Можде ћете наћи више детаља у [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} историји брисања].",
 'rev-delundel'                => 'покажи/сакриј',
 'revisiondelete'              => 'Обриши/врати ревизије',
 'revdelete-nooldid-title'     => 'Нема одабране ревизије',
 'revdelete-nooldid-text'      => 'Нисте одабрали жељену ревизију или ревизије како бисте укључили ове функције.',
+'revdelete-nologtype-title'   => 'Није дат тип историје',
+'revdelete-nologtype-text'    => 'Нисте навели тип историје над којим желите да изведете ову акцију.',
+'revdelete-nologid-title'     => 'Неисправан унос у историју',
 'revdelete-selected'          => "'''{{PLURAL:$2|Одабрана ревизија|Одабране ревизије}} за '''[[:$1]]''''''",
 'logdelete-selected'          => "'''{{PLURAL:$1|Изабрани догађај из историје|Изабрани догађаји из историје}}:'''",
 'revdelete-text'              => "'''Обрисане ревизије и догађаји ће још увек бити приказани у историји страна и протокола, али делове њиховог садржаја неће бити јавно доступни.'''
@@ -997,6 +1014,7 @@ $2',
 'mergehistory-autocomment'         => 'Спојена страна [[:$1]] у страну [[:$2]].',
 'mergehistory-comment'             => 'Спојена страна [[:$1]] у страну [[:$2]]: $3',
 'mergehistory-same-destination'    => 'Изворна и циљана страна не могу бити исте',
+'mergehistory-reason'              => 'Разлог:',
 
 # Merge log
 'mergelog'           => 'Лог спајања',
@@ -1075,6 +1093,9 @@ $2',
 'notextmatches'                    => 'Ниједан текст странице не одговара',
 'prevn'                            => 'претходних $1',
 'nextn'                            => 'следећих $1',
+'prevn-title'                      => '{{PLURAL:$1|Претходни $1 резултат|Претходних $1 резултата}}',
+'nextn-title'                      => '{{PLURAL:$1|Следећи $1 резултат|Следећих $1 резултата}}',
+'shown-title'                      => 'Прикажи $1 {{PLURAL:$1|резултат|резултата}} по страни',
 'viewprevnext'                     => 'Погледај ($1) ($2) ($3).',
 'searchmenu-legend'                => 'Опције претраге',
 'searchmenu-exists'                => "'''Већ постоји чланак под именом \"[[:\$1]]\" на овом Викију'''",
@@ -1182,12 +1203,24 @@ $2',
 'timezoneoffset'            => 'Одступање¹:',
 'servertime'                => 'Време на серверу:',
 'guesstimezone'             => 'Попуни из браузера',
+'timezoneregion-africa'     => 'Африка',
+'timezoneregion-america'    => 'Америка',
+'timezoneregion-antarctica' => 'Антарктик',
+'timezoneregion-arctic'     => 'Арктик',
+'timezoneregion-asia'       => 'Азија',
+'timezoneregion-atlantic'   => 'Атлантски океан',
+'timezoneregion-australia'  => 'Аустралија',
+'timezoneregion-europe'     => 'Европа',
+'timezoneregion-indian'     => 'Индијски океан',
+'timezoneregion-pacific'    => 'Пацифички океан',
 'allowemail'                => 'Омогући е-пошту од других корисника',
 'prefs-searchoptions'       => 'Опције претраге',
 'prefs-namespaces'          => 'Именски простори',
 'defaultns'                 => 'По стандарду тражи у овим именским просторима:',
 'default'                   => 'стандард',
 'files'                     => 'Фајлови',
+'prefs-custom-css'          => 'Кориснички CSS',
+'prefs-custom-js'           => 'Кориснички JS',
 
 # User rights
 'userrights'                  => 'Управљање корисничким правима', # Not used as normal message but as header for the special page itself
@@ -1287,6 +1320,7 @@ $2',
 'right-userrights'           => 'измена свих права сарадника',
 'right-userrights-interwiki' => 'измена права сарадника на другим викијима',
 'right-siteadmin'            => 'закључавање и откључавање базе података',
+'right-reset-passwords'      => 'Обнављање лозинки других корисника',
 
 # User rights log
 'rightslog'      => 'Историја корисничких права',
@@ -1391,6 +1425,7 @@ $2',
 'filename'                    => 'Име фајла',
 'filedesc'                    => 'Опис',
 'fileuploadsummary'           => 'Опис:',
+'filereuploadsummary'         => 'Измене фајла:',
 'filestatus'                  => 'Статус ауторског права:',
 'filesource'                  => 'Извор:',
 'uploadedfiles'               => 'Послати фајлови',
@@ -1479,41 +1514,37 @@ $2',
 'listfiles_count'       => 'Верзије',
 
 # File description page
-'filehist'                       => 'Историја фајла',
-'filehist-help'                  => 'Кликните на датум/време да видите верзију фајла из тог времена.',
-'filehist-deleteall'             => 'обриши све',
-'filehist-deleteone'             => 'обриши',
-'filehist-revert'                => 'врати',
-'filehist-current'               => 'тренутно',
-'filehist-datetime'              => 'Датум/Време',
-'filehist-thumb'                 => 'Умањени приказ',
-'filehist-thumbtext'             => 'Умањени приказ за верзију од $1',
-'filehist-nothumb'               => 'Без прегледа слика',
-'filehist-user'                  => 'Корисник',
-'filehist-dimensions'            => 'Димензије',
-'filehist-filesize'              => 'Величина фајла',
-'filehist-comment'               => 'Коментар',
-'imagelinks'                     => 'Везе ка фајлу',
-'linkstoimage'                   => '{{PLURAL:$1|Следећа страница користи|$1 Следеће странице користе}} овај фајл:',
-'linkstoimage-more'              => 'Више од $1 {{PLURAL:$1|странице се веше|страница се вежу}} за овај фајл.
+'filehist'                  => 'Историја фајла',
+'filehist-help'             => 'Кликните на датум/време да видите верзију фајла из тог времена.',
+'filehist-deleteall'        => 'обриши све',
+'filehist-deleteone'        => 'обриши',
+'filehist-revert'           => 'врати',
+'filehist-current'          => 'тренутно',
+'filehist-datetime'         => 'Датум/Време',
+'filehist-thumb'            => 'Умањени приказ',
+'filehist-thumbtext'        => 'Умањени приказ за верзију од $1',
+'filehist-nothumb'          => 'Без прегледа слика',
+'filehist-user'             => 'Корисник',
+'filehist-dimensions'       => 'Димензије',
+'filehist-filesize'         => 'Величина фајла',
+'filehist-comment'          => 'Коментар',
+'imagelinks'                => 'Везе ка фајлу',
+'linkstoimage'              => '{{PLURAL:$1|Следећа страница користи|$1 Следеће странице користе}} овај фајл:',
+'linkstoimage-more'         => 'Више од $1 {{PLURAL:$1|странице се веше|страница се вежу}} за овај фајл.
 Следећи списак показује странице које се вежу за овај фајл
 [[Special:WhatLinksHere/$2|Потпуни списак]] је доступан такође.',
-'nolinkstoimage'                 => 'Нема страница које користе овај фајл.',
-'morelinkstoimage'               => 'Види [[Special:WhatLinksHere/$1|више веза]] према овом фајлу.',
-'redirectstofile'                => 'Следећи {{PLURAL:$1|фајл се преусмерава|$1 фајла се преусмеравају|$1 фајлова се преусмерава}} на овај фајл:',
-'duplicatesoffile'               => 'Следећи {{PLURAL:$1|фајл је дупликат|$1 фајла су дупликати|$1 фајлова су дупликати}} овог фајла ([[Special:FileDuplicateSearch/$2|више детаља]]):',
-'sharedupload'                   => 'Ова слика је са заједничке оставе и можда је користе остали пројекти.',
-'shareduploadwiki'               => 'Молимо погледајте $1 за даље информације.',
-'shareduploadwiki-desc'          => 'Опис на $1 се налази испод.',
-'shareduploadwiki-linktext'      => 'страна за опис фајла',
-'shareduploadduplicate'          => 'Овај фајл је дупликат фајла $1 на дељеном складишту.',
-'shareduploadduplicate-linktext' => 'други фајл',
-'shareduploadconflict'           => 'Овај фајл има исто име као фајл $1 са дељеног складишта.',
-'shareduploadconflict-linktext'  => 'други фајл',
-'noimage'                        => 'Не постоји фајл са овим именом, можете $1',
-'noimage-linktext'               => 'послати један',
-'uploadnewversion-linktext'      => 'Пошаљите новију верзију ове датотеке',
-'imagepage-searchdupe'           => 'Претражи дупликате фајлова',
+'nolinkstoimage'            => 'Нема страница које користе овај фајл.',
+'morelinkstoimage'          => 'Види [[Special:WhatLinksHere/$1|више веза]] према овом фајлу.',
+'redirectstofile'           => 'Следећи {{PLURAL:$1|фајл се преусмерава|$1 фајла се преусмеравају|$1 фајлова се преусмерава}} на овај фајл:',
+'duplicatesoffile'          => 'Следећи {{PLURAL:$1|фајл је дупликат|$1 фајла су дупликати|$1 фајлова су дупликати}} овог фајла ([[Special:FileDuplicateSearch/$2|више детаља]]):',
+'sharedupload'              => 'Овај фајл је са $1, и може се користити на другим пројектима.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
+'shareduploadwiki'          => 'Молимо погледајте $1 за даље информације.',
+'shareduploadwiki-desc'     => 'Опис на $1 се налази испод.',
+'shareduploadwiki-linktext' => 'страна за опис фајла',
+'noimage'                   => 'Не постоји фајл са овим именом, можете $1',
+'noimage-linktext'          => 'послати један',
+'uploadnewversion-linktext' => 'Пошаљите новију верзију ове датотеке',
+'shared-repo-from'          => 'од $1', # $1 is the repository name
 
 # File reversion
 'filerevert'                => 'Врати $1',
@@ -1631,6 +1662,7 @@ $2',
 'popularpages'            => 'Популарне странице',
 'wantedcategories'        => 'Тражене категорије',
 'wantedpages'             => 'Тражене странице',
+'wantedpages-badtitle'    => 'Неиспаван наслов у низу резултата: $1',
 'wantedfiles'             => 'Тражени фајлови',
 'wantedtemplates'         => 'Тражени шаблони',
 'mostlinked'              => 'Највише повезане стране',
@@ -1654,6 +1686,7 @@ $2',
 'listusers'               => 'Списак корисника',
 'listusers-editsonly'     => 'Прикажи кориснике који имају измене',
 'usereditcount'           => '$1 {{PLURAL:$1|измена|измена}}',
+'usercreated'             => 'Направљено $1, у $2',
 'newpages'                => 'Нове странице',
 'newpages-username'       => 'Корисничко име:',
 'ancientpages'            => 'Најстарији чланци',
@@ -1713,7 +1746,8 @@ $2',
 'special-categories-sort-abc'   => 'сортирај азбучно',
 
 # Special:DeletedContributions
-'deletedcontributions' => 'Обрисане измене',
+'deletedcontributions'       => 'Обрисане измене',
+'deletedcontributions-title' => 'Обрисане измене',
 
 # Special:LinkSearch
 'linksearch'       => 'Веб линкови',
@@ -2025,7 +2059,7 @@ $1',
 'contributions-title' => 'Прилози корисника за $1',
 'mycontris'           => 'Моји прилози',
 'contribsub2'         => 'За $1 ($2)',
-'nocontribs'          => 'Нису нађене промене које задовољавају ове услове.',
+'nocontribs'          => 'Нису нађене промене које задовољавају ове услове.', # Optional parameter: $1 is the user name
 'uctop'               => ' (врх)',
 'month'               => 'За месец (и раније):',
 'year'                => 'Од године (и раније):',
@@ -2033,6 +2067,7 @@ $1',
 'sp-contributions-newbies'     => 'Прикажи само прилоге нових налога',
 'sp-contributions-newbies-sub' => 'За новајлије',
 'sp-contributions-blocklog'    => 'Историја блокирања',
+'sp-contributions-logs'        => 'историје',
 'sp-contributions-search'      => 'Претрага прилога',
 'sp-contributions-username'    => 'ИП адреса или корисничко име:',
 'sp-contributions-submit'      => 'Претрага',
@@ -2142,6 +2177,7 @@ $1',
 'block-log-flags-noemail'         => 'блокирано слање е-поште',
 'block-log-flags-nousertalk'      => 'не може да измени сопствену страну за разговор',
 'block-log-flags-angry-autoblock' => 'омогућен је побољшани аутоблок',
+'block-log-flags-hiddenname'      => 'корисничко име сакривено',
 'range_block_disabled'            => 'Администраторска могућност да блокира блокове ИП адреса је искључена.',
 'ipb_expiry_invalid'              => 'Погрешно време трајања.',
 'ipb_expiry_temp'                 => 'Сакривени блокови сарадничких имена морају бити стални.',
@@ -2227,8 +2263,8 @@ $1 је већ блокиран. Да ли желите да промените 
 страница за разговор није могла бити премештена јер таква већ постоји на новом наслову. Молимо вас да их спојите ручно.'''",
 'movedto'                      => 'премештена на',
 'movetalk'                     => 'Премести "страницу за разговор" такође, ако је могуће.',
-'move-subpages'                => 'Преименуј све подстране ако је могуће.',
-'move-talk-subpages'           => 'Преименуј све подстране стране за разговор ако је могуће.',
+'move-subpages'                => 'Премести подстране (до $1)',
+'move-talk-subpages'           => 'Премести подстране стране за разговор (до $1)',
 'movepage-page-exists'         => 'Страна $1 већ постоји не може се аутоматски преписати.',
 'movepage-page-moved'          => 'Страна $1 је преименована у $2.',
 'movepage-page-unmoved'        => 'Страна $1 не може бити преименована у $2.',
@@ -2237,6 +2273,9 @@ $1 је већ блокиран. Да ли желите да промените 
 '1movedto2_redir'              => 'је променио име чланку [[$1]] у [[$2]] путем преусмерења',
 'movelogpage'                  => 'историја премештања',
 'movelogpagetext'              => 'Испод је списак премештања чланака.',
+'movesubpage'                  => '{{PLURAL:$1|Подстрана|Подстрана}}',
+'movesubpagetext'              => 'Ова страна има $1 {{PLURAL:$1|подстрану приказану|подстрана приказаних}} испод.',
+'movenosubpage'                => 'Ова страна нема подстрана.',
 'movereason'                   => 'Разлог:',
 'revertmove'                   => 'врати',
 'delete_and_move'              => 'Обриши и премести',
@@ -2272,8 +2311,11 @@ $1 је већ блокиран. Да ли желите да промените 
 'export-submit'     => 'Извоз',
 'export-addcattext' => 'Додај странице из категорије:',
 'export-addcat'     => 'Додај',
+'export-addnstext'  => 'Додај стране из именског простора:',
+'export-addns'      => 'Додај',
 'export-download'   => 'Сачувај као фајл',
 'export-templates'  => 'Укључује шаблоне',
+'export-pagelinks'  => 'Укључи повезане стране до дубине од:',
 
 # Namespace 8 related
 'allmessages'               => 'Системске поруке',
@@ -2300,6 +2342,7 @@ $1 је већ блокиран. Да ли желите да промените 
 'importinterwiki'            => 'Трансвики увожење',
 'import-interwiki-text'      => 'Одаберите вики и назив стране за увоз. Датуми ревизије и имена уредника ће бити сачувани. Сви трансвики увози су забележени у [[Special:Log/import|историји увоза]].',
 'import-interwiki-history'   => 'Копирај све ревизије ове стране',
+'import-interwiki-templates' => 'Укључи све шаблоне',
 'import-interwiki-submit'    => 'Увези',
 'import-interwiki-namespace' => 'Именски простор:',
 'import-upload-filename'     => 'Име фајла:',
@@ -2530,6 +2573,7 @@ $1',
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # EXIF tags
@@ -2842,10 +2886,8 @@ $5
 'scarytranscludetoolong'  => '[УРЛ је предугачак]',
 
 # Trackbacks
-'trackbackbox'      => '<div id="mw_trackbacks">
-Враћања за овај чланак:<br />
-$1
-</div>',
+'trackbackbox'      => 'Враћања за овај чланак:<br />
+$1',
 'trackbackremove'   => '([$1 Брисање])',
 'trackbacklink'     => 'Враћање',
 'trackbackdeleteok' => 'Враћање је успешно обрисано.',
@@ -2998,5 +3040,26 @@ $1
 #Сви уноси су осетљиви на величину слова
 
 #Додајте све фрагменте регуларних израза испод ове линије. Оставите ову линију тачно онаквом каква јесте</pre>',
+
+# Special:Tags
+'tag-filter'              => 'Филтер за [[Special:Tags|тагове]]:',
+'tag-filter-submit'       => 'Филтрирај',
+'tags-title'              => 'Тагови',
+'tags-intro'              => 'Ова страна даје списак и значење тагова којима софтвер може да означи неку измену.',
+'tags-tag'                => 'Интерно име тага',
+'tags-display-header'     => 'Изглед на списковима промена',
+'tags-description-header' => 'Пуни опис значења',
+'tags-hitcount-header'    => 'Таговане измене',
+'tags-edit'               => 'измени',
+'tags-hitcount'           => '$1 {{PLURAL:$1|измена|измена}}',
+
+# Database error messages
+'dberr-header'      => 'Овај Вики има проблем',
+'dberr-problems'    => 'Жао нам је! Овај сајт има техничких потешкоћа.',
+'dberr-again'       => 'Покушајте да причекате неколико минута, пре него што покушате да поново учитате страну.',
+'dberr-info'        => '(Сервер базе података не може да се контактира: $1)',
+'dberr-usegoogle'   => 'У међувремену Вам од користи може бити Гуглова претрага.',
+'dberr-outofdate'   => 'Приметите да Гуглов кеш нашег садржаја може бити неажуран.',
+'dberr-cachederror' => 'Ово је кеширана копија захтеване стране, и можда није ажурна.',
 
 );

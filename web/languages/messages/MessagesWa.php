@@ -177,6 +177,7 @@ $messages = array(
 'category-article-count'         => 'Dins cisse categoreye cial, gn a {{PLURAL:$2|li pådje ki shût|$2 pådje, inte di zeles {{PLURAL:$1|li cene|les $1}} cial padzo}}.',
 'category-article-count-limited' => "{{PLURAL:$1|Gn a l' pådje ki shût|Les $1 pådjes ki shuvnut si trovèt ddja}} dins cisse categoreye ci.",
 'category-file-count'            => "{{PLURAL:$2|Dins cisse categoreye ci, gn a k' ene pådje.|{{PLURAL:$1|Gn a cisse pådje ci|Gn a les $1 pådjes ki shuvèt}} dins cisse categoreye ci, po $2 pådjes å totå.}}",
+'category-file-count-limited'    => "{{PLURAL:$1|Gn a k' cisse pådje cial|Gn a les $1 pådjes ciddé padzo}} dins cisse categoreye ci.",
 
 'mainpagetext' => "<big>'''Li programe Wiki a stî astalé a l' idêye.'''</big>",
 
@@ -511,7 +512,7 @@ Rissayîz s' i vs plait. Si çoula n' va todi nén, sayîz di vs dislodjî eyet 
 'editing'                   => 'Candjant $1',
 'editingsection'            => 'Candjant $1 (seccion)',
 'editingcomment'            => 'Candjant $1 (comintaire)',
-'editconflict'              => 'Conflit inte deus candjmints: $1',
+'editconflict'              => 'Ecramiaedje inte deus candjmints: $1',
 'explainconflict'           => "Ene sakî a candjî l' pådje do tins ki vos estîz a scrire.
 Li boesse di tecse do dzeur mostere li tecse del pådje come il est
 pol moumint sol sierveu. Li tecse da vosse est sol boesse di tecse do dzo.
@@ -548,6 +549,9 @@ Do côp, vos n' såroz schaper vos candjmints asteure; motoit vos dvrîz copyî 
 'template-semiprotected'    => '(dimey-protedjî)',
 'nocreatetitle'             => 'Ahivaedje di pådjes limité',
 'nocreatetext'              => "Cisse waibe ci a limité l' possibilité d' ahiver des novelès pådjes. Vos ploz rivni en erî eyet candjî ene pådje k' egzistêye dedja, oudonbén, [[Special:UserLogin|vos elodjî ou ahiver on conte d' uzeu]].",
+'recreate-deleted-warn'     => "'''Asteme : vous estoz ki rahive ene pådje k' a stî dsfacêye davance.'''
+
+Tuzez bén s' el fåt vormint rahiver, tot tapant èn ouy so l' istwere del pådje :",
 
 # Account creation failure
 'cantcreateaccounttitle' => "Vos n' ploz nén ahiver-st on conte.",
@@ -582,14 +586,10 @@ Ledjinde: (ast.) = diferince avou l' modêye d' asteure,
 # Revision deletion
 'rev-deleted-comment'         => '(comintaire oisté)',
 'rev-deleted-user'            => "(no d' elodjaedje oisté)",
-'rev-deleted-text-permission' => '<div class="mw-warning plainlinks">
-Cisse modêye ci del pådje a stî oistêye foû des årtchives publikes.
-I gn a motoit des racsegnes sol [{{fullurl:Special:Log/delete|page={{PAGENAMEE}}}} djournå des disfaçaedjes].
-</div>',
-'rev-deleted-text-view'       => '<div class="mw-warning plainlinks">
-Cisse modêye ci del pådje a stî oistêye foû des årtchives publikes.
-Come manaedjeu so ç\' wiki ci, vos avoz l\' droet del vey; i gn a motoit des detays sol [{{fullurl:Special:Log/delete|page={{PAGENAMEE}}}} djournå des disfaçaedjes].
-</div>',
+'rev-deleted-text-permission' => 'Cisse modêye ci del pådje a stî oistêye foû des årtchives publikes.
+I gn a motoit des racsegnes sol [{{fullurl:Special:Log/delete|page={{PAGENAMEE}}}} djournå des disfaçaedjes].',
+'rev-deleted-text-view'       => "Cisse modêye ci del pådje a stî oistêye foû des årtchives publikes.
+Come manaedjeu so ç' wiki ci, vos avoz l' droet del vey; i gn a motoit des detays sol [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} djournå des disfaçaedjes].",
 'rev-delundel'                => 'mostrer/catchî',
 'revisiondelete'              => 'Disfacer/rapexhî des modêyes',
 'revdelete-selected'          => "'''Tchoezeye modêye di [[:$1]]:'''",
@@ -830,7 +830,7 @@ ou co po les sons
 'imagelinks'                => 'Loyéns viè ciste imådje chal',
 'linkstoimage'              => '{{PLURAL:$1|Li pådje shuvante|Les pådjes shuvantes}} eployèt ciste imådje chal:',
 'nolinkstoimage'            => "I n' a nole pådje k' eploye ciste imådje chal.",
-'sharedupload'              => "Ci fitchî ci est so on ridant pårtaedjî ey i s' pout k' i soeye eployî pa ds ôtes pordjets.",
+'sharedupload'              => "Ci fitchî ci est so on ridant pårtaedjî ey i s' pout k' i soeye eployî pa ds ôtes pordjets.", # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'shareduploadwiki'          => 'Loukîz li $1 po pus di racsegnes.',
 'shareduploadwiki-linktext' => 'pådje di discrijhaedje',
 'noimage'                   => "I n' a nou fitchî avou ç' no la, vos l' poloz $1",
@@ -1139,7 +1139,7 @@ Loukîz l' [[Special:Log/delete|djournå des disfaçaedjes]] po ene djivêye des
 'contributions' => "Ovraedjes di l' uzeu",
 'mycontris'     => 'Mi ovraedje',
 'contribsub2'   => "Po l' uzeu $1 ($2)",
-'nocontribs'    => "Nou candjmint di trové ki corespondreut a ç' critere la.",
+'nocontribs'    => "Nou candjmint di trové ki corespondreut a ç' critere la.", # Optional parameter: $1 is the user name
 
 'sp-contributions-submit' => 'Cweri',
 
@@ -1417,6 +1417,7 @@ est raptiti. Les ôtes seront catchîs.
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength", # Do not translate list items
 
 # EXIF tags

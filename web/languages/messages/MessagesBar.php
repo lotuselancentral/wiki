@@ -10,37 +10,49 @@
  * @author Malafaya
  * @author Man77
  * @author Metalhead64
+ * @author bar.wikipedia.org administrators
  */
 
 $fallback = 'de';
 
 $messages = array(
 # User preference toggles
-'tog-underline'            => 'Links untastreicha:',
-'tog-highlightbroken'      => 'Links auf leere Seiten hervorhem',
-'tog-justify'              => 'Text ois Blocksatz',
-'tog-hideminor'            => 'Kloane Änderunga ausblendn',
-'tog-extendwatchlist'      => 'Erweiterte Beobachtungslistn',
-'tog-showtoolbar'          => 'Bearbatn-Werkzeugleiste oozoang',
-'tog-watchcreations'       => 'Vu mia söiwa nei eigstöide Seitn automatisch beobåchtn',
-'tog-watchdefault'         => 'Vu mia söiwa beåabeitete und vu mia nei eigstöide Seitn automatisch beobåchtn',
-'tog-watchmoves'           => 'Vu mia söiwa vaschomne Seitn automatisch beobåchtn',
-'tog-watchdeletion'        => 'Vu mia söiwa glöschte Seitn automatisch beobåchtn',
-'tog-minordefault'         => 'De eigenen Ändarungen standardmäßig åis geringfügig markian',
-'tog-previewonfirst'       => "Beim erstn Beåawatn imma d'Voaschau ãnzoang",
-'tog-nocache'              => 'Seitncache deaktivian',
-'tog-enotifwatchlistpages' => 'Bei Ändarungen vu beobåchtete Seitn E-Post schicka',
-'tog-enotifusertalkpages'  => 'Bei Ändarungen vu meina Benutza-Diskussionsseitn E-Post schicka',
-'tog-enotifminoredits'     => 'Aa bei kloane Änderungen vu beobåchtete Seitn E-Post schicka',
-'tog-enotifrevealaddr'     => 'Dei E-Post-Adressn wiad in da Benåchrichtigungs-E-Post ãnzoagt',
-'tog-shownumberswatching'  => 'Ãnzåih vu de beobåchtndn Benutza ãnzoang',
-'tog-fancysig'             => 'Signatua ohne Valinkung zu da Benutzaseitn',
-'tog-externaleditor'       => "An exteanen Editor åiss Standard benutzn (netta fia Expertn, es miaßn spezielle Einstellungen auf'm PC eigricht wean)",
-'tog-forceeditsummary'     => 'Warnen, wenn beim Speichern de Zusammenfassung feit',
-'tog-watchlisthideown'     => 'Eigne Bearbatunga in dar Beobachtungslistn ausblendn',
-'tog-watchlisthidebots'    => 'Bearbatunga durch Bots in da Beobachtungslistn ausblendn',
-'tog-watchlisthideminor'   => 'Kloane Bearbatunga in da Beobachtungslistn ausblendn',
-'tog-showhiddencats'       => 'Vasteckte Kategorien ãnzoang',
+'tog-underline'              => 'Links untastreicha:',
+'tog-highlightbroken'        => 'Links auf leere Seiten hervorhem',
+'tog-justify'                => 'Text ois Blocksatz',
+'tog-hideminor'              => 'Kloane Änderunga ausblendn',
+'tog-hidepatrolled'          => 'Kontrolliade Ändarungen in de „Letztn Ändarungen“ ausblendn',
+'tog-newpageshidepatrolled'  => 'Kontrolliade Seitn auf da Listn „Neie Seitn“ vabeang',
+'tog-extendwatchlist'        => 'Erweiterte Beobachtungslistn',
+'tog-usenewrc'               => 'Eaweitade Dåastellung vu de letztn Ändarungen (JavaScript wiad braucht)',
+'tog-numberheadings'         => 'Üwaschriftn automatisch nummarian',
+'tog-showtoolbar'            => 'Bearbatn-Werkzeugleiste oozoang',
+'tog-editondblclick'         => 'Seitn mid am Doppiklick beåaweitn (JavaScript wiad braucht)',
+'tog-editsection'            => 'Links zum Beåaweitn vu de anzlnen Åbschnitte ãnzoang',
+'tog-editwidth'              => "Eingåbeföid erweitan, damid's in gãnzn Büidschiam ausfüid",
+'tog-watchcreations'         => 'Vu mia söiwa nei eigstöide Seitn automatisch beobåchtn',
+'tog-watchdefault'           => 'Vu mia söiwa beåabeitete und vu mia nei eigstöide Seitn automatisch beobåchtn',
+'tog-watchmoves'             => 'Vu mia söiwa vaschomne Seitn automatisch beobåchtn',
+'tog-watchdeletion'          => 'Vu mia söiwa glöschte Seitn automatisch beobåchtn',
+'tog-minordefault'           => 'De eigenen Ändarungen standardmäßig åis geringfügig markian',
+'tog-previewonfirst'         => "Beim erstn Beåawatn imma d'Voaschau ãnzoang",
+'tog-nocache'                => 'Seitncache deaktivian',
+'tog-enotifwatchlistpages'   => 'Bei Ändarungen vu beobåchtete Seitn E-Post schicka',
+'tog-enotifusertalkpages'    => 'Bei Ändarungen vu meina Benutza-Diskussionsseitn E-Post schicka',
+'tog-enotifminoredits'       => 'Aa bei kloane Änderungen vu beobåchtete Seitn E-Post schicka',
+'tog-enotifrevealaddr'       => 'Dei E-Post-Adressn wiad in da Benåchrichtigungs-E-Post ãnzoagt',
+'tog-shownumberswatching'    => 'Ãnzåih vu de beobåchtndn Benutza ãnzoang',
+'tog-fancysig'               => 'Signatua åis Wikitext behãndln (ohne automatische Valinkung)',
+'tog-externaleditor'         => "An exteanen Editor åiss Standard benutzn (netta fia Expertn, es miaßn spezielle Einstellungen auf'm PC eigricht wean)",
+'tog-showjumplinks'          => '„Wexln zu“-Links aktivian',
+'tog-uselivepreview'         => 'Live-Voaschau nutzn (dafia braucht ma JavaScript) (experimentell)',
+'tog-forceeditsummary'       => 'Warnen, wenn beim Speichern de Zusammenfassung feit',
+'tog-watchlisthideown'       => 'Eigne Bearbatunga in dar Beobachtungslistn ausblendn',
+'tog-watchlisthidebots'      => 'Bearbatunga durch Bots in da Beobachtungslistn ausblendn',
+'tog-watchlisthideminor'     => 'Kloane Bearbatunga in da Beobachtungslistn ausblendn',
+'tog-watchlisthidepatrolled' => 'Kontrolliade Ändarungen in da Beobåchtungslistn ausblendn',
+'tog-ccmeonemails'           => 'Schick ma Kopien vu da E-Post, de i ãndare Benutza schick',
+'tog-showhiddencats'         => 'Vasteckte Kategorien ãnzoang',
 
 'underline-always' => 'imma',
 'underline-never'  => 'nia',
@@ -98,6 +110,7 @@ $messages = array(
 'category-subcat-count-limited'  => 'In de Kategorie {{PLURAL:$1|is de foignde Untakategorie|san de foigndn Untakategorien}} eisoatiad:',
 'category-article-count-limited' => 'De {{PLURAL:$1|foignde Seitn is|foigndn $1 Seitn san}} in dea Kategorie enthåitn:',
 'category-file-count-limited'    => "{{PLURAL:$1|D'foignde Datei is|De foigndn $1 Datein san}} in de Kategorie eisoatiad:",
+'listingcontinuesabbrev'         => '(Foatsetzung)',
 
 'mainpagetext'      => "<big>'''MediaWiki is eafoigreich installiad woan.'''</big>",
 'mainpagedocfooter' => 'A Huif zua Benutzung und Konfiguration vo da Wiki-Software findst im [http://meta.wikimedia.org/wiki/Help:Contents Benutzerhandbuch].
@@ -157,6 +170,7 @@ $messages = array(
 'aboutsite'            => 'Üba {{SITENAME}}',
 'aboutpage'            => 'Project:Üba_{{SITENAME}}',
 'disclaimers'          => 'Impressum',
+'disclaimerpage'       => 'Project:Impressum',
 'edithelp'             => 'Bearbeitungshuifn',
 'edithelppage'         => 'Help:Bearbeitungshuifn',
 'mainpage'             => 'Hauptsaitn',
@@ -193,17 +207,34 @@ $messages = array(
 'nosuchspecialpage' => "De Spezialseitn gibt's ned",
 
 # General errors
-'error'               => 'Fehla',
-'databaseerror'       => 'Fehla in da Datenbank',
-'noconnect'           => 'Konn koa Verbindung zur Datenbank auf $1 herstelln',
-'filedeleteerror'     => 'De Datei „$1“ håt net glöscht wern kinna.',
-'filenotfound'        => 'De Datei „$1“ is net gfundn worn.',
-'badarticleerror'     => 'De Aktion kann net auf de Seitn ogwendt wern.',
-'badtitletext'        => 'Da Titl vo dera oogfordertn Seitn is net gültig, laar oda a ungültigar Sprachlink vo an andern Wiki.',
-'actionthrottledtext' => 'Diese Aktion kann in einem kurzen Zeitabstand nur begrenzt oft ausgeführt werden. Du hast diese Grenze soeben erreicht. Bitte versuche es in einigen Minuten erneut.',
-'viewsourcetext'      => 'Sie kinnan aba an Quelltext vo dera Seitn ooschaun und kopiern:',
-'editinginterface'    => "'''Obacht:''' De Seitn enthoit von da MediaWiki-Software benutzten Text. Änderungen wirken si auf de Benutzeroberfläche aus.",
-'titleprotected'      => "A Seitn mit dem Nama kann net ogelegt wern. De Sperre is durch [[User:$1|$1]] mit da Begründung ''„$2“'' eigericht worn.",
+'error'                => 'Fehla',
+'databaseerror'        => 'Fehla in da Datenbank',
+'noconnect'            => 'Konn koa Verbindung zur Datenbank auf $1 herstelln',
+'missingarticle-rev'   => '(Veasionsnumma: $1)',
+'missingarticle-diff'  => '(Untaschiad zwischn Veasionen: $1, $2)',
+'internalerror'        => 'Inteana Fehla',
+'internalerror_info'   => 'Inteana Fehla: $1',
+'filecopyerror'        => 'De Datei „$1“ håd ned nåch „$2“ kopiad wean kina.',
+'filedeleteerror'      => 'De Datei „$1“ håt net glöscht wern kinna.',
+'directorycreateerror' => "S'Vazeichnis „$1“ håd ned ãnglegt wean kina.",
+'filenotfound'         => 'De Datei „$1“ is net gfundn worn.',
+'fileexistserror'      => "In'd Datei „$1“ håd ned gschrim wean kina, weu's de Datei nämli schãu gibt.",
+'unexpected'           => 'Uneawåateta Weat: „$1“=„$2“.',
+'formerror'            => 'Fehla: De Eingåm håm ned vaåawat wean kina.',
+'badarticleerror'      => 'De Aktion kann net auf de Seitn ogwendt wern.',
+'badtitle'             => 'Ungüitiga Titl',
+'badtitletext'         => 'Da Titl vo dera oogfordertn Seitn is net gültig, laar oda a ungültigar Sprachlink vo an andern Wiki.',
+'wrong_wfQuery_params' => 'Fåische Parameta fia wfQuery()<br />
+Funkzion: $1<br />
+Åbfråg: $2',
+'viewsource'           => 'Quöitext ãnschau',
+'viewsourcefor'        => 'fia $1',
+'actionthrottled'      => 'Akzionszåih limitiad',
+'actionthrottledtext'  => "De Akzion kãu innahåib vu am kuazn Zeitåbstãnd netta begrenzt oft ausgfüahd wean. De Grenzn håst gråd erreicht. Bitte probia's in a poa Minutn nu amåi.",
+'protectedpagetext'    => "De Seitn is fia s'Beåaweitn gspead.",
+'viewsourcetext'       => 'Sie kinnan aba an Quelltext vo dera Seitn ooschaun und kopiern:',
+'editinginterface'     => "'''Obacht:''' De Seitn enthoit von da MediaWiki-Software benutzten Text. Änderungen wirken si auf de Benutzeroberfläche aus.",
+'titleprotected'       => "A Seitn mit dem Nama kann net ogelegt wern. De Sperre is durch [[User:$1|$1]] mit da Begründung ''„$2“'' eigericht worn.",
 
 # Login and logout pages
 'logouttext'                 => 'Sie san iatzat abgmeldt.
@@ -270,6 +301,7 @@ Sie kinnan {{SITENAME}} iatzat anonym weitanutzn, oda si unta am selben oda am a
 'loginreqlink'             => 'oomeidn',
 'loginreqpagetext'         => 'Sie miaßn si $1, um Seitn lesen zum kinna.',
 'accmailtitle'             => 'Passwort is vaschickt worn',
+'accmailtext'              => 'Des Passwort fia „$1“ is an $2 gschickt worn.',
 'newarticle'               => '(Nei)',
 'newarticletext'           => 'Da an Text vo da neien Seitn eintragn. Bitte nur in ganze Sätze schreim und koane urheberrechtsgeschützten Texte vo andere kopiern.',
 'anontalkpagetext'         => "---- ''De Seitn werd dazu hergnumma, am net ogmeldten Benutzer Nachrichtn zum hinterlassen.
@@ -278,6 +310,9 @@ Wennst a anonymer Benutzer bist und dengst, daß irrelevante Kommentare an di gr
 'noarticletext'            => 'De Seitn enthåit zua Zeid kan Text ned.
 Du kãnnst in Titl vu dea Seitn auf de ãndan Seitn [[Special:Search/{{PAGENAME}}|suacha]],
 <span class="plainlinks"> in de dazuaghearadn [{{fullurl:Special:Log|page={{urlencode:{{FULLPAGENAME}}}}}} Logbiache suachn] oda de Seitn [{{fullurl:{{FULLPAGENAME}}|action=edit}} beåabeitn]</span>.',
+'updated'                  => '(Gändat)',
+'note'                     => "'''Hinweis:'''",
+'previewnote'              => "'''Des is netta a Voaschau, d'Seitn is nu ned gspeichat woan!'''",
 'previewconflict'          => "De Vorschau gibt an Inhalt vom obern Textfeld wieda; so werd de Seite ausschaun, wenn S' iatzat speichern.",
 'session_fail_preview'     => '<strong>Dei Bearbeitung is net gspeichert worn, wei deine Sitzungsdaten valorn ganga san.
 Bitte versuachs no amoi, indem du unta da foigendn Textvorschau nochmois auf „Seitn speichern“ klickst.
@@ -301,6 +336,9 @@ Wenn S' speichern, wern alle neiern Versionen übaschriem.</strong>",
 'templatesusedsection'     => 'De foigendn Vorlagn wern von dem Abschnitt vawendt:',
 'template-protected'       => '(schreibgschützt)',
 'nocreatetitle'            => 'De Erstellung vo neie Seitn is eingeschränkt.',
+'recreate-deleted-warn'    => "'''Obacht: Du ladst aa Datei hoach, de scho friara glöscht worn is.'''
+Bittschee prüf gnau, ob as erneite Hoachladn de Richtlinien entspricht.
+Zu deina Information folgt des Lösch-Logbuach mit da Begründung fia de vorherige Löschung:",
 
 # Account creation failure
 'cantcreateaccounttitle' => 'Benutzerkonto konn net erstellt wern.',
@@ -322,9 +360,16 @@ Vielleicht is sie gelöscht oda verschom worn.
 [[Special:Search|Durchsuachan]] S' {{SITENAME}} für passende neie Seitn.",
 
 # Revision deletion
-'rev-delundel'            => 'zoang/vastecka',
-'revdelete-nooldid-title' => 'Koa Version ogem',
-'revdelete-text'          => "'''Der Inhalt oder andere Bestandteile gelöschter Versionen sind nicht mehr öffentlich einsehbar, erscheinen jedoch weiterhin als Einträge in der Versionsgeschichte.'''
+'rev-deleted-text-permission' => '<div class="mw-warning plainlinks"> De Version is glöscht worn und is nimma öffentlich zum einseng.
+Nähere Angaben zum Löschvorgang sowia a Begründung findn si im [{{fullurl:Special:Log/delete|page={{PAGENAMEE}}}} Lösch-Logbuch].</div>',
+'rev-deleted-text-view'       => '<div class="mw-warning plainlinks">De Version is gelöscht worn und is nimma öffentlich einsehbar.
+Als Administrator kennan Sie weiterhin einseng.
+Nähere Angaben zum Löschvorgang sowia a Begründung finden si im [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} Lösch-Logbuach].</div>',
+'rev-deleted-no-diff'         => '<div class="mw-warning plainlinks">Du kannst diesen Unterschied nicht betrachten, da eine der Versionen aus den öffentlichen Archiven entfernt wurde.
+Details stehen im [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} Lösch-Logbuch].</div>',
+'rev-delundel'                => 'zoang/vastecka',
+'revdelete-nooldid-title'     => 'Koa Version ogem',
+'revdelete-text'              => "'''Der Inhalt oder andere Bestandteile gelöschter Versionen sind nicht mehr öffentlich einsehbar, erscheinen jedoch weiterhin als Einträge in der Versionsgeschichte.'''
 {{SITENAME}}-Administratoren können den entfernten Inhalt oder andere entfernte Bestandteile weiterhin einsehen und wiederherstellen, es sei denn, es wurde festgelegt, dass die Zugangsbeschränkungen auch für Administratoren gelten.",
 
 # Merge log
@@ -361,6 +406,7 @@ Wãnn'st di mid dem Thema auskennst, kãnnst [[:$1|de Seitn söiwa schreim]].",
 'mypreferences'         => 'Eistellunga',
 'changepassword'        => 'Passwort ändan',
 'math_unknown_function' => 'Unbekannte Funktion',
+'textboxsize'           => 'Bearbatn',
 'searchresultshead'     => 'Suachn',
 'guesstimezone'         => 'Vom Browser übanehma',
 'allowemail'            => 'E-Mail-Empfang vo andere Benutzer möglich macha.',
@@ -438,6 +484,7 @@ A [[Special:WhatLinksHere/$2|voiständige Listn]] gibt's aa.",
 'morelinkstoimage'          => '[[Special:WhatLinksHere/$1|Weidare Links]] fia de Datei.',
 'redirectstofile'           => "{{PLURAL:$1|D'foignde Datei leitet|De foigndn $1 Datein leitn}} auf de Datei weida:",
 'duplicatesoffile'          => "{{PLURAL:$1|D'foignde Datei is a Duplikat|De foigndn $1 Datein han Duplikate}} vu dea Datei ([[Special:FileDuplicateSearch/$2|weidare Deteus]]):",
+'sharedupload'              => 'De Datei stãmmt aus $1 und deaf bei ãndare Projekte vawendt wean.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'shareduploadwiki-desc'     => 'Es folgt der Inhalt der $1 aus dem gemeinsam benutzten Repositorium.',
 'noimage'                   => "A Datei mit dem Nam existiert net, Sie kinnan s' abe $1.",
 'uploadnewversion-linktext' => 'A neie Version vo dera Datei hoachladn',

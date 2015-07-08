@@ -184,6 +184,7 @@ $messages = array(
 'youremail'               => 'E-bost:',
 'username'                => 'Hanow-usyer:',
 'yourlanguage'            => 'Yeth:',
+'yourgender'              => 'Reyth:',
 'email'                   => 'E-bost',
 'loginlanguagelabel'      => 'Yeth: $1',
 
@@ -237,6 +238,7 @@ $messages = array(
 'prevn'                    => 'kyns $1',
 'nextn'                    => 'nessa $1',
 'searchhelp-url'           => 'Help:Gweres',
+'searchprofile-images'     => 'Restrennow',
 'searchprofile-everything' => 'Puptra',
 'searchprofile-advanced'   => 'Avonsys',
 'search-result-size'       => '$1 ({{PLURAL:$2|1 ger|$2 geryow}})',
@@ -250,11 +252,18 @@ $messages = array(
 'powersearch-field'        => 'Hwilas rag',
 
 # Preferences page
-'preferences'       => 'Teythi ow akont',
-'mypreferences'     => 'Teythi ow akont',
-'prefs-watchlist'   => 'Rol golyas',
-'saveprefs'         => 'Gwitha',
-'searchresultshead' => 'Hwilas',
+'preferences'              => 'Teythi ow akont',
+'mypreferences'            => 'Teythi ow akont',
+'skin'                     => 'Krohen',
+'prefs-watchlist'          => 'Rol golyas',
+'saveprefs'                => 'Gwitha',
+'searchresultshead'        => 'Hwilas',
+'timezoneregion-africa'    => 'Afrika',
+'timezoneregion-america'   => 'Amerika',
+'timezoneregion-asia'      => 'Asi',
+'timezoneregion-australia' => 'Ostrali',
+'timezoneregion-europe'    => 'Europa',
+'files'                    => 'Restrennow',
 
 # Groups
 'group-user'  => 'Devnydhyow',
@@ -488,6 +497,9 @@ $messages = array(
 'namespacesall'    => 'oll',
 'monthsall'        => 'oll',
 
+# Trackbacks
+'trackbackremove' => '([$1 Dilea])',
+
 # Multipage image navigation
 'imgmultipageprev' => '← folen kyns',
 'imgmultipagenext' => 'folen nessa →',
@@ -497,8 +509,9 @@ $messages = array(
 'table_pager_limit_submit' => 'Ke',
 
 # Special:Version
-'version'       => 'Versyon', # Not used as normal message but as header for the special page itself
-'version-other' => 'Aral',
+'version'         => 'Versyon', # Not used as normal message but as header for the special page itself
+'version-other'   => 'Aral',
+'version-version' => 'Versyon',
 
 # Special:FilePath
 'filepath-page' => 'Restren:',
@@ -509,5 +522,8 @@ $messages = array(
 
 # Special:SpecialPages
 'specialpages' => 'Folennow arbennek',
+
+# Special:Tags
+'tags-edit' => 'chanjya',
 
 );

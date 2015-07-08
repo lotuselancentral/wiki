@@ -8,6 +8,7 @@
  * @file
  *
  * @author Mayooranathan
+ * @author Naveen
  * @author Sundar
  * @author Trengarasu
  * @author Ulmo
@@ -16,24 +17,22 @@
  */
 
 $namespaceNames = array(
-	NS_MEDIA          => 'ஊடகம்',
-	NS_SPECIAL        => 'சிறப்பு',
-	NS_MAIN           => '',
-	NS_TALK           => 'பேச்சு',
-	NS_USER           => 'பயனர்',
-	NS_USER_TALK      => 'பயனர்_பேச்சு',
-	# NS_PROJECT set by $wgMetaNamespace
-	NS_PROJECT_TALK   => '$1_பேச்சு',
-	NS_FILE           => 'படிமம்',
-	NS_FILE_TALK      => 'படிமப்_பேச்சு',
-	NS_MEDIAWIKI      => 'மீடியாவிக்கி',
-	NS_MEDIAWIKI_TALK => 'மீடியாவிக்கி_பேச்சு',
-	NS_TEMPLATE       => 'வார்ப்புரு',
-	NS_TEMPLATE_TALK  => 'வார்ப்புரு_பேச்சு',
-	NS_HELP           => 'உதவி',
-	NS_HELP_TALK      => 'உதவி_பேச்சு',
-	NS_CATEGORY       => 'பகுப்பு',
-	NS_CATEGORY_TALK  => 'பகுப்பு_பேச்சு',
+	NS_MEDIA            => 'ஊடகம்',
+	NS_SPECIAL          => 'சிறப்பு',
+	NS_TALK             => 'பேச்சு',
+	NS_USER             => 'பயனர்',
+	NS_USER_TALK        => 'பயனர்_பேச்சு',
+	NS_PROJECT_TALK     => '$1_பேச்சு',
+	NS_FILE             => 'படிமம்',
+	NS_FILE_TALK        => 'படிமப்_பேச்சு',
+	NS_MEDIAWIKI        => 'மீடியாவிக்கி',
+	NS_MEDIAWIKI_TALK   => 'மீடியாவிக்கி_பேச்சு',
+	NS_TEMPLATE         => 'வார்ப்புரு',
+	NS_TEMPLATE_TALK    => 'வார்ப்புரு_பேச்சு',
+	NS_HELP             => 'உதவி',
+	NS_HELP_TALK        => 'உதவி_பேச்சு',
+	NS_CATEGORY         => 'பகுப்பு',
+	NS_CATEGORY_TALK    => 'பகுப்பு_பேச்சு',
 );
 
 $namespaceAliases = array(
@@ -41,6 +40,11 @@ $namespaceAliases = array(
 	'விக்கிபீடியா_பேச்சு' => NS_PROJECT_TALK,
 	'உருவப்_பேச்சு' => NS_FILE_TALK
 );
+
+$magicWords = array(
+	'redirect'              => array( '0', '#வழிமாற்று', '#REDIRECT' ),
+);
+
 $linkTrail = "/^([\xE0\xAE\x80-\xE0\xAF\xBF]+)(.*)$/sDu";
 
 $messages = array(
@@ -426,6 +430,9 @@ $1',
 'badsig'                     => 'செல்லுபடியற்ற கையொப்பம் எச்.டி.எம்.எல். நிரலைச் சரி பார்க்கவும்.',
 'badsiglength'               => 'புணைப்பெயர் நீளமானது.
 அது {{PLURAL:$1|ஒரு எழுத்தைக் கொண்டதாக|$1 எழுத்துக்களுக்குட்பட்டதா}} இருக்கவேண்டும்.',
+'yourgender'                 => 'பால்:',
+'gender-male'                => 'ஆண்',
+'gender-female'              => 'பெண்',
 'email'                      => 'மின்னஞ்சல்',
 'prefs-help-realname'        => 'உண்மையான பெயர் கட்டாயமற்றது. நீங்கள் இதை கொடுத்தால் உங்கள் ஆக்கங்களுக்கான உரிப்பளிப்புகளின் போது இது பயன்படும்.',
 'loginerror'                 => 'புகுபதிகைத் தவறு',
@@ -487,6 +494,9 @@ $1',
 'resetpass-wrong-oldpass'   => 'செல்லுபடியற்ற தற்காலிகமான அல்லது நடப்புக் கடவுச்சொல்.
 உங்கள் கடவுச் சொல்லை நீங்கள் வெற்றிகரமாக மாற்றிவிட்டீர்கள் அல்லது புதிய தற்காலிகக் கடவுச்சொல்லைக் கோரியுள்ளீர்கள்.',
 'resetpass-temp-password'   => 'தற்காலிக கடவுச்சொல்:',
+'resetpass-log'             => 'கடவுச்சொல் மாற்றல் பதிகை',
+'resetpass-logentry'        => '$1 க்குக் கடவுச்சொல் மாற்றப்பட்டது',
+'resetpass-comment'         => 'கடவுச்சொல் மாற்றத்துக்கான காரணம்:',
 
 # Edit page toolbar
 'bold_sample'     => 'தடித்த எழுத்துக்கள்',
@@ -699,16 +709,16 @@ $1 பயனரையோ அல்லது வேறு [[{{MediaWiki:Grouppage
 'rev-deleted-comment'         => '(கருத்து நீக்கப்பட்டது)',
 'rev-deleted-user'            => '(பயனர் பெயர் நீக்கப்பட்டது)',
 'rev-deleted-event'           => '(பதிவு செயற்பாடு நீக்கப்பட்டது)',
-'rev-deleted-text-permission' => '<div class="mw-warning plainlinks">
-இந்த பக்கத்திருத்தம் பொது பரணிலிருந்து நீக்கப்பட்டுள்ளது.
-இது தொடர்பான பதிவு [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} நீக்கல் பதிகையில்] காணப்படலாம்.</div>',
-'rev-deleted-text-view'       => '<div class="mw-warning plainlinks">
-இந்த பக்கத்திருத்தம் பொது பரணிலிருந்து நீக்கப்பட்டுள்ளது.
-{{SITENAME}} தளத்தின் நிர்வாகி என்ற வகையில் நீங்கள் அதைப் பார்க்கலாம் மேலும் இது தொடர்பான பதிவு [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} நீக்கல் பதிகையில்] காணப்படலாம்.</div>',
+'rev-deleted-text-permission' => 'இந்த பக்கத்திருத்தம் பொது பரணிலிருந்து நீக்கப்பட்டுள்ளது.
+இது தொடர்பான பதிவு [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} நீக்கல் பதிகையில்] காணப்படலாம்.',
+'rev-deleted-text-view'       => 'இந்த பக்கத்திருத்தம் பொது பரணிலிருந்து நீக்கப்பட்டுள்ளது.
+{{SITENAME}} தளத்தின் நிர்வாகி என்ற வகையில் நீங்கள் அதைப் பார்க்கலாம் மேலும் இது தொடர்பான பதிவு [{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} நீக்கல் பதிகையில்] காணப்படலாம்.',
 'rev-delundel'                => 'காட்டு/மறை',
 'revisiondelete'              => 'திருத்தங்களை நீக்கு/மீட்டெடு',
 'revdelete-nooldid-title'     => 'செல்லுபடியற்ற இலக்குத் திருத்தம்',
 'revdelete-nooldid-text'      => 'நீங்கள் இச்செயற்பாட்டை மேற்கொள்ள வேண்டிய இலக்குத் திருத்தம் ஒன்றையாவது குறிப்பிடவில்லை அல்லது குறித்தவாரான திருத்தமொன்று இல்லை அல்லது நடைமுறையிலுள்ள திருத்தமொன்ற மறைக்க எத்தனிக்கிறீர்கள்.',
+'revdelete-nologtype-title'   => 'பதிகை வகை தரப்படவில்லை',
+'revdelete-nologid-title'     => 'செல்லுபடியற்ற பதிகைப் பதிவு',
 'revdelete-selected'          => "'''[[:$1]] பக்கத்தின் தெரிவுச் செய்யப்பட்ட {{PLURAL:$2|திருத்தம்|திருத்தங்கள்}}:'''",
 'logdelete-selected'          => "'''தெரிவு செய்யப்பட்ட பதிகை {{PLURAL:$1|நிகழ்வு|நிகழ்வுகள்}}:'''",
 'revdelete-text'              => "'''நீக்கப்பட்ட நிகழ்வுகள் மற்றும் திருத்தங்கள் பக்க வரலாற்றுப் பக்கத்தில் காணப்படும் எனினும் அவற்றின் உள்ளடக்கம் பயனர்களுக்கு காட்டப்படமாட்டது.'''
@@ -768,6 +778,7 @@ $1 பயனரையோ அல்லது வேறு [[{{MediaWiki:Grouppage
 'mergehistory-autocomment'         => '[[:$1]]பக்கம் [[:$2]] பக்கத்துடன் இணைக்கப்பட்டது',
 'mergehistory-comment'             => '[[:$1]]பக்கம் [[:$2]] பக்கத்துடன் இணைக்கப்பட்டது: $3',
 'mergehistory-same-destination'    => 'மூலப் பக்கமும் முடிவிடப் பக்கமும் ஒன்றாக இருக்கமுடியாது',
+'mergehistory-reason'              => 'காரணம்:',
 
 # Merge log
 'mergelog'           => 'இணைப்புப் பதிகை',
@@ -812,6 +823,7 @@ $1 பயனரையோ அல்லது வேறு [[{{MediaWiki:Grouppage
 'notextmatches'                    => 'கட்டுரை உரை எதுவும் பொருந்தவில்லை',
 'prevn'                            => 'முன் $1',
 'nextn'                            => 'அடுத்த $1',
+'prevn-title'                      => 'முன்னைய $1 {{PLURAL:$1|முடிவு|முடிவுகள்}}',
 'viewprevnext'                     => '($1) ($2) ($3) பக்கங்களைப் பார்.',
 'searchmenu-legend'                => 'தேடல் விருப்பு',
 'searchmenu-exists'                => "'''\"[[:\$1]]\" என்னும் பெயருடைய பக்கம் இந்த விக்கியில் உள்ளது'''",
@@ -903,6 +915,16 @@ $1 பயனரையோ அல்லது வேறு [[{{MediaWiki:Grouppage
 'timezoneoffset'            => 'நேர இடைவெளி¹:',
 'servertime'                => 'வழங்கன் நேரம்:',
 'guesstimezone'             => 'உலாவியிலிருந்து நிரப்பு',
+'timezoneregion-africa'     => 'ஆப்ரிக்கா',
+'timezoneregion-america'    => 'அமெரிக்கா',
+'timezoneregion-antarctica' => 'அன்டார்க்டிக்கா',
+'timezoneregion-arctic'     => 'ஆர்க்டிக்',
+'timezoneregion-asia'       => 'ஆசியா',
+'timezoneregion-atlantic'   => 'அத்திலாந்திக் பெருங்கடல்',
+'timezoneregion-australia'  => 'ஆஸ்திரேலியா',
+'timezoneregion-europe'     => 'ஐரோப்பா',
+'timezoneregion-indian'     => 'இந்தியப் பெருங்கடல்',
+'timezoneregion-pacific'    => 'பசிபிக் பெருங்கடல்',
 'allowemail'                => 'ஏனைய பயனர்களிடம் இருந்தான மின்னஞ்சல்களை அனுமதி',
 'prefs-searchoptions'       => 'தேடல் விருப்பத் தேர்வுகள்',
 'prefs-namespaces'          => 'பெயர்வெளிகள்',
@@ -1003,6 +1025,8 @@ $1 பயனரையோ அல்லது வேறு [[{{MediaWiki:Grouppage
 'action-movefile'      => 'இந்தக் கோப்பை நகர்த்தவும்',
 'action-upload'        => 'இந்தக் கோப்பைப் பதிவிறக்கவும்',
 'action-delete'        => 'இந்தப் பக்கத்தை நீக்கவும்',
+'action-browsearchive' => 'அழிக்கப்பட்ட  பக்கங்களை தேடு',
+'action-undelete'      => 'அழித்த பக்கத்தை மறுபடியும் கொண்டு வா',
 
 # Recent changes
 'nchanges'                          => '{{PLURAL:$1|ஒரு மாற்றம்|$1 மாற்றங்கள்}}',
@@ -1144,34 +1168,28 @@ $1 பயனரையோ அல்லது வேறு [[{{MediaWiki:Grouppage
 'listfiles_description' => 'விளக்கம்',
 
 # File description page
-'filehist'                       => 'கோப்பு வரலாறு',
-'filehist-help'                  => 'குறித்த நேரத்தில் இருந்த படிமத்தைப் பார்க்க அந்நேரத்தின் மீது சொடுகவும்.',
-'filehist-deleteall'             => 'சகலதையும் நீக்கு',
-'filehist-deleteone'             => 'நீக்குக',
-'filehist-revert'                => 'முன்நிலையாக்கு',
-'filehist-current'               => 'தற்போதைய',
-'filehist-datetime'              => 'நாள்/நேரம்',
-'filehist-user'                  => 'பயனர்',
-'filehist-dimensions'            => 'பரிமாணங்கள்',
-'filehist-filesize'              => 'கோப்பின் அளவு',
-'filehist-comment'               => 'குறிப்பு',
-'imagelinks'                     => 'படிம இணைப்புகள்',
-'linkstoimage'                   => 'பின்வரும் {{PLURAL:$1|பக்க இணைப்புகள்|$1 பக்கங்கள் இணைப்பு}}
+'filehist'                  => 'கோப்பு வரலாறு',
+'filehist-help'             => 'குறித்த நேரத்தில் இருந்த படிமத்தைப் பார்க்க அந்நேரத்தின் மீது சொடுகவும்.',
+'filehist-deleteall'        => 'சகலதையும் நீக்கு',
+'filehist-deleteone'        => 'நீக்குக',
+'filehist-revert'           => 'முன்நிலையாக்கு',
+'filehist-current'          => 'தற்போதைய',
+'filehist-datetime'         => 'நாள்/நேரம்',
+'filehist-user'             => 'பயனர்',
+'filehist-dimensions'       => 'பரிமாணங்கள்',
+'filehist-filesize'         => 'கோப்பின் அளவு',
+'filehist-comment'          => 'குறிப்பு',
+'imagelinks'                => 'படிம இணைப்புகள்',
+'linkstoimage'              => 'பின்வரும் {{PLURAL:$1|பக்க இணைப்புகள்|$1 பக்கங்கள் இணைப்பு}}
 இப் படிமத்துக்கு இணைக்கபட்டுள்ளது(ளன):',
-'nolinkstoimage'                 => 'இப் படிமத்துக்கு இணைக்கப்பட்டுள்ள பக்கங்கள் எதுவும் இல்லை.',
-'sharedupload'                   => 'இக்கோப்பு ஒரு பகிரப்பட்ட பதிவேற்றமாகும். ஏனைய திட்டங்களிலும் பயன்படுத்தப்படலாம்.',
-'shareduploadwiki'               => 'மேலதிகத் தகவல்களுக்கு $1 பக்கத்தைப் பார்க்கவும்.',
-'shareduploadwiki-desc'          => 'பகிரப்பட்ட ஊடகக் கிடங்கில் காணப்படும் $1 பக்கத்தைப் இங்கே கீழே காணலாம்.',
-'shareduploadwiki-linktext'      => 'படிம விளக்கப்',
-'shareduploadduplicate'          => '
-இந்தக் கோப்பு பகிரப்பட்ட சேமிப்பில் உள்ள $1 கோப்பின் நகலாகும்.',
-'shareduploadduplicate-linktext' => 'வேறொரு கோப்பு',
-'shareduploadconflict'           => 'இந்தக் கோப்பு பகிரப்பட்ட சேமிப்பில் உள்ள $1 கோப்பின் பெயரையே கொண்டுள்ளது',
-'shareduploadconflict-linktext'  => 'வேறொரு கோப்பு',
-'noimage'                        => 'இப்பெயருடைய கோப்பு எதுவும் இல்லை, ஆனால் நீங்கள் அதை $1.',
-'noimage-linktext'               => 'ஒன்றை பதிவேற்றம் செய்',
-'uploadnewversion-linktext'      => 'இப்படிமத்தின் புதிய பதிப்பை பதிவேற்று',
-'imagepage-searchdupe'           => 'நகல் கோப்புகளைத் தேடுக',
+'nolinkstoimage'            => 'இப் படிமத்துக்கு இணைக்கப்பட்டுள்ள பக்கங்கள் எதுவும் இல்லை.',
+'sharedupload'              => 'இக்கோப்பு ஒரு பகிரப்பட்ட பதிவேற்றமாகும். ஏனைய திட்டங்களிலும் பயன்படுத்தப்படலாம்.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
+'shareduploadwiki'          => 'மேலதிகத் தகவல்களுக்கு $1 பக்கத்தைப் பார்க்கவும்.',
+'shareduploadwiki-desc'     => 'பகிரப்பட்ட ஊடகக் கிடங்கில் காணப்படும் $1 பக்கத்தைப் இங்கே கீழே காணலாம்.',
+'shareduploadwiki-linktext' => 'படிம விளக்கப்',
+'noimage'                   => 'இப்பெயருடைய கோப்பு எதுவும் இல்லை, ஆனால் நீங்கள் அதை $1.',
+'noimage-linktext'          => 'ஒன்றை பதிவேற்றம் செய்',
+'uploadnewversion-linktext' => 'இப்படிமத்தின் புதிய பதிப்பை பதிவேற்று',
 
 # File reversion
 'filerevert'                => '$1 ஐ முன்நிலையாக்கு',
@@ -1597,7 +1615,7 @@ $1',
 'contributions' => 'பயனர் பங்களிப்புக்கள்',
 'mycontris'     => 'என் பங்களிப்புக்கள்',
 'contribsub2'   => '$1 பயனரின் ($2)',
-'nocontribs'    => 'இந்த நிபந்தனையுடன் ஒத்துப்போகும் வகையில் மாற்றங்களெதுவும் காணப்படவில்லை.',
+'nocontribs'    => 'இந்த நிபந்தனையுடன் ஒத்துப்போகும் வகையில் மாற்றங்களெதுவும் காணப்படவில்லை.', # Optional parameter: $1 is the user name
 'uctop'         => '(மேல்)',
 'month'         => 'மாதம் உட்பட முந்தைய:',
 'year'          => 'ஆண்டு உட்பட முந்தைய:',
@@ -2019,6 +2037,7 @@ $1',
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # EXIF tags
@@ -2235,7 +2254,7 @@ $1',
 'confirmemail'             => 'மின்னஞ்சல் முகவரியை உறுதிப்படுத்துக',
 'confirmemail_noemail'     => 'உங்கள் [[Special:Preferences|பயனர் விருப்பத்தேர்வுகளில்]] செல்லுபடியான மின்னஞ்சல் முகவரியைக் குறிப்பிடவில்லை.',
 'confirmemail_text'        => 'மின்னஞ்சல் சிறப்பியல்புகளைப் பயன்படுத்துவதற்கு {{SITENAME}} தளம் உங்களது மின்னஞ்சல் உறுதிப்படுத்தப்பட வேண்டும் மென எதிர்பார்க்கின்றது. உறுதிப்படுத்தல் மின்னஞ்சல் ஒன்றை அனுப்ப கீழுள்ள விசையை முடுக்கவும். மின்னஞ்சல் ஒரு இணைப்பைக் கொண்டிருக்கும்; உங்கள் மின்னஞ்சலை உறுதிப்படுத்த இவ்விணைப்பை உங்கள் உலாவியில் திறக்கவும்.',
-'confirmemail_pending'     => '<div class="error">உறுதிப்படுத்தல் குறியொன்று உங்கள் மின்னஞ்சல் முகவரிக்கு அனுப்பட்டுள்ளது; நீங்கள் கணக்கை தற்போது தொடங்கியிருந்தால் புதிய உறுதிப்படுத்தல் குறியை கோறுமுன்னர் சில நிமிடங்கள் பொறுத்துப் பார்க்கவும்</div>',
+'confirmemail_pending'     => 'உறுதிப்படுத்தல் குறியொன்று உங்கள் மின்னஞ்சல் முகவரிக்கு அனுப்பட்டுள்ளது; நீங்கள் கணக்கை தற்போது தொடங்கியிருந்தால் புதிய உறுதிப்படுத்தல் குறியை கோறுமுன்னர் சில நிமிடங்கள் பொறுத்துப் பார்க்கவும்',
 'confirmemail_send'        => 'உறுதிப்படுத்தல் சொல்லை மின்னஞ்சல் செய்',
 'confirmemail_sent'        => 'உறுதிப்படுத்தல் மின்னஞ்சல் அனுப்பப் பட்டது.',
 'confirmemail_oncreate'    => 'உறுதிப்படுத்தல் குறியொன்று உங்கள் மின்னஞ்சல் முகவரிக்கு அனுப்பட்டுள்ளது.
@@ -2270,7 +2289,7 @@ $5
 'scarytranscludetoolong'  => '[இணைய முகவரி மிகவும் நீளமானது]',
 
 # Trackbacks
-'trackbackremove' => ' ([$1 நீக்கு])',
+'trackbackremove' => '([$1 நீக்கு])',
 
 # Delete conflict
 'deletedwhileediting' => "'''எச்சரிக்கை''': நீங்கள் இப்பக்கத்தை தொகுக்க தொடங்கியப் பின் அது நீக்கப்பட்டுள்ளது!",

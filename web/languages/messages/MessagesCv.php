@@ -1,5 +1,5 @@
 <?php
-/** Chuvash (Чăвашла)
+/** Chuvash (Чӑвашла)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -1158,7 +1158,7 @@ $1 хутшăнакан патне, е ытти [[{{MediaWiki:Grouppage-sysop}}|
 'scarytranscludetoolong' => '[Питĕ шел, URL ытла вăрăм]',
 
 # Trackbacks
-'trackbackremove' => ' ([$1 кăларса пăрах])',
+'trackbackremove' => '([$1 кăларса пăрах])',
 
 # Delete conflict
 'deletedwhileediting' => 'Асăрхăр: эсир тӳрлетнĕ вăхăтра ку страницăна кăларса парахнă!',

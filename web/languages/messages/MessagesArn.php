@@ -174,6 +174,8 @@ $messages = array(
 'username'                => 'Üy kellufe:',
 'yourrealname'            => 'Tami mupiñ üy *',
 'yourlanguage'            => 'Dungun:',
+'gender-male'             => 'Wentru',
+'gender-female'           => 'Domo',
 'loginlanguagelabel'      => 'Dungun: $1',
 
 # Edit pages
@@ -205,6 +207,9 @@ $messages = array(
 'revdelete-uname' => 'Üy kellufe',
 'revdelete-hid'   => 'Ellkan $1',
 
+# History merging
+'mergehistory-reason' => 'Dungu:',
+
 # Diffs
 'lineno'       => 'Wirin $1:',
 'editundo'     => 'wüñoeltun',
@@ -226,11 +231,16 @@ $messages = array(
 'powersearch-field'              => 'Kintun',
 
 # Preferences page
-'prefs-edits'       => 'Rakin Wirin:',
-'prefsnologin'      => 'Mülelay Konün',
-'skin-preview'      => 'Pen chum müley',
-'textboxsize'       => 'Wirin',
-'searchresultshead' => 'Kintun',
+'prefs-edits'            => 'Rakin Wirin:',
+'prefsnologin'           => 'Mülelay Konün',
+'skin-preview'           => 'Pen chum müley',
+'textboxsize'            => 'Wirin',
+'searchresultshead'      => 'Kintun',
+'timezoneregion-africa'  => 'Afrika',
+'timezoneregion-america' => 'Amerika',
+'timezoneregion-arctic'  => 'Artiku',
+'timezoneregion-asia'    => 'Asia',
+'timezoneregion-europe'  => 'Ewropa',
 
 # User rights
 'userrights-user-editname' => 'Wirin kiñe üy kellufe mew:',
@@ -318,6 +328,7 @@ $messages = array(
 'nbytes'            => '$1 {{PLURAL:$1|byte|bytes}}',
 'nviews'            => '$1 {{PLURAL:$1|pen|pen}}',
 'shortpages'        => 'Pichi pakina',
+'usercreated'       => 'Llintun $1 mew $2 mew',
 'newpages'          => 'We pakina',
 'newpages-username' => 'Kellufe ñi üy',
 'move'              => 'Wiñamün',
@@ -405,14 +416,15 @@ $messages = array(
 'whatlinkshere-prev' => '{{PLURAL:$1|Pen chum müley|Pen chum müluey $1}}',
 
 # Block/unblock
-'ipbexpiry'          => 'Afi',
-'ipbreason'          => 'Dungu:',
-'ipbreasonotherlist' => 'Kake dungu:',
-'ipboptions'         => '2 ora:2 hours,1 aṉtü:1 day,3 aṉtü:3 days,1 semana:1 week,2 semana:2 weeks,1 küyeṉ:1 month,3 küyeṉ:3 months,6 küyeṉ:6 months,1 tripantu:1 year,rumel:infinite', # display1:time1,display2:time2,...
-'ipbotheroption'     => 'Kakelu',
-'ipblocklist-submit' => 'Kintun',
-'expiringblock'      => 'afi $1',
-'proxyblocksuccess'  => 'Dewmangey.',
+'ipbexpiry'                  => 'Afi',
+'ipbreason'                  => 'Dungu:',
+'ipbreasonotherlist'         => 'Kake dungu:',
+'ipboptions'                 => '2 ora:2 hours,1 aṉtü:1 day,3 aṉtü:3 days,1 semana:1 week,2 semana:2 weeks,1 küyeṉ:1 month,3 küyeṉ:3 months,6 küyeṉ:6 months,1 tripantu:1 year,rumel:infinite', # display1:time1,display2:time2,...
+'ipbotheroption'             => 'Kakelu',
+'ipblocklist-submit'         => 'Kintun',
+'expiringblock'              => 'afi $1',
+'block-log-flags-hiddenname' => 'Üy kellufe ellkan',
+'proxyblocksuccess'          => 'Dewmangey.',
 
 # Move page
 'move-page'               => 'Nengümün $1',
@@ -495,7 +507,7 @@ $messages = array(
 'monthsall'        => '(kom)',
 
 # Trackbacks
-'trackbackremove' => ' ([$1 Ñamümün])',
+'trackbackremove' => '([$1 Ñamümün])',
 
 # action=purge
 'confirm_purge_button' => 'Feley may',
@@ -525,5 +537,8 @@ $messages = array(
 
 # Special:BlankPage
 'blankpage' => 'welli pakina',
+
+# Special:Tags
+'tags-edit' => 'Wirin',
 
 );

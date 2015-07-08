@@ -64,8 +64,8 @@ $specialPageAliases = array(
 	'Mostlinked'                => array( 'PlisLenke' ),
 	'Mostlinkedcategories'      => array( 'KategoriPlisLenke', 'KategoriPlisItilize' ),
 	'Mostlinkedtemplates'       => array( 'TenmplaPlisLenke', 'TenmplaPlisItilize' ),
-	'Mostcategories'            => array( 'PlisKategori' ),
 	'Mostimages'                => array( 'PlisImaj' ),
+	'Mostcategories'            => array( 'PlisKategori' ),
 	'Mostrevisions'             => array( 'PlisRevizyon' ),
 	'Fewestrevisions'           => array( 'MwensRevizyon' ),
 	'Shortpages'                => array( 'PajKout' ),
@@ -130,7 +130,8 @@ $messages = array(
 'tog-highlightbroken'         => 'Afiche <a href="" class="new">nan koulè wouj</a> lyen yo ki ap mene nan paj ki pa egziste (oubyen : tankou <a href="" class="internal">?</a>)',
 'tog-justify'                 => 'Aliyen paragraf yo',
 'tog-hideminor'               => 'Kache tout modifikasyon resan yo ki pa enpòtan',
-'tog-extendwatchlist'         => 'Itilize lis swivi ki miyò a',
+'tog-hidepatrolled'           => 'Kache modifikasyon yo ki fèk fèt pou moun ki ap veye yo',
+'tog-extendwatchlist'         => 'Etann lis swivi pou ou kapab wè tout chanjman yo, pa sèlman sa ki fèk fèt yo',
 'tog-usenewrc'                => 'Itilize lis swivi ki miyò a (JavaScript)',
 'tog-numberheadings'          => 'Nimewote otomatiman tit yo',
 'tog-showtoolbar'             => 'Montre panèl meni modifikasyon an',
@@ -139,7 +140,7 @@ $messages = array(
 'tog-editsectiononrightclick' => 'Pemèt edite yon seksyon pa klike a dwat tit seksyon an (JavaScrip)',
 'tog-showtoc'                 => 'Montre tab de matyè yo (pou tout paj ki gen plis ke twa tit)',
 'tog-rememberpassword'        => 'Sonje login mwen nan òdinatè sa',
-'tog-editwidth'               => 'Lajè bwat edite-a plen',
+'tog-editwidth'               => 'Montre fenèt pou modifikasyon yo nan mitan paj lan',
 'tog-watchcreations'          => 'Ajoute paj yo ke mwen ap kreye nan lis swivi mwen.',
 'tog-watchdefault'            => 'Mete paj mwen edite yo nan lis veye m',
 'tog-watchmoves'              => 'Mete paj mwen deplase nan lis veye m',
@@ -513,6 +514,7 @@ Kont ou an kreye. Pa bliye pèsonalize l nan  [[Special:Preferences|preferans ou
 'yournick'                   => 'Siyati pou espas diskisyon :',
 'badsig'                     => 'Premye siyati ou an pa bon; tcheke l nan baliz HTML ou yo.',
 'badsiglength'               => 'Siyati ou an two long monchè oubyen machè: pi gwo longè li kapab genyen se $1 karaktè{{PLURAL:$1||}}.',
+'gender-male'                => 'Maskilen',
 'email'                      => 'Imèl',
 'prefs-help-realname'        => '(pa enpòtan) : si ou mete li, li ke posib pou nou ba ou rekonpans pou kèk kontrisyon ou yo.',
 'loginerror'                 => 'Erè nan idantifikasyon ou an',
@@ -891,7 +893,7 @@ Eseye pou wè si ak prefiks ''all:'' pou chache nan tout kontni a (anndann nou a
 'imagelinks'                => 'Lyen nan paj an',
 'linkstoimage'              => '{{PLURAL:$1|Paj ki ap swiv an|Paj yo ki ap swiv}} genyen imaj sa a :',
 'nolinkstoimage'            => 'Pyès paj pa genyen imaj sa a.',
-'sharedupload'              => 'Fichye sa a pataje e li kapab itilize pa lòt pwojè yo.',
+'sharedupload'              => 'Fichye sa a kapab pataje, li sòti depi $1 e li kapab itilize pa lòt pwojè yo.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'shareduploadwiki-desc'     => 'Nou ap montre ou deskripsyon ki nan $1 pa li.',
 'shareduploadwiki-linktext' => 'paj deskripsyon pou fichye a',
 'noimage'                   => 'Pa genyen pyès fichye ki genyen non sa a, men ou mèt $1.',
@@ -1255,6 +1257,7 @@ Nenpòt lòt lyen nan menm lign nan konsidere kòm yon eksèpsyon, i.e. paj kote
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # External editor support

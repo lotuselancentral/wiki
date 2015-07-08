@@ -232,6 +232,8 @@ du gebbscht do au zu, dass Du des selwerscht gschriwwe hoscht orrer vun ere effe
 'template-semiprotected'           => '(halb-gschitzt)',
 'hiddencategories'                 => 'Die Said ghert zu {{PLURAL:$1|1 versteckelte Kategorie|$1 versteckelte Kategorie}}:',
 'permissionserrorstext-withaction' => 'Du därfscht nid $2, aus {{PLURAL:$1|dem Grund|denne Grind}}:',
+'deleted-notice'                   => 'Die Said isch glescht worre.
+De Leschaidrach fer die Said isch do unne aagewwe als Quell.',
 
 # History pages
 'viewpagelogs'           => 'D Lochbiecher fer die Said aagucke',
@@ -372,6 +374,7 @@ Saire uff [[Special:Watchlist|Dainer Beowachdungslischt]] sin '''fett'''.",
 'filehist-comment'          => 'Kommentar',
 'imagelinks'                => 'Dateilinks',
 'linkstoimage'              => 'Die {{PLURAL:$1|Said verwaist|$1 Saire verwaise}} uff die Datei:',
+'sharedupload'              => 'Die Datei isch vun $1 un s kann sai, dass se ach vun annere Projekt gebraucht werd.', # $1 is the repo name, $2 is shareduploadwiki(-desc)
 'shareduploadwiki-desc'     => 'Do unne hot s d Bschraiwung vun $1.',
 'shareduploadwiki-linktext' => 'Datei-Bschraiwungssaid',
 'uploadnewversion-linktext' => 'E naiere Version vun derre Datei hochlare',
@@ -687,6 +690,7 @@ Annere Metadate sinn standardmäßig versteckelt.
 * datetimeoriginal
 * exposuretime
 * fnumber
+* isospeedratings
 * focallength', # Do not translate list items
 
 # External editor support
