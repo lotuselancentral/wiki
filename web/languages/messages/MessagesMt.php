@@ -257,45 +257,51 @@ $magicWords = array(
 $messages = array(
 # User preference toggles
 'tog-underline'               => 'Ħoloq sottolinjati:',
-'tog-highlightbroken'         => 'Sawwar links imkissra <a href="" class="new"> hekk </a> (alternattiva: hekk<a href="" class="internal">?</a>).',
+'tog-highlightbroken'         => 'Uri ħoloq miksura <a href="" class="new">hekk</a> (alternattiva: hekk<a href="" class="internal">?</a>)',
 'tog-justify'                 => 'Iġġustifika l-paragrafi',
-'tog-hideminor'               => "Aħbi modifiki żgħar f'modifiki riċenti",
-'tog-extendwatchlist'         => "Espandi l-lista ta' osservazzjoni biex turi l-tibdil kollu, u mhux biss dak riċenti",
-'tog-usenewrc'                => 'Uża tibdil riċenti avvanzat (JavaScript)',
-'tog-numberheadings'          => 'Innumera awtomatikament it-titli tas-sezzjonijiet',
-'tog-showtoolbar'             => 'Uri l-kolonna tal-għodda għall-modifikar (JavaScript)',
-'tog-editondblclick'          => "Editja l-paġni ma' żewġ għafsiet (JavaScript)",
+'tog-hideminor'               => 'Aħbi l-modifiki minuri fit-tibdil riċenti',
+'tog-hidepatrolled'           => 'Aħbi l-modifiki verifikati fit-tibdil riċenti',
+'tog-newpageshidepatrolled'   => 'Aħbi l-paġni verifikati mil-lista tal-paġni l-ġodda',
+'tog-extendwatchlist'         => "Espandi l-lista ta' osservazzjoni biex turi t-tibdil kollu, u mhux biss dak riċenti",
+'tog-usenewrc'                => 'Uża t-tibdil riċenti avvanzat (bżonn tal-JavaScript)',
+'tog-numberheadings'          => 'Numerazzjoni awtomatika tat-titli tas-sezzjonijiet',
+'tog-showtoolbar'             => 'Uri l-kolonna tal-għodda għall-immodifikar (bżonn tal-JavaScript)',
+'tog-editondblclick'          => "Immodifika l-paġni permezz ta' klikk doppju (bżonn tal-JavaScript)",
 'tog-editsection'             => 'L-immodifikar tas-sezzjonijiet permezz tal-ħolqa [editja]',
-'tog-editsectiononrightclick' => "Ġiegħel modifiki ta' sezzjonijiet b'għafsa lemina fuq it-titli ta' sezzjonijiet (JavaScript)",
-'tog-showtoc'                 => "Uri t-tabella tal-kontenut (għal paġni b'aktar minn tliet titli)",
-'tog-rememberpassword'        => 'Ftakar il-password (tirrikjedi li taċċetta cookie)',
-'tog-editwidth'               => 'Kabbar il-kaxxa tal-modifika għad-daqs massimu',
-'tog-watchcreations'          => "Żid il-paġni li noħloq mal-lista ta' osservazzjoni tiegħi",
-'tog-watchdefault'            => "Żid il-paġni li nimmodifika fil-lista ta' osservazzjonijiet speċjali",
-'tog-watchmoves'              => "Żid il-paġni li nmexxi mal-lista ta' osservazzjoni tiegħi",
-'tog-watchdeletion'           => "Żid il-paġni li nħassar mal-lista ta' osservazzjonijiet speċjali",
-'tog-minordefault'            => "Immarka b'mod awtomatiku kull modifika bħala modifika 'żgħira'",
-'tog-previewontop'            => 'Uri l-previżjoni qabel il-kaxxa tal-modifika',
-'tog-previewonfirst'          => 'Uri l-previżjoni qabel l-ewwel modifika',
-'tog-nocache'                 => "Itfi' il-''cache'' tal-paġni",
-'tog-enotifwatchlistpages'    => "Ibgħatli posta elettronika kull meta l-lista ta' osservazzjonijiet speċjali tiġi modifikata",
-'tog-enotifusertalkpages'     => "Ibgħatli posta elettronika kull meta l-paġna ta' diskussjoni tiegħi tiġi modifikata",
-'tog-enotifminoredits'        => 'Ibgħatli posta elettronika wkoll għal modifiki żgħar tal-paġni',
-'tog-enotifrevealaddr'        => 'Ikxef l-indirizz tal-posta elettronika tiegħi fil-posti elettroniki dwar tgħarif',
-'tog-shownumberswatching'     => "Uri n-numru ta' utenti li għandhom din il-paġna taħt osservazzjoni",
-'tog-fancysig'                => 'Itratta l-firem bħala test tal-wiki (mingħajr ħolqa awtomatika)',
-'tog-externaleditor'          => "Uża bid-''default'' modifikatur ta' testi esternali (għal esperti biss, għandha bżonn preferenzi speċjali fuq il-komputer tiegħek)",
-'tog-externaldiff'            => "Uża bid-''default'' diff estern (għal esperti biss, għandhek bżonn preferenzi speċjali fuq il-komputer tiegħek)",
-'tog-showjumplinks'           => 'Ħalli "aqbeż għal" linkjar aċċessibbli',
-'tog-uselivepreview'          => 'Uża previżjoni lajv (JavaScript) (Esperimentali)',
+'tog-editsectiononrightclick' => "L-immodifikar ta' sezzjonijiet bi klikk lemini fuq it-titli tas-sezzjonijiet (bżonn tal-JavaScript)",
+'tog-showtoc'                 => "Uri l-werrej (għal paġni b'iktar minn 3 sezzjonijiet)",
+'tog-rememberpassword'        => 'Ftakar il-password fuq dan il-kompjuter',
+'tog-editwidth'               => 'Kabbar il-kaxxa tal-immodifikar għad-daqs massimu',
+'tog-watchcreations'          => "Żid il-paġni li noħloq fil-lista ta' osservazzjoni tiegħi",
+'tog-watchdefault'            => "Żid il-paġni li nimmodifika fil-lista ta' osservazzjoni personali",
+'tog-watchmoves'              => "Żid il-paġni li mmexxi fil-lista ta' osservazzjoni tiegħi",
+'tog-watchdeletion'           => "Żid il-paġni li nħassar mal-lista ta' osservazzjoni tiegħi",
+'tog-minordefault'            => 'Immarka awtomatikament kull modifika bħala waħda minuri',
+'tog-previewontop'            => 'Uri dehra proviżorja tal-paġna fuq il-kaxxa tal-immodifikar',
+'tog-previewonfirst'          => 'Uri dehra proviżorja mal-ewwel modifika',
+'tog-nocache'                 => 'Itfi l-cache għall-paġni',
+'tog-enotifwatchlistpages'    => "Ibgħatli ittra-e kull meta sseħħ modifika fuq paġna li tinsab fil-lista ta' osservazzjoni tiegħi",
+'tog-enotifusertalkpages'     => "Ibgħatli ittra-e kull meta l-paġna ta' diskussjoni tiegħi tiġi modifikata",
+'tog-enotifminoredits'        => 'Ibgħatli wkoll ittra-e għall-modifiki minuri fuq paġni',
+'tog-enotifrevealaddr'        => "Ikxef l-indirizz tal-posta elettronika tiegħi fil-messaġġi ta' avviż",
+'tog-shownumberswatching'     => "Uri n-numru ta' utenti li qegħdin isegwu din il-paġna",
+'tog-fancysig'                => 'Interpreta l-firma bħala test tal-wiki (mingħajr ħolqa awtomatika)',
+'tog-externaleditor'          => 'Uża awtomatikament modifikatur estern għat-testi (għal esperti biss, għandha bżonn preferenzi speċjali fuq il-komputer tiegħek)',
+'tog-externaldiff'            => 'Uża awtomatikament diff estern (għal esperti biss, għandhek bżonn preferenzi speċjali fuq il-komputer tiegħek)',
+'tog-showjumplinks'           => 'Attiva l-ħoloq aċċessibbli "aqbeż għal"',
+'tog-uselivepreview'          => "Attiva l-funzjoni ''Live preview'' (bżonn tal-JavaScript; sperimentali)",
 'tog-forceeditsummary'        => 'Nebbaħni meta ndaħħal taqsira tal-modifika vojta',
-'tog-watchlisthideown'        => "Aħbi l-modifiki tiegħi mil-lista t'osservazzjoni",
-'tog-watchlisthidebots'       => "Aħbi modifiki tal-bots mil-lista t'osservazzjoni tiegħi",
+'tog-watchlisthideown'        => "Aħbi l-modifiki tiegħi mil-lista ta' osservazzjoni",
+'tog-watchlisthidebots'       => "Aħbi l-modifiki tal-bots mil-lista ta' osservazzjoni",
 'tog-watchlisthideminor'      => "Aħbi modifiki żgħar mil-lista t'osservazzjoni",
+'tog-watchlisthideliu'        => "Aħbi modifiki minn utenti illogjati mil-lista ta' osservazzjoni tiegħi",
+'tog-watchlisthideanons'      => "Aħbi modifiki minn utenti anonimi mil-lista ta' osservazzjoni",
+'tog-watchlisthidepatrolled'  => "Aħbi l-modifiki verifikati mil-lista ta' osservazzjoni",
 'tog-nolangconversion'        => 'Disattiva konversazzjonijiet fost varjanti lingwistiċi',
-'tog-ccmeonemails'            => "Ibgħatli kopji tal-posti elettroniċi li nibgħat 'l utenti l-oħrajn",
+'tog-ccmeonemails'            => "Ibgħatli kopji tal-ittri-e li nibgħat 'l utenti oħrajn",
 'tog-diffonly'                => 'Turiex kontenut tal-paġni wara li tkun għamilt paragun bejn il-verżjonijiet',
 'tog-showhiddencats'          => 'Uri kategoriji moħbija',
+'tog-norollbackdiff'          => "Turix il-paragun bejn il-verżjonijiet wara li tkun effettwajt ir-''rollback''",
 
 'underline-always'  => 'Dejjem',
 'underline-never'   => 'Qatt',
@@ -355,13 +361,13 @@ $messages = array(
 
 # Categories related messages
 'pagecategories'                 => '{{PLURAL:$1|Kategorija|Kategoriji}}',
-'category_header'                => 'Paġni f\'din il-kategorija "$1"',
+'category_header'                => 'Paġni fil-kategorija "$1"',
 'subcategories'                  => 'Sottokategoriji',
-'category-media-header'          => 'Medja fil-kategorija "$1"',
-'category-empty'                 => "''Din il-kategorija bħalissa m'għandiex paġni jew medja.''",
-'hidden-categories'              => '{{PLURAL:$1|Kategorija moħbija|Kategoriji moħbijin}}',
+'category-media-header'          => 'Fajls fil-kategorija "$1"',
+'category-empty'                 => "''Bħalissa, din il-kategorija m'għandiex paġni jew fajls multimedjali.''",
+'hidden-categories'              => '{{PLURAL:$1|Kategorija moħbija|Kategoriji moħbija}}',
 'hidden-category-category'       => 'Kategoriji moħbija', # Name of the category where hidden categories will be listed
-'category-subcat-count'          => "{{PLURAL:$2|Din il-kategorija għanda biss din is-subkategorija.|Din il-kategorija għanda biss din {{PLURAL:$1|subkategorija|$1 subkategoriji}}, minn total ta' $2.}}",
+'category-subcat-count'          => "{{PLURAL:$2|Din il-kategorija għandha biss din is-sottokategorija segwenti.|Din il-kategorija għandha {{PLURAL:$1|s-sottokategorija indikata|$1 sottokategoriji}}, minn total ta' $2.}}",
 'category-subcat-count-limited'  => 'Din il-kategorija għandha {{PLURAL:$1|sottokategorija|$1 sottokategoriji}}.',
 'category-article-count'         => "{{PLURAL:$2|Din il-kategorija għandha biss din il-paġna, kif indikat.| Din il-kategorija għandha {{PLURAL:$1|l-paġna indikata|l-$1 paġni indikati}}, minn total ta' $2.}}",
 'category-article-count-limited' => 'Din il-kategorija għanda {{PLURAL:$1|l-paġna indikata|l-$1 paġni indikati}}.',
@@ -370,13 +376,13 @@ $messages = array(
 'listingcontinuesabbrev'         => 'kompli',
 
 'linkprefix'        => '/^(.*?)([a-żA-Ż\\x80-\\xff]+)$/sD',
-'mainpagetext'      => "<big>'''MedjaWiki ġiet installat b'suċċess.'''</big>",
-'mainpagedocfooter' => "Konsulta ma' [http://meta.wikimedia.org/wiki/Help:Contents User's Guide] għal informazzjoni dwar kif tuża software tal-wiki.
+'mainpagetext'      => "'''MediaWiki ġie installat b'suċċess.'''",
+'mainpagedocfooter' => "Ikkonsulta l-[http://meta.wikimedia.org/wiki/Help:Contents Gwida għall-utenti] sabiex tikseb iktar informazzjoni dwar kif tuża' s-softwer tal-wiki.
 
 == Biex tibda ==
-* [http://www.mediawiki.org/wiki/Manual:Configuration_settings Lista ta' preferenzi għal konfigurazzjoni]
-* [http://www.mediawiki.org/wiki/Manual:FAQ FAQ ta'MedjaWiki]
-* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki oħroġ lista ta' posta]",
+* [http://www.mediawiki.org/wiki/Manual:Configuration_settings Lista ta' preferenzi għall-konfigurazzjoni]
+* [http://www.mediawiki.org/wiki/Manual:FAQ Mistoqsijiet rikorrenti fuq il-MediaWiki]
+* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce Il-lista tal-posta tħabbar 'l MediaWiki]",
 
 'about'          => 'Dwar',
 'article'        => 'artiklu',
@@ -422,7 +428,7 @@ $messages = array(
 'deletethispage'    => 'Ħassar din il-paġna',
 'undelete_short'    => 'Irkupra {{PLURAL:$1|modifika waħda|$1 modifiki}}',
 'protect'           => 'Ipproteġi',
-'protect_change'    => 'Biddel',
+'protect_change'    => 'biddel',
 'protectthispage'   => 'Ipproteġi din il-paġna',
 'unprotect'         => 'Tibqax tipproteġi',
 'unprotectthispage' => 'Tibqax tipproteġi din il-paġna',
@@ -440,14 +446,14 @@ $messages = array(
 'projectpage'       => 'Ara l-paġna tal-proġett',
 'imagepage'         => 'Ara l-paġna tal-fajl',
 'mediawikipage'     => 'Ara l-paġna tal-messaġġ',
-'templatepage'      => 'Ara l-paġna tat-template',
+'templatepage'      => 'Ara l-mudell',
 'viewhelppage'      => 'Ara l-paġna tal-għajnuna',
-'categorypage'      => 'Ara l-paġna tal-kategorija',
-'viewtalkpage'      => 'Ara d-diskussjonijiet',
+'categorypage'      => 'Ara l-kategorija',
+'viewtalkpage'      => 'Ara d-diskussjoni',
 'otherlanguages'    => "F'lingwi oħrajn",
-'redirectedfrom'    => '(Rindirizzat minn $1)',
-'redirectpagesub'   => 'Paġna li tidderieġi',
-'lastmodifiedat'    => 'Din il-paġna kienet modifikata l-aħħar: $2, $1 .', # $1 date, $2 time
+'redirectedfrom'    => '(Riindirizzat minn $1)',
+'redirectpagesub'   => "Paġna ta' riindirizzament",
+'lastmodifiedat'    => 'L-aħħar modifika fuq il-paġna: $2, $1.', # $1 date, $2 time
 'viewcount'         => 'Din il-paġna ġiet aċċessata {{PLURAL:$1|darba|$1 darba}}.',
 'protectedpage'     => 'Paġna protetta',
 'jumpto'            => 'Aqbeż għal:',
@@ -464,7 +470,7 @@ $messages = array(
 'currentevents-url'    => 'Project:Ġrajjiet kurrenti',
 'disclaimers'          => 'Ċaħdiet',
 'disclaimerpage'       => 'Project:Ċaħda ġenerali',
-'edithelp'             => 'Għajnuna bil-modifika',
+'edithelp'             => 'Gwida',
 'edithelppage'         => 'Help:Kif Timmodifika',
 'faq'                  => 'Mistoqsijiet komuni',
 'faqpage'              => 'Project:FAQ',
@@ -491,10 +497,10 @@ $messages = array(
 'newmessagesdifflink'     => 'l-aħħar bidla',
 'youhavenewmessagesmulti' => 'Għandek messaġġi ġodda fuq $1',
 'editsection'             => 'editja',
-'editold'                 => 'modifika',
+'editold'                 => 'editja',
 'viewsourceold'           => 'ara s-sors',
 'editlink'                => 'editja',
-'viewsourcelink'          => 'ara l-fonti',
+'viewsourcelink'          => 'ara s-sors',
 'editsectionhint'         => 'Immodifika s-sezzjoni: $1',
 'toc'                     => 'Kontenut',
 'showtoc'                 => 'uri',
@@ -525,28 +531,28 @@ $messages = array(
 
 # Main script and global functions
 'nosuchaction'      => 'Ma teżistix din l-azzjoni',
-'nosuchactiontext'  => "L-azzjoni speċifikata mill-URL mhijiex valida.<br />
-Jista' jkun li tkun ktibt ħażin il-URL, jew ġejt imwassal għal ħolqa ħażina.<br />
-Dan jista' jindika wkoll bug fis-software użat fil-{{SITENAME}}.",
+'nosuchactiontext'  => "L-azzjoni speċifikata mill-URL mhijiex valida.
+Jista' jkun li tkun ktibt ħażin il-URL, jew ġejt imwassal għal ħolqa ħażina.
+Dan jista' jindika wkoll bug fis-softwer użat fil-{{SITENAME}}.",
 'nosuchspecialpage' => 'L-Ebda paġna speċjali',
-'nospecialpagetext' => "<big>'''Inti għamilt rikjesta għal paġna speċjali invalida.'''</big>
+'nospecialpagetext' => "<strong>Inti għamilt rikjesta għal paġna speċjali invalida.</strong>
 
 Lista ta' paġni speċjali validi tinsab hawn [[Special:SpecialPages|{{int:specialpages}}]].",
 
 # General errors
 'error'                => 'Problema',
 'databaseerror'        => 'Problema fid-database',
-'dberrortext'          => 'Kien hemm żball fis-sintassi ta\' rikjesta tad-database.
-Din tista\' turi li hemm problema fis-software 
-L-aħħar attentat tar-rikjesta tad-database kienet:
+'dberrortext'          => 'Kien hemm żball fis-sintassi ta\' rikjesta tad-databażi.
+Dan jista\' jindika li hemm problema fis-softwer.
+L-aħħar attentat ta\' rikjesta tad-databażi kienet:
 <blockquote><tt>$1</tt></blockquote>
-mill-funżjoni ta\' "<tt>$2</tt>".
-MySQL ta problema ta\' "<tt>$3: $4</tt>".',
-'dberrortextcl'        => 'Kien hemm żball fis-sintassi ta\' rikjesta tad-database. 
-L-Aħħar attentat tar-rikjesta tad-database kienet:
+mill-funzjoni ta\' "<tt>$2</tt>".
+Id-databażi tat problema ta\' "<tt>$3: $4</tt>".',
+'dberrortextcl'        => 'Kien hemm żball fis-sintassi ta\' rikjesta tad-databażi. 
+L-aħħar attentat ta\' rikjesta tad-databażi kienet:
 "$1"
-mill-funżjoni "$2".
-MySQL ta problema ta\'  "$3: $4"',
+mill-funzjoni "$2".
+Id-databażi tat il-problema segwenti "$3: $4"',
 'noconnect'            => 'Skużana! Il-wiki bħalissa għandha xi problemi tekniċi, u ma tistax tagħmel kuntatt mad-database tas-server.<br />
 $1',
 'nodb'                 => 'Ma tistax tagħżel id-database $1',
@@ -557,43 +563,43 @@ $1',
 'readonlytext'         => 'Id-Database bħalissa magħluq għal daħla ġdid u modifiki oħrajn, probabilment għal manteniment tar-rutina tad-database, wara terġa tiġi għan-normali.
 
 L-amministratur li għalqu offra din l-ispjegazzjoni: $1',
-'missing-article'      => 'Id-database ma sabitx it-test tal-paġna li suppost sab, taħt l-isem ta\' "$1" $2.
+'missing-article'      => 'Id-databażi ma sabitx it-test tal-paġna li suppost sab, taħt l-isem ta\' "$1" $2.
 
 Is-soltu dan jiġri meta l-paġna terġa\' tiġi msejjħa, billi tibda mill-kronoloġija jew mill-konfront bejn ir-reviżjonijiet, link għal paġna mħassra, ma\' konfront bejn reviżjonijiet ineżistenti jew konfront bejn reviżjonijiet imnaddfa mill-kronoloġija.
 
-Jekk din mhix ir-raġuni, inti wisq probabli sibt problema fis-software. Jekk jogħġbok irraporta dan lil [[Special:ListUsers/sysop|amministratur]], u agħmel nota tal-URL.',
+Jekk din mhix ir-raġuni, wisq probabli sibt problema fis-software. Jekk jogħġbok irraporta dan lil [[Special:ListUsers/sysop|amministratur]], u agħmel nota tal-URL.',
 'missingarticle-rev'   => '(reviżjoni#: $1)',
 'missingarticle-diff'  => '(Diff: $1, $2)',
 'readonly_lag'         => "Id-databażi ġiet awtomatikament magħluqa sakemm id-databażi inferjuri tas-server jilħqu ma' dak superjuri",
 'internalerror'        => 'Problema interna',
 'internalerror_info'   => 'Problema interna: $1',
 'filecopyerror'        => 'Ma setax jiġi kkuppjat il-fajl "$1" f\' "$2".',
-'filerenameerror'      => 'Il-Fajls "$1" to "$2" ma setgħux jiġu msemmija mill-ġdid.',
-'filedeleteerror'      => 'Il-Fajl "$1" ma setgħax jiġi mħassar.',
-'directorycreateerror' => 'Id-Direttorju "$1" ma setgħax jiġi maħluq.',
+'filerenameerror'      => 'Il-fajl "$1" ma setax jiġi msemmi mill-ġdid għal "$2".',
+'filedeleteerror'      => 'Il-fajl "$1" ma setax jiġi mħassar.',
+'directorycreateerror' => 'Id-direttorju "$1" ma setax jiġi maħluq.',
 'filenotfound'         => 'Il-fajl "$1" ma nstabx.',
-'fileexistserror'      => 'Il-Fajl "$1" ma setgħax jiġi miktub: fajl ġa ġie maħluq',
+'fileexistserror'      => 'Il-fajl "$1" ma setax jiġi miktub: fajl diġà jeżisti',
 'unexpected'           => 'Valur mhux mistenni: "$1"="$2".',
 'formerror'            => 'Problema: il-formula ma setgħatx tiġi proċessata',
 'badarticleerror'      => 'Din l-azzjoni ma setgħetx isseħħ fuq din il-paġna.',
 'cannotdelete'         => "Il-fajl jew il-paġna speċifikati ma setgħux jiġu mħassra.
 Jista' jkun li diġà tħassru minn xi ħaddieħor.",
 'badtitle'             => 'Titlu ħażin',
-'badtitletext'         => "It-Titlu tal-paġna rikjesta huwa invalidu, vojt, jew linjat ma' inter-lingwi jew titlu ta' inter-wiki żballjat.",
+'badtitletext'         => "It-titlu tal-paġna rikjesta huwa invalidu, vojt, jew ġej minn żball fil-ħolqa bejn siti wiki differenti jew verżjonijiet ta' lingwi differenti tal-istess sit. Jista' wkoll ikollu wieħed jew aktar karattri li ma jistgħux jintużaw għat-titli.",
 'perfcached'           => "L-informazzjoni li jmiss huwa kopja ''cache'' u jista' ma jkunx aġġornat.",
 'perfcachedts'         => "Id-dati segwenti huma estratt ta' kopja cache tad-database. L-aħħar aġġornament: $1.",
 'querypage-no-updates' => 'Aġġornamenti għal din il-paġna huma temporalment sospesi. L-Informazzjoni hawnhekk preżentament mhux qiegħed jiġi aġġornat.',
 'wrong_wfQuery_params' => 'Parametri skoretti għal wfQuery()<br />
 Funżjoni: $1<br />
 Rikjesta: $2',
-'viewsource'           => 'Ara l-fonti',
+'viewsource'           => 'Ara s-sors',
 'viewsourcefor'        => 'għal $1',
 'actionthrottled'      => 'Azzjoni miżmuma',
 'actionthrottledtext'  => "Bħala miżura għal kontra l-ispam, inti limitat li tagħmel din l-azzjoni għal ħafna drabi f'spazju ta' ħin żgħir, u inti qbiżt dan il-limitu.
 Jekk jogħġbok erġa' prova fi ftit minuti oħra.",
 'protectedpagetext'    => "Din il-paġna ġiet protetta sabiex twaqqaf kull tip ta' modifika.",
 'viewsourcetext'       => "Tista' tara u tikkopja s-sors ta' din il-paġna:",
-'protectedinterface'   => "Din il-paġna għanda element li tagħmel parti ''mill-interface'' ta' software, u għaldaqstant ġiet protetta sabiex ma jkunx hemm abbuż.",
+'protectedinterface'   => 'Din il-paġna għanda element li tagħmel parti mill-interfaċċa tal-utent tas-software, u għaldaqstant ġiet protetta sabiex ma jkunx hemm abbuż.',
 'editinginterface'     => "'''Avviż:''' Qiegħed tagħmel modifiki lejn paġna li qegħdha tintuża biex tipprovdi interfaċċa għall-messaġġi tas-software. Kull modifika f'din il-paġna se taffetwa l-apparenza tal-faċċata tal-utenti kollha. Għat-traduzzjonijiet, ikkunsidra l-possibilità li tuża'  [http://translatewiki.net/wiki/Main_Page?setlang=mt translatewiki.net], il-proġett MediaWiki għal-lokalizzazzjoni.",
 'sqlhidden'            => '(SQL rikjesta moħbija)',
 'cascadeprotected'     => 'Din il-paġna ġiet protetta mill-modifiki, minħabba li tinkludi {{PLURAL:$1|paġni, li huwa|paġni, li huma}} protetti bil-preferenza tal-"kaskata" mixewla:
@@ -611,16 +617,15 @@ Ir-raġuni li ġiet mogħtija kienet ''$2''.",
 
 # Login and logout pages
 'logouttitle'                => 'Oħroġ utent',
-'logouttext'                 => "'''Int issa illogjajt barra.'''
+'logouttext'                 => "'''Bħalissa tinsab barra mill-kont tiegħek.'''
 
-Tista' tkompli tuża' {{SITENAME}} bħala utent anonimu, jew tista' terġa tidħol bħala l-istess utent jew wieħed differenti.
-
-Ċerta paġni jistgħu jkomplu jiġu reveduti bħallikieku l-logout ma sarx, sakemm tħassar il-cache tal-browser.",
+Tista' tkompli tuża' {{SITENAME}} bħala utent anonimu, jew tista' terġa [[Special:UserLogin|tidħol]] bħala l-istess utent jew wieħed differenti.
+Kun af li ċerti paġni jistgħu jkomplu jidhru bħallikieku l-illogjar 'l barra mill-kont qatt ma seħħ, sakemm ma tħassarx il-cache tal-browser.",
 'welcomecreation'            => "== Merħba, $1! ==
 Il-kont tiegħek ġie maħluq.<br />
 Tinsiex tippersonalizza l-[[Special:Preferences|preferenzi]] ta' {{SITENAME}}.",
 'loginpagetitle'             => 'Idħol utent',
-'yourname'                   => 'Isem l-utent:',
+'yourname'                   => 'Isem tal-utent:',
 'yourpassword'               => 'Password:',
 'yourpasswordagain'          => "Erġa' ikteb il-password:",
 'remembermypassword'         => 'Ftakar il-login tiegħi fuq dan il-kompjuter',
@@ -631,21 +636,20 @@ Tinsiex tippersonalizza l-[[Special:Preferences|preferenzi]] ta' {{SITENAME}}.",
 'loginprompt'                => "Irid ikollok il-cookies mixgħula biex tkun tista' tidħol fuq {{SITENAME}}.",
 'userlogin'                  => 'Idħol jew oħloq kont ġdid',
 'logout'                     => 'Oħroġ',
-'userlogout'                 => 'Oħroġ',
+'userlogout'                 => 'oħroġ',
 'notloggedin'                => 'Għadek ma dħaltx ġewwa',
-'nologin'                    => "Għad m'għandekx kont? $1.",
+'nologin'                    => "Għad m'għandekx kont? '''$1'''.",
 'nologinlink'                => 'Oħloq kont',
 'createaccount'              => 'Oħloq kont',
-'gotaccount'                 => 'Diġa għandhek kont? $1.',
+'gotaccount'                 => "Diġa għandhek kont? '''$1'''.",
 'gotaccountlink'             => 'Idħol',
 'createaccountmail'          => 'bil-posta elettronika',
 'badretype'                  => 'Il-passwords li daħħalt ma jaqblux.',
-'userexists'                 => 'Isem l-utent li daħħalt huwa diġà meħud.
-Jekk jogħġbok, agħżel isem differenti.',
+'userexists'                 => 'L-isem tal-utent li daħħalt huwa diġà meħud. Jekk jogħġbok, agħżel isem differenti.',
 'youremail'                  => 'E-mail:',
-'username'                   => 'Isem l-utent:',
+'username'                   => 'Isem tal-utent:',
 'uid'                        => 'L-ID tal-utent:',
-'prefs-memberingroups'       => "Membru ta' {{PLURAL:$1|grupp|gruppijiet}}:",
+'prefs-memberingroups'       => 'Membru tal-{{PLURAL:$1|grupp|gruppi}}:',
 'yourrealname'               => 'Isem proprju:',
 'yourlanguage'               => 'Lingwa:',
 'yourvariant'                => 'Varjant:',
@@ -654,8 +658,8 @@ Jekk jogħġbok, agħżel isem differenti.',
 'badsiglength'               => 'Il-firma hija twila wisq. Trid tkun inqas minn $1 {{PLURAL:$1|karattru|karattru}}.',
 'yourgender'                 => 'Sess:',
 'gender-unknown'             => 'Mhux speċifikat',
-'gender-male'                => 'Maskili',
-'gender-female'              => 'Femminili',
+'gender-male'                => 'Maskil',
+'gender-female'              => 'Femminil',
 'prefs-help-gender'          => 'Opzjonali: użat biex jagħmel l-indikazzjoni tas-sess mis-softwer. Din l-informazzjoni tkun pubblika.',
 'email'                      => 'Posta elettronika',
 'prefs-help-realname'        => 'L-isem propju mhuwiex obbligatorju; jekk tagħżel li tipprovdih, dan jintuża biss biex jagħtik attribuzzjoni għax-xogħol tiegħek.',
@@ -666,13 +670,13 @@ Jekk jogħġbok, agħżel isem differenti.',
 'nocookieslogin'             => "L-aċċess għal {{SITENAME}} jagħmel użu minn ''cookies'', li bħalissa huma disattivati. Jekk jogħġbok erġa' prova idħol wara li tkun attivajt il-''cookies'' fil-browser.",
 'noname'                     => "Inti ma speċifikajtx isem ta' utent validu.",
 'loginsuccesstitle'          => "Dħalt b'suċċess",
-'loginsuccess'               => "'''Irnexxielek taqbad mas-server ta' {{SITENAME}} b'isem l-utent \"\$1\".'''",
+'loginsuccess'               => "'''Irnexxielek taqbad mas-server ta' {{SITENAME}} bl-isem tal-utent \"\$1\".'''",
 'nosuchuser'                 => 'M\'hemm l-ebda utent bl-isem ta\' "$1".<br />
 L-ismijiet tal-utenti huma sensittivi fuq kif jinkitbu.<br />
 Jekk jogħġbok kun żġur li ktibtu sew, jew minflok [[Special:UserLogin/signup|oħloq kont ġdid]].',
 'nosuchusershort'            => 'M\'hemm l-ebda utent bl-isem "<nowiki>$1</nowiki>".
 Agħmel żġur li ktibta sew.',
-'nouserspecified'            => 'Trid tispeċifika isem l-utent.',
+'nouserspecified'            => 'Trid tispeċifika isem tal-utent.',
 'wrongpassword'              => "Il-password li daħħalt mhijiex tajba. 
 Jekk jogħġbok, erġa' pprova.",
 'wrongpasswordempty'         => "Ma ddaħlet l-ebda password. 
@@ -681,26 +685,27 @@ Jekk jogħġbok, erġa' pprova.",
 Trid tkun mill-inqas {{PLURAL:$1|1 karratru|$1 karattri}} twila u differenti mill-isem tal-utent.',
 'mailmypassword'             => 'Ibgħatli password ġdida',
 'passwordremindertitle'      => 'Password temporanju ġdid għal {{SITENAME}}',
-'passwordremindertext'       => 'Xi ħadd (probabilment int, mill-indirizz tal-IP $1) għamel rikjesta sabiex aħna nibgħatulek il-password il-ġdida għall-{{SITENAME}} ($4).
-Il-password għall-utent "$2" hija issa "$3".<br />
-Huwa opportun li tidħol issa tbiddel il-password tiegħek mal-ewwel. Din il-password il-ġdida se tiskadi fi żmien {{PLURAL:$5|ġurnata|$5 ġranet}}.
+'passwordremindertext'       => 'Xi ħadd (probabbilment int, mill-indirizz tal-IP $1) għamel rikjesta għal password ġdida għal {{SITENAME}} ($4).<br />
+Inħolqot password temporanja għall-utent "$2" u din hi "$3".
+Huwa opportun li inti tidħol issa u tbiddel immedjatament il-password tiegħek.<br />
+Din il-password il-ġdida se tiskadi fi żmien {{PLURAL:$5|ġurnata|$5 ijiem}}.
 
 Jekk xi ħadd ieħor għamel din ir-rikjesta jew jekk int ftakart il-password tiegħek u issa ma tridx tbiddilha, int tista\' ma tagħtix każ dan il-messaġġ u tkompli bl-użu tal-password l-antika.',
 'noemail'                    => 'M\'hemm l-ebda indirizz ta\' posta elettronika għall-utent "$1".',
 'passwordsent'               => 'Il-password il-ġdida ntbagħtet fl-indirizz tal-posta elettronika ta\' "$1".
 Jekk jogħġbok, għamel aċċess wara li tasallek.',
 'blocked-mailpassword'       => 'L-indirizz tal-IP tiegħek huwa bblokkjat u miżmum milli jwettaq modifiki. Għaldaqstant, mhuwiex possibli għalik li tuża l-funzjoni sabiex iġġib lura l-password, u dan sabiex ma jkunx hemm abbużi.',
-'eauthentsent'               => "Posta elettronika ta' konferma ġiet postjata fl-indirizz tal-posta elettronika nominata. Qabel xi posta elettronika oħra tiġi postjata lejn il-kont, inti trid isegwi dawn l-istruzzjonijiet li jinsabu fil-posta elettronika, sabiex tinkonferma li l-kont huwa tassew tiegħek.",
+'eauthentsent'               => "Intbagħat messaġġ ta' konferma b'permezz tal-posta elettronika lejn l-indirizz indikat.<br />
+Qabel xi posta elettronika oħra tiġi mibgħuta fuq il-kont, trid qabel xejn tesegwixxi l-istruzzjonijiet kif inhuma indikati, sabiex tikkonferma li l-kont huwa tassew tiegħek.",
 'throttled-mailpassword'     => "Posta elettronika sabiex tfakrek il-password ġiet postjata, fl-aħħar {{PLURAL:$1|siegħa|$1 siegħat}}.
 Sabiex jitnaqqas l-abbuż, waħda biss tista' tiġi postjata f'kull {{PLURAL:$1|siegħa|$1 siegħat}}.",
 'mailerror'                  => 'Problema bil-postar tal-messaġġ: $1',
 'acct_creation_throttle_hit' => "L-utenti ta' din il-wiki li jużaw l-indirizz IP tiegħek ħolqu {{PLURAL:$1|kont|$1 kontijiet}} fl-aħħar ġurnata, li hu n-numru massimu permess f'dan il-perjodu ta' żmien.
 Bħala riżultat, il-viżitaturi li jużaw dan l-IP ma jistgħux għall-mument, joħoloqu aktar kontijiet.",
 'emailauthenticated'         => 'L-indirizz tal-posta elettronika tiegħek ġiet konfermat nhar il-$2, fil-$3.',
-'emailnotauthenticated'      => "L-Indirizz tal-posta elettronika tiegħek ma ġiex awtentikat s'issa.
-L-ebda posta elettronika se tiġi postjata għal dawn il-faċċilitajiet segwenti.",
+'emailnotauthenticated'      => 'L-indirizz tal-posta elettronika tiegħek għadu ma ġiex konfermat. L-ebda posta elettronika mhi se tintbagħat għall-ebda minn dawn il-funzjonijiet elenkati hawn taħt.',
 'noemailprefs'               => "Speċifika indirizz ta' posta elettronika sabiex dawn il-faċċilitajiet jaħdmu.",
-'emailconfirmlink'           => 'Konferma l-indirizz tal-posta elettronika tiegħek',
+'emailconfirmlink'           => 'Ikkonferma l-indirizz tal-posta elettronika tiegħek',
 'invalidemailaddress'        => 'L-indirizz tal-posta elettronika ma jistax jiġi aċċettat għax jidher li għandu format ħażin.
 Jekk jogħġbok daħħal indirizz validu jew inkella ħassru.',
 'accountcreated'             => 'Il-kont inħoloq',
@@ -710,11 +715,14 @@ Jekk jogħġbok daħħal indirizz validu jew inkella ħassru.',
 Huwa opportun li tidħol issa u tbiddel il-password tiegħek mill-ewwel.
 
 Jekk trid tista\' ma tagħtix każ dan il-messaġġ, jekk dan il-kont ġie maħluq bi żball.',
+'login-throttled'            => "Saru ħafna tentattivi riċenti fuq il-password ta' dan il-kont.
+Jekk jogħġbok stenna qabel ma terġa' tipprova.",
 'loginlanguagelabel'         => 'Lingwa: $1',
 
 # Password reset dialog
 'resetpass'                 => 'Biddel il-password',
-'resetpass_announce'        => 'L-Aċċess bil-kodiċi temporanju ġie nseħħ, u ġie postjat bil-posta elettronika. Biex tlesti l-aċċess huwa neċessarju toħloq password ġdid hawnhekk:',
+'resetpass_announce'        => "L-aċċess ġe effetwat permezz ta' kodiċi temporanju, li ntbagħat permezz tal-posta elettronika.
+Biex tkompli l-aċċess tal-kont tiegħek huwa neċessarju li toħloq password ġdida hawnhekk:",
 'resetpass_text'            => '<!-- Żied il-kliem hawnhekk -->',
 'resetpass_header'          => 'Biddel il-password tal-kont',
 'oldpassword'               => 'Password antika:',
@@ -725,7 +733,10 @@ Jekk trid tista\' ma tagħtix każ dan il-messaġġ, jekk dan il-kont ġie maħl
 'resetpass_bad_temporary'   => "Password temporanja invalidu.
 Jista jkun li diġa b'suċċess bidilt il-password jew għamilt rikjesta għal password temporanju ġdid.",
 'resetpass_forbidden'       => 'Mhuwiex possibbli li timmodifika l-passwords',
+'resetpass-no-info'         => 'Trid tkun effetwajt il-login qabel ma taċċessa direttament din il-paġna.',
 'resetpass-submit-loggedin' => 'Biddel il-password',
+'resetpass-wrong-oldpass'   => "Password temporanja jew kurrenti invalida.
+Jista' jkun li int diġà biddilt il-password, jew għamilt rikjesta għal password temporanja ġdida.",
 'resetpass-temp-password'   => 'Password temporanja:',
 
 # Edit page toolbar
@@ -753,24 +764,24 @@ Jista jkun li diġa b'suċċess bidilt il-password jew għamilt rikjesta għal p
 # Edit pages
 'summary'                          => 'Taqsira:',
 'subject'                          => 'Suġġett/Titlu:',
-'minoredit'                        => 'Din hija modifika żgħira',
+'minoredit'                        => "Din hija modifika ta' importanza minuri",
 'watchthis'                        => 'Segwi din il-paġna',
-'savearticle'                      => 'Modifika',
-'preview'                          => 'Previżjoni',
-'showpreview'                      => 'Uri Previżjoni',
-'showlivepreview'                  => 'Previżjoni bħalissa',
+'savearticle'                      => 'Salva l-paġna',
+'preview'                          => 'Dehra proviżorja',
+'showpreview'                      => 'Dehra proviżorja',
+'showlivepreview'                  => "Funzjoni ''Live preview''",
 'showdiff'                         => 'Uri t-tibdiliet',
 'anoneditwarning'                  => "'''Twissija:''' Ma rnexxilekx tidħol. 
 L-indirizz tal-IP tiegħek se jiġi reġistrat fil-kronoloġija tal-modifikar ta' din il-paġna.",
 'missingsummary'                   => "'''Twissija:''' Ma pprovdejt l-ebda taqsira dwar il-modifika.
 Jekk terġa' tagħfas Modifika, l-modifika se tiġi salvata mingħajr waħda.",
-'missingcommenttext'               => 'Jekk jogħġbok, ħalli kumment hawn taħt.',
+'missingcommenttext'               => 'Jekk jogħġbok ħalli kumment hawn taħt.',
 'missingcommentheader'             => "'''Twissija:''' Ma pprovdejtx suġġett/titlu għal dan il-kumment.
 Jekk terġa' tagħfas Modifika, l-modifika tiegħek se tiġi salvata mingħajr waħda.",
-'summary-preview'                  => "Previżjoni ta' taqsira:",
-'subject-preview'                  => 'Previżjoni dwar suġġett/titlu:',
+'summary-preview'                  => 'Dehra proviżorja tat-taqsira:',
+'subject-preview'                  => 'Dehra proviżorja tat-taqsira/suġġett:',
 'blockedtitle'                     => 'L-utent ġie bblokkjat',
-'blockedtext'                      => "<big>'''L-isem ta' l-utent jew l-indirizz IP tiegħek ġew imblukkati.'''</big>
+'blockedtext'                      => "'''L-isem tal-utent jew l-indirizz IP tiegħek ġew imblukkat.'''
 
 Il-blokk twettaq minn \$1. Ir-raġuni mogħtiha kienet ''\$2''.
 
@@ -780,9 +791,9 @@ Il-blokk twettaq minn \$1. Ir-raġuni mogħtiha kienet ''\$2''.
 
 Tista' tikkuntattja lil \$1 jew xi [[{{MediaWiki:Grouppage-sysop}}|amministratur]] ieħor biex tiddiskuti dan il-blokk.
 
-Ma tistax tuża l-faċilità \"ibgħat email lil dan l-utent\" sakemm m'għandekx indirizz validu tal-email fil-[[Special:Preferences|preferenzi tal-kont]] tiegħek u ma ġejtx miżmum milli tużah.
+Ma tistax tuża' l-faċilità \"ikteb lil dan l-utent\" sakemm m'għandekx indirizz validu tal-email fil-[[Special:Preferences|preferenzi tal-kont]] tiegħek u ma ġejtx miżmum milli tużah.
 
-L-IP kurrenti tiegħek huwa \$3, u l-ID ta' l-imblukkar huwa #\$5.<br />Jekk jogħġbok inkludi mqar wieħed minn dawn it-tnejn f'kwalunkwe rikjesta.",
+L-IP kurrenti tiegħek huwa \$3, u l-ID tal-imblukkar huwa #\$5.<br />Jekk jogħġbok inkludi mqar wieħed minn dawn it-tnejn f'kwalunkwe rikjesta.",
 'autoblockedtext'                  => "L-indirizz IP tiegħek ġie awtomatikament imblukkat minħabba li kienet qiegħed jiġi wżat minn utent ieħor, u ġie imblukkat minn \$1.
 Ir-raġuni li ġiet mogħtiha kienet:
 
@@ -806,11 +817,11 @@ Jekk jogħġbok inkludi mqar wieħed minn dawn it-tnejn f'kwalunkwe rikjesta.",
 'confirmedittitle'                 => "Tinħtieġ il-konferma b'e-mail qabel tkun tista' teditja l-paġni",
 'confirmedittext'                  => "Jinħtieġ li tikkonferma l-indirizz tal-e-mail tiegħek sabiex tkun tista' timmodifika l-paġni.
 Jekk jogħġbok, issettja u kkonferma l-indirizz tal-e-mail tiegħek mill-[[Special:Preferences|preferenzi tal-utent]].",
-'nosuchsectiontitle'               => 'L-Ebda sezzjoni',
-'nosuchsectiontext'                => 'Provajt timodifika sezzjoni li ma teżistix.
-Minħabba li $1 ma teżistix, il-modifiki tiegħek ma ġewx salvati.',
+'nosuchsectiontitle'               => 'Is-sezzjoni ma tistax tinstab',
+'nosuchsectiontext'                => "Int ippruvjat timmodifika sezzjoni li ma teżistix.<br />
+Seta' ġara li din ġiet immexxiha jew imħassra waqt li kont qed tara l-paġna.",
 'loginreqtitle'                    => "Sabiex tagħmel modifiki f'din il-paġna huwa neċessarju li tidħol bħalha utent reġistrat fuq dan is-sit.",
-'loginreqlink'                     => 'Aċċessa',
+'loginreqlink'                     => 'li tidħol fil-kont tiegħek',
 'loginreqpagetext'                 => "Int trid ikollhok $1 sabiex tkun tista' tara paġni oħrajn.",
 'accmailtitle'                     => 'Il-password intbagħtet.',
 'accmailtext'                      => "Password ġenerata każwalment għal [[User talk:$1|$1]] intbagħtet lil $2.<br />
@@ -820,34 +831,35 @@ Il-password għal dan il-kont il-ġdid tista' titbiddel fil-paġna għat-''[[Spe
 'newarticletext'                   => "Inti segwejt link għal paġna li għadha ma ġietx maħluqa.
 Sabiex toħloq il-paġna, ikteb fil-kaxxa li tinsab hawn taħt (ara [[{{MediaWiki:Helppage}}|paġna tal-għajnuna]] għal aktar informazzjoni). 
 Jekk wasalt hawn biż-żball, agħfas il-buttuna '''lura''' (''back'') fuq il-browser tiegħek.",
-'anontalkpagetext'                 => "----''Din hija l-paġna ta' diskussjoni ta' dak l-utent anonimu li għadu ma ħoloqx kont, jew inkella li ma jużahx. 
-Għaldaqstant biex nidentifikawh ikollna nużaw l-indirizz tal-IP tiegħu.
+'anontalkpagetext'                 => "----''Din hija l-paġna ta' diskussjoni ta' utent anonimu li għadu ma ħoloqx kont, jew inkella li ma jużahx. 
+Għaldaqstant biex nidentifikawh ikollna nużaw l-indirizz tal-IP tiegħu/tagħha.
 L-istess indirizz tal-IP jista' jkun użat minn bosta utenti differenti.
-Jekk int utent anonimu u tħoss li qiegħed tirċievi kummenti irrelevanti jew li ma jagħmlux sens, jekk jogħġbok [[Special:UserLogin|oħloq kont ġdid jew idħol]] sabiex tevita li fil-futur tiġi konfuż ma' utenti anonimi oħrajn.''",
-'noarticletext'                    => "Bħalissa m'hemmx test f'din il-paġna. Inti tista' [[Special:Search/{{PAGENAME}}|tfittex it-titlu ta' din il-paġna]] f'paġni oħra, jew <span class=\"plainlinks\">[{{fullurl:Special:Log|page={{urlencode:{{FULLPAGENAME}}}}}} tfittex ir-reġistri relatati], jew [{{fullurl:{{FULLPAGENAME}}|action=edit}} timmodifika din il-paġna]</span>.",
+Jekk int utent anonimu u tħoss li qiegħed tirċievi kummenti irrelevanti jew li ma jagħmlux sens, jekk jogħġbok [[Special:UserLogin|idħol fil-kont tiegħek]] jew [[Special:UserLogin/signup|oħloq wieħed]] sabiex tevita li fil-futur tiġi konfuż ma' utenti anonimi oħra.''",
+'noarticletext'                    => "Bħalissa m'hemm l-ebda test f'din il-paġna.
+Inti tista' [[Special:Search/{{PAGENAME}}|tfittex it-titlu ta' din il-paġna]] f'paġni oħra, jew <span class=\"plainlinks\">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} tfittex ir-reġistri relatati], jew [{{fullurl:{{FULLPAGENAME}}|action=edit}} timmodifika din il-paġna]</span>.",
 'userpage-userdoesnotexist'        => 'Il-kont tal-utent "$1" mhux reġistrat. 
 Jekk jogħġbok, ara jekk verament tridx toħloq/timodifika din il-paġna.',
 'clearyourcache'                   => "'''Nota - Wara li tagħmel il-modifiki, xi drabi jkollok bżonn tħassar ''il-cache'' sabiex tkun tista' tara t-tibdil li sar.'''  '''Mozilla / Firefox / Safari:''' żomm ''Shift'' waqt li tkun qiegħed tagħfas ''Reload,'' jew agħfas ''Ctrl-F5'' jew ''Ctrl-R'' (''Command-R'' fuq \"Macintosh\"); '''Konqueror: '''agħfas ''Reload'' jew agħfas ''F5;''  '''Opera:''' ħassar il-cache fl-''Għodda → Preferenzi;'' '''Internet Explorer:''' żomm ''Ctrl'' waqt li tagħfas ''Refresh,'' jew agħfas ''Ctrl-F5.''",
-'usercssjsyoucanpreview'           => "'''Avviż:''' Uża l-buttuna 'Uri previżjoni' sabiex tittestja s-CSS/JS il-ġodda qabel ma tagħmel il-modifiki.",
-'usercsspreview'                   => "'''Din hi biss previżjoni tas-CSS personali. Il-modifiki għadhom ma ġewx salbati!'''",
-'userjspreview'                    => "'''Ftakar li int qiegħed tara biss previżjoni tal-utent tiegħek tal-JavaScript, għad trid tiġi salvata!'''",
+'usercssjsyoucanpreview'           => "'''Avviż:''' Uża l-buttuna 'Dehra proviżorja' sabiex tittestja s-CSS/JS il-ġodda qabel ma tagħmel il-modifiki.",
+'usercsspreview'                   => "'''Ftakar li inti qed turi dehra proviżorja tas-CSS personali. Il-modifiki li għamilt għadhom ma ġewx salvati!'''",
+'userjspreview'                    => "'''Ftakar li inti qiegħed biss tipprova/tara dehra proviżorja tal-JavaScript personali; il-modifiki li għamilt għad iridu jiġu salvati!'''",
 'userinvalidcssjstitle'            => "'''Twissija:''' M'hemm l-ebda skin bl-isem \"\$1\".
 Ftakar li l-paġni .css u .js personalizzati għandhom l-ewwel ittra tat-titlu żgħira, eż. {{ns:user}}:Foo/monobook.css u mhux {{ns:user}}:Foo/Monobook.css.",
 'updated'                          => '(Aġġornata)',
 'note'                             => "'''Nota:'''",
-'previewnote'                      => "'''Din hija previżjoni biss; il-modifiki li saru fil-paġna għadhom ma ġewx salvati!'''",
+'previewnote'                      => "'''Ftakar li din hija biss dehra proviżorja, u li għadha ma ġietx salvata!'''",
 'previewconflict'                  => "Din il-previżjoni turi l-kliem li jinsab fiż-żona ta' modifika superjuri u turi kif tidher kieku l-paġna kella tiġi modifikata.",
 'session_fail_preview'             => "'''Jiddispjaċina imma l-modifika tiegħek ma setgħetx tiġi pproċessata minħabba li ntilfet l-informazzjoni tas-sessjoni.
-Jekk jogħġbok, erġa' pprova. Jekk xorta tibqa' ma taħdimx, ipprova oħroġ u erġa' idħol.'''",
+Jekk jogħġbok, erġa' pprova. Jekk xorta tibqa' ma taħdimx, ipprova [[Special:UserLogout|oħroġ]] u erġa' idħol.'''",
 'session_fail_preview_html'        => "'''Jiddispjaċina imma l-modifika tiegħek ma setgħetx tiġi pproċessata minħabba li ntilfet l-informazzjoni tas-sessjoni.'''
 
-''Peress li f'{{SITENAME}} huwa possibbli l-użu ta' l-HTML mingħajr limitazzjonijiet (''raw HTML''), il-previżjoni tiġi moħbija bħala prekawzjoni kontra l-attakki tal-JavaScript.''
+''Peress li {{#ifeq: {{SITENAME}} | translatewiki.net | fuq {{SITENAME}} | fil-{{SITENAME}}}} huwa possibbli l-użu tal-HTML mingħajr limitazzjonijiet (''raw HTML''), id-dehra proviżorja tiġi moħbija bħala prekawzjoni kontra l-attakki tal-JavaScript.''
 
-'''Jekk dan huwa attentat leġittmu ta' modifika, jekk jogħġbok erġa' pprova. Jekk tibqa' ma taħdimx, ipprova oħroġ u erġa' idħol.'''",
+'''Jekk dan huwa attentat leġittmu ta' modifika, jekk jogħġbok erġa' pprova. Jekk tibqa' ma taħdimx, ipprova [[Special:UserLogout|oħroġ]] u erġa' idħol.'''",
 'token_suffix_mismatch'            => "'''Il-modifika tiegħek ma ġietx aċċettata minħabba li klijent tiegħek tertaq l-karratri tal-ortografija fit-token tal-modifika.
 Din il-modifika ma ġietx aċċettata sabiex ma jkunx hemm żballji fit-test tal-paġna. Dan xi kultant jiġri minħabba li qiegħed tuża servizz difettuż anonimu li huwa bbażat fuq il-web ta' prokura.'''",
 'editing'                          => 'Qiegħed jiġi modifikat l-artiklu $1',
-'editingsection'                   => "Modifikar ta' $1 (sezzjoni)",
+'editingsection'                   => "Modifika ta' $1 (sezzjoni)",
 'editingcomment'                   => 'Qed jiġi editjat $1 (sezzjoni ġdida)',
 'editconflict'                     => "Kunflitt t'editjar: $1",
 'explainconflict'                  => "Xi ħadd modifika din il-paġna sakemm int kont qiegħed tagħmel il-modifiki. <br />
@@ -874,9 +886,9 @@ Inti qiegħed ukoll qiegħed twiegħed li ktibt dan ix-xogħol int, jew ġibtu m
 ċerta browsers jista' jkollhom problemi biex jagħmlu modifiki lil paġni li qegħdin lejn jew aktar minn 32 kb.
 Jekk jogħġbok konsidra taqsam din il-paġna f'sezzjonijiet iż-żgħar.'''",
 'longpageerror'                    => "'''PROBLEMA: Il-Modifika li għamilt hija twila $1 ''kilobyte'', li hija aktar mill-massimu ta' $2 ''kilobyte''. Il-Modifiki ma jistgħux jiġu salvati.'''",
-'readonlywarning'                  => "'''TWISSIJA: Id-database ġiet imblukkata għall-manutenzjoni, u għaldaqstant m'huwiex possibbli ssalva l-modifiki f'dal-ħin. Biex ma titlifhomx, għalissa salva xogħlok ġo fajl u ladarba terġa' tinfetaħ id-database, ikkopja kollox. Grazzi.'''
+'readonlywarning'                  => "'''TWISSIJA: Id-databażi ġiet imblukkata għall-manutenzjoni, u għaldaqstant m'huwiex possibbli li ssalva l-modifiki tiegħek dal-ħin. Biex ma titlifhomx, għalissa salva xogħlok ġo fajl u ġaladarba terġa' tinfetaħ id-databażi, ikkopja kollox. Grazzi.'''
 
-L-amministratur li bblokkja d-database offra din ir-raġuni: $1",
+L-amministratur li mblokkaha offra din ir-raġuni: $1",
 'protectedpagewarning'             => "'''Twissija:  Din il-paġna ġiet magħluqa sabiex l-utenti li għandhom il-privileġġi ta' amministratur biss ikunu jistgħu jimmodifikawha.'''",
 'semiprotectedpagewarning'         => "'''Nota:''' Din il-paġna ġiet imblukkata sabiex l-utenti reġistrati biss ikunu jistgħu jimmodifikawha.",
 'cascadeprotectedwarning'          => "'''Twissija:''' Din il-paġna ġiet imblukkata sabiex l-utenti li għandhom il-privileġġi ta' amministratur biss ikunu jistgħu jimmodifikawha, minħabba li hija inkluża fil-{{PLURAL:\$1|paġna segwenti, li ġiet protetta|paġni segwenti li ġew protetti}}, bil-protezzjoni \"rikorsiva\" tiġi magħżula:",
@@ -900,24 +912,24 @@ Tista' tmur lura u tagħmel modifiki ta' paġni eżistenti, inkella [[Special:Us
 Aċċerta ruħek jekk mhux opportun li tkompli timodifika din il-paġna.
 Il-Link għar-reġistru ta' tħassir għal din il-paġna hija provduta għal konvenjenza:",
 'deleted-notice'                   => "Din il-paġna ġiet imħassra. Il-log tat-tħassir ta' din il-paġna huwa pprovdut hawn taħt għal referenza.",
-'edit-gone-missing'                => 'Il-paġna ma tistax tiġi aġġornata.<br />
-Din tidher li ġiet imħassra.',
+'edit-gone-missing'                => 'Il-paġna ma tistax tiġi aġġornata.
+Jidher li din ġiet imħassra.',
 'edit-conflict'                    => 'Kunflitt tal-editjar.',
 'edit-no-change'                   => 'Il-modifika li għamilt ġiet injorata, minħabba li ebda bidla ma saret lejn it-test.',
-'edit-already-exists'              => 'Ma tistax tinħoloq din il-paġna.<br />
-Attwalment diġà teżisti.',
+'edit-already-exists'              => 'Ma tistax tinħoloq din il-paġna.
+Din teżisti diġà.',
 
 # Parser/template warnings
-'expensive-parserfunction-warning'        => 'Attenzjoni: Din il-paġna għandha ħafna sejħiet għall-funzjonijiet parser.
+'expensive-parserfunction-warning'        => "'''Twissija:''' Din il-paġna għandha ħafna sejħiet għall-funzjonijiet parser.
 
-Suppost irid ikollha inqas minn $2, bħalissa hemm $1.',
+Suppost irid ikollha inqas minn $2, bħalissa hemm {{PLURAL:$1|waħda|$1}}.",
 'expensive-parserfunction-category'       => "Paġni b'ħafna sejħiet ta' funżjonijiet ta' analiżi għoljien.",
 'post-expand-template-inclusion-warning'  => "Twissija: Id-Daqs tal-kontenut ta' template hija wisq kbira.
 Ftit templates mhux se jiġu inkluża.",
 'post-expand-template-inclusion-category' => "Paġni fejn id-daqs tal-kontenut ta' template ġiet maqbuża",
 'post-expand-template-argument-warning'   => "Twissija: Din il-paġna għanda mill-inqas argument wieħed ta' template li għandu daqs ta' espanżjoni wisq kbira.
 Dawn l-argumenti tħallew barra.",
-'post-expand-template-argument-category'  => "Paġni li għandhom argumenti ta' templates li tħallew barra",
+'post-expand-template-argument-category'  => "Paġni li jinkludu mudelli b'argumenti nieqsa",
 
 # "Undo" feature
 'undo-success' => "Din il-modifika tista' tiġi mneħħija. Jekk jogħġbok verifika il-paragun t'hawn taħt u verifika li dan huwa dak li trid int, imbgħad salva l-bidliet t'hawn taħt sabiex tlesti l-proċedura ta' tneħħija.",
@@ -927,9 +939,9 @@ Dawn l-argumenti tħallew barra.",
 
 # Account creation failure
 'cantcreateaccounttitle' => 'Il-kont ma jistax jinħoloq',
-'cantcreateaccount-text' => "Ħolqien tal-kont ta' l-indirizz tal-IP ('''$1''') ġiet blokkata minn [[User:$3|$3]].
+'cantcreateaccount-text' => "Ħolqien tal-kont minn dan l-indirizz IP ('''$1''') ġie imblukkat minn [[User:$3|$3]].
 
-Ir-raġuni li ġiet mogħtija mingħand $3 kienet ''$2''",
+Ir-raġuni li ngħatat minħabba l-blokk mingħand $3 kienet ''$2''",
 
 # History pages
 'viewpagelogs'           => "Ara r-reġistri ta' din il-paġna",
@@ -943,7 +955,7 @@ Ir-raġuni li ġiet mogħtija mingħand $3 kienet ''$2''",
 'currentrevisionlink'    => 'Reviżjoni kurrenti',
 'cur'                    => 'kur',
 'next'                   => 'li jmiss',
-'last'                   => 'l-aħħar',
+'last'                   => 'preċ',
 'page_first'             => 'l-ewwel',
 'page_last'              => 'l-aħħar',
 'histlegend'             => "Selezzjoni diff: marka l-kaxxi tar-radju tal-verżjonijiet sabiex tagħmel paragun u agħfas enter jew il-buttuna fin-naħħa t'isfel.<br />
@@ -951,8 +963,8 @@ Leġġenda: (kur) = differenzi bil-verżjoni kurrenti,
 (l-aħħar) = differenzi bil-verżjoni preċedenti, M = modifiki żgħar.",
 'history-fieldset-title' => 'Fittex fil-kronoloġija',
 'deletedrev'             => '[imħassra]',
-'histfirst'              => 'L-Aktar kmieni',
-'histlast'               => 'L-Aktar tard',
+'histfirst'              => 'L-iġded',
+'histlast'               => 'L-eqdem',
 'historysize'            => '({{PLURAL:$1|1 byte|$1 bytes}})',
 'historyempty'           => '(vojta)',
 
@@ -975,14 +987,18 @@ Bħala amministratur inti tista' taraha;
 jista' jkun li hemm informazzjoni fir-[{{fullurl:Special:Log/delete|page={{FULLPAGENAMEE}}}} reġistru ta' tħassir].",
 'rev-delundel'                => 'uri/aħbi',
 'revisiondelete'              => 'Ħassar/irkupra reviżjonijiet',
-'revdelete-nooldid-title'     => 'Reviżjoni tarka invalida',
-'revdelete-nooldid-text'      => 'Inti jew ma speċifikajtx reviżjoni(jiet) tarka sabiex toħloq funżjoni, ir-reviżjoni speċifikata ma teżistix, jew inkella qiegħed tiprova taħbi r-reviżjoni kurrenti.',
+'revdelete-nooldid-title'     => 'Verżjoni mhux speċifikata',
+'revdelete-nooldid-text'      => 'Ma ġiet speċifikata l-ebda reviżjoni tal-paġna fuq liema se ssir din l-azzjoni, ir-reviżjoni speċifikata ma teżistix, jew inkella qiegħed tipprova taħbi r-reviżjoni kurrenti.',
+'revdelete-nologtype-title'   => "L-ebda tip ta' reġistru ma ġie speċifikat",
+'revdelete-nologtype-text'    => "Ma ġie speċifikat l-ebda tip ta' reġistru fuqiex l-azzjoni se ssir.",
+'revdelete-nologid-title'     => 'Daħla invalida għar-reġistru',
+'revdelete-nologid-text'      => 'Ma ġie speċifikat l-ebda avveniment tar-reġistru fuqiex il-funzjoni se ssir jew id-daħla speċifikata ma teżistix.',
 'revdelete-selected'          => "'''{{PLURAL:$2|Reviżjoni magħżula|Reviżjonijiet magħżula}} ta' [[:$1]]:'''",
 'logdelete-selected'          => "'''{{PLURAL:$1|Avveniment tar-reġistru magħżul|Avvenimenti tar-reġistri magħżula}}:'''",
 'revdelete-text'              => "'''Reviżjonijiet imħassra u avvenimenti xorta jidhru fil-kronoloġija tal-paġna, filwaqt partijiet tal-kontenut jiġu inaċċessibli għal pubbliku.'''
 
 L-Amminstraturi l-oħrajn fuq {{SITENAME}} xorta jkunu jistgħu jitħlu fuq il-kontenut moħbi u jistgħu jiġu irkuprati mill-istess ''interface'', sakemm m'hemmx aktar limiti fil-fażi ta' installazjoni ta' dan is-sit.",
-'revdelete-legend'            => "Oħloq limiti ta' viżibilitá",
+'revdelete-legend'            => "Oħloq limiti ta' viżibilità",
 'revdelete-hide-text'         => 'Aħbi l-kontenut tar-reviżjoni',
 'revdelete-hide-name'         => 'Aħbi l-azzjoni u it-tarka',
 'revdelete-hide-comment'      => 'Aħbi kumment tal-modifika',
@@ -991,18 +1007,18 @@ L-Amminstraturi l-oħrajn fuq {{SITENAME}} xorta jkunu jistgħu jitħlu fuq il-k
 'revdelete-suppress'          => 'Aħbi l-informazzjoni minn Amministraturi wkoll bħall-oħrajn',
 'revdelete-hide-image'        => 'Aħbi l-kontenut tal-fajl',
 'revdelete-unsuppress'        => 'Neħħi limiti fuq reviżjonijiet irkuprati',
-'revdelete-log'               => 'Kumment tal-log:',
+'revdelete-log'               => 'Raġuni:',
 'revdelete-submit'            => 'Applika lil reviżjoni magħżula',
 'revdelete-logentry'          => "Il-Visibilitá tar-reviżjoni ta' [[$1]] inbidlet",
 'logdelete-logentry'          => "Il-Visibilitá tal-avveniment ta' $1 inbidlet",
-'revdelete-success'           => "'''Il-Visibilitá tar-Reviżjoni ġiet setjata b'suċċess.'''",
-'logdelete-success'           => "'''Il-Visibilitá tal-log ġie setjat b'suċċess.'''",
+'revdelete-success'           => "'''Il-viżibilità tar-reviżjoni ġiet aġġornata b'suċċess.'''",
+'logdelete-success'           => "'''II-viżibilità tar-reġistru ġiet imposta b'suċċess.'''",
 'revdel-restore'              => 'Biddel visibilitá',
 'pagehist'                    => 'Kronoloġija tal-paġna',
 'deletedhist'                 => 'Kronoloġija mħassra',
 'revdelete-content'           => 'kontenut',
 'revdelete-summary'           => 'Taqsira tal-modifika',
-'revdelete-uname'             => 'isem l-utent',
+'revdelete-uname'             => 'isem tal-utent',
 'revdelete-restricted'        => "limiti applikati 'l amministraturi",
 'revdelete-unrestricted'      => "neħħi l-limiti 'l amministraturi",
 'revdelete-hid'               => 'aħbi $1',
@@ -1047,7 +1063,7 @@ Nota li l-użu tal-links tan-navigazzjoni jagħmel reset tal-kolonna.",
 'mergelogpagetext'   => "Hawn taħt hawn lista ta' l-aktar tgħaqqid riċenti ta' paġna waħda ta' storja f'oħra.",
 
 # Diffs
-'history-title'           => 'Storja ta\' reviżjoni ta\' "$1"',
+'history-title'           => 'Kronoloġija tal-modifiki ta\' "$1"',
 'difference'              => '(Differenzi bejn ir-reviżjonijiet)',
 'lineno'                  => 'Linja $1:',
 'compareselectedversions' => 'Qabbel il-verżjonijiet magħżula',
@@ -1072,6 +1088,8 @@ Nota li l-użu tal-links tan-navigazzjoni jagħmel reset tal-kolonna.",
 'diff-tbody'              => "'''kontenut ta' tabella'''",
 'diff-tr'                 => "'''ringiela'''",
 'diff-img'                => "'''stampa'''",
+'diff-i'                  => "'''tipa korsiva'''",
+'diff-b'                  => "'''tipa ħoxna'''",
 
 # Search results
 'searchresults'                    => 'Riżultat tat-tfittxija',
@@ -1117,8 +1135,8 @@ Nota li l-użu tal-links tan-navigazzjoni jagħmel reset tal-kolonna.",
 'mwsuggest-disable'                => 'Neħħi suġġeriment tal-AJAX',
 'searchrelated'                    => 'relatati',
 'searchall'                        => 'kollha',
-'showingresults'                   => "Hawnhekk {{PLURAL:$1|instab riżultat għal massimu ta' '''1'''|instab '''$1''' riżultati għal massimu}} li jibda' bin-numru '''$2'''.",
-'showingresultsnum'                => "Hawnhekk jinstabu {{PLURAL:$3|riżultat '''1'''|'''$3''' riżultati}} li jibdew bin-numru '''$2'''.",
+'showingresults'                   => "Hawn taħt ġie inkluż massimu ta' {{PLURAL:$1|riżultat '''1''' li jibda|'''$1''' riżultat li jibdew}} bin-numru '''$2'''.",
+'showingresultsnum'                => "Hawn taħt {{PLURAL:$3|jinsab riżultat '''1''' li jibda|jinsabu '''$3''' riżultati li jibdew}} bin-numru '''$2'''.",
 'showingresultstotal'              => "{{PLURAL:$4|Riżultat minn '''$1''' sa '''$3'''|Riżultati '''$1 - $2''' ta' '''$3'''}} jinstabu hawn taħt",
 'nonefound'                        => "'''Nota''': Awtomatikament, huma ftit spazji tal-isem imfittxija.
 Ipprova għamel prefiss għall-inkjesta tiegħek ma' ''all:'' sabiex tfittex il-kontenut kollu (inkluż paġni ta' diskussjoni, mudelli, etċ), jew uża l-ispazju tal-isem mixtieq bħala prefiss.",
@@ -1135,7 +1153,7 @@ Innota però li l-werreja tal-kontenut ta' {{SITENAME}} f'dawn is-siti, jistgħu
 
 # Preferences page
 'preferences'               => 'Preferenzi',
-'mypreferences'             => 'Il-Preferenzi tiegħi',
+'mypreferences'             => 'il-preferenzi tiegħi',
 'prefs-edits'               => "Numru ta' modifiki:",
 'prefsnologin'              => 'Għadek ma dħaltx ġewwa',
 'prefsnologintext'          => 'Sabiex tkun tista\' tippersonalizza l-preferenzi huwa neċessarju li tidħol fil-<span class="plainlinks">[{{fullurl:Special:UserLogin|returnto=$1}} kont]</span>.',
@@ -1148,7 +1166,7 @@ Innota però li l-werreja tal-kontenut ta' {{SITENAME}} f'dawn is-siti, jistgħu
 'qbsettings-floatingright'  => "''Floating'' lejn il-lemin",
 'changepassword'            => 'Ibdel il-password',
 'skin'                      => 'Aspett grafiku (skin)',
-'skin-preview'              => 'Previżjoni',
+'skin-preview'              => 'dehra proviżorja',
 'math'                      => 'Formuli matematiċi',
 'dateformat'                => 'Format tad-data',
 'datedefault'               => 'L-ebda preferenza',
@@ -1173,19 +1191,20 @@ Innota però li l-werreja tal-kontenut ta' {{SITENAME}} f'dawn is-siti, jistgħu
 'prefs-resetpass'           => 'Biddel il-password',
 'saveprefs'                 => 'Żomm il-preferenzi',
 'resetprefs'                => 'Neħħi modifiki mhux salvati',
+'restoreprefs'              => 'Irkupra l-impostazzjonijiet awtomatiċi',
 'textboxsize'               => 'Modifika',
 'prefs-edit-boxsize'        => 'Daqs tat-tieqa tal-immodifikar.',
-'rows'                      => 'Filieri:',
+'rows'                      => 'Fillieri:',
 'columns'                   => 'Kolonni:',
 'searchresultshead'         => 'Fittex',
 'resultsperpage'            => "Numru ta' riżultati għal kull paġna:",
-'contextlines'              => 'Filieri għal kull riżultat:',
+'contextlines'              => 'Fillieri għal kull riżultat:',
 'contextchars'              => "Numru ta' karratri tal-kliem",
-'stub-threshold'            => 'Valur minimu għal <a href="#" class="stub">link għas-stub</a>:',
-'recentchangesdays'         => "Numru ta' ġranet li jidher fl-aħħar modifiki:",
+'stub-threshold'            => 'Valur minimu għall-<a href="#" class="stub">ħoloq għall-abozzi</a>, f\'bytes:',
+'recentchangesdays'         => "Numru ta' ġranet li għandhom jintwerew fit-tibdil riċenti:",
 'recentchangesdays-max'     => '(massimu $1 ġurnata)',
 'recentchangescount'        => "Numru ta' fillieri fit-tibdil riċenti, kronoloġiji, u fir-reġistri:",
-'savedprefs'                => 'Il-Preferenzi tiegħek ġew salvati.',
+'savedprefs'                => 'Il-preferenzi tiegħek ġew salvati.',
 'timezonelegend'            => 'Żona tal-ħin:',
 'timezonetext'              => "¹Numru ta' siegħat li hemm differenza bejn il-ħin lokali u il-ħin tas-server (UTC).",
 'localtime'                 => 'Ħin lokali:',
@@ -1205,33 +1224,35 @@ Innota però li l-werreja tal-kontenut ta' {{SITENAME}} f'dawn is-siti, jistgħu
 'timezoneregion-europe'     => 'Ewropa',
 'timezoneregion-indian'     => 'Oċean Indjan',
 'timezoneregion-pacific'    => 'Oċean Paċifiku',
-'allowemail'                => 'Ħalli li jaslulek emails mingħand utenti oħrajn',
+'allowemail'                => 'Ħalli li jaslulek ittri-e mingħand utenti oħrajn',
 'prefs-searchoptions'       => 'Preferenzi għat-tfittxija',
 'prefs-namespaces'          => 'Namespace',
 'defaultns'                 => 'Namespace predefinit għat-tfittxija:',
 'default'                   => 'predefinit',
 'files'                     => 'Fajls',
+'prefs-custom-css'          => 'CSS personalizzat',
+'prefs-custom-js'           => 'JS personalizzat',
 
 # User rights
-'userrights'                  => "Treġija tal-permessi relativi 'l utenti", # Not used as normal message but as header for the special page itself
-'userrights-lookup-user'      => 'Immaniġġja l-gruppi tal-utenti',
-'userrights-user-editname'    => 'Daħħal isem l-utent:',
-'editusergroup'               => "Modifika l-gruppijiet ta' l-utenti",
+'userrights'                  => 'Ġestjoni tad-drittijiet tal-utent', # Not used as normal message but as header for the special page itself
+'userrights-lookup-user'      => 'Ġestjoni tal-gruppi tal-utent',
+'userrights-user-editname'    => 'Daħħal isem tal-utent:',
+'editusergroup'               => 'Immodifika l-gruppi tal-utent',
 'editinguser'                 => "Modifika tad-drittijiet tal-utent '''[[User:$1|$1]]''' ([[User talk:$1|{{int:talkpagelinktext}}]]{{int:pipe-separator}}[[Special:Contributions/$1|{{int:contribslink}}]])",
-'userrights-editusergroup'    => "Modifika tal-gruppijiet ta' l-utenti",
-'saveusergroups'              => 'Modifika Gruppijiet tal-Utenti',
+'userrights-editusergroup'    => 'Immodifika l-gruppi tal-utent',
+'saveusergroups'              => 'Salva l-gruppi tal-utent',
 'userrights-groupsmember'     => "Membru ta':",
-'userrights-groups-help'      => "Huwa possibli li tagħmel modifiki għal f'liem grupp dan l-utent huwa.
+'userrights-groups-help'      => "Huwa possibbli li timmodifika l-gruppi li dan l-utent jinsab fihom:
 * Kaxxa bil-punta magħżula tfisser li l-utent huwa fil-grupp
-* Kaxxa bil-punta mhux magħżula tfisser li l-utent mhux fil-grupp
-* Il-Simbolu * jindika li mhux possibli telimina l-grupp wara jiġi maħluq (jew viċe versa)",
-'userrights-reason'           => 'Raġuni għal modifika:',
+* Kaxxa bil-punta mhux magħżula tfisser li l-utent mhuwiex f'dak il-grupp
+* It-tagħrifa * tindika li mhuwiex possibbli li tneħħi l-grupp ġaladarba tkun żidtu (jew viċi versa)",
+'userrights-reason'           => 'Raġuni:',
 'userrights-no-interwiki'     => "M'għandekx permess tagħmel modifiki fid-drittijiet tal-utenti fuq siti oħrajn.",
 'userrights-nodatabase'       => 'Id-Database $1 ma jeżistix jew inkella mhux database lokali.',
 'userrights-nologin'          => "Sabiex tkun tista' tagħti d-drittijiet lill-utenti hemm bżonn li [[Special:UserLogin|tidħol]] bħalha amministratur.",
 'userrights-notallowed'       => "M'għandekx permess tagħti drittijiet lill-utenti.",
-'userrights-changeable-col'   => "Gruppijiet f'liem tista' tagħmel modifiki",
-'userrights-unchangeable-col' => "Gruppijiet f'liem ma tistax tagħmel modifiki",
+'userrights-changeable-col'   => "Gruppi li tista' tbiddel",
+'userrights-unchangeable-col' => 'Gruppi li ma tistax tbiddel',
 
 # Groups
 'group'               => 'Grupp:',
@@ -1241,13 +1262,13 @@ Innota però li l-werreja tal-kontenut ta' {{SITENAME}} f'dawn is-siti, jistgħu
 'group-sysop'         => 'Amministraturi',
 'group-bureaucrat'    => 'Burokrati',
 'group-suppress'      => "''Oversight''",
-'group-all'           => '(utenti)',
+'group-all'           => '(kollha)',
 
-'group-user-member'          => 'Utent',
-'group-autoconfirmed-member' => 'Utent konfermat awtomatikament',
-'group-bot-member'           => 'Bot',
-'group-sysop-member'         => 'Amministratur',
-'group-bureaucrat-member'    => 'Burokrat',
+'group-user-member'          => 'utent',
+'group-autoconfirmed-member' => 'utent konfermat awtomatikament',
+'group-bot-member'           => 'bot',
+'group-sysop-member'         => 'amministratur',
+'group-bureaucrat-member'    => 'burokrata',
 'group-suppress-member'      => "''Oversight''",
 
 'grouppage-user'          => '{{ns:project}}:Utenti',
@@ -1323,7 +1344,7 @@ Innota però li l-werreja tal-kontenut ta' {{SITENAME}} f'dawn is-siti, jistgħu
 'action-createpage'     => 'oħloq paġni',
 'action-createtalk'     => "oħloq paġni ta' diskussjoni",
 'action-createaccount'  => 'oħloq dan il-kont tal-utent',
-'action-minoredit'      => 'immarka din il-modifika bħala waħda minuri',
+'action-minoredit'      => 'timmarka din il-modifika bħala waħda minuri',
 'action-move'           => 'mexxi din il-paġna',
 'action-move-subpages'  => 'mexxi din il-paġna, u s-sottopaġni',
 'action-movefile'       => 'mexxi dan il-fajl',
@@ -1336,6 +1357,8 @@ Innota però li l-werreja tal-kontenut ta' {{SITENAME}} f'dawn is-siti, jistgħu
 'action-suppressionlog' => 'ara dan il-log privat',
 'action-block'          => 'imblokka lil dan l-utent milli jimmodifika',
 'action-protect'        => "biddel il-livelli ta' protezzjoni għal din il-paġna",
+'action-unwatchedpages' => "uri l-lista ta' paġni li mhumiex osservati",
+'action-mergehistory'   => "waħħad il-kronoloġija ta' din il-paġna",
 
 # Recent changes
 'nchanges'                          => '{{PLURAL:$1|modifika $1 |$1 modifiki}}',
@@ -1371,7 +1394,7 @@ Innota però li l-werreja tal-kontenut ta' {{SITENAME}} f'dawn is-siti, jistgħu
 'recentchangeslinked'          => 'Tibdil relatat',
 'recentchangeslinked-title'    => 'Modifiki relatati ma\' "$1"',
 'recentchangeslinked-noresult' => 'L-ebda modifika ma saret fuq il-paġni relatati waqt il-perjodu speċifikat.',
-'recentchangeslinked-summary'  => "Din il-paġna speċjali turi l-modifiki l-aktar riċenti f'paġni relatati ma' dik speċifikata. Il-paġni segwiti fil-[[Special:Watchlist|lista ta' osservazzjoni]] huma mmarkati b''''tipa ħoxna'''.",
+'recentchangeslinked-summary'  => "Din hija lista ta' bidliet li saru riċentament fuq paġni marbuta minn paġna speċifika (jew lejn membri ta' kategorija speċifika). Il-paġni fuq il-[[Special:Watchlist|lista ta' osservazzjoni]] tiegħek huma mmarkati b''''tipa ħoxna'''.",
 'recentchangeslinked-page'     => 'Isem tal-paġna:',
 'recentchangeslinked-to'       => "Minflok, uri t-tibdiliet fil-paġni llinkjati ma' dik speċifikata",
 
@@ -1385,13 +1408,13 @@ Innota però li l-werreja tal-kontenut ta' {{SITENAME}} f'dawn is-siti, jistgħu
 'upload_directory_missing'    => "Id-Direttorju tal-''upload'' ($1) huwa nieqes u ma jistax jiġi maħluq mill-''webserver''.",
 'upload_directory_read_only'  => "Il-''Webserver'' m'għandux il-mezzi sabiex jikteb fil-direttorju tal-''upload'' ($1).",
 'uploaderror'                 => "Problema fl-''upload''",
-'uploadtext'                  => "Uża l-formula t'hawn taħt sabiex ittella' fajl.
-Biex tara jew tfittex fajls li ġew mtellgħin mur fil-[[Special:FileList|lista ta' fajls mtellgħin]]. Fajls imtellgħin u verżjonijiet ġodda tal-fajls huma reġistrati fir-[[Special:Log/upload|reġistru ta' l-''uploads'']], u dawk li tħassru huma fir-[[Special:Log/upload|reġistru tat-tħassir]].
+'uploadtext'                  => "Uża l-formula t'hawn taħt sabiex ittella' fajls ġodda.
+Biex tara jew tfittex fajls li ġew mtellgħin qabel mur fil-[[Special:FileList|lista ta' fajls mtellgħin]]. Fajls imtellgħin u verżjonijiet ġodda tal-fajls huma reġistrati fir-[[Special:Log/upload|reġistru tat-tlugħ tal-fajls]], u dawk li tħassru huma fir-[[Special:Log/delete|reġistru tat-tħassir]].
 
-Biex tinkludi fajl f'paġna, uża l-link fil-forma
-* '''<nowiki>[[</nowiki>{{ns:file}}<nowiki>:Fajl.jpg]]</nowiki>''',
-* '''<nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.png|alt text]]</nowiki>''' jew
-* '''<nowiki>[[</nowiki>{{ns:media}}<nowiki>:File.ogg]]</nowiki>''' biex toħloq link dirett għal fajl.",
+Biex tinkludi fajl f'paġna, uża ħolqa taħt waħda minn dawn il-forom:
+* '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:Fajl.jpg]]</nowiki></tt>''' sabiex tuża' l-verżjoni sħiħa tal-fajl
+* '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:Fajl.png|200px|thumb|left|test alternattiv]]</nowiki></tt>''' sabiex tpoġġi l-istampa fuq ix-xellug ġo kaxxa ta' 200px b'\"test alternattiv\" tkun id-deskrizzjoni
+* '''<tt><nowiki>[[</nowiki>{{ns:media}}<nowiki>:Fajl.ogg]]</nowiki></tt>''' biex toħloq ħolqa diretta lejn il-fajl, mingħajr ma turih.",
 'upload-permitted'            => "Tipi ta' fajls permessi: $1.",
 'upload-preferred'            => "Tipi ta' fajls preferuti: $1.",
 'upload-prohibited'           => "Tipi ta' fajls projibiti: $1.",
@@ -1402,6 +1425,7 @@ Ara l-[[Special:NewFiles|gallerija ta' fajls ġodda]] għal ħarsa viżiva.",
 'filename'                    => 'Isem tal-fajl',
 'filedesc'                    => 'Taqsira',
 'fileuploadsummary'           => 'Taqsira:',
+'filereuploadsummary'         => 'Tibdil fil-fajl:',
 'filestatus'                  => 'Informazzjoni dwar il-copyright:',
 'filesource'                  => 'Sors:',
 'uploadedfiles'               => "Fajls li ġew mtella'",
@@ -1421,16 +1445,18 @@ dan il-fajl huwa $2 kbir.',
 'largefileserver'             => 'Il-Fajl għandu dimenżjoni akbar minn dak konsentit mill-konfigurazzjoni tas-server.',
 'emptyfile'                   => "Il-Fajl li ġie ''uploaded'' jidher li huwa vojt. Dan jista' jkun minħabba żball fl-isem tal-fajl.
 Jekk jogħġbok verifika jekk xorta waħda trid itella' dan il-fajl.",
-'fileexists'                  => "Fajl b'dan l-isem ġa jeżisti, jekk jogħġbok verifika l-ewwel '''<tt>$1</tt>''' jekk ma tridx tikteb fuqu.",
-'filepageexists'              => "Il-paġna ta' deskrizzjoni għal dan il-fajl ġie ġa maħluq f''''<tt>$1</tt>''', iżda l-ebda fajl b'dan l-isem jeżisti bħalissa. It-Taqsira li daħħalt mhux se tidher fuq il-paġna tad-deskrizzjoni.
-Sabiex it-taqsira tidher hemm, huwa neċessarju li tagħmel il-modifiki manwalment.",
-'fileexists-extension'        => "Diġà jeżisti fajl b'isem simili:<br />
-L-isem tal-fajl imtella': '''<tt>$1</tt>'''<br />
-L-isem tal-fajl eżistenti: '''<tt>$2</tt>'''<br />
+'fileexists'                  => "Fajl b'dan l-isem ġa jeżisti, jekk jogħġbok verifika l-ewwel '''<tt>[[:$1]]</tt>''' jekk ma tridx tikteb fuqu.
+[[$1|thumb]]",
+'filepageexists'              => "Il-paġna ta' deskrizzjoni għal dan il-fajl diġà ġiet maħluqa f''''<tt>[[:$1]]</tt>''', iżda l-ebda fajl b'dan l-isem ma jeżisti. It-taqsira li daħħalt mhux se tidher fuq il-paġna ta' deskrizzjoni.
+Sabiex it-taqsira tidher fuq il-paġna ta' deskrizzjoni, huwa neċessarju li timmodifikaha manwalment.
+[[$1|thumb]]",
+'fileexists-extension'        => "Diġà jeżisti fajl b'isem simili: [[$2|thumb]]
+* L-isem tal-fajl imtella': '''<tt>[[:$1]]</tt>'''
+* L-isem tal-fajl eżistenti: '''<tt>[[:$2]]</tt>'''
 Jekk jogħġbok, agħżel isem differenti.",
 'fileexists-thumb'            => "<center>'''Fajl eżistenti'''</center>",
-'fileexists-thumbnail-yes'    => "Il-fajl li ttella' jidher li huwa stampa żgħira ''(minjatura)''. 
-Jekk jogħġbok, iċċekkja dan il-fajl '''<tt>$1</tt>'''.<br /> 
+'fileexists-thumbnail-yes'    => "Il-fajl li ttella' jidher li huwa stampa żgħira ''(minjatura)''. [[$1|thumb]]
+Jekk jogħġbok, iċċekkja dan il-fajl '''<tt>[[:$1]]</tt>'''. 
 Jekk il-fajl li ċċekkjajt huwa l-istess stampa fid-daqs oriġinali, m'hemmx bżonn li ttella' minjatura oħra.",
 'file-thumbnail-no'           => "L-isem tal-fajl jibda' b''''<tt>$1</tt>'''. Jidher ukoll li din hija stampa tad-daqs imnaqqas ''(thumbnail)''.<br />
 Jekk għandek din l-istampa ta' riżoluzzjoni sħiħa, jekk jogħġbok, tella' dan il-fajl jew inkella immodifika l-isem tal-fajl.",
@@ -1438,6 +1464,7 @@ Jekk għandek din l-istampa ta' riżoluzzjoni sħiħa, jekk jogħġbok, tella' d
 Jekk jogħġbok mur lura u tella' dan il-fajl b'isem ġdid. [[File:$1|thumb|center|$1]]",
 'fileexists-shared-forbidden' => "Fajl b'dan l-isem diġà jeżisti fl-arkivju tar-riżorsi multimedjali maqsuma. Jekk tixtieq xorta waħda li ttella' l-fajl, mur lura u tella' fajl b'isem ġdid. [[File:$1|thumb|center|$1]]",
 'file-exists-duplicate'       => "Dan il-fajl huwa duplikat ta' {{PLURAL:$1|dan il-fajl|dawn il-fajls}} segwenti:",
+'file-deleted-duplicate'      => "Fajl identiku għal dan ([[$1]]) ġie mħassar fil-passat. Iċċekja qabel xejn il-kronoloġija tat-tħassir qabel ma tkompli ttella' l-fajl.",
 'successfulupload'            => "Mtella' b'suċċess",
 'uploadwarning'               => 'Twissija dwar it-tlugħ tal-fajls',
 'savefile'                    => 'Salva l-fajl',
@@ -1495,7 +1522,7 @@ Jekk jogħġbok verifika li s-sit huwa attiv, stenna għal ftit u erġa' prova m
 
 'license'            => "Liċenzja t'użu:",
 'nolicense'          => 'L-Ebda liċenzja indikata',
-'license-nopreview'  => '(Previżjoni mhux disponnibli)',
+'license-nopreview'  => '(Dehra proviżorja mhix disponibbli)',
 'upload_source_url'  => ' (URL validu u aċċessibli)',
 'upload_source_file' => ' (fajl fuq il-komputer tiegħek)',
 
@@ -1547,7 +1574,7 @@ Biex tagħmel modifika fl-ordni tal-kolonna, klikkja fuq it-titlu tal-kolonna st
 'filerevert'                => 'Ġib lura $1',
 'filerevert-legend'         => "Erġa' lura għall-fajl",
 'filerevert-intro'          => "Inti qiegħed terġa lura għal fajl '''[[Media:$1|$1]]''' fil-[verżjoni $4 minn $3, $2].",
-'filerevert-comment'        => 'Kumment:',
+'filerevert-comment'        => 'Raġuni:',
 'filerevert-defaultcomment' => "Mort lura għal verżjoni ta' $2, $1",
 'filerevert-submit'         => 'Ġib lura',
 'filerevert-success'        => "'''Il-Fajl [[Media:$1|$1]]''' ġie restorat għal [verżjoni $4 minn $3, $2].",
@@ -1558,18 +1585,18 @@ Biex tagħmel modifika fl-ordni tal-kolonna, klikkja fuq it-titlu tal-kolonna st
 'filedelete-legend'           => 'Ħassar il-fajl',
 'filedelete-intro'            => "Sejjer tħassar '''[[Media:$1|$1]]''' flimkien mal-kronoloġija kollha tiegħu.",
 'filedelete-intro-old'        => "Se tħassar il-verżjoni ta' '''[[Media:$1|$1]]''' - [$4 $3, $2].",
-'filedelete-comment'          => 'Raġuni għat-tħassir:',
+'filedelete-comment'          => 'Raġuni:',
 'filedelete-submit'           => 'Ħassar',
 'filedelete-success'          => "'''$1''' ġie mħassar.",
 'filedelete-success-old'      => "Il-verżjoni tal-fajl '''[[Media:$1|$1]]''' tal-$2, $3 ġiet mħassra.",
 'filedelete-nofile'           => "'''$1''' ma jeżistix.",
 'filedelete-nofile-old'       => "Fl-Arkivju m'hemmx verżjoni ta' '''$1''' bil-karrateristiċi indikati.",
-'filedelete-otherreason'      => 'Oħrajn/aktar raġunijiet:',
+'filedelete-otherreason'      => 'Raġuni oħra/addizzjonali:',
 'filedelete-reason-otherlist' => 'Raġuni oħra',
 'filedelete-reason-dropdown'  => "*Raġunijiet aktar komuni dwar tħassir
 ** Vjolazzjoni ta' copyright
 ** Fajl duplikat",
-'filedelete-edit-reasonlist'  => 'Modifika raġunijiet dwar tħassir',
+'filedelete-edit-reasonlist'  => 'Immodifika r-raġunijiet għat-tħassir',
 
 # MIME search
 'mimesearch'         => 'Fittex fil-bażi għal tip MIME',
@@ -1598,19 +1625,23 @@ Daħħal: tip/subtip, e.ż. <tt>image/jpeg</tt>.",
 'randomredirect-nopages' => 'M\'hawnx riindirizzi fl-ispazju tal-isem "$1".',
 
 # Statistics
-'statistics'              => 'Statistiċi',
-'statistics-header-pages' => 'Statistika tal-paġna',
-'statistics-header-edits' => 'Statistika tal-immodifikar',
-'statistics-header-views' => 'Statistika tal-viżwalizzazzjoni',
-'statistics-header-users' => 'Statistika tal-utent',
-'statistics-articles'     => "Paġni ta' kontenut",
-'statistics-pages'        => 'Paġni',
-'statistics-pages-desc'   => "Il-paġni kollha tal-wiki, inklużi l-paġni ta' diskussjoni, ir-riindirizzi, etċ.",
-'statistics-files'        => 'Fajls imtellgħa',
-'statistics-edits'        => "Total ta' modifiki minn mindu {{SITENAME}} bdiet fil-funzjon",
-'statistics-users'        => '[[Special:ListUsers|Utenti]] reġistrati',
-'statistics-users-active' => 'Utenti attivi',
-'statistics-mostpopular'  => 'Il-paġni l-aktar miżjura',
+'statistics'               => 'Statistika',
+'statistics-header-pages'  => 'Statistika tal-paġna',
+'statistics-header-edits'  => 'Statistika tal-immodifikar',
+'statistics-header-views'  => 'Statistika tal-viżwalizzazzjoni',
+'statistics-header-users'  => 'Statistika tal-utent',
+'statistics-articles'      => "Paġni ta' kontenut",
+'statistics-pages'         => 'Paġni',
+'statistics-pages-desc'    => "Il-paġni kollha tal-wiki, inklużi l-paġni ta' diskussjoni, ir-riindirizzi, etċ.",
+'statistics-files'         => 'Fajls imtellgħa',
+'statistics-edits'         => "Total ta' modifiki minn mindu {{SITENAME}} bdiet fil-funzjon",
+'statistics-edits-average' => "Medja ta' modifiki għal kull paġna",
+'statistics-views-total'   => "Total ta' viżti",
+'statistics-views-peredit' => 'Viżti għal kull modifika',
+'statistics-jobqueue'      => '[http://www.mediawiki.org/wiki/Manual:Job_queue Kju tax-xogħlijiet] li jridu jiġu esegwiti fl-isfond',
+'statistics-users'         => '[[Special:ListUsers|Utenti]] reġistrati',
+'statistics-users-active'  => 'Utenti attivi',
+'statistics-mostpopular'   => 'Il-paġni l-aktar miżjura',
 
 'disambiguations'      => "Paġni ta' diżambigwazzjoni",
 'disambiguationspage'  => 'Template:diżambig',
@@ -1618,7 +1649,8 @@ Daħħal: tip/subtip, e.ż. <tt>image/jpeg</tt>.",
 Paġna tiġi stimata paġna ta' diżambigwazzjoni dawk kollha li jagħmlu użu mit-template elenkat f'[[MediaWiki:Disambiguationspage]]",
 
 'doubleredirects'            => 'Riindirizzi doppji',
-'doubleredirectstext'        => '<b>Twissija:</b> Din il-paġna tagħmel lista tal-paġni li jiġu rindirizzati f\'paġni li jiġu rindirizzati mill-ġdid. Kull filiera għandha links għall-ewwel u t-tieni rindirizz, kif ukoll fejn tirindirizza t-tieni paġna, is-soltu magħrufa bħalha l-paġna "reali" fejn se twassal, fejn l-ewwel rindirizz għandu jipponta.',
+'doubleredirectstext'        => 'Din il-paġna telenka dawk il-paġni li jindirizzaw lejn paġna oħra ta\' riindirizzament.
+Kull filliera għandha ħolqa għall-ewwel u t-tieni riindirizz, kif ukoll fejn tirrindirizza t-tieni paġna, is-soltu magħrufa bħalha l-paġna "reali" fejn se twassal, fejn suppost l-ewwel riindirizz għandu jipponta.',
 'double-redirect-fixed-move' => '[[$1]] ġie mmexxi awtomatikament, issa hu rindirizz għal [[$2]]',
 
 'brokenredirects'        => 'Riindirizzi ħżiena',
@@ -1652,6 +1684,7 @@ Paġna tiġi stimata paġna ta' diżambigwazzjoni dawk kollha li jagħmlu użu m
 'popularpages'            => 'L-iktar paġni popolari',
 'wantedcategories'        => 'Kategoriji rikjesti',
 'wantedpages'             => 'Paġni rikjesti',
+'wantedpages-badtitle'    => "Titlu invalidu fil-grupp ta' riżultati: $1",
 'mostlinked'              => "Paġni bl-ikbar numru ta' links li jwasslu għalihom",
 'mostlinkedcategories'    => "Kategoriji bl-ikbar numru ta' links li jwasslu għalihom",
 'mostlinkedtemplates'     => 'L-iktar mudelli wżati',
@@ -1671,18 +1704,19 @@ Paġna tiġi stimata paġna ta' diżambigwazzjoni dawk kollha li jagħmlu użu m
 'protectedtitlestext'     => 'It-Titli segwenti huma protetti mill-ħolqien',
 'protectedtitlesempty'    => "L-Ebda titli bħalissa huma protetti b'dawn il-parametri.",
 'listusers'               => 'Lista tal-utenti',
-'usereditcount'           => '$1 modifika',
+'usereditcount'           => '$1 {{PLURAL:$1|kontribuzzjonijiet|kontribuzzjoni}}',
 'newpages'                => 'Paġni ġodda',
-'newpages-username'       => 'Isem l-utent:',
+'newpages-username'       => 'Isem tal-utent:',
 'ancientpages'            => 'L-iktar paġni qodma',
 'move'                    => 'Mexxi',
 'movethispage'            => 'Ċaqlaq din il-paġna',
-'unusedimagestext'        => "Jekk jogħġbok nota li siti tal-web oħrajn jistgħu jagħmlu link ma' fajl b'URL dirett, u għalhekk xorta jistgħu jiġu użati minkejja li m'għandhomx użu attiv.",
+'unusedimagestext'        => "F'din il-lista hemm preżenti l-fajls imtellgħin imma li mhumiex użati f'ebda paġna.
+Kun af li siti elettroniċi oħra jistgħu jorbtu b'ħolqa diretta lejn il-fajl, u għalhekk xorta jistgħu jiġu elenkati hawnhekk wżati minkejja li għandhom użu attiv.",
 'unusedcategoriestext'    => 'Il-paġni tal-kategoriji segwenti jeżistu, għalkemm ma teżisti l-ebda paġna jew kategorija li tagħmel użu minnhom.',
 'notargettitle'           => 'L-Ebda tarka',
-'notargettext'            => "L-Ebda paġna tarka jew utent ma ġie speċifikat f'relazzjoni mal-funżjoni rikjesta.",
-'nopagetitle'             => 'L-Ebda paġna tarka',
-'nopagetext'              => 'Il-Paġna tarka li speċifikajt ma teżistiex.',
+'notargettext'            => 'Ma ġiet speċifikata l-ebda paġna jew utent fuqiex din il-funzjoni se ssir.',
+'nopagetitle'             => "Il-paġna ta' destinazzjoni ma teżistix",
+'nopagetext'              => "Il-paġna ta' destinazzjoni li speċifikajt ma teżistix.",
 'pager-newer-n'           => '{{PLURAL:$1|l-aktar riċenti|$1 l-aktar riċenti}}',
 'pager-older-n'           => '{{PLURAL:$1|l-inqas riċenti|$1 l-inqas riċenti}}',
 'suppress'                => 'Oversight',
@@ -1693,15 +1727,16 @@ Paġna tiġi stimata paġna ta' diżambigwazzjoni dawk kollha li jagħmlu użu m
 'booksources-isbn'          => 'Kodiċi ISBN:',
 'booksources-go'            => 'Mur',
 'booksources-text'          => "Hawn taħt hawn lista ta' ħoloq għal siti oħrajn li jbiegħu kotba ġodda u wżati, u jistgħu jkollhom aktar informazzjoni dwar il-kotba li qiegħed tfittex:",
+'booksources-invalid-isbn'  => 'L-ISBN li ngħata jidher li mhuwiex validu; iċċekkja għal xi żbalji mis-sors oriġinali.',
 
 # Special:Log
 'specialloguserlabel'  => 'Utent:',
 'speciallogtitlelabel' => 'Titlu:',
-'log'                  => 'Logs',
-'all-logs-page'        => 'Ir-reġistri kollha',
+'log'                  => 'Reġistri',
+'all-logs-page'        => 'Ir-reġistri pubbliċi kollha',
 'alllogstext'          => "Preżentazzjoni unifikata tar-reġistri kollha ta' {{SITENAME}}.<br />
 Tista' tqassar il-kriterji ta' tfittxija billi tagħżel it-tip ta' log, l-isem tal-utent, jew il-paġna affetwata (it-tnejn tal-aħħar huma sensittivi għal kif jinkitbu l-karattri).",
-'logempty'             => "Il-log m'għandu ebda element korrispondenti mat-tfittxija tiegħek.",
+'logempty'             => "Ir-reġistru m'għandu ebda element korrispondenti mat-tfittxija tiegħek.",
 'log-title-wildcard'   => "Tfittxija ta' titli li jibdew b'dan it-test",
 
 # Special:AllPages
@@ -1712,8 +1747,8 @@ Tista' tqassar il-kriterji ta' tfittxija billi tagħżel it-tip ta' log, l-isem 
 'allpagesfrom'      => 'Uri l-paġni li jibdew minn:',
 'allpagesto'        => "Uri l-paġni li jispiċċaw b':",
 'allarticles'       => 'Il-paġni kollha',
-'allinnamespace'    => 'Il-paġni kollha tan-namespace $1',
-'allnotinnamespace' => 'Il-paġni kollha, minbarra dawk tan-namespace $1',
+'allinnamespace'    => 'Il-paġni kollha fl-ispazju tal-isem $1',
+'allnotinnamespace' => 'Il-paġni kollha, minbarra dawk fl-ispazju tal-isem $1',
 'allpagesprev'      => "Ta' qabel",
 'allpagesnext'      => 'Li jmiss',
 'allpagessubmit'    => 'Mur',
@@ -1730,16 +1765,17 @@ Il-[[Special:UnusedCategories|kategoriji vojta]] u dawk [[Special:WantedCategori
 'special-categories-sort-abc'   => 'irranġa skont l-alfabett',
 
 # Special:DeletedContributions
-'deletedcontributions'       => 'Kontribuzzjonijiet tal-utent imħassra',
-'deletedcontributions-title' => 'Kontribuzzjonijiet tal-utent imħassra',
+'deletedcontributions'       => 'Kontribuzzjonijiet imħassra tal-utent',
+'deletedcontributions-title' => 'Kontribuzzjonijiet imħassra tal-utent',
 
 # Special:LinkSearch
-'linksearch'    => 'Ħoloq esterni',
-'linksearch-ns' => 'Spazju tal-isem:',
-'linksearch-ok' => 'Fittex',
+'linksearch'      => 'Ħoloq esterni',
+'linksearch-ns'   => 'Spazju tal-isem:',
+'linksearch-ok'   => 'Fittex',
+'linksearch-line' => '$1 hija marbuta mill-paġna $2',
 
 # Special:ListUsers
-'listusersfrom'      => 'Uri utenti minn:',
+'listusersfrom'      => 'Uri utenti li jibdew minn:',
 'listusers-submit'   => 'Uri',
 'listusers-noresult' => 'l-Ebda utent insab għal din il-kriterja.',
 
@@ -1752,9 +1788,9 @@ Il-[[Special:UnusedCategories|kategoriji vojta]] u dawk [[Special:WantedCategori
 'newuserlog-autocreate-entry' => 'Kont maħluq awtomatikament',
 
 # Special:ListGroupRights
-'listgrouprights'          => "Drittijiet tal-grupp ta' l-utenti",
-'listgrouprights-summary'  => "Il-lista segwenti hija dwar gruppi ta' l-utenti għal din il-wiki, bl-aċċess tad-drittijiet assoċjati.<br />
-Aktar informazzjoni dwar drittijiet tal-individwi tista' tinstab fuq [[{{MediaWiki:Listgrouprights-helppage}}]].",
+'listgrouprights'          => 'Drittijiet tal-grupp tal-utenti',
+'listgrouprights-summary'  => "Hawn taħt hawn elenkati l-gruppi tal-utenti għal din il-wiki, bid-drittijiet ta' aċċess rispettiv.
+Jista' jkun hemm [[{{MediaWiki:Listgrouprights-helppage}}|aktar informazzjoni]] fuq id-drittjiet individwali.",
 'listgrouprights-group'    => 'Grupp',
 'listgrouprights-rights'   => 'Drittijiet',
 'listgrouprights-helppage' => 'Help:Drittijiet tal-grupp',
@@ -1782,8 +1818,8 @@ Aktar informazzjoni dwar drittijiet tal-individwi tista' tinstab fuq [[{{MediaWi
 'emailuserfooter' => 'Din il-posta elettronika intbgħattet minn $1 lil $2 bil-"Utent tal-posta elettronika" funżjoni ta\' {{SITENAME}}.',
 
 # Watchlist
-'watchlist'            => 'Li qed insegwi',
-'mywatchlist'          => 'Li qed insegwi',
+'watchlist'            => "Lista ta' osservazzjoni tiegħi",
+'mywatchlist'          => 'li qed insegwi',
 'watchlistfor'         => "(għal '''$1''')",
 'nowatchlist'          => "Il-lista ta' osservazzjoni tiegħek hija vojta.",
 'watchlistanontext'    => "Sabiex tara u timmodifika l-lista ta' osservazzjoni tiegħek, hemm bżonn li $1.",
@@ -1795,7 +1831,7 @@ Minn issa 'l quddiem, il-modifiki f'din il-paġna u fil-paġna ta' diskussjoni t
 
 Jekk f'xi ħin tkun tixtieq tneħħi l-paġna mil-lista ta' osservazzjoni tiegħek, kemm tagħfas fuq \"tibqax issegwi\" li tinsab fl-iżbarra ta' fuq.",
 'removedwatch'         => "Il-paġna tneħħiet mil-lista ta' osservazzjoni",
-'removedwatchtext'     => 'Il-paġna "[[:$1]]" tneħħiet mil-lista ta\' osservazzjoni tiegħek.',
+'removedwatchtext'     => 'Il-paġna "[[:$1]]" tneħħiet mil-[[Special:Watchlist|lista ta\' osservazzjoni tiegħek]].',
 'watch'                => 'Segwi',
 'watchthispage'        => 'Segwi din il-paġna',
 'unwatch'              => 'Issegwix',
@@ -1822,8 +1858,8 @@ Jekk f'xi ħin tkun tixtieq tneħħi l-paġna mil-lista ta' osservazzjoni tiegħ
 'enotif_reset'                 => 'Marka l-paġni kollha viżitati',
 'enotif_newpagetext'           => 'Din hija paġna ġdida.',
 'enotif_impersonal_salutation' => "Utent ta' {{SITENAME}}",
-'changed'                      => 'modifikat',
-'created'                      => 'inħoloq',
+'changed'                      => 'modifikata',
+'created'                      => 'inħolqot',
 'enotif_subject'               => 'Il-Paġna $PAGETITLE ta\' {{SITENAME}} ġiet $CHANGEDORCREATED minn $PAGEEDITOR',
 'enotif_lastvisited'           => 'Ara $1 għal modifiki kollha mill-aħħar żjara.',
 'enotif_lastdiff'              => 'Ara $1 biex tara din l-modifika.',
@@ -1863,22 +1899,22 @@ Biex tagħti l-kumment tiegħek u għal aktar għajnuna:
 'historywarning'         => 'Twissija: Il-paġna li se tħassar għanda kronoloġija:',
 'confirmdeletetext'      => "Int se tħassar għal kollox mid-database paġna jew stampa, flimkien mal-kronoloġija kollha tagħha. Jekk jogħġbok, ikkonferma li hija x-xewqa tiegħek li tkompli bit-tħassir ta' din il-paġna, u tifhem il-konsegwenzi ta' li qiegħed tagħmel, u li qiegħed tagħmilhom skont il- [[{{MediaWiki:Policy-url}}|politika]] stabbilita.",
 'actioncomplete'         => 'Azzjoni mwettqa',
-'deletedtext'            => '"<nowiki>$1</nowiki>" ġiet imħassra.
-Ara $2 biex tara paġni mħassra riċentament.',
+'deletedtext'            => 'Il-paġna "<nowiki>$1</nowiki>" ġiet imħassra.
+Ikkonsulta r-$2 biex tara paġni li ġew imħassra riċentament.',
 'deletedarticle'         => 'ħassar "[[$1]]"',
 'suppressedarticle'      => 'Neħħi "[[$1]]"',
 'dellogpage'             => 'Tħassir',
 'dellogpagetext'         => "Hawn taħt hawn lista ta' l-aktar tħassir riċenti.",
-'deletionlog'            => "Log ta' tħassir",
+'deletionlog'            => 'reġistru tat-tħassir',
 'reverted'               => 'Mort lura għal verżjoni preċedenti',
-'deletecomment'          => 'Raġuni dwar it-tħassir:',
-'deleteotherreason'      => 'Raġuni oħrajn:',
+'deletecomment'          => 'Raġuni:',
+'deleteotherreason'      => 'Raġunijiet oħra/addizzjonali:',
 'deletereasonotherlist'  => 'Raġuni oħra',
 'deletereason-dropdown'  => "*Raġunijiet ta' tħassir komuni
 ** Rikjesta tal-awtur
 ** Vjolazzjoni tal-copyright
 ** Vandaliżmu",
-'delete-edit-reasonlist' => "Modifika raġunijiet ta' tħassir",
+'delete-edit-reasonlist' => "Immodifika r-raġunijiet ta' tħassir",
 'delete-toobig'          => "Din il-paġna għandha kronoloġija ta' modifikar kbira, l-fuq minn $1 {{PLURAL:$1|reviżjoni|reviżjonijiet}}.
 Tħassir ta' dawn il-paġni huwa limitat sabiex tnaqqas il-ħolqien aċċidentalment ta' problemi fil-funżjoni tad-database ta' {{SITENAME}}.",
 'delete-warning-toobig'  => "Din il-paġna għandha kronoloġija ta' modifikar kbira, l-fuq minn $1 {{PLURAL:$1|reviżjoni|reviżjonijiet}}.
@@ -1904,12 +1940,12 @@ Modifikata lura għall-aħħar verżjoni ta' $2.",
 'protectlogtext'              => "Hawn taħt hawn lista ta' l-azzjonijiet tal-protezzjoni u żblokki tal-paġna.
 Ara [[Special:ProtectedPages|l-lista ta' paġni protetti]] għal lista ta' paġni bħalissa protetti.",
 'protectedarticle'            => '"[[$1]]" huwa protett',
-'modifiedarticleprotection'   => 'modifikajt il-livell ta\' protezzjoni għal "[[$1]]"',
+'modifiedarticleprotection'   => 'biddel il-livell ta\' protezzjoni għal "[[$1]]"',
 'unprotectedarticle'          => 'żblokkjajt "[[$1]]"',
 'protect-title'               => 'Modifika livell ta\' protezzjoni ta\' "$1"',
 'prot_1movedto2'              => '[[$1]] tmexxa lejn [[$2]]',
 'protect-legend'              => 'Ikkonferma l-protezzjoni',
-'protectcomment'              => 'Kumment:',
+'protectcomment'              => 'Raġuni:',
 'protectexpiry'               => 'Jiskadi:',
 'protect_expiry_invalid'      => 'Skadenza mhux valida.',
 'protect_expiry_old'          => 'Skadenza ġa inġarbet.',
@@ -1926,8 +1962,15 @@ Il-Preferenzi kurrenti ta' din il-paġni huma '''$1''':",
 'protect-level-sysop'         => 'Amministraturi biss',
 'protect-summary-cascade'     => 'rikorsiv',
 'protect-expiring'            => 'jiskadi $1 (UTC)',
+'protect-expiry-indefinite'   => 'indefinit',
 'protect-cascade'             => "Protezzjoni rikorsiva (testendi l-protezzjoni 'l paġni kollha inklużi f'din il-paġna).",
 'protect-cantedit'            => "Ma tistax timodifika l-livelli ta' protezzjoni ta' din il-paġna, għax int m'għandhekx il-permessi neċessarji.",
+'protect-otherreason'         => 'Raġunijiet oħra/addizjonali:',
+'protect-dropdown'            => '*Raġunijiet komuni għall-protezzjoni
+** Vandaliżmu eċċessiv
+** Spamming eċċessiv
+** Gwerrer tal-editjar kontinwi
+** Paġna wżata ħafna',
 'protect-expiry-options'      => 'siegħa:1 hour,ġurnata:1 day,ġimgħa:1 week,ġimgħatejn:2 weeks,xahar:1 month,3 xhur:3 months,6 xhur:6 months,sena:1 year,infinita:infinite', # display1:time1,display2:time2,...
 'restriction-type'            => 'Permess:',
 'restriction-level'           => "Livell ta' limitazzjoni:",
@@ -1948,7 +1991,7 @@ Il-Preferenzi kurrenti ta' din il-paġni huma '''$1''':",
 
 # Undelete
 'undelete'                     => 'Ara l-paġni mħassra',
-'undeletepage'                 => 'Ara u rkupra l-paġni mħassra',
+'undeletepage'                 => 'Ara u rkupra paġni mħassra',
 'undeletepagetitle'            => "'''Hawn jinsabu reviżjonijiet imħassra ta' [[:$1|$1]]'''.",
 'viewdeletedpage'              => 'Ara l-paġni mħassra',
 'undeletepagetext'             => "Il-{{PLURAL:$1|paġna segwenti ġiet mħassra, però xorta għadha fl-arkivju u għalhekk tista' tiġi rkuprata|paġni segwenti ġew imħassra, però xorta għadhom jistgħu jiġu rkuprati}}. L-arkivju jista' jiġi mnaddaf perjodikament.",
@@ -1959,7 +2002,8 @@ Biex tirkupra partijiet speċifiċi, agħżel il-kaxxi korrispondenti mar-reviż
 'undeletehistory'              => 'Jekk tirkupra l-paġna, ir-reviżjonijiet kollha jiġu mdaħħla mill-ġdid fil-kronoloġija relattiva. Jekk wara t-tħassir paġni ġodda jiġi maħluqa bl-istess titlu, r-reviżjonijiet irkuprati jiġu jidhru fil-kronoloġija preċedenti. Kun af wkoll li limitazzjonijiet fuq reviżjonijiet tal-fajl huwa mitlufa waqt li jiġi rkuprati.',
 'undeleterevdel'               => "Jekk il-parti ta' fuq tal-paġna jew ir-reviżjoni tal-fajl huma parzjalment imħassra, l-proċess ta' irkuprar ma ssirx. F'dawn il-każi, int trid ma taħbiex jew ma tagħżilx ir-reviżjoni mħassra l-aktar riċenti.",
 'undeletehistorynoadmin'       => "Din il-paġna ġiet imħassra.
-Ir-Raġuni għat-tħassir jinstab fit-taqsira hawn taħt, flimkien mal-informazzjoni tal-utenti li għamlu modifiki f'din il-paġna qabel ma ġiet imħassra. Il-Propja test ta' dawn ir-reviżjonijiet imħassra huwa biss jistgħu jiġu aċċessati mill-amministraturi biss.",
+Ir-raġuni għat-tħassir tinsab fit-taqsira t'hawn taħt, flimkien mal-informazzjoni tal-utenti li għamlu modifiki fuq din il-paġna qabel ma ġiet imħassra.
+It-test attwali ta' dawn ir-reviżjonijiet imħassra hija disponibbli biss lill-amministraturi.",
 'undelete-revision'            => 'Reviżjoni mħassra tal-paġna $1, imdaħħla nhar il-$4 fil-$5, minn $3:',
 'undeleterevision-missing'     => "Reviżjoni invalidu jew nieqes.
 Int jista' jkollhok link ħażin, jew jista' jkun li ir-reviżjoni ġie rkuprat jew mneħħa mill-arkivju.",
@@ -1968,17 +2012,17 @@ Int jista' jkollhok link ħażin, jew jista' jkun li ir-reviżjoni ġie rkuprat 
 'undeletelink'                 => 'uri/irkupra',
 'undeletereset'                => 'Irrisettja',
 'undeleteinvert'               => 'Inverti s-selezzjoni',
-'undeletecomment'              => 'Kumment:',
+'undeletecomment'              => 'Raġuni:',
 'undeletedarticle'             => 'ġie irkuprat "[[$1]]"',
 'undeletedrevisions'           => '{{PLURAL:$1|reviżjoni irkuprata|$1 reviżjonijiet irkuprati}}',
 'undeletedrevisions-files'     => '{{PLURAL:$1|reviżjoni waħda|$1 reviżjonijiet}} u {{PLURAL:$2|fajl wieħed irkuprat|$2 fajls irkuprati}}',
 'undeletedfiles'               => '{{PLURAL:$1|file wieħed|$1 fajls}} irkuprati',
 'cannotundelete'               => "L-irkuprar ma rnexxiex;
 jista' jkun li xi ħadd ieħor irkupra l-paġna qabel.",
-'undeletedpage'                => "<big>'''$1 ġie irkuprat'''</big>
+'undeletedpage'                => "'''$1 ġie irkuprat'''
 
-Konsulta [[Special:Log/delete|l-log ta' tħassir]] għar-reġistru ta' tħassir riċenti u irkupri.",
-'undelete-header'              => "Ara [[Special:Log/delete|l-log ta' tħassir]] għal paġni mħassra riċentament.",
+Ikkonsulta r-[[Special:Log/delete|reġistru tat-tħassir]] biex tara t-tħassir u l-irkuprar ta' paġni l-aktar riċenti.",
+'undelete-header'              => 'Ara r-[[Special:Log/delete|reġistru tat-tħassir]] għal paġni mħassra riċentament.',
 'undelete-search-box'          => 'Fittex paġni mħassra',
 'undelete-search-prefix'       => "Uri l-paġni li t-titlu jibda' bl-ittri:",
 'undelete-search-submit'       => 'Fittex',
@@ -1996,38 +2040,38 @@ $1',
 'undelete-show-file-submit'    => 'Iva',
 
 # Namespace form on various pages
-'namespace'      => 'Namespace:',
+'namespace'      => 'Spazju tal-isem:',
 'invert'         => 'Inverti l-għażla',
 'blanknamespace' => '(Prinċipali)',
 
 # Contributions
 'contributions'       => 'Kontribuzzjonijiet tal-utent',
 'contributions-title' => 'Kontribuzzjonijiet tal-utent għal $1',
-'mycontris'           => 'Il-Kontribuzzjonijiet tiegħi',
+'mycontris'           => 'il-kontribuzzjonijiet tiegħi',
 'contribsub2'         => 'Għal $1 ($2)',
 'nocontribs'          => 'L-Ebda modifiki li jisodisfa l-kriterji tat-tfittxija.', # Optional parameter: $1 is the user name
-'uctop'               => '(l-aħħar għal paġna)',
+'uctop'               => '(l-aħħar fil-paġna)',
 'month'               => 'Mix-xahar (u qabel):',
 'year'                => 'Mis-sena (u qabel):',
 
 'sp-contributions-newbies'       => 'Uri biss il-kontribuzzjonijiet tal-utenti l-ġodda',
 'sp-contributions-newbies-sub'   => 'Għall-utenti l-ġodda',
-'sp-contributions-newbies-title' => 'Kontribuzzjonijiet tal-utent għal kontijiet ġodda',
-'sp-contributions-blocklog'      => 'Blokki',
+'sp-contributions-newbies-title' => "Kontribuzzjonijiet ta' utenti ġodda",
+'sp-contributions-blocklog'      => 'blokki',
 'sp-contributions-search'        => 'Fittex għal kontribuzzjonijiet',
-'sp-contributions-username'      => 'Indirizz IP jew isem l-utent:',
+'sp-contributions-username'      => 'Indirizz IP jew isem tal-utent:',
 'sp-contributions-submit'        => 'Fittex',
 
 # What links here
 'whatlinkshere'            => "Li jwasslu 'l hawn",
 'whatlinkshere-title'      => 'Paġni li jippuntaw lejn $1',
 'whatlinkshere-page'       => 'Paġna:',
-'linkshere'                => "Il-Paġni segwenti għandhom links għal '''[[:$1]]''':",
-'nolinkshere'              => "L-Ebda paġna għanda link għal '''[[:$1]]'''.",
+'linkshere'                => "Il-paġni segwenti jorbtu lejn '''[[:$1]]''':",
+'nolinkshere'              => "L-ebda paġna ma twassal għal '''[[:$1]]'''.",
 'nolinkshere-ns'           => "L-Ebda paġni li jippontaw għal '''[[:$1]]''' fin-namespace magħżula.",
 'isredirect'               => 'Paġna ta Rindirizz',
 'istemplate'               => 'inklużjoni',
-'isimage'                  => 'link tas-stampa',
+'isimage'                  => 'ħolqa tal-istampa',
 'whatlinkshere-prev'       => '{{PLURAL:$1|preċedent|$1 preċedenti}}',
 'whatlinkshere-next'       => '{{PLURAL:$1|segwent|$1 segwenti}}',
 'whatlinkshere-links'      => '← links',
@@ -2038,13 +2082,13 @@ $1',
 'whatlinkshere-filters'    => 'Filtri',
 
 # Block/unblock
-'blockip'                         => 'Ibblokkja l-utent',
-'blockip-legend'                  => 'Ibblokkja l-utent',
+'blockip'                         => 'Imblokka lil utent',
+'blockip-legend'                  => "Imblokka 'l-utent",
 'blockiptext'                     => "Uża l-formola t'hawn taħt sabiex biex tibblokkja l-aċċess tal-kitba lil IP speċifiku jew utent.
 Il-blokk irid ikun użat biss sabiex jitnaqqas iċ-ċans ta' vandaliżmu, u għandu josservja b'mod strett il-[[{{MediaWiki:Policy-url}}|politika ta' {{SITENAME}}]]. 
 Indika r-raġuni speċifika għalfejn tixtieq tipproċedi bil-blokk (per eżempju, billi turi l-paġni partikolari li ġew ivvandalizzati).",
 'ipaddress'                       => 'Indirizz tal-IP:',
-'ipadressorusername'              => 'Indirizz tal-IP jew isem l-utent:',
+'ipadressorusername'              => 'Indirizz tal-IP jew isem tal-utent:',
 'ipbexpiry'                       => 'Skadenza tal-imblokk:',
 'ipbreason'                       => 'Raġuni:',
 'ipbreasonotherlist'              => 'Raġuni oħra',
@@ -2056,58 +2100,64 @@ Indika r-raġuni speċifika għalfejn tixtieq tipproċedi bil-blokk (per eżempj
 ** Komportament intimidanti jew molestiku
 ** Abbuż minn aktar minn kont wieħed
 ** isem ta' utent mhux aċċettabli",
-'ipbanononly'                     => 'Ibblokkja l-utenti anonimi biss',
+'ipbanononly'                     => 'Imblokka biss l-utenti anonimi',
 'ipbcreateaccount'                => "Impedixxi ħolqien ta' kontijiet oħrajn",
 'ipbemailban'                     => 'Impedixxi utenti milli jkunu jistgħu jibgħatu posta elettronika',
 'ipbenableautoblock'              => 'Awtomatikament blokka l-aħħar indirizz tal-IP użat minn dan l-utent, u IP suċċessivi li jipprovaw jagħmlu modifiki',
-'ipbsubmit'                       => 'Ibblokja dan l-utent',
+'ipbsubmit'                       => 'Imblokk lil dan l-utent',
 'ipbother'                        => 'Ħin ieħor:',
 'ipboptions'                      => 'sagħtejn:2 hours,ġurnata 1:1 day,3 ġranet:3 days,ġimgħa 1:1 week,ġimgħatejn:2 weeks,xahar 1:1 month,3 xhur:3 months,6 xhur:6 months,sena 1:1 year,infinita:infinite', # display1:time1,display2:time2,...
 'ipbotheroption'                  => 'ieħor',
-'ipbotherreason'                  => 'Raġuni oħrajn:',
+'ipbotherreason'                  => 'Raġunijiet oħra/addizzjonali:',
 'ipbhidename'                     => 'Aħbi l-isem tal-utent mill-modifiki u mill-elenki.',
 'ipbwatchuser'                    => "Osserva l-paġni u d-diskussjonijiet ta' dan l-utent",
+'ipballowusertalk'                => "Ħalli lil dan l-utent jimmodifika l-paġna ta' diskussjoni personali waqt il-blokk",
 'badipaddress'                    => "Indirizz ta' IP invalidu",
 'blockipsuccesssub'               => 'Il-blokk irnexxa',
-'blockipsuccesstext'              => "[[Special:Contributions/$1|$1]] ġie blokkat.<br />
-Ara l-[[Special:IPBlockList|lista tal-blokki ta' l-IP]] biex tara l-blokki attivi.",
-'ipb-edit-dropdown'               => 'Modifika r-raġuni tal-blokkar',
+'blockipsuccesstext'              => 'L-utent [[Special:Contributions/$1|$1]] ġie imblukkat.<br />
+Ara l-[[Special:IPBlockList|lista tal-IP imblukkati]] biex tara l-blokki attivi.',
+'ipb-edit-dropdown'               => 'Immodifika r-raġunijiet tal-imblukkar',
 'ipb-unblock-addr'                => 'Żblokkja $1',
-'ipb-unblock'                     => 'Żblokkja isem l-utent jew l-indirizz tal-IP',
+'ipb-unblock'                     => 'Żblokka isem tal-utent jew indirizz IP',
 'ipb-blocklist-addr'              => 'Uri l-blokki attivi għal $1',
-'ipb-blocklist'                   => 'Uri blokki attivi',
+'ipb-blocklist'                   => 'Uri l-blokki eżistenti',
+'ipb-blocklist-contribs'          => "Kontribuzzjonijiet ta' $1",
 'unblockip'                       => 'Żblokkja l-utent',
-'unblockiptext'                   => "Uża l-formula t'hawn taħt sabiex tirkupra aċċess tal-kitba 'l utent jew indirizz tal-IP blokkat.",
+'unblockiptext'                   => "Uża l-formola t'hawn taħt sabiex tirkupra l-aċċess tal-ktiba 'l utent jew indirizz tal-IP imblukkat.",
 'ipusubmit'                       => 'Żblokkja dan l-indirizz',
 'unblocked'                       => 'L-utent [[User:$1|$1]] ġie żblokkjat',
 'unblocked-id'                    => 'Il-blokk $1 tneħħa',
 'ipblocklist'                     => 'Lista tal-utenti u indirizzi IP imblukkati',
 'ipblocklist-legend'              => 'Fittex utent ibblokkjat',
 'ipblocklist-username'            => 'Isem tal-utent u indirizz IP:',
+'ipblocklist-sh-userblocks'       => '$1 l-blokki tal-utenti reġistrati',
+'ipblocklist-sh-tempblocks'       => '$1 l-blokki temporanji',
+'ipblocklist-sh-addressblocks'    => '$1 l-blokki waħdanija tal-IP',
 'ipblocklist-submit'              => 'Fittex',
-'blocklistline'                   => '$1, $2 ibblokkja lil $3 (sa $4)',
+'blocklistline'                   => '$1, $2 imblokka lil $3 (sa $4)',
 'infiniteblock'                   => 'infinit',
 'expiringblock'                   => 'sa $1',
 'anononlyblock'                   => 'anonimu biss',
 'noautoblockblock'                => 'bla blokk awtomatiku',
-'createaccountblock'              => 'ħolqien tal-kont blokkat',
-'emailblock'                      => 'posta elettronika blokkata',
+'createaccountblock'              => 'ħolqien tal-kont imblukkat',
+'emailblock'                      => 'posta elettronika imblukkata',
 'ipblocklist-empty'               => 'Il-Lista tal-blokki hija vojta.',
-'ipblocklist-no-results'          => 'L-Indirizz tal-IP jew isem l-utent rikjestr, mhux ibblokkjat.',
-'blocklink'                       => 'blokkja',
-'unblocklink'                     => 'żblokkja',
+'ipblocklist-no-results'          => 'L-indirizz IP jew isem tal-utent rikjest mhuwiex imblukkat.',
+'blocklink'                       => 'imblokka',
+'unblocklink'                     => 'żblokka',
 'change-blocklink'                => 'biddel il-blokk',
 'contribslink'                    => 'kontributi',
 'autoblocker'                     => 'Blokkat awtomatikament minħabba li l-indirizz tal-IP ġie użat mill-utent "[[User:$1|$1]]". Ir-Raġuni li ġiet mogħtija għall-imblokk ta\' $1 kienet: "$2":',
 'blocklogpage'                    => 'Blokki',
-'blocklogentry'                   => 'ibblokkja lil "[[$1]]" għal $2 $3',
+'blocklogentry'                   => 'imblokka lil "[[$1]]" għal perjodu ta\' $2 $3',
 'blocklogtext'                    => "Dan huwa log tal-azzjonijiet tal-blokkar u sblokkar ta' utent. Indirizzi tal-IP blokkati awtomatikament m'humiex fil-lista. Ara l-[[Special:IPBlockList|lista tal-IP blokkati]] għal lista tal-blokki attivi bħalissa.",
 'unblocklogentry'                 => 'żblokkjajt $1',
 'block-log-flags-anononly'        => 'utenti anonimi biss',
-'block-log-flags-nocreate'        => 'ħolqien tal-kont blokkat',
+'block-log-flags-nocreate'        => 'ħolqien tal-kont imblukkat',
 'block-log-flags-noautoblock'     => 'blokkar awtomatiku disattivat',
-'block-log-flags-noemail'         => 'posta elettronika blokkata',
+'block-log-flags-noemail'         => 'posta elettronika imblukkata',
 'block-log-flags-angry-autoblock' => 'blokkar awtomatiku avvanzat attivat',
+'block-log-flags-hiddenname'      => 'l-isem tal-utent huwa moħbi',
 'range_block_disabled'            => "Il-Possibilitá li timblokka intervali ta' indirizzi tal-IP mhux attiva bħalissa.",
 'ipb_expiry_invalid'              => "Il-ħin ta' skadenza huwa invalidu.",
 'ipb_expiry_temp'                 => "Blokkijiet ta' ismijiet ta' l-utent moħbija rridu jkunu permanenti.",
@@ -2117,7 +2167,7 @@ L-utent $1 hu diġà imblukkat. Trid tbiddel l-impostazzjonijet?',
 'ipb_cant_unblock'                => 'Problema: Impossibli ssib il-blokk bl-ID $1. L-Imblokk setgħa jkun ġa sblokkat.',
 'ipb_blocked_as_range'            => "Problema: L-Indirizz tal-IP $1 ma jistax jiġi blokkat waħdu u ma jistax jiġi sblokkat. L-Imblokk huwa attiv però f'livell ta' interval $2, li jista' jkun sblokkat.",
 'ip_range_invalid'                => "Interval ta' indirizzi ta' IP mhux validi.",
-'blockme'                         => 'Ibblokkjani',
+'blockme'                         => 'Imblukkani',
 'proxyblocker'                    => "Blokki ta' proxy miftuħa",
 'proxyblocker-disabled'           => 'Din il-funzjoni mhijiex attivata.',
 'proxyblockreason'                => "L-Indirizz tal-IP tiegħek ġie bblokkjat peress li huwa proxy miftuħ. 
@@ -2125,6 +2175,7 @@ Jekk jogħġbok, ikkuntattja lill-provdituri tas-servizz tal-internet jew lis-su
 'proxyblocksuccess'               => 'Blokkjat.',
 'sorbsreason'                     => "L-Indirizz tal-IP tiegħek huwa mniżżel bħala proxy miftuħ fil-DNSBL ta' {{SITENAME}}.",
 'sorbs_create_account_reason'     => 'Mhux possibli toħloq aċċessi ġodda minn dan l-indirizz tal-IP minħabba li huwa mniżżel bħala proxy miftuħ fil-DNSBL użat minn {{SITENAME}}.',
+'cant-block-while-blocked'        => 'Ma tistax timblokka lil utenti oħra waqt li inti mblukkat.',
 
 # Developer tools
 'lockdb'              => 'Agħlaq id-database',
@@ -2171,7 +2222,7 @@ F'dawn il-każi, inti trid iċaqlaq jew tagħqad il-paġna manwalment jekk dan h
 'move-watch'                   => 'Segwi din il-paġna',
 'movepagebtn'                  => 'Ċaqlaq il-paġna',
 'pagemovedsub'                 => 'Ċaqlieq irnexxa',
-'movepage-moved'               => '<big>\'\'\'"$1" ġie mċaqlaq għal "$2"\'\'\'</big>', # The two titles are passed in plain text as $3 and $4 to allow additional goodies in the message.
+'movepage-moved'               => '\'\'\'"$1" ġie mċaqlaq għal "$2"\'\'\'', # The two titles are passed in plain text as $3 and $4 to allow additional goodies in the message.
 'articleexists'                => "Diġà teżisti paġna b'dak l-isem, jew inkella l-isem li għażilt mhux validu.
 Jekk jogħġbok, agħżel isem ieħor.",
 'cantmove-titleprotected'      => 'Ma tistax iċċaqlaq paġna hemmhekk, minħabba li t-titlu l-ġdid ġie protett milli jiġi maħluq.',
@@ -2190,6 +2241,7 @@ Jekk jogħġbok, waħħad iż-żewġ paġni manwalment.'''",
 'movelogpage'                  => 'Ċaqlieq',
 'movelogpagetext'              => "Hawn taħt jinsab lista ta' paġni mċaqilqa.",
 'movesubpage'                  => '{{PLURAL:$1|Sottopaġna|Sottopaġna}}',
+'movenosubpage'                => "Din il-paġna m'għandha l-ebda sottopaġna.",
 'movereason'                   => 'Raġuni:',
 'revertmove'                   => 'irkupra',
 'delete_and_move'              => 'Ħassar u mexxi',
@@ -2212,14 +2264,14 @@ ma tistax iċaqlaq paġna fuqha nnifsa.',
 'move-leave-redirect'          => 'Oħloq riindirizz wara t-tmexxija',
 
 # Export
-'export'            => 'Esporta l-paġni',
-'exporttext'        => "Inti tista' tesporta test jew kronoloġija tal-modifika ta' paġna partikulari jew gozz paġni fil-format XML.
-Dan jista' jiġi importat f'wiki ieħor bl-użu ta' MedjaWiki bl-użu ta' [[Special:Import|importa paġna]].
+'export'            => 'Esporta paġni',
+'exporttext'        => "Inti tista' tesporta test jew kronoloġija tal-modifiki ta' paġna partikulari jew grupp ta' paġni fil-format XML.
+Dan jista' jiġi importat f'wiki oħra bl-użu ta' MediaWiki permezz tal-[[Special:Import|paġna ta' importazzjoni]].
 
-Biex tesporta paġni, daħħal titli fil-kaxxa tat-test hawn taħt, titlu għal kull linja, u agħżel jekk ma trid il-verżjoni kurrrenti wkoll kif ukoll mal-verżonijiet antiki, bil-linji tal-kronoloġija tal-paġna, jew il-verżjoni kurrenti biss bl-informazzjoni dwar l-aħħar modifika.
+Biex tesporta paġni, daħħal it-titli fil-kaxxa tat-test hawn taħt, titlu f'kull linja, u agħżel jekk tridx il-verżjoni kurrrenti kif ukoll il-verżonijiet qodma kollha, bil-linji tal-kronoloġija tal-paġna, jew il-verżjoni kurrenti biss bl-informazzjoni dwar l-aħħar modifika.
 
-Fl-Aħħar każ inti tista' tuża link, e.ż.
-[[{{#Special:Export}}/{{MediaWiki:Mainpage}}]] biex tesporta \"[[{{MediaWiki:Mainpage}}]]\".",
+Fl-aħħar każ inti tista' tuża ħolqa, per eżempju
+[[{{#Special:Export}}/{{MediaWiki:Mainpage}}]] sabiex tesporta \"[[{{MediaWiki:Mainpage}}]]\".",
 'exportcuronly'     => 'Inkludi biss reviżjonijiet kurrenti, mhux kronoloġiji sħaħ',
 'exportnohistory'   => "----
 '''Nota:''' L-Esportazzjoni tal-kronoloġija kollha tal-paġni min-naħa waħda għall-oħra din l-''interface'' ġiet disattivata għar-raġunijiet marbutin tal-għemil.",
@@ -2228,7 +2280,7 @@ Fl-Aħħar każ inti tista' tuża link, e.ż.
 'export-addcat'     => 'Żied',
 'export-addnstext'  => 'Żid paġni mill-ispazju tal-isem:',
 'export-addns'      => 'Żid',
-'export-download'   => 'Salva l-fajl',
+'export-download'   => 'Salva bħala fajl',
 'export-templates'  => 'Inkludi templates',
 
 # Namespace 8 related
@@ -2247,7 +2299,7 @@ Fl-Aħħar każ inti tista' tuża link, e.ż.
 'thumbnail_error'          => "Problema fil-ħolqien ta' ''thumbnail'': $1",
 'djvu_page_error'          => 'Numru tal-paġna DjVu bla klassifika',
 'djvu_no_xml'              => 'Impossibli ġġib il-XML għal fajl DjVu',
-'thumbnail_invalid_params' => 'Parametri tal-previżjoni invalidi',
+'thumbnail_invalid_params' => 'Parametri invalidi għall-minjatura',
 'thumbnail_dest_directory' => 'Impossibli toħloq id-direttorju tad-destinazzjoni',
 
 # Special:Import
@@ -2274,7 +2326,7 @@ Kull azzjonijiet ta' importazzjoni tal-transwiki jiġu reġistrati fil-[[Special
 'importnotext'               => 'Test vojt jew nieqes',
 'importsuccess'              => 'L-Importazzjoni rnexxiet!',
 'importhistoryconflict'      => "Il-Kronoloġija fija verżjonijiet f'kunflitt (dan il-paġna setgħet tiġi ġiet importata qabel)",
-'importnosources'            => "Mhux definit sors ta' import transwiki; l-importazzjoni diretta tal-kronoloġija mhux attivata.",
+'importnosources'            => "Ma ġie definit ebda sors ta' importazzjoni transwiki; l-importazzjoni diretta tal-kronoloġija mhix attivata.",
 'importnofile'               => "L-Ebda fajl tal-importazzjoni itella'.",
 'importuploaderrorsize'      => 'Il-Fajl ma itellax. Il-Fajl huwa akbar mid-daqs massimu permessa.',
 'importuploaderrorpartial'   => "Upload tal-fajl għall-importazzjoni ma rnexxiex. Il-Fajl itella' parzjalment.",
@@ -2299,14 +2351,14 @@ Kull azzjonijiet ta' importazzjoni tal-transwiki jiġu reġistrati fil-[[Special
 'tooltip-pt-anonuserpage'         => "Il-Paġna tal-utent ta' dan l-indirizz tal-IP",
 'tooltip-pt-mytalk'               => "Il-paġna ta' diskussjoni tiegħek",
 'tooltip-pt-anontalk'             => 'Diskussjoni dwar il-modifiki magħmula minn dan l-indirizz tal-IP',
-'tooltip-pt-preferences'          => 'Il-Preferenzi tiegħi',
+'tooltip-pt-preferences'          => 'Il-preferenzi tiegħi',
 'tooltip-pt-watchlist'            => 'Il-Lista tal-paġni li qiegħed tosserva',
 'tooltip-pt-mycontris'            => 'Lista tal-kontribuzzjonijiet tiegħek',
 'tooltip-pt-login'                => 'Tirreġistra ruħek huwa avviżat però mhux obbligatorju.',
 'tooltip-pt-anonlogin'            => 'Tirreġistra ruħek huwa avviżat, anki jekk mhux obbligatorju.',
 'tooltip-pt-logout'               => 'Oħroġ (logout)',
 'tooltip-ca-talk'                 => 'Diskussjoni dwar il-kontenut tal-paġna',
-'tooltip-ca-edit'                 => "Tista' tagħmel modifiki fuq din il-paġna. Jekk jogħġbok uża l-buttuna tal-previżjoni qabel ma tagħmel il-modifiki.",
+'tooltip-ca-edit'                 => "Tista' timmodifika din il-paġna. Jekk jogħġbok uża l-buttuna tad-dehra proviżorja qabel ma ssalva l-modifiki.",
 'tooltip-ca-addsection'           => 'Ibda sezzjoni ġdida',
 'tooltip-ca-viewsource'           => "Din il-paġna hija protetta. Tista' tara l-fonti tagħha.",
 'tooltip-ca-history'              => "Verżjonijiet preċedenti ta' din il-paġna",
@@ -2323,7 +2375,7 @@ Kull azzjonijiet ta' importazzjoni tal-transwiki jiġu reġistrati fil-[[Special
 'tooltip-n-mainpage'              => 'Żur il-Paġna Prinċipali',
 'tooltip-n-portal'                => "Dwar il-proġett, x'tista' tagħmel, fejn tista' ssib l-affarijiet",
 'tooltip-n-currentevents'         => 'Sib aktar informazzjoni dwar il-ġrajjiet kurrenti',
-'tooltip-n-recentchanges'         => 'Il-Lista tal-modifiki riċenti fil-wiki.',
+'tooltip-n-recentchanges'         => 'Il-lista tat-tibdil riċenti fil-wiki',
 'tooltip-n-randompage'            => 'Uri paġna kwalunkwe',
 'tooltip-n-help'                  => 'Il-Post fejn issir taf.',
 'tooltip-t-whatlinkshere'         => 'Lista tal-paġni tal-wiki kollha li jwasslu hawn',
@@ -2348,7 +2400,7 @@ Kull azzjonijiet ta' importazzjoni tal-transwiki jiġu reġistrati fil-[[Special
 'tooltip-ca-nstab-category'       => 'Uri l-paġna kategorika',
 'tooltip-minoredit'               => 'Immarka din bħala modifika minuri',
 'tooltip-save'                    => 'Salva l-modifiki',
-'tooltip-preview'                 => 'Oħloq previżjoni tal-modifiki, jekk jogħġbok uża dan qabel ma twettaq dawn il-modifiki!',
+'tooltip-preview'                 => 'Qabel ma ssalva l-modifiki tiegħek, ara l-ewwel dehra proviżorja tat-tibdil li tkun wettaqt!',
 'tooltip-diff'                    => 'Uri liem modifiki għamilt fit-test.',
 'tooltip-compareselectedversions' => "Ara d-differenzi bejn iż-żewġ verżjonijiet magħżula ta' din il-paġna.",
 'tooltip-watch'                   => "Żid din il-paġna mal-lista ta' osservazzjoni tiegħek",
@@ -2360,13 +2412,13 @@ Kull azzjonijiet ta' importazzjoni tal-transwiki jiġu reġistrati fil-[[Special
 # Stylesheets
 'common.css'      => '/* CSS li tpoġġa hawnhekk irrid jiġi applikat fl-iskins kollha */',
 'standard.css'    => '/* CSS li tpoġġa hawnhekk se jaffetwa l-utenti li jagħmlu użu mill-iskin Standard */',
-'nostalgia.css'   => "/* CSS li tpoġġa hawnhekk se jaffetwa l-utenti li jagħmlu użu mill-iskin ''Nostalġija'' */",
-'cologneblue.css' => "/* CSS li tpoġġa hawnhekk se jaffetwa dawk l-utenti li jagħmlu użu mill-iskin ''Ikħal'' */",
+'nostalgia.css'   => '/* CSS li tpoġġa hawnhekk se jaffetwa l-utenti li jagħmlu użu mill-aspett grafiku Nostalgia */',
+'cologneblue.css' => '/* CSS li tpoġġa hawnhekk se jaffetwa dawk l-utenti li jagħmlu użu mill-aspett grafiku Cologne Blue */',
 'monobook.css'    => "/* CSS li tpoġġa hawnhekk se jaffetwa dawk l-utenti li jagħmlu użu mill-iskin ''Monobook'' */",
 'myskin.css'      => "/* CSS li tpoġġa hawnhekk se jaffetwa dawk l-utenti li jagħmlu użu mill-iskin ''L-Iskin tiegħi'' */",
-'chick.css'       => "/* CSS li tpoġġa hawnhekk se jaffetwa dawk l-utenti li jagħmlu użu mill-iskin ''Fellus'' */",
-'simple.css'      => "/* CSS li tpoġġa hawnhekk se jaffetwa dawk l-utenti li jagħmlu użu mill-iskin ''Sempliċi'' */",
-'modern.css'      => "/* CSS li tpoġġa hawnhekk se jaffetwa dawk l-utenti li jagħmlu użu mill-iskin ''Moderna'' */",
+'chick.css'       => '/* CSS li tpoġġa hawnhekk se jaffetwa dawk l-utenti li jagħmlu użu mill-aspett grafiku Ckick */',
+'simple.css'      => '/* CSS li tpoġġa hawnhekk se jaffetwa dawk l-utenti li jagħmlu użu mill-aspett grafiku Simple */',
+'modern.css'      => '/* CSS li tpoġġa hawnhekk se jaffetwa dawk l-utenti li jagħmlu użu mill-aspett grafiku Modern */',
 
 # Scripts
 'common.js'      => "/* Kull ''JavaScript'' hawnhekk jiġi mniżżel għal kull utent f'kull tniżżil ta' paġna. */",
@@ -2411,26 +2463,26 @@ Kull azzjonijiet ta' importazzjoni tal-transwiki jiġu reġistrati fil-[[Special
 'numtalkauthors' => "Numru ta' awturi distinti (paġna tad-diskussjoni): $1",
 
 # Skin names
-'skinname-standard'    => 'Klassika',
-'skinname-nostalgia'   => 'Nostalġija',
-'skinname-cologneblue' => 'Ikħal',
+'skinname-standard'    => 'Classic',
+'skinname-nostalgia'   => 'Nostalgia',
+'skinname-cologneblue' => 'Cologne Blue',
 'skinname-monobook'    => 'Monobook',
-'skinname-myskin'      => 'L-Iskin tiegħi',
-'skinname-chick'       => 'Fellus',
-'skinname-simple'      => 'Sempliċi',
-'skinname-modern'      => 'Moderna',
+'skinname-myskin'      => 'MySkin',
+'skinname-chick'       => 'Chick',
+'skinname-simple'      => 'Simple',
+'skinname-modern'      => 'Modern',
 
 # Math options
 'mw_math_png'    => "Uri dejjem f'PNG",
 'mw_math_simple' => 'HTML jekk sempliċi ħafna, inkella PNG',
 'mw_math_html'   => 'HTML jekk possibli inkella PNG',
 'mw_math_source' => "Ħallija bħala TeX (għal browsers ta' test)",
-'mw_math_modern' => 'Rakkomandat għal browsers moderni',
+'mw_math_modern' => 'Format rakkomandat għall-browsers moderni',
 'mw_math_mathml' => 'MathML jekk possibli (esperimentali)',
 
 # Patrolling
 'markaspatrolleddiff'                 => 'Marka l-modifiki bħalha verifikati',
-'markaspatrolledtext'                 => 'Marka din il-paġna bħalha verifikata',
+'markaspatrolledtext'                 => 'Immarka din il-paġna bħala verifikata',
 'markedaspatrolled'                   => 'Markat bħalha verifikat',
 'markedaspatrolledtext'               => 'Ir-Reviżjoni magħżula hija markata bħalha verifikata.',
 'rcpatroldisabled'                    => 'Modifikar riċenti verifikar disattivat',
@@ -2441,9 +2493,9 @@ Kull azzjonijiet ta' importazzjoni tal-transwiki jiġu reġistrati fil-[[Special
 
 # Patrol log
 'patrol-log-page' => 'Modifiki verifikati',
-'patrol-log-line' => 'markajt $1 tal-paġna $2 bħala verifikat $3',
+'patrol-log-line' => 'immarka r-$1 tal-paġna $2 bħala verifikata $3',
 'patrol-log-auto' => '(verifika awtomatika)',
-'patrol-log-diff' => 'modifika $1',
+'patrol-log-diff' => 'reviżjoni $1',
 
 # Image deletion
 'deletedrevision'                 => 'Reviżjoni preċedenti, mħassra: $1',
@@ -2464,9 +2516,9 @@ $1',
 'visual-comparison' => 'Paragun viżwali',
 
 # Media information
-'mediawarning'         => "'''Twissija''': Dan il-fajl jista' jkun fih kodiċi malinja, jekk tagħżel li tiftħu jista' jagħmel ħsara fis-sistema informatika tiegħek.<hr />",
-'imagemaxsize'         => "Daqs massimu tal-istampa:<br />''(għall-paġni ta' deskrizzjoni tal-fajl)''",
-'thumbsize'            => "Daqs ta' ''thumbnail'':",
+'mediawarning'         => "'''Twissija''': Dan il-fajl jista' jinkludi ġo fih kodiċi malizzjuż. L-eżekuzzjoni tiegħu jista' jagħmel ħsara s-sistema informatika tiegħek.",
+'imagemaxsize'         => 'Daqs massimu tas-stampi fuq il-paġni relativi tad-diskussjoni:',
+'thumbsize'            => 'Daqs tal-minjatura:',
 'widthheightpage'      => '$1×$2, $3 {{PLURAL:$3|paġna|paġni}}',
 'file-info'            => "(Dimensjoni: $1, tip ta' MIME: $2)",
 'file-info-size'       => "($1 × $2 pixel, dimensjoni: $3, tip ta' MIME: $4)",
@@ -2782,10 +2834,10 @@ Minħabba veduta predefinita ,l-oħrajn se jiġu moħbija.
 # E-mail address confirmation
 'confirmemail'             => 'Ikkonferma l-indirizz tal-posta elettronika',
 'confirmemail_noemail'     => "M'għandekx indirizz tal-posta elettronika validu fil-[[Special:Preferences|preferenzi tal-utent]].",
-'confirmemail_text'        => "{{SITENAME}} għandu bżonn li int tiverifika l-indirizz tal-posta elettronika tiegħek qabel ma tkun tista' tagħmel użu mill-faċċilitajiet tal-posta elettronika.
-Attiva l-buttuna t'hawn taħt sabiex tibgħat posta ta' konfermazzjoni fl-indirizz tiegħek.
-Il-posta se tinkludi link li tkun fija kodiċi;
-niżżel il-link fil-browser tiegħek sabiex tinkonferma l-indirizz tal-posta elettronika tiegħek huwa validu.",
+'confirmemail_text'        => "{{SITENAME}} għandha bżonn li inti tivverifika l-indirizz tal-posta elettronika tiegħek qabel ma tkun tista' tagħmel użu mill-faċilitajiet tal-posta elettronika.
+Attiva l-buttuna t'hawn taħt sabiex tibgħat posta ta' konferma fl-indirizz tiegħek.
+Il-posta se tinkludi ħolqa li jkun fiha kodiċi;
+iftaħ il-ħolqa fil-browżer tiegħek sabiex tikkonferma l-indirizz tal-posta elettronika tiegħek huwa validu.",
 'confirmemail_pending'     => "Kodiċi ta' konfermazzjoni ġie postjat diġa;
 jekk int riċentament ħloqt kont, l-aħjar li tistenna ftit minuti biex tasalek qabel ma tagħmel rikjesta għal kodiċi ġdida.",
 'confirmemail_send'        => "Postja kodiċi ta' konfermazzjoni.",
@@ -2796,10 +2848,9 @@ jekk int riċentament ħloqt kont, l-aħjar li tistenna ftit minuti biex tasalek
 Messaġġ tal-problema tal-ippostjar: $1",
 'confirmemail_invalid'     => "Kodiċi ta' konfermazzjoni invalida.
 Il-kodiċi setgħat tkun skadiet.",
-'confirmemail_needlogin'   => 'Huwa neċessarju $1 biex tinkonferma l-indirizz propju tal-posta elettronika.',
-'confirmemail_success'     => 'L-Indirizz tal-posta elettronika tiegħek ġie konfermat.
-Issa inti għandhek l-aċċess għal wiki.',
-'confirmemail_loggedin'    => 'L-Indirizz tal-posta elettronika tiegħek issa hija konfermata.',
+'confirmemail_needlogin'   => 'Huwa neċessarju $1 biex tikkonferma l-indirizz propju tal-posta elettronika.',
+'confirmemail_success'     => "L-indirizz tal-posta elettronika tiegħek ġie konfermat. Issa tista' [[Special:UserLogin|tidħol fil-kont tiegħek]] u tgawdi bis-sħiħ din il-wiki.",
+'confirmemail_loggedin'    => 'L-indirizz tal-posta elettronika tiegħek ġie ikkonfermat.',
 'confirmemail_error'       => 'Problema fis-salvataġġ tal-konferma.',
 'confirmemail_subject'     => '{{SITENAME}}: rikjesta tal-konferma tal-indirizz',
 'confirmemail_body'        => 'Xi ħadd, probabilment int, mill-indirizz tal-IP $1,
@@ -2848,7 +2899,7 @@ Jekk jogħġbok konferma jekk vera trid terġa' toħloq din il-paġna.",
 # Multipage image navigation
 'imgmultipageprev' => "← il-paġna ta' qabel",
 'imgmultipagenext' => 'il-paġna li jmiss →',
-'imgmultigo'       => 'Mur',
+'imgmultigo'       => 'Mur!',
 'imgmultigoto'     => 'Mur għal paġna $1',
 
 # Table pager
@@ -2882,25 +2933,25 @@ Uża previżjoni standard.',
 'livepreview-error'   => 'Impossibli toħloq konnessjoni: $1 "$2". Uża previżjoni standard.',
 
 # Friendlier slave lag warnings
-'lag-warn-normal' => 'It-tibdil li hu aktar riċenti minn $1 sekonda, jistgħu ma jiġux inklużi fil-lista.',
-'lag-warn-high'   => 'Minħabba li l-aġġornament tas-server huwa eċċessivament bil-mod, il-modifiki fl-aħħar $1 sekonda ma jistgħux jiġu nklużi fil-lista.',
+'lag-warn-normal' => "It-tibdil li hu aktar riċenti minn $1 {{PLURAL:$1|sekonda|sekonda}}, jista' li ma jiġix inkluż fil-lista.",
+'lag-warn-high'   => 'Minħabba li l-aġġornament tas-server huwa eċċessivament bil-mod, il-modifiki fl-aħħar $1 {{PLURAL:$1|sekonda|sekonda}} ma jistgħux jiġu nklużi fil-lista.',
 
 # Watchlist editor
 'watchlistedit-numitems'       => "Il-lista ta' osservazzjoni tiegħek fiha {{PLURAL:$1|titlu|$1 titli}}, minbarra l-paġni ta' diskussjoni.",
 'watchlistedit-noitems'        => "Il-lista ta' osservazzjoni tiegħek hija vojta.",
 'watchlistedit-normal-title'   => 'Modifika l-lista tal-osservazzjonijiet speċjali',
 'watchlistedit-normal-legend'  => 'Neħħi titli mil-lista tal-osservazzjonijiet speċjali',
-'watchlistedit-normal-explain' => "Titli tal-lista tal-osservazzjonijiet speċjali tiegħek huwa mogħrija hija taħt.
-Biex tneħħi titlu, għażel il-kaxxa ħdejja, u agħfas neħħi titli.
-Int tista' ukoll tagħmel fil-[[Special:Watchlist/raw|lista ta' format testwali]].",
-'watchlistedit-normal-submit'  => 'Ħassar it-titli',
+'watchlistedit-normal-explain' => "Titli fil-lista ta' osservazzjoni tiegħek huma murija hawn taħt.
+Biex tneħħi titlu, agħżel il-kaxxa ħdejn l-istess titlu, u agħfas \"{{int:Watchlistedit-normal-submit}}\".
+Int tista' wkoll [[Special:Watchlist/raw|timmodifika l-lista f'format testwali]].",
+'watchlistedit-normal-submit'  => 'Neħħi t-titli',
 'watchlistedit-normal-done'    => '{{PLURAL:$1|Titlu kien imħassar|$1 titli kienu mħassra}} mil-lista tal-osservazzjonijiet speċjali tiegħek:',
 'watchlistedit-raw-title'      => 'Modifiki osservazzjonijiet speċjali fil-forma testwali',
 'watchlistedit-raw-legend'     => 'Modifika osservazzjonijiet speċjali testwali',
-'watchlistedit-raw-explain'    => "Titli fil-lista tal-osservazzjonijiet speċjali huma mogħrija hawn taħt, u jistgħu jiġu modifiki billi żżidd u tneħħi mil-lista;
+'watchlistedit-raw-explain'    => "Titli fil-lista tal-osservazzjonijiet speċjali huma murija hawn taħt, u jistgħu jiġu modifikati billi żżid u tneħħi mil-lista;
 titlu f'kull linja.
-Meta tlesti, agħfas fuq 'Aġġorna lista'.
-Int tista' ukoll tuża l-[[Special:Watchlist/edit|modifikatur standard]].",
+Meta tlesti, agħfas fuq \"{{int:Watchlistedit-raw-submit}}\".
+Inti tista' wkoll tuża' l-[[Special:Watchlist/edit|editur bl-interfaċċa standard]].",
 'watchlistedit-raw-titles'     => 'Titli:',
 'watchlistedit-raw-submit'     => 'Aġġorna l-lista',
 'watchlistedit-raw-done'       => "Il-lista ta' osservazzjoni tiegħek ġiet aġġornata.",
@@ -2951,7 +3002,7 @@ Int tista' ukoll tuża l-[[Special:Watchlist/edit|modifikatur standard]].",
 # Special:FilePath
 'filepath'         => 'Post tal-fajl',
 'filepath-page'    => 'Fajl:',
-'filepath-submit'  => 'Post',
+'filepath-submit'  => 'Mur',
 'filepath-summary' => 'Din il-paġna speċjali tagħti lura l-indirizz komplet tal-posta għal fajl.
 Stampi huwa mogħrija b\'risoluzzjoni sħiħa, tipi tal-fajl oħrajn jibdew bil-program assoċjat magħhom direttament.
 
@@ -2993,7 +3044,7 @@ Daħħal l-isem tal-fajl mingħajr il-prefiss \"{{ns:file}}:\".",
 
 # Special:Tags
 'tag-filter-submit' => 'Filtru',
-'tags-edit'         => 'immodifika',
+'tags-edit'         => 'editja',
 
 # Database error messages
 'dberr-header'   => 'Din il-wiki għandha problema',

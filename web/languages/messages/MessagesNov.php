@@ -145,6 +145,7 @@ $messages = array(
 'editsection'             => 'modifika',
 'editold'                 => 'modifika',
 'restorelink'             => '{{PLURAL:$1|unu ekartati modifiko|$1 ekartati modifikos}}',
+'red-link-title'          => '$1 (pagine non exista)',
 
 # Short words for each namespace, by default used in the namespace tab in monobook
 'nstab-main'      => 'Artikle',
@@ -163,9 +164,9 @@ $messages = array(
 
 # Login and logout pages
 'logouttitle'                => 'Useren eksignato',
-'logouttext'                 => "'''Vu es nun eksignatat.'''<br />
-Vu pove kontinua usa {{SITENAME}} anonimim, o vu pove riensignata
-kom li sami o altri usere.",
+'logouttext'                 => "'''Vu es nun eksignatat.'''
+
+Vu pove kontinua usa {{SITENAME}} anonimim, o vu pove riensignata kom li sami o altri usere.",
 'loginpagetitle'             => 'Useren ensignato',
 'yourname'                   => 'Usere-nome:',
 'yourpassword'               => 'Pasa-vorde:',
@@ -176,7 +177,7 @@ kom li sami o altri usere.",
 'logout'                     => 'Eksignata',
 'userlogout'                 => 'Eksignata',
 'notloggedin'                => 'Non ensignatat',
-'nologin'                    => 'Ob vu non have registre? $1.',
+'nologin'                    => "Ob vu non have registre? '''$1'''.",
 'nologinlink'                => 'Krea usere-registre',
 'gotaccountlink'             => 'Ensignata',
 'loginerror'                 => 'Erore de ensignato',
@@ -361,7 +362,7 @@ Si vu voli plu tardim ekarta li pagine fro vun observa-liste, klikta \"Desobserv
 'dellogpage'      => 'Loge de ekartos',
 'dellogpagetext'  => 'Subu es liste del maxim resenti ekartos.',
 'deletionlog'     => 'registre de ekartos',
-'deletecomment'   => 'Resone de ekarto',
+'deletecomment'   => 'Resone:',
 
 # Rollback
 'revertpage' => 'Riverted modifikos da [[Special:Contributions/$2|$2]] ([[User talk:$2|Talk]]); restaurad lasti versione da [[User:$1|$1]]', # Additionally available: $3: revid of the revision reverted to, $4: timestamp of the revision reverted to, $5: revid of the revision reverted from, $6: timestamp of the revision reverted from

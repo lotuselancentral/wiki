@@ -264,7 +264,7 @@ $messages = array(
 'category-file-count-limited'    => '{{PLURAL:$1|A file disi|Den $1 file disi}} de ini a grupu disi.',
 'listingcontinuesabbrev'         => 'moro',
 
-'mainpagetext'      => "<big>'''MediaWiki seti kon bun.'''</big>",
+'mainpagetext'      => "'''MediaWiki seti kon bun.'''",
 'mainpagedocfooter' => 'Luku na ini a [http://meta.wikimedia.org/wiki/Help:Yepi yepibuku] fu si fa fu kebrouki a wikisoftware.
 
 == Moro yepi ==
@@ -420,9 +420,9 @@ $messages = array(
 'nosuchaction'      => 'A sani disi no man',
 'nosuchactiontext'  => 'A wiki no sabi a komanderi ini a URL',
 'nosuchspecialpage' => 'A spesrutu papira disi no de',
-'nospecialpagetext' => "<big>'''Yu aksi fu si wan spesrutu papira san no de.'''</big>
+'nospecialpagetext' => '<strong>Yu aksi fu si wan spesrutu papira san no de.</strong>
 
-Wan réy fu spesrutu papira de fu feni na [[Special:SpecialPages|{{int:specialpages}}]].",
+Wan réy fu spesrutu papira de fu feni na [[Special:SpecialPages|{{int:specialpages}}]].',
 
 # General errors
 'error'                => 'Fowtu',
@@ -455,7 +455,8 @@ Fu san ede: ''$2''.",
 
 # Login and logout pages
 'logouttitle'               => 'Kenroikiman psa gwe',
-'logouttext'                => "'''Yu psa gwe now.'''<br />
+'logouttext'                => "'''Yu psa gwe now.'''
+
 Yu kan tan kebroiki {{SITENAME}} sondro nen, noso yu kan psa kon baka leki a srefi noso wan tra kebroikiman.
 Sabi taki a kan gersi leki yu psa kon ete, te leki yu leygi a cache fu yu browser.",
 'welcomecreation'           => '== Welkom, $1! ==
@@ -474,10 +475,10 @@ No fergiti fu kenki den seti fu yu gi {{SITENAME}}.',
 'logout'                    => 'Psa gwe',
 'userlogout'                => 'Psa gwe',
 'notloggedin'               => 'No psa kon',
-'nologin'                   => 'No abi wan kebroikiman nen ete? $1.',
+'nologin'                   => "No abi wan kebroikiman nen ete? '''$1'''.",
 'nologinlink'               => 'Meki wan account',
 'createaccount'             => 'Meki wan account',
-'gotaccount'                => 'Abi wan kebroikiman nen kba? $1.',
+'gotaccount'                => "Abi wan kebroikiman nen kba? '''$1'''.",
 'gotaccountlink'            => 'Psa kon',
 'createaccountmail'         => 'via e-mail',
 'badretype'                 => 'Den tu psa wortu no de srefi.',
@@ -573,7 +574,7 @@ Bifo tra e-mail kan seni go na a account, yu musu du san skrifi ini a e-mail fu 
 'summary-preview'        => "Luku In'syatu na fesi:",
 'subject-preview'        => 'Ondroinfru/edelen fusi:',
 'blockedtitle'           => 'Masyin ben spikri',
-'blockedtext'            => "<big>'''Pasi tapu gi yu kebroikiman-nen noso IP.'''</big>
+'blockedtext'            => "'''Pasi tapu gi yu kebroikiman-nen noso IP.'''
 
 $1 tapu pasi gi yu. Disi na fu sanede ''$2''.
 
@@ -860,7 +861,7 @@ Papira ini [[Special:Watchlist|yu Tan Luku réy]] '''fatu'''.",
 'filedelete-legend'      => 'Gefre trowe',
 'filedelete-intro'       => "Yu ben '''[[Media:$1|$1]]''' trowen.",
 'filedelete-intro-old'   => "Yu ben a si fu '''[[Media:$1|$1]]''' fu [$4 $3, $2] trowen.",
-'filedelete-comment'     => 'Opotaki:',
+'filedelete-comment'     => 'Yesikrari:',
 'filedelete-submit'      => 'Trowe',
 'filedelete-success'     => "'''$1''' ben e trowe.",
 'filedelete-success-old' => '<span class="plainlinks">A si fu \'\'\'[[Media:$1|$1]]\'\'\' fu $3, $2 ben e trowen.</span>',
@@ -1021,7 +1022,7 @@ Iksi yu wan papira no langar wana si, go na a papira nanga du opo \"No si\" ini 
 'deletedtext'           => '"<nowiki>$1</nowiki>" ben e trowe. Si a $2 fu wan sibuku fu bakaseywan trowe.',
 'deletedarticle'        => 'puru "[[$1]]"',
 'dellogpage'            => 'Log buku fu puru',
-'deletecomment'         => 'Yesikrari fu trowe:',
+'deletecomment'         => 'Yesikrari:',
 'deleteotherreason'     => 'Trawan/okwan yesikrari:',
 'deletereasonotherlist' => 'Trawan yesikrari',
 
@@ -1032,7 +1033,7 @@ Iksi yu wan papira no langar wana si, go na a papira nanga du opo \"No si\" ini 
 'protectlogpage'              => 'Log buku fu den sroto',
 'prot_1movedto2'              => '[[$1]] froisi go na [[$2]]',
 'protect-legend'              => 'Gi tapu klari',
-'protectcomment'              => 'Opotaki:',
+'protectcomment'              => 'Yesikrari:',
 'protectexpiry'               => 'Lasi:',
 'protect_expiry_invalid'      => 'A lasi ben fowtu.',
 'protect_expiry_old'          => 'A lasi ben ini iksini.',

@@ -60,6 +60,7 @@ class ApiLogin extends ApiBase {
 			'wpName' => $params['name'],
 			'wpPassword' => $params['password'],
 			'wpDomain' => $params['domain'],
+			'wpLoginToken' => $params['token'],
 			'wpRemember' => ''
 		));
 
@@ -87,6 +88,18 @@ class ApiLogin extends ApiBase {
 				$result['lgtoken'] = $wgUser->getToken();
 				$result['cookieprefix'] = $wgCookiePrefix;
 				$result['sessionid'] = session_id();
+				break;
+			
+			case LoginForm::NEED_TOKEN:
+				global $wgCookiePrefix;
+				$result['result'] = 'NeedToken';
+				$result['token'] = $loginForm->getLoginToken();
+				$result['cookieprefix'] = $wgCookiePrefix;
+				$result['sessionid'] = session_id();
+				break;
+			
+			case LoginForm::WRONG_TOKEN:
+				$result['result'] = 'WrongToken';
 				break;
 
 			case LoginForm :: NO_NAME :
@@ -133,7 +146,8 @@ class ApiLogin extends ApiBase {
 		return array (
 			'name' => null,
 			'password' => null,
-			'domain' => null
+			'domain' => null,
+			'token' => null,
 		);
 	}
 
@@ -141,7 +155,8 @@ class ApiLogin extends ApiBase {
 		return array (
 			'name' => 'User Name',
 			'password' => 'Password',
-			'domain' => 'Domain (optional)'
+			'domain' => 'Domain (optional)',
+			'token' => 'Login token obtained in first request',
 		);
 	}
 
@@ -162,6 +177,6 @@ class ApiLogin extends ApiBase {
 	}
 
 	public function getVersion() {
-		return __CLASS__ . ': $Id: ApiLogin.php 48091 2009-03-06 13:49:44Z catrope $';
+		return __CLASS__ . ': $Id: ApiLogin.php 69990 2010-07-27 08:44:08Z tstarling $';
 	}
 }

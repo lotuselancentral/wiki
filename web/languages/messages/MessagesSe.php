@@ -9,6 +9,8 @@
  *
  * @author Skuolfi
  * @author Teak
+ * @author The Evil IP address
+ * @author Trondtr
  * @author לערי ריינהארט
  */
 
@@ -40,7 +42,7 @@ $messages = array(
 'tog-enotifminoredits'        => 'Sádde dieđu e-poasttain maid unna rievdadusain',
 'tog-enotifrevealaddr'        => 'Čájet e-poastačujuhusain almmuhusain, maid sádden earáide',
 'tog-shownumberswatching'     => 'Čájet galle geavaheaddji čuvvot siiddu',
-'tog-fancysig'                => 'Oktageardán vuolláidčálus liŋkahaga',
+'tog-fancysig'                => 'Oktageardán vuolláidčálus liŋkka haga',
 'tog-forceeditsummary'        => 'Fuomašuhte, jus čoahkkáigeassu ii leat čállojuvvon',
 'tog-watchlisthideown'        => 'Čiega iežas rievdadusaid',
 'tog-watchlisthidebots'       => 'Čiega bohtaid rievdadusaid',
@@ -90,11 +92,11 @@ $messages = array(
 'october-gen'   => 'golggotmánu',
 'november-gen'  => 'skábmamánu',
 'december-gen'  => 'juovlamánu',
-'jan'           => 'ođđajagimánnu',
-'feb'           => 'guovvamánnu',
-'mar'           => 'njukčamánnu',
-'apr'           => 'cuoŋománnu',
-'may'           => 'miessemánnu',
+'jan'           => 'ođđj',
+'feb'           => 'guov',
+'mar'           => 'njuk',
+'apr'           => 'cuoŋ',
+'may'           => 'mies',
 'jun'           => 'geassemánnu',
 'jul'           => 'suoidnemánnu',
 'aug'           => 'borgemánnu',
@@ -162,7 +164,7 @@ $messages = array(
 'talkpagelinktext'  => 'ságastallan',
 'specialpage'       => 'Doaibmasiidu',
 'personaltools'     => 'Persovnnalaš gaskaoamit',
-'postcomment'       => 'Kommeanta siiddu lohpii',
+'postcomment'       => 'Ođđa sekšuvdna',
 'articlepage'       => 'Čájet fástasiiddu',
 'talk'              => 'Ságastallan',
 'views'             => 'Oaidnámusat',
@@ -265,7 +267,9 @@ $messages = array(
 
 # Login and logout pages
 'logouttitle'                => 'Olggosčállin',
-'logouttext'                 => 'Leat dál čálligoahtán olggos {{GRAMMAR:elative|{{SITENAME}}}}. Sáhtat joatkit {{GRAMMAR:genitive|{{SITENAME}}}} geavaheami anonyman, dahje čálligoahtit ođđasit sisa.',
+'logouttext'                 => "'''Leat dál čálligoahtán olggos {{GRAMMAR:elative|{{SITENAME}}}}.'''
+
+Sáhtat joatkit {{GRAMMAR:genitive|{{SITENAME}}}} geavaheami anonyman, dahje čálligoahtit ođđasit sisa.",
 'welcomecreation'            => '== Bures boahtin, $1! ==
 Du geavaheaddjidovddaldat lea dál anus.
 Ále vajáldahte rievdadit {{GRAMMAR:genitive|{{SITENAME}}}} iežat ásahusaid.',
@@ -282,10 +286,10 @@ Du geavaheaddjidovddaldat lea dál anus.
 'logout'                     => 'Čálligoađe olggos',
 'userlogout'                 => 'Čálligoađe olggos',
 'notloggedin'                => 'It leat čálligoahttan sisa',
-'nologin'                    => 'Jus dus ii vel leat geavaheaddjidovddaldat, sáhtat $1 dakkára.',
+'nologin'                    => "Jus dus ii vel leat geavaheaddjidovddaldat, sáhtat '''$1''' dakkára.",
 'nologinlink'                => 'ráhkadit',
 'createaccount'              => 'Ráhkat ođđa geavaheaddjidovddaldaga',
-'gotaccount'                 => 'Jus dus lea jo geavaheaddjidovddaldat, sáhtat $1.',
+'gotaccount'                 => "Jus dus lea jo geavaheaddjidovddaldat, sáhtat '''$1'''.",
 'gotaccountlink'             => 'čálligoahtit sisa',
 'createaccountmail'          => 'e-poasttain',
 'badretype'                  => 'Suollemassánit, maid čállet, eai leat seammalaganat.',
@@ -389,7 +393,7 @@ Du geavaheaddjidovddaldat lea dál anus.
 'confirmedittitle'         => 'E-poastačujuhusa sihkarastin',
 'confirmedittext'          => 'It sáhte rievdadit siiddu ovdalgo leat sihkarastan iežat e-poastačujuhusa. Sáhtat sihkarastit [[Special:Preferences|ásahussiidduin]].',
 'nosuchsectiontitle'       => 'Diekkár oassi ii dihtto',
-'nosuchsectiontext'        => 'Isket rievdadit oasi, mii ii dihtto. Daningo oassi $1 ii dihtto, rievdadusa ii sáhte vurket.',
+'nosuchsectiontext'        => 'Isket rievdadit oasi, mii ii dihtto.',
 'loginreqtitle'            => 'Sisačállin gáibiduvvo',
 'loginreqlink'             => 'čálligoahtit sisa',
 'loginreqpagetext'         => 'Don fertet $1, ovdalgo oainnat eará siidduid.',
@@ -450,7 +454,7 @@ Du geavaheaddjidovddaldat lea dál anus.
 'rev-delundel'            => 'čájet dahje čiega',
 'revisiondelete'          => 'Sihko dahje máhcat veršuvnnaid',
 'revdelete-nooldid-title' => 'Ii veršuvdna',
-'revdelete-selected'      => "'''{{PLURAL:$2|Válljejuvvon veršuvdna|Válljejuvvon veršuvnnat}} siiddus '''$1:''''''",
+'revdelete-selected'      => "'''{{PLURAL:$2|Válljejuvvon veršuvdna|Válljejuvvon veršuvnnat}} siiddus [[:$1]]'''",
 'logdelete-selected'      => "'''{{PLURAL:$1|Válljejuvvon logmearkkastat|Válljejuvvon logmearkkastagat}}:'''",
 'revdelete-text'          => "'''Sihkojuvvon veršuvnnat oidnojit siiddu siidohistorjjás, muhto daid sisdoallu ii leat álmmolaš.'''
 
@@ -463,7 +467,7 @@ Eará bajasdoallit sáhtet lohkat čihkojuvvon sisdoalu ja máhcahit dan.",
 'revdelete-suppress'      => 'Čiega maid bajasdolliin',
 'revdelete-hide-image'    => 'Čiega fiilla sisdoalu',
 'revdelete-unsuppress'    => 'Sihko máhcahuvvon veršuvnnaid rádjehusaid',
-'revdelete-log'           => 'Logmearkkastat:',
+'revdelete-log'           => 'Sivva',
 'revdelete-submit'        => 'Daga',
 'revdelete-logentry'      => 'rievdadii siiddu [[$1]] veršuvnna oidnonásahusaid',
 'logdelete-logentry'      => 'rievdadii siiddu [[$1]] oaidninásahusaid',
@@ -567,7 +571,7 @@ $1 | $2',
 # User rights log
 'rightslog'      => 'Logga geavaheaddjirievttiin',
 'rightslogtext'  => 'Vuolábealde lea logga geavaheaddjirivttiid rievdadusain.',
-'rightslogentry' => 'Geavaheaddji [[$1]] rievttit rievdaduvvoi joavkkuin $2 joavkkuide $3',
+'rightslogentry' => 'Geavaheaddji $1 rievttit rievdaduvvoi joavkkuin $2 joavkkuide $3',
 'rightsnone'     => '(eai rievttit)',
 
 # Recent changes
@@ -695,7 +699,7 @@ $1 | $2',
 'filedelete-legend'    => 'Sihko fiilla',
 'filedelete-intro'     => "Don leat sihkomin '''[[Media:$1|$1]]'''.",
 'filedelete-intro-old' => "Don leat sihkomin veršuvdna '''[[Media:$1|$1]]'''  [$4 $3, $2].",
-'filedelete-comment'   => 'Kommeanta:',
+'filedelete-comment'   => 'Sivva',
 'filedelete-submit'    => 'Sihko',
 'filedelete-success'   => "'''$1''' lea sihkojuvvon.",
 'filedelete-nofile'    => "'''$1''' ii dihtto dán siiddus.",
@@ -852,7 +856,7 @@ $1 | $2',
 'addedwatch'           => 'Lasihuvvon čuovvunlistui',
 'addedwatchtext'       => "Siidu '''<nowiki>$1</nowiki>''' lea lasihuvvon [[Special:Watchlist|čuovvunlisttui]]. Boahtevuođas siiddu ja siiddu ságastallansiiddu rievdadusat almmuhuvvo dáppe. Siidu lea '''buidon''' [[Special:RecentChanges|varas rievdadusat -listtus]], vai fuomašat dan álkit. Jus hálidat heaiti čuovvumis dan siiddu, deaddil liŋkka ''heaite čuovvumis'' siiddu ravddas.",
 'removedwatch'         => 'Sihkojuvvon čuovvunlisttus',
-'removedwatchtext'     => "Siidu '''<nowiki>$1</nowiki>''' lea sihkojuvvon du čuovvunlisttus.",
+'removedwatchtext'     => "Siidu '''[[:$1]]''' lea sihkojuvvon du čuovvunlisttus.",
 'watch'                => 'Čuovo',
 'watchthispage'        => 'Čuovo dán siiddu',
 'unwatch'              => 'Heaite čuovvumis',
@@ -900,7 +904,7 @@ Siiddus $2 lea listu maŋimus sihkomiin.',
 'dellogpagetext'    => 'Vuolábealde lea logga maŋimus sihkkumiin.',
 'deletionlog'       => 'sihkkunlogga',
 'reverted'          => 'Máhcahuvvon ovddit veršuvdnii',
-'deletecomment'     => 'Sihkkuma sivva',
+'deletecomment'     => 'Sivva',
 
 # Rollback
 'rollback'         => 'máhcat ovddit veršuvdnii',
@@ -921,7 +925,7 @@ Siiddus $2 lea listu maŋimus sihkomiin.',
 'protect-title'               => 'Siiddu $1 suodjáleapmi',
 'prot_1movedto2'              => 'sirddii siiddu ”$1” ođđa namain ”$2”',
 'protect-legend'              => 'Nanne suodjáleami',
-'protectcomment'              => 'Suodjáleami sivva:',
+'protectcomment'              => 'Sivva',
 'protectexpiry'               => 'Boarásnuvvá',
 'protect_expiry_invalid'      => 'Buorášnuvvánáigi ii dohket.',
 'protect_expiry_old'          => 'Boarásnuvvánáigi lea vássán.',
@@ -1051,7 +1055,7 @@ Siiddus $2 lea listu maŋimus sihkomiin.',
 'pagemovedsub'            => 'Sirdin lihkosmuvai',
 'movedto'                 => 'Sirdojuvvun ođđa bájilčállagin',
 'movetalk'                => 'Sirdde maid ságastallansiiddu.',
-'1movedto2'               => 'sirddii siiddu ”$1” ođđa namain ”$2”',
+'1movedto2'               => 'sirddii siiddu ”[[$1]]” ođđa namain ”[[$2]]”',
 'movelogpage'             => 'Sirdinlogga',
 'movelogpagetext'         => 'Dát lea logga sirdojuvvon siidduin.',
 'movereason'              => 'Sivva',

@@ -292,10 +292,10 @@ Query: $2",
 'logout'                    => 'Ile',
 'userlogout'                => 'Ile',
 'notloggedin'               => 'Ile sa akwezi',
-'nologin'                   => 'Ni menuhile? $1.',
+'nologin'                   => "Ni menuhile? '''$1'''.",
 'nologinlink'               => 'Ipupezi sebelu',
 'createaccount'             => 'Ipupezi sebelu',
-'gotaccount'                => 'Xete a sa sebelu? $1.',
+'gotaccount'                => "Xete a sa sebelu? '''$1'''.",
 'gotaccountlink'            => 'Menuhile',
 'createaccountmail'         => 'dimeli',
 'badretype'                 => 'Sebu dafi ni sa identikali.',
@@ -381,7 +381,7 @@ Sa ku bye fatukile zwa sebu dafi e a ni petuho, ni petuho e mulumiwasibukirisize
 Zwa adresi di IP sa bulukezi kwa kenki bundau di petulo.",
 'summary-preview'        => 'Lyangutukezi pendiBe:',
 'blockedtitle'           => 'Sebelu sa bolok',
-'blockedtext'            => "<big>'''Zwa sebelu/IP sa bolok.'''</big>
+'blockedtext'            => "'''Zwa sebelu/IP sa bolok.'''
 
 $1 bolok a. Lyangutukezireason sa ''$2''.
 

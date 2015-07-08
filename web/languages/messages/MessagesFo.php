@@ -204,7 +204,7 @@ $messages = array(
 'category-empty'         => "''Hesin bólkur inniheldur ongar greinir ella miðlar í løtuni.''",
 'listingcontinuesabbrev' => 'frh.',
 
-'mainpagetext' => "<big>'''Innlegging av Wiki-ritbúnaði væleydnað.'''</big>",
+'mainpagetext' => "'''Innlegging av Wiki-ritbúnaði væleydnað.'''",
 
 'about'          => 'Um',
 'article'        => 'Innihaldssíða',
@@ -338,9 +338,9 @@ $messages = array(
 'nosuchactiontext'  => 'Gerðin, ið tilskilað er í url, er ikki
 afturkend av wiki',
 'nosuchspecialpage' => 'Ongin slík serlig síða',
-'nospecialpagetext' => "<big>'''Tú hevur biðið um eina serliga síðu, sum wiki ikki kennir aftur.'''</big>
+'nospecialpagetext' => '<strong>Tú hevur biðið um eina serliga síðu, sum wiki ikki kennir aftur.</strong>
 
-<!-- A list of valid special pages can be found at [[Special:SpecialPages]]. -->",
+<!-- A list of valid special pages can be found at [[Special:SpecialPages]]. -->',
 
 # General errors
 'error'             => 'Villa',
@@ -362,7 +362,8 @@ afturkend av wiki',
 
 # Login and logout pages
 'logouttitle'                => 'Brúkaraútritan',
-'logouttext'                 => "'''Tú hevur nú ritað út.'''<br />
+'logouttext'                 => "'''Tú hevur nú ritað út.'''
+
 Tú kanst halda áfram at nýta {{SITENAME}} dulnevnt.
 Ella kanst tú rita inn aftur sum sami ella annar brúkari.
 Legg til merkis at summar síður kunnu framhaldandi síggja út
@@ -382,10 +383,10 @@ Tín konto er nú stovnað. Gloym ikki at broyta tínar {{SITENAME}} innstilling
 'logout'                     => 'Útrita',
 'userlogout'                 => 'Rita út',
 'notloggedin'                => 'Ikki ritað inn',
-'nologin'                    => 'Hevur tú ikki eina kontu? $1.',
+'nologin'                    => "Hevur tú ikki eina kontu? '''$1'''.",
 'nologinlink'                => 'Stovna eina kontu',
 'createaccount'              => 'Stovna nýggja kontu',
-'gotaccount'                 => 'Hevur tú longu eina kontu? $1.',
+'gotaccount'                 => "Hevur tú longu eina kontu? '''$1'''.",
 'gotaccountlink'             => 'Rita inn',
 'createaccountmail'          => 'eftur t-posti',
 'badretype'                  => 'Loyniorðið tú hevur skriva er ikki rætt.',
@@ -847,7 +848,7 @@ Sí $2 fyri fulla skráseting av strikingum.',
 'deletedarticle'    => 'strikaði "[[$1]]"',
 'dellogpage'        => 'Striku logg',
 'deletionlog'       => 'striku logg',
-'deletecomment'     => 'Orsøk til striking:',
+'deletecomment'     => 'Orsøk:',
 
 # Rollback
 'rollback'       => 'Rulla broytingar aftur',
@@ -862,7 +863,7 @@ Sí $2 fyri fulla skráseting av strikingum.',
 'protect-title'       => 'Friðar "$1"',
 'prot_1movedto2'      => '$1 flutt til $2',
 'protect-legend'      => 'Vátta friðing',
-'protectcomment'      => 'Orsøk til friðing:',
+'protectcomment'      => 'Orsøk:',
 'protectexpiry'       => 'Gongur út:',
 'protect-default'     => '(fyridømi)',
 'protect-level-sysop' => 'Bert umboðsstjórar',
@@ -963,8 +964,8 @@ ella er navnið tú valdi ógyldugt.
 Vinarliga vel eitt annað navn.',
 'movedto'                 => 'flyt til',
 'movetalk'                => 'Flyt kjaksíðuna eisini, um hon er til.',
-'1movedto2'               => '$1 flutt til $2',
-'1movedto2_redir'         => '$1 flutt til $2 um ávísing',
+'1movedto2'               => '[[$1]] flutt til [[$2]]',
+'1movedto2_redir'         => '[[$1]] flutt til [[$2]] um ávísing',
 'movelogpage'             => 'Flyt gerðabók',
 'movereason'              => 'Orsøk:',
 'delete_and_move'         => 'Strika og flyt',
