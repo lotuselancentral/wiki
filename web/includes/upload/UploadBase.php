@@ -22,7 +22,7 @@ abstract class UploadBase {
 	protected $mFilteredName, $mFinalExtension;
 	protected $mLocalFile, $mFileSize, $mFileProps;
 	protected $mBlackListedExtensions;
-	protected $mJavaDetected;
+	protected $mJavaDetected, $mSVGNSError;
 
 	protected static $safeXmlEncodings = array( 'UTF-8', 'ISO-8859-1', 'ISO-8859-2', 'UTF-16', 'UTF-32' );
 
@@ -409,8 +409,9 @@ abstract class UploadBase {
 				return array( 'uploadscripted' );
 			}
 			if( $this->mFinalExtension == 'svg' || $mime == 'image/svg+xml' ) {
-				if( $this->detectScriptInSvg( $this->mTempPath ) ) {
-					return array( 'uploadscripted' );
+				$svgStatus = $this->detectScriptInSvg( $this->mTempPath );
+				if ( $svgStatus !== false ) {
+					return $svgStatus;
 				}
 			}
 		}
@@ -1020,9 +1021,27 @@ abstract class UploadBase {
 		return false;
 	}
 
+ 	/**
+ 	 * @param $filename string
+	 * @return mixed false of the file is verified (does not contain scripts), array otherwise.
+ 	 */
 	protected function detectScriptInSvg( $filename ) {
-		$check = new XmlTypeCheck( $filename, array( $this, 'checkSvgScriptCallback' ) );
-		return $check->filterMatch;
+		$this->mSVGNSError = false;
+		$check = new XmlTypeCheck(
+			$filename,
+			array( $this, 'checkSvgScriptCallback' ),
+			array( 'processing_instruction_handler' => 'UploadBase::checkSvgPICallback' )
+		);
+		if ( $check->wellFormed !== true ) {
+			// Invalid xml (bug 58553)
+			return array( 'uploadinvalidxml' );
+		} elseif ( $check->filterMatch ) {
+			if ( $this->mSVGNSError ) {
+				return array( 'uploadscriptednamespace', $this->mSVGNSError );
+			}
+			return array( 'uploadscripted' );
+		}
+		return false;
 	}
 
 
@@ -1084,8 +1103,53 @@ abstract class UploadBase {
 	/**
 	 * @todo Replace this with a whitelist filter!
 	 */
-	public function checkSvgScriptCallback( $element, $attribs ) {
-		$strippedElement = $this->stripXmlNamespace( $element );
+	public function checkSvgScriptCallback( $element, $attribs, $data = null ) {
+
+		list( $namespace, $strippedElement ) = $this->splitXmlNamespace( $element );
+
+		static $validNamespaces = array(
+			'',
+			'adobe:ns:meta/',
+			'http://creativecommons.org/ns#',
+			'http://inkscape.sourceforge.net/dtd/sodipodi-0.dtd',
+			'http://ns.adobe.com/adobeillustrator/10.0/',
+			'http://ns.adobe.com/adobesvgviewerextensions/3.0/',
+			'http://ns.adobe.com/extensibility/1.0/',
+			'http://ns.adobe.com/flows/1.0/',
+			'http://ns.adobe.com/illustrator/1.0/',
+			'http://ns.adobe.com/imagereplacement/1.0/',
+			'http://ns.adobe.com/pdf/1.3/',
+			'http://ns.adobe.com/photoshop/1.0/',
+			'http://ns.adobe.com/saveforweb/1.0/',
+			'http://ns.adobe.com/variables/1.0/',
+			'http://ns.adobe.com/xap/1.0/',
+			'http://ns.adobe.com/xap/1.0/g/',
+			'http://ns.adobe.com/xap/1.0/g/img/',
+			'http://ns.adobe.com/xap/1.0/mm/',
+			'http://ns.adobe.com/xap/1.0/rights/',
+			'http://ns.adobe.com/xap/1.0/stype/dimensions#',
+			'http://ns.adobe.com/xap/1.0/stype/font#',
+			'http://ns.adobe.com/xap/1.0/stype/manifestitem#',
+			'http://ns.adobe.com/xap/1.0/stype/resourceevent#',
+			'http://ns.adobe.com/xap/1.0/stype/resourceref#',
+			'http://ns.adobe.com/xap/1.0/t/pg/',
+			'http://purl.org/dc/elements/1.1/',
+			'http://purl.org/dc/elements/1.1',
+			'http://schemas.microsoft.com/visio/2003/svgextensions/',
+			'http://sodipodi.sourceforge.net/dtd/sodipodi-0.dtd',
+			'http://web.resource.org/cc/',
+			'http://www.freesoftware.fsf.org/bkchem/cdml',
+			'http://www.inkscape.org/namespaces/inkscape',
+			'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+			'http://www.w3.org/2000/svg',
+		);
+
+		if ( !in_array( $namespace, $validNamespaces ) ) {
+			wfDebug( __METHOD__ . ": Non-svg namespace '$namespace' in uploaded file.\n" );
+			// @TODO return a status object to a closure in XmlTypeCheck, for MW1.21+
+			$this->mSVGNSError = $namespace;
+			return true;
+		}
 
 		/*
 		 * check for elements that can contain javascript
@@ -1107,6 +1171,21 @@ abstract class UploadBase {
 			return true;
 		}
 
+		# Block iframes, in case they pass the namespace check
+		if ( $strippedElement == 'iframe' ) {
+			wfDebug( __METHOD__ . ": iframe in uploaded file.\n" );
+			return true;
+		}
+
+
+		# Check <style> css
+		if ( $strippedElement == 'style'
+			&& self::checkCssFragment( Sanitizer::normalizeCss( $data ) )
+		) {
+			wfDebug( __METHOD__ . ": hostile css in style element.\n" );
+			return true;
+		}
+
 		foreach( $attribs as $attrib => $value ) {
 			$stripped = $this->stripXmlNamespace( $attrib );
 			$value = strtolower($value);
@@ -1116,21 +1195,41 @@ abstract class UploadBase {
 				return true;
 			}
 
-			# href with javascript target
-			if( $stripped == 'href' && strpos( strtolower( $value ), 'javascript:' ) !== false ) {
-				wfDebug( __METHOD__ . ": Found script in href attribute '$attrib'='$value' in uploaded file.\n" );
-				return true;
+			# href with non-local target (don't allow http://, javascript:, etc)
+			if ( $stripped == 'href'
+				&& strpos( $value, 'data:' ) !== 0
+				&& strpos( $value, '#' ) !== 0
+			) {
+				if ( !( $strippedElement === 'a'
+					&& preg_match( '!^https?://!im', $value ) )
+				) {
+					wfDebug( __METHOD__ . ": Found href attribute <$strippedElement "
+						. "'$attrib'='$value' in uploaded file.\n" );
+
+					return true;
+				}
 			}
 
-			# href with embeded svg as target
-			if( $stripped == 'href' && preg_match( '!data:[^,]*image/svg[^,]*,!sim', $value ) ) {
-				wfDebug( __METHOD__ . ": Found href to embedded svg \"<$strippedElement '$attrib'='$value'...\" in uploaded file.\n" );
-				return true;
+			# only allow data: targets that should be safe. This prevents vectors like,
+			# image/svg, text/xml, application/xml, and text/html, which can contain scripts
+			if ( $stripped == 'href' && strncasecmp( 'data:', $value, 5 ) === 0 ) {
+				// rfc2397 parameters. This is only slightly slower than (;[\w;]+)*.
+				$parameters = '(?>;[a-zA-Z0-9\!#$&\'*+.^_`{|}~-]+=(?>[a-zA-Z0-9\!#$&\'*+.^_`{|}~-]+|"(?>[\0-\x0c\x0e-\x21\x23-\x5b\x5d-\x7f]+|\\\\[\0-\x7f])*"))*(?:;base64)?';
+				if ( !preg_match( "!^data:\s*image/(gif|jpeg|jpg|png)$parameters,!i", $value ) ) {
+					wfDebug( __METHOD__ . ": Found href to unwhitelisted data: uri "
+						. "\"<$strippedElement '$attrib'='$value'...\" in uploaded file.\n" );
+					return true;
+				}
 			}
 
-			# href with embeded (text/xml) svg as target
-			if( $stripped == 'href' && preg_match( '!data:[^,]*text/xml[^,]*,!sim', $value ) ) {
-				wfDebug( __METHOD__ . ": Found href to embedded svg \"<$strippedElement '$attrib'='$value'...\" in uploaded file.\n" );
+			# Change href with animate from (http://html5sec.org/#137).
+			if ( $stripped === 'attributename'
+				&& $strippedElement === 'animate'
+				&& $this->stripXmlNamespace( $value ) == 'href'
+			) {
+				wfDebug( __METHOD__ . ": Found animate that might be changing href using from "
+					. "\"<$strippedElement '$attrib'='$value'...\" in uploaded file.\n" );
+
 				return true;
 			}
 
@@ -1160,14 +1259,23 @@ abstract class UploadBase {
 			}
 
 			# use CSS styles to bring in remote code
-			# catch url("http:..., url('http:..., url(http:..., but not url("#..., url('#..., url(#....
-			if( $stripped == 'style' && preg_match_all( '!((?:font|clip-path|fill|filter|marker|marker-end|marker-mid|marker-start|mask|stroke)\s*:\s*url\s*\(\s*["\']?\s*[^#]+.*?\))!sim', $value, $matches ) ) {
-				foreach ($matches[1] as $match) {
-					if (!preg_match( '!(?:font|clip-path|fill|filter|marker|marker-end|marker-mid|marker-start|mask|stroke)\s*:\s*url\s*\(\s*(#|\'#|"#)!sim', $match ) ) {
-						wfDebug( __METHOD__ . ": Found svg setting a style with remote url '$attrib'='$value' in uploaded file.\n" );
-						return true;
-					}
-				}
+			if ( $stripped == 'style'
+				&& self::checkCssFragment( Sanitizer::normalizeCss( $value ) )
+			) {
+				wfDebug( __METHOD__ . ": Found svg setting a style with "
+					. "remote url '$attrib'='$value' in uploaded file.\n" );
+				return true;
+			}
+
+			# Several attributes can include css, css character escaping isn't allowed
+			$cssAttrs = array( 'font', 'clip-path', 'fill', 'filter', 'marker',
+				'marker-end', 'marker-mid', 'marker-start', 'mask', 'stroke' );
+			if ( in_array( $stripped, $cssAttrs )
+				&& self::checkCssFragment( $value )
+			) {
+				wfDebug( __METHOD__ . ": Found svg setting a style with "
+					. "remote url '$attrib'='$value' in uploaded file.\n" );
+				return true;
 			}
 
 			# image filters can pull in url, which could be svg that executes scripts
@@ -1179,6 +1287,85 @@ abstract class UploadBase {
 		}
 
 		return false; //No scripts detected
+	}
+
+ 	/**
+	 * Check a block of CSS or CSS fragment for anything that looks like
+	 * it is bringing in remote code.
+	 * @param string $value a string of CSS
+	 * @param bool $propOnly only check css properties (start regex with :)
+	 * @return bool true if the CSS contains an illegal string, false if otherwise
+	 */
+	private static function checkCssFragment( $value ) {
+
+		# Forbid external stylesheets, for both reliability and to protect viewer's privacy
+		if ( stripos( $value, '@import' ) !== false ) {
+			return true;
+		}
+
+		# We allow @font-face to embed fonts with data: urls, so we snip the string
+		# 'url' out so this case won't match when we check for urls below
+		$pattern = '!(@font-face\s*{[^}]*src:)url(\("data:;base64,)!im';
+		$value = preg_replace( $pattern, '$1$2', $value );
+
+		# Check for remote and executable CSS. Unlike in Sanitizer::checkCss, the CSS
+		# properties filter and accelerator don't seem to be useful for xss in SVG files.
+		# Expression and -o-link don't seem to work either, but filtering them here in case.
+		# Additionally, we catch remote urls like url("http:..., url('http:..., url(http:...,
+		# but not local ones such as url("#..., url('#..., url(#....
+		if ( preg_match( '!expression
+				| -o-link\s*:
+				| -o-link-source\s*:
+				| -o-replace\s*:!imx', $value ) ) {
+			return true;
+		}
+
+		if ( preg_match_all(
+				"!(\s*(url|image|image-set)\s*\(\s*[\"']?\s*[^#]+.*?\))!sim",
+				$value,
+				$matches
+			) !== 0
+		) {
+			# TODO: redo this in one regex. Until then, url("#whatever") matches the first
+			foreach ( $matches[1] as $match ) {
+				if ( !preg_match( "!\s*(url|image|image-set)\s*\(\s*(#|'#|\"#)!im", $match ) ) {
+					return true;
+				}
+			}
+		}
+
+		if ( preg_match( '/[\000-\010\013\016-\037\177]/', $value ) ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Divide the element name passed by the xml parser to the callback into URI and prifix.
+	 * @param $name string
+	 * @return array containing the namespace URI and prefix
+	 */
+	private static function splitXmlNamespace( $element ) {
+		// 'http://www.w3.org/2000/svg:script' -> array( 'http://www.w3.org/2000/svg', 'script' )
+		$parts = explode( ':', strtolower( $element ) );
+		$name = array_pop( $parts );
+		$ns = implode( ':', $parts );
+		return array( $ns, $name );
+	}
+
+	/**
+	 * Callback to filter SVG Processing Instructions.
+	 * @param $target string processing instruction name
+	 * @param $data string processing instruction attribute and value
+	 * @return bool (true if the filter identified something bad)
+	 */
+	public static function checkSvgPICallback( $target, $data ) {
+		// Don't allow external stylesheets (bug 57550)
+		if ( preg_match( '/xml-stylesheet/i', $target) ) {
+			return true;
+		}
+		return false;
 	}
 
 	private function stripXmlNamespace( $name ) {
