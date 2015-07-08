@@ -8,7 +8,6 @@
  * @file
  *
  * @author Abhirama
- * @author Ansumang
  * @author Bharata
  * @author Bhawani Gautam
  * @author Hemant wikikosh1
@@ -78,92 +77,93 @@ $namespaceAliases = array(
 );
 
 $specialPageAliases = array(
-	'DoubleRedirects'           => array( 'पुनर्निर्देशनद्वंद्व' ),
+	'Allmessages'               => array( 'सर्वप्रणाली-संदेश' ),
+	'Allpages'                  => array( 'सर्वपृष्टानि' ),
+	'Ancientpages'              => array( 'पूर्वतनपृष्टानि' ),
+	'Blankpage'                 => array( 'रिक्तपृष्ठ' ),
+	'Block'                     => array( 'सदस्यप्रतिबन्ध' ),
+	'Blockme'                   => array( 'मदर्थेप्रतिबन्ध' ),
+	'Booksources'               => array( 'पुस्तकस्रोत' ),
 	'BrokenRedirects'           => array( 'खण्डीतपुनर्निर्देशन' ),
-	'Disambiguations'           => array( 'नि:संदिग्धीकरण' ),
-	'Userlogin'                 => array( 'सदस्यप्रवेशन' ),
-	'Userlogout'                => array( 'सदस्यबहिर्गमन' ),
+	'Categories'                => array( 'वर्गः' ),
+	'ChangePassword'            => array( 'सङ्केतशब्दपुन:प्रयुक्ता' ),
+	'Confirmemail'              => array( 'विपत्रपुष्टिकृते' ),
+	'Contributions'             => array( 'योगदानम्' ),
 	'CreateAccount'             => array( 'सृज्उपयोजकसंज्ञा' ),
-	'Preferences'               => array( 'इष्टतमानि' ),
-	'Watchlist'                 => array( 'निरीक्षा_सूची' ),
-	'Recentchanges'             => array( 'नवीनतम_परिवर्तन' ),
-	'Upload'                    => array( 'भारंन्यस्यति' ),
+	'Deadendpages'              => array( 'निराग्रपृष्टानि' ),
+	'DeletedContributions'      => array( 'परित्यागितयोगदान' ),
+	'Disambiguations'           => array( 'नि:संदिग्धीकरण' ),
+	'DoubleRedirects'           => array( 'पुनर्निर्देशनद्वंद्व' ),
+	'Emailuser'                 => array( 'विपत्रयोजक' ),
+	'Export'                    => array( 'निर्यात' ),
+	'Fewestrevisions'           => array( 'स्वल्पपरिवर्तन' ),
+	'FileDuplicateSearch'       => array( 'अनुकृतसंचिकाशोध' ),
+	'Filepath'                  => array( 'संचिकापथ' ),
+	'Import'                    => array( 'आयात' ),
+	'Invalidateemail'           => array( 'अमान्यविपत्र' ),
+	'BlockList'                 => array( 'प्रतिबन्धसूची' ),
+	'LinkSearch'                => array( 'सम्बन्धन्‌शोध' ),
+	'Listadmins'                => array( 'प्रचालकसूची' ),
+	'Listbots'                  => array( 'स्वयंअनुकृसूची' ),
 	'Listfiles'                 => array( 'चित्रसूची', 'संचिकासूचि' ),
-	'Newimages'                 => array( 'नूतनसंचिका', 'नूतनचित्रानि' ),
-	'Listusers'                 => array( 'सदस्यासूची' ),
 	'Listgrouprights'           => array( 'गटअधिकारसूची' ),
-	'Statistics'                => array( 'सांख्यिकी' ),
-	'Randompage'                => array( 'अविशीष्टपृष्ठम्' ),
+	'Listredirects'             => array( 'विचालन्‌सूची' ),
+	'Listusers'                 => array( 'सदस्यासूची' ),
+	'Lockdb'                    => array( 'विदाद्वारंबन्ध्' ),
+	'Log'                       => array( 'अङ्कन' ),
 	'Lonelypages'               => array( 'अकलपृष्टानि' ),
-	'Uncategorizedpages'        => array( 'अवर्गीकृतपृष्टानि' ),
-	'Uncategorizedcategories'   => array( 'अवर्गीकृतवर्ग' ),
-	'Uncategorizedimages'       => array( 'अवर्गीकृतसंचिका', 'अवर्गीकृतचित्रानि' ),
-	'Uncategorizedtemplates'    => array( 'अवर्गीकृतफलकानि' ),
-	'Unusedcategories'          => array( 'अप्रयूक्तवर्ग' ),
-	'Unusedimages'              => array( 'अप्रयूक्तसंचिका' ),
-	'Wantedpages'               => array( 'प्रार्थितपृष्टानि' ),
-	'Wantedcategories'          => array( 'प्रार्थितवर्ग' ),
-	'Wantedfiles'               => array( 'प्रार्थितसंचिका' ),
-	'Wantedtemplates'           => array( 'प्रार्थितफलकानि' ),
+	'Longpages'                 => array( 'दीर्घपृष्टानि' ),
+	'MergeHistory'              => array( 'इतिहाससंयोग' ),
+	'MIMEsearch'                => array( 'विविधामाप_(माईम)_शोधसि' ),
+	'Mostcategories'            => array( 'अधिकतमवर्ग' ),
+	'Mostimages'                => array( 'अधिकतमसम्भन्दिन्_संचिका' ),
 	'Mostlinked'                => array( 'अधिकतमसम्भन्दिन्_पृष्टानि', 'अधिकतमसम्भन्दिन्' ),
 	'Mostlinkedcategories'      => array( 'अधिकतमसम्भन्दिन्_वर्ग' ),
 	'Mostlinkedtemplates'       => array( 'अधिकतमसम्भन्दिन्_फलकानि' ),
-	'Mostimages'                => array( 'अधिकतमसम्भन्दिन्_संचिका' ),
-	'Mostcategories'            => array( 'अधिकतमवर्ग' ),
 	'Mostrevisions'             => array( 'अधिकतमपरिवर्तन' ),
-	'Fewestrevisions'           => array( 'स्वल्पपरिवर्तन' ),
-	'Shortpages'                => array( 'लघुपृष्टानि' ),
-	'Longpages'                 => array( 'दीर्घपृष्टानि' ),
-	'Newpages'                  => array( 'नूतनपृष्टानि' ),
-	'Ancientpages'              => array( 'पूर्वतनपृष्टानि' ),
-	'Deadendpages'              => array( 'निराग्रपृष्टानि' ),
-	'Protectedpages'            => array( 'सुरक्षितपृष्टानि' ),
-	'Protectedtitles'           => array( 'सुरक्षितशिर्षकम्' ),
-	'Allpages'                  => array( 'सर्वपृष्टानि' ),
-	'Prefixindex'               => array( 'उपसर्गअनुक्रमणी' ),
-	'Ipblocklist'               => array( 'प्रतिबन्धसूची' ),
-	'Specialpages'              => array( 'विशेषपृष्टानि' ),
-	'Contributions'             => array( 'योगदानम्' ),
-	'Emailuser'                 => array( 'विपत्रयोजक' ),
-	'Confirmemail'              => array( 'विपत्रपुष्टिकृते' ),
-	'Whatlinkshere'             => array( 'किमपृष्ठ_सम्बद्धंकरोति' ),
-	'Recentchangeslinked'       => array( 'नवीनतमसम्भन्दिन_परिवर्त' ),
 	'Movepage'                  => array( 'पृष्ठस्थानान्तर' ),
-	'Blockme'                   => array( 'मदर्थेप्रतिबन्ध' ),
-	'Booksources'               => array( 'पुस्तकस्रोत' ),
-	'Categories'                => array( 'वर्गः' ),
-	'Export'                    => array( 'निर्यात' ),
-	'Version'                   => array( 'आवृत्ती' ),
-	'Allmessages'               => array( 'सर्वप्रणाली-संदेश' ),
-	'Log'                       => array( 'अङ्कन' ),
-	'Blockip'                   => array( 'सदस्यप्रतिबन्ध' ),
-	'Undelete'                  => array( 'प्रत्यादिश्_परित्याग' ),
-	'Import'                    => array( 'आयात' ),
-	'Lockdb'                    => array( 'विदाद्वारंबन्ध्' ),
-	'Unlockdb'                  => array( 'विवृतविदाद्वारंतालक' ),
-	'Userrights'                => array( 'योजकआधिकार' ),
-	'MIMEsearch'                => array( 'विविधामाप_(माईम)_शोधसि' ),
-	'FileDuplicateSearch'       => array( 'अनुकृतसंचिकाशोध' ),
-	'Unwatchedpages'            => array( 'अनिरिक्षीतपृष्ठ' ),
-	'Listredirects'             => array( 'विचालन्‌सूची' ),
-	'Revisiondelete'            => array( 'आवृत्तीपरित्याग' ),
-	'Unusedtemplates'           => array( 'अप्रयूक्तबिंबधर' ),
-	'Randomredirect'            => array( 'अविशीष्टविचालन्‌' ),
+	'Mycontributions'           => array( 'मदीययोगदानम्' ),
 	'Mypage'                    => array( 'मम_पृष्टम्' ),
 	'Mytalk'                    => array( 'मदीयसंवादम्' ),
-	'Mycontributions'           => array( 'मदीययोगदानम्' ),
-	'Listadmins'                => array( 'प्रचालकसूची' ),
-	'Listbots'                  => array( 'स्वयंअनुकृसूची' ),
+	'Newimages'                 => array( 'नूतनसंचिका', 'नूतनचित्रानि' ),
+	'Newpages'                  => array( 'नूतनपृष्टानि' ),
+	'PasswordReset'             => array( 'सङ्केतशब्दपुन:प्रयु्क्ता' ),
 	'Popularpages'              => array( 'लोकप्रियपृष्टानि' ),
+	'Preferences'               => array( 'इष्टतमानि' ),
+	'Prefixindex'               => array( 'उपसर्गअनुक्रमणी' ),
+	'Protectedpages'            => array( 'सुरक्षितपृष्टानि' ),
+	'Protectedtitles'           => array( 'सुरक्षितशिर्षकम्' ),
+	'Randompage'                => array( 'अविशीष्टपृष्ठम्' ),
+	'Randomredirect'            => array( 'अविशीष्टविचालन्‌' ),
+	'Recentchanges'             => array( 'नवीनतम_परिवर्तन' ),
+	'Recentchangeslinked'       => array( 'नवीनतमसम्भन्दिन_परिवर्त' ),
+	'Revisiondelete'            => array( 'आवृत्तीपरित्याग' ),
 	'Search'                    => array( 'शोध' ),
-	'Resetpass'                 => array( 'सङ्केतशब्दपुन:प्रयुक्ता' ),
+	'Shortpages'                => array( 'लघुपृष्टानि' ),
+	'Specialpages'              => array( 'विशेषपृष्टानि' ),
+	'Statistics'                => array( 'सांख्यिकी' ),
+	'Uncategorizedcategories'   => array( 'अवर्गीकृतवर्ग' ),
+	'Uncategorizedimages'       => array( 'अवर्गीकृतसंचिका', 'अवर्गीकृतचित्रानि' ),
+	'Uncategorizedpages'        => array( 'अवर्गीकृतपृष्टानि' ),
+	'Uncategorizedtemplates'    => array( 'अवर्गीकृतफलकानि' ),
+	'Undelete'                  => array( 'प्रत्यादिश्_परित्याग' ),
+	'Unlockdb'                  => array( 'विवृतविदाद्वारंतालक' ),
+	'Unusedcategories'          => array( 'अप्रयूक्तवर्ग' ),
+	'Unusedimages'              => array( 'अप्रयूक्तसंचिका' ),
+	'Unusedtemplates'           => array( 'अप्रयूक्तबिंबधर' ),
+	'Unwatchedpages'            => array( 'अनिरिक्षीतपृष्ठ' ),
+	'Upload'                    => array( 'भारंन्यस्यति' ),
+	'Userlogin'                 => array( 'सदस्यप्रवेशन' ),
+	'Userlogout'                => array( 'सदस्यबहिर्गमन' ),
+	'Userrights'                => array( 'योजकआधिकार' ),
+	'Version'                   => array( 'आवृत्ती' ),
+	'Wantedcategories'          => array( 'प्रार्थितवर्ग' ),
+	'Wantedfiles'               => array( 'प्रार्थितसंचिका' ),
+	'Wantedpages'               => array( 'प्रार्थितपृष्टानि' ),
+	'Wantedtemplates'           => array( 'प्रार्थितफलकानि' ),
+	'Watchlist'                 => array( 'निरीक्षा_सूची' ),
+	'Whatlinkshere'             => array( 'किमपृष्ठ_सम्बद्धंकरोति' ),
 	'Withoutinterwiki'          => array( 'आन्तरविकिहीन' ),
-	'MergeHistory'              => array( 'इतिहाससंयोग' ),
-	'Filepath'                  => array( 'संचिकापथ' ),
-	'Invalidateemail'           => array( 'अमान्यविपत्र' ),
-	'Blankpage'                 => array( 'रिक्तपृष्ठ' ),
-	'LinkSearch'                => array( 'सम्बन्धन्‌शोध' ),
-	'DeletedContributions'      => array( 'परित्यागितयोगदान' ),
 );
 
 $magicWords = array(
@@ -303,7 +303,7 @@ $messages = array(
 'tog-shownumberswatching'     => 'निरीक्षमाणानां योजकानां संख्या दर्श्यताम्',
 'tog-oldsig'                  => 'विद्यमानं हस्ताङ्कनम्:',
 'tog-fancysig'                => 'हस्ताक्षराणि विकिपाठवत् सन्तु (स्वचालित-संबंधनेभ्यः रहितानि)।',
-'tog-externaleditor'          => 'Use external editor by default (for experts only, needs special settings on your computer. [http://www.mediawiki.org/wiki/Manual:External_editors More information.])',
+'tog-externaleditor'          => 'Use external editor by default (for experts only, needs special settings on your computer. [//www.mediawiki.org/wiki/Manual:External_editors More information.])',
 'tog-externaldiff'            => 'अकथिते (बाइ डिफाल्ट् इति), बाह्य अंतरक्रमादेशं प्रयोजयतु (केवलेभ्यः निपुणेभ्यः, भवतः संगणके विशेषाः न्यासाः आवश्यकाः)।',
 'tog-showjumplinks'           => '"इत्येतत् प्रति कूर्दयतु" इति संबंधनानि समर्थयतु।',
 'tog-uselivepreview'          => 'संपादनेन सहैव प्राग्दृश्यं दर्शयतु (जावालिपिः अपेक्ष्यते) (प्रयोगात्मकम्)।',
@@ -363,7 +363,7 @@ $messages = array(
 'april-gen'     => 'एप्रिल्',
 'may-gen'       => 'मेय्',
 'june-gen'      => 'जून्',
-'july-gen'      => 'जुलै',
+'july-gen'      => 'जूलय्',
 'august-gen'    => 'ओगस्ट्',
 'september-gen' => 'सप्तम्बर्',
 'october-gen'   => 'अष्टोबर्',
@@ -398,10 +398,9 @@ $messages = array(
 'category-file-count-limited'    => 'एतस्यां श्रेण्यां {{PLURAL:$1|संचिका|$1 संचिकाः}} अधस्तात् सूचिता{{PLURAL:$1||ः}} -
 The following {{PLURAL:$1|file is|$1 files are}} in the current category.',
 'listingcontinuesabbrev'         => 'आगामि.',
-'index-category'                 => 'सूचकांकितानि पृष्ठानि',
-'noindex-category'               => 'असूचकांकितानि पृष्ठानि',
-
-'mainpagetext' => 'मीडियाविकि तु सफलतया अन्तःस्थापितमस्ति',
+'index-category'                 => 'सूचकांकितानि पृष्ठाणि',
+'noindex-category'               => 'असूचकांकितानि पृष्ठाणि',
+'broken-file-category'           => 'भग्नेभ्यः संबन्धनेभ्यः युक्तानि पृष्ठाणि',
 
 'about'         => 'इत्यस्मिन् विषये:',
 'article'       => 'लेखः',
@@ -453,10 +452,10 @@ The following {{PLURAL:$1|file is|$1 files are}} in the current category.',
 'history'           => 'पृष्ठस्य इतिहासः',
 'history_short'     => 'इतिहासः',
 'updatedmarker'     => 'मम पौर्विक-आगमन-पश्चात् परिवर्तितानि',
-'info_short'        => 'समाचारः',
 'printableversion'  => 'मुद्रणयोग्या आवृत्तिः',
 'permalink'         => 'स्थिरसम्पर्कतन्तुः',
 'print'             => 'मुद्र्यताम्',
+'view'              => 'दृश्यताम्',
 'edit'              => 'सम्पाद्यताम्',
 'create'            => 'सृज्यताम्',
 'editthispage'      => 'इदं पृष्ठं सम्पाद्यताम्',
@@ -464,6 +463,7 @@ The following {{PLURAL:$1|file is|$1 files are}} in the current category.',
 'delete'            => 'विलुप्यताम्',
 'deletethispage'    => 'इदं पृष्ठम् अपाक्रियताम्',
 'undelete_short'    => '{{PLURAL:$1|एकं सम्पादनं|$1 सम्पादनानि}} अनपाकरोतु',
+'viewdeleted_short' => 'दर्श्यताम् {{PLURAL:$1|एको विलुप्तं सम्पादनम्|$1 विलुप्तानि सम्पादनानि}}',
 'protect'           => 'संरक्ष्यताम्',
 'protect_change'    => 'परिवर्त्यताम्',
 'protectthispage'   => 'इदं पृष्ठं संरक्ष्यताम्',
@@ -474,7 +474,7 @@ The following {{PLURAL:$1|file is|$1 files are}} in the current category.',
 'talkpagelinktext'  => 'सम्भाषणम्',
 'specialpage'       => 'विशेषपृष्ठम्',
 'personaltools'     => 'वैयक्तिकोपकरणानि',
-'postcomment'       => 'नवीनः विभागः',
+'postcomment'       => 'नवीन विभागः',
 'articlepage'       => 'लेखः दृश्यताम्',
 'talk'              => 'सम्भाषणम्',
 'views'             => 'दृश्यानि',
@@ -525,10 +525,10 @@ $1',
 'privacypage'          => 'Project:निभृततानीतिः',
 
 'badaccess'        => 'अनुज्ञा-प्रमादः',
-'badaccess-group0' => 'भवदर्थम्, अत्र प्रार्थितक्रियायाः प्रवर्तनं न अनुमतम्।',
+'badaccess-group0' => 'भवदर्थम्, अत्र प्रार्थिता क्रिया प्रवर्तितुं न अनुमतम्।',
 'badaccess-groups' => 'भवता प्रार्थिता क्रिया केवले {{PLURAL:$2|अस्मिन् समूहे|एतेषु समूहेषु}} अनुमता अस्ति: $1।',
 
-'versionrequired'     => 'मीडीयाविके: $1 संस्करणम् आवश्यकम् ।',
+'versionrequired'     => 'मीडीयाविके: $1 संस्करण आवश्यकः ।',
 'versionrequiredtext' => 'एतत्पृष्ठं प्रयोक्तुं मीडियाविकि इत्येतस्य $1तमा आवृत्तिः आवश्यकी। पश्यतु [[Special:Version|आवृत्ति-सूचिका]]',
 
 'ok'                      => 'अस्तु',
@@ -547,6 +547,8 @@ $1',
 'toc'                     => 'अन्तर्विषयाः',
 'showtoc'                 => 'दर्श्यताम्',
 'hidetoc'                 => 'गोप्यताम्',
+'collapsible-collapse'    => 'संकोच्यताम्',
+'collapsible-expand'      => 'विस्तीर्यताम्',
 'thisisdeleted'           => '$1 दर्शयेत् वा प्रत्यानयेत् वा?',
 'viewdeleted'             => '$1 दृश्यताम् ?',
 'restorelink'             => '{{PLURAL:$1|एकम् अपाकृतं संपादनम्  |$1 अपाकृतानि संपादनानि}}',
@@ -557,6 +559,8 @@ $1',
 'page-rss-feed'           => '"$1" आरएसएस-पूरणम्',
 'page-atom-feed'          => '"$1" अणुपूरणम्',
 'red-link-title'          => '$1 (पृष्ठम् इदानीं यावत् न रचितम्)',
+'sort-descending'         => 'अवरोहिक्रमेण सज्जयतु',
+'sort-ascending'          => 'आरोहिक्रमेण सज्जयतु',
 
 # Short words for each namespace, by default used in the namespace tab in monobook
 'nstab-main'      => 'पृष्ठम्',
@@ -616,14 +620,14 @@ $1',
 'filedeleteerror'      => '$1 इति सञ्चिकाम् अपाकर्तुं नाशक्नोत्।',
 'directorycreateerror' => '$1 इति निर्देशिकां स्रष्टुं न अपारयत्',
 'filenotfound'         => '"$1" इति सञ्चिका न लब्धा।',
-'fileexistserror'      => '$1 इति संचिकायां लेखनम् अशक्यम् । सञ्चिका वर्तते  एव।',
+'fileexistserror'      => '$1 इति संचिकायां लिखितुम् अशक्तोऽस्ति। संचिका वर्तते  एव।',
 'unexpected'           => 'अप्रतीक्षितमूल्यम् : "$1"="$2"।',
 'formerror'            => 'त्रुटिः : प्रारूपं समर्पयितुं न अपारयत्',
 'badarticleerror'      => 'अस्मिन् पृष्ठे एषा क्रिया कर्तुं न शक्या।',
 'cannotdelete'         => '$1 इति पृष्ठं संचिका वा अपाकर्तुं नाशक्नोत्।
 इदं खलु केनचिदन्येन पूर्वे एव अपाकृतं स्यात्।',
 'badtitle'             => 'दुष्टं शिरोनाम',
-'badtitletext'         => 'प्रार्थितं पृष्ठशीर्षकम् अमान्यं रिक्तम् अशुद्धतया सम्बद्धम् आन्तर्भाषिकम्, आन्तर्विकीयं वा शीर्षकमस्ति । अस्मिन् एकं एकाधिकानि वा एतादृशानि अक्षराणि विद्यन्ते येषां प्रयोगं शीर्षकेषु कर्तुम् अशक्यम्।',
+'badtitletext'         => 'प्रार्थितं पृष्ठ-शीर्षकं अमान्यं वा, रिक्तं वा, अथवा अशुद्धतया संबंद्धं आंतर्भाषिकं, आंतर्विकीयं वा शीर्षकमस्ति। अस्मिन् एकं एकाधिकानि वा एतादृशाणि अक्षराणि विद्यन्ते येषां प्रयोगं शीर्षकेषु अशक्यम्।',
 'perfcached'           => 'अनुपदोक्तं समंकं कैश् इत्येतस्माद् अस्ति, अतः अद्यतनं न स्यात्।',
 'perfcachedts'         => 'अनुपदोक्तं समंकं कैश् इत्येतस्मिन् विद्यते, तथा च $1 इत्येतत्समये अन्तिमं वारं परिवर्तितम्।',
 'querypage-no-updates' => 'अस्य पृष्ठस्य परिशोधनं विफलीकृतमस्ति । 
@@ -643,7 +647,6 @@ $1',
 'cascadeprotected'     => 'इदं पृष्ठं संपादनात् सुरक्षितमस्ति, यतः इदं अधोलिखितानां {{PLURAL:$1| पृष्ठस्य|पृष्ठाणां}} सुरक्षा-सोपाने समाहितं वर्तते।
 $2',
 'namespaceprotected'   => 'भवान् "$1" इति नामाकाशे विद्यमानान् पृष्ठान् परिवर्तितुं अनुमतिं न धारयति।',
-'customcssjsprotected' => 'भवान् इदं पृष्ठं संपादयितुं अनुमतिं न धारयसि, यतो हि अस्मिन् अन्यस्य प्रयोक्तुः वैयक्तिकानि वरीयांसि सन्ति।',
 'ns-specialprotected'  => 'विशिष्टानि पृष्ठानि परिवर्तयितुं न शक्यन्ते।',
 'titleprotected'       => 'सदस्य [[User:$1|$1]] इत्यनेन एतत्-शीर्षकीयं पृष्ठं सृजनात् वारितमस्ति।
 एतदर्थं प्रदत्तं कारणम् "$2"।',
@@ -661,7 +664,7 @@ $2',
 'welcomecreation'            => '==स्वागतम्‌, $1!==
 भवता सदस्यता प्राप्ता अस्ति।
 भवतः [[Special:Preferences|{{SITENAME}} इष्टतमानि]]  इत्यस्य परिवर्तनं न विस्मर्यताम्।',
-'yourname'                   => 'योजकनामन्:',
+'yourname'                   => 'योजकनाम :',
 'yourpassword'               => 'कूटशब्दः',
 'yourpasswordagain'          => 'कूटशब्दः पुनः लिख्यताम् ।',
 'remembermypassword'         => 'अस्मिन् सङ्गणके मम प्रवेशः स्मर्यताम् (अधिकतमम् $1 {{PLURAL:$1|दिनम्|दिनानि}})',
@@ -681,10 +684,11 @@ $2',
 'createaccount'              => 'सदस्यता प्राप्यताम्',
 'gotaccount'                 => 'पूर्वमेव योजकः अस्ति किम् ? $1।',
 'gotaccountlink'             => 'प्रविश्यताम्',
+'userlogin-resetlink'        => 'प्रवेशविवरणानि विस्मृतानि किम् ?',
 'createaccountmail'          => 'ईपत्रद्वारा',
 'createaccountreason'        => 'कारणम्',
 'badretype'                  => 'भवता प्रदत्ते कूटशब्दे न खलु समाने स्तः। कृपया पुनः लिखतु।',
-'userexists'                 => 'भवतः प्रदत्तः प्रयोक्तृनाम अन्येन प्रयुज्यमानम् अस्ति। कृपया अन्यदेकं प्रयोक्तृनाम चिनोतु।',
+'userexists'                 => 'भवतः प्रदत्तः प्रयोक्तृनाम पूर्वे एव प्रयुज्यमानम् अस्ति। कृपया अन्यदेकं प्रयोक्तृनाम चिनोतु।',
 'loginerror'                 => 'प्रवेशने प्रमादः',
 'createaccounterror'         => '$1 इति लेखां स्रष्टुं न अपारयत्',
 'nocookiesnew'               => 'भवतः लेखा सृष्टाऽस्ति, परन्तु भवान् प्रविष्टो नासि।
@@ -699,23 +703,20 @@ $2',
 'loginsuccess'               => 'भवान् अधुना {{SITENAME}} इत्यत्र "$1" रूपेण प्रविष्टोऽस्ति।',
 'nosuchuser'                 => 'तत्र $1 इति नाम्ना न कोऽपि प्रयोक्ता विद्यते।
 प्रयोक्तृनाम्नि आंग्ललिपेः लघुभिः दीर्घैश्च अक्षरैः भिन्नता गण्यते।
-स्वकीयां वर्तनीं पुनरीक्षतां, अथवा [[Special:UserLogin/signup|नूतनसदस्यता प्राप्यताम्]]।',
-'nosuchusershort'            => '"<nowiki>$1</nowiki>" इति नाम्ना न कोऽपि प्रयोक्ता वर्तते।
+स्वकीयां वर्तनीं पुनरीक्षतां, अथवा [[Special:UserLogin/signup|नूतनां लेखां सृजतु]]।',
+'nosuchusershort'            => '"$1" इति नाम्ना न कोऽपि प्रयोक्ता विद्यते।
 स्वकीयां वर्तनीं पुनरीक्षताम्।',
 'nouserspecified'            => 'भवता एकं प्रयोक्तृनाम अवश्यमेव दातव्यम्।',
 'login-userblocked'          => 'एषः प्रयोक्ता प्रतिबन्धितः अस्ति। सत्रारम्भाय अनुमतिः नास्ति।',
 'wrongpassword'              => 'भवता प्रदत्तः कूटशब्दः त्रुटिपूर्णः अस्ति। 
 कृपया पुनः लिख्यताम्।',
-'wrongpasswordempty'         => 'लिखितः कूटशब्दः रिक्तः विद्यते।
+'wrongpasswordempty'         => 'लिखितः कूटशब्दग्ग् रिक्तः विद्यते।
 कृपया पुनः लिख्यताम्।',
-'passwordtooshort'           => 'कूटशब्दः न्यूनातिन्यूनं {{PLURAL: $1| 1 अक्षरात्मकः|$1 अक्षरात्मकमः}} अवश्यमेव भवेत्।',
-'password-name-match'        => 'भवतः कूटशब्दः भवतः प्रयोक्तृनामतः अवश्यम् भिन्नं  भवेत् ।',
+'passwordtooshort'           => 'कूटशब्दं न्यूनान्नयूनं {{PLURAL: $1| 1 अक्षरात्मकम्|$1 अक्षरात्मकम्}} अवश्यमेव भवितव्यम्।',
+'password-name-match'        => 'भवतः कूटशब्दं अवश्यमेव भवतः प्रयोक्तृनामतः भिन्नं  भवितव्यम्।',
 'password-login-forbidden'   => 'अस्य प्रयोक्तृनाम्नः कूटशब्दस्य च प्रयोगः वर्जितोऽस्ति।',
 'mailmypassword'             => 'नूतनः कूटशब्दः ईपत्रद्वारा प्रेष्यताम्',
 'passwordremindertitle'      => '{{SITENAME}} इत्येतदर्थे नूतन् अस्थायि कूटशब्दम्।',
-'passwordremindertext'       => 'कश्चित्  (भवान् अपि स्यात्,  $1 ऐ. पि. सङ्केतात् ) {{SITENAME}} ($4) इत्यस्य कृते नूतनं कूटशब्दं प्रार्थितवान् । तात्कालिकः कूटशब्दः "$2" इति उपयोक्तुः कृते निर्मितः "$3" कृते प्रेषितश्च । यदि अयं भवतः  आशयः, भवान् प्रविश्य नूतनं कूटशब्दम् इदानीं चिनोतु । भवतः तात्कालिकः कूटशब्दः  {{PLURAL:$5|दिनम्|$5 दिनानि}} यावत् सक्रियः भवति । 
-
-अन्यः कश्चित् एतां प्रार्थनां कृतवान्, अथवा भवानेव पूर्वतनं कृटशब्दं स्मृतवान्, इदानीं तस्य परिवर्तनं न् इच्छति चेत् एतां सूचनाम् अनङ्गीकृत्य पूर्वतनस्य कूटशब्दस्य एव उपयोगं करोतु ।',
 'noemail'                    => '"$1" इति प्रयोक्तुः कृते न कोऽपि विद्युत्सन्देशसंकेतः पञ्जीकृतोऽस्ति।',
 'noemailcreate'              => 'भवता एकः मान्यः विद्युत्सन्देशसंकेतः दातव्यः।',
 'passwordsent'               => '"$1" इत्येतस्य कृते पञ्जीकृते विद्युत्सन्देशसंकेते एकः नूतनः कूटशब्दः प्रेषितोऽस्ति।
@@ -751,13 +752,14 @@ You may ignore this message, if this account was created in error.',
 'usernamehasherror'          => 'प्रयोक्तृनाम्नि हेश् इत्यक्षरं (#) न अन्तर्भवितुं शक्नोति।',
 'login-throttled'            => 'भवता सद्य एव प्रभूततया प्रवेशप्रयासाः कृताः।
 कृपया पुनः प्रयासार्थं किंचित् प्रतीक्षताम्।',
+'login-abort-generic'        => 'भवतः प्रवेशप्रयासः विफलीभूतः - परित्यक्तः',
 'loginlanguagelabel'         => 'भाषा : $1',
 'suspicious-userlogout'      => 'भवतः सत्राद् बहिर्गमनस्य अनुरोधः अस्वीकृतोऽस्ति, यस्मादेतत् भग्नादेकस्मात् ब्राउज़र्तः अथवा स्वल्पसञ्चयि-प्रॉक्सितः प्रेषित आसीत्।',
 
 # E-mail sending
 'php-mail-error-unknown' => 'पीएच्पी इत्येतस्य mail() फलने अज्ञाता काऽपि त्रुटिर्जाता।',
 
-# Password reset dialog
+# Change password dialog
 'resetpass'                 => 'कूटशब्दः परिवर्त्यताम्',
 'resetpass_announce'        => 'भवान् तात्कालिक-ईपत्रद्वारा अत्र प्रविष्टः अस्ति ।
 प्रवेशनस्य समापनाय भवता अत्र नूतनः कूटशब्दः दातव्यः:',
@@ -777,6 +779,18 @@ You may ignore this message, if this account was created in error.',
 भवता पूर्वे एव सफलतया स्वकीयः कूटशब्दः परिवर्तितः स्यात्, अथवा एकः नूतनः अल्पकालीनः कूटशब्दः प्रार्थितः स्यात्।',
 'resetpass-temp-password'   => 'अस्थिर रहस्यवाक् :',
 
+# Special:PasswordReset
+'passwordreset'              => 'कूटशब्द पुनःस्थापनम्',
+'passwordreset-legend'       => 'कूटशब्द पुनःस्थापनम्',
+'passwordreset-disabled'     => 'अस्मिन् विक्यां कूटशब्द पुनःस्थापनं असमर्थीकृतमस्ति।',
+'passwordreset-pretext'      => '{{PLURAL:$1| |समंकेषु एकम् अधस्यात् प्रविष्टीकरोतु।}}',
+'passwordreset-username'     => 'योजकनामन्:',
+'passwordreset-email'        => 'परमाणुपत्रसङ्गेत:',
+'passwordreset-emailtitle'   => '{{SITENAME}} इत्यत्र लेखा-विवरणम्',
+'passwordreset-emailelement' => 'प्रयोक्तृनाम: $1
+अल्पकालिकः कूटशब्दः : $2',
+'passwordreset-emailsent'    => 'एकः स्मारकः विद्युत्सन्देशः प्रेषितोऽस्ति।',
+
 # Edit page toolbar
 'bold_sample'     => 'स्थूलाक्षरैः युक्तः भागः',
 'bold_tip'        => 'स्थूलाक्षरैः युक्तः भागः',
@@ -788,8 +802,6 @@ You may ignore this message, if this account was created in error.',
 'extlink_tip'     => 'बाह्य-संबंधनम् (अवश्यमेव  http:// इति पूर्वलग्नं योक्तव्यम्)',
 'headline_sample' => 'शीर्षकम्',
 'headline_tip'    => 'द्वितीयस्तरीयं शीर्षकम्',
-'math_sample'     => 'सूत्रवाक्यं अत्र निवेशयतु',
-'math_tip'        => 'गणितीयसूत्रम् (LaTeX)',
 'nowiki_sample'   => 'अप्रारूपीकृतं पाठं अत्र निवेशयतु',
 'nowiki_tip'      => 'विकिप्रारूपणं अवगणना कुरु',
 'image_sample'    => 'उदाहरणम्.jpg',
@@ -860,6 +872,8 @@ You may ignore this message, if this account was created in error.',
 'noarticletext-nopermission'       => 'अस्मिन् पृष्ठे अधुना किमपि न विद्यते। भवान् विकिपीडियावर्तिषु अन्येषु पृष्ठेषु इदं [[Special:Search/{{PAGENAME}}|शीर्षकम् अन्वेष्टुम् अर्हति]] 
 <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}}  related logs अन्वेष्टुम् अर्हति],
 अथवा [{{fullurl:{{FULLPAGENAME}}|action=edit}} इदं पृष्ठं स्रष्टुम् अर्हति]</span>.',
+'userpage-userdoesnotexist'        => '"$1" इति प्रयोक्तृलेखा पञ्जीकृता नास्ति।
+चेद्भवान् एतत्पृष्ठं स्रष्टुमिच्छति सम्पादयितुमिच्छति वा तदा कृपया पुनरीक्षताम्।',
 'userpage-userdoesnotexist-view'   => '"$1" इति प्रयोक्तृलेखा पञ्जीकृता नास्ति।',
 'blocked-notice-logextract'        => 'अयं प्रयोक्ता सम्प्रति अवरुद्धः वर्तते।
 नूतनतमा अवरोधाभिलेख-प्रविष्टिः सन्दर्भार्थम् अधस्तात् प्रदत्ताऽस्ति:',
@@ -979,43 +993,41 @@ You may ignore this message, if this account was created in error.',
 सम्बन्धितानि नूतनानि पृष्ठाणि सम्प्राप्तुं [[Special:Search|विक्याम् अन्वेषणं]] करोतु।',
 
 # Revision deletion
-'rev-deleted-comment'         => '(सम्पादनस्य सारः अपाकृतमस्ति)',
-'rev-deleted-user'            => '(प्रयोक्तृनाम अपाकृतमस्ति)',
-'rev-deleted-event'           => '(अभिलेखन-क्रिया अपाकृताऽस्ति)',
-'rev-deleted-user-contribs'   => '[प्रयोक्तृनाम अथवा आइपीसंकेतः अपाकृतः - सम्पादनं योगदानेभ्यः निगूढमस्ति]',
-'rev-delundel'                => 'दर्श्यन्ताम्/गोप्यन्ताम्',
-'rev-showdeleted'             => 'दर्श्यताम्',
-'revdelete-nooldid-title'     => 'लक्ष्यरूपा आवृत्तिः अमान्याऽस्ति।',
-'revdelete-nologtype-title'   => 'अभिलेखस्य प्रकारः न प्रदत्तः',
-'revdelete-nologtype-text'    => 'अस्यै क्रियायै भवता न कोऽपि अभिलेखप्रकारः निर्दिष्टः।',
-'revdelete-nologid-title'     => 'अमान्या अभिलेख-प्रविष्टिः',
-'revdelete-no-file'           => 'निर्दिष्टा सञ्चिका न विद्यते ।',
-'revdelete-show-file-confirm' => '$2 तः $3 मध्ये "<nowiki>$1</nowiki>" इति सञ्चिकायाः निरस्तं परिष्करणं भवान् नूनं द्रष्टुम् इच्छति ?',
-'revdelete-show-file-submit'  => 'आम्',
-'revdelete-hide-user'         => 'सम्पादकस्य योजकनाम/आइपिसंकेतः गोप्यताम्।',
-'revdelete-hide-restricted'   => 'प्रबन्धकेभ्यः अन्येभ्यश्च समंकं गोपयतु।',
-'revdelete-radio-same'        => 'मा परिवर्तयतु।',
-'revdelete-radio-set'         => 'आम्',
-'revdelete-radio-unset'       => 'न हि',
-'revdelete-suppress'          => 'प्रबन्धकेभ्यः अन्येभ्यश्च समंकं गोपयतु।',
-'revdelete-unsuppress'        => 'प्रत्यानीताऽऽवृत्तिभ्यः  वर्जनाः अपाकरोतु।',
-'revdelete-log'               => 'कारणम् :',
-'revdelete-submit'            => '{{PLURAL:$1|चितायां आवृत्त्यां|चितासु आवृत्तिषु}} अनुप्रयोजयतु।',
-'revdelete-logentry'          => '"[[$1]]" इत्यस्य आवृत्ति-दृश्यता परिवर्तिताऽस्ति।',
-'revdel-restore'              => 'दृष्टिविषयः परिवर्त्यताम्',
-'revdel-restore-deleted'      => 'अपास्तानि संस्करणानि',
-'revdel-restore-visible'      => 'दृष्टिगोचराणि संस्करणानि',
-'pagehist'                    => 'पृष्ठस्य इतिहासः',
-'revdelete-content'           => 'विषयः',
-'revdelete-summary'           => 'सम्पादनसांक्षेपिक',
-'revdelete-uname'             => 'उपयोक्तृ-नाम',
-'revdelete-hid'               => 'आवृत $1',
-'revdelete-reason-dropdown'   => '*परित्यागाय समानकारणाः
+'rev-deleted-comment'        => '(सम्पादनस्य सारः अपाकृतमस्ति)',
+'rev-deleted-user'           => '(प्रयोक्तृनाम अपाकृतमस्ति)',
+'rev-deleted-event'          => '(अभिलेखन-क्रिया अपाकृताऽस्ति)',
+'rev-deleted-user-contribs'  => '[प्रयोक्तृनाम अथवा आइपीसंकेतः अपाकृतः - सम्पादनं योगदानेभ्यः निगूढमस्ति]',
+'rev-delundel'               => 'दर्श्यन्ताम्/गोप्यन्ताम्',
+'rev-showdeleted'            => 'दर्श्यताम्',
+'revdelete-nooldid-title'    => 'लक्ष्यरूपा आवृत्तिः अमान्याऽस्ति।',
+'revdelete-nologtype-title'  => 'अभिलेखस्य प्रकारः न प्रदत्तः',
+'revdelete-nologtype-text'   => 'अस्यै क्रियायै भवता न कोऽपि अभिलेखप्रकारः निर्दिष्टः।',
+'revdelete-nologid-title'    => 'अमान्या अभिलेख-प्रविष्टिः',
+'revdelete-show-file-submit' => 'आम्',
+'revdelete-hide-user'        => 'सम्पादकस्य योजकनाम/आइपिसंकेतः गोप्यताम्।',
+'revdelete-hide-restricted'  => 'प्रबन्धकेभ्यः अन्येभ्यश्च समंकं गोपयतु।',
+'revdelete-radio-same'       => 'मा परिवर्तयतु।',
+'revdelete-radio-set'        => 'आम्',
+'revdelete-radio-unset'      => 'न हि',
+'revdelete-suppress'         => 'प्रबन्धकेभ्यः अन्येभ्यश्च समंकं गोपयतु।',
+'revdelete-unsuppress'       => 'प्रत्यानीताऽऽवृत्तिभ्यः  वर्जनाः अपाकरोतु।',
+'revdelete-log'              => 'कारणम् :',
+'revdelete-submit'           => '{{PLURAL:$1|चितायां आवृत्त्यां|चितासु आवृत्तिषु}} अनुप्रयोजयतु।',
+'revdelete-logentry'         => '"[[$1]]" इत्यस्य आवृत्ति-दृश्यता परिवर्तिताऽस्ति।',
+'revdel-restore'             => 'दृष्टिविषयः परिवर्त्यताम्',
+'revdel-restore-deleted'     => 'अपास्तानि संस्करणानि',
+'revdel-restore-visible'     => 'दृष्टिगोचराणि संस्करणानि',
+'pagehist'                   => 'पृष्ठस्य इतिहासः',
+'revdelete-content'          => 'विषयः',
+'revdelete-summary'          => 'सम्पादनसांक्षेपिक',
+'revdelete-uname'            => 'उपयोक्तृ-नाम',
+'revdelete-hid'              => 'आवृत $1',
+'revdelete-reason-dropdown'  => '*परित्यागाय समानकारणाः
 ** प्रतिलिपिअधिकारअतिक्रम
 ** अयोग्यवैयक्तिकविज्ञप्ति',
-'revdelete-otherreason'       => 'अन्यत्/सङ्कलितं कारणम् :',
-'revdelete-reasonotherlist'   => 'अन्यानि कारणानि',
-'revdelete-edit-reasonlist'   => 'सम्पादनस्य अपाकरणाय कारणानि',
+'revdelete-otherreason'      => 'अन्यत्/सङ्कलितं कारणम् :',
+'revdelete-reasonotherlist'  => 'अन्यानि कारणानि',
+'revdelete-edit-reasonlist'  => 'सम्पादनस्य अपाकरणाय कारणानि',
 
 # History merging
 'mergehistory-reason' => 'कारणम् :',
@@ -1078,7 +1090,6 @@ You may ignore this message, if this account was created in error.',
 'powersearch-ns'                   => 'नामाकाशेषु अन्विष्यताम्:',
 'powersearch-redir'                => 'अनुप्रेषणानां सूचिका दर्श्यताम्',
 'powersearch-field'                => 'इत्यस्मै अन्विष्यताम्',
-'powersearch-togglelabel'          => 'आयीका:',
 'powersearch-toggleall'            => 'सर्वम्',
 'powersearch-togglenone'           => 'नास्ति',
 'search-external'                  => 'बाह्यान्वेषणम्',
@@ -1124,22 +1135,7 @@ You may ignore this message, if this account was created in error.',
 'recentchangesdays'         => 'दिवसानि पर्यन्तो सद्यावधि-परिवर्तनानि दृश्यतु:',
 'recentchangesdays-max'     => 'अधिकतम $1 {{PLURAL:$1|दिवसः|दिवसानि}}',
 'recentchangescount'        => 'सम्पादन संख्यकानि व्यवस्थानुसारेण दृश्यतु:',
-'timezonelegend'            => 'समय मण्डल:',
-'localtime'                 => 'स्थानीय समय:',
-'timezoneregion-africa'     => 'कालद्वीप',
-'timezoneregion-america'    => 'अमेरिका',
-'timezoneregion-antarctica' => 'अंटार्कटिका',
-'timezoneregion-arctic'     => 'आर्कटिक',
-'timezoneregion-asia'       => 'जम्बुमहाद्वीप',
-'timezoneregion-atlantic'   => 'एटलांटिक महासागर',
-'timezoneregion-australia'  => 'ऑस्ट्रेलिया',
-'timezoneregion-europe'     => 'यूरोप',
-'timezoneregion-indian'     => 'हिंद महासागर',
-'timezoneregion-pacific'    => 'प्रशांत महासागर',
-'default'                   => 'यदभावे',
-'prefs-files'               => 'सञ्चिका',
 'youremail'                 => 'ईपत्रसङ्केतः',
-'username'                  => 'योजकनामन्:',
 'uid'                       => 'प्रयोक्तृ-क्रमांकः :',
 'prefs-memberingroups'      => '{{PLURAL:$1|समूहस्य|समूहानां}}  सदस्यः:',
 'prefs-registration'        => 'पंजीकरण कालः:',
@@ -1153,25 +1149,18 @@ You may ignore this message, if this account was created in error.',
 एते $1 {{PLURAL:$1|अक्षरात्|अक्षरेभ्यः}} दीर्घाः न भवितव्याः।',
 'yourgender'                => 'लिंगम् (Gender):',
 'gender-unknown'            => 'अनिर्दिष्टम्',
-'gender-male'               => 'पुरुष',
-'gender-female'             => 'स्त्री',
 'email'                     => 'विद्युत्पत्रव्यवस्था',
-'prefs-signature'           => 'हस्ताक्षर',
-
-# User rights
-'userrights-reason' => 'कारणम् :',
+'prefs-help-email'          => 'ईपत्रसङ्केतः अनिवार्यः नास्ति । किन्तु कूटशब्दः विस्मर्यते चेत् तस्य परिवर्तनाय अवश्यकः भवति ।',
+'prefs-help-email-others'   => 'अन्ये योजकाः ईपत्रमाध्यमेन भवतः सम्पर्कं यथा कुर्युः तथा भवदीये योजकपृष्ठे सम्भाषणपृष्ठे वा सम्पर्कतन्तुः योजयितुं शक्यः ।
+भवतः सम्पर्कं कृतवद्भिः योजकैः भवदीयः ईपत्रसङ्केतः अभिज्ञातः न भवति ।',
 
 # Groups
-'group-user'  => 'योजकः',
 'group-sysop' => 'प्रबंधकाः',
-'group-all'   => '(सर्वे)',
 
-'grouppage-user'  => '{{ns:project}}:योजक',
 'grouppage-sysop' => '{{ns:project}}:प्रचालकाः',
 
 # User rights log
-'rightslog'  => 'प्रयोक्तृ-अधिकार-सूचिका',
-'rightsnone' => '(कतम)',
+'rightslog' => 'प्रयोक्तृ-अधिकार-सूचिका',
 
 # Associated actions - in the sentence "You do not have permission to X"
 'action-edit' => 'इदं पृष्ठं सम्पाद्यताम्',
@@ -1203,7 +1192,6 @@ You may ignore this message, if this account was created in error.',
 'minoreditletter'                 => '(लघु)',
 'newpageletter'                   => '(नवीनम्)',
 'boteditletter'                   => '(बोट्)',
-'rc_categories_any'               => 'कश्चित्',
 'newsectionsummary'               => '/* $1 */ नवीन विभागः',
 'rc-enhanced-expand'              => 'विवरणानि दर्श्यन्ताम् (जावालिपिः अपेक्ष्यते)',
 'rc-enhanced-hide'                => 'विवरणानि गोप्यन्ताम्',
@@ -1223,26 +1211,16 @@ You may ignore this message, if this account was created in error.',
 'upload'            => 'सञ्चिका आरोप्यताम्',
 'uploadbtn'         => 'सञ्चिका आरोप्यताम्',
 'uploadlogpage'     => 'आरोपितानां सूची',
-'filename'          => 'सञ्चिकानाम',
 'filedesc'          => 'सारांशः :',
 'fileuploadsummary' => 'संग्रहः :',
-'filesource'        => 'मूल:',
 'uploadedfiles'     => 'आरोपिताः सञ्चिकाः',
 'uploadedimage'     => '"[[$1]]" इत्येतद् आरोपितमस्ति',
-
-'upload-unknown-size' => 'अज्ञात आकार',
 
 'license'        => 'अनुमतिदानम्',
 'license-header' => 'अनुमतिदानम्',
 
 # Special:ListFiles
-'imgfile'               => 'संचिका',
-'listfiles_date'        => 'दिनाङ्क',
-'listfiles_name'        => 'नामन्',
-'listfiles_user'        => 'योजक',
-'listfiles_size'        => 'आकार',
-'listfiles_description' => 'वर्णन',
-'listfiles_count'       => 'आवृत्ति',
+'imgfile' => 'संचिका',
 
 # File description page
 'file-anchor-link'          => 'सञ्चिका',
@@ -1262,19 +1240,11 @@ You may ignore this message, if this account was created in error.',
 'nolinkstoimage'            => 'एतद चित्रात् न पृष्ठा सम्बद्धं करोन्ति।',
 'sharedupload'              => 'इयं संचिका $1 इत्यस्मादस्ति, एषा खलु अन्येष्वपि प्रकल्पेषु प्रयोक्तुं शक्यते।',
 'sharedupload-desc-here'    => 'एषा सञ्चिका $1 इत्यतः उद्धृता अन्यासु योजनासु उपयोगार्हा ।
-अस्याः सञ्चिकायाः  [$2 सञ्चिकावि वरणपृष्ठम्] इत्यत्र उपलभ्यमानं विवरणम् अधोलिखितं यथा ।',
+अस्याः सञ्चिकायाः  [$2 सञ्चिकाविवरणपृष्ठम्]] इत्यत्र उपलभ्यमानं विवरणम् अधोलिखितं यथा ।',
 'uploadnewversion-linktext' => 'अस्य पृष्ठस्य नूतनाम् आवृत्तिं उद्भारयतु',
 
 # File reversion
 'filerevert-comment' => 'कारणम् :',
-
-# File deletion
-'filedelete-comment'          => 'कारणम् :',
-'filedelete-submit'           => 'विलुप्यताम्',
-'filedelete-reason-otherlist' => 'अन्य कारणम्',
-
-# MIME search
-'download' => 'डाउनलोड',
 
 # Random page
 'randompage' => 'यादृच्छिकपृष्ठम्',
@@ -1289,26 +1259,22 @@ You may ignore this message, if this account was created in error.',
 
 'doubleredirects' => 'दुगुनी-अनुप्रेषिते',
 
-'brokenredirects-edit'   => 'सम्पाद्यताम्',
-'brokenredirects-delete' => 'विलुप्यताम्',
+'brokenredirects-edit' => 'सम्पाद्यताम्',
 
 'withoutinterwiki-legend' => 'पूर्वोऽपपदम्',
-'withoutinterwiki-submit' => 'दर्श्यताम्',
 
 # Miscellaneous special pages
-'nbytes'            => '$1 {{PLURAL:$1|बैट्|बैट्स्}}',
-'nmembers'          => '$1 {{PLURAL:$1|सदस्यः|सदस्याः}}',
-'prefixindex'       => 'उपसर्गयुक्तानि सर्वाणि पृष्ठानि',
-'longpages'         => 'दीर्घाणि पृष्ठानि',
-'listusers'         => 'योजक सूचि',
-'usercreated'       => '$1 दिने $2 समये रचितम्',
-'newpages'          => 'नवीनपृष्ठम्',
-'newpages-username' => 'योजकनामन्:',
-'ancientpages'      => 'प्राचीनतमानि पृष्ठानि',
-'move'              => 'चाल्यताम्',
-'movethispage'      => 'इदं पृष्ठं चाल्यताम्',
-'pager-newer-n'     => '{{PLURAL:$1|नूतनतरम् 1|नूतनतराणि $1}}',
-'pager-older-n'     => '{{PLURAL:$1|पुरातनतरम् 1|पुरातनतराणि $1}}',
+'nbytes'        => '$1 {{PLURAL:$1|बैट्|बैट्स्}}',
+'nmembers'      => '$1 {{PLURAL:$1|सदस्यः|सदस्याः}}',
+'prefixindex'   => 'उपसर्गयुक्तानि सर्वाणि पृष्ठानि',
+'longpages'     => 'दीर्घाणि पृष्ठानि',
+'usercreated'   => '$1 दिने $2 समये रचितम्',
+'newpages'      => 'नवीनपृष्ठम्',
+'ancientpages'  => 'प्राचीनतमानि पृष्ठानि',
+'move'          => 'चाल्यताम्',
+'movethispage'  => 'इदं पृष्ठं चाल्यताम्',
+'pager-newer-n' => '{{PLURAL:$1|नूतनतरम् 1|नूतनतराणि $1}}',
+'pager-older-n' => '{{PLURAL:$1|पुरातनतरम् 1|पुरातनतराणि $1}}',
 
 # Book sources
 'booksources'               => 'ग्रन्थानां स्रोतः',
@@ -1325,8 +1291,6 @@ You may ignore this message, if this account was created in error.',
 'allpagesfrom'   => 'इत्यस्मात् आरभ्यमाणानि पृष्ठानि दर्श्यन्ताम्:',
 'allpagesto'     => 'तानि पृष्ठानि दर्श्यन्तां येषाम् अन्त्यम् एवम् :',
 'allarticles'    => 'सर्वाणि पृष्ठानि',
-'allpagesprev'   => 'पूर्वतन',
-'allpagesnext'   => 'अग्रिम',
 'allpagessubmit' => 'गम्यताम्',
 
 # Special:Categories
@@ -1334,37 +1298,28 @@ You may ignore this message, if this account was created in error.',
 
 # Special:LinkSearch
 'linksearch'      => 'बाह्यसम्पर्कतन्तूनाम् अन्वेषणम्',
-'linksearch-ok'   => 'अन्वेषणम्',
 'linksearch-line' => '$2 पृष्ठं $1 तः सम्पृक्तम् अस्ति।',
-
-# Special:ListUsers
-'listusers-submit' => 'दर्श्यताम्',
 
 # Special:Log/newusers
 'newuserlogpage'          => 'प्रयोक्तृ-सृजन-सूचिका',
 'newuserlog-create-entry' => 'नूतन-प्रयोक्तृ-लेखा',
 
 # Special:ListGroupRights
-'listgrouprights-group'   => 'वर्ग',
 'listgrouprights-members' => '(सदस्यानां सूची)',
 
 # E-mail user
 'emailuser'    => 'एतस्मै योजकाय ईपत्रं प्रेष्यताम्',
-'emailpage'    => 'ई-मेल योजक',
 'emailfrom'    => 'सकाशात्',
 'emailto'      => 'सविधे:',
 'emailsubject' => 'विषयः',
 'emailmessage' => 'सन्देशः :',
-'emailsend'    => 'प्रेषति',
 
 # Watchlist
 'watchlist'         => 'मम अवेक्षणसूची',
 'mywatchlist'       => 'मम अवेक्षणसूची',
 'watchlistfor2'     => 'हि $1 $2',
-'addedwatch'        => 'निरीक्षासूचिकायां योजितम्',
 'addedwatchtext'    => 'भवतः [[Special:Watchlist|ध्यानसूचिकायां]] "[[:$1]]" इत्येतत् योजितमस्ति।
 इदानींप्रभृति अस्मिन् पृष्ठे तथा अस्य चर्चापृष्ठे सन्तः परिवर्तनानि भवतः निरीक्षासूचिकायां द्रक्ष्यन्ते तथा च [[Special:RecentChanges|सद्यःपरिवर्तितानां सूचिकायां]] इदं पृष्ठं स्थूलाक्षरैः द्रक्ष्यते, यस्मात् भवान् सरलतया इदं पश्यतु <p>निरीक्षासूचिकातः निराकर्तुमिच्छति चेत्, "मा निरीक्षताम्" इत्यसमिन् नोदयतु।',
-'removedwatch'      => 'निरीक्षासूचिकातः निराकृतम्।',
 'removedwatchtext'  => '"[[:$1]]" इति पृष्ठं [[Special:Watchlist|भवतः निरीक्षासूचिकातः]] निराकृतमस्ति।',
 'watch'             => 'निरीक्षताम्',
 'watchthispage'     => 'इदं पृष्ठं निरीक्षताम्',
@@ -1377,18 +1332,15 @@ You may ignore this message, if this account was created in error.',
 'watching'   => 'निरीक्षते...',
 'unwatching' => 'निरीक्षाम् अपाकरोति...',
 
-'enotif_newpagetext'           => 'इदम् एकं नवीनपृष्ठम्',
-'enotif_impersonal_salutation' => '{{SITENAME}} योजक',
+'enotif_newpagetext' => 'इदम् एकं नवीनपृष्ठम्',
 
 # Delete
 'deletepage'            => 'पृष्ठं निराकरोतु।',
 'confirm'               => 'स्थिरीकरोतु',
-'delete-confirm'        => 'विलुप्यताम् "$1"',
-'delete-legend'         => 'विलुप्यताम्',
 'confirmdeletetext'     => 'भवान् एकं पृष्ठं तस्य अखिलेन इतिहासेन सहितं अपाकर्तुं प्रवृत्तोऽस्ति। कृपया सुपुष्टीकरोतु यत् भवतः एतदेव आशयः, यद् भवता अस्य परिणामाः सुविज्ञाताः सन्ति तथा च भवता क्रियैषा [[{{MediaWiki:Policy-url}}| यथानीति]] सम्पाद्यते।',
 'actioncomplete'        => 'कार्यं सम्पन्नम्',
 'actionfailed'          => 'कर्मन् रिष्ट',
-'deletedtext'           => '"<nowiki>$1</nowiki>" इत्येतद् अपाकृतमस्ति।
+'deletedtext'           => '"$1" इत्येतद् अपाकृतमस्ति।
 सद्यःकृतानां अपाकरणानाम् अभिलेखः $2 इत्यस्मिन् पश्यतु।',
 'deletedarticle'        => '"[[$1]]" अपाकृतमस्ति।',
 'dellogpage'            => 'अपाकरणानां सूचिका',
@@ -1407,7 +1359,7 @@ You may ignore this message, if this account was created in error.',
 'protectexpiry'               => 'अवसानम् :',
 'protect_expiry_invalid'      => 'अवसान-समयः अमान्योऽस्ति।',
 'protect_expiry_old'          => 'अवसान-समयः अतीतोऽस्ति।',
-'protect-text'                => "'''<nowiki>$1</nowiki>''' इति पृष्ठस्य कृते सुरक्षा-स्तरं भवान् अत्र दृष्टुं शक्नोति, तथा च तं परिवर्तयितुं शक्नोति।",
+'protect-text'                => "'''$1''' इति पृष्ठस्य कृते सुरक्षा-स्तरं भवान् अत्र दृष्टुं शक्नोति, तथा च तं परिवर्तयितुं शक्नोति।",
 'protect-locked-access'       => "भवान् अस्य पृष्ठस्य सुरक्षा-स्तरं परिवर्तयितुम् अनुज्ञां न धारयति। '''$1''' इति पृष्ठस्य अधुनातनः सुरक्षा-स्तरः :",
 'protect-cascadeon'           => 'इदं पृष्ठं वर्तमत्काले सुरक्षितमस्ति, यत इदं {{PLURAL:$1|निम्नलिखिते पृष्ठे |निम्नलिखितेषु पृष्ठेषु}} समाहितमस्ति {{PLURAL:$1|यस्मिन्|येषु}} सोपानात्मिका सुरक्षा प्रभाविनी अस्ति। भवान् अस्य पृष्ठस्य सुरक्षा-स्तरं परिवर्तयितुं शक्नोति, परं तेन सोपानात्मिका-सुरक्षा न परिवर्तयिष्यति।',
 'protect-default'             => 'सर्वान् प्रयोक्तॄन् अनुज्ञापयतु।',
@@ -1424,7 +1376,6 @@ You may ignore this message, if this account was created in error.',
 'restriction-level'           => 'सुरक्षा-स्तरः :',
 
 # Restrictions (nouns)
-'restriction-edit'   => 'सम्पाद्यताम्',
 'restriction-create' => 'सृज्यताम्',
 'restriction-upload' => 'आरोप्यताम्',
 
@@ -1433,12 +1384,10 @@ You may ignore this message, if this account was created in error.',
 'restriction-level-autoconfirmed' => 'अर्धसंरक्षितम्',
 
 # Undelete
-'undeletelink'              => 'दृश्यताम्/प्रत्यानीयताम्',
-'undeleteviewlink'          => 'दृश्यताम्',
-'undeletecomment'           => 'कारणम् :',
-'undeletedarticle'          => '"[[$1]]" इत्येतद् पुनःस्थापितमस्ति।',
-'undelete-search-submit'    => 'अन्वेषणम्',
-'undelete-show-file-submit' => 'आम्',
+'undeletelink'           => 'दृश्यताम्/प्रत्यानीयताम्',
+'undeleteviewlink'       => 'दृश्यताम्',
+'undeletedarticle'       => '"[[$1]]" इत्येतद् पुनःस्थापितमस्ति।',
+'undelete-search-submit' => 'अन्वेषणम्',
 
 # Namespace form on various pages
 'namespace'      => 'नामाकाशः :',
@@ -1484,11 +1433,8 @@ You may ignore this message, if this account was created in error.',
 
 # Block/unblock
 'blockip'                  => 'प्रयोक्तारं निरुध्नातु',
-'ipbreason'                => 'कारणम् :',
 'ipboptions'               => '२ होराः:2 hours,१ दिनम्:1 day,३ दिनानि:3 days,१ सप्ताहः:1 week,२ सप्ताहौ:2 weeks,१ मासः:1 month,३ मासाः:3 months,६ मासाः:6 months,१ वर्षः:1 year,अनन्तम्:infinite',
-'ipbotheroption'           => 'अन्य',
 'ipblocklist'              => 'अवरुद्धाः योजकाः',
-'ipblocklist-submit'       => 'अन्वेषणम्',
 'blocklink'                => 'अवरोधः क्रियताम्',
 'unblocklink'              => 'निरोधः अपास्यताम्',
 'change-blocklink'         => 'विभागः परिवर्त्यताम्',
@@ -1497,7 +1443,6 @@ You may ignore this message, if this account was created in error.',
 'blocklogentry'            => '[[$1]] इत्येतद् अवरुद्धम्, $2 $3 इति अवसान-समयेन सह',
 'unblocklogentry'          => 'अनिरुद्धम् $1',
 'block-log-flags-nocreate' => 'सदस्यता प्राप्तिः अवरुद्धा अस्ति',
-'proxyblocksuccess'        => 'समापित ।',
 
 # Move page
 'move-page-legend' => 'पृष्ठं रक्ष्यताम्',
@@ -1518,10 +1463,7 @@ You may ignore this message, if this account was created in error.',
 'revertmove'       => 'प्रतिनिवर्त्यताम्',
 
 # Export
-'export'        => 'पृष्ठानां निर्यातं करोतु',
-'export-submit' => 'निर्हरति',
-'export-addcat' => 'संयोजयति',
-'export-addns'  => 'संयोजयति',
+'export' => 'पृष्ठानां निर्यातं करोतु',
 
 # Namespace 8 related
 'allmessages'                 => 'व्यवस्था सन्देशाः',
@@ -1597,13 +1539,6 @@ You may ignore this message, if this account was created in error.',
 अस्य सारांशे कारणमपि लेखितुं शक्यते।',
 'tooltip-summary'                 => 'संक्षिप्तः सारांशः योज्यताम्',
 
-# Attribution
-'siteuser'  => '{{SITENAME}} योजक $1',
-'anonuser'  => '{{SITENAME}} अज्ञात योजक $1',
-'others'    => 'अन्य',
-'siteusers' => '{{SITENAME}} {{PLURAL:$2|योजक|योजक}} $1',
-'anonusers' => '{{SITENAME}} अज्ञात {{PLURAL:$2|योजक|योजक}} $1',
-
 # Skin names
 'skinname-standard'    => 'पूर्व',
 'skinname-nostalgia'   => 'पुराण',
@@ -1620,11 +1555,10 @@ You may ignore this message, if this account was created in error.',
 'nextdiff'     => 'नवतरं सम्पादनम् →',
 
 # Media information
-'file-info-size'       => '$1 × $2 पिक्सेलानि, संचिकायाः आकारः: $3, MIME-प्रकारः: $4',
-'file-nohires'         => '<small>उच्चतरं विभेदनं नोपलब्धम्</small>',
-'svg-long-desc'        => 'SVG संचिका, साधारणतया $1 × $2 पिक्सेलानि, संचिकायाः आकारः : $3',
-'show-big-image'       => 'पूर्णं विभेदनम्',
-'show-big-image-thumb' => '<small>अस्य प्राग्दृश्यस्य आकारः : $1 × $2 पिक्सेलानि</small>',
+'file-info-size' => '$1 × $2 पिक्सेलानि, संचिकायाः आकारः: $3, MIME-प्रकारः: $4',
+'file-nohires'   => '<small>उच्चतरं विभेदनं नोपलब्धम्</small>',
+'svg-long-desc'  => 'SVG संचिका, साधारणतया $1 × $2 पिक्सेलानि, संचिकायाः आकारः : $3',
+'show-big-image' => 'पूर्णं विभेदनम्',
 
 # Special:NewFiles
 'newimages' => 'नूतन-संचिकानां वीथिका',
@@ -1645,40 +1579,35 @@ You may ignore this message, if this account was created in error.',
 'metadata-expand'   => 'विस्तारितानि विवरणानि दर्शयतु',
 'metadata-collapse' => 'विस्तारितानि विवरणानि लोपयतु',
 'metadata-fields'   => 'अस्मिन् तालिकायां दर्शिता सूचना संचिकायाः अधस्तात् मेटाडाटा इत्यस्मिन् सदा दर्शिता भविष्यति।
-
 अवशिष्टा सूचना सदा निगूढा भविष्यति।
-
 * make
 * model
 * datetimeoriginal
 * exposuretime
 * fnumber
 * isospeedratings
-* focallength',
+* focallength
+* artist
+* copyright
+* imagedescription
+* gpslatitude
+* gpslongitude
+* gpsaltitude',
 
 # EXIF tags
 'exif-imagewidth'  => 'विस्तारः',
 'exif-imagelength' => 'औन्नत्यम्',
-'exif-artist'      => 'लेखक',
 'exif-flash'       => 'स्फुरणम्',
 'exif-gpsspeedref' => 'गती एकक',
 
-'exif-orientation-1' => 'सामान्य',
-
-'exif-meteringmode-0' => 'अज्ञात',
-'exif-meteringmode-1' => 'माध्य',
-
-'exif-lightsource-0' => 'अज्ञात',
-
-'exif-contrast-0' => 'सामान्य',
-
-'exif-sharpness-0' => 'सामान्य',
-
-'exif-subjectdistancerange-0' => 'अज्ञात',
+'exif-iimcategory-edu' => 'विद्याभ्यासः',
+'exif-iimcategory-evn' => 'परिसरः',
+'exif-iimcategory-hth' => 'स्वास्थ्यम्',
+'exif-iimcategory-spo' => 'क्रीडाः',
 
 # External editor support
 'edit-externally'      => 'बाह्यां प्रणालीम् उपयुज्य इयं सञ्चिका सम्पाद्यताम् ।',
-'edit-externally-help' => '(अधिकासूचनार्थं [http://www.mediawiki.org/wiki/Manual:External_editors setup instructions] इत्येतत् दृश्यताम्)',
+'edit-externally-help' => '(अधिकासूचनार्थं [//www.mediawiki.org/wiki/Manual:External_editors setup instructions] इत्येतत् दृश्यताम्)',
 
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'सर्वाणि',
@@ -1691,6 +1620,11 @@ You may ignore this message, if this account was created in error.',
 
 # action=purge
 'confirm_purge_button' => 'अस्तु',
+
+# action=watch/unwatch
+'confirm-watch-button'   => 'अस्तु',
+'confirm-watch-top'      => 'इदं पृष्ठं भवतः अवेक्षणसूच्यां योजयाम ?',
+'confirm-unwatch-button' => 'अस्तु',
 
 # Multipage image navigation
 'imgmultipagenext' => 'अग्रिमं पृष्ठम्',
@@ -1718,12 +1652,7 @@ You may ignore this message, if this account was created in error.',
 'duplicate-defaultsort' => '\'\'\'प्रबोधः\'\'\' पुरानी मूल क्रमांकन कुंजी "$1" के बजाय अब मूल क्रमांकन कुंजी "$2" होगी।',
 
 # Special:Version
-'version'                  => 'आवृत्तिः',
-'version-skins'            => 'छादन',
-'version-other'            => 'अन्यत्',
-'version-poweredby-others' => 'अन्य',
-'version-software-product' => 'उत्पाद',
-'version-software-version' => 'आवृत्ति',
+'version' => 'आवृत्तिः',
 
 # Special:FilePath
 'filepath-page'   => 'सञ्चिका:',
@@ -1775,10 +1704,9 @@ You may ignore this message, if this account was created in error.',
 'dberr-problems' => 'क्षम्यताम् ! अस्मिन् जालपुटे तान्त्रिकसमस्याः अनुभूयमानाः सन्ति ।',
 
 # HTML forms
-'htmlform-invalid-input'       => 'भवता आरोपितेषु अंशेषु काचन समस्या विद्यते ।',
-'htmlform-select-badoption'    => 'भवता निर्दिष्टं मौल्यं युक्तविकल्पः न ।',
-'htmlform-int-invalid'         => 'भवता निर्दिष्टं मौल्यं पूर्णाङ्कः न ।',
-'htmlform-float-invalid'       => 'भवता निर्दिष्टं मौल्यं संख्या न ।',
-'htmlform-selectorother-other' => 'अन्य',
+'htmlform-invalid-input'    => 'भवता आरोपितेषु अंशेषु काचन समस्या विद्यते ।',
+'htmlform-select-badoption' => 'भवता निर्दिष्टं मौल्यं युक्तविकल्पः न ।',
+'htmlform-int-invalid'      => 'भवता निर्दिष्टं मौल्यं पूर्णाङ्कः न ।',
+'htmlform-float-invalid'    => 'भवता निर्दिष्टं मौल्यं संख्या न ।',
 
 );

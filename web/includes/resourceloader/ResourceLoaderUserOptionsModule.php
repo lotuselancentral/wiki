@@ -29,8 +29,14 @@ class ResourceLoaderUserOptionsModule extends ResourceLoaderModule {
 
 	protected $modifiedTime = array();
 
+	protected $origin = self::ORIGIN_CORE_INDIVIDUAL;
+
 	/* Methods */
 
+	/**
+	 * @param $context ResourceLoaderContext
+	 * @return array|int|Mixed
+	 */
 	public function getModifiedTime( ResourceLoaderContext $context ) {
 		$hash = $context->getHash();
 		if ( isset( $this->modifiedTime[$hash] ) ) {
@@ -39,26 +45,59 @@ class ResourceLoaderUserOptionsModule extends ResourceLoaderModule {
 
 		global $wgUser;
 
-		return $this->modifiedTime[$hash] = wfTimestamp( TS_UNIX, $wgUser->getTouched() );
+		if ( $context->getUser() === $wgUser->getName() ) {
+			return $this->modifiedTime[$hash] = wfTimestamp( TS_UNIX, $wgUser->getTouched() );
+		} else {
+			return 1;
+		}
 	}
 
-	public function getScript( ResourceLoaderContext $context ) {
+	/**
+	 * Fetch the context's user options, or if it doesn't match current user,
+	 * the default options.
+	 * 
+	 * @param $context ResourceLoaderContext: Context object
+	 * @return Array: List of user options keyed by option name
+	 */
+	protected function contextUserOptions( ResourceLoaderContext $context ) {
 		global $wgUser;
-		return Xml::encodeJsCall( 'mediaWiki.user.options.set', 
-			array( $wgUser->getOptions() ) );
+
+		// Verify identity -- this is a private module
+		if ( $context->getUser() === $wgUser->getName() ) {
+			return $wgUser->getOptions();
+		} else {
+			return User::getDefaultOptions();
+		}
 	}
 
+	/**
+	 * @param $context ResourceLoaderContext
+	 * @return string
+	 */
+	public function getScript( ResourceLoaderContext $context ) {
+		return Xml::encodeJsCall( 'mw.user.options.set', 
+			array( $this->contextUserOptions( $context ) ) );
+	}
+
+	/**
+	 * @param $context ResourceLoaderContext
+	 * @return array
+	 */
 	public function getStyles( ResourceLoaderContext $context ) {
-		global $wgAllowUserCssPrefs, $wgUser;
+		global $wgAllowUserCssPrefs;
 
 		if ( $wgAllowUserCssPrefs ) {
-			$options = $wgUser->getOptions();
+			$options = $this->contextUserOptions( $context );
 
 			// Build CSS rules
 			$rules = array();
 			if ( $options['underline'] < 2 ) {
 				$rules[] = "a { text-decoration: " . 
 					( $options['underline'] ? 'underline' : 'none' ) . "; }";
+			} else {
+				# The scripts of these languages are very hard to read with underlines
+				$rules[] = 'a:lang(ar), a:lang(ckb), a:lang(fa),a:lang(kk-arab), ' .
+				'a:lang(mzn), a:lang(ps), a:lang(ur) { text-decoration: none; }';
 			}
 			if ( $options['highlightbroken'] ) {
 				$rules[] = "a.new, #quickbar a.new { color: #ba0000; }\n";
@@ -88,12 +127,9 @@ class ResourceLoaderUserOptionsModule extends ResourceLoaderModule {
 		return array();
 	}
 
-	public function getFlip( $context ) {
-		global $wgContLang;
-
-		return $wgContLang->getDir() !== $context->getDirection();
-	}
-
+	/**
+	 * @return string
+	 */
 	public function getGroup() {
 		return 'private';
 	}

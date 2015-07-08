@@ -7,12 +7,52 @@
  * @ingroup Language
  * @file
  *
- * @author Kaganer
  * @author Xqt
  * @author לערי ריינהארט
  */
 
 $fallback = 'de';
+
+$namespaceNames = array(
+	NS_TALK             => 'Dischbedutt',
+	NS_USER             => 'Yuuser',
+	NS_USER_TALK        => 'Yuuser_Dischbedutt',
+	NS_PROJECT_TALK     => '$1_Dischbedutt',
+	NS_FILE             => 'Feil',
+	NS_FILE_TALK        => 'Feil_Dischbedutt',
+	NS_MEDIAWIKI_TALK   => 'MediaWiki_Dischbedutt',
+	NS_TEMPLATE         => 'Moddel',
+	NS_TEMPLATE_TALK    => 'Moddel_Dischbedutt',
+	NS_HELP             => 'Hilf',
+	NS_HELP_TALK        => 'Hilf_Dischbedutt',
+	NS_CATEGORY         => 'Abdeeling',
+	NS_CATEGORY_TALK    => 'Abdeeling_Dischbedutt',
+);
+
+$namespaceAliases = array(
+	# German namespaces
+	'Medium'               => NS_MEDIA,
+	'Spezial'              => NS_SPECIAL,
+	'Diskussion'           => NS_TALK,
+	'Benutzer'             => NS_USER,
+	'Benutzer_Diskussion'  => NS_USER_TALK,
+	'$1_Diskussion'        => NS_PROJECT_TALK,
+	'Datei'                => NS_FILE,
+	'Datei_Diskussion'     => NS_FILE_TALK,
+	'MediaWiki_Diskussion' => NS_MEDIAWIKI_TALK,
+	'Vorlage'              => NS_TEMPLATE,
+	'Vorlage_Diskussion'   => NS_TEMPLATE_TALK,
+	'Hilfe'                => NS_HELP,
+	'Hilfe_Diskussion'     => NS_HELP_TALK,
+	'Kategorie'            => NS_CATEGORY,
+	'Kategorie_Diskussion' => NS_CATEGORY_TALK,
+);
+
+$specialPageAliases = array(
+	'Listadmins'                => array( 'Verwalter', 'Administratoren' ),
+	'Listbots'                  => array( 'Waddefresser', 'Bots' ),
+	'Search'                    => array( 'Uffgucke', 'Suche' ),
+);
 
 $messages = array(
 # User preference toggles
@@ -89,14 +129,6 @@ $messages = array(
 'category-file-count-limited'    => '{{PLURAL:$1|Sell Feil iss|Selle $1 Feils sin}} in daer Abdeeling drin:',
 'listingcontinuesabbrev'         => '(weider)',
 
-'mainpagedocfooter' => "Hilf fer's Yuuse unn Konfiguriere vun de Wiki-Software kansch finne im [http://meta.wikimedia.org/wiki/Help:Contents Handbuch fer Yuuser].
-
-== Hilf zum Schtaerte ==
-
-* [http://www.mediawiki.org/wiki/Manual:Configuration_settings Lischt vun Gnepp zum Konfiguriere]
-* [http://www.mediawiki.org/wiki/Manual:FAQ MediaWiki-FAQ]
-* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce Eposchde-Lischt fer neie MediaWiki-Versione]",
-
 'about'         => 'Iwwer',
 'article'       => 'Blatt',
 'newwindow'     => '(in em nei Fenschder)',
@@ -119,7 +151,7 @@ $messages = array(
 'faqpage'        => 'Project:FAQ',
 
 # Vector skin
-'vector-action-delete'  => 'Verwische',
+'vector-action-delete'  => 'Lesche',
 'vector-action-move'    => 'Ziehe',
 'vector-action-protect' => 'Schitze',
 'vector-view-create'    => 'Schtaerte',
@@ -138,16 +170,16 @@ $messages = array(
 'searcharticle'    => 'Blatt',
 'history'          => 'Gschicht',
 'history_short'    => 'Gschicht',
-'info_short'       => 'Information',
 'printableversion' => 'Version zum Drucke',
 'permalink'        => 'Permanent Gleecher',
 'print'            => 'Drucke',
+'view'             => 'Aagucke',
 'edit'             => 'Ennere/Tscheensche',
 'create'           => 'Schtaerte',
 'editthispage'     => 'Des Blatt ennere',
 'create-this-page' => 'Blatt schtaerte',
-'delete'           => 'Verwische',
-'deletethispage'   => 'Des Blatt verwische',
+'delete'           => 'Lesche',
+'deletethispage'   => 'Des Blatt lösche',
 'protect'          => 'Schitze',
 'protect_change'   => 'tscheensche',
 'protectthispage'  => 'Des Blatt schitze',
@@ -209,6 +241,8 @@ Guck aa [[Special:Version|Versionsblatt]]',
 'toc'                     => 'Lischt vum Inhalt',
 'showtoc'                 => 'Zeige',
 'hidetoc'                 => 'Verschwinne losse',
+'collapsible-collapse'    => 'Zuklappe',
+'collapsible-expand'      => 'Uffklappe',
 'viewdeleted'             => '$1 zeige?',
 'feedlinks'               => 'Feed:',
 'site-rss-feed'           => 'RSS-Feed fer $1',
@@ -239,8 +273,6 @@ Des Blatt iss verleicht glescht adder gezoge warre.
 Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld des an en [[Special:ListUsers/sysop|Verwalter]] unn gebb die URL dezu aa.',
 'missingarticle-rev'  => '(Version: $1)',
 'missingarticle-diff' => '(Unnerschidd zwische Versione: $1, $2)',
-'internalerror'       => 'Interner Fehler',
-'internalerror_info'  => 'Interner Fehler: $1',
 'viewsourcefor'       => 'fer $1',
 'ns-specialprotected' => 'Besunnere Bledder sinn net zum Ennere.',
 
@@ -265,12 +297,19 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'noemail'                 => 'Yuuser „$1“ hot ken E-Mail aagewwe.',
 'loginlanguagelabel'      => 'Schprooch: $1',
 
-# Password reset dialog
+# Change password dialog
 'resetpass'                 => 'Paesswatt ennere',
 'oldpassword'               => 'Aldes Paesswatt:',
 'newpassword'               => 'Neies Paesswatt:',
 'resetpass_forbidden'       => 'Paesswatt iss net zu ennere',
 'resetpass-submit-loggedin' => 'Paesswatt ennere',
+
+# Special:PasswordReset
+'passwordreset'              => 'Paesswatt zerricksetze',
+'passwordreset-legend'       => 'Paesswatt zerricksetze',
+'passwordreset-username'     => 'Yuuser-Naame:',
+'passwordreset-emailelement' => 'Yuusernaame: $1
+Paesswatt fer nau: $2',
 
 # Edit page toolbar
 'bold_sample'     => 'Wadde fett gmarrickt',
@@ -281,7 +320,6 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'extlink_tip'     => 'Gewebbgleecher (acht uff http://)',
 'headline_sample' => 'Iwwerschrift',
 'headline_tip'    => 'Iwwerschrift Level 2',
-'math_sample'     => 'Formula hier eigewwe',
 'image_sample'    => 'Beeschpiel.jpg',
 'media_sample'    => 'Beeschpiel.ogg',
 'media_tip'       => 'Gleecher fer Feil',
@@ -289,7 +327,6 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 # Edit pages
 'minoredit'              => 'Nur gleene Enneringe gemacht',
 'watchthis'              => 'Watsch des Blatt',
-'savearticle'            => 'Blatt beilege',
 'preview'                => 'Aagucke',
 'showdiff'               => 'Enneringe zeige',
 'blockednoreason'        => 'ken Grund gewwe',
@@ -305,9 +342,6 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'template-protected'     => '(geschitzt)',
 'template-semiprotected' => '(geschitzt fer neie Yuuser)',
 
-# "Undo" feature
-'undo-summary' => 'Enneringe $1 vun [[Special:Contributions/$2|$2]] ([[User talk:$2|Dischbedutt]]) losgmacht.',
-
 # History pages
 'revisionasof'     => 'Version vum $2, $3 Uhr',
 'previousrevision' => '← letscht Version',
@@ -318,7 +352,7 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'page_last'        => 'End',
 'histfirst'        => 'Eldescht',
 'histlast'         => 'Letscht',
-'historysize'      => '({{PLURAL:$1|1 Beit|$1 Beit}})',
+'historysize'      => '({{PLURAL:$1|1 Byte|$1 Bytes}})',
 'historyempty'     => '(leer)',
 
 # Revision deletion
@@ -347,7 +381,7 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 # Diffs
 'difference' => '(Unnerschidd zwische Versione)',
 'lineno'     => 'Lein $1:',
-'editundo'   => 'losmache',
+'editundo'   => 'zerick',
 
 # Search results
 'searchresults'                  => 'Results vum Uffgucke',
@@ -392,8 +426,6 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'prefs-watchlist'          => 'Watsch-Lischt',
 'prefs-watchlist-days'     => 'Daage in de Watsch-Lischt:',
 'prefs-resetpass'          => 'Paesswatt ennere',
-'saveprefs'                => 'Uffstellinge beilege',
-'resetprefs'               => 'Ausduh',
 'prefs-editing'            => 'Ennere',
 'columns'                  => 'Kallems:',
 'searchresultshead'        => 'Guck uff',
@@ -443,7 +475,7 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'right-edit'     => 'Bledder ennere',
 'right-move'     => 'Bledder ziehe',
 'right-movefile' => 'Feils ziehe',
-'right-upload'   => 'Feils nuffdraage',
+'right-upload'   => 'Feils ufflaade',
 'right-writeapi' => 'Yuus vun write API',
 'right-delete'   => 'Bledder lesche',
 
@@ -456,7 +488,7 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'action-move'     => 'des Blatt zu ziehe',
 'action-movefile' => 'Des Feil ziehe',
 'action-upload'   => 'Des Feil ufflaade',
-'action-delete'   => 'des Blatt zu verwische',
+'action-delete'   => 'des Blatt zu lösche',
 
 # Recent changes
 'nchanges'                  => '$1 {{PLURAL:$1|Ennering|Enneringe}}',
@@ -483,19 +515,17 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'recentchangeslinked-page' => 'Blatt:',
 
 # Upload
-'upload'             => 'Nuffdraage',
-'uploadbtn'          => 'Feil nuffdraage',
+'upload'             => 'Ufflaade',
+'uploadbtn'          => 'Feil ufflaade',
 'uploadlogpage'      => 'Feil-Lochbuch',
 'filename'           => 'Feilnaame',
 'badfilename'        => 'Daer Feilnaame iss gennert warre nooch „$1“.',
-'savefile'           => 'Feil beilege',
 'uploadedimage'      => 'hot „[[$1]]“ uffglaade',
 'overwroteimage'     => 'hot e neie Version vun „[[$1]]“ uffglaade',
 'uploaddisabled'     => 'Ufflaade verbodde',
 'uploaddisabledtext' => 'Es Ufflaade vun Feils iss verbodde.',
 'watchthisupload'    => 'Watsch des Blatt',
 
-'upload-file-error'   => 'Interner Fehler',
 'upload-unknown-size' => 'Unbekannte Grees',
 'upload-http-error'   => 'En HTTP-Fehler iss kumme: $1',
 
@@ -517,7 +547,7 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'file-anchor-link'    => 'Feil',
 'filehist'            => 'Versione vun Feils',
 'filehist-deleteall'  => 'All Versione lösche',
-'filehist-deleteone'  => 'Sell Version verwische',
+'filehist-deleteone'  => 'Sell Version lesche',
 'filehist-revert'     => 'zerick',
 'filehist-datetime'   => 'Version vum',
 'filehist-thumb'      => 'Glee Pikder',
@@ -535,7 +565,7 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 # File deletion
 'filedelete'                  => 'Lösche „$1“',
 'filedelete-comment'          => 'Grund:',
-'filedelete-submit'           => 'Verwische',
+'filedelete-submit'           => 'Lesche',
 'filedelete-nofile'           => "'''„$1“''' gebt es net.",
 'filedelete-otherreason'      => 'Annere Grind dezu:',
 'filedelete-reason-otherlist' => 'Annerer Gund',
@@ -565,12 +595,12 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 
 'brokenredirects'        => 'Kaputte Weiderleidinge',
 'brokenredirects-edit'   => 'ennere',
-'brokenredirects-delete' => 'verwische',
+'brokenredirects-delete' => 'lesche',
 
 'withoutinterwiki-submit' => 'Zeig',
 
 # Miscellaneous special pages
-'nbytes'            => '$1 {{PLURAL:$1|Beit|Beit}}',
+'nbytes'            => '$1 {{PLURAL:$1|Byte|Bytes}}',
 'ncategories'       => '$1 {{PLURAL:$1|Abdeeling|Abdeelinge}}',
 'nlinks'            => '{{PLURAL:$1|1 Gleecher|$1 Gleecher}}',
 'nimagelinks'       => 'Gyuust uff $1 {{PLURAL:$1|Blatt|Bledder}}',
@@ -639,6 +669,7 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 # E-mail user
 'emailuser'       => 'E-Poschd fer den Yuuser',
 'defemailsubject' => '{{SITENAME}}-E-Poschde',
+'emailusername'   => 'Yuuser-Naame:',
 'emailfrom'       => 'Vun:',
 'emailto'         => 'Fer:',
 'emailsend'       => 'Schicke',
@@ -648,7 +679,6 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'watchlist'         => 'Mei Watsch-Lischt',
 'mywatchlist'       => 'Mei Watsch-Lischt',
 'watchlistfor2'     => 'Vun $1 $2',
-'addedwatch'        => 'Zu de Watsch-Lischt dezu geduh',
 'watch'             => 'watsche',
 'watchthispage'     => 'watsch des Blatt',
 'unwatch'           => 'Nimmi watsche',
@@ -670,8 +700,8 @@ Wenns des net iss, hoscht verleicht en Fehler in de Daadebank gfunne. Bitte meld
 'deletepage'             => 'Blatt lesche',
 'exblank'                => 'Blatt war leer',
 'delete-confirm'         => 'Lesche vun „$1“',
-'delete-legend'          => 'Verwische',
-'deletedtext'            => '"<nowiki>$1</nowiki>" iss gelescht warre.
+'delete-legend'          => 'Lesche',
+'deletedtext'            => '"$1" iss gelescht warre.
 Guck $2 fer e Lischt vun de letscht Leschunge.',
 'deletedarticle'         => 'hot „[[$1]]“ gelöscht',
 'dellogpage'             => 'Lischt vun gelöschte Bledder',
@@ -694,7 +724,7 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'protect-expiry-options'    => '1 Schtund:1 hour,1 Daag:1 day,1 Woch:1 week,2 Woche:2 weeks,1 Munet:1 month,3 Munede:3 months,6 Munede:6 months,1 Yaar:1 year,Fer immer:infinite',
 'minimum-size'              => 'Min. Grees',
 'maximum-size'              => 'Max. Grees:',
-'pagesize'                  => '(Beit)',
+'pagesize'                  => '(Bytes)',
 
 # Restrictions (nouns)
 'restriction-edit'   => 'Ennere/Tscheensche',
@@ -739,6 +769,7 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'whatlinkshere-hideimages' => 'Feil Gleecher $1',
 
 # Block/unblock
+'block'              => 'Yuuser aabinne',
 'blockip'            => 'Yuuser aabinne',
 'blockip-title'      => 'Yuuser aabinne',
 'blockip-legend'     => 'Yuuser aabinne',
@@ -750,6 +781,7 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'ipboptions'         => '2 Schtund:2 hours,1 Daag:1 day,3 Daag:3 days,1 Woch:1 week,2 Woche:2 weeks,1 Munet:1 month,3 Munede:3 months,6 Monate:6 months,1 Yaar:1 year,Fer immer:infinite',
 'ipbotheroption'     => 'Anneres',
 'ipbotherreason'     => 'Annerer Grund:',
+'blocklist-reason'   => 'Grund',
 'ipblocklist-submit' => 'Guck uff',
 'infiniteblock'      => 'fer immer',
 'blocklink'          => 'Aabinne',
@@ -772,10 +804,9 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'delete_and_move_confirm' => 'Ya, es Blatt lösche',
 
 # Export
-'export'          => 'Bledder exportiere',
-'export-addcat'   => 'Dezu duh',
-'export-addns'    => 'Dezu duh',
-'export-download' => 'As XML-Feil annelege',
+'export'        => 'Bledder exportiere',
+'export-addcat' => 'Dezu duh',
+'export-addns'  => 'Dezu duh',
 
 # Namespace 8 related
 'allmessagesname'               => 'Naame',
@@ -808,7 +839,7 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'tooltip-ca-edit'                => 'Du kannscht des Blatt ennere. Bitte brauch de Aaguck-Gnopp vor em Speichere.',
 'tooltip-ca-history'             => 'Ledschde Versione vun dem Blattt',
 'tooltip-ca-protect'             => 'Des Blatt schitze',
-'tooltip-ca-delete'              => 'Des Blatt verwische',
+'tooltip-ca-delete'              => 'Des Blatt lösche',
 'tooltip-ca-move'                => 'Des Blatt ziehe',
 'tooltip-search'                 => 'Guck uff {{SITENAME}}',
 'tooltip-search-go'              => 'Geh zu dem Blatt mit genaa dem Naame, wenns es gebbt.',
@@ -826,7 +857,7 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'tooltip-feed-atom'              => 'Atom-Feed fer des Blatt',
 'tooltip-t-contributions'        => 'Lischt von Ardickele vun dem Yuuser zeige',
 'tooltip-t-emailuser'            => 'Dem Yuuser e E-Poschd schicke',
-'tooltip-t-upload'               => 'Feils nuffdraage',
+'tooltip-t-upload'               => 'Feils ufflaade',
 'tooltip-t-specialpages'         => 'Lischt vun alle besunnere Bledder',
 'tooltip-t-print'                => 'Des Blatt fer zum Drucke',
 'tooltip-t-permalink'            => 'En permanent Gleecher zu derre Version vun dem Blatt',
@@ -835,18 +866,23 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'tooltip-ca-nstab-special'       => 'Sell iss en besunneres Blatt. Du kannscht es Blatt net ennere.',
 'tooltip-ca-nstab-image'         => 'Feil zeige',
 'tooltip-ca-nstab-template'      => 'Moddel aagucke',
-'tooltip-save'                   => 'Enneringe beilege',
 
 # Attribution
 'siteuser'  => '{{SITENAME}}-Yuuser $1',
 'others'    => 'annere',
 'siteusers' => '{{SITENAME}}-{{PLURAL:$2|Yuuser|Yuuser}} $1',
 
+# Info page
+'pageinfo-header-edits'     => 'Enneringe',
+'pageinfo-header-watchlist' => 'Watsch-Lischt',
+'pageinfo-subjectpage'      => 'Blatt',
+'pageinfo-talkpage'         => 'Gschwetz-Blatt',
+
 # Browsing diffs
 'nextdiff' => 'Zum neegschte Versionsunnerschidd →',
 
 # Media information
-'widthheightpage' => '$1 × $2, {{PLURAL:$3|1 Blatt|$3 Bledder}}',
+'widthheightpage' => '$1×$2, {{PLURAL:$3|1 Blatt|$3 Bledder}}',
 'file-info-size'  => '$1 × $2 Pixel, Daadegrees: $3, MIME-Typ: $4',
 
 # Special:NewFiles
@@ -858,10 +894,12 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'metadata' => 'Metadaade',
 
 # EXIF tags
-'exif-imagelength' => 'Leng',
-'exif-software'    => 'Geyuust Software',
-'exif-usercomment' => 'Anmaerrickinge vun Yuuser',
-'exif-gpsaltitude' => 'Heech',
+'exif-imagelength'  => 'Leng',
+'exif-software'     => 'Geyuust Software',
+'exif-usercomment'  => 'Anmaerrickinge vun Yuuser',
+'exif-gpsaltitude'  => 'Heech',
+'exif-writer'       => 'Schreiwer',
+'exif-languagecode' => 'Schprooch',
 
 'exif-subjectdistance-value' => '$1 Meter',
 
@@ -870,12 +908,10 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'exif-gaincontrol-0' => 'Ken',
 
 # 'all' in various places, this might be different for inflected languages
-'recentchangesall' => 'all',
-'imagelistall'     => 'all',
-'watchlistall2'    => 'all',
-'namespacesall'    => 'all',
-'monthsall'        => 'all',
-'limitall'         => 'all',
+'watchlistall2' => 'all',
+'namespacesall' => 'all',
+'monthsall'     => 'all',
+'limitall'      => 'all',
 
 # Scary transclusion
 'scarytranscludetoolong' => '[URL iss zu lang]',
@@ -885,6 +921,10 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 
 # action=purge
 'confirm_purge_button' => 'OK',
+
+# action=watch/unwatch
+'confirm-watch-button'   => 'OK',
+'confirm-unwatch-button' => 'OK',
 
 # Separators for various lists, etc.
 'ellipsis' => '…',
@@ -955,7 +995,7 @@ Guck $2 fer e Lischt vun de letscht Leschunge.',
 'compare-page2' => 'Blatt 2',
 
 # HTML forms
-'htmlform-reset'               => 'Enneringe losmache',
+'htmlform-reset'               => 'Enneringe zerick nemme',
 'htmlform-selectorother-other' => 'Annere',
 
 );

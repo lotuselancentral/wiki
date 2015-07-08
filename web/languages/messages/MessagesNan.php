@@ -53,8 +53,8 @@ $messages = array(
 'tog-shownumberswatching'     => 'Hián-sī tng leh khoàⁿ ê iōng-chiá sò͘-bo̍k',
 'tog-oldsig'                  => 'Chit-má ê chhiam-miâ:',
 'tog-fancysig'                => 'Chhiam-miâ mài chò liân-kiat',
-'tog-externaleditor'          => 'Iōng gōa-pō· pian-chi̍p-khì (kan-na hō͘ ko-chhiú, he ài tī lí ê tiān-náu koh siat-tēng. [http://www.mediawiki.org/wiki/Manual:External_editors Siông-chêng.])',
-'tog-externaldiff'            => 'Iōng gōa-pō· diff (kan-na hō͘ ko-chhiú, he ài tī lí ê tiān-noá koh siat-tēng. [http://www.mediawiki.org/wiki/Manual:External_editors Siông-chêng.])',
+'tog-externaleditor'          => 'Iōng gōa-pō· pian-chi̍p-khì (kan-na hō͘ ko-chhiú, he ài tī lí ê tiān-náu koh siat-tēng. [//www.mediawiki.org/wiki/Manual:External_editors Siông-chêng.])',
+'tog-externaldiff'            => 'Iōng gōa-pō· diff (kan-na hō͘ ko-chhiú, he ài tī lí ê tiān-noá koh siat-tēng. [//www.mediawiki.org/wiki/Manual:External_editors Siông-chêng.])',
 'tog-showjumplinks'           => 'Hō͘ "thiàu khì" chit ê liân-chiap ē-sái',
 'tog-uselivepreview'          => 'Ēng sui khoàⁿ-māi (ài ū JavaScript) (chhì-giām--ê)',
 'tog-forceeditsummary'        => 'Pian-chi̍p khài-iàu bô thiⁿ ê sî-chūn, kā goá thê-chhéⁿ',
@@ -149,14 +149,7 @@ $messages = array(
 'listingcontinuesabbrev'         => '(chiap-sòa thâu-chêng)',
 'index-category'                 => 'Ū sik-ín ê ia̍h',
 'noindex-category'               => 'Bī sik-ín ê ia̍h.',
-
-'mainpagetext'      => "'''MediaWiki已經裝好矣。'''",
-'mainpagedocfooter' => '請查看[http://meta.wikimedia.org/wiki/Help:Contents 用者說明書]的資料通使用wiki 軟體
-
-== 入門 ==
-* [http://www.mediawiki.org/wiki/Manual:Configuration_settings 配置的設定]
-* [http://www.mediawiki.org/wiki/Manual:FAQ MediaWiki時常問答]
-* [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki的公布列單]',
+'broken-file-category'           => 'Sit-khì tóng-àn liân-kiat ê ia̍h.',
 
 'about'         => 'Koan-hē',
 'article'       => 'Loē-iông ia̍h',
@@ -208,17 +201,18 @@ $messages = array(
 'history'           => 'Ia̍h le̍k-sú',
 'history_short'     => 'le̍k-sú',
 'updatedmarker'     => 'Téng hoê goá lâi chiah liáu ū kái koè--ê',
-'info_short'        => '資訊',
 'printableversion'  => 'Ìn-soat pán-pún',
 'permalink'         => 'Éng-kiú liân-kiat',
 'print'             => 'Ìn-soat',
+'view'              => 'Khoàⁿ',
 'edit'              => 'Siu-kái',
 'create'            => 'Khai-sí siá',
 'editthispage'      => 'Siu-kái chit ia̍h',
 'create-this-page'  => 'Khai-sí siá chit ia̍h',
 'delete'            => 'Thâi',
 'deletethispage'    => 'Thâi chit ia̍h',
-'undelete_short'    => 'Kiù {{PLURAL:$1| ê siu-káit|$1  ê siu-kái}}',
+'undelete_short'    => 'Kiù $1 ê siu-kái',
+'viewdeleted_short' => 'Khoàⁿ {{PLURAL:$1|chi̍t-ê thâi tiàu--ê pian-chi̍p|$1 ê thâi tiàu--ê pian-chi̍p}}',
 'protect'           => 'Pó-hō·',
 'protect_change'    => 'kái-piàn',
 'protectthispage'   => 'Pó-hō· chit ia̍h',
@@ -246,7 +240,7 @@ $messages = array(
 'redirectedfrom'    => '(Tùi $1 choán--lâi)',
 'redirectpagesub'   => 'Choán-ia̍h',
 'lastmodifiedat'    => 'Chit ia̍h tī $1,  $2 ū kái--koè',
-'viewcount'         => 'Pún-ia̍h kàu taⁿ ū {{PLURAL:$1| pái|$1 pái}}  ê sú-iōng.',
+'viewcount'         => 'Pún-ia̍h kàu taⁿ ū $1 pái access.',
 'protectedpage'     => 'Siū pó-hō͘ ê ia̍h',
 'jumpto'            => 'Thiàu khì:',
 'jumptonavigation'  => 'Se̍h chām',
@@ -303,6 +297,8 @@ Chhiáⁿ khoàⁿ [[Special:Version|pán-pún ia̍h]].',
 'toc'                     => 'Bo̍k-lo̍k',
 'showtoc'                 => 'khui',
 'hidetoc'                 => 'siu',
+'collapsible-collapse'    => 'Siu',
+'collapsible-expand'      => 'Khui',
 'thisisdeleted'           => 'Khoàⁿ a̍h-sī kiù $1?',
 'viewdeleted'             => 'Beh khoàⁿ $1？',
 'restorelink'             => '{{PLURAL:$1|chi̍t ê thâi-tiàu ê pian-chi̍p|$1 thâi-tiàu ê pian-chi̍p}}',
@@ -314,6 +310,8 @@ Chhiáⁿ khoàⁿ [[Special:Version|pán-pún ia̍h]].',
 'page-rss-feed'           => '"$1" ê RSS tēng khoàⁿ',
 'page-atom-feed'          => '"$1" ê Atom tēng khoàⁿ',
 'red-link-title'          => '$1 (bô hit ia̍h)',
+'sort-descending'         => 'Hā-kàng pâi-lia̍t',
+'sort-ascending'          => 'Seng-koân pâi-lia̍t',
 
 # Short words for each namespace, by default used in the namespace tab in monobook
 'nstab-main'      => 'Bûn-chiuⁿ',
@@ -395,12 +393,13 @@ Chhiáⁿ tī kúi hun-cheng hāu chiah koh chhì.',
 'protectedinterface'   => 'Chit ia̍h thê-kiong nńg-thé kài-bīn ēng ê bûn-jī. Ūi beh ī-hông lâng chau-that, só͘-í ū siū tio̍h pó-hō͘.',
 'editinginterface'     => "'''Sè-jī:''' Lí tng teh siu-kái 1 bīn thê-kiong nńg-thé kài-bīn bûn-jī ê ia̍h. 
 Jīn-hô kái-piàn to ē éng-hióng tio̍h kî-thaⁿ iōng-chiá ê sú-iōng kài-bīn.
-Nā ūi-tio̍h hoan-e̍k, chhiáⁿ khó-lū sú-iōng [http://translatewiki.net/wiki/Main_Page?setlang=nan translatewiki.net], MediaWiki ê chāi-tē hoà sū-kang.",
+Nā ūi-tio̍h hoan-e̍k, chhiáⁿ khó-lū sú-iōng [//translatewiki.net/wiki/Main_Page?setlang=nan translatewiki.net], MediaWiki ê chāi-tē hoà sū-kang.",
 'sqlhidden'            => '(Tshàng SQL tsa-sûn)',
 'cascadeprotected'     => 'Chit-ê ia̍h í-keng hông pó-hō͘ bē kái tit. In-ūi i tī ē-bīn {{PLURAL:$1|ê|ê}} liân-só pó-hō͘ lāi-té:
 $2',
 'namespaceprotected'   => "Lí bô khoân-lī kái '''$1'''  miâ-khong-kan ê ia̍h",
-'customcssjsprotected' => '你無權限通改這頁，因為伊包括著其他用戶的個人設定。',
+'customcssprotected'   => '你無權限通改這CSS頁面，因為伊包括著其他用戶的個人設定。',
+'customjsprotected'    => '你無權限通改這javaScript頁面，因為伊包括著其他用戶的個人設定。',
 'ns-specialprotected'  => '特殊頁袂使改得',
 'titleprotected'       => "這个標題已經予[[User:$1|$1]]保護牢咧袂使用。理由是''$2''。",
 
@@ -412,10 +411,10 @@ $2',
 # Login and logout pages
 'logouttext'                 => "'''Lí í-keng teng-chhut.'''
 
-Lí ē-sái mài kì-miâ kè-siok sú-iōng {{SITENAME}}, mā ē-sái iōng kāng-ê a̍h-sī  pa̍t-ê sin-hūn [[Special:UserLogin|têng teng-ji̍p]].
+Lí ē-sái mài kì-miâ kè-siok sú-iōng {{SITENAME}}, mā ē-sái iōng kāng-ê a̍h-sī pa̍t-ê sin-hūn têng teng-ji̍p.
 Chhiaⁿ chù-ì: ū-kóa ia̍h ū khó-lêng khoàⁿ-tio̍h bē-su lí iû-goân teng-ji̍p tiong; che chi-iàu piàⁿ tiāu lí ê browser ê cache chiū ē chèng-siông.",
 'welcomecreation'            => '==Hoan-gêng $1!==
-Í-keng khui hó lí ê kháu-chō.  M̄-hó bē-kì-tit chhiâu lí tī [[Special:Preferences|{{SITENAME}} ê iōng-chiá siat-tēng]].',
+Í-keng khui hó lí ê kháu-chō.  M̄-hó bē-kì-tit chhiâu lí ê iōng-chiá siat-tēng.',
 'yourname'                   => 'Lí ê iōng-chiá miâ-chheng:',
 'yourpassword'               => 'Lí ê bi̍t-bé:',
 'yourpasswordagain'          => 'Têng phah bi̍t-bé:',
@@ -436,6 +435,7 @@ Chhiaⁿ chù-ì: ū-kóa ia̍h ū khó-lêng khoàⁿ-tio̍h bē-su lí iû-go�
 'createaccount'              => 'Khui sin kháu-chō',
 'gotaccount'                 => "Í-keng ū kháu-chō? '''$1'''.",
 'gotaccountlink'             => 'Teng-ji̍p',
+'userlogin-resetlink'        => '袂記哩你登入的資料？',
 'createaccountmail'          => 'Thàu koè tiān-chú-phoe',
 'createaccountreason'        => 'Lí-iû:',
 'badretype'                  => 'Lí su-ji̍p ê 2-cho· bi̍t-bé bô tùi.',
@@ -447,12 +447,14 @@ Chhiaⁿ chù-ì: ū-kóa ia̍h ū khó-lêng khoàⁿ-tio̍h bē-su lí iû-go�
 你無拍開cookies功能，
 請拍開，通記錄你的用者名稱佮密碼。',
 'nocookieslogin'             => '{{SITENAME}}用 Cookies 記錄用戶，你共關掉，請拍開閣重新登入。',
+'nocookiesfornew'            => '這个用者口座猶未開，阮無法度確認伊的來源，
+請確定你您已經拍開cookies功能了，重新載入這頁閣重試。',
 'noname'                     => '你無拍一个有效的用者名稱。',
 'loginsuccesstitle'          => 'Teng-ji̍p sêng-kong',
 'loginsuccess'               => 'Lí hiān-chhú-sî í-keng teng-ji̍p {{SITENAME}} chò "$1".',
 'nosuchuser'                 => 'Chia bô iōng-chiá hō-chò "$1". Miâ-jī  ū hun toā-siá, sio-siá . Chhiáⁿ kiám-cha lí ê phèng-im, a̍h-sī [[Special:UserLogin/signup|khui sin káu-chō]].',
-'nosuchusershort'            => '無"$1"這个用者名，
-對看覓，你拍的。',
+'nosuchusershort'            => 'Bô "$1" chit ê iōng-chiá miâ.
+Tùi khoàⁿ-māi,  lí phah--ê.',
 'nouserspecified'            => 'Lí ài chí-tēng chi̍t ê iōng-chiá miâ.',
 'login-userblocked'          => '這个用者已經hông封鎖，無允准登入。',
 'wrongpassword'              => 'Lí su-ji̍p ê bi̍t-bé ū têng-tâⁿ. Chhiáⁿ têng chhì.',
@@ -479,7 +481,7 @@ Chhiaⁿ chù-ì: ū-kóa ia̍h ū khó-lêng khoàⁿ-tio̍h bē-su lí iû-go�
 'mailerror'                  => 'Kià phoe tú tio̍h chhò-gō·: $1',
 'acct_creation_throttle_hit' => 'Tī koè-khì 24 tiám-cheng lāi,  ū chit ê iōng lí IP bāng-chí ê lâng í-keng khui {{PLURAL:$1|1 account|$1 kháu-chō}}. He sī hit ê sî-kan lāi thang chò ê.
 Tiō-sī kóng, tī chit-má iōng chit ê IP bāng-chí ê lâng bē-sái koh khui jīm-hô kháu-chō.',
-'emailauthenticated'         => 'Lí ê e-mail chū-chí tī $2 $3 khak-jīn sêng-kong.',
+'emailauthenticated'         => 'Lí ê e-mail chū-chí tī $2 $2 khak-jīn sêng-kong.',
 'emailnotauthenticated'      => 'Lí ê e-mail chū-chí iáu-bōe khak-jīn ū-hāu, só·-í ē--kha ê e-mail kong-lêng bē-ēng-tit.',
 'noemailprefs'               => 'Tī lí ê siat-piān chí-tēng chi̍t ê tiān-chú-phoe tē-chí thang hō͘ chia ê kong-lêng ē-tàng ēng.',
 'emailconfirmlink'           => 'Chhiáⁿ khak-jīn lí ê e-mail chū-chí ū-hāu',
@@ -495,13 +497,14 @@ Tiō-sī kóng, tī chit-má iōng chit ê IP bāng-chí ê lâng bē-sái koh k
 'usernamehasherror'          => '用者名稱袂使有#字元',
 'login-throttled'            => '你已經試傷濟擺登入的動作，
 請小等一下才閣試。',
+'login-abort-generic'        => '你的登入無成功，中途退出。',
 'loginlanguagelabel'         => '話語：$1',
 'suspicious-userlogout'      => '你登出的要求已經被拒絕，因為伊看起來是對無連線的瀏覽器抑是快取代理傳送來的。',
 
 # E-mail sending
 'php-mail-error-unknown' => '佇PHP的 mail() 函數的未知錯誤',
 
-# Password reset dialog
+# Change password dialog
 'resetpass'                 => 'Kái bi̍t-bé',
 'resetpass_announce'        => '你是對一張電子批的臨時編碼登入的。欲完成登入，你愛佇遮設定新密碼：',
 'resetpass_header'          => 'Kái káu-chō ê bi̍t-bé.',
@@ -519,6 +522,27 @@ Tiō-sī kóng, tī chit-má iōng chit ê IP bāng-chí ê lâng bē-sái koh k
 你可能已經成功更過你的密碼，抑是申請一个新的臨時密碼。',
 'resetpass-temp-password'   => 'Lîm-sî ê bi̍t-bé:',
 
+# Special:PasswordReset
+'passwordreset'              => 'Têng siat bi̍t-bé',
+'passwordreset-text'         => '完成這个表，就通收著一封提醒你口座詳情的電子批。',
+'passwordreset-legend'       => 'Têng siat bi̍t-bé',
+'passwordreset-disabled'     => '佇這个Wiki已經禁止重設密碼',
+'passwordreset-pretext'      => '{{PLURAL:$1||拍下跤資料內底的一个}}',
+'passwordreset-username'     => 'Lí ê iōng-chiá miâ-chheng:',
+'passwordreset-domain'       => '網域：',
+'passwordreset-email'        => 'Tiān-chú-phoe tē-chí:',
+'passwordreset-emailtitle'   => '佇{{SITENAME}}面頂的的口座詳細',
+'passwordreset-emailtext-ip' => '有人（可能是你，對$1這IP）要求發一个{{SITENAME}}（$4）口座詳情的提示。彼个用戶{{PLURAL:$3|是|是}}佮下跤電子批地址有關係：
+
+$2
+
+{{PLURAL:$3|這个臨時密碼|遮的臨時密碼}}會佇{{PLURAL:$5|一工 |$5工}}內到期。
+你這馬應該登入，而且選擇一个新密碼。若是別人做的要求，抑是你已經記
+起來你的密碼，你閣無想欲改，你會當免管這个信息，而且繼續用你的密碼。',
+'passwordreset-emailelement' => 'Iōng-chiá: $1
+Lîm-sî ê bi̍t-bé: $2',
+'passwordreset-emailsent'    => 'Chit hong thê-chhíⁿ ê  tiān-chú-phoe í-keng kià chhut.',
+
 # Edit page toolbar
 'bold_sample'     => 'Chho·-thé bûn-jī',
 'bold_tip'        => 'Chho·-thé jī',
@@ -530,8 +554,6 @@ Tiō-sī kóng, tī chit-má iōng chit ê IP bāng-chí ê lâng bē-sái koh k
 'extlink_tip'     => 'Gōa-pō· ê liân-kiat (ē-kì-tit thâu-chêng ài ke http://)',
 'headline_sample' => 'Thâu-tiâu bûn-jī',
 'headline_tip'    => 'Tē-2-chân (level 2) ê phiau-tê',
-'math_sample'     => 'Chia siá hong-thêng-sek',
-'math_tip'        => '數學的公式 （LaTeX）',
 'nowiki_sample'   => 'Chia siá bô keh-sek ê bûn-jī',
 'nowiki_tip'      => '無照Wiki的規格',
 'image_sample'    => 'Iann-siong-e-le.jpg',
@@ -605,7 +627,7 @@ Tiō-sī kóng, tī chit-má iōng chit ê IP bāng-chí ê lâng bē-sái koh k
 Kháu-chō ê sin bi̍t-bé thang tī teng-ji̍p liáu tī ''[[Special:ChangePassword|siu-kái bi̍t-bé]]'' ia̍h kái tiāu.",
 'newarticle'                       => '(Sin)',
 'newarticletext'                   => "Lí tòe 1 ê liân-kiat lâi kàu 1 bīn iáu-bōe chûn-chāi ê ia̍h. Beh khai-sí pian-chi̍p chit ia̍h, chhiáⁿ tī ē-kha ê bûn-jī keh-á lāi-té phah-jī. ([[{{MediaWiki:Helppage}}|Bo̍k-lio̍k]] kà lí án-choáⁿ chìn-hêng.) Ká-sú lí bô-tiuⁿ-tî lâi kàu chia, ē-sai chhi̍h liû-lám-khì ê '''téng-1-ia̍h''' tńg--khì.",
-'anontalkpagetext'                 => "''Pún thó-lūn-ia̍h bô kò·-tēng ê kháu-chō/hō·-thâu, kan-na ū 1 ê IP chū-chí (chhin-chhiūⁿ 123.456.789.123). In-ūi bô kāng lâng tī bô kāng sî-chūn ū khó-lêng tú-hó kong-ke kāng-ê IP, lâu tī chia ê oē ū khó-lêng hō· bô kāng lâng ê! Beh pī-bián chit khoán būn-tê, ē-sái khì [[Special:UserLogin/signup|khui 1 ê hō·-thâu a̍h-sī teng-ji̍p]].''",
+'anontalkpagetext'                 => "----''Pún thó-lūn-ia̍h bô kò·-tēng ê kháu-chō/hō·-thâu, kan-na ū 1 ê IP chū-chí (chhin-chhiūⁿ 123.456.789.123). In-ūi bô kāng lâng tī bô kāng sî-chūn ū khó-lêng tú-hó kong-ke kāng-ê IP, lâu tī chia ê oē ū khó-lêng hō· bô kāng lâng ê! Beh pī-bián chit khoán būn-tê, ē-sái khì [[Special:UserLogin|khui 1 ê hō·-thâu a̍h-sī teng-ji̍p]].''",
 'noarticletext'                    => '這頁這馬無內容，
 你會使佇別頁[[Special:Search/{{PAGENAME}}|搜揣這頁標題]]，
 <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} 搜揣有關的記錄]，
@@ -618,9 +640,8 @@ Kháu-chō ê sin bi̍t-bé thang tī teng-ji̍p liáu tī ''[[Special:ChangePas
 'userpage-userdoesnotexist-view'   => '用者口座「$1」猶未開',
 'blocked-notice-logextract'        => '這个用者這馬hông封鎖，
 下跤有最近封鎖的紀錄通參考：',
-'clearyourcache'                   => "'''Chù-ì:''' Pó-chûn liáu-āu, tio̍h ē-kì leh kā liû-lám-khì ê cache piàⁿ tiāu chiah khoàⁿ-ē-tio̍h kái-piàn. 
-*'''Firefox / Safari:''' chhi̍h tiâu \"Shift\" kâng-sî-chūn tiám-kik ''Reload/têng-sin chài-ji̍p'' a̍h-sī chhi̍h ''Ctrl-F5'' \"Ctrl-R\" kî-tiong chi̍t ê (''⌘-R'' tī Mac) 
-* '''Google Chrome:''' chhi̍h ''Ctrl-Shift-R'' (''⌘-R-Shift-R'' tī Mac)
+'clearyourcache'                   => "'''Chù-ì:''' Pó-chûn liáu-āu, tio̍h ē-kì leh kā liû-lám-khì ê cache piàⁿ tiāu chiah khoàⁿ-ē-tio̍h kái-piàn: *'''Firefox / Safari:''' chhi̍h tiâu \"Shift\" kâng-sî-chūn tiám-kik ''Reload/têng-sin chài-ji̍p'' a̍h-sī chhi̍h ''Ctrl-F5'' \"Ctrl-R\" kî-tiong chi̍t ê (''Command-R'' tī Mac) 
+* '''Google Chrome:''' chhi̍h ''Ctrl-Shift-R'' (''Command-Shift-R'' tī Mac)
 '''Internet Explorer :'''chhi̍h tiâu \"Ctrl\" kâng-sî-chūn tiám-kek ''Refresh/têng-sin chài-ji̍p'' a̍h-sī chhi̍h \"Ctrl-F5\" 
 * '''Konqueror:'''  tiám-kek ''Reload/têng-sin chài-ji̍p'' a̍h-sī chhi̍h ''F5''
 * '''Opera:''' piàⁿ-tiāu cache tī ''Tools(ke-si) → Preferences(siat-piān)''",
@@ -649,6 +670,7 @@ Kháu-chō ê sin bi̍t-bé thang tī teng-ji̍p liáu tī ''[[Special:ChangePas
 '''若這改編輯過程無問題，請閣試一改。若閣有問題，請[[Special:UserLogout|登出]]了後，才閣重登入。'''",
 'token_suffix_mismatch'            => "'''因為你用者端的編輯毀損一寡標點符號字元，你的編輯無被接受。'''
 這種情況會出現佇你用網路上匿名代理服務的時陣。",
+'edit_form_incomplete'             => "'''一寡部份的編輯無送到伺服器，請檢查你的編輯是毋是完整，才閣試。'''",
 'editing'                          => 'Siu-kái $1',
 'editingsection'                   => 'Pian-chi̍p $1 (section)',
 'editingcomment'                   => 'Teh pian-chi̍p $1 (lâu-oē)',
@@ -719,7 +741,7 @@ Chia ū chit ia̍h ê san-tû kì-lo̍k hō͘ lí chham-khó:",
 # Parser/template warnings
 'expensive-parserfunction-warning'        => "'''警示：'''這頁用傷濟擺函數呼叫。
 
-伊應該少過{{PLURAL:$2|擺|擺}}，這馬有{{PLURAL:$1|擺|擺}}。",
+伊應該少過{PLURAL:$2|擺|擺}，這馬有{PLURAL:$1|擺|擺}。",
 'expensive-parserfunction-category'       => '用傷濟擺函數呼叫的頁',
 'post-expand-template-inclusion-warning'  => "'''Kéng-pò:'''Pau ji̍t lâi ê pán-bôo sioⁿ koè tsē ia̍h tuā.
 Ū chi̍t-koá-á ē bô pau ji̍t lâi.",
@@ -881,9 +903,7 @@ $1",
 'revdelete-offender'          => '修訂本的編輯者：',
 
 # Suppression log
-'suppressionlog'     => '隱藏記錄',
-'suppressionlogtext' => '下跤是管理員有插手著的刣掉、封鎖清單。
-參看[[Special:BlockList|IP封鎖名單]]有現此時禁止佮封鎖的名單。',
+'suppressionlog' => '隱藏記錄',
 
 # History merging
 'mergehistory'                     => '合併兩个頁的修改歷史:',
@@ -973,8 +993,8 @@ $1",
 'searcheverything-enable'          => '揣所有的名空間',
 'searchrelated'                    => '相關的',
 'searchall'                        => 'choân-pō·',
-'showingresults'                   => "Ē-kha tùi #'''$2''' khai-sí hián-sī {{PLURAL:$1| hāng| hāng}} kiat-kó.",
-'showingresultsnum'                => "Ē-kha tùi #'''$2''' khai-sí hián-sī {{PLURAL:$3| hāng| hāng}} kiat-kó.",
+'showingresults'                   => 'Ē-kha tùi #<b>$2</b> khai-sí hián-sī <b>$1</b> hāng kiat-kó.',
+'showingresultsnum'                => 'Ē-kha tùi #<b>$2</b> khai-sí hián-sī <b>$3</b> hāng kiat-kó.',
 'showingresultsheader'             => "對'''$4'''的{{PLURAL:$5|第'''$1'''到第'''$3'''項結果|第'''$1 - $2'''項，總共'''$3'''項結果}}",
 'nonefound'                        => "'''注意'''：只有一寡名空間是預設會去揣。試''all:''去揣所有的頁（包括討論頁、枋模等等），抑是頭前指定名空間。",
 'search-nonefound'                 => '揣無欲愛的',
@@ -1006,7 +1026,6 @@ $1",
 'changepassword'                => 'Oāⁿ bi̍t-bé',
 'prefs-skin'                    => 'Phôe',
 'skin-preview'                  => 'Chhì khoàⁿ',
-'prefs-math'                    => 'Sò·-ha̍k ê rendering',
 'datedefault'                   => 'Chhìn-chhái',
 'prefs-datetime'                => 'Ji̍t-kî kap sî-kan',
 'prefs-personal'                => 'Iōng-chiá chu-liāu',
@@ -1030,8 +1049,6 @@ $1",
 'columns'                       => 'Nôa',
 'searchresultshead'             => 'Chhiau-chhōe kiat-kó ê siat-tēng',
 'resultsperpage'                => '1 ia̍h hián-sī kúi kiāⁿ:',
-'contextlines'                  => '1 kiāⁿ hián-sī kúi chōa:',
-'contextchars'                  => '1 chōa hián-sī kúi jī ê chêng-āu-bûn:',
 'stub-threshold'                => '<a href="#" class="stub">短頁連結</a>的門檻值 （位元組）:',
 'stub-threshold-disabled'       => '莫用',
 'recentchangesdays'             => 'Hián-sī kúi ji̍t chòe-kīn ê kái-piàn:',
@@ -1044,7 +1061,7 @@ $1",
 'savedprefs'                    => 'Lí ê iōng-chiá siat-tēng í-keng pó-chûn khí lâi ah.',
 'timezonelegend'                => 'Sî-khu',
 'localtime'                     => 'Chāi-tē sî-kan sī:',
-'timezoneuseserverdefault'      => '用伺服器設便的',
+'timezoneuseserverdefault'      => '使用Wiki設便的($1)',
 'timezoneuseoffset'             => '其他 （指定偏差量）',
 'timezoneoffset'                => 'Sî-chha¹:',
 'servertime'                    => 'Server sî-kan hiān-chāi sī:',
@@ -1095,8 +1112,9 @@ $1",
 'email'                         => '電子批',
 'prefs-help-realname'           => '你的真實名字無一定愛，
 若你欲提供，伊會附佇你貢 獻的作品。',
-'prefs-help-email'              => '電子批地址無一定愛，毋過若你袂記得密碼的時陣，閣欲重設密碼就需要，
-你無需要公開家己的身分，你會當用你的用者頁、用者討論頁來予別人佮你連絡。',
+'prefs-help-email'              => 'Tiān-chú-phoe ê chū-chí m̄-sī it-tēng ài, m̄-koh tī lí bē-kì bi̍t-bé beh tîng siat-tīng tō ài.',
+'prefs-help-email-others'       => 'Lí ē-sái thàu--koè lí ê ia̍h , thó-lūn-ia̍h ê liân kiat hō͘ lâng ēng e-mail kah lí liân-lo̍k.
+Tī pat-lâng liân-lo̍k lí ê sî-chūn bē kā e-mail tsū-tsí siá chhut--lâi.',
 'prefs-help-email-required'     => '愛有電子批地址',
 'prefs-info'                    => '基本資料',
 'prefs-i18n'                    => '國際化',
@@ -1122,7 +1140,6 @@ $1",
 'userrights-lookup-user'       => '管理用者的陣營',
 'userrights-user-editname'     => '輸入一个用者名稱：',
 'editusergroup'                => '設定用者的陣營',
-'editinguser'                  => "當咧改用者'''[[User:$1|$1]]''' （[[User talk:$1|{{int:talkpagelinktext}}]]{{int:pipe-separator}}[[Special:Contributions/$1|{{int:contribslink}}]]）的使用權",
 'userrights-editusergroup'     => '設定用者的陣營',
 'saveusergroups'               => '保存用者的陣營',
 'userrights-groupsmember'      => '成員：',
@@ -1148,13 +1165,6 @@ $1",
 'group-bureaucrat'    => '行政人員',
 'group-suppress'      => '監督',
 'group-all'           => '（全部）',
-
-'group-user-member'          => '用者',
-'group-autoconfirmed-member' => '自動確認的用者',
-'group-bot-member'           => '機器人',
-'group-sysop-member'         => '管理員',
-'group-bureaucrat-member'    => '行政人員',
-'group-suppress-member'      => '監督',
 
 'grouppage-user'          => '{{ns:project}}:用者',
 'grouppage-autoconfirmed' => '{{ns:project}}:自動確認的用者',
@@ -1212,7 +1222,6 @@ $1",
 'right-noratelimit'           => '無受著頻率限制的影響',
 'right-import'                => '對別个Wiki匯入頁',
 'right-importupload'          => '對一个上載檔案匯入頁',
-'right-patrol'                => '共其它的編輯攏標示做已巡過',
 'right-autopatrol'            => '家己的編輯自動標示做巡過',
 'right-patrolmarks'           => '看最近巡查編輯的標記',
 'right-unwatchedpages'        => '看頁無人監視的清單',
@@ -1221,15 +1230,15 @@ $1",
 'right-userrights'            => '編輯所有用者的權利限制',
 'right-userrights-interwiki'  => '編輯對其它wiki來的用者權限',
 'right-siteadmin'             => '封鎖閣開鎖資料庫',
-'right-reset-passwords'       => '重設定其他用者的密碼',
 'right-override-export-depth' => '輸出頁，包括連到的頁到5層深',
 'right-sendemail'             => '寄電子批予其他用者',
 
 # User rights log
-'rightslog'      => '用者使用權記錄',
-'rightslogtext'  => 'Chit-ê log lia̍t-chhut kái-piàn iōng-chiá koân-lī ê tōng-chok.',
-'rightslogentry' => '共 $1 的權利限制對 $2 改做 $3',
-'rightsnone'     => '（無）',
+'rightslog'                  => '用者使用權記錄',
+'rightslogtext'              => 'Chit-ê log lia̍t-chhut kái-piàn iōng-chiá koân-lī ê tōng-chok.',
+'rightslogentry'             => '共 $1 的權利限制對 $2 改做 $3',
+'rightslogentry-autopromote' => '自動對$2提升至$3',
+'rightsnone'                 => '（無）',
 
 # Associated actions - in the sentence "You do not have permission to X"
 'action-read'                 => '看這頁',
@@ -1313,270 +1322,93 @@ $1",
 'recentchangeslinked-to'       => '顯示連到我拍入的頁名閣有改過的',
 
 # Upload
-'upload'                      => 'Kā tóng-àn chiūⁿ-bāng',
-'uploadbtn'                   => 'Kā tóng-àn chiūⁿ-bāng',
-'reuploaddesc'                => 'Tò khì sàng-chiūⁿ-bāng ê pió.',
-'upload-tryagain'             => '送出改過了後的檔案描述',
-'uploadnologin'               => 'Bô teng-ji̍p',
-'uploadnologintext'           => 'Bô [[Special:UserLogin|teng-ji̍p]] bē-sái-tit kā tóng-àn sàng-chiūⁿ-bāng.',
-'upload_directory_missing'    => '無上傳的目錄（$1），彼袂當由網頁伺服器建立。',
-'upload_directory_read_only'  => '無上載目錄（$1），抑是網頁伺服器無權寫入',
-'uploaderror'                 => 'Upload chhò-gō·',
-'upload-recreate-warning'     => "'''注意：一个仝名的檔案捌hông刣掉抑是徙去別位。'''
+'upload'                     => 'Kā tóng-àn chiūⁿ-bāng',
+'uploadbtn'                  => 'Kā tóng-àn chiūⁿ-bāng',
+'reuploaddesc'               => 'Tò khì sàng-chiūⁿ-bāng ê pió.',
+'upload-tryagain'            => '送出改過了後的檔案描述',
+'uploadnologin'              => 'Bô teng-ji̍p',
+'uploadnologintext'          => 'Bô [[Special:UserLogin|teng-ji̍p]] bē-sái-tit kā tóng-àn sàng-chiūⁿ-bāng.',
+'upload_directory_missing'   => '無上傳的目錄（$1），彼袂當由網頁伺服器建立。',
+'upload_directory_read_only' => '無上載目錄（$1），抑是網頁伺服器無權寫入',
+'uploaderror'                => 'Upload chhò-gō·',
+'upload-recreate-warning'    => "'''注意：一个仝名的檔案捌hông刣掉抑是徙去別位。'''
 
 這頁的刣掉、徙振動記錄佇下跤通參考：",
-'uploadtext'                  => "用下跤的表來共檔案上載。
+'uploadtext'                 => "用下跤的表來共檔案上載。
 若欲看抑是揣往過上載的檔案，會使進入[[Special:FileList|檔案上載清單]]，（重）上載嘛會記錄佇[[Special:Log/upload|上傳記錄]]，若刣掉就會記錄佇[[Special:Log/delete|刪除記錄]]。
 
 若欲佇頁加入檔案，用下跤的一種方式來連結：
 * '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.jpg]]</nowiki></tt>'''使用檔案的完整版本
 * '''<tt><nowiki>[[</nowiki>{{ns:file}}<nowiki>:File.png|200px|thumb|left|替換文字]]</nowiki></tt>'''用一个囥佇倒爿的一个200 像素圖相框，「替換文字」做說明
 * '''<tt><nowiki>[[</nowiki>{{ns:media}}<nowiki>:File.ogg]]</nowiki></tt>'''直接連結到檔案，毋過無顯示檔案",
-'upload-permitted'            => '准許的檔案類型: $1',
-'upload-preferred'            => '建議的檔案類型: $1',
-'upload-prohibited'           => '禁止的檔案類型: $1。',
-'uploadlog'                   => '上載記錄',
-'uploadlogpage'               => '上載記錄',
-'uploadlogpagetext'           => 'Í-hā sī chòe-kīn sàng-chiūⁿ-bāng ê tóng-àn ê lia̍t-toaⁿ.',
-'filename'                    => 'Tóng-àn',
-'filedesc'                    => 'Khài-iàu',
-'fileuploadsummary'           => 'Khài-iàu:',
-'filereuploadsummary'         => '改換檔案的說明:',
-'filestatus'                  => '版權狀況:',
-'filesource'                  => '來源：',
-'uploadedfiles'               => 'Tóng-àn í-keng sàng chiūⁿ-bāng',
-'ignorewarning'               => 'Mài chhap kéng-kò, kā tóng-àn pó-chûn khí lâi.',
-'ignorewarnings'              => 'Mài chhap kéng-kò',
-'minlength1'                  => '檔案的名上少愛有一字',
-'illegalfilename'             => '檔案名“$1”有袂用得用佇標題的字，
+'upload-permitted'           => '准許的檔案類型: $1',
+'upload-preferred'           => '建議的檔案類型: $1',
+'upload-prohibited'          => '禁止的檔案類型: $1。',
+'uploadlog'                  => '上載記錄',
+'uploadlogpage'              => '上載記錄',
+'uploadlogpagetext'          => 'Í-hā sī chòe-kīn sàng-chiūⁿ-bāng ê tóng-àn ê lia̍t-toaⁿ.',
+'filename'                   => 'Tóng-àn',
+'filedesc'                   => 'Khài-iàu',
+'fileuploadsummary'          => 'Khài-iàu:',
+'filereuploadsummary'        => '改換檔案的說明:',
+'filestatus'                 => '版權狀況:',
+'filesource'                 => '來源：',
+'uploadedfiles'              => 'Tóng-àn í-keng sàng chiūⁿ-bāng',
+'ignorewarning'              => 'Mài chhap kéng-kò, kā tóng-àn pó-chûn khí lâi.',
+'ignorewarnings'             => 'Mài chhap kéng-kò',
+'minlength1'                 => '檔案的名上少愛有一字',
+'illegalfilename'            => '檔案名“$1”有袂用得用佇標題的字，
 請改名了後重新上載。',
-'badfilename'                 => 'Iáⁿ-siōng ê miâ í-keng kái chò "$1".',
-'filetype-mime-mismatch'      => '副檔名的類型尾無合MIME類型。',
-'filetype-badmime'            => 'MIME類別"$1"的檔案袂當上載',
-'filetype-bad-ie-mime'        => '袂當上載這个檔案，因為 Internet Explorer 會共伊偵測做 "$1"，彼種袂使，可能是有所危害的檔案類型。',
-'filetype-unwanted-type'      => "'''\".\$1\"'''是袂當上載的檔案類型，
+'badfilename'                => 'Iáⁿ-siōng ê miâ í-keng kái chò "$1".',
+'filetype-bad-ie-mime'       => '袂當上載這个檔案，因為 Internet Explorer 會共伊偵測做 "$1"，彼種袂使，可能是有所危害的檔案類型。',
+'filetype-unwanted-type'     => "'''\".\$1\"'''是袂當上載的檔案類型，
 適當的{{PLURAL:\$3|檔案類型|檔案類型}}是\$2。",
-'filetype-banned-type'        => "'''\".\$1\"'''是袂當上載的檔案類型，
-會當的{{PLURAL:\$3|檔案類型|檔案類型}}是\$2。",
-'filetype-missing'            => '彼个檔案名稱無副檔名 （親像 ".jpg"）。',
-'empty-file'                  => '你送出來的檔案是空的',
-'file-too-large'              => '你送出來的檔案傷過大',
-'filename-tooshort'           => '檔案名傷短',
-'filetype-banned'             => '這類的檔案被禁止',
-'verification-error'          => '這个檔案無通過驗證',
-'hookaborted'                 => '你欲做的編輯因為擴展鈎(extension hook)去跳開。',
-'illegal-filename'            => '無合用的檔案名稱',
-'overwrite'                   => '袂使覆寫已經佇咧的檔案',
-'unknown-error'               => '發生一个不知的錯誤',
-'tmp-create-error'            => '無法度建立臨時檔案',
-'tmp-write-error'             => '寫入臨時檔案的時陣發生錯誤',
-'large-file'                  => '建議檔案的大小袂當超過 $1，本檔案大小是 $2。',
-'largefileserver'             => '這个檔案比伺服器配置所允許的較大。',
-'emptyfile'                   => '你欲上載的檔案敢若是空的，
-這有可能是拍毋著檔案名稱，
-請檢查你確定是欲上載這个檔案。',
-'fileexists'                  => "已經有一个仝名的檔案，你若無確定你欲要共改，請檢查'''<tt>[[:$1]]</tt>'''。 [[$1|thumb]]",
-'filepageexists'              => "這个檔案的描述頁已經佇'''<tt>[[:$1]]</tt>'''建立，毋過這个名稱的檔案猶未有，
-你所輸入的概要袂顯示佇彼个描述頁當中，若欲概要佇遐看會著，你愛手動編輯。
-[[$1|thumb]]",
-'fileexists-extension'        => "一个親像檔名的檔案已經佇咧: [[$2|thumb]]
-* 上載檔案的檔名: '''<tt>[[:$1]]</tt>'''
-* 這馬檔案的檔名: '''<tt>[[:$2]]</tt>'''
-請選一个無仝的名。",
-'fileexists-thumbnail-yes'    => "這个檔案若親像是一幅圖的縮小版本''（縮圖）''。 [[$1|thumb]]
-請檢查檔案'''<tt>[[:$1]]</tt>'''，
-若檢查的檔案是仝幅圖的縮圖，就毋免閣上載一幅縮圖。",
-'file-thumbnail-no'           => "以'''<tt>$1</tt>'''做名的檔案，
-伊敢若是某幅圖的縮小版本''（縮圖）''。
-你欲就上載完整大小的版本，若無請改檔案名稱。",
-'fileexists-forbidden'        => '已經有一个仝名的檔案，而且袂檔覆寫，
-若你欲上載你的檔案，請退倒轉去，閣用一个新名來。
-[[File:$1|thumb|center|$1]]',
-'fileexists-shared-forbidden' => '已經有一个仝名的檔案佇分享檔案庫，
-若你欲上載你的檔案，請退倒轉去，閣用一个新名來。
-[[File:$1|thumb|center|$1]]',
-'file-exists-duplicate'       => '這个檔案佮下跤的{{PLURAL:$1|个檔案|个檔案}}是仝款的：',
-'file-deleted-duplicate'      => '一个仝名的檔案 （[[:$1]]） 佇進前捌予人刣掉，
-你應當佇欲閣重新上載進前，先檢查彼个檔案的刣掉記錄。',
-'uploadwarning'               => 'Upload kéng-kò',
-'uploadwarning-text'          => '請改下跤的檔案描述才閣試',
-'savefile'                    => 'Pó-chûn tóng-àn',
-'uploadedimage'               => 'thoân "[[$1]]" chiūⁿ-bāng',
-'overwroteimage'              => '已經上載「[[$1]]」的新版本',
-'uploaddisabled'              => 'Pháiⁿ-sè, sàng chiūⁿ-bāng ê kong-lêng bô khui.',
-'copyuploaddisabled'          => '袂當透過網址上載',
-'uploadfromurl-queued'        => '你的上載已經咧排隊',
-'uploaddisabledtext'          => '袂當上載檔案',
-'php-uploaddisabledtext'      => '佇PHP袂當上載檔案，
-請檢查file_uploads 設定。',
-'uploadscripted'              => '這个檔案內底有HTML抑是腳本代碼，網路瀏覽器可能會錯誤翻譯。',
-'uploadvirus'                 => '彼个檔案有一个病毒！
-細情：$1',
-'upload-source'               => '來源檔案',
-'sourcefilename'              => 'Tóng-àn goân miâ:',
-'sourceurl'                   => '來源網址(URL)：',
-'destfilename'                => 'Tóng-àn sin miâ:',
-'upload-maxfilesize'          => '檔案上大：$1',
-'upload-description'          => '檔案說明',
-'upload-options'              => '上載選項',
-'watchthisupload'             => 'Kàm-sī chit ê tóng-àn',
-'filewasdeleted'              => '進前有上載一个仝名的檔案，而且後來予人刣掉，
-佇欲閣上載進前，你應該先檢查$1。',
-'upload-wasdeleted'           => "'''細膩：你今準備欲上載的檔案，前捌予人刣掉過。'''
+'filetype-missing'           => '彼个檔案名稱無副檔名 （親像 ".jpg"）。',
+'empty-file'                 => '你送出來的檔案是空的',
+'file-too-large'             => '你送出來的檔案傷過大',
+'filename-tooshort'          => '檔案名傷短',
+'filetype-banned'            => '這類的檔案被禁止',
+'verification-error'         => '這个檔案無通過驗證',
+'uploadwarning'              => 'Upload kéng-kò',
+'savefile'                   => 'Pó-chûn tóng-àn',
+'uploadedimage'              => 'thoân "[[$1]]" chiūⁿ-bāng',
+'uploaddisabled'             => 'Pháiⁿ-sè, sàng chiūⁿ-bāng ê kong-lêng bô khui.',
+'sourcefilename'             => 'Tóng-àn goân miâ:',
+'destfilename'               => 'Tóng-àn sin miâ:',
+'watchthisupload'            => 'Kàm-sī chit ê tóng-àn',
+'upload-success-subj'        => 'Sàng-chiūⁿ-bāng sêng-kong',
 
-你著斟酌上載這个檔案的必要性，
-遮有彼个檔案予人刣掉的記錄予你參考：",
-'filename-bad-prefix'         => "你上載的檔案名是以'''「$1」'''做頭，這一般是數位相機自動編的，彼無啥意義，
-請替你的檔案號一个較有意義的名。",
-'upload-success-subj'         => 'Sàng-chiūⁿ-bāng sêng-kong',
-'upload-success-msg'          => '你對[$2]遐的上載已經成功，伊佇：[[:{{ns:file}}:$1]]',
-'upload-failure-subj'         => '上載問題',
-'upload-failure-msg'          => '你[$2]的上載出現問題：
-
-$1',
-'upload-warning-subj'         => '上載警示',
-'upload-warning-msg'          => '你對[$2]遐的上載出問題，你會當回轉去[[Special:Upload/stash/$1|上載表]]修改問題。',
-
-'upload-proto-error'        => '毋著的協議(protocol)',
-'upload-proto-error-text'   => '遠程上載愛網址(URL)是以 <code>http://</code> 抑 <code>ftp://</code> 做頭。',
-'upload-file-error'         => '內部的錯誤',
-'upload-file-error-text'    => '佇伺服器欲開一个臨時檔案的時陣，發生一个內部錯誤，
-請佮[[Special:ListUsers/sysop|管理員]]聯絡。',
-'upload-misc-error'         => '毋知原因的上載錯誤',
-'upload-misc-error-text'    => '佇上載的時陣發生錯誤，毋知啥原因。
-請確認網址(URL)是正確的，了才閣試。
-若猶閣有問題，請聯絡[[Special:ListUsers/sysop|管理員]]。',
-'upload-too-many-redirects' => '網址(URL)包傷濟个轉向',
-'upload-unknown-size'       => '大小毋知',
-'upload-http-error'         => '發生一个HTTP錯誤：$1',
-
-# img_auth script messages
-'img-auth-accessdenied'     => '拒絕讀寫',
-'img-auth-nopathinfo'       => '無PATH_INFO資料，
-你的伺服器猶未設定這个資料，
-伊可能是CGI的款，無支援img_auth，
-請看http://www.mediawiki.org/wiki/Manual:Image_Authorization。',
-'img-auth-notindir'         => '你欲用的路徑無佇事先設定的上載目錄當中。',
-'img-auth-badtitle'         => '無法度對"$1"產生一个有效的標題',
-'img-auth-nologinnWL'       => '你猶未登入，"$1"無佇白名單(whitelist)面頂。',
-'img-auth-nofile'           => '無"$1"這个檔案',
-'img-auth-isdir'            => '你想欲讀目錄"$1"，
-毋過只會當讀檔案。',
-'img-auth-streaming'        => '當咧串流(streaming)"$1"',
-'img-auth-public'           => 'img_auth.php的功能是予私用wiki通輸出檔案，
-這個wiki的設定是一个公共wiki，
-為著安全因素，img_auth.php已經停用。',
-'img-auth-noread'           => '用者無授權去讀"$1"',
-'img-auth-bad-query-string' => '網址(URL)有無效的查詢字串',
-
-# HTTP errors
-'http-invalid-url'      => '無效的網址(URL)：$1',
-'http-invalid-scheme'   => '無支援有「$1」的網址(URL)',
-'http-request-error'    => 'HTTP請求失敗，毋知啥物原因的錯誤。',
-'http-read-error'       => 'HTTP讀了錯誤',
-'http-timed-out'        => 'HTTP請求已經超過時間',
-'http-curl-error'       => '取網址(URL)的時陣有錯誤：$1',
-'http-host-unreachable' => '連袂到網址(URL)',
-'http-bad-status'       => '欲做HTTP的時陣出現問題：$1 $2',
-
-# Some likely curl errors. More could be added from <http://curl.haxx.se/libcurl/c/libcurl-errors.html>
-'upload-curl-error6'       => '連袂到網址(URL)',
-'upload-curl-error6-text'  => '提供的網址(URL)無法連結，
-請確定網址是正確的而且網站有開。',
-'upload-curl-error28'      => '上載已經超過時間',
-'upload-curl-error28-text' => '網站的回應傷久，
-請確定彼个網站有開，抑小等一下才閣試，
-你會使佇較閒的時陣才試。',
-
-'license'            => 'Siū-khoân:',
-'license-header'     => 'Siū-khoân',
-'nolicense'          => '無選半項',
-'license-nopreview'  => '（袂當先看覓）',
-'upload_source_url'  => ' （一个有效閣開放予大眾的網址(URL)）',
-'upload_source_file' => '（佇你電腦的一个檔案）',
+'license'        => 'Siū-khoân:',
+'license-header' => 'Siū-khoân',
 
 # Special:ListFiles
-'listfiles-summary'     => '這个特殊頁顯示所有上載的檔案，
-若有過濾用者，只有彼个用者上載閣上新的版本才顯示。',
-'listfiles_search_for'  => '照檔案名稱揣：',
-'imgfile'               => '檔案',
 'listfiles'             => 'Iáⁿ-siōng lia̍t-toaⁿ',
-'listfiles_thumb'       => '小圖',
 'listfiles_date'        => 'Ji̍t-kî',
 'listfiles_name'        => 'Miâ',
 'listfiles_user'        => 'Iōng-chiá',
 'listfiles_size'        => 'Toā-sè',
 'listfiles_description' => 'Soat-bêng',
-'listfiles_count'       => '版本',
 
 # File description page
-'file-anchor-link'          => 'Tóng-àn',
-'filehist'                  => 'Tóng-àn ê le̍k-sú',
-'filehist-help'             => '揤日期／時間就通看彼時陣的檔案',
-'filehist-deleteall'        => '全部刣掉',
-'filehist-deleteone'        => '刣掉',
-'filehist-revert'           => '回轉',
-'filehist-current'          => 'hiān-chāi',
-'filehist-datetime'         => 'Ji̍t-kî/ Sî-kan',
-'filehist-thumb'            => '小圖',
-'filehist-thumbtext'        => '細張圖佇$1的版本',
-'filehist-nothumb'          => '無小圖',
-'filehist-user'             => 'Iōng-chiá',
-'filehist-dimensions'       => '長闊',
-'filehist-filesize'         => '檔案大細',
-'filehist-comment'          => '註釋',
-'filehist-missing'          => '檔案無看',
-'imagelinks'                => 'Ēng tio̍h ê  tóng-àn',
-'linkstoimage'              => 'Ē-bīn ê {{PLURAL:$1|ia̍h liân kàu|$1 ia̍h liân kàu}}  chit ê tóng-àn:',
-'linkstoimage-more'         => '超過$1{{PLURAL:$1|頁連接|頁連接}}到這个檔案，
-下跤只是連接到這个檔案的{{PLURAL:$1|頭頁連結|頭$1頁連結}}清單，
-有一个[[Special:WhatLinksHere/$2|全部的清單]]。',
-'nolinkstoimage'            => 'Bô poàⁿ ia̍h liân kàu chit tiuⁿ iáⁿ-siōng.',
-'morelinkstoimage'          => '看連接到這个檔案的[[Special:WhatLinksHere/$1|其他連結]]',
-'redirectstofile'           => '下跤{{PLURAL:$1|个|个}}轉向頁連接到這个檔案：',
-'duplicatesoffile'          => '下跤{{PLURAL:$1|个|个}}檔案佮這个仝款（[[Special:FileDuplicateSearch/$2|詳細]]）：',
-'sharedupload'              => '這个檔案是對$1遐來的，伊可能用佇別个事工。',
-'sharedupload-desc-there'   => '這个檔案對$1遐來的，伊可能用佇別个事工，
-請看[$2 檔案說明]以了解進一步訊息。',
-'sharedupload-desc-here'    => '這个檔案是對$1遐來的，伊可能嘛用佇別的事工，
+'file-anchor-link'       => 'Tóng-àn',
+'filehist'               => 'Tóng-àn ê le̍k-sú',
+'filehist-help'          => '揤日期／時間就通看彼時陣的檔案',
+'filehist-revert'        => '回轉',
+'filehist-current'       => 'hiān-chāi',
+'filehist-datetime'      => 'Ji̍t-kî/ Sî-kan',
+'filehist-thumb'         => '小圖',
+'filehist-thumbtext'     => '細張圖佇$1的版本',
+'filehist-user'          => 'Iōng-chiá',
+'filehist-dimensions'    => '長闊',
+'filehist-comment'       => '註釋',
+'imagelinks'             => 'Ēng tio̍h ê  tóng-àn',
+'linkstoimage'           => 'Ē-bīn ê {{PLURAL:$1|ia̍h liân kàu|$1 ia̍h liân kàu}}  chit ê tóng-àn:',
+'nolinkstoimage'         => 'Bô poàⁿ ia̍h liân kàu chit tiuⁿ iáⁿ-siōng.',
+'sharedupload-desc-here' => '這个檔案是對$1遐來的，伊可能嘛用佇別的事工，
 伊[$2 檔案說明頁]的說明佇下跤。',
-'filepage-nofile'           => '無這个名的檔案',
-'filepage-nofile-link'      => '無這个名的檔案，你會使 [$1上載]。',
-'uploadnewversion-linktext' => '上載這个檔案的新版本',
-'shared-repo-from'          => '來自 $1',
-'shared-repo'               => '一個共享的檔案庫',
-
-# File reversion
-'filerevert'                => '回轉$1',
-'filerevert-legend'         => '回轉檔案',
-'filerevert-intro'          => "你當咧回轉檔案'''[[Media:$1|$1]]'''到[$4佇$2 $3的版本]。",
-'filerevert-comment'        => '理由：',
-'filerevert-defaultcomment' => '已經回轉到$1 $2的版本',
-'filerevert-submit'         => '回轉',
-'filerevert-success'        => "'''[[Media:$1|$1]]'''已經回轉到[$4 佇$2 $3的版本]。",
-'filerevert-badversion'     => '這个檔案所提供的時間截記，無進前的本地版本。',
-
-# File deletion
-'filedelete'                  => '刣掉$1',
-'filedelete-legend'           => '刣掉檔案',
-'filedelete-intro'            => "你當咧刣掉檔案'''[[Media:$1|$1]]'''，佮伊的歷史。",
-'filedelete-intro-old'        => "你當咧刣掉'''[[Media:$1|$1]]'''佇[$4 $2 $3]的版本",
-'filedelete-comment'          => '理由：',
-'filedelete-submit'           => '刣掉',
-'filedelete-success'          => "'''$1'''已經刣掉",
-'filedelete-success-old'      => "'''[[Media:$1|$1]]'''佇$2 $3 的版本已經刣掉",
-'filedelete-nofile'           => "無'''$1'''這个",
-'filedelete-nofile-old'       => "揣無'''$1'''指定的保存版本",
-'filedelete-otherreason'      => '其他／另外的理由：',
-'filedelete-reason-otherlist' => '其他理由',
-'filedelete-reason-dropdown'  => '*一般刣掉的理由
-** 違反著作權
-** 相仝',
-'filedelete-edit-reasonlist'  => '編輯刣掉的理由',
 
 # MIME search
 'mimesearch' => 'MIME chhiau-chhoē',
-'download'   => '下載',
 
 # Unwatched pages
 'unwatchedpages' => 'Bô lâng kàm-sī ê ia̍h',
@@ -1585,28 +1417,17 @@ $1',
 'listredirects' => 'Lia̍t-chhut choán-ia̍h',
 
 # Unused templates
-'unusedtemplates'    => 'Bô iōng ê pang-bô·',
-'unusedtemplateswlh' => '其他的連結',
+'unusedtemplates' => 'Bô iōng ê pang-bô·',
 
 # Random page
-'randompage'         => 'Sûi-chāi kéng ia̍h',
-'randompage-nopages' => '下面無頁
-{{PLURAL:$2|名空間|名空間}}：$1.',
+'randompage' => 'Sûi-chāi kéng ia̍h',
 
 # Random redirect
 'randomredirect' => 'Sûi-chāi choán-ia̍h',
 
 # Statistics
 'statistics'              => 'Thóng-kè',
-'statistics-header-pages' => '頁的統計',
-'statistics-header-edits' => '改的統計',
-'statistics-header-views' => '看的統計',
 'statistics-header-users' => 'Iōng-chiá thóng-kè sò·-ba̍k',
-'statistics-header-hooks' => '其他的統計',
-'statistics-articles'     => '內容頁',
-'statistics-pages-desc'   => '佇Wiki所有的頁，包括討論頁、轉頁等等。',
-'statistics-files'        => '上載檔案',
-'statistics-mostpopular'  => '上濟人看的頁',
 
 'disambiguations'     => 'Khu-pia̍t-ia̍h',
 'disambiguationspage' => 'Template:disambig
@@ -1616,14 +1437,11 @@ Template:Khu-pia̍t-ia̍h',
 
 'doubleredirects' => 'Siang-thâu choán-ia̍h',
 
-'brokenredirects'        => 'Choán-ia̍h kò·-chiòng',
-'brokenredirectstext'    => 'Í-hā ê choán-ia̍h liân kàu bô chûn-chāi ê ia̍h:',
-'brokenredirects-edit'   => '修改',
-'brokenredirects-delete' => '刣掉',
+'brokenredirects'     => 'Choán-ia̍h kò·-chiòng',
+'brokenredirectstext' => 'Í-hā ê choán-ia̍h liân kàu bô chûn-chāi ê ia̍h:',
 
 'withoutinterwiki'         => 'Bô gí-giân liân-kiat ê ia̍h',
 'withoutinterwiki-summary' => 'Ē-kha ê ia̍h bô kî-thaⁿ gí-giân pán-pún ê liân-kiat:',
-'withoutinterwiki-submit'  => '顯示',
 
 'fewestrevisions' => 'Siōng bô siu-tēng ê bûn-chiuⁿ',
 
@@ -1643,8 +1461,6 @@ Template:Khu-pia̍t-ia̍h',
 'popularpages'            => 'Sî-kiâⁿ ê ia̍h',
 'wantedcategories'        => 'wantedcategories',
 'wantedpages'             => 'Beh ti̍h ê ia̍h',
-'wantedfiles'             => '欲挃的檔案',
-'wantedtemplates'         => '欲挃的枋模',
 'mostlinked'              => 'Siōng chia̍p liân-kiat ê ia̍h',
 'mostlinkedcategories'    => 'Siōng chia̍p liân-kiat ê lūi-pia̍t',
 'mostlinkedtemplates'     => 'Siōng chia̍p liân-kiat ê pang-bô͘',
@@ -1653,7 +1469,6 @@ Template:Khu-pia̍t-ia̍h',
 'mostrevisions'           => 'Siōng chia̍p siu-kái ê ia̍h',
 'prefixindex'             => 'Só͘-ū chiàu sû-thâu sek-ín liáu ê  ia̍h',
 'shortpages'              => 'Té-ia̍h',
-'longpages'               => '長頁',
 'deadendpages'            => 'Khu̍t-thâu-ia̍h',
 'deadendpagestext'        => 'Ē-kha ê ia̍h bô liân kàu wiki lāi-té ê kî-thaⁿ ia̍h.',
 'protectedpages'          => 'Siū pó-hō͘ ê ia̍h',
@@ -1665,8 +1480,7 @@ Template:Khu-pia̍t-ia̍h',
 'ancientpages'            => 'Kó·-ia̍h',
 'move'                    => 'Sóa khì',
 'movethispage'            => 'Sóa chit ia̍h',
-'unusedimagestext'        => 'Ē-kha ê tóng-àn bô poàⁿ ia̍h ū teh iōng. M̄-koh ia̍h lâu leh. 
-Chhiáⁿ chù-ì: kî-thaⁿ ê bāng-chām ū khó-lêng iōng URL ti̍t-chiap liân kàu iáⁿ-siōng, só·-í sui-jiân bô teh iōng, mā sī ē lia̍t tī chia.',
+'unusedimagestext'        => '<p>Chhiáⁿ chù-ì: kî-thaⁿ ê bāng-chām ū khó-lêng iōng URL ti̍t-chiap liân kàu iáⁿ-siōng, só·-í sui-jiân chhiâng-chāi teh iōng, mā sī ē lia̍t tī chia.</p>',
 'unusedcategoriestext'    => 'Ū ē-kha chiah-ê lūi-pia̍t-ia̍h, m̄-koh bô kî-thaⁿ ê bûn-chiuⁿ a̍h-sī lūi-pia̍t lī-iōng.',
 'pager-newer-n'           => '{{PLURAL:$1|較新一个|較新$1个 }}',
 'pager-older-n'           => '{{PLURAL:$1|較舊一个|較舊$1个}}',
@@ -1678,7 +1492,7 @@ Chhiáⁿ chù-ì: kî-thaⁿ ê bāng-chām ū khó-lêng iōng URL ti̍t-chiap
 
 # Special:Log
 'specialloguserlabel'  => 'Iōng-chiá:',
-'speciallogtitlelabel' => 'Bo̍k-piau (sû-tiâu ia̍h iōng-chiá) :',
+'speciallogtitlelabel' => 'Sû-tiâu:',
 'log'                  => '記錄',
 'logempty'             => 'Log lāi-bīn bô sio-tùi ê hāng-bo̍k.',
 
@@ -1686,7 +1500,6 @@ Chhiáⁿ chù-ì: kî-thaⁿ ê bāng-chām ū khó-lêng iōng URL ti̍t-chiap
 'allpages'          => 'Só·-ū ê ia̍h',
 'alphaindexline'    => '$1 kàu $2',
 'nextpage'          => 'Āu 1 ia̍h ($1)',
-'prevpage'          => '前一頁（$1）',
 'allpagesfrom'      => 'Tùi chit ia̍h khai-sí hián-sī:',
 'allarticles'       => 'Só·-ū ê bûn-chiuⁿ',
 'allinnamespace'    => 'Só·-ū ê ia̍h ($1 miâ-khong-kan)',
@@ -1707,29 +1520,12 @@ Also see [[Special:WantedCategories|wanted categories]].',
 
 # Special:LinkSearch
 'linksearch'      => 'Chhiau-chhoē chām-goā liân-kiat',
-'linksearch-ns'   => '名空間：',
 'linksearch-line' => '$1 是對$2連接來的',
 
-# Special:ListUsers
-'listusers-submit'   => '顯示',
-'listusers-noresult' => '揣無用者',
-
-# Special:ActiveUsers
-'activeusers'            => '有咧活動的用者清單',
-'activeusers-intro'      => '這是佇過去$1 {{PLURAL:$1|工y|工}}有做過一寡活動的用者清單。',
-'activeusers-hidebots'   => '掩機器人',
-'activeusers-hidesysops' => '掩管理員',
-
 # Special:Log/newusers
-'newuserlogpage'              => '用者建立的記錄',
-'newuserlogpagetext'          => '這是開用者口座的記錄',
-'newuserlog-byemail'          => '用電子批寄密碼',
-'newuserlog-create-entry'     => '新用者口座',
-'newuserlog-create2-entry'    => '開一个$1的新口座',
-'newuserlog-autocreate-entry' => '口座已經自動開好',
+'newuserlogpage' => '用者建立的記錄',
 
 # Special:ListGroupRights
-'listgrouprights'         => '用者陣權利',
 'listgrouprights-members' => '(成員列單)',
 
 # E-mail user
@@ -1739,20 +1535,14 @@ Also see [[Special:WantedCategories|wanted categories]].',
 'emailpage'       => 'E-mail iōng-chiá',
 'emailpagetext'   => 'Ká-sú chit ê iōng-chiá ū siat-tēng 1 ê ū-hāu ê e-mail chū-chí, lí tō ē-tàng ēng ē-kha chit tiuⁿ FORM hoat sìn-sek hō· i. Lí siat-tēng ê e-mail chū-chí ē chhut-hiān tī e-mail ê "Kià-phoe-jîn" (From) hit ūi. Án-ne siu-phoe-jîn chiah ū hoat-tō· kā lí hôe-phoe.',
 'noemailtitle'    => 'Bô e-mail chū-chí',
-'noemailtext'     => 'Chit ūi iōng-chiá pēng-bô lâu ū-hāu ê e-mail chū-chí.',
-'nowikiemailtext' => '這个用者無欲收電子批。',
-'emailfrom'       => 'Lâi chū:',
-'emailto'         => 'Khì hō·:',
-'emailsubject'    => 'Tê-bo̍k:',
+'noemailtext'     => 'Chit ūi iōng-chiá pēng-bô lâu ū-hāu ê e-mail chū-chí, bô tio̍h-sī i bô beh chiap-siū pat-ūi iōng-chiá ê e-mail.',
+'emailfrom'       => 'Lâi chū',
+'emailto'         => 'Khì hō·',
+'emailsubject'    => 'Tê-bo̍k',
 'emailmessage'    => 'Sìn-sit:',
 'emailsend'       => 'Sàng chhut-khì',
-'emailccme'       => '共我的訊息用電子批寄一份予我',
 'emailsent'       => 'E-mail sàng chhut-khì ah',
 'emailsenttext'   => 'Lí ê e-mail í-keng sàng chhut-khì ah.',
-
-# User Messenger
-'usermessage-summary' => '留系統信息',
-'usermessage-editor'  => '系統信息',
 
 # Watchlist
 'watchlist'          => 'Kàm-sī-toaⁿ',
@@ -1761,140 +1551,66 @@ Also see [[Special:WantedCategories|wanted categories]].',
 'nowatchlist'        => 'Lí ê kàm-sī-toaⁿ bô pòaⁿ hāng.',
 'watchnologin'       => 'Bô teng-ji̍p',
 'watchnologintext'   => 'Lí it-tēng ài [[Special:UserLogin|teng-ji̍p]] chiah ē-tàng siu-kái lí ê kàm-sī-toaⁿ.',
-'addedwatch'         => 'Í-keng ka-ji̍p kàm-sī-toaⁿ',
 'addedwatchtext'     => "\"[[:\$1]]\" chit ia̍h í-keng ka-ji̍p lí ê [[Special:Watchlist|kàm-sī-toaⁿ]]. Bī-lâi chit ia̍h a̍h-sī siong-koan ê thó-lūn-ia̍h nā ū kái-piàn, ē lia̍t tī hia. Tông-sî tī [[Special:RecentChanges|Chòe-kīn ê kái-piàn]] ē iōng '''chho·-thé''' hián-sī ia̍h ê piau-tê, án-ne khah bêng-hián. Ká-sú lí beh chiōng chit ia̍h tùi lí ê kàm-sī-toaⁿ tû tiāu, khì khòng-chè-tiâu chhi̍h \"Mài kàm-sī\" chiū ē-sái-tit.",
-'removedwatch'       => 'Í-keng tùi kàm-sī-toaⁿ tû tiāu',
 'removedwatchtext'   => '"[[:$1]]" chit ia̍h í-keng tùi lí ê kàm-sī-toaⁿ tû tiāu.',
 'watch'              => 'kàm-sī',
 'watchthispage'      => 'Kàm-sī chit ia̍h',
 'unwatch'            => 'Mài kàm-sī',
 'unwatchthispage'    => 'Mài koh kàm-sī',
-'notanarticle'       => '毋是內容頁面',
 'watchnochange'      => 'Lí kàm-sī ê hāng-bo̍k tī hián-sī ê sî-kî í-lāi lóng bô siu-kái kòe.',
 'watchlist-details'  => 'Kàm-sī-toaⁿ ū {{PLURAL:$1|$1 ia̍h|$1 ia̍h}}, thó-lūn-ia̍h bô sǹg chāi-lāi.',
 'watchmethod-recent' => 'tng teh kíam-cha choè-kīn ê siu-kái, khoàⁿ ū kàm-sī ê ia̍h bô',
 'watchmethod-list'   => 'tng teh kiám-cha kàm-sī ê ia̍h khoàⁿ chòe-kīn ū siu-kái bô',
-'watchlistcontains'  => 'Lí ê kàm-sī-toaⁿ siu {{PLURAL:$1|ia̍h|ia̍h}} .',
+'watchlistcontains'  => 'Lí ê kàm-sī-toaⁿ siu $1 ia̍h.',
 'wlnote'             => "Ē-kha sī '''$2''' tiám-cheng í-lāi siōng sin ê $1 ê kái-piàn.",
 'wlshowlast'         => 'Hián-sī chêng $1 tiám-cheng $2 ji̍t $3',
 'watchlist-options'  => '監視單的選項',
 
-# Displayed when you click the "watch" button and it is in the process of watching
-'watching'   => '共監視',
-'unwatching' => '莫監視',
-
-'enotif_reset'       => '共全部的頁攏當做巡過',
-'enotif_newpagetext' => '這是新的一頁',
-'changed'            => '改過',
-'created'            => '寫過',
-'enotif_subject'     => '佇{{SITENAME}}的$PAGETITLE這頁捌予$CHANGEDORCREATED$PAGEEDITOR',
-'enotif_lastvisited' => '看$1，自你頂回來到今所有改的',
-'enotif_lastdiff'    => '看$1這回改的',
-'enotif_anon_editor' => '無名氏用者$1',
-
 # Delete
-'deletepage'             => 'Thâi ia̍h',
-'confirm'                => 'Khak-tēng',
-'excontent'              => "lōe-iông sī: '$1'",
-'excontentauthor'        => "loē-iông sī: '$1' (î-it ê kòng-hiàn-chiá sī '[[Special:Contributions/$2|$2]]')",
-'exbeforeblank'          => "chìn-chêng ê lōe-iông sī: '$1'",
-'exblank'                => 'ia̍h khang-khang',
-'delete-confirm'         => '刣掉$1',
-'delete-legend'          => '刣掉',
-'historywarning'         => 'Kéng-kò: Lí beh thâi ê ia̍h ū {{PLURAL:$1| ê siu-tèng le̍k-sú|ê siu-tèng le̍k-sú}}:',
-'confirmdeletetext'      => 'Lí tih-beh kā 1 ê ia̍h a̍h-sī iáⁿ-siōng (pau-koat siong-koan ê le̍k-sú) éng-kiú tùi chu-liāu-khò· thâi tiāu. Chhiáⁿ khak-tēng lí àn-sǹg án-ne chò, jī-chhiáⁿ liáu-kái hiō-kó, jī-chhiáⁿ bô ûi-hoán [[{{MediaWiki:Policy-url}}]].',
-'actioncomplete'         => 'Chip-hêng sêng-kong',
-'actionfailed'           => '做無成',
-'deletedtext'            => '"<nowiki>$1</nowiki>" í-keng thâi tiāu. Tùi $2 khoàⁿ-ē-tio̍h chòe-kīn thâi ê kì-lo̍k.',
-'deletedarticle'         => 'Thâi tiāu "[[$1]]"',
-'suppressedarticle'      => '共"[[$1]]"崁掉',
-'dellogpage'             => '刣掉的記錄',
-'dellogpagetext'         => 'Í-hā lia̍t chhut chòe-kīn thâi tiāu ê hāng-bo̍k.',
-'deletionlog'            => '刣掉的記錄',
-'reverted'               => '轉轉去前一个版本',
-'deletecomment'          => 'Lí-iû:',
-'deleteotherreason'      => '其他／另外的理由：',
-'deletereasonotherlist'  => '其他的理由',
-'deletereason-dropdown'  => '*一般刣掉的理由
-** 作者的要求
-** 違反著作權
-** 破壞',
-'delete-edit-reasonlist' => '編輯刣掉的理由',
+'deletepage'        => 'Thâi ia̍h',
+'confirm'           => 'Khak-tēng',
+'excontent'         => "lōe-iông sī: '$1'",
+'excontentauthor'   => "loē-iông sī: '$1' (î-it ê kòng-hiàn-chiá sī '[[Special:Contributions/$2|$2]]')",
+'exbeforeblank'     => "chìn-chêng ê lōe-iông sī: '$1'",
+'exblank'           => 'ia̍h khang-khang',
+'historywarning'    => 'Kéng-kò: Lí beh thâi ê ia̍h ū le̍k-sú:',
+'confirmdeletetext' => 'Lí tih-beh kā 1 ê ia̍h a̍h-sī iáⁿ-siōng (pau-koat siong-koan ê le̍k-sú) éng-kiú tùi chu-liāu-khò· thâi tiāu. Chhiáⁿ khak-tēng lí àn-sǹg án-ne chò, jī-chhiáⁿ liáu-kái hiō-kó, jī-chhiáⁿ bô ûi-hoán [[{{MediaWiki:Policy-url}}]].',
+'actioncomplete'    => 'Chip-hêng sêng-kong',
+'actionfailed'      => '做無成',
+'deletedtext'       => '"$1" í-keng thâi tiāu. Tùi $2 khoàⁿ-ē-tio̍h chòe-kīn thâi ê kì-lo̍k.',
+'deletedarticle'    => 'Thâi tiāu "[[$1]]"',
+'dellogpage'        => '刣掉的記錄',
+'dellogpagetext'    => 'Í-hā lia̍t chhut chòe-kīn thâi tiāu ê hāng-bo̍k.',
+'deletecomment'     => 'Lí-iû:',
 
 # Rollback
-'rollback'          => 'Kā siu-kái ká tńg khì',
-'rollback_short'    => 'Ká tńg khì',
-'rollbacklink'      => 'ká tńg khì',
-'rollbackfailed'    => 'Ká bē tńg khì',
-'cantrollback'      => 'Bô-hoat-tō· kā siu-kái ká-tńg--khì; téng ūi kòng-hiàn-chiá sī chit ia̍h î-it ê chok-chiá.',
-'alreadyrolled'     => 'Bô-hoat-tō· kā [[User:$2|$2]] ([[User talk:$2|Thó-lūn]]{{int:pipe-separator}}[[Special:Contributions/$2|{{int:contribslink}}]]) tùi [[:$1]] ê siu-kái ká-tńg-khì; 
-í-keng ū lâng siu-kái a̍h-sī ká-tńg chit ia̍h. 
-Téng 1 ūi siu-kái-chiá sī [[User:$3|$3]] ([[User talk:$3|talk]]{{int:pipe-separator}}[[Special:Contributions/$3|{{int:contribslink}}]]).',
-'editcomment'       => "Pian-chi̍p kài-iàu sī: \"''\$1''\".",
-'revertpage'        => '回轉[[Special:Contributions/$2|$2]]（[[User talk:$2|對話]]）的編輯到頂一个[[User:$1|$1]]的修訂版本',
-'revertpage-nouser' => '回轉（無用者名）的編輯到頂一个[[User:$1|$1]]的修訂版本',
-'rollback-success'  => '回轉$1的編輯，
-轉轉去頂一个$2的修訂版本。',
-
-# Edit tokens
-'sessionfailure-title' => '登入的資訊失效',
-'sessionfailure'       => '你的登入連線敢若有問題，
-為著防止連線被駭客(hijack)，這个操作已經取消，
-請先轉去前一頁，重新載入彼頁，才閣試。',
+'rollback'       => 'Kā siu-kái ká tńg khì',
+'rollback_short' => 'Ká tńg khì',
+'rollbacklink'   => 'ká tńg khì',
+'rollbackfailed' => 'Ká bē tńg khì',
+'cantrollback'   => 'Bô-hoat-tō· kā siu-kái ká-tńg--khì; téng ūi kòng-hiàn-chiá sī chit ia̍h î-it ê chok-chiá.',
+'alreadyrolled'  => 'Bô-hoat-tō· kā [[User:$2|$2]] ([[User talk:$2|Thó-lūn]]) tùi [[:$1]] ê siu-kái ká-tńg-khì; í-keng ū lâng siu-kái a̍h-sī ká-tńg chit ia̍h. Téng 1 ūi siu-kái-chiá sī [[User:$3|$3]] ([[User talk:$3|Thó-lūn]]).',
+'editcomment'    => "Siu-kái phêng-lūn sī: \"''\$1''\".",
 
 # Protect
-'protectlogpage'              => '保護的記錄',
-'protectlogtext'              => '下跤是保護頁有改過的清單，
-請參考[[Special:ProtectedPages|保護頁清單]]看這馬有保護的頁。',
-'protectedarticle'            => 'pó-hō͘ "[[$1]]"',
-'modifiedarticleprotection'   => '改"[[$1]]"的保護等級',
-'unprotectedarticle'          => '已經解除"[[$1]]"的保護',
-'movedarticleprotection'      => '已經共"[[$2]]"的保護設定徙去"[[$1]]"',
-'protect-title'               => 'Pó-hō· "$1"',
-'prot_1movedto2'              => '[[$1]] sóa khì tī [[$2]]',
-'protect-legend'              => 'Khak-tēng beh pó-hō·',
-'protectcomment'              => 'Lí-iû:',
-'protectexpiry'               => '到期：',
-'protect_expiry_invalid'      => '到期時間毋著',
-'protect_expiry_old'          => '到期時間已經過去',
-'protect-unchain-permissions' => '解除更加保護的選項',
-'protect-text'                => "你會當佇遮看佮改'''<nowiki>$1</nowiki>'''的保護等級。",
-'protect-locked-blocked'      => "你袂當佇封鎖的時陣改保護等級，
-下跤是'''$1'''這馬的保護等級:",
-'protect-cascade'             => 'Cascading protection - pó-hō͘ jīm-hô pau-hâm tī chit ia̍h ê ia̍h.',
-'protect-othertime'           => '其他的時間：',
-'protect-othertime-op'        => '其他的時間',
-'protect-otherreason'         => '其他／另外的理由：',
-'protect-otherreason-op'      => '其他的理由',
-'restriction-type'            => '允准：',
-'restriction-level'           => '限制層級：',
-'minimum-size'                => '上細',
-'maximum-size'                => '上大：',
+'protectlogpage'   => '保護的記錄',
+'protectedarticle' => 'pó-hō͘ "[[$1]]"',
+'protect-title'    => 'Pó-hō· "$1"',
+'prot_1movedto2'   => '[[$1]] sóa khì tī [[$2]]',
+'protect-legend'   => 'Khak-tēng beh pó-hō·',
+'protectcomment'   => 'Lí-iû:',
+'protect-cascade'  => 'Cascading protection - pó-hō͘ jīm-hô pau-hâm tī chit ia̍h ê ia̍h.',
 
 # Restrictions (nouns)
-'restriction-edit'   => 'Siu-kái',
-'restriction-move'   => 'Sóa khì',
-'restriction-create' => '開始寫',
-'restriction-upload' => '上載',
-
-# Restriction levels
-'restriction-level-sysop'         => '全保護',
-'restriction-level-autoconfirmed' => '半保護',
-'restriction-level-all'           => '任何一級',
+'restriction-edit' => 'Siu-kái',
+'restriction-move' => 'Sóa khì',
 
 # Undelete
-'undelete'            => 'Kiù thâi tiāu ê ia̍h',
-'undeletepage'        => 'Khoàⁿ kap kiù thâi tiāu ê ia̍h',
-'undeletepagetitle'   => "'''下跤包括[[:$1]]的刣掉修訂本'''",
-'viewdeletedpage'     => '看刣掉的頁',
-'undeletepagetext'    => '下跤的{{PLURAL:$1|篇頁|篇頁}}已經予人刣掉，毋過猶留佇檔案庫，而且會使救倒轉來。
-檔案庫內底可能會定時清掉。',
-'undeletelink'        => '看／恢復',
-'undeleteviewlink'    => 'Khoàⁿ',
-'undeletereset'       => '設便',
-'undeletecomment'     => '理由：',
-'undeletedarticle'    => 'kiù "[[$1]]"',
-'undelete-search-box' => '揣刣掉的頁',
+'undelete'         => 'Kiù thâi tiāu ê ia̍h',
+'undeletepage'     => 'Khoàⁿ kap kiù thâi tiāu ê ia̍h',
+'undeletelink'     => '看／恢復',
+'undeleteviewlink' => 'Khoàⁿ',
+'undeletedarticle' => 'kiù "[[$1]]"',
 
 # Namespace form on various pages
 'namespace'      => 'Miâ-khong-kan:',
@@ -1942,63 +1658,31 @@ Téng 1 ūi siu-kái-chiá sī [[User:$3|$3]] ([[User talk:$3|talk]]{{int:pipe-s
 'whatlinkshere-filters'    => '過濾器',
 
 # Block/unblock
-'blockip'                      => 'Hong-só iōng-chiá',
-'blockip-title'                => '封鎖用者',
-'blockip-legend'               => '封鎖用者',
-'ipadressorusername'           => 'IP Chū-chí a̍h iōng-chiá miâ:',
-'ipbexpiry'                    => '到期：',
-'ipbreason'                    => 'Lí-iû:',
-'ipbreasonotherlist'           => '其他理由',
-'ipbsubmit'                    => 'Hong-só chit ūi iōng-chiá',
-'ipbother'                     => '其他時間：',
-'ipboptions'                   => '兩點鐘:2 hours,一工:1 day,三工:3 days,一禮拜:1 week,兩禮拜:2 weeks,一個月:1 month,兩個月:3 months,六個月:6 months,一年:1 year,永久:infinite',
-'ipbotherreason'               => '其他／另外的理由：',
-'badipaddress'                 => 'Bô-hāu ê IP chū-chí',
-'blockipsuccesssub'            => 'Hong-só sêng-kong',
-'blockipsuccesstext'           => '[[Special:Contributions/$1|$1]] í-keng pī hong-só. <br />Khì [[Special:IPBlockList|IP hong-só lia̍t-toaⁿ]] review hong-só ê IP.',
-'unblockip'                    => '解除對用者的封鎖',
-'ipusubmit'                    => 'Chhú-siau chit ê hong-só',
-'ipblocklist'                  => 'Siū hong-só ê iōng-chiá',
-'ipblocklist-legend'           => '揣一个封鎖的用者',
-'ipblocklist-username'         => '用者名稱抑是網路地址(IP)：',
-'ipblocklist-sh-userblocks'    => '$1口座封鎖',
-'ipblocklist-sh-tempblocks'    => '$1暫時封鎖',
-'ipblocklist-sh-addressblocks' => '$1單一IP封鎖',
-'ipblocklist-submit'           => '揣',
-'blocklink'                    => 'hong-só',
-'unblocklink'                  => '取消封鎖',
-'change-blocklink'             => '改封鎖',
-'contribslink'                 => 'kòng-hiàn',
-'autoblocker'                  => 'Chū-tōng kìm-chí lí sú-iōng, in-ūi lí kap "$1" kong-ke kāng 1 ê IP chū-chí (kìm-chí lí-iû "$2").',
-'blocklogpage'                 => '封鎖記錄',
-'blocklogentry'                => 'hong-só [[$1]], siat kî-hān chì $2 $3',
-'blocklogtext'                 => 'Chit-ê log lia̍t-chhut block/unblock ê tōng-chok. Chū-tōng block ê IP chū-chí bô lia̍t--chhut-lâi ([[Special:IPBlockList]] ū hiān-chú-sî ū-hāu ê block/ban o·-miâ-toaⁿ).',
-'unblocklogentry'              => '解除封鎖$1',
-'block-log-flags-anononly'     => '只會當是無名氏用者',
-'block-log-flags-nocreate'     => 'Khui kháu-chō thêng-iōng ah',
-'block-log-flags-noautoblock'  => '自動封鎖袂當用',
-'block-log-flags-noemail'      => '電子批封鎖牢咧',
-'block-log-flags-nousertalk'   => '袂當改家己的討論頁',
-'block-log-flags-hiddenname'   => '用者名稱藏起來矣',
-'ipb_expiry_invalid'           => '到期的時間毋著',
-'ipb_already_blocked'          => '"$1"是封鎖牢咧',
-'ip_range_invalid'             => '毋著的網址(IP)範圍',
-'blockme'                      => '封鎖我',
-'proxyblocker-disabled'        => '這个功能袂當用。',
+'blockip'                  => 'Hong-só iōng-chiá',
+'ipbreason'                => 'Lí-iû:',
+'ipbsubmit'                => 'Hong-só chit ūi iōng-chiá',
+'ipboptions'               => '兩點鐘:2 hours,一工:1 day,三工:3 days,一禮拜:1 week,兩禮拜:2 weeks,一個月:1 month,兩個月:3 months,六個月:6 months,一年:1 year,永久:infinite',
+'badipaddress'             => 'Bô-hāu ê IP chū-chí',
+'blockipsuccesssub'        => 'Hong-só sêng-kong',
+'blockipsuccesstext'       => '[[Special:Contributions/$1|$1]] í-keng pī hong-só. <br />Khì [[Special:IPBlockList|IP hong-só lia̍t-toaⁿ]] review hong-só ê IP.',
+'ipusubmit'                => 'Chhú-siau hong-só chit ê chū-chí',
+'ipblocklist'              => 'Siū hong-só ê iōng-chiá',
+'blocklink'                => 'hong-só',
+'unblocklink'              => '取消封鎖',
+'change-blocklink'         => '改封鎖',
+'contribslink'             => 'kòng-hiàn',
+'autoblocker'              => 'Chū-tōng kìm-chí lí sú-iōng, in-ūi lí kap "$1" kong-ke kāng 1 ê IP chū-chí (kìm-chí lí-iû "$2").',
+'blocklogpage'             => '封鎖記錄',
+'blocklogentry'            => 'hong-só [[$1]], siat kî-hān chì $2 $3',
+'blocklogtext'             => 'Chit-ê log lia̍t-chhut block/unblock ê tōng-chok. Chū-tōng block ê IP chū-chí bô lia̍t--chhut-lâi ([[Special:BlockList]] ū hiān-chú-sî ū-hāu ê block/ban o·-miâ-toaⁿ).',
+'block-log-flags-nocreate' => 'Khui kháu-chō thêng-iōng ah',
 
 # Developer tools
-'lockbtn'             => '封鎖資料庫',
-'unlockbtn'           => '解除對資料庫的封鎖',
-'locknoconfirm'       => 'Lí bô kau "khak-tēng" ê keh-á.',
-'lockdbsuccesssub'    => '資料庫封鎖成功',
-'unlockdbsuccesssub'  => '已經共資料庫的封鎖解除',
-'unlockdbsuccesstext' => '資料庫已經解除封鎖',
-'databasenotlocked'   => '資料庫無封鎖牢咧。',
+'locknoconfirm' => 'Lí bô kau "khak-tēng" ê keh-á.',
 
 # Move page
-'move-page'              => '徙$1',
-'move-page-legend'       => 'Sóa ia̍h',
-'movepagetext'           => "Ē-kha chit ê form> iōng lâi kái 1 ê ia̍h ê piau-tê (miâ-chheng); só·-ū siong-koan ê le̍k-sú ē tòe leh sóa khì sin piau-tê.
+'move-page-legend' => 'Sóa ia̍h',
+'movepagetext'     => "Ē-kha chit ê form> iōng lâi kái 1 ê ia̍h ê piau-tê (miâ-chheng); só·-ū siong-koan ê le̍k-sú ē tòe leh sóa khì sin piau-tê.
 Kū piau-tê ē chiâⁿ-chò 1 ia̍h choán khì sin piau-tê ê choán-ia̍h.
 Liân khì kū piau-tê ê liân-kiat (link) bē khì tāng--tio̍h; ē-kì-tit chhiau-chhōe siang-thâu (double) ê a̍h-sī kò·-chiòng ê choán-ia̍h.
 Lí ū chek-jīm khak-tēng liân-kiat kè-sio̍k liân tio̍h ūi.
@@ -2009,46 +1693,36 @@ Che piaú-sī nā ū têng-tâⁿ, ē-sái kā sin ia̍h soà tńg-khì goân-l�
 '''SÈ-JĪ!'''
 Tùi chē lâng tha̍k ê ia̍h lâi kóng, soá-ūi sī toā tiâu tāi-chì.
 Liâu--lo̍h-khì chìn-chêng, chhiáⁿ seng khak-tēng lí ū liáu-kái chiah-ê hiō-kó.",
-'movepagetalktext'       => "Siong-koan ê thó-lūn-ia̍h (chún ū) oân-nâ ē chū-tōng tòe leh sóa-ūi. Í-hā ê chêng-hêng '''bô chún-sǹg''': *Beh kā chit ia̍h tùi 1 ê miâ-khong-kan (namespace) soá khì lēng-gōa 1 ê miâ-khong-kan, *Sin piau-tê í-keng ū iōng--kòe ê thó-lūn-ia̍h, he̍k-chiá *Ē-kha ê sió-keh-á bô phah-kau. Í-siōng ê chêng-hêng nā-chún tī leh, lí chí-hó iōng jîn-kang ê hong-sek sóa ia̍h a̍h-sī kā ha̍p-pèng (nā ū su-iàu).",
-'movearticle'            => 'Sóa ia̍h:',
-'movenologin'            => 'Bô teng-ji̍p',
-'movenologintext'        => 'Lí it-tēng ài sī chù-chheh ê iōng-chiá jī-chhiáⁿ ū [[Special:UserLogin|teng-ji̍p]] chiah ē-tàng sóa ia̍h.',
-'movenotallowed'         => '你無授權通去徙頁',
-'movenotallowedfile'     => '你無授權通去徙檔案',
-'cant-move-user-page'    => '你無授權通去徙用者頁（無包括伊的下頁）',
-'cant-move-to-user-page' => '你無授權通去徙用者頁（下頁例外）',
-'newtitle'               => 'Khì sin piau-tê:',
-'move-watch'             => 'Kàm-sī chit ia̍h',
-'movepagebtn'            => 'Sóa ia̍h',
-'pagemovedsub'           => 'Sóa-ūi sêng-kong',
-'articleexists'          => 'Kāng miâ ê ia̍h í-keng tī leh, a̍h-sī lí kéng ê miâ bô-hāu. Chhiáⁿ kéng pa̍t ê miâ.',
-'talkexists'             => "'''Ia̍h ê loē-bûn ū soá cháu, m̄-koh siong-koan ê thó-lūn-ia̍h bô toè leh soá, in-ūi sin piau-tê pun-té tō ū hit ia̍h. Chhiáⁿ iōng jîn-kang ê hoat-tō· kā ha̍p-pèng.'''",
-'movedto'                => 'sóa khì tī',
-'movetalk'               => 'Sūn-sòa sóa thó-lūn-ia̍h',
-'movepage-page-moved'    => '$1 í-keng sóa khì tī $2.',
-'movepage-page-unmoved'  => '$1這頁袂當徙去$2',
-'1movedto2'              => '[[$1]] sóa khì tī [[$2]]',
-'1movedto2_redir'        => '[[$1]] sóa khì [[$2]] (choán-ia̍h thiàu kòe)',
-'movelogpage'            => '徙位記錄',
-'movelogpagetext'        => 'Ē-kha lia̍t-chhut hông soá-ūi ê ia̍h.',
-'movenosubpage'          => '這頁無下頁',
-'movereason'             => 'Lí-iû:',
-'revertmove'             => '回轉',
-'selfmove'               => 'Goân piau-tê kap sin piau-tê sio-siâng; bô hoat-tō· sóa.',
+'movepagetalktext' => "Siong-koan ê thó-lūn-ia̍h (chún ū) oân-nâ ē chū-tōng tòe leh sóa-ūi. Í-hā ê chêng-hêng '''bô chún-sǹg''': *Beh kā chit ia̍h tùi 1 ê miâ-khong-kan (namespace) soá khì lēng-gōa 1 ê miâ-khong-kan, *Sin piau-tê í-keng ū iōng--kòe ê thó-lūn-ia̍h, he̍k-chiá *Ē-kha ê sió-keh-á bô phah-kau. Í-siōng ê chêng-hêng nā-chún tī leh, lí chí-hó iōng jîn-kang ê hong-sek sóa ia̍h a̍h-sī kā ha̍p-pèng (nā ū su-iàu).",
+'movearticle'      => 'Sóa ia̍h:',
+'movenologin'      => 'Bô teng-ji̍p',
+'movenologintext'  => 'Lí it-tēng ài sī chù-chheh ê iōng-chiá jī-chhiáⁿ ū [[Special:UserLogin|teng-ji̍p]] chiah ē-tàng sóa ia̍h.',
+'newtitle'         => 'Khì sin piau-tê:',
+'move-watch'       => 'Kàm-sī chit ia̍h',
+'movepagebtn'      => 'Sóa ia̍h',
+'pagemovedsub'     => 'Sóa-ūi sêng-kong',
+'articleexists'    => 'Kāng miâ ê ia̍h í-keng tī leh, a̍h-sī lí kéng ê miâ bô-hāu. Chhiáⁿ kéng pa̍t ê miâ.',
+'talkexists'       => "'''Ia̍h ê loē-bûn ū soá cháu, m̄-koh siong-koan ê thó-lūn-ia̍h bô toè leh soá, in-ūi sin piau-tê pun-té tō ū hit ia̍h. Chhiáⁿ iōng jîn-kang ê hoat-tō· kā ha̍p-pèng.'''",
+'movedto'          => 'sóa khì tī',
+'movetalk'         => 'Sūn-sòa sóa thó-lūn-ia̍h',
+'1movedto2'        => '[[$1]] sóa khì tī [[$2]]',
+'1movedto2_redir'  => '[[$1]] sóa khì [[$2]] (choán-ia̍h thiàu kòe)',
+'movelogpage'      => '徙位記錄',
+'movelogpagetext'  => 'Ē-kha lia̍t-chhut hông soá-ūi ê ia̍h.',
+'movereason'       => 'Lí-iû:',
+'revertmove'       => '回轉',
+'selfmove'         => 'Goân piau-tê kap sin piau-tê sio-siâng; bô hoat-tō· sóa.',
 
 # Export
 'export'        => 'Su-chhut ia̍h',
 'exportcuronly' => 'Hān hiān-chhú-sî ê siu-téng-pún, mài pau-koat kui-ê le̍k-sú',
 
 # Namespace 8 related
-'allmessages'               => 'Hē-thóng sìn-sit',
-'allmessagesname'           => 'Miâ',
-'allmessagesdefault'        => 'Siat piān ê bûn-jī',
-'allmessagescurrent'        => 'Bo̍k-chêng ê bûn-jī',
-'allmessagestext'           => 'Chia lia̍t chhut só·-ū tī MediaWiki: miâ-khong-kan ê hē-thóng sìn-sit.',
-'allmessages-filter-all'    => '全部',
-'allmessages-language'      => '話語：',
-'allmessages-filter-submit' => '來去',
+'allmessages'        => 'Hē-thóng sìn-sit',
+'allmessagesname'    => 'Miâ',
+'allmessagesdefault' => 'Siat piān ê bûn-jī',
+'allmessagescurrent' => 'Bo̍k-chêng ê bûn-jī',
+'allmessagestext'    => 'Chia lia̍t chhut só·-ū tī MediaWiki: miâ-khong-kan ê hē-thóng sìn-sit.',
 
 # Thumbnails
 'thumbnail-more'  => 'Hòng-tōa',
@@ -2056,8 +1730,7 @@ Liâu--lo̍h-khì chìn-chêng, chhiáⁿ seng khak-tēng lí ū liáu-kái chia
 'thumbnail_error' => '產生小圖時錯誤：$1',
 
 # Special:Import
-'import'                 => 'Su-ji̍p ia̍h',
-'import-upload-filename' => '檔案名稱：',
+'import' => 'Su-ji̍p ia̍h',
 
 # Tooltip help for the actions
 'tooltip-pt-userpage'             => 'Lí chit ê iōng-chiá ê ia̍h',
@@ -2103,9 +1776,7 @@ Lí ē-sái khoàⁿ i ê goân-sú-bé.',
 'tooltip-ca-nstab-special'        => '這是一篇特殊頁，你袂當編輯。',
 'tooltip-ca-nstab-project'        => '看事工頁',
 'tooltip-ca-nstab-image'          => 'Khoàⁿ tóng-àn ia̍h',
-'tooltip-ca-nstab-mediawiki'      => '看系統訊息',
 'tooltip-ca-nstab-template'       => '看枋模',
-'tooltip-ca-nstab-help'           => '看幫贊頁',
 'tooltip-ca-nstab-category'       => 'Khoàⁿ lūi-pia̍t ia̍h',
 'tooltip-minoredit'               => '共這做一个小修改記號',
 'tooltip-save'                    => 'Pó-chhûn lí chò ê kái-piàn',
@@ -2115,7 +1786,6 @@ Lí ē-sái khoàⁿ i ê goân-sú-bé.',
 'tooltip-watch'                   => '共這頁加入你的監視單',
 'tooltip-rollback'                => 'Ji̍h "Hoê-choán" ē-sái thè tńg-khì téng-chi̍t-ê kái ê lâng ê ia̍h.',
 'tooltip-undo'                    => '『取消』會使回轉這个編輯而且會使先看覓編輯的結果，閣會使佇概要加入原因。',
-'tooltip-preferences-save'        => '保存設定',
 'tooltip-summary'                 => 'Siá chi̍t-ê kán-tan soat-bêng',
 
 # Attribution
@@ -2124,64 +1794,24 @@ Lí ē-sái khoàⁿ i ê goân-sú-bé.',
 'othercontribs' => 'Kin-kù $1 ê kòng-hiàn.',
 'siteusers'     => '{{SITENAME}} iōng-chiá $1',
 
-# Info page
-'infosubtitle' => '頁的資料',
-'numedits'     => '改幾擺（頁）： $1',
-'numtalkedits' => '改幾擺（討論頁）：$1',
-
-# Math options
-'mw_math_png'    => 'Tiāⁿ-tio̍h iōng PNG render',
-'mw_math_simple' => 'Tân-sûn ê chêng-hêng iōng HTML; kî-thaⁿ iōng PNG',
-'mw_math_html'   => 'Chīn-liōng iōng HTML; kî-thaⁿ iōng PNG',
-'mw_math_source' => 'Î-chhî TeX ê keh-sek (khah ha̍h bûn-jī-sek ê liû-lám-khì)',
-'mw_math_modern' => 'Kiàn-gī hiān-tāi liû-lám-khì kéng che',
-'mw_math_mathml' => 'Chīn-liōng iōng MathML (chhì-giām-sèng--ê)',
-
-# Math errors
-'math_failure'          => '解析失敗',
-'math_unknown_error'    => '毋知啥物錯誤',
-'math_unknown_function' => '毋知啥物函數',
-'math_lexing_error'     => '句法錯誤',
-'math_syntax_error'     => '語法錯誤',
-'math_image_error'      => 'PNG 轉換失敗；請檢查看有正確安裝 latex, dvipng（或dvips + gs + convert）無？',
-'math_bad_tmpdir'       => '無法度寫入抑是建立數學公式的臨時目錄',
-'math_bad_output'       => '無法度寫入抑是建立數學公式的輸出目錄',
-'math_notexvc'          => '無看"texvc"執行檔案；請看 math/README 做配置',
-
 # Patrolling
-'markaspatrolleddiff'                 => 'Phiau-sī sûn--kòe',
-'markaspatrolledtext'                 => '共這頁記號做巡過',
-'markedaspatrolled'                   => '記號做巡過',
-'markedaspatrolledtext'               => 'Soán-te̍k  ê siu-tēng-pún [[:$1]]  í-keng kì-hō chò sûn--kòe.',
-'rcpatroldisabled'                    => '巡最近改的功能已經關掉',
-'markedaspatrollederror'              => '袂使記號做巡查過',
-'markedaspatrollederrortext'          => '你愛指定一个修訂本是巡過的',
-'markedaspatrollederror-noautopatrol' => '你袂當記號你家己改的修訂本是巡過的',
-
-# Patrol log
-'patrol-log-page'      => '巡查記錄',
-'patrol-log-header'    => '這是一个已經巡查過的修訂本記錄',
-'patrol-log-line'      => '$2的版本$1已經記號做巡查過$3',
-'patrol-log-auto'      => '（自動）',
-'patrol-log-diff'      => '修訂本 $1',
-'log-show-hide-patrol' => '$1巡查記錄',
+'markaspatrolleddiff'   => 'Phiau-sī sûn--kòe',
+'markedaspatrolledtext' => 'Í-keng phiau-sī chit ê siu-tēng-pún ū lâng sûn--kòe.',
 
 # Image deletion
-'deletedrevision'       => 'Kū siu-tēng-pún $1 thâi-tiāu ā.',
-'filedeleteerror-short' => '欲刣掉檔案的時陣有錯誤：$1',
+'deletedrevision' => 'Kū siu-tēng-pún $1 thâi-tiāu ā.',
 
 # Browsing diffs
 'previousdiff' => '← Khì chêng 1 ê siu-kái',
 'nextdiff'     => 'Khì āu 1 ê siu-kái →',
 
 # Media information
-'imagemaxsize'         => 'Iáⁿ-siōng biô-su̍t-ia̍h ê tô· ke̍k-ke hián-sī jōa tōa tiuⁿ:',
-'thumbsize'            => 'Sok-tô· (thumbnail) jōa tōa tiuⁿ:',
-'file-info-size'       => '$1 × $2  像素，檔案大細：$3，MIME類型：$4',
-'file-nohires'         => '<small>Bô khah koân ê kái-sek-tō͘.</small>',
-'svg-long-desc'        => 'SVG 檔案，一般的長闊：$1 × $2 像素，檔案大小：$3',
-'show-big-image'       => '檔案解析度',
-'show-big-image-thumb' => '<small>Chit tiuⁿ ū-lám tô͘ (preview) ê toā-sè: $1 × $2 pixel</small>',
+'imagemaxsize'   => 'Iáⁿ-siōng biô-su̍t-ia̍h ê tô· ke̍k-ke hián-sī jōa tōa tiuⁿ:',
+'thumbsize'      => 'Sok-tô· (thumbnail) jōa tōa tiuⁿ:',
+'file-info-size' => '$1 × $2  像素，檔案大細：$3，MIME類型：$4',
+'file-nohires'   => '<small>Bô khah koân ê kái-sek-tō͘.</small>',
+'svg-long-desc'  => 'SVG 檔案，一般的長闊：$1 × $2 像素，檔案大小：$3',
+'show-big-image' => '檔案解析度',
 
 # Special:NewFiles
 'newimages'     => 'Sin iáⁿ-siōng oē-lóng',
@@ -2202,77 +1832,51 @@ Lí ē-sái khoàⁿ i ê goân-sú-bé.',
 若檔案有人改過，一寡說明就無完全反應改過的檔案',
 'metadata-expand'   => 'Hián-sī iù-chiat',
 'metadata-collapse' => 'Am iù-chiat',
-
-# EXIF tags
-'exif-imagedescription' => '影相標題',
-'exif-make'             => '相機製造商',
-'exif-model'            => '相機款式',
-'exif-artist'           => '著作者',
-'exif-copyright'        => '著作權所有人',
+'metadata-fields'   => '這个信息所排來出的影相元資料，是會佇欲顯示元資料表的時陣顯示。
+其他的元資料是先藏起來。
+* make
+* model
+* datetimeoriginal
+* exposuretime
+* fnumber
+* isospeedratings
+* focallength
+* artist
+* copyright
+* imagedescription
+* gpslatitude
+* gpslongitude
+* gpsaltitude',
 
 # External editor support
 'edit-externally'      => 'Iōng gōa-pō· èng-iōng nńg-thé pian-chi̍p chit-ê tóng-àn',
-'edit-externally-help' => '(Khoàⁿ [http://www.mediawiki.org/wiki/Manual:External_editors siat-tēng soat-bêng] ê chu-liāu.)',
+'edit-externally-help' => '(Khoàⁿ [//www.mediawiki.org/wiki/Manual:External_editors siat-tēng soat-bêng] ê chu-liāu.)',
 
 # 'all' in various places, this might be different for inflected languages
-'recentchangesall' => 'choân-pō·',
-'imagelistall'     => '全部',
-'watchlistall2'    => 'choân-pō͘',
-'namespacesall'    => 'choân-pō·',
-'monthsall'        => 'choân-pō͘',
-'limitall'         => '全部',
+'watchlistall2' => 'choân-pō͘',
+'namespacesall' => 'choân-pō·',
+'monthsall'     => 'choân-pō͘',
 
 # E-mail address confirmation
-'confirmemail'              => 'Khak-jīn e-mail chū-chí',
-'confirmemail_text'         => 'Sú-iōng e-mail kong-lêng chìn-chêng tio̍h seng khak-jīn lí ê e-mail chū-chí ū-hāu. Chhi̍h ē-pêng hit-ê liú-á thang kià 1 tiuⁿ khak-jīn phoe hō· lí. Hit tiuⁿ phoe lāi-bīn ū 1 ê te̍k-sû liân-kiat. Chhiáⁿ iōng liû-lám-khì khui lâi khoàⁿ, án-ne tō ē-tit khak-jīn lí ê chū-chí ū-hāu.',
-'confirmemail_send'         => 'Kià khak-jīn phoe',
-'confirmemail_sent'         => 'Khak-jīn phoe kià chhut-khì ah.',
-'confirmemail_invalid'      => 'Bô-hāu ê khak-jīn pian-bé. Pian-bé khó-lêng í-keng kòe-kî.',
-'confirmemail_success'      => 'í ê e-mail chū-chí khak-jīn oân-sêng. Lí ē-sái teng-ji̍p, khai-sí hiáng-siū chit ê wiki.',
-'confirmemail_loggedin'     => 'Lí ê e-mail chū-chí í-keng khak-jīn ū-hāu.',
-'confirmemail_error'        => 'Pó-chûn khak-jīn chu-sìn ê sî-chūn hoat-seng būn-tê.',
-'confirmemail_subject'      => '{{SITENAME}} e-mail chu-chi khak-jin phoe',
-'confirmemail_body'         => 'Ū lâng (IP $1, tāi-khài sī lí pún-lâng) tī {{SITENAME}} ēng chit-ê e-mail chū-chí chù-chheh 1 ê kháu-chō "$2".
+'confirmemail'          => 'Khak-jīn e-mail chū-chí',
+'confirmemail_text'     => 'Sú-iōng e-mail kong-lêng chìn-chêng tio̍h seng khak-jīn lí ê e-mail chū-chí ū-hāu. Chhi̍h ē-pêng hit-ê liú-á thang kià 1 tiuⁿ khak-jīn phoe hō· lí. Hit tiuⁿ phoe lāi-bīn ū 1 ê te̍k-sû liân-kiat. Chhiáⁿ iōng liû-lám-khì khui lâi khoàⁿ, án-ne tō ē-tit khak-jīn lí ê chū-chí ū-hāu.',
+'confirmemail_send'     => 'Kià khak-jīn phoe',
+'confirmemail_sent'     => 'Khak-jīn phoe kià chhut-khì ah.',
+'confirmemail_invalid'  => 'Bô-hāu ê khak-jīn pian-bé. Pian-bé khó-lêng í-keng kòe-kî.',
+'confirmemail_success'  => 'í ê e-mail chū-chí khak-jīn oân-sêng. Lí ē-sái teng-ji̍p, khai-sí hiáng-siū chit ê wiki.',
+'confirmemail_loggedin' => 'Lí ê e-mail chū-chí í-keng khak-jīn ū-hāu.',
+'confirmemail_error'    => 'Pó-chûn khak-jīn chu-sìn ê sî-chūn hoat-seng būn-tê.',
+'confirmemail_subject'  => '{{SITENAME}} e-mail chu-chi khak-jin phoe',
+'confirmemail_body'     => 'Ū lâng (IP $1, tāi-khài sī lí pún-lâng) tī {{SITENAME}} ēng chit-ê e-mail chū-chí chù-chheh 1 ê kháu-chō "$2".
 
 Chhiáⁿ khui ē-kha chit-ê liân-kiat, thang khak-jīn chit-ê kháu-chō si̍t-chāi sī lí ê:
 
 $3
 
-Nā-chún *m̄-sī* lí, chhiáⁿ khui ē-kha chit-ê liân-kiat,  chhú-siau khak-jīn ê e-mail.  
-
-$5
-
-Chit tiuⁿ phoe ê khak-jīn-bé ē chū-tōng tī $4 kòe-kî.',
-'confirmemail_body_changed' => 'Ū lâng (IP $1, tāi-khài sī lí pún-lâng) tī {{SITENAME}} ēng chit-ê e-mail chū-chí chù-chheh 1 ê kháu-chō "$2".
-
-Chhiáⁿ khui ē-kha chit-ê liân-kiat, thang khak-jīn chit-ê kháu-chō si̍t-chāi sī lí ê:
-
-$3
-
-Nā-chún *m̄-sī* lí, chhiáⁿ khui ē-kha chit-ê liân-kiat,  chhú-siau khak-jīn ê e-mail.  
-
-$5
-
-Chit tiuⁿ phoe ê khak-jīn-bé ē chū-tōng tī $4 kòe-kî.',
-'confirmemail_body_set'     => 'Ū lâng (IP $1, tāi-khài sī lí pún-lâng) tī {{SITENAME}} ēng chit-ê e-mail chū-chí chù-chheh 1 ê kháu-chō "$2".
-
-Chhiáⁿ khui ē-kha chit-ê liân-kiat, thang khak-jīn chit-ê kháu-chō si̍t-chāi sī lí ê:
-
-$3
-
-Nā-chún *m̄-sī* lí, chhiáⁿ khui ē-kha chit-ê liân-kiat,  chhú-siau khak-jīn ê e-mail.  
-
-$5
-
-Chit tiuⁿ phoe ê khak-jīn-bé ē chū-tōng tī $4 kòe-kî.',
-'invalidateemail'           => '取消電子批的確認。',
+Nā-chún *m̄-sī* lí, chhiáⁿ mài tòe liân-kiat khì.  Chit tiuⁿ phoe ê khak-jīn-bé ē chū-tōng tī $4 kòe-kî.',
 
 # action=purge
 'confirm-purge-top' => 'Kā chit ia̍h ê cache piàⁿ tiāu?',
-
-# Multipage image navigation
-'imgmultigo'   => '來去',
-'imgmultigoto' => '來去$1這頁',
 
 # Table pager
 'table_pager_next'         => 'Aū-chi̍t-ia̍h',
@@ -2285,18 +1889,12 @@ Chit tiuⁿ phoe ê khak-jīn-bé ē chū-tōng tī $4 kòe-kî.',
 # Auto-summaries
 'autosumm-blank'   => 'Kā ia̍h ê loē-iông the̍h tiāu',
 'autoredircomment' => 'Choán khì [[$1]]',
-'autosumm-new'     => 'Sin ia̍h: $1...',
-
-# Live preview
-'livepreview-loading' => '當咧讀',
-'livepreview-ready'   => '讀....好矣！',
+'autosumm-new'     => 'Sin ia̍h: $1',
 
 # Watchlist editor
 'watchlistedit-numitems'      => 'Lí ê kàm-sī-toaⁿ ū $1 ia̍h, thó-lūn-ia̍h bô sǹg chāi-lāi.',
 'watchlistedit-normal-submit' => 'Mài kàm-sī',
 'watchlistedit-normal-done'   => 'Í-keng ū {{PLURAL:$1| ia̍h| ia̍h}} ùi lí ê kám-sī-toaⁿ soá cháu:',
-'watchlistedit-raw-titles'    => '標題：',
-'watchlistedit-raw-done'      => '你的監視單有改新。',
 
 # Watchlist editing tools
 'watchlisttools-view' => '看相關的修改',
@@ -2307,30 +1905,13 @@ Chit tiuⁿ phoe ê khak-jīn-bé ē chū-tōng tī $4 kòe-kî.',
 'duplicate-defaultsort' => '\'\'\'Thê-chhíⁿ lí:\'\'\'Siat-piān ê pâi-lia̍t hong-sek "$2" thè-oāⁿ chìn-chêng ê siat-piān ê pâi-lia̍t hong-sek "$1".',
 
 # Special:Version
-'version'                  => 'Pán-pún',
-'version-specialpages'     => '特殊頁',
-'version-skins'            => '皮',
-'version-license'          => '授權',
-'version-software-version' => '版本',
+'version' => 'Pán-pún',
 
 # Special:FilePath
-'filepath'        => 'Tóng-àn ê soàⁿ-lō·',
-'filepath-submit' => '來去',
-
-# Special:FileDuplicateSearch
-'fileduplicatesearch-filename' => '檔案名稱：',
+'filepath' => 'Tóng-àn ê soàⁿ-lō·',
 
 # Special:SpecialPages
-'specialpages'                   => 'Te̍k-sû-ia̍h',
-'specialpages-group-maintenance' => '維修報告',
-'specialpages-group-other'       => '其他的特殊頁',
-'specialpages-group-login'       => '登入',
-'specialpages-group-changes'     => '最近改的記錄',
-'specialpages-group-wiki'        => 'Wiki資料佮家私',
-
-# Special:BlankPage
-'blankpage'              => '空的頁',
-'intentionallyblankpage' => '這頁是刁持留空的。',
+'specialpages' => 'Te̍k-sû-ia̍h',
 
 # External image whitelist
 'external_image_whitelist' => ' #留佮這行仝款的字<pre>
@@ -2344,28 +1925,5 @@ Chit tiuⁿ phoe ê khak-jīn-bé ē chū-tōng tī $4 kòe-kî.',
 
 # Special:Tags
 'tag-filter' => '[[Special:Tags|標籤]]過濾器:',
-'tags-edit'  => '修改',
-
-# Special:ComparePages
-'compare-page1'  => '第一頁',
-'compare-page2'  => '第二頁',
-'compare-rev1'   => '第一修訂本',
-'compare-rev2'   => '第二修訂本',
-'compare-submit' => '比較',
-
-# Database error messages
-'dberr-header'   => '這个Wiki遇著問題',
-'dberr-problems' => '失禮！
-這馬這个站有技術上的問題。',
-
-# HTML forms
-'htmlform-invalid-input'       => '你拍的內底有一寡問題。',
-'htmlform-select-badoption'    => '你寫的數量，無適合。',
-'htmlform-int-invalid'         => '你寫的毋是數量。',
-'htmlform-float-invalid'       => '你寫的毋是數量。',
-'htmlform-int-toolow'          => '你寫的數量低過上細的量 $1。',
-'htmlform-int-toohigh'         => '你寫的數量超過上大的量 $1。',
-'htmlform-required'            => '這个數量愛寫',
-'htmlform-selectorother-other' => '其他',
 
 );

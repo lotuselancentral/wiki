@@ -104,7 +104,6 @@ $messages = array(
 'searcharticle'    => 'Vada',
 'history'          => 'Historie del pagine',
 'history_short'    => 'Historie',
-'info_short'       => 'Informatione',
 'printableversion' => 'Printindi versione',
 'permalink'        => 'Permananti linke',
 'print'            => 'Printa',
@@ -190,8 +189,7 @@ Vu pove kontinua usa {{SITENAME}} anonimim, o vu pove riensignata kom li sami o 
 'loginsuccesstitle'          => 'Ensignato suksesosi',
 'loginsuccess'               => "'''Vu es nun ensignatat a {{SITENAME}} nomisat \"\$1\".'''",
 'mailmypassword'             => 'E-posta men pasa-vorde',
-'acct_creation_throttle_hit' => 'Visitors to this wiki using your IP address have created {{PLURAL:$1|1 account|$1 accounts}} in the last day, which is the maximum allowed in this time period.
-As a result, visitors using this IP address cannot create any more accounts at the moment.',
+'acct_creation_throttle_hit' => 'Vu ha ja krea $1 registres. Regretindim vu non pove krea plusu.',
 'accountcreated'             => 'Registre kreat',
 'accountcreatedtext'         => 'Li usere-registre por $1 ha bli krea.',
 
@@ -350,7 +348,6 @@ Also see [[Special:WantedCategories|wanted categories]].',
 'mywatchlist'     => 'Men liste de observos',
 'nowatchlist'     => 'Vu have nuli koses in vun liste de observos.',
 'watchnologin'    => 'Non ensignatat',
-'addedwatch'      => 'Adit a observa-liste',
 'addedwatchtext'  => "Li pagine \"[[:\$1]]\" ha bli adi a vun [[Special:Watchlist|observa-liste]].
 Futuri chanjos a disi pagine e lun asosiati Parla-pagine sal bli lista tilok, e li pagine sal apari '''diki''' in li [[Special:RecentChanges|liste de resenti chanjos]] por ke on trova lu plu fasilim.
 
@@ -430,9 +427,6 @@ Si vu voli plu tardim ekarta li pagine fro vun observa-liste, klikta \"Desobserv
 'tooltip-pt-logout'      => 'Eksignata',
 'tooltip-p-logo'         => 'Chefi pagine',
 
-# Info page
-'infosubtitle' => 'Informatione pri pagine',
-
 # Special:NewFiles
 'ilsubmit' => 'Sercha',
 'bydate'   => 'segun date',
@@ -442,9 +436,6 @@ Si vu voli plu tardim ekarta li pagine fro vun observa-liste, klikta \"Desobserv
 'exif-imagelength'      => 'Alteso',
 'exif-imagedescription' => 'Title de imaje',
 'exif-imageuniqueid'    => 'Unik imaje ID',
-
-# 'all' in various places, this might be different for inflected languages
-'imagelistall' => 'omnes',
 
 # Auto-summaries
 'autosumm-replace' => "Remplasant pagine kun '$1'",

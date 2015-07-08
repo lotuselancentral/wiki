@@ -22,22 +22,22 @@ $separatorTransformTable = array(
 $linkPrefixExtension = true;
 
 $namespaceNames = array(
-	NS_MEDIA            => 'Срѣ́дьства',
-	NS_SPECIAL          => 'Наро́чьна',
-	NS_TALK             => 'Бєсѣ́да',
-	NS_USER             => 'По́льꙃєватєл҄ь',
-	NS_USER_TALK        => 'По́льꙃєватєлꙗ_бєсѣ́да',
-	NS_PROJECT_TALK     => '{{GRAMMAR:genitive|$1}}_бєсѣ́да',
-	NS_FILE             => 'Дѣ́ло',
-	NS_FILE_TALK        => 'Дѣ́ла_бєсѣ́да',
+	NS_MEDIA            => 'Срѣдьства',
+	NS_SPECIAL          => 'Нарочьна',
+	NS_TALK             => 'Бєсѣда',
+	NS_USER             => 'Польꙃєватєл҄ь',
+	NS_USER_TALK        => 'Польꙃєватєлꙗ_бєсѣда',
+	NS_PROJECT_TALK     => '{{GRAMMAR:genitive|$1}}_бєсѣда',
+	NS_FILE             => 'Дѣло',
+	NS_FILE_TALK        => 'Дѣла_бєсѣда',
 	NS_MEDIAWIKI        => 'MediaWiki',
-	NS_MEDIAWIKI_TALK   => 'MediaWiki_бєсѣ́да',
-	NS_TEMPLATE         => 'Обраꙁь́ць',
-	NS_TEMPLATE_TALK    => 'Обраꙁьца́_бєсѣ́да',
-	NS_HELP             => 'По́мощь',
-	NS_HELP_TALK        => 'По́мощи бєсѣ́да',
-	NS_CATEGORY         => 'Катигорі́ꙗ',
-	NS_CATEGORY_TALK    => 'Катигорі́ѩ_бєсѣ́да',
+	NS_MEDIAWIKI_TALK   => 'MediaWiki_бєсѣда',
+	NS_TEMPLATE         => 'Обраꙁьць',
+	NS_TEMPLATE_TALK    => 'Обраꙁьца_бєсѣда',
+	NS_HELP             => 'Помощь',
+	NS_HELP_TALK        => 'Помощи_бєсѣда',
+	NS_CATEGORY         => 'Катигорїꙗ',
+	NS_CATEGORY_TALK    => 'Катигорїѩ_бєсѣда',
 );
 
 $namespaceAliases = array(
@@ -145,7 +145,6 @@ $messages = array(
 'category_header'        => 'катигорїѩ ⁖ $1 ⁖ страницѧ',
 'subcategories'          => 'подъкатигорїѩ',
 'hidden-categories'      => '{{PLURAL:$1|съкрꙑта катигорїꙗ|съкрꙑти катигорїи|съкрꙑтꙑ катигорїѩ}}',
-'category-subcat-count'  => '{{PLURAL:$2|Сѥи катигорїи тъкъмо сꙗ подъкатигорїꙗ ѥстъ|Сѥи катигорїи {{PLURAL:$1|ѥдина подъкатигорїꙗ ѥстъ|2 подъкатигорїи ѥстє|$1 подъкатигорїѩ сѫтъ}} · а вьсѩ жє подъкатигорїѩ число $2 ѥстъ}}',
 'listingcontinuesabbrev' => '· вѧщє',
 
 'linkprefix' => '/^(.*?)(„|«)$/sD',
@@ -187,7 +186,6 @@ $messages = array(
 'searcharticle'     => 'прѣиди',
 'history'           => 'страницѧ їсторїꙗ',
 'history_short'     => 'їсторїꙗ',
-'info_short'        => 'плирофорїꙗ',
 'printableversion'  => 'пєчатьнъ обраꙁъ',
 'permalink'         => 'въиньна съвѧꙁь',
 'print'             => 'пєчатаниѥ',
@@ -289,18 +287,20 @@ $messages = array(
 'accountcreated'          => 'мѣсто сътворєно ѥстъ',
 'loginlanguagelabel'      => 'ѩꙁꙑкъ : $1',
 
-# Password reset dialog
+# Change password dialog
 'resetpass'                 => 'таина словєсє иꙁмѣнѥниѥ',
 'oldpassword'               => 'старо таино слово :',
 'newpassword'               => 'ново таино слово :',
 'resetpass-submit-loggedin' => 'таина словєсє иꙁмѣнѥниѥ',
+
+# Special:PasswordReset
+'passwordreset-username' => 'польꙃєватєлꙗ имѧ :',
 
 # Edit page toolbar
 'link_sample'    => 'съвѧꙁи имѧ',
 'link_tip'       => 'вънѫтрьнꙗ съвѧꙁь',
 'extlink_sample' => 'http://www.example.com съвѧꙁи имѧ',
 'extlink_tip'    => 'вънѣщьнꙗ съвѧꙁь (помьни о http://)',
-'math_tip'       => 'маѳиматїчьна формоула (LaTeX)',
 'sig_tip'        => 'твои аѵтографъ и нꙑнѣшьна врѣмѧ и дьнь',
 
 # Edit pages
@@ -328,16 +328,15 @@ $messages = array(
 'template-protected'         => '(ꙁабранєно ѥстъ)',
 
 # History pages
-'viewpagelogs'         => 'си страницѧ їсторїѩ',
-'cur'                  => 'нꙑ҃н',
-'last'                 => 'пс҃лд',
-'page_first'           => 'прьва страница',
-'page_last'            => 'послѣдьнꙗ страница',
-'history-show-deleted' => 'тъкъмо поничьжєнꙑ мѣнꙑ',
-'histfirst'            => 'прьвꙑ',
-'histlast'             => 'послѣдьнꙗ',
-'historysize'          => '{{PLURAL:$1|1 баитъ|$1 баита|$1 баитъ}}',
-'historyempty'         => '(поусто)',
+'viewpagelogs' => 'си страницѧ їсторїѩ',
+'cur'          => 'нꙑ҃н',
+'last'         => 'пс҃лд',
+'page_first'   => 'прьва страница',
+'page_last'    => 'послѣдьнꙗ страница',
+'histfirst'    => 'прьвꙑ',
+'histlast'     => 'послѣдьнꙗ',
+'historysize'  => '{{PLURAL:$1|1 баитъ|$1 баита|$1 баитъ}}',
+'historyempty' => '(поусто)',
 
 # Revision feed
 'history-feed-title'          => 'мѣнъ їсторїꙗ',
@@ -534,7 +533,7 @@ $messages = array(
 'statistics-pages'        => 'страницѧ',
 'statistics-files'        => 'положєнꙑ дѣла',
 
-'disambiguations'     => 'страницѧ ижє съвѧꙁи съ мъногосъмꙑслиꙗ имѫтъ',
+'disambiguations'     => 'мъногосъмꙑслиꙗ',
 'disambiguationspage' => 'Template:мъногосъмꙑслиѥ',
 
 'brokenredirects-edit'   => 'исправи',
@@ -574,7 +573,7 @@ $messages = array(
 'deletedcontributions-title' => 'поничьжєнꙑ добродѣꙗниꙗ',
 
 # Special:LinkSearch
-'linksearch'    => 'вънѣщьн҄ь съвѧꙁь исканиѥ',
+'linksearch'    => 'вънѣщьнѩ съвѧꙁи',
 'linksearch-ok' => 'ищи',
 
 # Special:ListUsers
@@ -591,7 +590,6 @@ $messages = array(
 # Watchlist
 'watchlist'        => 'моꙗ блюдєниꙗ',
 'mywatchlist'      => 'моꙗ блюдєниꙗ',
-'addedwatch'       => 'страница нꙑнѣ подъ твоимь блюдєниѥмь ѥстъ',
 'addedwatchtext'   => "страница ⁖ [[:$1]] ⁖ нꙑнѣ подъ твоимь [[Special:Watchlist|блюдєниѥмь]] ѥстъ ⁙
 всꙗ ѥѩ и ѥѩжє бєсѣдꙑ мѣнꙑ страницѧ ⁖ [[Special:Watchlist|моꙗ блюдєниꙗ]] ⁖ покаꙁанꙑ сѫтъ и  [[Special:RecentChanges|послѣдьнъ мѣнъ]] каталоꙃѣ '''чрьнꙑимъ''' сѧ авлꙗѭтъ",
 'removedwatchtext' => 'страница ⁖ [[:$1]] ⁖ нꙑнѣ твоѥго [[Special:Watchlist|блюдєниꙗ]] иꙁнєсєна ѥстъ',
@@ -611,7 +609,7 @@ $messages = array(
 'excontentauthor' => "вънѫтри бѣ : '$1' (и послѣдьн҄ии дѣтєл҄ь бѣ '[[Special:Contributions/$2|$2]]')",
 'delete-legend'   => 'поничьжєниѥ',
 'actioncomplete'  => 'дѣиство сътворєно ѥстъ',
-'deletedtext'     => 'страница ⁖ <nowiki>$1</nowiki> ⁖ поничьжєна ѥстъ ⁙
+'deletedtext'     => 'страница ⁖ $1 ⁖ поничьжєна ѥстъ ⁙
 виждь ⁖ $2 ⁖ послѣдьнъ поничьжєниѩ дѣлꙗ',
 'deletedarticle'  => '⁖ [[$1]] ⁖ поничьжєнъ ѥстъ',
 'dellogpage'      => 'поничьжєниꙗ їсторїꙗ',
@@ -666,6 +664,7 @@ $messages = array(
 'ipadressorusername' => 'IP число или польꙃєватєлꙗ имѧ :',
 'ipbreason'          => 'какъ съмꙑслъ :',
 'ipblocklist'        => 'ꙁаграждєнꙑ польꙃєватєлє',
+'blocklist-reason'   => 'какъ съмꙑслъ',
 'ipblocklist-submit' => 'исканиѥ',
 'blocklink'          => 'ꙁагради',
 'contribslink'       => 'добродѣꙗниꙗ',
@@ -746,8 +745,7 @@ $messages = array(
 'autosumm-new' => 'нова страница ⁖ $1 ⁖ сътворєна  ѥстъ',
 
 # Size units
-'size-bytes'     => '$1 Б҃',
-'size-kilobytes' => '$1 Х҃Б',
+'size-bytes' => '$1 Б҃',
 
 # Special:Version
 'version'                  => 'MediaWiki обраꙁъ',

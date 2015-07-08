@@ -8,7 +8,6 @@
  * @file
  *
  * @author Jmb
- * @author Kaganer
  * @author Malafaya
  * @author Reedy
  * @author Remember the dot
@@ -16,6 +15,122 @@
  * @author Valodnieks
  * @author לערי ריינהארט
  */
+
+$namespaceNames = array(
+	NS_MEDIA            => 'Media',
+	NS_SPECIAL          => 'Special',
+	NS_TALK             => 'Discussion',
+	NS_USER             => 'Usator',
+	NS_USER_TALK        => 'Usator_Discussion',
+	NS_PROJECT_TALK     => '$1_Discussion',
+	NS_FILE             => 'File',
+	NS_FILE_TALK        => 'File_Discussion',
+	NS_MEDIAWIKI        => 'MediaWiki',
+	NS_MEDIAWIKI_TALK   => 'MediaWiki_Discussion',
+	NS_TEMPLATE         => 'Avise',
+	NS_TEMPLATE_TALK    => 'Avise_Discussion',
+	NS_HELP             => 'Auxilie',
+	NS_HELP_TALK        => 'Auxilie_Discussion',
+	NS_CATEGORY         => 'Categorie',
+	NS_CATEGORY_TALK    => 'Categorie_Discussion',
+);
+
+$specialPageAliases = array(
+	'Activeusers'               => array( 'Usatores_activ' ),
+	'Allmessages'               => array( 'Omni_li_missages' ),
+	'Allpages'                  => array( 'Omni_li_págines' ),
+	'Ancientpages'              => array( 'Págines_antiqui' ),
+	'Blankpage'                 => array( 'Págine_in_blanc' ),
+	'Block'                     => array( 'Blocar', 'Blocar_IP', 'Blocar_usator' ),
+	'Blockme'                   => array( 'Blocar_in_mi_self' ),
+	'Booksources'               => array( 'Fontes_de_libres' ),
+	'BrokenRedirects'           => array( 'Redirectionmentes_ínperfect' ),
+	'ChangePassword'            => array( 'Change_parol-clave' ),
+	'ComparePages'              => array( 'Comparar_págines' ),
+	'Confirmemail'              => array( 'Confirmar_email' ),
+	'Contributions'             => array( 'Contributiones' ),
+	'CreateAccount'             => array( 'Crear_conto' ),
+	'Deadendpages'              => array( 'Págines_moderat' ),
+	'DeletedContributions'      => array( 'Contributiones_deletet' ),
+	'Disambiguations'           => array( 'Disambiguitones' ),
+	'DoubleRedirects'           => array( 'Redirectionmentes_duplic' ),
+	'EditWatchlist'             => array( 'Redacter_liste_de_págines_vigilat' ),
+	'Emailuser'                 => array( 'Email_de_usator' ),
+	'Export'                    => array( 'Exportar' ),
+	'Fewestrevisions'           => array( 'Revisiones_max_poc' ),
+	'FileDuplicateSearch'       => array( 'Sercha_de_file_duplicat' ),
+	'Filepath'                  => array( 'Viette_de_file' ),
+	'Import'                    => array( 'Importar' ),
+	'Invalidateemail'           => array( 'Email_ínvalid' ),
+	'BlockList'                 => array( 'Liste_de_bloc', 'Liste_de_bloces', 'Liste_de_bloc_de_IP' ),
+	'LinkSearch'                => array( 'Sercha_de_catenun' ),
+	'Listadmins'                => array( 'Liste_de_administratores' ),
+	'Listbots'                  => array( 'Liste_de_machines' ),
+	'Listfiles'                 => array( 'Liste_de_files', 'Liste_de_file', 'Liste_de_figura' ),
+	'Listgrouprights'           => array( 'Jures_de_gruppe_de_liste', 'Jures_de_gruppe_de_usator' ),
+	'Listredirects'             => array( 'Liste_de_redirectionmentes' ),
+	'Listusers'                 => array( 'Liste_de_usatores', 'Liste_de_usator' ),
+	'Lockdb'                    => array( 'Serrar_DB' ),
+	'Log'                       => array( 'Diarium', 'Diariumes' ),
+	'Lonelypages'               => array( 'Págines_solitari', 'Págines_orfan' ),
+	'Longpages'                 => array( 'Págines_long' ),
+	'MergeHistory'              => array( 'Historie_de_fusion' ),
+	'MIMEsearch'                => array( 'Serchar_MIME' ),
+	'Mostcategories'            => array( 'Plu_categories' ),
+	'Mostimages'                => array( 'Files_max_ligat', 'Plu_files', 'Plu_figuras' ),
+	'Mostlinked'                => array( 'Págines_max_ligat', 'Max_ligat' ),
+	'Mostlinkedcategories'      => array( 'Categories_max_ligat', 'Categories_max_usat' ),
+	'Mostlinkedtemplates'       => array( 'Avises_max_ligat', 'Avises_max_usat' ),
+	'Mostrevisions'             => array( 'Plu_revisiones' ),
+	'Movepage'                  => array( 'Mover_págine' ),
+	'Mycontributions'           => array( 'Mi_contributiones' ),
+	'Mypage'                    => array( 'Mi_págine' ),
+	'Mytalk'                    => array( 'Mi_discussion' ),
+	'Myuploads'                 => array( 'Mi_cargamentes' ),
+	'Newimages'                 => array( 'Nov_files', 'Nov_figuras' ),
+	'Newpages'                  => array( 'Nov_págines' ),
+	'PasswordReset'             => array( 'Recomensar_parol-clave' ),
+	'PermanentLink'             => array( 'Catenun_permanen' ),
+	'Popularpages'              => array( 'Págines_populari' ),
+	'Preferences'               => array( 'Preferenties' ),
+	'Prefixindex'               => array( 'Index_de_prefixe' ),
+	'Protectedpages'            => array( 'Págines_gardat' ),
+	'Protectedtitles'           => array( 'Titules_gardat' ),
+	'Randompage'                => array( 'Sporadic', 'Págine_sporadic' ),
+	'Randomredirect'            => array( 'Redirectionmente_sporadic' ),
+	'Recentchanges'             => array( 'Nov_changes' ),
+	'Recentchangeslinked'       => array( 'Changes_referet', 'Changes_relatet' ),
+	'Revisiondelete'            => array( 'Deleter_revision' ),
+	'RevisionMove'              => array( 'Mover_revision' ),
+	'Search'                    => array( 'Serchar' ),
+	'Shortpages'                => array( 'Págines_curt' ),
+	'Specialpages'              => array( 'Págines_special' ),
+	'Statistics'                => array( 'Statistica' ),
+	'Tags'                      => array( 'Puntales' ),
+	'Unblock'                   => array( 'Desblocar' ),
+	'Uncategorizedcategories'   => array( 'Categories_íncategorizet' ),
+	'Uncategorizedimages'       => array( 'Files_íncategorizet', 'Figuras_íncategorizet' ),
+	'Uncategorizedpages'        => array( 'Págines_íncategorizet' ),
+	'Uncategorizedtemplates'    => array( 'Avises_íncategorizet' ),
+	'Undelete'                  => array( 'Restaurar' ),
+	'Unlockdb'                  => array( 'Disserrar_DB' ),
+	'Unusedcategories'          => array( 'Categories_sin_use' ),
+	'Unusedimages'              => array( 'Files_sin_use', 'Figuras_sin_use' ),
+	'Unusedtemplates'           => array( 'Avises_sin_use' ),
+	'Unwatchedpages'            => array( 'Págines_desvigilat' ),
+	'Upload'                    => array( 'Cargar_file' ),
+	'UploadStash'               => array( 'Cargamente_stash_de_file' ),
+	'Userlogin'                 => array( 'Intrar' ),
+	'Userlogout'                => array( 'Surtida' ),
+	'Userrights'                => array( 'Jures_de_usator', 'Crear_administrator', 'Crear_machine' ),
+	'Wantedcategories'          => array( 'Categories_carit' ),
+	'Wantedfiles'               => array( 'Files_carit' ),
+	'Wantedpages'               => array( 'Págines_carit', 'Catenunes_ínperfect' ),
+	'Wantedtemplates'           => array( 'Avises_carit' ),
+	'Watchlist'                 => array( 'Liste_de_págines_vigilat' ),
+	'Whatlinkshere'             => array( 'Quo_catenunes_ci' ),
+	'Withoutinterwiki'          => array( 'Sin_interwiki' ),
+);
 
 $messages = array(
 # User preference toggles
@@ -47,8 +162,8 @@ $messages = array(
 'tog-shownumberswatching'     => 'Monstrar li númere de usatores vigilant',
 'tog-oldsig'                  => 'Prevision de signature in existentie:',
 'tog-fancysig'                => 'Tractar signature quam textu wiki (sin un catenun auto-crate)',
-'tog-externaleditor'          => 'Usar redactor extern per contumacie (solmen por usatores expert, besona de colocationes special in tui computator. [http://www.mediawiki.org/wiki/Manual:External_editors Plu information.])',
-'tog-externaldiff'            => 'Usar diferentie extern per contumacie (solmen por usatores expert, besona de colocationes special in tui computator. [http://www.mediawiki.org/wiki/Manual:External_editors Plu information.])',
+'tog-externaleditor'          => 'Usar redactor extern per contumacie (solmen por usatores expert, besona de colocationes special in tui computator. [//www.mediawiki.org/wiki/Manual:External_editors Plu information.])',
+'tog-externaldiff'            => 'Usar diferentie extern per contumacie (solmen por usatores expert, besona de colocationes special in tui computator. [//www.mediawiki.org/wiki/Manual:External_editors Plu information.])',
 'tog-showjumplinks'           => 'Permisser catenunes de accessebilitá "saltar a"',
 'tog-uselivepreview'          => 'Usar prevision in vivi (exige JavaScript) (experimental)',
 'tog-forceeditsummary'        => 'Suggester me quande intrar un redaction che summarium in blanc',
@@ -133,8 +248,6 @@ $messages = array(
 'category-file-count'    => '{{PLURAL:$2|Ti categorie contene solmen li sequent file.|Li sequent {{PLURAL:$1|file es|$1 files es}} in ti categorie, de un total de $2.}}',
 'listingcontinuesabbrev' => 'cont.',
 'noindex-category'       => 'Págines ne indexet',
-
-'mainpagetext' => "'''Software del wiki installat con successe.'''",
 
 'about'         => 'Concernent',
 'article'       => 'Articul',
@@ -301,8 +414,6 @@ Question: $2',
 'viewsource'           => 'Vider fonte',
 'viewsourcefor'        => 'por $1',
 'viewsourcetext'       => 'Vu posse vider e copiar li contenete de ti págine:',
-'titleprotected'       => 'Ti titul ha esset gardat de creation per [[User:$1|$1]]. 
-Li motive dat es "\'\'$2\'\'".',
 
 # Virus scanner
 'virus-badscanner'     => "Configuration maliciosi: virus desconosset examinat: ''$1''",
@@ -334,6 +445,7 @@ Ne oblivia de mutar tui [[Special:Preferences|preferenties de {{SITENAME}}]].',
 'createaccount'              => 'Crear un conto',
 'gotaccount'                 => 'Ja have un conto? $1.',
 'gotaccountlink'             => 'Intrar',
+'userlogin-resetlink'        => 'Obliviat tui detallies de registre?',
 'badretype'                  => 'Li passa-paroles queles vu tippat ne es identic.',
 'userexists'                 => 'Nómine de usator ja in usu.
 Pleser opta por un nómine diferent.',
@@ -351,12 +463,14 @@ Por preventer misusa, solmen un parol-clave amemora va esser inviat per {{PLURAL
 'acct_creation_throttle_hit' => 'Vu ja ha creat $1 contos. Vu ne posse crear pli mult quam to.',
 'usernamehasherror'          => 'Nómine de usator ne posse contene mixtura de carácteres',
 'loginlanguagelabel'         => 'Lingue: $1',
-'suspicious-userlogout'      => 'Tui petition por surtir esset desaprobat pro que probabilmen esset inviat per un navigator ruptet o servitor de autorisation che caching.',
 
-# Password reset dialog
+# Change password dialog
 'oldpassword' => 'Anteyan passa-parol:',
 'newpassword' => 'Nov passa-parol:',
 'retypenew'   => 'Confirmar nov passa-parol',
+
+# Special:PasswordReset
+'passwordreset-username' => 'Vor nómine usatori',
 
 # Edit page toolbar
 'bold_sample'     => 'Textu in nigri',
@@ -369,7 +483,6 @@ Por preventer misusa, solmen un parol-clave amemora va esser inviat per {{PLURAL
 'extlink_tip'     => 'Catenun extern (memorar prefixe http://)',
 'headline_sample' => 'Division de nivelle 2',
 'headline_tip'    => 'Division de nivelle 2',
-'math_tip'        => 'Formul mathematical (LaTeX)',
 'nowiki_sample'   => 'Ignorar formate wiki',
 'nowiki_tip'      => 'Ignorar formate wiki',
 'image_tip'       => 'File fixat',
@@ -388,8 +501,6 @@ Por preventer misusa, solmen un parol-clave amemora va esser inviat per {{PLURAL
 'showdiff'                         => 'Monstrar changes',
 'anoneditwarning'                  => "'''Advertiment:''' Vu ne esser registrat.
 Tui adresse de IP va esser registrat in historico de redactiones de ti págine.",
-'summary-preview'                  => 'Prevision de summarium:',
-'subject-preview'                  => 'Prevision de Tema/Division:',
 'whitelistedittitle'               => 'Exige que vu es identificat por redacter',
 'whitelistedittext'                => 'Vu have que $1 por redacter págines.',
 'loginreqtitle'                    => 'Apertion de session obligatori',
@@ -405,6 +516,8 @@ Vu posse [[Special:Search/{{PAGENAME}}|serchar por ti titul de págine]] in altr
 'noarticletext-nopermission'       => 'Vi currentmen ne textu in ti págine.
 Vu posse [[Special:Search/{{PAGENAME}}|serchar por titul de ti págine]] in altri págines,
 o <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} serchar li diariumes relatet]</span>.',
+'userpage-userdoesnotexist'        => 'Conto de usator "$1" ne es registrat.
+Pleser controla si vu cari crear/redacter ti págine.',
 'userpage-userdoesnotexist-view'   => 'Conto de usator "$1" ne es registrat.',
 'usercssyoucanpreview'             => "'''Punta:''' Usa li buton \"{{int:showpreview}}\" por provar tui nov CSS ante de conservar.",
 'userjsyoucanpreview'              => "'''Punta:''' Usa li buton \"{{int:showpreview}}\" por provar tui nov JavaScript ante de conservar.",
@@ -424,11 +537,8 @@ Ti quelcvez ocurre quande vu es usant un service de autorisation anonim mal exec
 'editingsection'                   => 'Redactent $1 (division)',
 'editingcomment'                   => 'Redactent $1 (nov division)',
 'yourtext'                         => 'Tui textu',
-'storedversion'                    => 'Version acumulat',
 'yourdiff'                         => 'Diferenties',
 'copyrightwarning'                 => "Omni contributiones a {{SITENAME}} es considerat quam publicat sub li termines del $2 (ples vider $1 por plu mult detallies). Si vu ne vole que vor ovres mey esser modificat e distribuet secun arbitrie, ples ne inviar les. Adplu, ples contribuer solmen vor propri ovres o ovres ex un fonte quel es líber de jures. '''NE UTILISA OVRES SUB JURE EDITORIAL SIN DEFINITIV AUTORISATION!'''",
-'titleprotectedwarning'            => "'''Advertiment: Ti págine ha esset serrat por que [[Special:ListGroupRights|jures specific]] es necessitat por crear it.''' 
-Li ultim intrada in li historico es sub li condition infra por referentie:",
 'templatesused'                    => '{{PLURAL:$1|Avise|Avises}} usat in ti págine:',
 'templatesusedpreview'             => '{{PLURAL:$1|Avise|Avises}} usat in ti prevision:',
 'templatesusedsection'             => '{{PLURAL:$1|Avise|Avises}} usat in ti division:',
@@ -491,9 +601,6 @@ Legende: '''({{int:cur}})''' = diferenties che ultim revision, '''({{int:last}})
 'revdelete-hid'          => 'ocu $1',
 'revdelete-log-message'  => '$1 por $2 {{PLURAL:$2|revision|revisiones}}',
 
-# Suppression log
-'suppressionlog' => 'Diarium de supression',
-
 # Merge log
 'revertmerge' => 'Desfar fusion',
 
@@ -509,7 +616,6 @@ Legende: '''({{int:cur}})''' = diferenties che ultim revision, '''({{int:last}})
 'searchresults'                    => 'Serchar resultates',
 'searchresults-title'              => 'Serchar resultates por "$1"',
 'toomanymatches'                   => 'Anc mult concurses esset retornat, pleser prova un question diferent',
-'titlematches'                     => 'Resultates in li titules de págines',
 'textmatches'                      => 'Resultates in textu de págines',
 'prevn'                            => '{{PLURAL:$1|$1}} anteriori',
 'nextn'                            => 'proxim {{PLURAL:$1|$1}}',
@@ -545,34 +651,24 @@ Legende: '''({{int:cur}})''' = diferenties che ultim revision, '''({{int:last}})
 'qbsettings' => 'Personalisation del barre de utensiles',
 
 # Preferences page
-'preferences'               => 'Preferenties',
-'mypreferences'             => 'Mi preferenties',
-'prefsnologin'              => 'Vu ne ha intrat',
-'changepassword'            => 'Modificar passa-parol',
-'skin-preview'              => 'Prevision',
-'saveprefs'                 => 'Conservar',
-'searchresultshead'         => 'Serchar',
-'stub-threshold'            => "Catenunes por págines de contenete va aparir <a href=''#'' class=''stub''>de ti forme</a> si ili have minu de (bytes):",
-'timezonelegend'            => 'Zone de témpor:',
-'timezoneuseoffset'         => 'Altri (specificar compensation)',
-'timezoneoffset'            => 'Compensation¹:',
-'timezoneregion-africa'     => 'Africa',
-'timezoneregion-america'    => 'America',
-'timezoneregion-antarctica' => 'Antarctica',
-'timezoneregion-asia'       => 'Asia',
-'timezoneregion-atlantic'   => 'Ocean Atlantic',
-'timezoneregion-australia'  => 'Australia',
-'timezoneregion-europe'     => 'Europe',
-'timezoneregion-indian'     => 'Ocean Indian',
-'timezoneregion-pacific'    => 'Ocean Pacific',
-'youremail'                 => 'E-mail:',
-'username'                  => 'Nómine de usator:',
-'uid'                       => 'Identification de usator:',
-'yourrealname'              => 'Nómine real:',
-'yourlanguage'              => 'Lingue:',
-'yourvariant'               => 'Variante:',
-'yournick'                  => 'Nov signature:',
-'yourgender'                => 'Génere:',
+'preferences'             => 'Preferenties',
+'mypreferences'           => 'Mi preferenties',
+'prefsnologin'            => 'Vu ne ha intrat',
+'changepassword'          => 'Modificar passa-parol',
+'skin-preview'            => 'Prevision',
+'saveprefs'               => 'Conservar',
+'searchresultshead'       => 'Serchar',
+'youremail'               => 'E-mail:',
+'username'                => 'Nómine de usator:',
+'uid'                     => 'Identification de usator:',
+'yourrealname'            => 'Nómine real:',
+'yourlanguage'            => 'Lingue:',
+'yourvariant'             => 'Variante:',
+'yournick'                => 'Nov signature:',
+'yourgender'              => 'Génere:',
+'prefs-help-email'        => 'Adresse de e-mail es optional, ma es necessitá por recomensar parol-clave, deve vu obliviar tui parol-clave.',
+'prefs-help-email-others' => 'Vu posse anc optar por permisser altri contacter vu per e-mail complet che un catenun in tui págine de usator o págine de discussion.
+Tui adresse de e-mail ne es revelat quande altri usatores contacter vu.',
 
 # User rights
 'userrights'                   => 'Gerement de jures de usator',
@@ -675,8 +771,6 @@ Vider li [[Special:NewFiles|galerie de nov files]] por posser vider it.',
 'filedesc'             => 'Descrition',
 'verification-error'   => 'Ti file ne passat per li verification de file.',
 'unknown-error'        => 'Un errore desconosset ocurret.',
-'tmp-create-error'     => 'Ne posset crear file temporari.',
-'tmp-write-error'      => 'Errore por redacter file temporari.',
 'uploadwarning'        => 'Advertiment de cargament',
 'uploadwarning-text'   => 'Pleser modificar li descrition de file infra e prova denov.',
 'savefile'             => 'Conservar file',
@@ -733,7 +827,7 @@ Vu posse provar in un témpor minu activ.',
 'filehist-dimensions'       => 'Dimensiones',
 'filehist-filesize'         => 'Mesura de file',
 'filehist-comment'          => 'Comentarie',
-'imagelinks'                => 'Usu del file',
+'imagelinks'                => 'Catenunes por ti file',
 'linkstoimage'              => 'Li sequent {{PLURAL:$1|catenun de págine|$1 catenunes de págines}} por ti file:',
 'nolinkstoimage'            => 'Hay nequant págine que liga por ti file.',
 'sharedupload-desc-here'    => 'Ti file es de $1 e posse esser usat per altri projectes.
@@ -761,24 +855,7 @@ Li descrition es in li [$2 págine de descrition del file] ta e es monstrat in i
 'randompage' => 'Págine sporadic',
 
 # Statistics
-'statistics'                   => 'Statistica',
-'statistics-header-pages'      => 'Statistica del págine',
-'statistics-header-edits'      => 'Redacter statistica',
-'statistics-header-views'      => 'Vider statistica',
-'statistics-header-users'      => 'Statistica de usator',
-'statistics-header-hooks'      => 'Altri statistica',
-'statistics-articles'          => 'Págines de contenete',
-'statistics-pages'             => 'Págines',
-'statistics-pages-desc'        => 'Omni li págines in li wiki, includent págines de discussion, redirectments, etc.',
-'statistics-files'             => 'Files cargat',
-'statistics-edits'             => 'Redactiones del págine desde que {{SITENAME}} esset etablisset',
-'statistics-edits-average'     => 'Valore medial de redactiones per págine',
-'statistics-views-total'       => 'Total de vistas',
-'statistics-views-peredit'     => 'Vider por redaction',
-'statistics-users'             => '[[Special:ListUsers|Usatores]] registrat',
-'statistics-users-active'      => 'Usatores activ',
-'statistics-users-active-desc' => 'Usatores qui have efectuat un action in li ultim {{PLURAL:$1|die|dies}}',
-'statistics-mostpopular'       => 'Págines max visitat',
+'statistics' => 'Statistica',
 
 'disambiguationspage' => 'Template:disambig',
 
@@ -797,7 +874,6 @@ Li descrition es in li [$2 págine de descrition del file] ta e es monstrat in i
 'ncategories'             => '$1 {{PLURAL:$1|categorie|categories}}',
 'nlinks'                  => '$1 {{PLURAL:$1|catenun|catenunes}}',
 'nmembers'                => '$1 {{PLURAL:$1|usator|usatores}}',
-'specialpage-empty'       => 'Hay nequant resultates por ti raporte.',
 'lonelypages'             => 'Orfani págines',
 'uncategorizedpages'      => 'Págines íncategorizet',
 'uncategorizedcategories' => 'Categories íncategorizet',
@@ -825,7 +901,6 @@ Li descrition es in li [$2 págine de descrition del file] ta e es monstrat in i
 'unusedcategoriestext'    => 'Li proxim págines de categorie existe, benque ne existe altri págine o categorie que far usu de les.',
 'pager-newer-n'           => '{{PLURAL:$1|nov 1|nov $1}}',
 'pager-older-n'           => '{{PLURAL:$1|antiqui 1|antiqui $1}}',
-'suppress'                => 'Perspective comun',
 
 # Book sources
 'booksources'               => 'Librari fontes',
@@ -833,8 +908,8 @@ Li descrition es in li [$2 págine de descrition del file] ta e es monstrat in i
 'booksources-go'            => 'Ear',
 
 # Special:Log
-'specialloguserlabel'  => 'Executor:',
-'speciallogtitlelabel' => 'Cible (titul o usator):',
+'specialloguserlabel'  => 'Usator:',
+'speciallogtitlelabel' => 'Titul:',
 'log'                  => 'Diariumes',
 'all-logs-page'        => 'Omni li diariumes public',
 
@@ -847,9 +922,7 @@ Li descrition es in li [$2 págine de descrition del file] ta e es monstrat in i
 'allpagessubmit' => 'Ear',
 
 # Special:Categories
-'categories'                    => 'Categories',
-'special-categories-sort-count' => 'Sorte per contar',
-'special-categories-sort-abc'   => 'Sorte alfabeticmen',
+'categories' => 'Categories',
 
 # Special:LinkSearch
 'linksearch'      => 'Catenunes extern',
@@ -881,7 +954,6 @@ Li descrition es in li [$2 págine de descrition del file] ta e es monstrat in i
 'watchlistanontext'    => 'Pleser $1 por vider o redacter articules in tui liste de págines vigilat.',
 'watchnologin'         => 'Vu ne ha intrat',
 'watchnologintext'     => 'Vu deve esser [[Special:UserLogin|registrat]] por redacter tui liste de págines vigilat.',
-'addedwatch'           => 'Adjuntet al liste',
 'addedwatchtext'       => "Li págine ''[[$1]]'' ha esset adjuntet a vor [[Special:Watchlist|liste de sequet págines]]. Li proxim modificationes de ti ci págine e del associat págine de discussion va esser listat ci, e li págine va aperir '''aspessat''' in li [[Special:RecentChanges|liste de recent modificationes]] por esser trovat plu facilmen. Por supresser ti ci págine ex vor liste, ples claccar sur « Ne plu sequer » in li cadre de navigation.",
 'watch'                => 'Vigilar',
 'watchthispage'        => 'Vigilar ti págine',
@@ -909,7 +981,6 @@ Li descrition es in li [$2 págine de descrition del file] ta e es monstrat in i
 'actioncomplete'        => 'Processu complet',
 'actionfailed'          => 'Processu fallit',
 'deletedarticle'        => 'deletet "[[$1]]"',
-'suppressedarticle'     => "supresset ''[[$1]]''",
 'dellogpage'            => 'Diarium de deletion',
 'deletecomment'         => 'Motive:',
 'deleteotherreason'     => 'Altri motive:',
@@ -938,6 +1009,8 @@ Li descrition es in li [$2 págine de descrition del file] ta e es monstrat in i
 'viewdeletedpage'              => 'Vider págines deletet',
 'undeletepagetext'             => 'Li proxim {{PLURAL:$1|págine ha esset deletet ma es|$1 págines have esset esset deletet ma es}} ínmobil in li archive e posse esser restaurat. Li archive posse esser periodicomen demuddat.',
 'undelete-fieldset-title'      => 'Restaurar revisiones',
+'undeleteextrahelp'            => "Por restaurar li historie complet de págine, abandona omni li buxes de controle deselectet e clacca '''''{{int:undeletebtn}}'''''.
+Por efectuar un restauration selectiv, controla li buxes secun por li revisiones por esser restaurat, e clacca '''''{{int:undeletebtn}}'''''.",
 'undeleterevisions'            => '$1 {{PLURAL:$1|revision|revisiones}} conservat',
 'undeletehistory'              => 'Si vu restaurar li págine, omni li revisiones va esser restaurat por li historie.
 Si un nov págine che nómine identic ha esset creat desde li deletion, li revisiones restaurat va aparir in li historie precedent.',
@@ -1157,10 +1230,10 @@ Pleser fuse les manualmen.'''",
 
 # Media information
 'thumbsize'       => 'Mesura de miniatura:',
-'widthheightpage' => '$1 × $2, $3 {{PLURAL:$3|págine|págines}}',
+'widthheightpage' => '$1×$2, $3 {{PLURAL:$3|págine|págines}}',
 'file-info-size'  => '$1 × $2 pixeles, dimension de file: $3, tip MIME: $4',
 'file-nohires'    => '<small>Nequant resolution max alt disponibil.</small>',
-'svg-long-desc'   => '(file SVG, nominalmen $1 × $2 pixeles, mesura de file: $3)',
+'svg-long-desc'   => 'file SVG, nominalmen $1 × $2 pixeles, mensura de file: $3',
 'show-big-image'  => 'Resolution complet',
 
 # Special:NewFiles
@@ -1178,19 +1251,32 @@ Li prim catenun in un linea deve esser un catenun por un file maliciosi.
 Alqual catenunes subsequent in li linea identic es considerat por esser exceptiones, i.e. págines u li file posse ocurrer in linea identic.',
 
 # Metadata
-'metadata'      => 'Metadata',
-'metadata-help' => 'Ti file contene information additional, probabilmen adjuntet de li cámera digitale o scandetor usat por crear o digitalizar it. Si li file ha esset redactet de tui statu original, alcun detallies posse ne reflecter completmen li file redactet.',
+'metadata'        => 'Metadata',
+'metadata-help'   => 'Ti file contene information additional, probabilmen adjuntet de li cámera digitale o scandetor usat por crear o digitalizar it. Si li file ha esset redactet de tui statu original, alcun detallies posse ne reflecter completmen li file redactet.',
+'metadata-fields' => 'Campes metadata de figura listat in ti missage va esser includet in págine de figura monstra quande li tabelle metadata es crulat.
+Altri va esser ocultat per contumacie.
+* fabrication
+* modelle
+* origine de figura
+* témpor de exposition
+* númere
+* percentages de velocitá
+* longore focal
+* artist
+* jure editorial
+* descrition de figura
+* latitúdine
+* longitúdine
+* altitudine',
 
 # External editor support
 'edit-externally'      => 'Redacter ti file usant un aplication extern',
-'edit-externally-help' => '(Vider li [http://www.mediawiki.org/wiki/Manual:External_editors instructiones de installation] por plu information)',
+'edit-externally-help' => '(Vider li [//www.mediawiki.org/wiki/Manual:External_editors instructiones de installation] por plu information)',
 
 # 'all' in various places, this might be different for inflected languages
-'recentchangesall' => 'omni',
-'imagelistall'     => 'omni',
-'watchlistall2'    => 'omni',
-'namespacesall'    => 'omni',
-'monthsall'        => 'omni',
+'watchlistall2' => 'omni',
+'namespacesall' => 'omni',
+'monthsall'     => 'omni',
 
 # Trackbacks
 'trackbackbox'      => 'Tracies de dorse por ti págine:<br /> $1',
@@ -1203,80 +1289,63 @@ Alqual catenunes subsequent in li linea identic es considerat por esser exceptio
 'imgmultigo' => 'Ear!',
 
 # Table pager
-'table_pager_next'         => 'Proxim págine',
-'table_pager_prev'         => 'Págine anteriori',
-'table_pager_first'        => 'Prim págine',
-'table_pager_last'         => 'Ultim págine',
-'table_pager_limit'        => 'Monstra $1 detallies por págine',
-'table_pager_limit_label'  => 'Detallies por págine',
 'table_pager_limit_submit' => 'Ear',
-'table_pager_empty'        => 'Nequant resultates',
 
 # Watchlist editor
-'watchlistedit-numitems'      => 'Tui liste de págines vigilat contene {{PLURAL:$1|1 titul|$1 titules}}, excludent págines de discussion.',
-'watchlistedit-noitems'       => 'Tui liste de págines vigilat ne contene titules.',
-'watchlistedit-normal-title'  => 'Redacter liste de págines vigilat',
-'watchlistedit-normal-legend' => 'Remove titules del liste de págines vigilat',
-'watchlistedit-normal-submit' => 'Remover titules',
-'watchlistedit-normal-done'   => '{{PLURAL:$1|1 titul esset|$1 titules esset}} removet de tui liste de págines vigilat:',
-'watchlistedit-raw-title'     => 'Redacter liste de págines vigilat vulnerosi',
-'watchlistedit-raw-legend'    => 'Redacter liste de págines vigilat vulnerosi',
-'watchlistedit-raw-titles'    => 'Titules:',
-'watchlistedit-raw-submit'    => 'Modernisar liste de págines vigilat',
-'watchlistedit-raw-done'      => 'Tui liste de págines vigilat ha esset modernisat.',
-'watchlistedit-raw-added'     => '{{PLURAL:$1|1 titul esset|$1 titules esset}} adjuntet:',
-'watchlistedit-raw-removed'   => '{{PLURAL:$1|1 titul esset|$1 titules esset}} removet:',
+'watchlistedit-numitems'       => 'Tui liste de págines vigilat contene {{PLURAL:$1|1 titul|$1 titules}}, excludent págines de discussion.',
+'watchlistedit-noitems'        => 'Tui liste de págines vigilat ne contene titules.',
+'watchlistedit-normal-title'   => 'Redacter liste de págines vigilat',
+'watchlistedit-normal-legend'  => 'Remove titules del liste de págines vigilat',
+'watchlistedit-normal-explain' => 'Titules in tui liste de págines vigilat es monstrat infra.
+Por remover un titul, controla li buxe proxim por it, e clacca "{{int:Watchlistedit-normal-submit}}".
+Vu posse anc [[Special:EditWatchlist/raw|redacter li liste vulnerosi]].',
+'watchlistedit-normal-submit'  => 'Remover titules',
+'watchlistedit-normal-done'    => '{{PLURAL:$1|1 titul esset|$1 titules esset}} removet de tui liste de págines vigilat:',
+'watchlistedit-raw-title'      => 'Redacter liste de págines vigilat vulnerosi',
+'watchlistedit-raw-legend'     => 'Redacter liste de págines vigilat vulnerosi',
+'watchlistedit-raw-explain'    => 'Titules in tui liste de págines vigilat es monstrat in infra, e posse esser redactet solmen adjuntent por e removent de li liste; un titul per linea.
+Quande terminat, clacca "{{int:Watchlistedit-raw-submit}}".
+Vu posse anc [[Special:EditWatchlist|usar li redactor uniform]].',
+'watchlistedit-raw-titles'     => 'Titules:',
+'watchlistedit-raw-submit'     => 'Modernisar liste de págines vigilat',
+'watchlistedit-raw-done'       => 'Tui liste de págines vigilat ha esset modernisat.',
+'watchlistedit-raw-added'      => '{{PLURAL:$1|1 titul esset|$1 titules esset}} adjuntet:',
+'watchlistedit-raw-removed'    => '{{PLURAL:$1|1 titul esset|$1 titules esset}} removet:',
 
 # Watchlist editing tools
 'watchlisttools-view' => 'Vider changes aplicabil',
 'watchlisttools-edit' => 'Vider e redacter liste de págines vigilat',
 'watchlisttools-raw'  => 'Redacter liste de págines vigilat vulnerosi',
 
-# Signatures
-'timezone-utc' => 'UTC',
-
 # Core parser functions
 'duplicate-defaultsort' => '\'\'\'Advertiment:\'\'\' Clave de specie contumacie "$2" substitue temporanmen clave de specie contumacie "$1".',
 
 # Special:Version
-'version'                          => 'Version',
-'version-extensions'               => 'Extensiones installat',
-'version-specialpages'             => 'Págines special',
-'version-parserhooks'              => 'Croces analisatores',
-'version-variables'                => 'Variabiles',
-'version-other'                    => 'Altri',
-'version-mediahandlers'            => 'Manuettes de media',
-'version-hooks'                    => 'Croces',
-'version-extension-functions'      => 'Functiones de extension',
-'version-parser-extensiontags'     => 'Puntales de extension analisatores',
-'version-parser-function-hooks'    => 'Croces de functiones analisatores',
-'version-skin-extension-functions' => 'Functiones de extension pelle',
-'version-hook-name'                => 'Nómine de croc',
-'version-hook-subscribedby'        => 'Subscrit per',
-'version-version'                  => '(Version $1)',
-'version-svn-revision'             => '(r$2)',
-'version-license'                  => 'Licentie',
-'version-software'                 => 'Software installat',
-'version-software-product'         => 'Producte',
-'version-software-version'         => 'Version',
+'version'                       => 'Version',
+'version-extensions'            => 'Extensiones installat',
+'version-specialpages'          => 'Págines special',
+'version-parserhooks'           => 'Croces analisatores',
+'version-variables'             => 'Variabiles',
+'version-other'                 => 'Altri',
+'version-mediahandlers'         => 'Manuettes de media',
+'version-hooks'                 => 'Croces',
+'version-extension-functions'   => 'Functiones de extension',
+'version-parser-extensiontags'  => 'Puntales de extension analisatores',
+'version-parser-function-hooks' => 'Croces de functiones analisatores',
+'version-hook-name'             => 'Nómine de croc',
+'version-hook-subscribedby'     => 'Subscrit per',
+'version-version'               => '(Version $1)',
+'version-svn-revision'          => '(r$2)',
+'version-license'               => 'Licentie',
+'version-software'              => 'Software installat',
+'version-software-product'      => 'Producte',
+'version-software-version'      => 'Version',
 
 # Special:FilePath
 'filepath-page' => 'Figura:',
 
 # Special:SpecialPages
-'specialpages'                   => 'Págines special',
-'specialpages-group-maintenance' => 'Raportes de conservation',
-'specialpages-group-other'       => 'Altri págines special',
-'specialpages-group-login'       => 'Intrar / crear conto',
-'specialpages-group-changes'     => 'Nov changes e diariumes',
-'specialpages-group-media'       => 'Raportes de media e cargamentes de files',
-'specialpages-group-users'       => 'Usatores e jures',
-'specialpages-group-highuse'     => 'Págines de alt usu',
-'specialpages-group-pages'       => 'Listes de págines',
-'specialpages-group-pagetools'   => 'Utensiles de págine',
-'specialpages-group-wiki'        => 'Data wiki e utensiles',
-'specialpages-group-redirects'   => 'Redirectionant págines special',
-'specialpages-group-spam'        => 'Utensiles de spam',
+'specialpages' => 'Págines special',
 
 # External image whitelist
 'external_image_whitelist' => '#Abandonar ti linea exactmen quam it es<pre>
