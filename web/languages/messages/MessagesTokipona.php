@@ -1,6 +1,9 @@
 <?php
 /** Toki Pona (Toki Pona)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -89,7 +92,7 @@ $messages = array(
 'userlogout' => 'mi o tawa',
 
 # Edit pages
-'summary'          => 'ante li seme',
+'summary'          => 'ante li seme:',
 'minoredit'        => 'ante ni li lili taso',
 'watchthis'        => 'mi wile sona e ante ale pi lipu ni lon tenpo kama',
 'savearticle'      => 'o awen',

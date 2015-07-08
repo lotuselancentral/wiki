@@ -1,6 +1,9 @@
 <?php
 /** Kalmyk (Хальмг)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -17,8 +20,8 @@ $namespaceNames = array(
 	NS_USER_TALK        => 'Орлцачна_тускар_ухалвр',
 	# NS_PROJECT set by $wgMetaNamespace
 	NS_PROJECT_TALK     => '$1_тускар_ухалвр',
-	NS_IMAGE            => 'Зург',
-	NS_IMAGE_TALK       => 'Зургин_тускар_ухалвр',
+	NS_FILE             => 'Зург',
+	NS_FILE_TALK        => 'Зургин_тускар_ухалвр',
 	NS_MEDIAWIKI        => 'MediaWiki',
 	NS_MEDIAWIKI_TALK   => 'MediaWiki_тускар_ухалвр',
 	NS_TEMPLATE         => 'Зура',
@@ -60,7 +63,7 @@ $messages = array(
 # Preferences page
 'preferences' => 'Дурллһн',
 
-# Image description page
+# File description page
 'filehist-user' => 'Орлцач',
 
 # Contributions

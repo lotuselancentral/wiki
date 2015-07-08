@@ -1,6 +1,9 @@
 <?php
 /** Cherokee (ᏣᎳᎩ)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -72,7 +75,7 @@ $messages = array(
 # Watchlist
 'watch' => 'WᎠᏥ',
 
-# Delete/protect/revert
+# Delete
 'actioncomplete' => 'ᎠᏍᏆᏙᏅᎯ',
 
 # What links here
@@ -81,7 +84,7 @@ $messages = array(
 # Block/unblock
 'proxyblocksuccess' => 'ᎠᏍᏆᏛᎯ.',
 
-# Special:NewImages
+# Special:NewFiles
 'ilsubmit' => 'ᎠᏯᏍᏗ',
 
 # Special:SpecialPages

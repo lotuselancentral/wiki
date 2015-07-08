@@ -1,6 +1,9 @@
 <?php
 /** Xhosa (isiXhosa)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -89,7 +92,7 @@ I Account yakhgo ivuliwe, ungalibali ukutshitsha izinto ozithandayo ngo {{SITENA
 'loginlanguagelabel' => 'Ulwimi: $1',
 
 # Edit pages
-'summary'     => 'Isishwankathelo',
+'summary'     => 'Isishwankathelo:',
 'minoredit'   => 'Lutshitsho oluncinci olu',
 'watchthis'   => 'Bukela le Page',
 'savearticle' => 'Gcina eliphepha',
@@ -129,6 +132,9 @@ I Account yakhgo ivuliwe, ungalibali ukutshitsha izinto ozithandayo ngo {{SITENA
 'watch'         => 'Bukela',
 'watchthispage' => 'Bukela le Page',
 
+# Protect
+'prot_1movedto2' => '[[$1]] lidluliselwe [[$2]]',
+
 # Contributions
 'contributions' => 'Imisebenzi ye lungu',
 'mycontris'     => 'Inkxaso yam',
@@ -145,7 +151,7 @@ I Account yakhgo ivuliwe, ungalibali ukutshitsha izinto ozithandayo ngo {{SITENA
 '1movedto2'        => '[[$1]] lidluliselwe [[$2]]',
 'movereason'       => 'Isizathu',
 
-# Special:NewImages
+# Special:NewFiles
 'ilsubmit' => 'Khangela',
 
 # Special:SpecialPages

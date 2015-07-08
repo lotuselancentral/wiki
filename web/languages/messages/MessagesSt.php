@@ -1,6 +1,9 @@
 <?php
 /** Southern Sotho (Sesotho)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -88,6 +91,11 @@ $messages = array(
 'badretype'          => 'Mapetjo a mabedi o a ngotseng ha a tshwane.',
 'mailmypassword'     => 'Nthomele password ya ka ka email',
 
+# Password reset dialog
+'oldpassword' => 'Lepetjo la kgale:',
+'newpassword' => 'Lepetjo le letjha:',
+'retypenew'   => 'Ngola lepetjo le letjha hape:',
+
 # Edit pages
 'savearticle'  => 'Le boloke',
 'showpreview'  => 'Mpontshe hore le tlo ba jwang',
@@ -101,9 +109,6 @@ $messages = array(
 
 # Preferences page
 'changepassword'    => 'Fetola lepetjo',
-'oldpassword'       => 'Lepetjo la kgale:',
-'newpassword'       => 'Lepetjo le letjha:',
-'retypenew'         => 'Ngola lepetjo le letjha hape:',
 'searchresultshead' => 'Phuputso',
 'allowemail'        => 'Dumella batho ba bang hore ba nthomelle di-email',
 

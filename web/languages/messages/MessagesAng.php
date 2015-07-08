@@ -1,6 +1,9 @@
 <?php
 /** Old English (Anglo-Saxon)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -9,6 +12,19 @@
  * @author Spacebirdy
  * @author Wōdenhelm
  */
+
+$namespaceNames = array(
+	NS_SPECIAL          => 'Syndrig',
+	NS_TALK             => 'Gesprec',
+	NS_FILE             => 'Biliþ',
+	NS_FILE_TALK        => 'Biliþgesprec',
+	NS_TEMPLATE         => 'Bysen',
+	NS_TEMPLATE_TALK    => 'Bysengesprec',
+	NS_HELP             => 'Help',
+	NS_HELP_TALK        => 'Helpgesprec',
+	NS_CATEGORY         => 'Flocc',
+	NS_CATEGORY_TALK    => 'Floccgesprec',
+);
 
 $messages = array(
 # User preference toggles
@@ -26,8 +42,6 @@ $messages = array(
 
 'underline-always' => 'Ǣfre',
 'underline-never'  => 'Nǣfre',
-
-'skinpreview' => '(Forescēawian)',
 
 # Dates
 'sunday'        => 'Sunnandæġ',
@@ -204,7 +218,6 @@ $messages = array(
 'yourpassword'               => 'Þīn gelēafnesword',
 'yourpasswordagain'          => 'Edwrītan gelēafnesword',
 'yourdomainname'             => 'Þīn geweald',
-'loginproblem'               => '<b>Þīn inmeldung wearþ gescremed.</b><br />Eftrōmie!',
 'login'                      => 'Inmeldian',
 'nav-login-createaccount'    => 'Settan nīwne hordcleofan oþþe inmeldian',
 'userlogin'                  => 'Settan nīwne hordcleofan oþþe inmeldian',
@@ -225,9 +238,14 @@ $messages = array(
 'nosuchuser'                 => 'Þǣr is nān brūcere be þǣm naman "$1".
 Edscēawa þīne wrītunge, oþþe brūc þone form under tō [[Special:UserLogin/signup|settene nīwne brūcendhordcleofan]].',
 'nosuchusershort'            => 'Þǣr is nān brūcend mid þǣm naman "<nowiki>$1</nowiki>".  Edscēawa on þīne wrītunge.',
-'acct_creation_throttle_hit' => 'Hwæt, þu hæfst gēo geseted $1 hordcleofan. Þu ne canst settan ǣnige māran.',
+'acct_creation_throttle_hit' => 'Hwæt, þu hæfst gēo geseted {{PLURAL:$1|1 hordcleofan|$1 -}}. Þu ne canst settan ǣnige māran.',
 'accountcreated'             => 'Hordcleofan gescapen',
 'loginlanguagelabel'         => 'Sprǣc: $1',
+
+# Password reset dialog
+'oldpassword' => 'Eald gelēafnesword:',
+'newpassword' => 'Nīwe gelēafnesword',
+'retypenew'   => 'Nīwe gelēafnesword edwrītan',
 
 # Edit page toolbar
 'bold_sample'     => 'Beald traht',
@@ -245,7 +263,7 @@ Edscēawa þīne wrītunge, oþþe brūc þone form under tō [[Special:UserLogi
 'sig_tip'         => 'Þín namansegn mid tídstempunge',
 
 # Edit pages
-'summary'                => 'Scortnes',
+'summary'                => 'Scortnes:',
 'minoredit'              => 'Þēos is lȳtlu ādihtung',
 'savearticle'            => 'Sparian tramet',
 'preview'                => 'Forescēawian',
@@ -306,6 +324,7 @@ Bidde behycge þæt þu bricst þone tramet intō smalrum dǣlum.',
 'searchsubtitleinvalid' => "Þu sōhtest '''$1'''",
 'notextmatches'         => 'Nāne trametrahtes mæccan',
 'nextn'                 => 'nīehst $1',
+'searchhelp-url'        => 'Help:Innung',
 'showingresults'        => 'Īewan under oþ <b>$1</b> tōhīgunga onginnenda mid #<b>$2</b>.',
 'showingresultsnum'     => 'Under sind <b>$3</b> tóhígunga onginnende mid #<b>$2</b>.',
 'powersearch'           => 'Sēcan',
@@ -315,15 +334,13 @@ Bidde behycge þæt þu bricst þone tramet intō smalrum dǣlum.',
 'mypreferences'      => 'Mīna foreberunga',
 'prefsnologin'       => 'Ne ingemeldod',
 'skin'               => 'Scynn',
+'skin-preview'       => 'Forescēawian',
 'dateformat'         => 'Tælmearcwīse',
 'datetime'           => 'Tælmearc and tīd',
 'math_unknown_error' => 'ungewiss gemearr',
 'prefs-rc'           => 'Nīwlica hweorfunga',
 'prefs-watchlist'    => 'Behealdnestalu',
 'saveprefs'          => 'Sparian',
-'oldpassword'        => 'Eald gelēafnesword:',
-'newpassword'        => 'Nīwe gelēafnesword',
-'retypenew'          => 'Nīwe gelēafnesword edwrītan',
 'rows'               => 'Rǣwa',
 'columns'            => 'Sȳla:',
 'searchresultshead'  => 'Sōcnfintan',
@@ -370,15 +387,15 @@ Bidde behycge þæt þu bricst þone tramet intō smalrum dǣlum.',
 
 'nolicense' => 'Nǣnne gecorenne',
 
-# Special:ImageList
-'imagelist_search_for'  => 'Sēcan biliþnaman:',
-'imagelist'             => 'Biliþgetalu',
-'imagelist_date'        => 'Tælmearc',
-'imagelist_name'        => 'Nama',
-'imagelist_user'        => 'Brūcend',
-'imagelist_description' => 'Tōwritennes',
+# Special:ListFiles
+'listfiles_search_for'  => 'Sēcan biliþnaman:',
+'listfiles'             => 'Biliþgetalu',
+'listfiles_date'        => 'Tælmearc',
+'listfiles_name'        => 'Nama',
+'listfiles_user'        => 'Brūcend',
+'listfiles_description' => 'Tōwritennes',
 
-# Image description page
+# File description page
 'filehist-user'  => 'Brūcend',
 'imagelinks'     => 'Biliþbendas',
 'linkstoimage'   => 'Þā folgendan trametas bindaþ tō þissum biliðe:',
@@ -393,10 +410,6 @@ Bidde behycge þæt þu bricst þone tramet intō smalrum dǣlum.',
 
 # Random page
 'randompage' => 'Hlīetlic tramet',
-
-# Statistics
-'userstatstext' => "Þǣr sind '''$1''' genemnode brūcend, þāra þe
-'''$2''' (oþþe '''$4%''') sind bewitend (sēo $3).",
 
 'doubleredirects' => 'Twifealdlice Ymblǣderas',
 
@@ -438,7 +451,6 @@ Bidde behycge þæt þu bricst þone tramet intō smalrum dǣlum.',
 'specialloguserlabel'  => 'Brūcend:',
 'speciallogtitlelabel' => 'Titul:',
 'log'                  => 'Cranicas',
-'log-search-submit'    => 'Gān',
 
 # Special:AllPages
 'allpages'       => 'Trametas',
@@ -457,6 +469,10 @@ Bidde behycge þæt þu bricst þone tramet intō smalrum dǣlum.',
 # Special:ListUsers
 'listusers-noresult' => 'Nǣnne brūcend gefundenne.',
 
+# Special:Log/newusers
+'newuserlogpage'          => 'Brūcend ġesceaft talu',
+'newuserlog-create-entry' => 'Nīwe brūcend',
+
 # E-mail user
 'emailfrom'     => 'Fram',
 'emailto'       => 'Tō:',
@@ -467,38 +483,43 @@ Bidde behycge þæt þu bricst þone tramet intō smalrum dǣlum.',
 'emailsenttext' => 'Þīn e-mail ǣrendgewrit wearþ gesend.',
 
 # Watchlist
-'watchlist'            => 'Mīn behealdnestalu',
-'mywatchlist'          => 'Mīn behealdnestalu',
-'addedwatch'           => 'Geīeht tō wæcctale',
-'watch'                => 'Behealdan',
-'unwatch'              => 'Unbehealdan',
-'watchlistcontains'    => 'Þīn behealdnestalu hæfþ $1 {{PLURAL:$1|trameta|trametas}} inn.',
-'wlnote'               => 'Under sind þā æftemestan $1 hweorfunga in þǣm æftemestum <b>$2</b> stundum.',
-'wlshowlast'           => 'Īewan æftemestan $1 stunda $2 daga $3',
-'watchlist-hide-minor' => 'Hȳdan smala ādihtunga',
+'watchlist'         => 'Mīn behealdnestalu',
+'mywatchlist'       => 'Mīn behealdnestalu',
+'addedwatch'        => 'Geīeht tō wæcctale',
+'watch'             => 'Behealdan',
+'unwatch'           => 'Unbehealdan',
+'watchlistcontains' => 'Þīn behealdnestalu hæfþ $1 {{PLURAL:$1|trameta|trametas}} inn.',
+'wlnote'            => 'Under sind þā æftemestan $1 hweorfunga in þǣm æftemestum <b>$2</b> stundum.',
+'wlshowlast'        => 'Īewan æftemestan $1 stunda $2 daga $3',
 
 'enotif_newpagetext' => 'Þēs is nīwe tramet.',
 'created'            => 'gescapen',
 
-# Delete/protect/revert
-'deletepage'         => 'Āfeorsian tramet',
-'excontent'          => "innung wæs: '$1'",
-'excontentauthor'    => "innung wæs: '$1' (and se āna forðiend wæs '[[Special:Contributions/$2|$2]]')",
-'exblank'            => 'tramet wæs ǣmtig',
-'historywarning'     => 'Warnung: Se tramet, þone þu āfeorsian teohhast, hæfþ stǣre:',
-'actioncomplete'     => 'Weorcdǣd geendod',
-'deletedarticle'     => 'āfeorsod "[[$1]]"',
-'dellogpage'         => 'Āfeorsunge_wisbōc',
-'deletionlog'        => 'āfeorsunge wisbōc',
-'deletecomment'      => 'Racu for āfeorsunge',
-'rollback_short'     => 'Edhwierfan',
-'rollbacklink'       => 'Edhwierfan',
-'rollbackfailed'     => 'Edhwierft misfangen',
-'editcomment'        => "Sēo ādihtungymbsprǣc wæs: \"''\$1''\".", # only shown if there is an edit comment
-'revertpage'         => 'Ācierde ādihtunga fram [[Special:Contributions/$2|$2]] ([[User talk:$2|Gesprec]]); wendede on bæc tō ǣrran fadunge fram [[User:$1|$1]]', # Additional available: $3: revid of the revision reverted to, $4: timestamp of the revision reverted to, $5: revid of the revision reverted from, $6: timestamp of the revision reverted from
-'unprotectedarticle' => 'unweardod "[[$1]]"',
-'protect-title'      => 'Weardiende "$1"',
-'restriction-type'   => 'Gelēafnes:',
+# Delete
+'deletepage'      => 'Āfeorsian tramet',
+'excontent'       => "innung wæs: '$1'",
+'excontentauthor' => "innung wæs: '$1' (and se āna forðiend wæs '[[Special:Contributions/$2|$2]]')",
+'exblank'         => 'tramet wæs ǣmtig',
+'historywarning'  => 'Warnung: Se tramet, þone þu āfeorsian teohhast, hæfþ stǣre:',
+'actioncomplete'  => 'Weorcdǣd geendod',
+'deletedarticle'  => 'āfeorsod "[[$1]]"',
+'dellogpage'      => 'Āfeorsunge_wisbōc',
+'deletionlog'     => 'āfeorsunge wisbōc',
+'deletecomment'   => 'Racu for āfeorsunge',
+
+# Rollback
+'rollback_short' => 'Edhwierfan',
+'rollbacklink'   => 'Edhwierfan',
+'rollbackfailed' => 'Edhwierft misfangen',
+'editcomment'    => "Sēo ādihtungymbsprǣc wæs: \"''\$1''\".", # only shown if there is an edit comment
+'revertpage'     => 'Ācierde ādihtunga fram [[Special:Contributions/$2|$2]] ([[User talk:$2|Gesprec]]); wendede on bæc tō ǣrran fadunge fram [[User:$1|$1]]', # Additionally available: $3: revid of the revision reverted to, $4: timestamp of the revision reverted to, $5: revid of the revision reverted from, $6: timestamp of the revision reverted from
+
+# Protect
+'unprotectedarticle'     => 'unweardod "[[$1]]"',
+'protect-title'          => 'Weardiende "$1"',
+'prot_1movedto2'         => '[[$1]] gefered tō [[$2]]',
+'protect-expiry-options' => '1 stund:1 hour, 2 stunda:2 hours,1 dæg:1 day,3 dagas:3 days,1 wucu:1 week,2 wuca:2 weeks,1 mōnaþ:1 month,3 mōnþas:3 months,6 mōnþas:6 months,1 gēar:1 year,unendiendlic:infinite', # display1:time1,display2:time2,...
+'restriction-type'       => 'Gelēafnes:',
 
 # Restrictions (nouns)
 'restriction-edit'   => 'Ādihtan',
@@ -522,7 +543,6 @@ Bidde behycge þæt þu bricst þone tramet intō smalrum dǣlum.',
 # What links here
 'whatlinkshere'       => 'Hwæt bindaþ hider',
 'whatlinkshere-page'  => 'Tramet:',
-'linklistsub'         => '(Getalu benda)',
 'linkshere'           => 'Þā folgendan trametas bindaþ hider:',
 'nolinkshere'         => 'Nāne trametas bindaþ hider.',
 'isredirect'          => 'edlǣdungtramet',
@@ -603,7 +623,7 @@ Bidde cēos ōðerne naman.',
 'imagemaxsize' => 'Settan biliðu on biliþgemearcungtrametum tō:',
 'thumbsize'    => 'Þumannæglmicelnes:',
 
-# Special:NewImages
+# Special:NewFiles
 'imagelisttext' => 'Under is getalu $1 biliða gedæfted $2.',
 'noimages'      => 'Nāht tō sēonne.',
 'ilsubmit'      => 'Sēcan',
@@ -684,12 +704,6 @@ $5
 # Scary transclusion
 'scarytranscludefailed'  => '[Bisenfeccung getrucod for $1; sarig]',
 'scarytranscludetoolong' => '[URL is tō lang; sarig]',
-
-# HTML dump
-'redirectingto' => 'Edlǣdeþ tō [[:$1]]...',
-
-# AJAX search
-'searchnamed' => "Sēcan gewritu genemnodu ''$1''.",
 
 # Multipage image navigation
 'imgmultigo' => 'Gān!',

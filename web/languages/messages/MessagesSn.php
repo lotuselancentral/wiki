@@ -1,6 +1,9 @@
 <?php
 /** Shona (chiShona)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -100,7 +103,7 @@ Akaunzi yako yagadzirwa. Usakanganwe kuchinga mapreferences ako eWikipedia.',
 'username'           => 'Zita:',
 
 # Edit pages
-'summary'     => 'Muchidimbu',
+'summary'     => 'Muchidimbu:',
 'minoredit'   => 'Uku kushandurwa kudiki',
 'watchthis'   => 'Ringa peji rino',
 'savearticle' => 'Kotsa peji',
@@ -140,6 +143,9 @@ Akaunzi yako yagadzirwa. Usakanganwe kuchinga mapreferences ako eWikipedia.',
 'mywatchlist'   => 'Zvandakarinda',
 'watch'         => 'Rinda',
 'watchthispage' => 'Ringa peji rino',
+
+# Protect
+'prot_1movedto2' => '[[$1]] rachichinurwa ku [[$2]]',
 
 # Restrictions (nouns)
 'restriction-edit' => 'Chinja',

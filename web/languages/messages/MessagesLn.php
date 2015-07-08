@@ -1,6 +1,9 @@
 <?php
 /** Lingala (Lingála)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -78,7 +81,7 @@ $messages = array(
 'qbspecialpages' => 'Nkásá ya ndéngé isúsu',
 'mytalk'         => 'Ntembe na ngáí',
 'navigation'     => 'Botamboli',
-'and'            => 'mpé',
+'and'            => '&#32;mpé',
 
 'errorpagetitle'   => 'Mbéba',
 'tagline'          => 'Artíclɛ ya {{SITENAME}}.',
@@ -89,7 +92,7 @@ $messages = array(
 'searcharticle'    => 'Kɛndɛ́',
 'history'          => 'Makambo ya lokásá',
 'history_short'    => 'likambo',
-'printableversion' => 'Mpɔ́ na kofínela',
+'printableversion' => 'Mpɔ̂ na kofínela',
 'permalink'        => 'Ekangeli ya ntángo yɔ́nsɔ',
 'print'            => 'kobimisa nkomá',
 'edit'             => 'Kobimisela',
@@ -173,8 +176,8 @@ $messages = array(
 'headline_tip'    => 'Litɛ́mɛ ya emeko 2',
 
 # Edit pages
-'summary'                => 'Likwé ya mokusé',
-'subject'                => 'Mokonza/litɛ́mɛ',
+'summary'                => 'Likwé ya mokusé:',
+'subject'                => 'Mokonza/litɛ́mɛ:',
 'minoredit'              => 'Ezalí mbóngwana ya mokɛ́',
 'watchthis'              => 'Kolanda lokásá loye',
 'savearticle'            => 'kobómbisa ekakoli',
@@ -251,10 +254,10 @@ $messages = array(
 'uploadbtn' => 'kokumbisa',
 'savefile'  => 'kobómbisa kásá-kásá',
 
-# Special:ImageList
-'imagelist_date' => 'Mokɔlɔ',
+# Special:ListFiles
+'listfiles_date' => 'Mokɔlɔ',
 
-# Image description page
+# File description page
 'filehist' => 'Mokóló ya kásá',
 
 # File deletion
@@ -268,7 +271,6 @@ $messages = array(
 
 # Statistics
 'statistics' => 'Mitúya',
-'sitestats'  => 'Mitúya mya {{SITENAME}}',
 
 'disambiguations' => 'Bokokani',
 
@@ -316,28 +318,22 @@ $messages = array(
 'emailsenttext'   => 'Nkandá ya yɔ̌ etíndámá',
 
 # Watchlist
-'watchlist'            => 'Nkásá nalandí',
-'mywatchlist'          => 'Nkásá nalandí',
-'watchlistfor'         => "(mpɔ̂ na moto '''$1''')",
-'watch'                => 'Kolanda',
-'watchthispage'        => 'Kolanda lokásá loye',
-'unwatch'              => 'Kolanda tɛ́',
-'watchlist-details'    => '{{PLURAL:$1|Lokásá $1 lolandámí|Nkásá $1 ilandámí}}, longola nkásá ya ntembe.',
-'wlnote'               => "Áwa o nsé {{PLURAL:$1|ezalí mbóngwana ya nsúka|izalí mbóngwana '''$1''' ya nsúka}} o {{PLURAL:$2|ngonga|ngonga '''$2'''}} ya nsúka.",
-'wlshowlast'           => 'Komɔ́nisa ngónga $1 ya nsúka, mikɔ́lɔ $2 mya nsúka tǒ $3',
-'watchlist-show-bots'  => 'Komɔ́nisa mbóngwana ya bot',
-'watchlist-hide-bots'  => 'Kobomba mbóngwana ya bot',
-'watchlist-show-own'   => 'Komɔ́nisa mbóngwana ya ngáí',
-'watchlist-hide-own'   => 'Kobomba mbóngwana ya ngáí',
-'watchlist-show-minor' => 'Komɔ́nisa mbóngwana ya mokɛ́',
-'watchlist-hide-minor' => 'Kobomba mbóngwana ya mokɛ́',
+'watchlist'         => 'Nkásá nalandí',
+'mywatchlist'       => 'Nkásá nalandí',
+'watchlistfor'      => "(mpɔ̂ na moto '''$1''')",
+'watch'             => 'Kolanda',
+'watchthispage'     => 'Kolanda lokásá loye',
+'unwatch'           => 'Kolanda tɛ́',
+'watchlist-details' => '{{PLURAL:$1|Lokásá $1 lolandámí|Nkásá $1 ilandámí}}, longola nkásá ya ntembe.',
+'wlnote'            => "Áwa o nsé {{PLURAL:$1|ezalí mbóngwana ya nsúka|izalí mbóngwana '''$1''' ya nsúka}} o {{PLURAL:$2|ngonga|ngonga '''$2'''}} ya nsúka.",
+'wlshowlast'        => 'Komɔ́nisa ngónga $1 ya nsúka, mikɔ́lɔ $2 mya nsúka tǒ $3',
 
 # Displayed when you click the "watch" button and it is in the process of watching
 'watching' => 'Bonɔ́ngi...',
 
 'created' => 'ekomákí',
 
-# Delete/protect/revert
+# Delete
 'deletedarticle' => 'elímwísí "[[$1]]"',
 'dellogpage'     => 'Zonálɛ ya bolímwisi',
 'deletionlog'    => 'zonálɛ ya bolímwisi',
@@ -352,8 +348,9 @@ $messages = array(
 'blanknamespace' => '(Ya libosó)',
 
 # Contributions
-'contributions' => 'Mosálá ya moto óyo',
-'mycontris'     => 'Nkásá nakomí',
+'contributions'       => 'Mosálá ya moto óyo',
+'contributions-title' => 'Mosálá ya moto mpɔ̂ na $1',
+'mycontris'           => 'Nkásá nakomí',
 
 # What links here
 'whatlinkshere'       => 'Ekangísí áwa',
@@ -397,7 +394,7 @@ $messages = array(
 # Browsing diffs
 'previousdiff' => '← diff ya libosó',
 
-# Special:NewImages
+# Special:NewFiles
 'ilsubmit' => 'Boluki',
 
 # EXIF tags
@@ -408,9 +405,6 @@ $messages = array(
 # 'all' in various places, this might be different for inflected languages
 'watchlistall2' => 'nyɔ́nsɔ',
 'namespacesall' => 'Nyɔ́nsɔ',
-
-# HTML dump
-'redirectingto' => 'Eyendísí na [[:$1]]...',
 
 # action=purge
 'confirm_purge_button' => 'Nandimi',

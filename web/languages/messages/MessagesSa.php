@@ -1,6 +1,9 @@
 <?php
 /** Sanskrit (संस्कृत)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -35,8 +38,8 @@ $namespaceNames = array(
 	NS_USER_TALK        => 'योजकसंभाषणं',
 	# NS_PROJECT set by $wgMetaNamespace
 	NS_PROJECT_TALK     => '$1संभाषणं',
-	NS_IMAGE            => 'चित्रं',
-	NS_IMAGE_TALK       => 'चित्रसंभाषणं',
+	NS_FILE             => 'चित्रं',
+	NS_FILE_TALK        => 'चित्रसंभाषणं',
 	NS_MEDIAWIKI        => 'MediaWiki',
 	NS_MEDIAWIKI_TALK   => 'MediaWiki_talk',
 	NS_TEMPLATE         => 'Template',
@@ -45,15 +48,6 @@ $namespaceNames = array(
 	NS_HELP_TALK        => 'उपकारसंभाषणं',
 	NS_CATEGORY         => 'वर्गः',
 	NS_CATEGORY_TALK    => 'वर्गसंभाषणं',
-);
-
-$skinNames = array(
-	'standard' => 'पूर्व',
-	'nostalgia' => 'पुराण',
-	'cologneblue' => 'नील',
-	'monobook' => 'पुस्तक',
-	'myskin' => 'मे चर्मन्',
-	'chick' => 'Chick'
 );
 
 $messages = array(
@@ -102,7 +96,7 @@ $messages = array(
 'mypage'        => 'मम पृष्ठ',
 'mytalk'        => 'मम लोकप्रवाद',
 'navigation'    => 'सुचालन',
-'and'           => 'एवम्',
+'and'           => '&#32;एवम्',
 
 'tagline'          => '{{SITENAME}}त्',
 'help'             => 'सहायता',
@@ -187,6 +181,7 @@ $messages = array(
 'italic_sample' => 'इटालिकाक्षर्‌',
 
 # Edit pages
+'summary'     => 'सारांश:',
 'watchthis'   => 'इदं पृष्ठ निरीक्षा',
 'savearticle' => 'पृष्ठ त्रायते',
 'preview'     => 'प्रारूप प्रेक्षा',
@@ -227,10 +222,10 @@ $messages = array(
 # Upload
 'upload' => 'भारं न्यस्यति सञ्चिका',
 
-# Special:ImageList
+# Special:ListFiles
 'imgfile' => 'संचिका',
 
-# Image description page
+# File description page
 'filehist-deleteone' => 'विलोप',
 
 # Random page
@@ -269,8 +264,10 @@ $messages = array(
 # Displayed when you click the "watch" button and it is in the process of watching
 'watching' => 'निरिक्षा',
 
-# Delete/protect/revert
-'actioncomplete'          => 'कार्य समापनम्',
+# Delete
+'actioncomplete' => 'कार्य समापनम्',
+
+# Protect
 'protectcomment'          => 'प्रतिक्रीया:',
 'protect-level-sysop'     => 'केवल प्रबंधक',
 'protect-summary-cascade' => 'निःश्रेणि',
@@ -295,6 +292,9 @@ $messages = array(
 # Thumbnails
 'thumbnail-more' => 'विस्तार',
 
+# Special:Import
+'import-comment' => 'व्याखान:',
+
 # Tooltip help for the actions
 'tooltip-pt-logout'       => 'बहिर्गच्छति',
 'tooltip-search'          => '{{SITENAME}} अन्वेषणं करोति',
@@ -308,7 +308,15 @@ $messages = array(
 'tooltip-t-specialpages'  => 'सर्वानि विशेष पृष्ठस्य सूची',
 'tooltip-save'            => 'त्रायते',
 
-# Special:NewImages
+# Skin names
+'skinname-standard'    => 'पूर्व',
+'skinname-nostalgia'   => 'पुराण',
+'skinname-cologneblue' => 'नील',
+'skinname-monobook'    => 'पुस्तक',
+'skinname-myskin'      => 'मे चर्मन्',
+'skinname-chick'       => 'Chick',
+
+# Special:NewFiles
 'newimages' => 'नूतन संचिका दालन',
 
 # 'all' in various places, this might be different for inflected languages

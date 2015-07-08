@@ -1,6 +1,9 @@
 <?php
 /** Uighur (Uyghurche‎ / ئۇيغۇرچە)
  *
+ * See MessagesQqq.php for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
  * @ingroup Language
  * @file
  *
@@ -70,7 +73,7 @@ $messages = array(
 'username'          => 'Ishletkuqi ismi:',
 
 # Edit pages
-'summary'     => 'Hulasa',
+'summary'     => 'Hulasa:',
 'minoredit'   => 'Bu Kichik Uzgartish',
 'watchthis'   => 'Bu Batka Kharang',
 'showpreview' => 'Aldinala kurux',
@@ -110,9 +113,6 @@ $messages = array(
 # Book sources
 'booksources-go' => 'Kuchush',
 
-# Special:Log
-'log-search-submit' => 'Kuchush',
-
 # Special:AllPages
 'allpagessubmit' => 'Kuchush',
 
@@ -147,7 +147,7 @@ $messages = array(
 'tooltip-search'  => 'Izdash {{SITENAME}}',
 'tooltip-p-logo'  => 'Bash Bet',
 
-# Special:NewImages
+# Special:NewFiles
 'ilsubmit' => 'Izdash',
 
 # Trackbacks
