@@ -8,9 +8,11 @@
  * @file
  *
  * @author Amire80
+ * @author Andrijko Z.
  * @author Reedy
  * @author Sapral Mikail
  * @author Tagir
+ * @author Умар
  */
 
 $fallback = 'ru';
@@ -185,8 +187,8 @@ $messages = array(
 'help'              => 'Куцтохкам',
 'search'            => 'Лахаp',
 'searchbutton'      => 'Хьалаха',
-'go'                => 'Дехьавала',
-'searcharticle'     => 'Дехьавала',
+'go'                => 'Дехьа гӀо',
+'searcharticle'     => 'Дехьа гӀо',
 'history'           => 'искар',
 'history_short'     => 'Искар',
 'updatedmarker'     => 'Со ханача денца хувцамаш хиннaд',
@@ -231,7 +233,7 @@ $messages = array(
 'lastmodifiedat'    => 'Укх оагӀув тӀехьара  хувцам: $2, $1.',
 'viewcount'         => 'Укх оагӀув тӀа бӀаргтасса хиннад {{PLURAL:$1|цхьазза|$1 шозза}}.',
 'protectedpage'     => 'Лорама оагӀув',
-'jumpto'            => 'Укхаза дехьавала/яла:',
+'jumpto'            => 'Укхаза дехьа гӀо:',
 'jumptonavigation'  => 'никътохкарг',
 'jumptosearch'      => 'леха',
 'pool-timeout'      => 'ЧIегатохара сабаран ха чакхаяьннай',
@@ -319,10 +321,10 @@ $messages = array(
 'missingarticle-rev' => '(бӀаргоагӀув № $1)',
 'internalerror'      => 'Чура гӀалат',
 'internalerror_info' => 'Чура гӀалат: $1',
+'cannotdelete-title' => 'ОагIув дIаяккха йиш яц "$1"',
 'badtitle'           => 'Мегаш йоаца цӀи',
 'badtitletext'       => 'Дехаш дола оагӀувни цӀи, нийса яц, яьсса я е меттаюкъара е массаюкъара цӀи харцахь я. ЦӀера юкъе мегаш доаца харакъаш нийсаденна хила мегаш да.',
 'viewsource'         => 'БIаргтассам',
-'viewsourcefor'      => '$1 оагIув',
 'actionthrottled'    => 'Сихален овзамал',
 'protectedpagetext'  => 'Хувцаман белхаш долаш ер оагIув къайла я.',
 
@@ -483,17 +485,11 @@ $messages = array(
 'revdelete-radio-set'        => 'XӀаа',
 'revdelete-radio-unset'      => 'A',
 'revdelete-log'              => 'Бахьан',
-'revdelete-logentry'         => '[[$1]] доржама оагӀувни бӀасанче хийцай',
 'revdel-restore'             => 'Кустгойтам хувца',
 'revdel-restore-deleted'     => 'дӀадаьккха доржамаш',
 'revdel-restore-visible'     => 'бӀаргагушдола доржамаш',
 'pagehist'                   => 'ОагӀува искар',
 'deletedhist'                => 'ДӀадаккхамий искар',
-'revdelete-content'          => 'чулоацар',
-'revdelete-summary'          => 'хувцамий лоацам',
-'revdelete-uname'            => 'дакъалаьцархочунна цIи',
-'revdelete-hid'              => 'къайла я $1',
-'revdelete-log-message'      => '$1ара $2чунна  {{PLURAL:$2|доржама|доржамий}}',
 'revdelete-reasonotherlist'  => 'Кхыдола бахьан',
 
 # History merging
@@ -627,9 +623,9 @@ $messages = array(
 'group-sysop' => 'Мазакулгалхой',
 'group-all'   => '(деррига)',
 
-'group-user-member'  => 'дакъалаьцархо',
-'group-bot-member'   => 'бIат',
-'group-sysop-member' => 'мазакулгалхо',
+'group-user-member'  => '{{GENDER:$1|дакъалаьцархо|дакъалаьцархо}}',
+'group-bot-member'   => '{{GENDER:$1|бIат}}',
+'group-sysop-member' => '{{GENDER:$1|мазакулгалхо}}',
 
 'grouppage-user'  => '{{ns:project}}:Дакъалаьцархой',
 'grouppage-bot'   => '{{ns:project}}:БIаташ',
@@ -769,7 +765,7 @@ $messages = array(
 'prefixindex'   => 'ОагIувнаший хьалхера цIи хьагойтар',
 'shortpages'    => 'Лоаца оагIувнаш',
 'longpages'     => 'Доккхий оагIувнаш',
-'usercreated'   => '$1ара $2чуча даь да',
+'usercreated'   => '{{GENDER:$3|Чуваьннав|Чуяьннай}} $1  $2',
 'newpages'      => 'Керда оагIувнаш',
 'move'          => 'ЦIи хувца',
 'movethispage'  => 'Укх оагIува цIи хувца',
@@ -802,13 +798,12 @@ $messages = array(
 'linksearch-line' => '$1 тIа Iинк $2 юкъера',
 
 # Special:Log/newusers
-'newuserlogpage'          => 'Дакъалаьцархоший дIаязбeнна таптар',
-'newuserlog-create-entry' => 'Керда дакъалаьцархо',
+'newuserlogpage' => 'Дакъалаьцархоший дIаязбeнна таптар',
 
 # Special:ListGroupRights
 'listgrouprights-members' => '(тоабий дагарче)',
 
-# E-mail user
+# Email user
 'emailuser' => 'Дакъалаьцархочоа д-хоамни:',
 
 # Watchlist
@@ -837,7 +832,6 @@ $messages = array(
 'actionfailed'          => 'Оттам даьдац',
 'deletedtext'           => '"$1" дIаяьккха хиннай.
 ТIехьара дIадаьккха дагарчена хьожаргволаш/хьожаргьйолаш, $2 хьажа.',
-'deletedarticle'        => ' "[[$1]]" дIадаьккхад',
 'dellogpage'            => 'ДIадаккхара тептар',
 'deletecomment'         => 'Бахьан:',
 'deleteotherreason'     => 'Кхыдола бахьан/тIатохар:',
@@ -877,7 +871,6 @@ $messages = array(
 # Undelete
 'undeletelink'     => 'БIаргтасса/юхаметтаоттаде',
 'undeleteviewlink' => 'бIаргтасса',
-'undeletedarticle' => '"[[$1]]" юха оттая я',
 
 # Namespace form on various pages
 'namespace'      => 'ЦIерий аренаш',
@@ -968,8 +961,6 @@ $messages = array(
 'talkexists'       => "'''ОагIувни цIи хьийца хиннай, амма дувцама оагIувни цIи хувца мегаш яц, изза мо цIи йолаш оагIув йоландаь. Дехар да, кулга новкъосталца цхьанна вIашагIатоха уш.'''",
 'movedto'          => 'керда цIи тилла я',
 'movetalk'         => 'МаIан чулоаца дувцама оагIувни цIи хувца',
-'1movedto2'        => '[[$1]] цIи цу тIа [[$2]] хийцай',
-'1movedto2_redir'  => '[[$1]] цIи хийцай [[$2]] дIа-хьа оагIува тIа гIолла',
 'movelogpage'      => 'Хувцама тептар',
 'movereason'       => 'Бахьан',
 'revertmove'       => 'юхаяьккха',
@@ -982,7 +973,7 @@ $messages = array(
 'allmessagesdefault'        => 'Сатийна улла яздам',
 'allmessages-filter-all'    => 'Дерригаш',
 'allmessages-language'      => 'Мотт:',
-'allmessages-filter-submit' => 'Дехьавала/яла',
+'allmessages-filter-submit' => 'Дехьа гӀо',
 
 # Thumbnails
 'thumbnail-more'  => 'Хьадоккхаде',
@@ -1047,17 +1038,13 @@ $messages = array(
 'tooltip-undo'                    => 'Баь хувцам дIабаьккхe, бIаргатассам хьахьокха, кара дале, дIаяьккха бахьан Iочуязаде моттигаца.',
 'tooltip-summary'                 => 'Лоаца чулоацам Iочуязаде',
 
-# Patrol log
-'patrol-log-line' => '$1 долачаьрахь $2 $3 хьажав/хьажай',
-'patrol-log-diff' => '$1 доржам',
-
 # Browsing diffs
 'previousdiff' => '← Хьалхара хувцам',
 'nextdiff'     => 'ТIайоагIа хувцам',
 
 # Media information
 'file-info-size' => '$1 × $2 фихсам, паьла дустам: $3, MIME-тайп: $4',
-'file-nohires'   => '<small>Укхал доккхагIа доржам дац</small>',
+'file-nohires'   => 'Укхал доккхагIа доржам дац',
 'svg-long-desc'  => 'SVG-паьл, $1 × $2 фихелашца, паьла дустам: $3',
 'show-big-image' => 'Хьадоккхадаь сурт',
 
@@ -1132,7 +1119,7 @@ $messages = array(
 'confirm_purge_button' => 'ХIаа',
 
 # Multipage image navigation
-'imgmultigo'   => 'Дехьавала/яла!',
+'imgmultigo'   => 'Дехьа гӀо!',
 'imgmultigoto' => '$1 оагIув тIа дехьавала',
 
 # Table pager
@@ -1155,7 +1142,7 @@ $messages = array(
 # Special:FilePath
 'filepath'        => 'Паьлачу никъ',
 'filepath-page'   => 'Паьл:',
-'filepath-submit' => 'Дехьавала/яла',
+'filepath-submit' => 'Дехьа гӀо',
 
 # Special:FileDuplicateSearch
 'fileduplicatesearch-filename' => 'ПаьлацIи:',

@@ -8,6 +8,8 @@
  * @file
  *
  * @author Freeyak
+ * @author Jason (on bo.wikipedia.org)
+ * @author Shirayuki
  * @author YeshiTuhden
  */
 
@@ -343,6 +345,14 @@ $messages = array(
 'passwordreset-username' => 'སྤྱོད་མིང་།',
 'passwordreset-email'    => 'དྲ་འཕྲིན་ཁ་བྱང་།',
 
+# Special:ChangeEmail
+'changeemail'          => 'དྲ་འཕྲིན་ཁ་བྱང་བརྗེ་བ།',
+'changeemail-oldemail' => 'ད་ཡོད་དྲ་འཕྲིན་ཁ་བྱང་།',
+'changeemail-newemail' => 'དྲ་འཕྲིན་ཁ་བྱང་གསར་བ།',
+'changeemail-none'     => '(སྟོང་པ།)',
+'changeemail-submit'   => 'དྲ་འཕྲིན་བརྗེ་བ།',
+'changeemail-cancel'   => 'རྩིས་མེད་ཐོངས།',
+
 # Edit page toolbar
 'bold_sample'     => 'ཡིག་གཟུགས་སྦོམ་པོ།',
 'bold_tip'        => 'ཡིག་གཟུགས་སྦོམ་པོ།',
@@ -376,8 +386,6 @@ $messages = array(
 'subject-preview'            => 'བརྗོད་གཞི་དང་འགོ་བརྗོད་སྔོན་ལྟ།',
 'blockedtitle'               => 'སྤྱོད་མི་བཀག་ཟིན།',
 'blockednoreason'            => 'རྒྱུ་མཚན་བྱིན་མི་འདུག',
-'blockedoriginalsource'      => "'''$1''' ཡི་ཁུངས་གཤམ་དུ་བསྟན་ཡོད།",
-'whitelistedittitle'         => 'ནང་འཛུལ་བཟོ་བཅོས་བྱེད་དགོས།',
 'whitelistedittext'          => 'ཤོག་ངོས་རྩོམ་སྒྲིག་བྱེད་པར་ངེས་པར་དུ་$1བྱ་དགོས།',
 'loginreqtitle'              => 'ནང་འཛུལ་བྱ་དགོས།',
 'loginreqlink'               => 'ནང་འཛུལ་',
@@ -389,7 +397,7 @@ $messages = array(
 'editingsection'             => ' $1 (སྡེ་ཚན) ལ་རྩོམ་སྒྲིག་བྱེད་བཞིན་པ།',
 'yourtext'                   => 'ཁྱོད་ཀྱི་ཡིག་འབྲུ།',
 'yourdiff'                   => 'མི་འདྲ་ས།',
-'templatesused'              => 'ཤོག་ངོས་འདིར་སྤྱད་པའི་ {{PLURAL:$1|དཔེ་པང་།|དཔེ་པང་།}}',
+'templatesused'              => 'ཤོག་ངོས་འདིར་སྤྱད་པའི་ {{PLURAL:$1|དཔེ་པང་།}}',
 'template-protected'         => 'སྲུང་སྐྱོབ་འོག་ཡོད་པ།',
 'nocreate-loggedin'          => 'ཤོག་ངོས་གསར་བཟོའི་ཆོག་མཆན་མི་འདུག',
 'recreate-moveddeleted-warn' => "'''ཉེན་བརྡ་:རང་གིས་སུབ་ཚར་བའི་ཤོག་ལེ་ཞིག་བསྐྱར་བཟོ་བྱེད་ཀྱི་འདུག་ '''
@@ -419,7 +427,6 @@ $messages = array(
 'revdelete-radio-set'        => 'ཡིན།',
 'revdel-restore'             => 'བཅོས་སུ་རུང་བ།',
 'pagehist'                   => 'ཤོག་ངོས་ལོ་རྒྱུས།',
-'revdelete-summary'          => 'བསྡུས་དོན་བཟོ་བཅོས།',
 'revdelete-reasonotherlist'  => 'རྒྱུ་མཚན་གཞན་པ།',
 
 # History merging
@@ -482,9 +489,11 @@ $messages = array(
 'prefs-personal'            => 'སྤྱོད་མིའི་སྤྱི་ཁོག',
 'prefs-rc'                  => 'ཉེ་བའི་བཟོ་བཅོས།',
 'prefs-watchlist'           => 'མཉམ་འཇོག་ཐོ།',
-'prefs-watchlist-days-max'  => 'རིང་ཚད་ཉི་མ་ ༧ །',
+'prefs-watchlist-days-max'  => 'Maximum $1 {{PLURAL:$1|day|days}}',
 'prefs-watchlist-edits-max' => 'མང་ཚད་ཨང་གྲངས། ༡༠༠༠',
 'prefs-resetpass'           => 'ལམ་ཡིག་བརྗེ་བ།',
+'prefs-changeemail'         => 'དྲ་འཕྲིན་བརྗེ་བ།',
+'prefs-setemail'            => 'གློག་འཕྲིན་ཁ་བྱང་སྒྲིག་པ།',
 'prefs-email'               => 'གློག་འཕྲིན་འདེམས་ཚན།',
 'saveprefs'                 => 'ཉར་བ།',
 'searchresultshead'         => 'འཚོལ།',
@@ -647,14 +656,14 @@ $messages = array(
 'brokenredirects-delete' => 'གསུབ་པ།',
 
 # Miscellaneous special pages
-'nbytes'            => '{{PLURAL:$1|ཡིག་ཚགས།|ཡིག་ཚགས།}} $1',
+'nbytes'            => '{{PLURAL:$1|ཡིག་ཚགས།}} $1',
 'shortpages'        => 'ཤོག་ངོས་ཐུང་ངུ་།',
 'newpages'          => 'ཤོག་ངོས་གསར་བ།',
 'newpages-username' => 'དྲ་མིང་།:',
 'move'              => 'སྤོར་བ།',
 'movethispage'      => 'ཤོག་ངོས་འདི་སྤོར།',
-'pager-newer-n'     => '{{PLURAL：$1|གསར་བ་1|གསར་བ་$1}}',
-'pager-older-n'     => '{{PLURAL：$1|རྙིང་པ་1|རྙིང་པ་$1}}',
+'pager-newer-n'     => '{{PLURAL:$1|གསར་བ་1|གསར་བ་$1}}',
+'pager-older-n'     => '{{PLURAL:$1|རྙིང་པ་1|རྙིང་པ་$1}}',
 
 # Book sources
 'booksources'               => 'དཔེ་ཆའི་ཁུངས།',
@@ -677,7 +686,7 @@ $messages = array(
 # Special:ListGroupRights
 'listgrouprights-members' => 'ཁོངས་མིའི་ཐོ་ཡིག',
 
-# E-mail user
+# Email user
 'emailuser'    => 'སྤྱོད་མི་འདིར་གློག་འཕྲིན་སྐུར་བ།',
 'emailmessage' => 'སྐད་ཆ།',
 
@@ -709,7 +718,6 @@ $messages = array(
 'delete-legend'         => 'སུབས་ཤིག',
 'actioncomplete'        => 'བྱ་འགུལ་ལེགས་གྲུབ།',
 'actionfailed'          => 'བྱ་འགུལ་ཕམ་ཉེས་བྱུང་བ།',
-'deletedarticle'        => '"[[$1]]"བསུབས་ཟིན།',
 'dellogpage'            => 'རྩོམ་ཡིག་སུབ་དོར།',
 'deletecomment'         => 'རྒྱུ་མཚན།',
 'deleteotherreason'     => 'རྒྱུ་མཚན་གཞན་པའམ་འཕར་མ།',
@@ -783,7 +791,6 @@ $messages = array(
 'movepagebtn'  => 'ཤོག་ངོས་སྤོ་བ།',
 'pagemovedsub' => 'སྤོར་བ་ལེགས་གྲུབ།',
 'movedto'      => 'སྤོར་ཟིན་ཡུལ།',
-'1movedto2'    => '[[$1]][[$2]]ལ་སྤོར་ཟིན།',
 'movelogpage'  => 'རྩོམ་ཡིག་སྤོ་བ།',
 'movereason'   => 'རྒྱུ་མཚན།',
 'revertmove'   => 'ཕྱིར་ལོག',

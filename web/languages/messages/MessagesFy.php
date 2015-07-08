@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Geitost
  * @author Maartenvdbent
  * @author Purodha
  * @author Pyt
@@ -478,14 +479,13 @@ Meitsje dêr melding fan by in [[Special:ListUsers/sysop|systeembehearder]] fan 
 'cannotdelete'         => 'Koe de oantsjutte side of it oantsjutte ôfbyld net wiskje. (Faaks hat in oar dat al dien.)',
 'badtitle'             => 'Misse titel',
 'badtitletext'         => 'De opfrege sidetitel wie ûnjildich, leech, of in miskeppele yntertaal of ynterwiki titel.',
-'perfcached'           => "Dit is bewarre ynformaasje dy't mooglik ferâldere is.",
-'perfcachedts'         => 'De neikommende gegevens komme út de bewarre ynformaasje, dizze is it lêst fernijd op $1.',
+'perfcached'           => "Dit is bewarre ynformaasje dy't mooglik ferâldere is. A maximum of {{PLURAL:$1|one result is|$1 results are}} available in the cache.",
+'perfcachedts'         => 'De neikommende gegevens komme út de bewarre ynformaasje, dizze is it lêst fernijd op $1. A maximum of {{PLURAL:$4|one result is|$4 results are}} available in the cache.',
 'querypage-no-updates' => 'Dizze side kin net bywurke wurde. Dizze gegevens wurde net ferfarske.',
 'wrong_wfQuery_params' => 'Ferkearde parameters foar wfQuery()<br />
 Funksje: $1<br />
 Query: $2',
 'viewsource'           => 'Besjoch de boarne',
-'viewsourcefor'        => 'fan $1',
 'actionthrottled'      => 'Hanneling opkeard',
 'actionthrottledtext'  => 'As maatregel tsjin spam is it tal kearen per tiidsienheid beheind dat jo dizze hanneling ferrjochtsje kinne. Jo binne oer de limyt. Besykje it in tal minuten letter wer.',
 'protectedpagetext'    => 'Dizze side is befeilige. Bewurkjen is net mûglik.',
@@ -524,7 +524,7 @@ Ferjit net se oan jo foarkar oan te passen.',
 'logout'                     => 'Ofmelde',
 'userlogout'                 => 'Ofmelde',
 'notloggedin'                => 'Net oanmelde',
-'nologin'                    => "Noch net oanmelden as meidogger? '''$1'''.",
+'nologin'                    => 'Noch net oanmelden as meidogger? $1.',
 'nologinlink'                => 'Meitsje in brûker oan',
 'createaccount'              => 'Nije ynstellings oanmeitsje',
 'gotaccount'                 => "Hawwe jo jo al as meidogger oanmelde? '''$1'''.",
@@ -661,9 +661,6 @@ Jo kinne kontakt opnimme mei $1 of in oare [[{{MediaWiki:Grouppage-sysop}}|behea
 Jo kinne gjin gebrûk meitsje fan 'e funksje 'Skriuw meidogger', of jo moatte in jildich e-postadres opjûn hawwe yn jo [[Special:Preferences|foarkarren]] en it gebrûk fan dy funksje moat net útsletten wêze.
 Jo tsjintwurdich e-postadres is $3 en it útsletnûmer is #$5. Neam beide gegevens as jo earne op dizze útsluting reagearje.",
 'blockednoreason'                  => 'gjin reden opjûn',
-'blockedoriginalsource'            => "Hjir ûnder stiet de boarnetekst fan '''$1''':",
-'blockededitsource'                => "Hjir ûnder stiet de tekst fan '''jo bewurkings''' oan '''$1''':",
-'whitelistedittitle'               => 'Foar bewurkjen is oanmelden ferplichte',
 'whitelistedittext'                => 'Jo moatte $1 om siden te bewurkjen.',
 'confirmedittext'                  => "Jo moatte jo e-mailadres befêstichje foar't jo siden feroarje kinne. Fier in e-mailedres yn by jo [[Special:Preferences|ynstellings]] en befêstichje it.",
 'nosuchsectiontitle'               => 'Dizze subkop bestiet net',
@@ -858,22 +855,11 @@ Oare behearders fan {{SITENAME}} kinne de ferburgen ynhâld benaderje en it fuor
 'revdelete-unsuppress'        => 'Beheinings op tebeksette feroarings fuorthelje',
 'revdelete-log'               => 'Reden:',
 'revdelete-submit'            => 'Tapasse op selektearre bewurking',
-'revdelete-logentry'          => 'sichtberens fan bewurkings is feroare foar [[$1]]',
-'logdelete-logentry'          => 'feroare sichtberens fan barren [[$1]]',
 'revdelete-success'           => "'''Sichtberens fan'e feroaring mei sukses ynsteld.'''",
 'logdelete-success'           => "'''Sichtberens fan it barren mei sukses ynsteld.'''",
 'revdel-restore'              => 'Sichtberens feroarje',
 'pagehist'                    => 'Sideskiednis',
 'deletedhist'                 => 'Wiske skiednis',
-'revdelete-content'           => 'ynhâld',
-'revdelete-summary'           => 'gearfetting bewurkje',
-'revdelete-uname'             => 'meidoggernamme',
-'revdelete-restricted'        => 'hat beheinings oplein oan behearders',
-'revdelete-unrestricted'      => 'hat beheinings foar behearders goedmakke',
-'revdelete-hid'               => 'hat $1 ferburgen',
-'revdelete-unhid'             => '$1 net mear ferburgen',
-'revdelete-log-message'       => '$1 foar $2 {{PLURAL:$2|ferzje|ferzjes}}',
-'logdelete-log-message'       => '$1 foar $2 {{PLURAL:$2|lochboekregel|lochboekregels}}',
 'revdelete-edit-reasonlist'   => 'Redenen foar fuortheljen bewurkje',
 
 # Suppression log
@@ -1007,7 +993,7 @@ Jo kinne ek in nammerûmte as foarheaksel brûke.",
 'prefs-rc'                  => 'Koartlyn feroare',
 'prefs-watchlist'           => 'Folchlist',
 'prefs-watchlist-days'      => 'Oantal dagen yn folchlist sjen litte:',
-'prefs-watchlist-days-max'  => 'Maksimaal 7 dagen',
+'prefs-watchlist-days-max'  => 'Maximum $1 {{PLURAL:$1|day|days}}',
 'prefs-watchlist-edits'     => 'Tal wizigings om sjen te litten yn de útwreide folchlist:',
 'prefs-watchlist-edits-max' => 'Maksimum oantal: 1000',
 'prefs-misc'                => 'Ferskaat',
@@ -1172,7 +1158,6 @@ Jo kinne ek oaren de mûglikheid jaan kontakt mei jo op te nimmen troch in ferwi
 'right-autopatrol'            => 'Bewurkings wurde automatysk as kontrolearre markearre',
 'right-patrolmarks'           => 'Kontroletekens yn resinte feroarings besjen',
 'right-unwatchedpages'        => "In list mei siden besjen dy't net op in folchlist steane",
-'right-trackback'             => 'In trackback opjaan',
 'right-mergehistory'          => 'De skiednis fan siden gearfoegje',
 'right-userrights'            => 'Alle meidoggerrjochten bywurkje',
 'right-userrights-interwiki'  => "Wizigje meidoggerrjochten fan meidoggers yn oare wiki's",
@@ -1215,7 +1200,6 @@ Jo kinne ek oaren de mûglikheid jaan kontakt mei jo op te nimmen troch in ferwi
 'action-patrol'               => 'bewurkings fan oaren as kontrolearre beskôgje',
 'action-autopatrol'           => 'eigen bewurkings as kontrolearre markearje litte',
 'action-unwatchedpages'       => "de list mei siden dy't net op in folchlist steane besjen",
-'action-trackback'            => 'in trackback opjaan',
 'action-mergehistory'         => 'de skiednis fan dizze side gearfoegje',
 'action-userrights'           => 'alle brûkersrjochten bewurkje',
 'action-userrights-interwiki' => "brûkersrjochten fan brûkers fan oare wiki's bewurkje",
@@ -1374,12 +1358,12 @@ PICT # ferskaat
 'upload-proto-error-text' => "Oanbieden mei dizze metoade freget URL's dy't begjinne mei <code>http://</code> of <code>ftp://</code>.",
 'upload-file-error'       => 'Ynterne fout',
 'upload-file-error-text'  => "Der wie in ynterne fout doe't in tydlike triem op'e server oanmakke waard.
-Nim kontakt op mei in [[Special:ListUsers/sysop|systeembehearder]].",
+Nim kontakt op mei in [[Special:ListUsers/sysop|behearder]].",
 'upload-misc-error'       => 'Unbekende oanbiedfout',
 'upload-misc-error-text'  => 'Der is by it oanbieden in ûnbekende fout optreden.
 Kontrolearje of de URL krekt en beskikber is en besykje it nochris.
 As it probleem oanhâldt, nim dan kontakt op mei in
-[[Special:ListUsers/sysop|systeembehearder]].',
+[[Special:ListUsers/sysop|behearder]].',
 'upload-unknown-size'     => 'Unbekinde grutte',
 
 # Some likely curl errors. More could be added from <http://curl.haxx.se/libcurl/c/libcurl-errors.html>
@@ -1670,12 +1654,8 @@ Stipe protokollen: <code>$1</code>',
 'activeusers-noresult' => 'Gjin meidoggers fûn.',
 
 # Special:Log/newusers
-'newuserlogpage'              => 'Ynskriuwingsloch',
-'newuserlogpagetext'          => "Dit is in loch fan meidoggers dy't de lêste tiid ynskreaun binne.",
-'newuserlog-byemail'          => 'wachtwurd is ferstjoerd oer e-mail',
-'newuserlog-create-entry'     => 'Nije meidogger',
-'newuserlog-create2-entry'    => 'hat meidogger "$1" oanmakke',
-'newuserlog-autocreate-entry' => 'Brûker automatysk oanmakke',
+'newuserlogpage'     => 'Ynskriuwingsloch',
+'newuserlogpagetext' => "Dit is in loch fan meidoggers dy't de lêste tiid ynskreaun binne.",
 
 # Special:ListGroupRights
 'listgrouprights'                 => 'Rjochten fan brûkersgroepen',
@@ -1690,7 +1670,7 @@ Der kin [[{{MediaWiki:Listgrouprights-helppage}}|ekstra ynformaasje]] oer yndivi
 'listgrouprights-addgroup-all'    => 'Kin brûkers oan alle groepen tafoegje',
 'listgrouprights-removegroup-all' => 'Kin brûkers út alle groepen fuorthelje',
 
-# E-mail user
+# Email user
 'mailnologin'      => 'Gjin adres beskikber',
 'mailnologintext'  => 'Jo moatte [[Special:UserLogin|oanmelden]] wêze, en in jildich e-postadres [[Special:Preferences|ynsteld]] hawwe, om oan oare meidoggers e-post stjoere te kinnen.',
 'emailuser'        => 'Skriuw meidogger',
@@ -1786,7 +1766,6 @@ is en dat jo dit dogge neffens de [[{{MediaWiki:Policy-url}}]].',
 'actioncomplete'        => 'Dien',
 'deletedtext'           => '"$1" is wiske.
 Sjoch "$2" foar in list fan wat resint wiske is.',
-'deletedarticle'        => '"[[$1]]" is wiske',
 'dellogpage'            => 'Wiskloch',
 'dellogpagetext'        => 'Dit is wat der resint wiske is.
 (Tiden oanjûn as UTC).',
@@ -1879,7 +1858,6 @@ Dit binne de rinnende ynstellings foar de side '''$1''':",
 'undeletereset'           => 'Leechmeitsje',
 'undeleteinvert'          => 'Omkearde seleksje',
 'undeletecomment'         => 'Utlis foar weromsetten:',
-'undeletedarticle'        => '"$1" weromset',
 'undelete-header'         => 'Sjoch [[Special:Log/delete|de wiskloch]] foar resint wiske siden.',
 'undelete-search-box'     => 'Sykje wiske siden',
 'undelete-search-prefix'  => "Lit siden sjen dy't begjinne mei:",
@@ -2031,8 +2009,6 @@ In dizze gefallen is it oan jo hoe't jo de oerlisside werneame of ynfoegje wolle
 'movedto'                 => 'werneamd as',
 'movetalk'                => 'Titel fan oerlisside ek feroarje, as dy der is.',
 'movepage-page-moved'     => 'De side $1 is werneamd nei $2.',
-'1movedto2'               => '[[$1]] feroare ta [[$2]]',
-'1movedto2_redir'         => '[[$1]] feroare ta [[$2]], wat in synonym wie',
 'movelogpage'             => 'Werneam-loch',
 'movelogpagetext'         => 'Dit is in list fan feroare titels.',
 'movereason'              => 'Reden:',
@@ -2176,7 +2152,7 @@ Sjoch: [//www.mediawiki.org/wiki/Localisation MediaWiki Localisation], [//transl
 'thumbsize'      => 'Mjitte fan miniatueren:',
 'file-info'      => 'triemgrutte: $1, MIME-type: $2',
 'file-info-size' => '$1 × $2 pixel, triemgrutte: $3, MIME type: $4',
-'file-nohires'   => '<small>Gjin hegere resolúsje beskikber.</small>',
+'file-nohires'   => 'Gjin hegere resolúsje beskikber.',
 'svg-long-desc'  => 'SVG-triem, nominaal $1 × $2 pixels, triemgrutte: $3',
 'show-big-image' => 'Hegere resolúsje',
 
@@ -2274,7 +2250,7 @@ Alle folgjende links dy't op deselde rigel steane, wurde behannele as útsûnder
 'namespacesall' => 'alles',
 'monthsall'     => 'alle',
 
-# E-mail address confirmation
+# Email address confirmation
 'confirmemail'            => 'Befêstigjen netpostadres',
 'confirmemail_text'       => '{{SITENAME}} freget dat jo jo netpostadres befêstigje eart jo hjir netpost brûke. Brûk de knop hjirûnder om josels in befêstigingskoade ta te stjoeren op it adres dat jo opjûn hawwe. Iepenje de koade dan yn jo blêder om te befêstigjen dat jo netpostadres jildich is.',
 'confirmemail_send'       => 'Stjoer in befêstigingskoade',
@@ -2302,9 +2278,6 @@ Dizze befêstigingskoade ferrint dan op $4.',
 
 # Scary transclusion
 'scarytranscludetoolong' => '[URL-adres is te lang]',
-
-# Trackbacks
-'trackbackremove' => '([$1 Wiskje])',
 
 # Delete conflict
 'confirmrecreate' => "Sûnt jo begûn binne dizze side te bewurkjen, hat meidogger [[User:$1|$1]] ([[User talk:$1|oerlis]]) de side wiske. De reden dy't derfoar jûn waard wie:
@@ -2391,5 +2364,10 @@ Wolle jo de side wier op 'e nij skriuwe?",
 # Special:BlankPage
 'blankpage'              => 'Side is leech',
 'intentionallyblankpage' => 'Dizze side is bewust leech lizzen en wurdt brûkt foar benchmarks, ensfh.',
+
+# New logging system
+'revdelete-restricted'   => 'hat beheinings oplein oan behearders',
+'revdelete-unrestricted' => 'hat beheinings foar behearders goedmakke',
+'newuserlog-byemail'     => 'wachtwurd is ferstjoerd oer e-mail',
 
 );

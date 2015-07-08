@@ -125,7 +125,6 @@ $wgResourceModules += array(
 			'jquery.suggestions',
 			'jquery.autoEllipsis',
 			'jquery.placeholder',
-			'mediawiki.legacy.mwsuggest', // to ensure we disable it in proper order
 		),
 	),
 );

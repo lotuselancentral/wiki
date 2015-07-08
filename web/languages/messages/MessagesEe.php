@@ -14,11 +14,11 @@
 $messages = array(
 # User preference toggles
 'tog-hideminor'            => 'Ɣla tɔtrɔ suewo le tɔtrɔ yeyeawo me',
-'tog-watchcreations'       => 'Tsɔ axa siwo gɔme medze la kpe ɖe axa siwo ŋu nyeƒe ŋku le la ŋu',
-'tog-watchdefault'         => 'Tsɔ axa siwo ŋu metrɔ asi le la kpe ɖe axa siwo ŋu nyeƒe ŋku le la ŋu',
-'tog-watchmoves'           => 'Tsɔ axa siwo ƒe nɔƒe meɖɔli la kpe ɖe axa siwo ŋu nyeƒe ŋku le la ŋu',
-'tog-watchdeletion'        => 'Tsɔ axa siwo metutu la kpe ɖe axa siwo ŋu nyeƒe ŋku le la ŋu',
-'tog-enotifwatchlistpages' => 'Ɖo du nam ne axa aɖe si ŋu nyeƒe ŋku le la trɔ',
+'tog-watchcreations'       => 'Tsɔ axa siwo gɔme medze kpakple axa siwo meda ɖe afisia la kpe ɖe axa siwo ŋu nyeƒe ŋku le la ŋu',
+'tog-watchdefault'         => 'Tsɔ axawo kpakple nutatawo siwo ŋu metrɔ asi le la kpe ɖe axa siwo ŋu nyeƒe ŋku le la ŋu',
+'tog-watchmoves'           => 'Tsɔ  axawo kpakple nutatawo siwo ƒe nɔƒe meɖɔli la kpe ɖe axa siwo ŋu nyeƒe ŋku le la ŋu',
+'tog-watchdeletion'        => 'Tsɔ  axawo kpakple nutatawo siwo metutu la kpe ɖe axa siwo ŋu nyeƒe ŋku le la ŋu',
+'tog-enotifwatchlistpages' => 'Ɖo du nam ne axa aɖe alo nutata aɖe si ŋu nyeƒe ŋku le la trɔ',
 
 'underline-always' => 'Ɣesiaɣi',
 'underline-never'  => 'Gbeɖe',
@@ -88,6 +88,7 @@ $messages = array(
 
 # Cologne Blue skin
 'qbfind'         => 'Di',
+'qbbrowse'       => 'To eme',
 'qbedit'         => 'Trɔ asi le eŋu',
 'qbpageoptions'  => 'Axa sia',
 'qbmyoptions'    => 'Nyeƒe axawo',
@@ -112,6 +113,7 @@ $messages = array(
 'searcharticle'    => 'Yi',
 'history'          => 'Axa sia ƒe tata xoxoawo',
 'history_short'    => 'Xoxoawo',
+'view'             => 'Tata',
 'edit'             => 'Trɔ asi le eŋu',
 'create'           => 'Dze egɔme',
 'editthispage'     => 'Ðɔ axa sia ɖo',
@@ -185,7 +187,6 @@ $messages = array(
 Ɖewomahĩ ame aɖe tutui xoxo.',
 'badtitle'        => 'Tanya gbegblẽ',
 'viewsource'      => 'Kpɔ alesi wowɔe',
-'viewsourcefor'   => '$1 tɔwo',
 
 # Login and logout pages
 'remembermypassword'         => 'Ɖo ŋku nyeƒe dzesi ŋkɔ dzi le mɔ sia dzi (vaseɖe {{PLURAL:$1|ŋkeke|ŋkeke}} $1 megbe)',
@@ -259,8 +260,6 @@ Zã [[Special:Search|nuwo didi le wiki sia dzi]] kpɔ na axa yeyeawo.',
 'revdelete-radio-same'  => '(megatrɔe o)',
 'revdelete-radio-set'   => 'Yo',
 'revdelete-radio-unset' => 'Kpao',
-'revdelete-hid'         => 'ɣla $1',
-'revdelete-unhid'       => 'megaɣla $1 o',
 
 # Diffs
 'history-title'           => '"$1" ƒe tata xoxoawo',
@@ -296,7 +295,7 @@ Zã [[Special:Search|nuwo didi le wiki sia dzi]] kpɔ na axa yeyeawo.',
 'mypreferences'            => 'Nyeƒe didiwo',
 'skin-preview'             => 'Kpɔe do ŋgɔ',
 'prefs-datetime'           => 'Ŋkeke kple gaƒoƒo',
-'prefs-watchlist-days-max' => 'Vaseɖe ŋkeke 7',
+'prefs-watchlist-days-max' => 'Maximum $1 {{PLURAL:$1|day|days}}',
 'timezoneregion-africa'    => 'Afrika',
 'yourlanguage'             => 'Gbe:',
 'yournick'                 => 'Dzesi',
@@ -411,9 +410,7 @@ Zã [[Special:Search|nuwo didi le wiki sia dzi]] kpɔ na axa yeyeawo.',
 'linksearch-ok' => 'Dii',
 
 # Special:Log/newusers
-'newuserlogpage'           => 'Ŋkɔŋlɔla yeyewo ƒe xexlẽme',
-'newuserlog-create-entry'  => 'Nuŋlɔla yeye',
-'newuserlog-create2-entry' => 'woŋlɔ ŋkɔ yeye na $1',
+'newuserlogpage' => 'Ŋkɔŋlɔla yeyewo ƒe xexlẽme',
 
 # Special:ListGroupRights
 'listgrouprights-group' => 'Hame',
@@ -430,7 +427,6 @@ Zã [[Special:Search|nuwo didi le wiki sia dzi]] kpɔ na axa yeyeawo.',
 'delete-confirm' => 'Tutu "$1"',
 'delete-legend'  => 'Tutui',
 'actioncomplete' => 'Wowɔe vɔ',
-'deletedarticle' => 'wotutu "[[$1]]"',
 'dellogpagetext' => 'Afisia wofia axa mamleawo siwo wotutu la',
 
 # Protect
@@ -513,7 +509,6 @@ Zã [[Special:Search|nuwo didi le wiki sia dzi]] kpɔ na axa yeyeawo.',
 Tia ŋkɔ alo tanya bubu.',
 'cantmove-titleprotected' => 'Wòmateŋu ahe axa aɖeke va afii o, elabena wo xemɔ na tanya sia ƒe ŋɔŋlɔ',
 'movedto'                 => 'wohee yi',
-'1movedto2'               => '[[$1]] wohee yi [[$2]]',
 
 # Export
 'export' => 'Ɖo axa siawo ɖa',

@@ -8,8 +8,10 @@
  * @file
  *
  * @author Als-Holder
+ * @author Geitost
  * @author Jens Liebenau
  * @author Jonny84
+ * @author Kaganer
  * @author Piotron
  * @author Przemub
  * @author Purodha
@@ -332,14 +334,13 @@ Falls dies nicht  zutrifft, hast du eventuell einen Fehler in der Software gefun
 Meeglicherweise wurde se bereits vu jemand anders entfernt.',
 'badtitle'             => 'Ungültiger Tittel',
 'badtitletext'         => 'Dar Tittel dar oagefurderta Seite ies ungieltig, laar oder a ungieltiger Sproachlink voo eenem andern Wiki.',
-'perfcached'           => 'De folgenden Daten stomma oaus damm Cache und sein meegliecherweise nee aktuell:',
-'perfcachedts'         => 'Diese Daten stomma oaus damm Cache, letztes Update: $1',
+'perfcached'           => 'De folgenden Daten stomma oaus damm Cache und sein meegliecherweise nee aktuell. A maximum of {{PLURAL:$1|one result is|$1 results are}} available in the cache.',
+'perfcachedts'         => 'Diese Daten stomma oaus damm Cache, letztes Update: $1. A maximum of {{PLURAL:$4|one result is|$4 results are}} available in the cache.',
 'querypage-no-updates' => "'''De Aktualisierungsfunktion fier diese Seite ies zurzeit deaktiviert. De Daten waan bis uff Weiteres nee erneuert.'''",
 'wrong_wfQuery_params' => 'Foalsche Parameter fier wfQuery()<br />
 Funksjonn: $1<br />
 Abfroage: $2',
 'viewsource'           => 'Quelltext oasahn',
-'viewsourcefor'        => 'fier $1',
 'actionthrottled'      => 'Aksjonszoahl limmetiert',
 'actionthrottledtext'  => 'Du host diese Aksjonn zu uffte innerholb annes korza Zeitraums ausgeführt. Bitte woarte a poar Minuta und probiere is doann erneut.',
 'protectedpagetext'    => 'Diese Seite ies fier doas Bearbta gesperrt.',
@@ -383,7 +384,7 @@ Vergiss nä, denne [[Special:Preferences|{{SITENAME}}-Eistellunga]] oazupoassa.'
 'logout'                     => 'Oabmelda',
 'userlogout'                 => 'Oabmelda',
 'notloggedin'                => 'Nä oangemeldet',
-'nologin'                    => "Du hast keen Benutzerkonto? '''$1'''.",
+'nologin'                    => 'Du hast keen Benutzerkonto? $1.',
 'nologinlink'                => 'Neues Benutzerkonto oanleega',
 'createaccount'              => 'Benutzerkonto oanlega',
 'gotaccount'                 => "Du hast bereits a Benutzerkonto? '''$1'''.",
@@ -524,9 +525,6 @@ Du koast de „E-Mail oa diesa Nutzer“-Funksjonn ne nutza, sulange keene gilti
 Denne aktuelle IP-Atresse ies $3, und de Sperr-ID ies $5.
 Bitte fiege olle Informationen jeder Oafroage hinzu, de du stallt.",
 'blockednoreason'                  => 'keene Begründung oagegahn',
-'blockedoriginalsource'            => "Dar Quelltext vu '''$1''' werd hier oagezeigt:",
-'blockededitsource'                => "Dar Quelltext '''denner Änderunga''' oa '''$1''':",
-'whitelistedittitle'               => "Zum Bearbta ies 's erforderlich, oagemeldet zu sei",
 'whitelistedittext'                => 'Du muoßt diech $1, im Seita bearbta zu kinna.',
 'confirmedittext'                  => 'Du mußt denne E-Mail-Atresse erscht bestätiga, bevor du Beoarbeetunga durchfiehrn koast. Bitte ergänze und bestätige Denne E-Mail ei dann [[Special:Preferences|Eenstallunga]].',
 'nosuchsectiontitle'               => 'Obschnitt ne vurhanda',
@@ -710,8 +708,6 @@ Andere Administratoren uff {{SITENAME}} hoan Zugriff uff dann versteckta Inhalt 
 'revdelete-unsuppress'        => 'Einschränkungen fier wiederhergestallte Versionn uffhebn',
 'revdelete-log'               => 'Begriendung:',
 'revdelete-submit'            => 'Uff ausgewählte {{PLURAL:$1|Version|Versiona}} oawenda',
-'revdelete-logentry'          => 'hoot de Versionsansicht fier „[[$1]]“ geändert',
-'logdelete-logentry'          => 'hoot de Sichtbarkeit fier „[[$1]]“ geändert',
 'revdelete-success'           => "'''De Versionsoasicht wurde aktualisiert.'''",
 'revdelete-failure'           => "'''De Versionssichtbarkeit konnte ne aktualisiert waan:'''
 $1",
@@ -722,14 +718,6 @@ $1",
 'revdel-restore-deleted'      => 'gelöschte Versionen',
 'revdel-restore-visible'      => 'sichtbare Versionen',
 'deletedhist'                 => 'Geläschte Versiona',
-'revdelete-content'           => 'Seytainhoalt',
-'revdelete-summary'           => 'Zusommafoassungskommentar',
-'revdelete-uname'             => 'Benutzernoame',
-'revdelete-restricted'        => 'Einschränkungen gelten au fier Administratorn',
-'revdelete-unrestricted'      => 'Einschränkungen fier Administratorn uffgehobn',
-'revdelete-unhid'             => 'machte $1 wieder effentlich',
-'revdelete-log-message'       => '$1 fier $2 {{PLURAL:$2|Version|Versiona}}',
-'logdelete-log-message'       => '$1 fier $2 {{PLURAL:$2|Logbucheintrag|Logbucheinträge}}',
 'revdelete-modify-missing'    => "Fahler beim Bearbta vu ID $1: 'S fahlt ei der Datenbank!",
 'revdelete-no-change'         => "'''Warnung:''' Dar Eentrag vum $1, $2 Seeger besitzt bereits de gewüischta Sichtbarkeitseenstallunga.",
 'revdelete-otherreason'       => 'Andere/zusätzliche Begriendung:',
@@ -973,7 +961,6 @@ Stelle sicher, doaß de Versionsgeschichte anner Seite historisch korrekt ies.',
 'right-autopatrol'           => 'Eegene Beoarbeetunga automatisch ols kontrolliert markieren',
 'right-patrolmarks'          => 'Kontrollmarkierungen enn letzta Änderunga sahn',
 'right-unwatchedpages'       => 'Liste dar unbeobachteten Seyta oasahn',
-'right-trackback'            => 'Trackback iebermitteln',
 'right-mergehistory'         => 'Versionsgeschichten vu Seyta vereinen',
 'right-userrights'           => 'Nutzerrechte bearbta',
 'right-userrights-interwiki' => 'Nutzerrechte ei andern Wikis bearbta',
@@ -1014,7 +1001,6 @@ Stelle sicher, doaß de Versionsgeschichte anner Seite historisch korrekt ies.',
 'action-patrol'               => 'de Beoarbeetunga andere Nutzer zu kontrollieren',
 'action-autopatrol'           => 'eegene Beoarbeetunga ols kontrolliert zu markieren',
 'action-unwatchedpages'       => 'de Liste dar unbeobachteten Seyta einzusahn',
-'action-trackback'            => "an'n Trackback zu iebertraga",
 'action-mergehistory'         => 'de Versionengeschichta vu Seyta zu vereinen',
 'action-userrights'           => 'Nutzerrechte zu ändern',
 'action-userrights-interwiki' => 'de Rechte vu Nutzern ei andern Wikis zu ändern',
@@ -1118,11 +1104,11 @@ Bitte gieb dar Datei an'n Noama, dar dann Inhalt besser beschreibt.",
 'upload-proto-error'        => 'Foalsches Protokoll',
 'upload-proto-error-text'   => 'De URL muuß miet <code>http://</code> oder <code>ftp://</code> beginna.',
 'upload-file-error-text'    => "Bei dar Erstellung a'r temporären Datei uff'd Server ies a interner Fahler uffgetreta.
-Bitte informiere an'n [[Special:ListUsers/sysop|System-Administrator]].",
+Bitte informiere an'n [[Special:ListUsers/sysop|Administrator]].",
 'upload-misc-error'         => 'Unbekennter Fahler beim Huchloada',
 'upload-misc-error-text'    => "Beim Huchloada ies a unbekennter Fahler uffgetreta.
 Priefe de URL uff Fahler, dann Online-Status der Seite und versuche 's erneut.
-Wenn doas Problem wetter bestieht, informiere anna [[Special:ListUsers/sysop|System-Administrator]].",
+Wenn doas Problem wetter bestieht, informiere anna [[Special:ListUsers/sysop|Administrator]].",
 'upload-too-many-redirects' => 'De URL beinhaltete zu viele Wetterleitunga',
 'upload-unknown-size'       => 'Unbekennte Grieße',
 'upload-http-error'         => 'A HTTP-Fahler ies uffgetreta: $1',
@@ -1309,7 +1295,7 @@ Jede Zeile enthält Links zu dar erschta und zweeta Wetterleitung suwie doas Zie
 'listusers-editsonly'     => 'Zeige ock Nutzer miet Beiträga',
 'listusers-creationsort'  => 'Noach Erstelldatum sortiera',
 'usereditcount'           => '$1 {{PLURAL:$1|Beoarbeetung|Beoarbeetunga}}',
-'usercreated'             => 'Erstallt oam $1 im $2 Seeger',
+'usercreated'             => '{{GENDER:$3|Erstallt}} oam $1 im $2 Seeger',
 'newpages'                => 'Neue Seyta',
 'newpages-username'       => 'Benutzernoame:',
 'ancientpages'            => 'Seit längerem unbeoarbeetete Seyta',
@@ -1385,12 +1371,8 @@ Siehe au de Liste der [[Special:WantedCategories|gewinschta Kategorien]].',
 'activeusers-noresult' => 'Kenne Benutzer gefunda.',
 
 # Special:Log/newusers
-'newuserlogpage'              => 'Neuoameldungs-Logbuch',
-'newuserlogpagetext'          => 'Dies ies a Logbuch fier neu erstellte Nutzerkonten.',
-'newuserlog-byemail'          => 'doas Passwurt wourde per E-Mail versandt',
-'newuserlog-create-entry'     => 'Nutzer wourde neu registriert',
-'newuserlog-create2-entry'    => 'erstallte neues Nutzerkonto „$1“',
-'newuserlog-autocreate-entry' => 'Nutzerkonto wurde automatisch erstallt',
+'newuserlogpage'     => 'Neuoameldungs-Logbuch',
+'newuserlogpagetext' => 'Dies ies a Logbuch fier neu erstellte Nutzerkonten.',
 
 # Special:ListGroupRights
 'listgrouprights'                 => 'Nutzergruppen-Rechte',
@@ -1403,7 +1385,7 @@ Zusätzliche Informationen ieber einzelne Rechte kinna [[{{MediaWiki:Listgroupri
 'listgrouprights-addgroup-all'    => 'Nutzer zu olla Gruppa hinzufiega',
 'listgrouprights-removegroup-all' => 'Nutzer aus olla Gruppa entferna',
 
-# E-mail user
+# Email user
 'mailnologin'      => 'Fahler beim E-Mail-Versand',
 'mailnologintext'  => 'Du mußt [[Special:UserLogin|oagemeldet sei]] und anne bestätigte E-Mail-Atresse ei denn [[Special:Preferences|Einstellunga]] eingetraga hoan, im andern Nutzern E-Mails schicka zu kinna.',
 'emailuser'        => 'E-Mail oa diesa Benutzer',
@@ -1505,8 +1487,6 @@ Rickmeldungen und wettere Hilfe: {{canonicalurl:{{MediaWiki:Helppage}}}}',
 'actioncomplete'         => 'Aksjonn beendet',
 'actionfailed'           => 'Aksjonn fahlgeschlaga',
 'deletedtext'            => '„$1“ wurde geläscht. Eim $2 findest du eene Liste dar letzta Läschunga.',
-'deletedarticle'         => 'hoot „[[$1]]“ geläscht',
-'suppressedarticle'      => 'veränderte de Sechtbarkeet vu „[[$1]]“',
 'dellogpage'             => 'Läsch-Logbuch',
 'dellogpagetext'         => 'Dies ies doas Logbuch dar geläschta Seyta und Dateien.',
 'deletionlog'            => 'Läsch-Logbuch',
@@ -1612,7 +1592,6 @@ Der aktuelle Text der geläschta Seite ies ock Administratoren zugänglich.',
 'undeleteviewlink'             => 'oasahn',
 'undeleteinvert'               => 'Auswoahl umkehra',
 'undeletecomment'              => 'Begrindung:',
-'undeletedarticle'             => 'hoot „[[$1]]“ wiederhergestellt',
 'undeletedrevisions-files'     => '{{PLURAL:$1|1 Version|$1 Versionen}} und {{PLURAL:$2|1 Datei|$2 Dateien}} wurden wiederhergestallt',
 'cannotundelete'               => 'Wiederherstellung fehlgeschlaga; jemand anderes hoot de Seite bereits wiederhergestellt.',
 'undelete-header'              => 'Siehe eim [[Special:Log/delete|Läsch-Logbuch]] noach kierzlich geläschta Seyta.',
@@ -1819,9 +1798,6 @@ Bitte den '''neua''' Tittel under '''Ziel''' eintraga, darunder de Umbenennung b
 'movepage-page-moved'          => 'De Seite „$1“ wurde noach „$2“ verschoba.',
 'movepage-page-unmoved'        => 'De Seite „$1“ konnte nee noach „$2“ verschoba waan.',
 'movepage-max-pages'           => 'De Maximalanzoahl vu $1 {{PLURAL:$1|Seite|Seita}} wurde verschuba, Olle wettera Seita kinna ne automatisch verschuba waan.',
-'1movedto2'                    => 'hoot „[[$1]]“ noach „[[$2]]“ verschoba',
-'1movedto2_redir'              => 'hoot „[[$1]]“ noach „[[$2]]“ verschoba on dabei eene Weiterleitung ieberschrieba',
-'move-redirect-suppressed'     => 'Weiterleitung underdrickt',
 'movelogpage'                  => 'Verschiebungs-Logbuch',
 'movelogpagetext'              => 'Dies ies anne Liste oller verschobena Seyta.',
 'movesubpage'                  => '{{PLURAL:$1|Underseite|Underseita}}',
@@ -2019,7 +1995,6 @@ Olle Transwiki-Import-Aksjonna waan eim [[Special:Log/import|Import-Logbuch]] pr
 # Patrol log
 'patrol-log-page'      => 'Kontroll-Logbichl',
 'patrol-log-header'    => 'Dies ies doas Kontroll-Logbuch.',
-'patrol-log-line'      => 'hoot $1 vu „$2“ ols kontrolliert markiert $3',
 'log-show-hide-patrol' => 'Kontroll-Logbichl $1',
 
 # Image deletion
@@ -2045,7 +2020,7 @@ Durch doas Herunderloada und Effna dar Datei koan dei Computer beschädigt waan.
 'widthheightpage' => '$1 × $2, {{PLURAL:$3|1 Seite|$3 Seita}}',
 'file-info'       => 'Dateigreeße: $1, MIME-Typ: $2',
 'file-info-size'  => '$1 × $2 Pixel, Dateigreeße: $3, MIME-Typ: $4',
-'file-nohires'    => '<small>Kenne hiehere Uffleesung vurhanda.</small>',
+'file-nohires'    => 'Kenne hiehere Uffleesung vurhanda.',
 'svg-long-desc'   => 'SVG-Datei, Basisgreeße: $1 × $2 Pixel, Dateigreeße: $3',
 'show-big-image'  => 'Version ei hieherer Uffleesung',
 
@@ -2215,7 +2190,7 @@ Weitere werden standardmäßig nicht angezeigt.
 'monthsall'     => 'olle',
 'limitall'      => 'olle',
 
-# E-mail address confirmation
+# Email address confirmation
 'confirmemail'             => 'E-Mail-Atresse bestätiga (Authentifizierung)',
 'confirmemail_noemail'     => 'Du host kenne giltige E-Mail-Atresse ei denn [[Special:Preferences|persenlicha Eenstallunga]] eengetraga.',
 'confirmemail_text'        => "{{SITENAME}} erfordert, doß du denne E-Mail-Atresse bestätigst (authentifizieren), bevor du de erweiterten E-Mail-Funksjonna benutza koast. Klicke bitte uff de unda stehende, miet „Bestätigungscode zuschicka“ beschriftete Schaltfläche, damit anne automatisch erstellte E-Mail oa de oagegahne Atresse geschickt werd. Diese E-Mail enthält anne Web-Adresse miet a'm Bestätigungscode. Indem du diese Webseyte ei demm Webbrowser effnest, bestätigst du, doß de oagegahne E-Mail-Atresse korrekt und giltig ies.",
@@ -2256,12 +2231,6 @@ Dieser Bestätigungscode ies giltig bis $6, $7 Seeger.',
 'scarytranscludedisabled' => '[Interwiki-Einbindung ies deaktiviert]',
 'scarytranscludefailed'   => '[Vorloageneinbindung fier $1 ies gescheitert]',
 'scarytranscludetoolong'  => '[URL ies zu lang]',
-
-# Trackbacks
-'trackbackbox'      => 'Trackbacks fier diese Seite:<br />
-$1',
-'trackbackremove'   => '([$1 läscha])',
-'trackbackdeleteok' => 'Trackback wurde erfolgreich geläscht.',
 
 # Delete conflict
 'deletedwhileediting' => 'Ochtiche: Diese Seite wurde geläscht, nachdem du oagefanga host se zu bearbta!
@@ -2403,5 +2372,10 @@ De Eengabe muuß ohne dann Zusatz „{{ns:file}}:“ erfolga.',
 'htmlform-submit'              => 'Ieberträän',
 'htmlform-reset'               => 'Änderunga rickgängig macha',
 'htmlform-selectorother-other' => 'Ondere',
+
+# New logging system
+'revdelete-restricted'   => 'Einschränkungen gelten au fier Administratorn',
+'revdelete-unrestricted' => 'Einschränkungen fier Administratorn uffgehobn',
+'newuserlog-byemail'     => 'doas Passwurt wourde per E-Mail versandt',
 
 );

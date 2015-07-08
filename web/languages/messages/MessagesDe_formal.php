@@ -57,6 +57,7 @@ Falls dies nicht der Fall ist, haben Sie eventuell einen Fehler in der Software 
 'actionthrottledtext' => 'Im Rahmen einer Anti-Spam-Maßnahme kann diese Aktion in einem kurzen Zeitabstand nur begrenzt oft ausgeführt werden. Diese Grenze haben Sie überschritten.
 Bitte versuchen Sie es in ein paar Minuten erneut.',
 'viewsourcetext'      => 'Sie können den Quelltext dieser Seite betrachten und kopieren:',
+'viewyourtext'        => "Sie können den Quelltext '''Ihrer Bearbeitung''' dieser Seite betrachten und kopieren:",
 'protectedinterface'  => 'Diese Seite enthält Text für die Benutzeroberfläche der Software auf diesem Wiki und ist geschützt, um Missbrauch vorzubeugen.
 Nutzen Sie bitte [//translatewiki.net/ translatewiki.net], das Lokalisierungsprojekt von MediaWiki, um Übersetzungen für alle Wikis hinzuzufügen oder zu ändern.',
 'editinginterface'    => "'''Warnung:''' Diese Seite enthält von der MediaWiki-Software genutzten Text.
@@ -131,25 +132,35 @@ Bitte warten Sie, bevor Sie es erneut probieren.',
 Möglicherweise haben Sie Ihr Passwort bereits erfolgreich geändert oder ein neues temporäres Passwort beantragt.',
 
 # Special:PasswordReset
-'passwordreset-text'           => 'Bitte dieses Formular ausfüllen, um per E-Mail eine Erinnerung zu den Anmeldeinformationen Ihres Benutzerkontos zu erhalten.',
+'passwordreset-text'           => 'Bitte dieses Formular ausfüllen, um Ihr Passwort zurückzusetzen.',
 'passwordreset-pretext'        => '{{PLURAL:$1||Geben Sie eines der folgenden Daten ein.}}',
-'passwordreset-emailtext-ip'   => 'Jemand mit der IP-Adresse $1, wahrscheinlich Sie selbst, hat eine Erinnerung an Ihre Benutzerkonteninformationen für {{SITENAME}} angefordert ($4). {{PLURAL:$3|Das folgende Benutzerkonto ist|Die folgenden Benutzerkonten sind}} mit dieser E-Mail-Adresse verknüpft:
+'passwordreset-capture-help'   => 'Wenn Sie dieses Kästchen ankreuzen, wird die E-Mail-Nachricht mit dem temporären Passwort sowohl Ihnen angezeigt als auch dem Benutzer zugesandt.',
+'passwordreset-emailtext-ip'   => 'Jemand mit der IP-Adresse $1, wahrscheinlich Sie selbst, hat eine Zurücksetzung Ihres
+Passworts bei {{SITENAME}} angefordert ($4). {{PLURAL:$3|Das folgende Benutzerkonto ist|Die folgenden Benutzerkonten sind}}
+mit dieser E-Mail-Adresse verknüpft:
 
 $2
 
 {{PLURAL:$3|Dieses temporäre Passwort läuft|Diese temporären Passwörter laufen}} innerhalb von {{PLURAL:$5|einem Tag|$5 Tagen}} ab.
-Sie sollten sich anmelden und ein neues Passwort vergeben. Falls jemand anderes diese Anfrage getätigt hat oder Sie sich wieder an Ihr ursprüngliches Passwort erinnern können und es nicht länger ändern möchten, können Sie diese Nachricht ignorieren und weiterhin Ihr altes Passwort benutzen.',
-'passwordreset-emailtext-user' => 'Benutzer $1 auf {{SITENAME}} hat eine Erinnerung an Ihre Benutzerkonteninformationen für {{SITENAME}} angefordert ($4). {{PLURAL:$3|Das folgende Benutzerkonto ist|Die folgenden Benutzerkonten sind}} mit dieser E-Mail-Adresse verknüpft:
+Sie sollten sich anmelden und ein neues Passwort vergeben. Falls jemand anderes diese
+Anfrage getätigt hat oder Sie sich wieder an Ihr ursprüngliches Passwort erinnern können und es nicht länger
+ändern möchten, können Sie diese Nachricht ignorieren und weiterhin Ihr altes
+Passwort benutzen.',
+'passwordreset-emailtext-user' => 'Benutzer $1 bei {{SITENAME}} hat eine Zurücksetzung Ihres Passworts bei {{SITENAME}} angefordert ($4). {{PLURAL:$3|Das folgende Benutzerkonto ist|Die folgenden Benutzerkonten sind}} mit dieser E-Mail-Adresse verknüpft:
 
 $2
 
 {{PLURAL:$3|Dieses temporäre Passwort läuft|Diese temporären Passwörter laufen}} innerhalb von {{PLURAL:$5|einem Tag|$5 Tagen}} ab. Sie sollten sich anmelden und ein neues Passwort vergeben. Falls jemand anderes diese Anfrage getätigt hat oder Sie sich wieder an Ihr ursprüngliches Passwort erinnern können und es nicht ändern möchten, können Sie diese Nachricht ignorieren und weiterhin Ihr altes Passwort benutzen.',
 
+# Special:ChangeEmail
+'changeemail-text'    => 'Füllen Sie dieses Formular vollständig aus, um Ihre E-Mail-Adresse zu ändern. Sie müssen Ihr Passwort angeben, um diese Änderung zu bestätigen.',
+'changeemail-no-info' => 'Sie müssen angemeldet sein, um direkt auf diese Seite zugreifen zu können.',
+
 # Edit page toolbar
 'sig_tip' => 'Ihre Signatur mit Zeitstempel',
 
 # Edit pages
-'anoneditwarning'                  => "Sie bearbeiten diese Seite unangemeldet. Wenn Sie sie speichern, wird Ihre aktuelle IP-Adresse in der Versionsgeschichte aufgezeichnet und ist damit unwiderruflich '''öffentlich''' einsehbar.",
+'anoneditwarning'                  => "Sie bearbeiten diese Seite unangemeldet. Wenn Sie sie abspeichern, wird Ihre aktuelle IP-Adresse in der Versionsgeschichte aufgezeichnet und ist damit unwiderruflich '''öffentlich''' einsehbar.",
 'missingsummary'                   => "'''Hinweis:''' Sie haben keine Zusammenfassung angegeben. Wenn Sie erneut auf „{{int:savearticle}}“ klicken, wird Ihre Änderung ohne Zusammenfassung übernommen.",
 'missingcommenttext'               => 'Ihr Abschnitt enthält keinen Text.',
 'missingcommentheader'             => "'''Achtung:''' Sie haben kein Betreff/Überschrift eingegeben. Wenn Sie erneut auf „{{int:savearticle}}“ klicken, wird Ihre Bearbeitung ohne Überschrift gespeichert.",
@@ -181,7 +192,6 @@ Sie können die „E-Mail an diesen Benutzer“-Funktion nicht nutzen, solange k
 
 Ihre aktuelle IP-Adresse ist $3, und die Sperr-ID ist $5.
 Bitte fügen Sie alle Informationen jeder Anfrage hinzu, die Sie stellen.",
-'blockededitsource'                => "Der Quelltext '''Ihrer Änderungen''' an '''$1''':",
 'whitelistedittext'                => 'Sie müssen sich $1, um Seiten bearbeiten zu können.',
 'confirmedittext'                  => 'Sie müssen Ihre E-Mail-Adresse erst bestätigen, bevor Sie Bearbeitungen vornehmen können. Bitte ergänzen und bestätigen Sie Ihre E-Mail in den [[Special:Preferences|Einstellungen]].',
 'nosuchsectiontext'                => 'Sie haben versucht, einen Abschnitt zu bearbeiten, der nicht existiert.
@@ -243,7 +253,7 @@ Reichen Sie keine Texte ein, falls Sie nicht wollen, dass diese ohne Einschränk
 
 Sie bestätigen hiermit auch, dass Sie diese Texte selbst geschrieben haben oder diese von einer gemeinfreien Quelle kopiert haben
 (siehe $1 für weitere Einzelheiten). '''ÜBERTRAGEN SIE OHNE GENEHMIGUNG KEINE URHEBERRECHTLICH GESCHÜTZTEN INHALTE!'''",
-'longpageerror'                    => "'''Fehler: Der Text, den Sie zu speichern versuchen, ist $1 Kilobyte groß. Dies ist größer als das erlaubte Maximum von $2 Kilobyte.'''
+'longpageerror'                    => "'''Fehler: Der Text, den Sie zu speichern versuchen, ist {{PLURAL:$1|ein Kilobyte|$1 Kilobyte}} groß. Dies ist größer als das erlaubte Maximum von {{PLURAL:$2|ein Kilobyte|$2 Kilobyte}}.'''
 Er kann nicht gespeichert werden.",
 'readonlywarning'                  => "'''Achtung: Die Datenbank wurde für Wartungsarbeiten gesperrt, so dass Ihre Änderungen derzeit nicht gespeichert werden können.
 Sichern Sie den Text bitte lokal auf Ihrem Computer und versuchen Sie zu einem späteren Zeitpunkt, die Änderungen zu übertragen.'''
@@ -437,10 +447,10 @@ Nur Dateizugriff ist erlaubt.',
 'booksources-invalid-isbn' => 'Vermutlich ist die ISBN ungültig.
 Bitte prüfen Sie, ob sie korrekt von der Quelle übertragen wurde.',
 
-# E-mail user
+# Email user
 'mailnologintext' => 'Sie müssen [[Special:UserLogin|angemeldet sein]] und eine bestätigte E-Mail-Adresse in Ihren [[Special:Preferences|Einstellungen]] eingetragen haben, um anderen Benutzern E-Mails schicken zu können.',
-'emailpagetext'   => 'Sie könnent dem Benutzer mit dem unten stehenden Formular eine E-Mail senden.
-Als Absender wird die E-Mail-Adresse aus ihren [[Special:Preferences|Einstellungen]] eingetragen, damit der Benutzer Ihnen antworten kann.',
+'emailpagetext'   => 'Sie können {{GENDER:$1|dem Benutzer|der Benutzerin}} mit dem unten stehenden Formular eine E-Mail senden.
+Als Absender wird die E-Mail-Adresse aus Ihren [[Special:Preferences|Einstellungen]] eingetragen, damit {{GENDER:$1|der Benutzer|die Benutzerin}} Ihnen direkt antworten kann.',
 'emailccsubject'  => 'Kopie Ihrer Nachricht an $1: $2',
 'emailsenttext'   => 'Ihre E-Mail wurde verschickt.',
 
@@ -451,8 +461,7 @@ Als Absender wird die E-Mail-Adresse aus ihren [[Special:Preferences|Einstellung
 'watchnologintext'  => 'Sie müssen [[Special:UserLogin|angemeldet]] sein, um Ihre Beobachtungsliste bearbeiten zu können.',
 'addedwatchtext'    => 'Die Seite „[[:$1]]“ wurde zu Ihrer [[Special:Watchlist|Beobachtungsliste]] hinzugefügt.
 
-Spätere Änderungen an dieser Seite und der dazugehörigen Diskussionsseite werden dort gelistet und
-in der Übersicht der [[Special:RecentChanges|letzten Änderungen]] in Fettschrift dargestellt.',
+Spätere Änderungen an dieser Seite und der dazugehörigen Diskussionsseite werden dort gelistet.',
 'removedwatchtext'  => 'Die Seite „[[:$1]]“ wurde von Ihrer [[Special:Watchlist|Beobachtungsliste]] entfernt.',
 'watchnochange'     => 'Keine der von Ihnen beobachteten Seiten wurde während des angezeigten Zeitraums bearbeitet.',
 'watchlist-details' => 'Sie beobachten {{PLURAL:$1|1 Seite|$1 Seiten}}.',
@@ -472,16 +481,16 @@ Kontakt zum Bearbeiter:
 E-Mail: $PAGEEDITOR_EMAIL
 Wiki: $PAGEEDITOR_WIKI
 
-Es werden Ihnen solange keine weiteren Benachrichtigungs-E-Mails gesendet, bis Sie die Seite wieder besucht haben. Auf Ihrer Beobachtungsliste können Sie alle Benachrichtigungsmarkierungen zusammen zurücksetzen.
+Bei weiterer Aktivität auf der Seite werden Ihnen so lange keine weiteren Benachrichtigungs-E-Mails gesendet, bis Sie die Seite wieder besucht haben. Auf Ihrer Beobachtungsliste können Sie alle Benachrichtigungsmarkierungen zusammen zurücksetzen.
 
-             Das freundliche {{SITENAME}}-Benachrichtigungssystem
+Ihr freundliches {{SITENAME}}-Benachrichtigungssystem
 
 --
-Um die Einstellungen der E-Mail-Benachrichtigung anzupassen, besuchen Sie {{canonicalurl:{{#special:Preferences}}}}
+Um die Einstellungen der E-Mail-Benachrichtigung anzupassen, besuchen Sie {{canonicalurl:{{#special:Preferences}}}}.
 
-Um die Einstellungen Ihrer Beobachtungsliste anzupassen, besuchen Sie {{canonicalurl:{{#special:EditWatchlist}}}}
+Um die Einstellungen Ihrer Beobachtungsliste anzupassen, besuchen Sie {{canonicalurl:{{#special:EditWatchlist}}}}.
 
-Um diese Seite von Ihrer Beobachtungsliste zu entfernen, besuchen Sie $UNWATCHURL
+Um diese Seite von Ihrer Beobachtungsliste zu entfernen, besuchen Sie $UNWATCHURL.
 
 Rückmeldungen und weitere Hilfe: {{canonicalurl:{{MediaWiki:Helppage}}}}',
 
@@ -540,22 +549,22 @@ Bitte geben Sie den Grund für die Sperre an.',
 'movepagetext'                 => "Mit untenstehendem Formular können Sie eine Seite umbenennen, indem Sie sie mitsamt allen Versionen auf einen neuen Titel verschieben.
 Der alte Titel wird danach zum neuen weiterleiten.
 Sie können Weiterleitungen, die auf den Originaltitel verlinken, automatisch korrigieren lassen.
-Stellen Sie sicher, dass Sie im Anschluss alle [[Special:DoubleRedirects|doppelten]] oder [[Special:BrokenRedirects|kaputten Weiterleitungen]] überprüfen.
+Stellen Sie sicher, dass Sie im Anschluss alle [[Special:DoubleRedirects|doppelten]] oder [[Special:BrokenRedirects|defekten Weiterleitungen]] überprüfen.
 Sie sind dafür verantwortlich, dass Links weiterhin auf das korrekte Ziel verweisen.
 
-Die Seite wird '''nicht''' verschoben, sofern es bereits eine Seite mit dem vorgesehenen Titel gibt, es sei denn, diese ist leer oder eine Weiterleitung ohne Versionsgeschichte.
-Dies bedeutet, dass Sie die Umbenennung rückgängig machen können, sofern Sie einen Fehler gemacht haben. Sie können hingegen keine Seite überschreiben.
+Die Seite wird '''nicht''' verschoben, sofern es bereits eine Seite mit dem vorgesehenen Titel gibt, es sei denn, letztere ist eine Weiterleitung ohne Versionsgeschichte.
+Dies bedeutet, dass Sie die Umbenennung rückgängig machen können, sofern Sie einen Fehler gemacht haben. Sie können hingegen keine existierende Seite überschreiben.
 
 '''Warnung!'''
 Die Verschiebung kann weitreichende und unerwartete Folgen für häufig besuchte Seiten haben.
 Sie sollten daher die Konsequenzen verstanden haben, bevor Sie jetzt fortfahren.",
 'movepagetext-noredirectfixer' => "Mit untenstehendem Formular können Sie eine Seite umbenennen, indem Sie sie mitsamt allen Versionen auf einen neuen Titel verschieben.
 Der alte Titel wird danach zum neuen weiterleiten.
-Stellen Sie sicher, dass Sie im Anschluss alle [[Special:DoubleRedirects|doppelten]] oder [[Special:BrokenRedirects|kaputten Weiterleitungen]] überprüfen.
+Stellen Sie sicher, dass Sie im Anschluss alle [[Special:DoubleRedirects|doppelten]] oder [[Special:BrokenRedirects|defekten Weiterleitungen]] überprüfen.
 Sie sind dafür verantwortlich, dass Links weiterhin auf das korrekte Ziel verweisen.
 
-Die Seite wird '''nicht''' verschoben, sofern es bereits eine Seite mit dem vorgesehenen Titel gibt, es sei denn, diese ist leer oder eine Weiterleitung ohne Versionsgeschichte.
-Dies bedeutet, dass Sie die Umbenennung rückgängig machen können, sofern Sie einen Fehler gemacht haben. Sie können hingegen keine Seite überschreiben.
+Die Seite wird '''nicht''' verschoben, sofern es bereits eine Seite mit dem vorgesehenen Titel gibt, es sei denn, diese ist eine Weiterleitung ohne Versionsgeschichte.
+Dies bedeutet, dass Sie die Umbenennung rückgängig machen können, sofern Sie einen Fehler gemacht haben. Sie können hingegen keine existierende Seite überschreiben.
 
 '''Warnung!'''
 Die Verschiebung kann weitreichende und unerwartete Folgen für häufig besuchte Seiten haben.
@@ -599,6 +608,12 @@ Bitte besuchen Sie die Seiten [//www.mediawiki.org/wiki/Localisation MediaWiki-L
 Die Versionsdaten und Benutzernamen bleiben dabei erhalten.
 Alle Transwiki-Import-Aktionen werden im [[Special:Log/import|Import-Logbuch]] protokolliert.',
 'import-token-mismatch' => 'Verlust der Sessiondaten. Bitte versuchen Sie es erneut.',
+'import-error-edit'     => 'Die Seite „$1“ wurde nicht importiert, da Sie nicht berechtigt sind, sie zu bearbeiten.',
+'import-error-create'   => 'Die Seite „$1“ wurde nicht importiert, da Sie nicht berechtigt sind, sie zu erstellen.',
+
+# JavaScriptTest
+'javascripttest-pagetext-frameworks' => 'Bitte wählen Sie eine der folgenden Prüfumgebungen aus: $1',
+'javascripttest-pagetext-skins'      => 'Wählen Sie eine Benutzeroberfläche zur Durchführung der Tests aus:',
 
 # Tooltip help for the actions
 'tooltip-pt-userpage'            => 'Ihre Benutzerseite',
@@ -625,7 +640,7 @@ Das liegt wahrscheinlich an einem Link auf eine externe Seite.',
 'mediawarning' => "'''Warnung:''' Dieser Dateityp kann böswilligen Programmcode enthalten.
 Durch das Herunterladen und Öffnen der Datei kann Ihr Computer beschädigt werden.",
 
-# E-mail address confirmation
+# Email address confirmation
 'confirmemail_noemail'    => 'Sie haben keine gültige E-Mail-Adresse in Ihren [[Special:Preferences|persönlichen Einstellungen]] eingetragen.',
 'confirmemail_text'       => '{{SITENAME}} erfordert, dass Sie Ihre E-Mail-Adresse bestätigen (authentifizieren), bevor Sie die erweiterten E-Mail-Funktionen benutzen können. Klicken Sie bitte auf die unten stehende, mit „Bestätigungscode zuschicken“ beschriftete Schaltfläche, damit eine automatisch erstellte E-Mail an die angegebene Adresse geschickt wird. Diese E-Mail enthält eine Web-Adresse mit einem Bestätigungscode. Indem Sie diese Webseite in Ihrem Webbrowser öffnen, bestätigen Sie, dass die angegebene E-Mail-Adresse korrekt und gültig ist.',
 'confirmemail_pending'    => 'Es wurde Ihnen bereits ein Bestätigungscode per E-Mail zugeschickt.
@@ -642,20 +657,18 @@ Rückmeldung des Mailservers: $1',
 'confirmemail_error'      => 'Es gab einen Fehler bei der Bestätigung Ihrer E-Mail-Adresse.',
 'confirmemail_body'       => 'Hallo,
 
-jemand mit der IP-Adresse $1, wahrscheinlich Sie selbst, hat das Benutzerkonto „$2“ in {{SITENAME}} registriert.
+jemand mit der IP-Adresse $1, wahrscheinlich Sie selbst, hat das Benutzerkonto „$2“ bei {{SITENAME}} registriert.
 
-Um die E-Mail-Funktion von {{SITENAME}} (wieder) zu aktivieren und um zu bestätigen,
-dass dieses Benutzerkonto wirklich zu Ihrer E-Mail-Adresse und damit zu Ihnen gehört, öffnen Sie bitte die folgende Web-Adresse:
+Um die E-Mail-Funktionen von {{SITENAME}} (wieder) zu aktivieren und um zu bestätigen,
+dass dieses Benutzerkonto wirklich zu Ihrer E-Mail-Adresse und damit zu Ihnen gehört, öffnen Sie bitte folgenden Link in Ihrem Browser:
 
 $3
-
-Sollte die vorstehende Adresse in Ihrem E-Mail-Programm über mehrere Zeilen gehen, müssen Sie diese eventuell per Hand in die Adresszeile Ihres Web-Browsers einfügen.
 
 Wenn Sie das genannte Benutzerkonto *nicht* registriert haben, folgen Sie diesem Link, um den Bestätigungsprozess abzubrechen:
 
 $5
 
-Dieser Bestätigungscode ist gültig bis $6, $7 Uhr.',
+Dieser Bestätigungscode ist gültig bis zum $6, $7 Uhr.',
 'confirmemail_body_set'   => 'Jemand mit der IP-Adresse $1, wahrscheinlich Sie selbst,
 hat die E-Mail-Adresse des Benutzerkontos „$2“ auf {{SITENAME}} zu dieser E-Mail-Adresse abgeändert.
 
@@ -698,5 +711,16 @@ Sie können auch die [[Special:EditWatchlist|Standardseite]] zum Bearbeiten benu
 'dberr-again'     => 'Warten Sie einige Minuten und versuchen Sie dann neu zuladen.',
 'dberr-usegoogle' => 'Sie könnten in der Zwischenzeit mit Google suchen.',
 'dberr-outofdate' => 'Beachten Sie, dass der Suchindex unserer Inhalte bei Google veraltet sein kann.',
+
+# Feedback
+'feedback-bugornote' => 'Sofern Sie detailliert ein technisches Problem beschreiben möchten, melden Sie bitte [$1 einen Fehler].
+Anderenfalls können Sie auch das untenstehende einfache Formular nutzen. Ihr Kommentar wird, zusammen mit Ihrem Benutzernamen und der Version des von Ihnen verwendeten Webbrowsers sowie Betriebssystems, auf der Seite „[$3 $2]“ hinzugefügt.',
+'feedback-thanks'    => 'Vielen Dank. Ihre Rückmeldung wurde auf der Seite „[$2 $1]“ gespeichert.',
+'feedback-bugcheck'  => 'Super! Bitte überprüfen Sie noch, ob es sich hierbei nicht um einen bereits [$1 bekannten Fehler] handelt.',
+
+# API errors
+'api-error-badaccess-groups' => 'Sie haben nicht die Berechtigung Dateien in dieses Wiki hochzuladen.',
+'api-error-hookaborted'      => 'Die von Ihnen vorgesehene Anpassung kann nicht durchgeführt werden (Unterbrechung durch eine Programmschnittstelle).',
+'api-error-mustbeloggedin'   => 'Um Dateien hochladen zu können, müssen Sie angemeldet sein.',
 
 );

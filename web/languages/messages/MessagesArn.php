@@ -380,8 +380,6 @@ Rulpakünuy feychi kangelkülelu dungu.",
 'revdel-restore-visible'     => 'pengengekelu malün',
 'pagehist'                   => 'pünon pakina',
 'deletedhist'                => 'Ñamümüngelu pünon',
-'revdelete-uname'            => 'Üy kellufe',
-'revdelete-hid'              => 'Ellkan $1',
 'revdelete-edit-reasonlist'  => 'Wirin dungu ñamümgün mew',
 
 # History merging
@@ -600,7 +598,7 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 'nviews'            => '$1 {{PLURAL:$1|pen|pen}}',
 'prefixindex'       => 'Kom wülngiñ engu wüne konkülelu nemül',
 'shortpages'        => 'Pichi pakina',
-'usercreated'       => 'Llintun $1 mew $2 mew',
+'usercreated'       => '{{GENDER:$3|Dewmangey}} $1, $2 mew',
 'newpages'          => 'Weke wülngiñ',
 'newpages-username' => 'Kellufe ñi üy',
 'move'              => 'Wiñamün',
@@ -641,7 +639,7 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 # Special:ListGroupRights
 'listgrouprights-members' => '(koneltulu kellufe ñi wif)',
 
-# E-mail user
+# Email user
 'emailuser'    => 'Amulün werküwe tüfachi kellufe',
 'emailsubject' => 'Dungu',
 'emailmessage' => 'Dungu',
@@ -676,7 +674,6 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 'delete-legend'         => 'Ñamümün',
 'actioncomplete'        => 'Wechuley chi femün',
 'actionfailed'          => 'Wedalkay chi femün.',
-'deletedarticle'        => '«[[$1]]» Ñamümün',
 'dellogpage'            => 'Liftungepelu wülngiñ ñi wirintukun',
 'deletereasonotherlist' => 'Kake dungu',
 
@@ -775,7 +772,6 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 'move-watch'              => 'Llaytun tüfachi pakina',
 'movepagebtn'             => 'Nengümün pakina',
 'movedto'                 => 'Nengümün',
-'1movedto2'               => '[[$1]] wiñamngey [[$2]] püle',
 'movelogpage'             => 'Nengümün wirintukun',
 'revertmove'              => 'wüñoeltun',
 'delete_and_move'         => 'Ñamümün ka nengümün',
@@ -854,15 +850,13 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 'others'    => 'fill',
 'siteusers' => '{{PLURAL:$2|Kellufe|Kellufe}} $1 {{SITENAME}}',
 
-# Patrol log
-'patrol-log-diff' => 'ng$1',
-
 # Browsing diffs
 'previousdiff' => '← Füta wirin',
 'nextdiff'     => 'We wirin →',
 
 # Media information
 'file-info-size' => '$1 × $2 adentun piküsel, eltukawün ñi tunte ngen: $3, MIME ñi chumngen: $4',
+'file-nohires'   => 'Pepiduamngefalay chum pengeam.',
 'svg-long-desc'  => 'SVG eltukawe, pingey $1 × $2 adentun piküsel, eltukawün ñi tunte ngen: $3',
 'show-big-image' => 'Rüf chum pengeam',
 
@@ -870,7 +864,7 @@ Fey ñi chumngen mülelu ($2 fey ñi chumngen wülngiñ) pengeli tüfa mew.',
 'ilsubmit' => 'Kintu',
 
 # Video information, used by Language::formatTimePeriod() to format lengths in the above messages
-'hours-abbrev' => 'o',
+'hours-abbrev' => '$1o',
 
 # Bad image list
 'bad_image_list' => 'Feychi chumkünuwe ta femngechi:
@@ -926,9 +920,6 @@ Ka dungu ellkangeay wünedullin reke.
 'namespacesall' => 'kom',
 'monthsall'     => '(kom)',
 'limitall'      => 'Kom',
-
-# Trackbacks
-'trackbackremove' => '([$1 Ñamümün])',
 
 # action=purge
 'confirm_purge_button' => 'Feley may',

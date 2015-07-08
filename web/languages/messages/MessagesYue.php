@@ -7,7 +7,9 @@
  * @ingroup Language
  * @file
  *
+ * @author Anson2812
  * @author Horacewai2
+ * @author Justincheng12345
  * @author Kaganer
  * @author KaiesTse
  * @author Mark85296341
@@ -15,6 +17,7 @@
  * @author Waihorace
  * @author William915
  * @author Wong128hk
+ * @author Yfdyh000
  */
 
 $namespaceNames = array(
@@ -23,11 +26,11 @@ $namespaceNames = array(
 	NS_TALK             => '傾偈',
 	NS_USER             => '用戶',
 	NS_USER_TALK        => '用戶傾偈',
-	NS_PROJECT_TALK     => '$1_傾偈',
+	NS_PROJECT_TALK     => '$1傾偈',
 	NS_FILE             => '文件',
 	NS_FILE_TALK        => '文件傾偈',
 	NS_MEDIAWIKI        => 'MediaWiki',
-	NS_MEDIAWIKI_TALK   => 'MediaWiki_傾偈',
+	NS_MEDIAWIKI_TALK   => 'MediaWiki傾偈',
 	NS_TEMPLATE         => '模',
 	NS_TEMPLATE_TALK    => '模傾偈',
 	NS_HELP             => '幫手',
@@ -48,9 +51,7 @@ $namespaceAliases = array(
 	"用户 对话" 		=> NS_USER_TALK,
 	"用戶 討論" 		=> NS_USER_TALK,
 	"用户 讨论" 		=> NS_USER_TALK,
-	# This has never worked so it's unlikely to annoy anyone if I disable it -- TS
-	# "{$wgMetaNamespace} 討論" => NS_PROJECT_TALK,
-	# "{$wgMetaNamespace} 讨论" => NS_PROJECT_TALK,
+	'$1_傾偈'		=> NS_PROJECT_TALK,
 	"檔" 			=> NS_FILE,
 	"檔案" 			=> NS_FILE,
 	"档" 			=> NS_FILE,
@@ -69,6 +70,7 @@ $namespaceAliases = array(
 	"图 讨论" 		=> NS_FILE_TALK,
 	"圖像 討論" 		=> NS_FILE_TALK,
 	"图像 讨论" 		=> NS_FILE_TALK,
+	'MediaWiki_傾偈'	=> NS_FILE_TALK,
 	"模 討論" 		=> NS_TEMPLATE_TALK,
 	"模 讨论" 		=> NS_TEMPLATE_TALK,
 	"幫助" 			=> NS_HELP,
@@ -589,14 +591,13 @@ $1',
 可能已經畀另一位刪咗。',
 'badtitle'             => '錯嘅標題',
 'badtitletext'         => '要求嘅標題唔啱、空白，跨語言或者跨維基連結標題錯誤。亦可能係標題包括咗一個或多過一個字元。',
-'perfcached'           => '以下嘅資料係嚟自快取，可能唔係最新嘅。',
-'perfcachedts'         => '以下嘅資料係嚟自快取，上一次嘅更新喺$1。',
+'perfcached'           => '以下嘅資料係嚟自快取，可能唔係最新嘅。 A maximum of {{PLURAL:$1|one result is|$1 results are}} available in the cache.',
+'perfcachedts'         => '以下嘅資料係嚟自快取，上一次嘅更新喺$1。 A maximum of {{PLURAL:$4|one result is|$4 results are}} available in the cache.',
 'querypage-no-updates' => '響呢一頁嘅更新現時停用。啲資料將唔會即時更新。',
 'wrong_wfQuery_params' => 'wfQuery() 嘅參數錯誤<br />
 函數： $1<br />
 查詢： $2',
 'viewsource'           => '睇吓原始碼',
-'viewsourcefor'        => '$1嘅原始碼',
 'actionthrottled'      => '動作已壓制',
 'actionthrottledtext'  => '基於反垃圾嘢嘅考量，你而家響呢段短時間之內限制咗去做呢一個動作，而你已經超過咗個上限。請響幾分鐘之後再試過。',
 'protectedpagetext'    => '呢一頁已經保護咗唔畀改。',
@@ -703,7 +704,7 @@ $1',
 'loginlanguagelabel'         => '語言：$1',
 'suspicious-userlogout'      => '你去登出嘅要求已經拒絕咗，因為佢可能由壞咗嘅瀏覽器或者快取代理傳送。',
 
-# E-mail sending
+# Email sending
 'php-mail-error-unknown' => '響 PHP 嘅 mail() 參數度出現咗未知嘅錯誤',
 
 # Change password dialog
@@ -792,9 +793,6 @@ $1',
 
 你現時用緊嘅 IP 地址係 $3，個封鎖 ID 係 #$5。 請喺你嘅查詢都註明呢個封鎖上面嘅資料。",
 'blockednoreason'                  => '無原因畀低',
-'blockedoriginalsource'            => "有關'''$1'''嘅原始碼響下面列示：",
-'blockededitsource'                => "有關'''你'''對'''$1'''嘅'''編輯'''文字響下面列示：",
-'whitelistedittitle'               => '需要登入之後先至可以編輯',
 'whitelistedittext'                => '你需要$1去編輯呢頁。',
 'confirmedittext'                  => '你個電郵地址要確定咗先可以編輯。唔該先去[[Special:Preferences|喜好設定]]填咗電郵地址，並做埋確認手續。',
 'nosuchsectiontitle'               => '搵唔到呢個小節',
@@ -838,7 +836,7 @@ $1',
 '''佢嘅內容重未儲存！'''",
 'userinvalidcssjstitle'            => "'''警告：''' 無叫做 \"\$1\" 嘅畫面。請記住自訂介面的 .css 和 .js 頁面時應使用細楷，例如：{{ns:user}}:Foo/vector.css 而唔係 {{ns:user}}:Foo/Vector.css 。",
 'updated'                          => '(己更新)',
-'note'                             => "'''留意:'''",
+'note'                             => "'''留意：'''",
 'previewnote'                      => "'''請記住呢個只係預覽。'''
 更改嘅内容重未儲存！",
 'previewconflict'                  => '呢個預覽係反映如果你選擇儲存嘅話，嘅上面嘅文字編輯區裏面嘅字會儲存落嚟。',
@@ -905,7 +903,7 @@ $1',
 
 你應該要考慮吓繼續編輯呢一版係唔係適合嘅。
 為咗方便起見，呢一版嘅刪除同搬版記錄已經響下面提供:",
-'moveddeleted-notice'              => '呢一版已經刪除咗。
+'moveddeleted-notice'              => '呢一版已經刪咗。
 呢版嘅刪除同搬版日誌響下面提供咗以便參考。',
 'log-fulllog'                      => '睇成個日誌',
 'edit-hook-aborted'                => '編輯由鈎取消咗。
@@ -1043,8 +1041,6 @@ $1',
 'revdelete-unsuppress'        => '響已經恢復咗嘅修訂度移除限制',
 'revdelete-log'               => '原因：',
 'revdelete-submit'            => '應用到已經選取嘅{{PLURAL:$1|修訂}}',
-'revdelete-logentry'          => '已經更改《[[$1]]》嘅修訂可見性',
-'logdelete-logentry'          => '已經更改《[[$1]]》嘅事件可見性',
 'revdelete-success'           => "'''已經成功設定修訂嘅可見性。'''",
 'revdelete-failure'           => "'''修訂可見性更新唔到：'''
 $1",
@@ -1056,15 +1052,6 @@ $1",
 'revdel-restore-visible'      => '睇到嘅修訂',
 'pagehist'                    => '頁面歷史',
 'deletedhist'                 => '刪除咗嘅歷史',
-'revdelete-content'           => '內容',
-'revdelete-summary'           => '編輯摘要',
-'revdelete-uname'             => '用戶名',
-'revdelete-restricted'        => '已經應用限制到操作員',
-'revdelete-unrestricted'      => '已經拎走對於操作員嘅限制',
-'revdelete-hid'               => '隱藏 $1',
-'revdelete-unhid'             => '唔隱藏 $1',
-'revdelete-log-message'       => '$1嘅$2次修訂',
-'logdelete-log-message'       => '$1嘅$2個事件',
 'revdelete-hide-current'      => '隱藏緊響$1 $2嘅項目錯誤：呢個係現時嘅修訂，唔可以隱藏。',
 'revdelete-show-no-access'    => '顯示緊響$1 $2嘅項目錯誤：呢個項目標示咗做"限制咗"，你對佢無通行權。',
 'revdelete-modify-no-access'  => '改緊響$1 $2嘅項目錯誤：呢個項目標示咗做"限制咗"，你對佢無通行權。',
@@ -1115,7 +1102,7 @@ $1",
 'mergelogpagetext'   => '下面係一個最近由一版嘅修訂記錄合併到另一個嘅一覽。',
 
 # Diffs
-'history-title'            => '"$1"嘅修訂歷史',
+'history-title'            => '「$1」嘅修訂歷史',
 'difference'               => '（修訂之間嘅差異）',
 'difference-multipage'     => '（版之間嘅差異）',
 'lineno'                   => '第$1行：',
@@ -1199,7 +1186,7 @@ $1",
 
 # Preferences page
 'preferences'                   => '喜好設定',
-'mypreferences'                 => '安排與架生',
+'mypreferences'                 => '自訂喜好',
 'prefs-edits'                   => '編輯數:',
 'prefsnologin'                  => '重未登入',
 'prefsnologintext'              => '你一定要去<span class="plainlinks">[{{fullurl:{{#Special:UserLogin}}|returnto=$1}} 登入]</span>設定好用戶喜好值先。',
@@ -1214,7 +1201,7 @@ $1",
 'prefs-rc'                      => '最近更改',
 'prefs-watchlist'               => '監視清單',
 'prefs-watchlist-days'          => '監視清單嘅顯示日數：',
-'prefs-watchlist-days-max'      => '最多 7 日',
+'prefs-watchlist-days-max'      => 'Maximum $1 {{PLURAL:$1|day|days}}',
 'prefs-watchlist-edits'         => '喺加強版監視清單度嘅最多顯示更改數：',
 'prefs-watchlist-edits-max'     => '最大數量：1000',
 'prefs-watchlist-token'         => '監視清單幣：',
@@ -1226,7 +1213,7 @@ $1",
 'resetprefs'                    => '清除未保存嘅更改',
 'restoreprefs'                  => '恢復全部預設設定',
 'prefs-editing'                 => '編輯中',
-'prefs-edit-boxsize'            => '編輯框大細',
+'prefs-edit-boxsize'            => '編寫框大細',
 'rows'                          => '列：',
 'columns'                       => '行：',
 'searchresultshead'             => '搵嘢',
@@ -1269,7 +1256,7 @@ $1",
 'prefs-common-css-js'           => '共有嘅CSS同埋JavaScript畀所有畫面用：',
 'prefs-reset-intro'             => '你可以用呢版去重設你嘅喜好設定到網站預設值。呢個動作無得番轉頭。',
 'prefs-emailconfirm-label'      => '電郵確認:',
-'prefs-textboxsize'             => '編輯窗大細',
+'prefs-textboxsize'             => '編寫框大細',
 'youremail'                     => '電郵:',
 'username'                      => '用戶名:',
 'uid'                           => '用戶 ID:',
@@ -1309,7 +1296,7 @@ $1",
 'prefs-displaywatchlist'        => '顯示選項',
 'prefs-diffs'                   => '差異',
 
-# User preference: e-mail validation using jQuery
+# User preference: email validation using jQuery
 'email-address-validity-valid'   => '電郵地址睇嚟有效',
 'email-address-validity-invalid' => '請打一個有效嘅電郵地址',
 
@@ -1412,7 +1399,6 @@ $1",
 'right-autopatrol'            => '將自己嘅編輯自動標示做已巡查嘅',
 'right-patrolmarks'           => '去睇最近巡查標記更改',
 'right-unwatchedpages'        => '去睇未監視嘅版',
-'right-trackback'             => '遞交一個trackback',
 'right-mergehistory'          => '合併版歷史',
 'right-userrights'            => '編輯全部用戶嘅權限',
 'right-userrights-interwiki'  => '編輯響其它wiki嘅用戶權限',
@@ -1456,7 +1442,6 @@ $1",
 'action-patrol'               => '標示其它嘅編輯做已巡查嘅',
 'action-autopatrol'           => '將你嘅編輯標示做已巡查嘅',
 'action-unwatchedpages'       => '睇未畀人監視嘅版',
-'action-trackback'            => '遞交一個trackback',
 'action-mergehistory'         => '合併呢版嘅歷史',
 'action-userrights'           => '編輯全部嘅權限',
 'action-userrights-interwiki' => '編輯響其它wiki用戶嘅權限',
@@ -1885,7 +1870,7 @@ Template:搞清楚',
 'listusers-editsonly'     => '只顯示有編輯嘅用戶',
 'listusers-creationsort'  => '按建立日期排序',
 'usereditcount'           => '$1次編輯',
-'usercreated'             => '響$1 $2建立',
+'usercreated'             => '響$1 $2{{GENDER:$3|建立}}',
 'newpages'                => '新頁',
 'newpages-username'       => '用戶名：',
 'ancientpages'            => '舊頁面',
@@ -1976,12 +1961,8 @@ Template:搞清楚',
 'activeusers-noresult'   => '搵唔到用戶。',
 
 # Special:Log/newusers
-'newuserlogpage'              => '使用者開戶記錄',
-'newuserlogpagetext'          => '呢個係一個使用者開戶嘅日誌',
-'newuserlog-byemail'          => '密碼已由電郵寄出',
-'newuserlog-create-entry'     => '新用戶戶口',
-'newuserlog-create2-entry'    => '已經開咗$1嘅新戶口',
-'newuserlog-autocreate-entry' => '自動建立咗戶口',
+'newuserlogpage'     => '使用者開戶記錄',
+'newuserlogpagetext' => '呢個係一個使用者開戶嘅日誌',
 
 # Special:ListGroupRights
 'listgrouprights'                      => '用戶組權限',
@@ -2002,7 +1983,7 @@ Template:搞清楚',
 'listgrouprights-addgroup-self-all'    => '加入全部組到自己嘅戶口度',
 'listgrouprights-removegroup-self-all' => '響自己嘅戶口度可以拎走全部組',
 
-# E-mail user
+# Email user
 'mailnologin'          => '冇傳送地址',
 'mailnologintext'      => '你一定要[[Special:UserLogin|登入咗]]同埋喺你嘅[[Special:Preferences|喜好設定]]度有個有效嘅電郵地址先可以傳送電郵畀其他用戶。',
 'emailuser'            => '發電郵畀呢位用戶',
@@ -2115,8 +2096,6 @@ wiki: $PAGEEDITOR_WIKI
 'actioncomplete'         => '操作完成',
 'actionfailed'           => '操作失敗',
 'deletedtext'            => '"$1"已經刪除。最近嘅刪除記錄請睇$2。',
-'deletedarticle'         => '已經刪除"[[$1]]"',
-'suppressedarticle'      => '已經廢止"[[$1]]"',
 'dellogpage'             => '刪除日誌',
 'dellogpagetext'         => '以下係最近嘅刪除清單。',
 'deletionlog'            => '刪除日誌',
@@ -2236,7 +2215,6 @@ wiki: $PAGEEDITOR_WIKI
 'undeletereset'                => '重設',
 'undeleteinvert'               => '反選',
 'undeletecomment'              => '原因：',
-'undeletedarticle'             => '已經救返"[[$1]]"',
 'undeletedrevisions'           => '$1個修訂已經救返',
 'undeletedrevisions-files'     => '$1個修訂同$2個檔案已經救返',
 'undeletedfiles'               => '$1個檔案已經救返',
@@ -2356,7 +2334,7 @@ $1',
 'ipusubmit'                       => '拎走呢個封鎖',
 'unblocked'                       => '"[[User:$1|$1]]"已經解封',
 'unblocked-id'                    => '$1嘅封鎖已經拎走咗',
-'ipblocklist'                     => 'IP地址同用戶名阻止名單',
+'ipblocklist'                     => '封咗嘅用戶',
 'ipblocklist-legend'              => '搵一位封咗嘅用戶',
 'ipblocklist-submit'              => '搵',
 'ipblocklist-localblock'          => '本地封鎖',
@@ -2486,9 +2464,6 @@ $1',
 'movepage-page-moved'          => '版$1已經搬到去$2。',
 'movepage-page-unmoved'        => '版$1唔可以搬到去$2。',
 'movepage-max-pages'           => '最多有$1版已經搬咗同時唔可以自動噉再搬更多。',
-'1movedto2'                    => '[[$1]]搬到去[[$2]]',
-'1movedto2_redir'              => '[[$1]]通過跳轉搬到去[[$2]]',
-'move-redirect-suppressed'     => '跳轉已壓制',
 'movelogpage'                  => '移動日誌',
 'movelogpagetext'              => '以下係全部搬過嘅頁面清單。',
 'movesubpage'                  => '{{PLURAL:$1|細頁|細頁}}',
@@ -2760,9 +2735,6 @@ $1',
 # Patrol log
 'patrol-log-page'      => '巡查日誌',
 'patrol-log-header'    => '呢個係已經巡查過嘅日誌。',
-'patrol-log-line'      => '已經標示咗$1/$2版做已經巡查嘅$3',
-'patrol-log-auto'      => '(自動)',
-'patrol-log-diff'      => '修訂 $1',
 'log-show-hide-patrol' => '$1巡查紀錄',
 
 # Image deletion
@@ -2788,7 +2760,7 @@ $1',
 'widthheightpage'      => '$1 × $2, $3版',
 'file-info'            => '檔案大細：$1 ，MIME類型：$2',
 'file-info-size'       => '$1 × $2 像素，檔案大細：$3 ，MIME類型：$4',
-'file-nohires'         => '<small>冇更高解像度嘅圖像。</small>',
+'file-nohires'         => '冇更高解像度嘅圖像。',
 'svg-long-desc'        => 'SVG檔案，表面大細： $1 × $2 像素，檔案大細：$3',
 'show-big-image'       => '完整解像度',
 'file-info-gif-looped' => '循環',
@@ -2849,7 +2821,7 @@ Variants for Chinese language
 'metadata-help'     => '呢個檔案有額外嘅資料。佢應該係數碼相機或者掃描器整出來嘅。如果佢整咗之後畀人改過，裏面嘅資料未必同改過之後相符。',
 'metadata-expand'   => '打開詳細資料',
 'metadata-collapse' => '收埋詳細資料',
-'metadata-fields'   => '響呢個信息列出嘅 EXIF 元數據項目會喺圖像頁中包含起嚟，而且個元數據表除咗喺下面列出嘅項目之外，其它嘅項目預設會被隱藏。
+'metadata-fields'   => '響呢個信息列出嘅EXIF元數據項目會喺圖像頁中包含起嚟，而且個元數據表除咗喺下面列出嘅項目之外，其它嘅項目預設會隱藏。
 * make
 * model
 * datetimeoriginal
@@ -3138,7 +3110,7 @@ Variants for Chinese language
 'monthsall'     => '全部',
 'limitall'      => '全部',
 
-# E-mail address confirmation
+# Email address confirmation
 'confirmemail'              => '確認電郵地址',
 'confirmemail_noemail'      => '你唔需要響你嘅[[Special:Preferences|用戶喜好設定]]度設定一個有效嘅電郵地址。',
 'confirmemail_text'         => '{{SITENAME}}需要你喺使用電郵功能之前驗證吓你嘅電郵地址。啟用下邊個掣嚟發封確認信去你個地址度。封信入面會附帶一條包含代碼嘅連結；喺你個瀏覽器度打開條連結嚟確認你嘅電郵地址係有效嘅。',
@@ -3199,13 +3171,6 @@ $5
 'scarytranscludedisabled' => '[跨 wiki 滲漏正停用]',
 'scarytranscludefailed'   => '[$1嘅頡取模動作失敗]',
 'scarytranscludetoolong'  => '[URL 太長]',
-
-# Trackbacks
-'trackbackbox'      => '呢一版嘅過去追蹤：<br />
-$1',
-'trackbackremove'   => '([$1 刪除])',
-'trackbacklink'     => '過去追蹤',
-'trackbackdeleteok' => '過去追蹤已經成功噉樣刪除。',
 
 # Delete conflict
 'deletedwhileediting' => '警告：你寫緊文嗰陣，有用戶洗咗呢版！',
@@ -3388,8 +3353,7 @@ MediaWiki是基於使用目的而加以發佈，但係就唔會負上任何嘅�
 
 # Database error messages
 'dberr-header'      => '呢個 wiki 出咗問題',
-'dberr-problems'    => '對唔住！
-呢一版出現咗一啲技術性問題。',
+'dberr-problems'    => '對唔住！呢一版出現咗一啲技術性問題。',
 'dberr-again'       => '試吓等多幾分種然後開試。',
 'dberr-info'        => '(唔能夠連繫個資料伺服器: $1)',
 'dberr-usegoogle'   => '響現階段你可以用 Google 去搵嘢。',
@@ -3411,5 +3375,10 @@ MediaWiki是基於使用目的而加以發佈，但係就唔會負上任何嘅�
 # SQLite database support
 'sqlite-has-fts' => '$1 有全文搜尋支援',
 'sqlite-no-fts'  => '$1 冇全文搜尋支援',
+
+# New logging system
+'revdelete-restricted'   => '已經應用限制到操作員',
+'revdelete-unrestricted' => '已經拎走對於操作員嘅限制',
+'newuserlog-byemail'     => '密碼已由電郵寄出',
 
 );

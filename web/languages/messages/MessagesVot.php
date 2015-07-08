@@ -246,6 +246,10 @@ Kui cüsümüssessä ebõõ roocittu cülci, võib õlla õlõttõ löütännü 
 # Special:PasswordReset
 'passwordreset-username' => 'Cäüttijänimi:',
 
+# Special:ChangeEmail
+'changeemail-newemail' => 'Vassõn e-mail:',
+'changeemail-cancel'   => 'Otmeńoit',
+
 # Edit page toolbar
 'bold_sample'     => 'Pimmiä teksti',
 'bold_tip'        => 'Pimmiä teksti',
@@ -282,6 +286,8 @@ Võitta loovva cüľľee cirjuttamall alla õlõvasõõ tilaa. Kui että taho lo
 'noarticletext'                    => '{{GRAMMAR:inessive|{{SITENAME}}}} ebõõ sene nimissä cülciä.
 * Võid [[Special:Search/{{PAGENAME}}|ettsiä cüľľee nimellä]] muilta cüľľeltä.
 * Võid cirjuttõma uuvvõõ cüľľee <span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit}} {{PAGENAME}}]</span>.',
+'noarticletext-nopermission'       => 'Paraika kazell lehocüllell eb õõ teksta.
+Tüü võittõ [[Special:Search/{{PAGENAME}}|kaze nime nimettamizõ löütä]] muiss artikkeliiss, ehci <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}}löütä azjakõhaizõd cirjauhsõd žurnaaliiss]</span>.',
 'previewnote'                      => "'''Kase on ainult prestavleńńa.''' Cülciä ebõõ veel salvotõttu!",
 'editing'                          => 'Muutun $1',
 'editingsection'                   => 'Muuttõmizõll on õsa cüľľess $1',
@@ -434,6 +440,8 @@ Proovvi lizät etsün alkuu ''all:'', nii ettsü etsib kõikkõõ sisältoo (taa
 'group-sysop' => 'Praviťeľad',
 'group-all'   => '(kõik)',
 
+'group-user-member' => 'cäüttijä',
+
 'grouppage-user'  => '{{ns:project}}:Сäüttijäd',
 'grouppage-sysop' => '{{ns:project}}:Praviťeľad',
 
@@ -550,6 +558,7 @@ Seness [$2 kuvauhsõ lehocülless] informaattsija on alapallõ annõttu.',
 'nbytes'            => '$1 {{PLURAL:$1|baitti|baittia}}',
 'nmembers'          => '$1 {{PLURAL:$1|selttsilain|selttsilaizõd}}',
 'prefixindex'       => 'Kõik cüľľed prefiksiikaa',
+'usercreated'       => '33. $3 on entä cirjannu $1 $2-na',
 'newpages'          => 'Uuvvõd cüľľed',
 'newpages-username' => 'Cäüttijänimi:',
 'move'              => 'Liikut',
@@ -590,19 +599,18 @@ Seness [$2 kuvauhsõ lehocülless] informaattsija on alapallõ annõttu.',
 'listusers-submit' => 'Näüt väľľää',
 
 # Special:Log/newusers
-'newuserlogpage'          => 'Uuvvõd cäüttijäd',
-'newuserlog-create-entry' => 'Uusi tšäüttijä',
+'newuserlogpage' => 'Uuvvõd cäüttijäd',
 
 # Special:ListGroupRights
 'listgrouprights-members' => '(selttsilainspiiska)',
 
-# E-mail user
+# Email user
 'emailuser'     => 'Lähettega elektropoštia selle cäüttijälle',
 'emailusername' => 'Cäüttijänimi:',
 'emailmessage'  => 'Ilmottamin:',
 
 # Watchlist
-'watchlist'         => 'Minu kattsõspiiska',
+'watchlist'         => 'Kattsõspiiska',
 'mywatchlist'       => 'Minu kattsõspiiska',
 'watchlistfor2'     => '$2 - $1 vart',
 'addedwatchtext'    => "Cülci \"[[:\$1]]\" on lisättü Teďďee [[Special:Watchlist|kattsospiizgallõ]].
@@ -630,7 +638,6 @@ Cülci leeb cirjutõttu '''pimmiässi''' [[Special:RecentChanges|spiizgall viime
 'actionfailed'          => 'Vika',
 'deletedtext'           => '"$1" on pühittü.
 Cüľľellä $2 on spiiska viimeiziss pühcimühsiiss.',
-'deletedarticle'        => 'rootciz cüľľee [[$1]]',
 'dellogpage'            => 'Pühitüd cüľľed',
 'deletecomment'         => 'Süü',
 'deleteotherreason'     => 'Muu vai lisä süü',
@@ -674,7 +681,6 @@ Cüľľellä $2 on spiiska viimeiziss pühcimühsiiss.',
 'undeletelink'              => 'näüt/vääntee',
 'undeleteviewlink'          => 'prestavleńńõd',
 'undeletecomment'           => 'Süü:',
-'undeletedarticle'          => '"[[$1]]" vääneltü',
 'undelete-search-submit'    => 'Etsi',
 'undelete-show-file-submit' => 'Daa',
 
@@ -765,8 +771,6 @@ Neill kõhtoill piättä liikuttaa vai ühissää cüľľee cäzi.",
 'talkexists'       => "'''Cüľľee liikka tuli valmessi, a jutticülciä eb õli liikutõttu, ku uuvvõ zagolofkaa all on jo juttucülci. Juttucülcije sisälto piättä ühinessä cäzi.'''",
 'movedto'          => 'liikutõttu',
 'movetalk'         => 'Liikut toož juttucülci',
-'1movedto2'        => 'Cülci [[$1]] on liikutõttu uuvvõllõ nimõllõ [[$2]]',
-'1movedto2_redir'  => 'liikuti cüľľee [[$1]] mešaituhsõõ [[$2]] päälle',
 'movelogpage'      => 'Liikkalogi',
 'movereason'       => 'Süü',
 'revertmove'       => 'kummut',
@@ -856,7 +860,7 @@ Toož, võittõ tširjutta väänteüssee süü.',
 
 # Media information
 'file-info-size' => '$1 × $2 px, $3, MIME-sortta: $4',
-'file-nohires'   => '<small>Suurõpaa kuva ebõõ.</small>',
+'file-nohires'   => 'Suurõpaa kuva ebõõ.',
 'svg-long-desc'  => 'SVG-faili $1 × $2 px, failii suuruz: $3',
 'show-big-image' => 'Kõrka-rezoľuuttsiin verzija',
 
@@ -962,5 +966,10 @@ Kui faili on muutõttu, siiz detaaľid võivad õlla kahõllaizõd muutõtull fa
 
 # HTML forms
 'htmlform-selectorother-other' => 'Muu',
+
+# Feedback
+'feedback-message' => 'Ilmottamin:',
+'feedback-cancel'  => 'Otmeńoit',
+'feedback-close'   => 'On tehtü',
 
 );

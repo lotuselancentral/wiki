@@ -374,20 +374,22 @@ Eli tak ńy je, możno śe trefił feler we softwaru MediaWiki. Kej ja, pedz uo 
 'formerror'            => 'Feler: ńy idźe wysuać formulařa',
 'badarticleerror'      => 'Tyj uoperacyje ńy idźe zrobić lo tyj zajty.',
 'cannotdelete'         => 'Ńy idźe wyćepać podanyj zajty abo grafiki $1.',
+'cannotdelete-title'   => 'Ńy idźie wyćepać zajty "$1".',
 'badtitle'             => 'Felerno tytůua',
 'badtitletext'         => 'Podano felerny titel zajty. Prawdopodańy sům w ńim znoki, kerych ńy wolno užywać we titlach abo je pusty.',
-'perfcached'           => 'To co sam je naškryflane, to ino kopja s pamjyńći podrynčnyj a može ńy być aktualne.',
-'perfcachedts'         => 'To co sam je naškryflane, to ino kopja s pamjyńći podrynčnyj a bůuo uaktualńůne $1.',
+'perfcached'           => 'To co sam je naszkryflane, to ino kopja s pamjyńći podryncznyj a może ńy być aktualne. Nojwjyncyj {{PLURAL:$1|jydyn wynik je|$1 wyniki sům}} w tyj pamjyńći.',
+'perfcachedts'         => 'To co sam je naszkryflane, to ino kopja s pamjyńći podryncznyj a bůło uaktualńůne $1. Nojwjyncyj {{PLURAL:$4|jeden wynik je|$4 wyniki sům}} dostympne.',
 'querypage-no-updates' => 'Uaktualńyńo lo tyj zajty sům terozki zawarte. Dane, kere sam sům, ńy zostouy uodśwjyžůne.',
 'wrong_wfQuery_params' => 'Felerne parametry překozane do wfQuery()<br />
 Funkcyjo: $1<br />
 Zapytańy: $2',
 'viewsource'           => 'Zdrzůdłowy tekst',
-'viewsourcefor'        => 'lo $1',
+'viewsource-title'     => 'Uobocz zdrzůdło lo $1',
 'actionthrottled'      => 'Akcyjo wstřimano',
 'actionthrottledtext'  => 'Mechańizm uobrůny před spamym uograńičo ličba wykonań tyj čynnośći we jednostce času. Průbowoužeś go uocygańić. Proša, sprůbuj na nowo za pora minut.',
 'protectedpagetext'    => 'Ta zajta je zawarto przed sprowjańym.',
 'viewsourcetext'       => 'We tekst zdrzůduowy tyj zajty możno dali filować, idźe go tyż kopjyrować.',
+'viewyourtext'         => 'We tekst zdrzůduowy tyj zajty możno dali filować, idźe go tyż kopjować.',
 'protectedinterface'   => 'Na tyj zajće znojduje śe tekst interfejsu uoprogramowańo, bestož uůna je zawarto uod sprowjańo.',
 'editinginterface'     => "''''Dej pozůr:''' Sprowjosz zajta, na keryj je tekst interfejsu uoprogramowańo. Pomjyńyńa na tyj zajće zmjyńům wyglůnd interfejsu lo inkšych užytkowńikůw.",
 'sqlhidden'            => '(schowano zapytańy SQL)',
@@ -482,6 +484,7 @@ Coby powstřimać nadužyća, možliwość wysyuańa připůmńeń naštalowano 
 'noemailprefs'               => 'Muśiš podać adres e-brifa, coby te funkcyje dźouauy.',
 'emailconfirmlink'           => 'Potwjerdź swůj adres e-brifa',
 'invalidemailaddress'        => 'E-brif ńy bydźe zaakceptůwany skiž tygo co jego format ńy speuńo formalnych wymagań. Proša naškryflać poprowny adres e-brifa abo wyčyśćić pole.',
+'cannotchangeemail'          => 'Ńy możno pomjyńyc ausdruku e-mail.',
 'accountcreated'             => 'Utwůřůno kůnto',
 'accountcreatedtext'         => 'Kůnto lo $1 zostouo utwůřůne.',
 'createaccount-title'        => 'Stwořyńy kůnta na {{GRAMMAR:MS.lp|{{SITENAME}}}}',
@@ -492,8 +495,9 @@ Coby powstřimać nadužyća, možliwość wysyuańa připůmńeń naštalowano 
 'loginlanguagelabel'         => 'Godka: $1',
 'suspicious-userlogout'      => 'Żądanie wylogowania zostało odrzucone ponieważ wygląda na to, że zostało wysłane przez uszkodzoną przeglądarkę lub buforujący serwer proxy.',
 
-# E-mail sending
+# Email sending
 'php-mail-error-unknown' => 'Ńyznany feler we funkcyji mail()',
+'user-mail-no-addy'      => 'Próba wysłania e‐maila bez adresu odbiorcy',
 
 # Change password dialog
 'resetpass'                 => 'Pomjyńaj hasło',
@@ -513,16 +517,18 @@ Możliwe co właśńy zmjyńiłżeś swoje hasło abo poprosiłżeś uo nowe tym
 'resetpass-temp-password'   => 'Tymczasowe hasło:',
 
 # Special:PasswordReset
-'passwordreset'              => 'Wyczyść hasło',
-'passwordreset-text'         => 'Wypełnij formularz, aby otrzymać e‐mail z przypomnieniem danych Twojego konta.',
-'passwordreset-legend'       => 'Wyczyść hasło',
-'passwordreset-disabled'     => 'No tyj wiki zamkńynto resytowańy hasył.',
-'passwordreset-pretext'      => '{{PLURAL:$1||Wćep jydną z danych}}',
-'passwordreset-username'     => 'Mjano używacza:',
-'passwordreset-domain'       => 'Domyna:',
-'passwordreset-email'        => 'E-brif:',
-'passwordreset-emailtitle'   => 'Kůnto na {{GRAMMAR:MS.lp|{{SITENAME}}}}',
-'passwordreset-emailtext-ip' => 'Ftůś (cheba Ty, s IP $1)
+'passwordreset'                    => 'Wyczyść hasło',
+'passwordreset-text'               => 'Wypełnij formularz, aby otrzymać e‐mail z przypomnieniem danych Twojego konta.',
+'passwordreset-legend'             => 'Wyczyść hasło',
+'passwordreset-disabled'           => 'No tyj wiki zamkńynto resytowańy hasył.',
+'passwordreset-pretext'            => '{{PLURAL:$1||Wćep jydną z danych}}',
+'passwordreset-username'           => 'Mjano używacza:',
+'passwordreset-domain'             => 'Domyna:',
+'passwordreset-capture'            => 'Czy pokazywać treść wiadomości e‐mail?',
+'passwordreset-capture-help'       => 'Eli zaznaczysz to pole, łoboczysz wjadomość e-mail z hasłem.',
+'passwordreset-email'              => 'E-brif:',
+'passwordreset-emailtitle'         => 'Kůnto na {{GRAMMAR:MS.lp|{{SITENAME}}}}',
+'passwordreset-emailtext-ip'       => 'Ftůś (cheba Ty, s IP $1)
 pado, aże chce informacyji lo konta do {{GRAMMAR:MS.lp{{SITENAME}}}} ($4).
 Z tem ausdrukiem sum powjonzyne konta:
 $2
@@ -532,9 +538,22 @@ $2
 Jak chćołżeś gynał to zrobjyć, to zalůgůj śe terozki a podej swoje hasło.
 
 Jak ktůś inkszy chćoł nowe hasło abo jak Ci śe przipůmńouo stare a ńy chcesz nowygo, to zignoruj to a używej starygo hasła.',
-'passwordreset-emailelement' => 'Nazwa sprowjorza: $1
+'passwordreset-emailelement'       => 'Nazwa sprowjorza: $1
 Tymczasowe hasło: $2',
-'passwordreset-emailsent'    => 'E-brif posłany.',
+'passwordreset-emailsent'          => 'E-brif posłany.',
+'passwordreset-emailsent-capture'  => 'E-brif posłony, kerego widać niżej.',
+'passwordreset-emailerror-capture' => 'Ńy udało sie wysłać wjadomości lo sprowjorza: $1',
+
+# Special:ChangeEmail
+'changeemail'          => 'Pomjyno ausdruka e-mail',
+'changeemail-header'   => 'Pomjyno ausduku e-mail',
+'changeemail-text'     => 'Wypełnij formularz, podej nowy ausdruk a hasło.',
+'changeemail-no-info'  => 'Muśysz być zalogowany, coby uzyskać bezpostrzedńi dostymp do tyj zajty.',
+'changeemail-oldemail' => 'Uobecny ausdruk:',
+'changeemail-newemail' => 'Nowy adresu e-brif',
+'changeemail-none'     => 'podstawowo',
+'changeemail-submit'   => 'Zapisz nowy',
+'changeemail-cancel'   => 'Uodćepej',
 
 # Edit page toolbar
 'bold_sample'     => 'Ruby tekst',
@@ -597,9 +616,6 @@ Pozůr: Kejžeś we [[Special:Preferences|preferencyjach]] ńy naštalowou prowi
 
 Twůj adres IP je terozki $3. Idyntyfikator Twojij blokady to $5. Zanotuj śe go a podej admińistratorowi.',
 'blockednoreason'                  => 'ńy podano skuli čego',
-'blockedoriginalsource'            => "Zdřůduo '''$1''' zostouo pokozane půnižyj:",
-'blockededitsource'                => "Tekst '''Twojich sprowjyń''' na '''$1''' zostou pokozany půnižyj:",
-'whitelistedittitle'               => 'Začym začńyš sprowjać, muśiš być zalůgowany.',
 'whitelistedittext'                => 'Muśiš $1 coby můc sprowjać artikle.',
 'confirmedittext'                  => 'Muśiš podać a potwjerdźić swůj e-brif, coby můc sam sprowjać.
 Možeš to zrobić we [[Special:Preferences|swojich štalowańach]].',
@@ -664,7 +680,7 @@ By wćepać swoje pomjyńańo muśiš pomjyńać tekst w polu na wjyrchu.
 'copyrightwarning2'                => "Pamjyntej uo tym, aže couki wkuod do {{GRAMMAR:MS.lp|{{SITENAME}}}} može być sprowjany, pomjyńany abo wyćepany bez inkšych užytkownikůw. Jak ńy chceš, coby koždy můg go zmjyńać i dali rozpowšychńać bez uograničyń, ńy wćepuj go sam.<br />
 Škryflajůnc sam tukej pośwjadčoš tyž, co te pisańy je twoje wuasne, abo žeś go wźůn(a) s matyrjouůw kere sům na public domain, abo kůmpatybilne (kuknij tyž: $1).
 '''PROŠA ŃY WĆEPYWAĆ SAM MATYRJOUŮW KERE SŮM CHRŮŃONE PRAWYM AUTORSKIM BEZ DOZWOLEŃO WUAŚĆIĆELA!'''",
-'longpageerror'                    => "'''Feler: Tekst kery žeś sam wćepywou mo $1 kilobajtůw. Maksymalno dugość tekstu ńy može być wjynkšo kej $2 kilobajtůw. Twůj tekst ńy bydźe sam naškryflany.'''",
+'longpageerror'                    => "''Feler: Tekst kery żeś sam wćepywoł mo {{PLURAL:$1|jedyn kilobajt|$1 kilobajtůw}}. Maksymalno dugość tekstu ńy może być srogszo kej {{PLURAL:$2|jedyn kilobajt|$2 kilobajtůw}}. Twůj tekst ńy bydźe sam naszkryflany.'''",
 'readonlywarning'                  => "'''Dej pozůr: Baza danych zostoua filowo zawarto skuli potřeb admińistracyjnych. Bestůž ńy do śe terozki naškryflać Twojich pomjyńań. Radzymy přećepać nowy tekst kajś do plika tekstowego (wytnij/wklej) a wćepać sam zaś po uodymkńyńću bazy.'''
 
 Admińistrator kery zawar baza dou take wyjaśńyńe: $1",
@@ -797,8 +813,6 @@ Inkśi admińistratorzi {{GRAMMAR:D.lp|{{SITENAME}}}} dali bydům mjeć dostymp 
 'revdelete-unsuppress'        => 'Usůń uograńičyńo lo wćepanej nazod historyje pomjyńań',
 'revdelete-log'               => 'Čymu:',
 'revdelete-submit'            => 'Zaakceptuj do wybrany{{PLURAL:$1|j wersyji|ch wersyji}}',
-'revdelete-logentry'          => 'půmjyńůno widočność wersyji w [[$1]]',
-'logdelete-logentry'          => 'půmjyńůno widočność zdořyńůw w [[$1]]',
 'revdelete-success'           => 'Půmyślńy zmjyńůno widoczność wersyji.',
 'revdelete-failure'           => 'Feler przi zmjyńůńu widoczności wersyji.
 $1',
@@ -810,15 +824,6 @@ $1',
 'revdel-restore-visible'      => 'widoczne wersyje',
 'pagehist'                    => 'Historyjo sprowjyń zajty',
 'deletedhist'                 => 'Wyćepano historyjo sprowjyń',
-'revdelete-content'           => 'zawartość',
-'revdelete-summary'           => 'uopis pomjyńań',
-'revdelete-uname'             => 'mjano użytkowńika',
-'revdelete-restricted'        => 'naštaluj uograničyńo do administratorůw',
-'revdelete-unrestricted'      => 'wycofej uograničyńo do administratorůw',
-'revdelete-hid'               => 'schrůń $1',
-'revdelete-unhid'             => 'ńy schrůńaj $1',
-'revdelete-log-message'       => '$1 - $2 {{PLURAL:$2|wersyjo|wersyji|wersjůw}}',
-'logdelete-log-message'       => '$1 - $2 {{PLURAL:$2|zdařyńe|zdařyńa|zdařyń}}',
 'revdelete-hide-current'      => 'Feler przi wyćepywańu wersyji $2, $1.',
 'revdelete-show-no-access'    => 'Feler przy ukozoniu wersyji $2, $1. Ńy mosz uprawńyń lo njygo.',
 'revdelete-modify-no-access'  => 'Feler przy zmjyńe widoczności wersyji $2, $1. Ńy mosz uprawńeń lo njygo.',
@@ -966,12 +971,14 @@ $1',
 'prefs-rc'                      => 'Ńydowno pomjyńane',
 'prefs-watchlist'               => 'Pozůrlista',
 'prefs-watchlist-days'          => 'Ličba dńi widočnych na liśće artikli, na kere dowoš pozůr:',
-'prefs-watchlist-days-max'      => 'Maksimum 7 dńi',
+'prefs-watchlist-days-max'      => 'Max $1 {{PLURAL:$1|dźień|dńi}}',
 'prefs-watchlist-edits'         => 'Ličba půmjyńań pokazywanych we rozšyřůnyj liśće artiklůw, na kere dowoš pozůr:',
 'prefs-watchlist-edits-max'     => 'Maksymalno liczba: 1000',
 'prefs-watchlist-token'         => 'ID půzorlisty:',
 'prefs-misc'                    => 'Roztůmajte',
 'prefs-resetpass'               => 'Zmjyń hasło',
+'prefs-changeemail'             => 'Pomjyno ausdruka e-brif',
+'prefs-setemail'                => 'Nastow e-brif',
 'prefs-email'                   => 'E-brif',
 'prefs-rendering'               => 'Wyglůnd',
 'saveprefs'                     => 'Spamjyntej',
@@ -1065,12 +1072,12 @@ $1',
 'group-suppress'      => 'Rewizoře',
 'group-all'           => '(wšyjscy)',
 
-'group-user-member'          => 'Sprowjorz',
-'group-autoconfirmed-member' => 'Autůmatyčńy zatwjerdzůny užytkowńik',
-'group-bot-member'           => 'Bot',
-'group-sysop-member'         => 'Admin',
-'group-bureaucrat-member'    => 'Bjurokrata',
-'group-suppress-member'      => 'Rewizůr',
+'group-user-member'          => '{{GENDER:$1|używacz}}',
+'group-autoconfirmed-member' => 'Autůmatyczńy zatwjerdzůny używacz',
+'group-bot-member'           => '{{GENDER:$1|bot}}',
+'group-sysop-member'         => '{{GENDER:$1|admin}}',
+'group-bureaucrat-member'    => '{{GENDER:$1|bjurokrata}}',
+'group-suppress-member'      => '{{GENDER:$1|rewizůr}}',
 
 'grouppage-user'          => '{{ns:project}}:Sprowjorze',
 'grouppage-autoconfirmed' => '{{ns:project}}:Autůmatyczńy zatwjerdzyńi używacze',
@@ -1130,7 +1137,6 @@ $1',
 'right-autopatrol'           => 'Naštaluj na autůmatyčne uoznačańy sprowjyń kej přezdřane',
 'right-patrolmarks'          => 'Podglůnd značnikůw patrolowańo pomjeńanych na uostatku – uoznačańo kej „sprawdzůne”',
 'right-unwatchedpages'       => 'Pokož lista zajtůw na kere žodyn ńy dowo pozoru',
-'right-trackback'            => 'Přeślij trackback',
 'right-mergehistory'         => 'Pouůnč historyjo sprowjyń do zajtůw',
 'right-userrights'           => 'Sprowjej wšyjske uprawńyńo užytkowńikůw',
 'right-userrights-interwiki' => 'Sprowjej uprawńyńo užytkowńikůw na zajtach inkšych Wiki',
@@ -1172,7 +1178,6 @@ $1',
 'action-patrol'               => 'označyńo sprowjyńo kej „sprowdzůne”',
 'action-autopatrol'           => 'uoznačyńo wuasnygo sprowjyńo kej „sprawdzonygo”',
 'action-unwatchedpages'       => 'podglůndu listy zajtůw na kere ńikt ńy dowo pozoru',
-'action-trackback'            => 'wysyuańo trackbacka',
 'action-mergehistory'         => 'skuplowańo historyje sprowjyń tyj zajty',
 'action-userrights'           => 'sprowjańo uprowńyń wšyjstkich sprowjořy',
 'action-userrights-interwiki' => 'sprowjańo uprowńyń sprowjořy na inkšych witrynach wiki',
@@ -1500,7 +1505,7 @@ Zajta uznawano je za ujydnoznačńajůnco kej zawiyro šablůn uokreślůny we [
 'listusers'               => 'Lista užytkowńikůw',
 'listusers-editsonly'     => 'Pokoż yno użytkowńikůw kere majům sprowjyńa',
 'usereditcount'           => '$1 {{PLURAL:$1|sprowjyńe|sprowjyńa|sprowjyń}}',
-'usercreated'             => 'Utworzono $1 uo $2',
+'usercreated'             => '{{GENDER:$3:Utworzono}} $1 uo $2',
 'newpages'                => 'Nowe zajty',
 'newpages-username'       => 'Mjano użytkowńika:',
 'ancientpages'            => 'Nojstarše artikle',
@@ -1584,12 +1589,8 @@ Uobsůgiwane protokoły: <code>$1</code>',
 'activeusers-noresult'   => 'Ńy sům używacze.',
 
 # Special:Log/newusers
-'newuserlogpage'              => 'Nowe użytkowniki',
-'newuserlogpagetext'          => 'To je rejer uostatńo utworzůnych kůnt użytkowńikůw',
-'newuserlog-byemail'          => 'hasło uostało wysłane e-brifym',
-'newuserlog-create-entry'     => '– nowy użytkowńik',
-'newuserlog-create2-entry'    => '– utworzůł kůnto $1',
-'newuserlog-autocreate-entry' => '– kůnto utworzůne automatyczńy',
+'newuserlogpage'     => 'Nowe użytkowniki',
+'newuserlogpagetext' => 'To je rejer uostatńo utworzůnych kůnt użytkowńikůw',
 
 # Special:ListGroupRights
 'listgrouprights'                 => 'Uprawńyńo grup użytkowńikůw',
@@ -1607,7 +1608,7 @@ Sprowdź zajta [[{{MediaWiki:Listgrouprights-helppage}}|s dodatkowymi informacja
 'listgrouprights-removegroup-all' => 'Idźe wyćepać s wszyjstkich grup',
 'listgrouprights-addgroup-self'   => 'Je mogebny dać swe konto do {{PLURAL:$2|grupy|grup:}} $1',
 
-# E-mail user
+# Email user
 'mailnologin'         => 'Brak adresu',
 'mailnologintext'     => 'Muśyš śe [[Special:UserLogin|zalůgować]] i mjeć wpisany aktualny adres e-brif w swojich [[Special:Preferences|preferyncyjach]], coby můc wysuać e-brif do inkšygo užytkowńika.',
 'emailuser'           => 'Poślij tymu używoczowi e-brif',
@@ -1615,7 +1616,7 @@ Sprowdź zajta [[{{MediaWiki:Listgrouprights-helppage}}|s dodatkowymi informacja
 'emailpagetext'       => 'Możesz użyć půńiższygo formularza, coby wysłać wjadůmość e-brif do tygo użytkowńika.
 Adres e-brifa, kery zostoł bez Ćebje wkludzůny we [[Special:Preferences|Twojich sztalowańach]], pojawi śe we polu „Uod”, bez cůż uodbjorca bydźe můg Ći uodpedźeć.',
 'usermailererror'     => 'Moduu uobsůgi počty zwrůćiu feler:',
-'defemailsubject'     => 'Wjadůmość uod {{GRAMMAR:D.pl|{{SITENAME}}}}',
+'defemailsubject'     => '{{SITENAME}} - e-brif uod używacza "$1"',
 'usermaildisabled'    => 'E-brif używacza ńy załůnczony',
 'noemailtitle'        => 'Brak adresu e-brif',
 'noemailtext'         => 'Tyn używacz ńy podoł dobrygo e-brifa, abo zadecydowoł, co ńy chce uotrzimywać wjadůmośći e-brif uod inkszych używaczy.',
@@ -1717,8 +1718,6 @@ Pomoc:
 'actioncomplete'         => 'Fertig',
 'actionfailed'           => 'Ńy udało sie.',
 'deletedtext'            => 'Wyćepano "$1". Rejer uostatnio zrobiůnych wyćepań možeš uobejžyć tukej: $2.',
-'deletedarticle'         => 'wyciepnjynto "[[$1]]"',
-'suppressedarticle'      => 'utajńjyu [[$1]]',
 'dellogpage'             => 'Wyćepane',
 'dellogpagetext'         => 'To je lista uostatńo wykůnanych wyćepań.',
 'deletionlog'            => 'rejer wyćepań',
@@ -1843,7 +1842,6 @@ Možeš mjeć felerny link abo wersyjo můgua zostać wćepano nazod, abo wyćep
 'undeletereset'                => 'Wyčyść',
 'undeleteinvert'               => 'Zaznocz na uopy',
 'undeletecomment'              => 'Powůd wćepańo nazod:',
-'undeletedarticle'             => 'wćepou nazod [[$1]]',
 'undeletedrevisions'           => 'Wćepano nazod {{PLURAL:$1|1 wersyja|$1 wersyje|$1 wersyji}}',
 'undeletedrevisions-files'     => 'Wćepano nazod $1 {{PLURAL:$1|wersyja|wersyje|wersyji}} i $2 {{PLURAL:$2|plik|pliki|plikůw}}',
 'undeletedfiles'               => 'wćepou nazod $1 {{PLURAL:$1|plik|pliki|plikůw}}',
@@ -2075,8 +2073,6 @@ Wybjer inkše mjano.',
 'movepage-page-moved'          => 'Zajta $1 uostoła przekludzůno ku $2.',
 'movepage-page-unmoved'        => 'Mjana zajty $1 ńy idźe půmjyńić na $2.',
 'movepage-max-pages'           => 'Przekludzůnych uostało $1 {{PLURAL:$1|zajta|zajty|zajtůw}}. Wjynkszyj liczby ńy idźe przekludźić automatyczńy.',
-'1movedto2'                    => '[[$1]] přećepano do [[$2]]',
-'1movedto2_redir'              => 'zajta [[$1]] přećepnůu do [[$2]] nad překerowańem',
 'movelogpage'                  => 'Przećepńynte',
 'movelogpagetext'              => 'Uoto lista zajtůw, kere uostatńo zostouy přećepane.',
 'movereason'                   => 'Čymu:',
@@ -2281,8 +2277,6 @@ Nojprawdopodobńij zostoło to spowodowane bez link do zewnyntrznyj zajty intern
 # Patrol log
 'patrol-log-page'      => 'Dźynńik patrolowańo',
 'patrol-log-header'    => 'Půniżej je dźeńńik patrolowańo zajtůw.',
-'patrol-log-line'      => 'označůu wersyja $1 artikla $2 kej sprawdzůno $3',
-'patrol-log-auto'      => '(autůmatyčńy)',
 'log-show-hide-patrol' => '$1 rejer sprawdzańo',
 
 # Image deletion
@@ -2307,7 +2301,7 @@ $1',
 'widthheightpage' => '$1 × $2, $3 {{PLURAL:$3|zajta|zajty|zajtůw}}',
 'file-info'       => 'rozmjor plika: $1, typ MIME: $2',
 'file-info-size'  => '$1 × $2 pikselůw, wjelgość plika: $3, zorta MIME: $4',
-'file-nohires'    => '<small>Uobrozek we wjynkšej rozdźelčośći ńy je dostympny.</small>',
+'file-nohires'    => 'Wjynksze wymjyry ńy sům dostympne',
 'svg-long-desc'   => 'Plik SVG, nůminalńe $1 × $2 pixelůw, rozmior plika: $3',
 'show-big-image'  => 'Pełne wymjyry',
 
@@ -2617,7 +2611,7 @@ Eli plik był modyfikowany, dane mogům w tajli ńy być we zgodźe ze parametr�
 'namespacesall' => 'wszyjske',
 'monthsall'     => 'wšyskie',
 
-# E-mail address confirmation
+# Email address confirmation
 'confirmemail'             => 'Potwjerdź adres e-brif',
 'confirmemail_noemail'     => 'Ńy podoužeś prawiduowygo adresa e-brifa we [[Special:Preferences|preferencyjach]].',
 'confirmemail_text'        => 'Projekt {{SITENAME}} wymago weryfikacyji adresa e-brif před užyćym fůnkcyji kořistajůncych s počty.
@@ -2662,13 +2656,6 @@ Kod zawarty w linku straći wažność $4.',
 'scarytranscludedisabled' => '[Douůnčańy bez interwiki je wůuůnčůne]',
 'scarytranscludefailed'   => '[Ńy powjoduo śe pobrańy szablůna lů $1]',
 'scarytranscludetoolong'  => '[za dugo adresa URL]',
-
-# Trackbacks
-'trackbackbox'      => 'Kůmůńikaty TrackBack do tygo artikla:<br />
-$1',
-'trackbackremove'   => '([$1 Wyćep])',
-'trackbacklink'     => 'TrackBack',
-'trackbackdeleteok' => 'TrackBack zostou wyćepany.',
 
 # Delete conflict
 'deletedwhileediting' => "'''Pozůr''': Ta zajta zostoła wyćepano po tym, jak żeś rozpoczůł jei sprowjańy!",
@@ -2816,5 +2803,10 @@ Naškryflej sam mjano plika bez prefiksu „{{ns:file}}:”.',
 
 # Special:Tags
 'tag-filter' => 'Filter [[Special:Tags|tagůw]]',
+
+# New logging system
+'revdelete-restricted'   => 'naštaluj uograničyńo do administratorůw',
+'revdelete-unrestricted' => 'wycofej uograničyńo do administratorůw',
+'newuserlog-byemail'     => 'hasło uostało wysłane e-brifym',
 
 );
