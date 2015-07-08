@@ -131,7 +131,7 @@ class ApiQueryRevisions extends ApiQueryBase {
 				if ( !$difftoRev ) {
 					$this->dieUsageMsg( array( 'nosuchrevid', $params['diffto'] ) );
 				}
-				if ( !$difftoRev->userCan( Revision::DELETED_TEXT ) ) {
+				if ( $difftoRev->isDeleted( Revision::DELETED_TEXT ) ) {
 					$this->setWarning( "Couldn't diff to r{$difftoRev->getID()}: content is hidden" );
 					$params['diffto'] = null;
 				}
@@ -686,6 +686,6 @@ class ApiQueryRevisions extends ApiQueryBase {
 	}
 
 	public function getVersion() {
-		return __CLASS__ . ': $Id: ApiQueryRevisions.php 75521 2010-10-27 11:50:20Z catrope $';
+		return __CLASS__ . ': $Id$';
 	}
 }

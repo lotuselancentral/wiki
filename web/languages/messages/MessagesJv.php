@@ -9,9 +9,11 @@
  *
  * @author Anggoro
  * @author Helix84
+ * @author Kaganer
  * @author Meursault2004
  * @author Pras
  * @author Rex
+ * @author StefanusRA
  * @author לערי ריינהארט
  */
 
@@ -74,7 +76,7 @@ $messages = array(
 'tog-enotifminoredits'        => 'Kirimana aku layang e-mail uga yèn ana pangowahan cilik',
 'tog-enotifrevealaddr'        => 'Kirimana aku layang e-mail ing layang notifikasi',
 'tog-shownumberswatching'     => 'Tuduhna cacahé pangawas',
-'tog-oldsig'                  => 'Pratayang tapak asta sing ana:',
+'tog-oldsig'                  => 'Tapak asma sing ana:',
 'tog-fancysig'                => 'Anggepen tapak asta minangka teks wiki (tanpa pranala otomatis)',
 'tog-externaleditor'          => 'Pigunakaken program pangolah tembung jawi (namung tumrap ahli, perlu pangaturan mligi ing komputer panjenengan. 
 [http://www.mediawiki.org/wiki/Manual:External_editors Informasi sajangkepipun].)',
@@ -211,7 +213,7 @@ $messages = array(
 'vector-action-move'             => 'Pindhahna',
 'vector-action-protect'          => 'Reksa',
 'vector-action-undelete'         => 'Batalna pambusakan',
-'vector-action-unprotect'        => 'Batalna pangreksan',
+'vector-action-unprotect'        => 'Owahi pangreksan',
 'vector-simplesearch-preference' => 'Aktifaken pamrayogi pamadosan ingkang kasampurnakaken (namung kulit vektor)',
 'vector-view-create'             => 'Gawé',
 'vector-view-edit'               => 'Sunting',
@@ -247,8 +249,8 @@ $messages = array(
 'protect'           => 'Reksanen',
 'protect_change'    => 'ngowahi reksanan',
 'protectthispage'   => 'Reksanen kaca iki',
-'unprotect'         => 'Pangreksan',
-'unprotectthispage' => 'Owahana pangreksan kaca iki',
+'unprotect'         => 'Owahi pangreksan',
+'unprotectthispage' => 'Owahi pangreksan kaca iki',
 'newpage'           => 'Kaca anyar',
 'talkpage'          => 'Dhiskusèkna kaca iki',
 'talkpagelinktext'  => 'Wicara',
@@ -1826,7 +1828,7 @@ Umpan balik lan pitulung sabanjuré:
 'delete-edit-reasonlist' => 'Sunting alesan pambusakan',
 'delete-toobig'          => 'Kaca iki ndarbèni sajarah panyuntingan sing dawa, yaiku ngluwihi $1 {{PLURAL:$1|revision|révisi}}.
 Pambusakan kaca sing kaya mangkono mau wis ora diparengaké kanggo menggak anané karusakan ing {{SITENAME}}.',
-'delete-warning-toobig'  => 'Kaca iki duwé sajarang panyuntingan sing dawa, luwih saka $1 {{PLURAL:$1|revision|révisi}}.
+'delete-warning-toobig'  => 'Kaca iki duwé sajarah panyuntingan sing dawa, luwih saka $1 {{PLURAL:$1|révisi|révisi}}.
 Mbusak kaca iki bisa ngrusak operasi basis data ing {{SITENAME}};
 kudu ngati-ati.',
 
@@ -2454,7 +2456,7 @@ $1',
 'mediawarning'         => "'''Pènget:''' Berkas iki mbokmenawa ngandhut kode sing bebayani, yèn dilakokaké sistém panjenengan bisa kena pangaruh ala.",
 'imagemaxsize'         => "Wates ukuran gambar:<br />''(kanggo kaca dhèskripsi berkas)''",
 'thumbsize'            => 'Ukuran gambar cilik (thumbnail):',
-'widthheightpage'      => '$1×$2, $3 {{PLURAL:$3|kaca|kaca}}',
+'widthheightpage'      => '$1 × $2, $3 {{PLURAL:$3|kaca|kaca}}',
 'file-info'            => 'ukuran berkas: $1, tipe MIME: $2',
 'file-info-size'       => '$1 × $2 piksel, ukuran berkas: $3, tipe MIME: $4',
 'file-nohires'         => '<small>Ora ana résolusi sing luwih dhuwur.</small>',
@@ -2919,9 +2921,7 @@ Panjenengan uga bisa [[Special:Watchlist/edit|nganggo éditor standar panjenenga
 'filepath-page'    => 'Berkas:',
 'filepath-submit'  => 'Golèk',
 'filepath-summary' => 'Kaca astaméwa utawa kusus iki nuduhaké jalur pepak sawijining berkas.
-Gambar dituduhaké mawa résolusi kebak lan tipe liyané berkas bakal dibuka langsung mawa program kagandhèng.
-
-Lebokna jeneng berkas tanpa imbuhan awalan "{{ns:file}}:".',
+Gambar dituduhaké mawa résolusi kebak lan tipe liyané berkas bakal dibuka langsung mawa program kagandhèng.',
 
 # Special:FileDuplicateSearch
 'fileduplicatesearch'          => 'Golèk berkas duplikat',

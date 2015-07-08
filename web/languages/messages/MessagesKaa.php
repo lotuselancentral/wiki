@@ -9,7 +9,9 @@
  *
  * @author AlefZet
  * @author Atabek
+ * @author Emperyan
  * @author Jiemurat
+ * @author Kaganer
  * @author Reedy
  * @author Urhixidur
  */
@@ -275,7 +277,7 @@ $messages = array(
 * [http://www.mediawiki.org/wiki/Manual:FAQ MediaWikidin' Ko'p Soralatug'ın Sorawları]
 * [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki haqqında xat tarqatıw dizimi]",
 
-'about'         => 'Proyekt haqqında',
+'about'         => 'Haqqında',
 'article'       => "Mag'lıwmat beti",
 'newwindow'     => "(jan'a aynada)",
 'cancel'        => 'Biykar etiw',
@@ -303,7 +305,7 @@ $messages = array(
 'vector-action-move'       => "Ko'shiriw",
 'vector-action-protect'    => "Qorg'aw",
 'vector-action-undelete'   => 'Qayta tiklew',
-'vector-action-unprotect'  => "Qorg'amaw",
+'vector-action-unprotect'  => "Qorg'awdı o'zgertiw",
 'vector-view-create'       => 'Jaratıw',
 'vector-view-edit'         => "O'zgertiw",
 'vector-view-history'      => "Tariyxın ko'riw",
@@ -338,8 +340,8 @@ $messages = array(
 'protect'           => "Qorg'aw",
 'protect_change'    => "qorg'awdı o'zgertiw",
 'protectthispage'   => "Bul betti qorg'aw",
-'unprotect'         => "Qorg'amaw",
-'unprotectthispage' => "Bul betti qorg'amaw",
+'unprotect'         => "Qorg'awdı o'zgertiw",
+'unprotectthispage' => "Bul bettin' qorg'aw sazlawların o'zgertiw",
 'newpage'           => 'Taza bet',
 'talkpage'          => 'Bul betti diskussiyalaw',
 'talkpagelinktext'  => "Sa'wbet",
@@ -370,7 +372,7 @@ $messages = array(
 
 # All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation template definition (see disambiguations).
 'aboutsite'            => '{{SITENAME}} haqqında',
-'aboutpage'            => 'Project:Proyekt haqqında',
+'aboutpage'            => 'Project:Haqqında',
 'copyright'            => "Mag'lıwmat $1 boyınsha alıng'an.",
 'copyrightpage'        => '{{ns:project}}:Avtorlıq huquqları',
 'currentevents'        => "Ha'zirgi ha'diyseler",
@@ -545,7 +547,8 @@ Akkauntın'ız jaratıldı.
 'gotaccountlink'             => 'Kir',
 'createaccountmail'          => 'e-mail arqalı',
 'badretype'                  => 'Siz kiritken parol tuwra kelmedi.',
-'userexists'                 => "Kiritken paydalanıwshı atı ba'nt. Basqa at kiritin'.",
+'userexists'                 => "Kiritken paydalanıwshı atı ba'nt. 
+İltimas, basqa at saylan'.",
 'loginerror'                 => 'Kiriwde qatelik',
 'nocookiesnew'               => "Paydalanıwshı akkauntı jaratıldı, biraq ele kirmegensiz.
 Paydalanıwshılar kiriwi ushın {{SITENAME}} kukilerden paydalanadı.
@@ -773,7 +776,7 @@ Sha'rtli belgiler: (ha'z.) = ha'zirgi nusqasi menen parqı,
 'history-feed-item-nocomment' => "$2 waqtındag'ı $1",
 
 # Revision deletion
-'rev-deleted-comment'       => "(kommentariy o'shirildi)",
+'rev-deleted-comment'       => "(o'zgeris ta'ripi o'shirildi)",
 'rev-deleted-user'          => "(paydalanıwshı atı o'shirildi)",
 'rev-deleted-event'         => "(jurnal ha'reketi o'shirildi)",
 'rev-delundel'              => "ko'rsetiw/jasırıw",
@@ -1214,7 +1217,7 @@ Siz ja'ne de basqa paydalanıwshılarg'a siz benen (adresin'izdi bilmegen halda)
 'filehist-dimensions'       => "O'lshemleri",
 'filehist-filesize'         => "Fayldın' ha'jmi",
 'filehist-comment'          => 'Kommentariy',
-'imagelinks'                => 'Fayl siltewleri',
+'imagelinks'                => "Fayldın' paydalanılıwı",
 'linkstoimage'              => "To'mendegi {{PLURAL:$1|bet|$1 bet}} bul faylg'a siltelgen:",
 'nolinkstoimage'            => "Bul faylg'a hesh bir bet siltelmegen.",
 'sharedupload'              => '$1 ortalıq faylı basqa proektlerde paydalanılsa boladı.',
@@ -1603,7 +1606,7 @@ Aqırg'ı o'shirilgenlerdin' dizimin ko'riw ushin \$2 ni qaran'",
 'nolinkshere'              => "'''[[:$1]]''' degenge hesh bet siltemeydi.",
 'isredirect'               => 'burıwshı bet',
 'istemplate'               => 'qosıw',
-'isimage'                  => "su'wret siltewi",
+'isimage'                  => 'fayl siltewi',
 'whatlinkshere-prev'       => "{{PLURAL:$1|aldıng'ı|aldıng'ı $1}}",
 'whatlinkshere-next'       => '{{PLURAL:$1|keyingi|keyingi $1}}',
 'whatlinkshere-links'      => '← siltewler',
@@ -1639,7 +1642,7 @@ Basqa bloklawlar ushın [[Special:IPBlockList|IP bloklaw dizimin]] ko'rip shıg'
 'unblockip'                   => "Paydalanıwshının' qulpın sheshiw",
 'ipusubmit'                   => 'Bul bloklawdı biykar etiw',
 'unblocked-id'                => "$1 bloklawı o'shirildi",
-'ipblocklist'                 => "Bloklang'an IP adresler ha'm paydalanıwshılar dizimi",
+'ipblocklist'                 => "Bloklang'an paydalanıwshılar",
 'ipblocklist-legend'          => "Bloklang'an paydalanıwshını tabıw",
 'ipblocklist-username'        => 'Paydalanıwshı atı yamasa IP adres:',
 'ipblocklist-submit'          => 'İzle',
@@ -1853,7 +1856,7 @@ Please visit [http://www.mediawiki.org/wiki/Localisation MediaWiki Localisation]
 # Media information
 'thumbsize'            => "Miniatyuranın' ha'jmi:",
 'widthheight'          => '$1 × $2',
-'widthheightpage'      => '$1×$2, $3 {{PLURAL:$3|bet|bet}}',
+'widthheightpage'      => '$1 × $2, $3 {{PLURAL:$3|bet|bet}}',
 'file-info'            => "fayldın' ha'jmi: $1, MIME tu'ri: $2",
 'file-info-size'       => "$1 × $2 piksel, fayldın' ha'jmi: $3, MIME tu'ri: $4",
 'file-nohires'         => '<small>Bunnan joqarı imkaniyatlı tabılmadı.</small>',

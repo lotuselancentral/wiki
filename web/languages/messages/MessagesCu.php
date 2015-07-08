@@ -145,6 +145,7 @@ $messages = array(
 'category_header'        => 'катигорїѩ ⁖ $1 ⁖ страницѧ',
 'subcategories'          => 'подъкатигорїѩ',
 'hidden-categories'      => '{{PLURAL:$1|съкрꙑта катигорїꙗ|съкрꙑти катигорїи|съкрꙑтꙑ катигорїѩ}}',
+'category-subcat-count'  => '{{PLURAL:$2|Сѥи катигорїи тъкъмо сꙗ подъкатигорїꙗ ѥстъ|Сѥи катигорїи {{PLURAL:$1|ѥдина подъкатигорїꙗ ѥстъ|2 подъкатигорїи ѥстє|$1 подъкатигорїѩ сѫтъ}} · а вьсѩ жє подъкатигорїѩ число $2 ѥстъ}}',
 'listingcontinuesabbrev' => '· вѧщє',
 
 'linkprefix' => '/^(.*?)(„|«)$/sD',
@@ -233,6 +234,7 @@ $messages = array(
 'portal'               => 'обьщєниꙗ съвѣтъ',
 'portal-url'           => 'Project:Обьщєниꙗ съвѣтъ',
 
+'pagetitle'           => '$1 · {{SITENAME}}',
 'retrievedfrom'       => 'поѩто иꙁ ⁖ $1 ⁖',
 'youhavenewmessages'  => '$1 тєбѣ напьсанꙑ сѫтъ ($2)',
 'newmessageslink'     => 'нови напьсаниꙗ',
@@ -326,15 +328,16 @@ $messages = array(
 'template-protected'         => '(ꙁабранєно ѥстъ)',
 
 # History pages
-'viewpagelogs' => 'си страницѧ їсторїѩ',
-'cur'          => 'нꙑ҃н',
-'last'         => 'пс҃лд',
-'page_first'   => 'прьва страница',
-'page_last'    => 'послѣдьнꙗ страница',
-'histfirst'    => 'прьвꙑ',
-'histlast'     => 'послѣдьнꙗ',
-'historysize'  => '{{PLURAL:$1|1 баитъ|$1 баита|$1 баитъ}}',
-'historyempty' => '(поусто)',
+'viewpagelogs'         => 'си страницѧ їсторїѩ',
+'cur'                  => 'нꙑ҃н',
+'last'                 => 'пс҃лд',
+'page_first'           => 'прьва страница',
+'page_last'            => 'послѣдьнꙗ страница',
+'history-show-deleted' => 'тъкъмо поничьжєнꙑ мѣнꙑ',
+'histfirst'            => 'прьвꙑ',
+'histlast'             => 'послѣдьнꙗ',
+'historysize'          => '{{PLURAL:$1|1 баитъ|$1 баита|$1 баитъ}}',
+'historyempty'         => '(поусто)',
 
 # Revision feed
 'history-feed-title'          => 'мѣнъ їсторїꙗ',
@@ -497,7 +500,7 @@ $messages = array(
 'filehist-user'      => 'польꙃєватєл҄ь',
 'filehist-filesize'  => 'дѣла мѣра',
 'filehist-comment'   => 'опьсаниѥ',
-'imagelinks'         => 'дѣла съвѧꙁи',
+'imagelinks'         => 'дѣла польꙃєваниѥ',
 'sharedupload'       => 'сѥ дѣло въ $1 съхранѥно ѥстъ дѣла · ѥгожє дроугꙑ опꙑтьствованиѩ польꙃєвати могѫтъ',
 
 # File reversion
@@ -531,7 +534,7 @@ $messages = array(
 'statistics-pages'        => 'страницѧ',
 'statistics-files'        => 'положєнꙑ дѣла',
 
-'disambiguations'     => 'мъногосъмꙑслиꙗ',
+'disambiguations'     => 'страницѧ ижє съвѧꙁи съ мъногосъмꙑслиꙗ имѫтъ',
 'disambiguationspage' => 'Template:мъногосъмꙑслиѥ',
 
 'brokenredirects-edit'   => 'исправи',
@@ -571,7 +574,7 @@ $messages = array(
 'deletedcontributions-title' => 'поничьжєнꙑ добродѣꙗниꙗ',
 
 # Special:LinkSearch
-'linksearch'    => 'вънѣщьнѩ съвѧꙁи',
+'linksearch'    => 'вънѣщьн҄ь съвѧꙁь исканиѥ',
 'linksearch-ok' => 'ищи',
 
 # Special:ListUsers
@@ -743,7 +746,8 @@ $messages = array(
 'autosumm-new' => 'нова страница ⁖ $1 ⁖ сътворєна  ѥстъ',
 
 # Size units
-'size-bytes' => '$1 Б҃',
+'size-bytes'     => '$1 Б҃',
+'size-kilobytes' => '$1 Х҃Б',
 
 # Special:Version
 'version'                  => 'MediaWiki обраꙁъ',

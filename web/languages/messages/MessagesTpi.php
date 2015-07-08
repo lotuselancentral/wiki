@@ -323,6 +323,9 @@ Na tu yu tok tru nau olsem yu raitim dispela yu yet, o yu kisim long wanpela hap
 'histfirst'        => 'Nambawan',
 'histlast'         => 'Bilong nau',
 
+# Revision feed
+'history-feed-item-nocomment' => '$1 long $2',
+
 # Revision deletion
 'rev-delundel'               => 'soim/haitim',
 'revdelete-show-file-submit' => 'Yes',
@@ -662,6 +665,7 @@ Sapos yu laik rausim dispela pes long lukautbuk bilong yu bihain, paitim \"Pinis
 
 # Undelete
 'undeletelink'              => 'soim/restore',
+'undeleteviewlink'          => 'lukim',
 'undeletecomment'           => 'As bilong en:',
 'undelete-search-submit'    => 'Painim',
 'undelete-show-file-submit' => 'Yes',
@@ -687,7 +691,7 @@ Sapos yu laik rausim dispela pes long lukautbuk bilong yu bihain, paitim \"Pinis
 'whatlinkshere'            => 'Ol link ikam long hia',
 'whatlinkshere-page'       => 'Pes:',
 'isredirect'               => 'nupela rot',
-'isimage'                  => 'link bilong piksa',
+'isimage'                  => 'link long piksa',
 'whatlinkshere-links'      => '← ol link',
 'whatlinkshere-hideredirs' => '$1 ol nupela rot',
 'whatlinkshere-hidelinks'  => '$1 ol link',
@@ -751,6 +755,7 @@ Yu inap lukim as tok bilong em',
 'tooltip-ca-unwatch'             => 'Rausim dispela pes long lukautbuk bilong yu (Remove this page from your watchlist)',
 'tooltip-search'                 => 'Painim long {{SITENAME}}',
 'tooltip-search-fulltext'        => 'Painim dispela hap tok insait long olgeta pes',
+'tooltip-p-logo'                 => 'Lukim fran pes (Visit the main page)',
 'tooltip-n-mainpage'             => 'Lukim fran pes (Visit the main page)',
 'tooltip-n-mainpage-description' => 'Lukim fran pes (Visit the main page)',
 'tooltip-n-help'                 => 'Ples long painim halivim',

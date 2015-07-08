@@ -1,5 +1,5 @@
 <?php
-/** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
+/** Tatar (Cyrillic script) (Татарча)
  *
  * See MessagesQqq.php for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Ajdar
  * @author Bulatbulat
  * @author Don Alessandro
  * @author Haqmar
@@ -232,7 +233,7 @@ $messages = array(
 'tog-enotifminoredits'        => 'Кече үзгәртүләр турында да электрон почтага хәбәр җибәрелсен',
 'tog-enotifrevealaddr'        => 'Хәбәрләрдә e-mail адресым күрсәтелсен',
 'tog-shownumberswatching'     => 'Битне күзәтү исемлекләренә өстәгән кулланучылар санын күрсәтелсен',
-'tog-oldsig'                  => 'Хәзерге имзаны алдан карау:',
+'tog-oldsig'                  => 'Хәзерге имза:',
 'tog-fancysig'                => 'Имзаның шәхси вики-билгеләмәсе (автоматик сылтамасыз)',
 'tog-externaleditor'          => 'Тышкы редактор куллану (бары тик белгечләргә генә һәм санак махсус көйләнгән булу зарур; [http://www.mediawiki.org/wiki/Manual:External_editors тулырак...])',
 'tog-externaldiff'            => 'Тышкы версия чагыштыру программасын куллану (бары тик белгечләр өчен һшм санак махсус көйләнгән булу зарур; [http://www.mediawiki.org/wiki/Manual:External_editors тулырак...])',
@@ -369,7 +370,7 @@ $messages = array(
 'vector-action-move'             => 'Күчерү',
 'vector-action-protect'          => 'Яклау',
 'vector-action-undelete'         => 'Кайтару',
-'vector-action-unprotect'        => 'Яклауны бетерү',
+'vector-action-unprotect'        => 'Яклауны үзгәртү',
 'vector-simplesearch-preference' => 'Эзләү өчен киңәйтелгән ярдәм хәбәрләрен күрсәтү («Векторлы» бизәлеше өчен генә кулланылыа)',
 'vector-view-create'             => 'Төзү',
 'vector-view-edit'               => 'Үзгәртү',
@@ -405,8 +406,8 @@ $messages = array(
 'protect'           => 'Яклау',
 'protect_change'    => 'үзгәртү',
 'protectthispage'   => 'Бу битне яклау',
-'unprotect'         => 'Яклауны бетерү',
-'unprotectthispage' => 'Бу битнең яклауын бетерү',
+'unprotect'         => 'Яклауны үзгәртү',
+'unprotectthispage' => 'Бу битнең яклауын үзгәртү',
 'newpage'           => 'Яңа бит',
 'talkpage'          => 'Бит турында фикер алышу',
 'talkpagelinktext'  => 'Бәхәс',
@@ -436,7 +437,7 @@ $messages = array(
 'jumptosearch'      => 'эзләү',
 'view-pool-error'   => 'Гафу итегез, хәзерге вакытта серверлар буш түгел.
 Бу битне карарга теләүчеләр артык күп.
-Бу биткә соңарак керүегез сорала.
+Бу биткә соңрак керүегез сорала.
 
 $1',
 'pool-timeout'      => 'Кысылуның  вакыты узды',
@@ -802,8 +803,12 @@ $2',
 'userpage-userdoesnotexist-view'   => '"$1" исемле хисап язмасы юк.',
 'blocked-notice-logextract'        => 'Бу кулланучы хәзергә тыелды.
 Түбәндә тыю көндәлегенең соңгы язу бирелгән:',
-'clearyourcache'                   => "'''Искәрмә:''' Битне саклаганнан соң үзгәртүләр күренсен өчен браузерыгызның кэшын чистартыгыз.
-Моны '''Mozilla / Firefox''': ''Ctrl+Shift+R'', '''Safari''': ''Cmd+Shift+R'', '''IE:''' ''Ctrl+F5'', '''Konqueror''': ''F5'', '''Opera''': ''Tools→Preferences'' аша эшләп була.",
+'clearyourcache'                   => "'''Искәрмә:''' Сез саклаган үзгәртүләр кулланышка керсен өчен браузерыгызның кешын чистартырга туры киләчәк. 
+* '''Firefox/Safari''': Shift төймшсенә баскан килеш җиһазлар тасмасында ''Яңарту (Обновить)'' язуына басыгыз, яисә ''Ctrl-F5'' яки  ''Ctrl-R'' (Mac өчен ''Command-R'') төймәләренә басыгыз
+* '''Google Chrome.'''  ''Ctrl-Shift-R'' (Mac өчен ''Command-Shift-R'' ) төймәләренә басыгыз
+* '''Internet Explorer.''' ''Ctrl''  төймәсенә баскан килеш  ''Яңарту (Обновить)'' язуына, яисә ''Ctrl-F5'' басыгыз
+* '''Konqueror.''' ''Яңарту (Обновить)'' язуына, яисә ''F5'' басыгыз
+* '''Opera.''' Менюдан кеш чистартуны сайлагыз: ''Җиһазлар (Инструменты) → Көйләнмәләр (Настройки)''",
 'usercssyoucanpreview'             => "'''Ярдәм:''' \"{{int:showpreview}} төймәсенә басып, яңа CSS-файлны тикшереп була.",
 'userjsyoucanpreview'              => "'''Ярдәм:''' \"{{int:showpreview}}\" төймәсенә басып, яңа JS-файлны тикшереп була.",
 'usercsspreview'                   => "'''Бу бары тик CSS-файлны алдан карау гына, ул әле сакланмаган!'''",
@@ -963,27 +968,27 @@ $3 күрсәткән сәбәп: ''$2''",
 [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} Бетерүләр көндәлегендә] аңлатмалар калдырылган булырга мөмкин.",
 'rev-deleted-text-unhide'     => "Битнең бу юрамасы '''бетерелгән'''.
 [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} Бетерүләр көндәлегендә]  аңлатмалар калдырылган булырга мөмкин.
-Сез идарәче булу сәбәпле, [$1 бирелгән юраманы карый аласыз].",
+Теләгегез булса сез [$1 бирелгән юраманы карый аласыз].",
 'rev-suppressed-text-unhide'  => "Битнең бу юрамасы '''яшерелгән'''.
 [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} Яшерүләр көндәлегендә] аңлатмалар бирелгән булырга мөмкин.
-Сез идарәче булу сәбәпле, [$1 бирелгән юраманы карый аласыз].",
+Теләгегез булса сез  [$1 бирелгән юраманы карый аласыз].",
 'rev-deleted-text-view'       => "Битнең бу юрамасы '''бетерелгән'''.
-Сез идарәче булу сәбәпле, аны карый аласыз. [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} Бетерүләр көндәлегендә] аңлатмалар бирелгән булырга мөмкин.",
+Сез аны карый аласыз. [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} Бетерүләр көндәлегендә] аңлатмалар бирелгән булырга мөмкин.",
 'rev-suppressed-text-view'    => "Битнең бу юрамасы '''яшерелгән'''.
-Сез идарәче булу сәбәпле, аны карый аласыз. [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} Яшерүләр көндәлегендә] аңлатмалар бирелгән булырга мөмкин.",
+Сез аны карый аласыз. [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} Яшерүләр көндәлегендә] аңлатмалар бирелгән булырга мөмкин.",
 'rev-deleted-no-diff'         => "Сез юрамалар арасындагы аермаларны карый алмыйсыз. Сәбәбе: кайсыдыр юрама '''бетерелгән'''.
 [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} Бетерүләр көндәлегендә] тулырак мәгълүмат табып була.",
 'rev-suppressed-no-diff'      => "Сез юрамалар  арасындагы үзгәртүләрне карый алмыйсыз, чөнки аларның берсе '''бетерелгән'''.",
 'rev-deleted-unhide-diff'     => "Битнең кайсыдыр юрамасы '''бетерелгән'''.
 [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} Бетерүләр көндәлегендә] тулырак мәгълүмат табып була.
-Сез идарәче булу сәбәпле, [$1 бирелгән юраманы карый аласыз]",
+Теләгегез булса сез  [$1 бирелгән юраманы карый аласыз]",
 'rev-suppressed-unhide-diff'  => "Битнең кайсыдыр юрамасы '''яшерелгән'''.
 [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} Яшерүләр көндәлегендә] тулырак мәгълүмат табып була.
-Сез идарәче булу сәбәпле, [$1 яшерелгән юраманы карый аласыз]",
+Теләгегез булса сез  [$1 яшерелгән юраманы карый аласыз]",
 'rev-deleted-diff-view'       => "Бу юрамалар чагыштыруының бер юрамасы '''бетерелгән'''.
-Сез идарәче буларак чагыштыруны карый аласыз, [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} бетерүләр көндәлегендә] тулырак мәгълүмат бирелгән булырга мөмкин.",
+Сез  чагыштыруны карый аласыз, [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} бетерүләр көндәлегендә] тулырак мәгълүмат бирелгән булырга мөмкин.",
 'rev-suppressed-diff-view'    => "Бу юрамалар чагыштыруының бер юрамасы '''яшерелгән'''.
-Сез идарәче буларак чагыштыруны карый аласыз, [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} яшерүләр көндәлегендә] тулырак мәгълүмат бирелгән булырга мөмкин.",
+Сез чагыштыруны карый аласыз, [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} яшерүләр көндәлегендә] тулырак мәгълүмат бирелгән булырга мөмкин.",
 'rev-delundel'                => 'күрсәтү/яшерү',
 'rev-showdeleted'             => 'күрсәтү',
 'revisiondelete'              => 'Битнең юрамасын бетерү / кайтару',
@@ -999,6 +1004,7 @@ $3 күрсәткән сәбәп: ''$2''",
 'revdelete-legend'            => 'Чикләүләр урнаштыр:',
 'revdelete-hide-text'         => 'Битнең бу юрамасы текстын яшер',
 'revdelete-hide-image'        => 'Файл эчендәгеләрне качыр',
+'revdelete-hide-name'         => 'Гамәлне һәм объектны яшерү',
 'revdelete-hide-user'         => 'Үзгәртүченең исемен/IP адресын яшер',
 'revdelete-radio-same'        => '(үзгәртмәү)',
 'revdelete-radio-set'         => 'Әйе',
@@ -1051,8 +1057,10 @@ $3 күрсәткән сәбәп: ''$2''",
 'notextmatches'                    => 'Тиңдәш текстлы битләр юк',
 'prevn'                            => 'алдагы {{PLURAL:$1|$1}}',
 'nextn'                            => 'чираттагы {{PLURAL:$1|$1}}',
+'shown-title'                      => 'Сәхифәдә $1 язма күрсәтергә',
 'viewprevnext'                     => 'Күрсәтелүе: ($1 {{int:pipe-separator}} $2) ($3)',
 'searchmenu-legend'                => 'Эзләү көйләнмәләре',
+'searchmenu-exists'                => "'''Бу вики-проекта «[[:$1]]» исемле бит бар инде'''",
 'searchmenu-new'                   => "'''«[[:$1]]»  исемле яңа бит ясау'''",
 'searchhelp-url'                   => 'Help:Эчтәлек',
 'searchmenu-prefix'                => '[[Special:PrefixIndex/$1|Бу префикслы битләрне күрсәтү]]',
@@ -1186,7 +1194,7 @@ $3 күрсәткән сәбәп: ''$2''",
 'prefs-registration-date-time'  => '$1',
 'yourrealname'                  => 'Чын исем:',
 'yourlanguage'                  => 'Тел:',
-'yourvariant'                   => 'Телнең төрләре:',
+'yourvariant'                   => 'Эчтәлекнең тел варианты:',
 'yournick'                      => 'Яңа имзагыз:',
 'prefs-help-signature'          => 'Бәхәслек битләрендә сезнең язмаларыгызны калдыру «<nowiki>~~~~</nowiki>» тамгалары куелу нәтиҗәсендә булырга тиеш.',
 'badsig'                        => 'Имза дөрес түгел. HTML теглары тикшерегез.',
@@ -1293,6 +1301,7 @@ $3 күрсәткән сәбәп: ''$2''",
 'recentchanges-label-newpage'       => 'Бу үзгәртү белән яңа бит төзелде',
 'recentchanges-label-minor'         => 'Бу кече үзгәртү',
 'recentchanges-label-bot'           => 'Бу үзгәртү бот белән эшләнгән иде',
+'recentchanges-label-unpatrolled'   => 'Үзгәртүне әлегә тикшермәгәннәр',
 'rcnote'                            => 'Аста $4 $5 вакытынна соңгы {{PLURAL:$2|1|$2}} көн эчендә булган соңгы {{PLURAL:$1|1|$1}} үзгәртмә күрсәтелә:',
 'rcnotefrom'                        => "Астарак '''$2''' башлап ('''$1''' кадәр) үзгәртүләр күрсәтелгән.",
 'rclistfrom'                        => '$1 башлап яңа үзгәртүләрне күрсәт',
@@ -1453,7 +1462,7 @@ PICT # төрле
 'filehist-filesize'         => 'Файлның зурлыгы',
 'filehist-comment'          => 'Искәрмә',
 'filehist-missing'          => 'Файл табылмады',
-'imagelinks'                => 'Файлга сылтамалар',
+'imagelinks'                => 'Файлны куллану',
 'linkstoimage'              => 'Бу файлга әлеге {{PLURAL:$1|бит|$1 бит}} сылтый:',
 'nolinkstoimage'            => 'Бу файлга сылтаган битләр юк.',
 'duplicatesoffile'          => '{{PLURAL:$1|Әлеге $1 файл }} астагы файлның күчерелмәсе булып тора ([[Special:FileDuplicateSearch/$2|тулырак]]):',
@@ -1518,7 +1527,8 @@ PICT # төрле
 'statistics-users-active-desc' => '{{PLURAL:$1|$1 көн }} өчендә нинди дә булса үзгәртүләр керткән кулланучылар',
 'statistics-mostpopular'       => 'Иң күп каралучы битләр',
 
-'disambiguations' => 'Күп мәгънәле сүзләр турында битләр',
+'disambiguations'     => 'Күп мәгънәле сүзләр турында битләр',
+'disambiguationspage' => 'Template:disambig',
 
 'doubleredirects' => 'Икеләтә юнәлтүләр',
 
@@ -1617,10 +1627,11 @@ PICT # төрле
 'sp-deletedcontributions-contribs' => 'кертем',
 
 # Special:LinkSearch
-'linksearch'     => 'Тышкы сылтамалар',
-'linksearch-pat' => 'Эзләү өчен үрнәк:',
-'linksearch-ns'  => 'Исемнәр мәйданы:',
-'linksearch-ok'  => 'Эзләү',
+'linksearch'      => 'Тышкы сылтамалар',
+'linksearch-pat'  => 'Эзләү өчен үрнәк:',
+'linksearch-ns'   => 'Исемнәр мәйданы:',
+'linksearch-ok'   => 'Эзләү',
+'linksearch-line' => '$2 мәкаләсеннән $1 мәкаләгә сылтама',
 
 # Special:ListUsers
 'listusers-submit'   => 'Күрсәтү',
@@ -1756,7 +1767,7 @@ $UNWATCHURL
 'protectlogpage'              => 'Яклану көндәлеге',
 'protectedarticle'            => '«[[$1]]» якланган',
 'modifiedarticleprotection'   => '"[[$1]]" бите өчен яклау дәрәҗәсе үзгәртелде',
-'unprotectedarticle'          => '«[[$1]]» инде якланмаган',
+'unprotectedarticle'          => '«[[$1]]» битеннән яклау алынды',
 'movedarticleprotection'      => 'яклау көйләнмәләрен «[[$2]]» битеннән «[[$1]]» битенә күчерде',
 'protect-title'               => '«$1» өчен яклау дәрәҗәсен билгеләү',
 'prot_1movedto2'              => '«[[$1]]» бите «[[$2]]» битенә күчерелде',
@@ -1844,6 +1855,7 @@ $1',
 'sp-contributions-newbies'     => 'Яңа хисап язмаларыннан ясалган кертемне генә карау',
 'sp-contributions-newbies-sub' => 'Яңа хисап язмалары өчен',
 'sp-contributions-blocklog'    => 'тыю көндәлеге',
+'sp-contributions-uploads'     => 'йөкләүләр',
 'sp-contributions-logs'        => 'көндәлекләр',
 'sp-contributions-talk'        => 'бәхәс',
 'sp-contributions-search'      => 'Кертемне эзләү',
@@ -1858,7 +1870,7 @@ $1',
 'nolinkshere'              => "'''[[:$1]]''' битенә башка битләр сылтамыйлар.",
 'isredirect'               => 'юнәлтү бите',
 'istemplate'               => 'кертүләр',
-'isimage'                  => 'рәсем өчен сылтама',
+'isimage'                  => 'файл сылтамасы',
 'whatlinkshere-prev'       => '{{PLURAL:$1|алдагы|алдагы $1}}',
 'whatlinkshere-next'       => '{{PLURAL:$1|чираттагы|чираттагы $1}}',
 'whatlinkshere-links'      => '← сылтамалар',
@@ -1973,6 +1985,7 @@ $1',
 # Namespace 8 related
 'allmessages'                   => 'Система хәбәрләре',
 'allmessagesname'               => 'Исем',
+'allmessagesdefault'            => 'Баштан ук куелган текс',
 'allmessagestext'               => 'Бу исемлек MediaWiki исемнәр мәйданында булган система хәбәрләренең исемлеге.
 Гомуми MediaWiki локализациясендә катнашырга теләсәгез, зинһар [http://www.mediawiki.org/wiki/Localisation MediaWiki Локализациясе] һәм [http://translatewiki.net translatewiki.net] сәхифәләрне кулланыгыз.',
 'allmessages-filter-legend'     => 'Фильтр',
@@ -1988,11 +2001,23 @@ $1',
 'thumbnail_error' => 'Кечкенә сүрәт төзүе хатасы: $1',
 
 # Special:Import
-'import-interwiki-submit' => 'Импортлау',
-'import-upload-filename'  => 'Файл исеме:',
-'import-comment'          => 'Искәрмә:',
-'importstart'             => 'Битләрне импортлау...',
-'importnotext'            => 'Буш яки текст юк',
+'import'                     => 'Битләр кертү',
+'importinterwiki'            => 'Викиара кертү',
+'import-interwiki-text'      => 'Викины һәм кертелүче битнең исемен языгыз.
+Үзгәртүләр вакыты һәм аның авторлары сакланачак.
+Бөтен викиара күчерүләр [[Special:Log/import|махсус журналда]] сакланачак.',
+'import-interwiki-source'    => 'Вики-чыганак/бит:',
+'import-interwiki-history'   => 'Бу битнең барлык үзгәртү тарихын күчермәләү',
+'import-interwiki-templates' => 'Барлык үрнәкләрне кертү',
+'import-interwiki-submit'    => 'Импортлау',
+'import-interwiki-namespace' => 'Исемнәр тирәлеге:',
+'import-upload-filename'     => 'Файл исеме:',
+'import-comment'             => 'Искәрмә:',
+'importtext'                 => 'Зинһар өчен, битне күчерү өчен [[Special:Export|махсус корал]] кулланыгыз. Файлны дискка саклагыз, аннан соң монда йөкләгез.',
+'importstart'                => 'Битләрне импортлау...',
+'import-revision-count'      => '$1 {{PLURAL:$1|юрама|юрама|юрама}}',
+'importnopages'              => 'Импортлау өчен битләр юк.',
+'importnotext'               => 'Буш яки текст юк',
 
 # Import log
 'importlogpage'             => 'Кертү көндәлеге',
@@ -2325,7 +2350,7 @@ $1',
 
 # action=purge
 'confirm_purge_button' => 'OK',
-'confirm-purge-top'    => 'Бу битнең кэшын чистартыргамы?',
+'confirm-purge-top'    => 'Бу битнең кэшы чистартылсынмы?',
 'confirm-purge-bottom' => 'Кэшны чистартудан соң аның соңгы юрамасы күрсәтеләчәк.',
 
 # Multipage image navigation

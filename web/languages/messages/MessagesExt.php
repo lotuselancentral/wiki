@@ -8,8 +8,10 @@
  * @file
  *
  * @author Better
+ * @author Kaganer
  * @author The Evil IP address
  * @author Urhixidur
+ * @author Xuacu
  */
 
 $namespaceNames = array(
@@ -569,7 +571,7 @@ Pueis [[Special:Search/{{PAGENAME}}|landeal el entítulu del artículu]] en otra
 <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}}}} search the related logs],
 u [{{fullurl:{{FULLPAGENAME}}|action=edit}} eital ésta]</span>.',
 'userpage-userdoesnotexist'        => 'La cuenta d\'usuáriu "$1" nu está rustria. Pol favol, compreba que rialmenti quieis crial/eital esta páhina.',
-'clearyourcache'                   => "'''Nota:''' Aluspués d'emburacal el archivu, ebi gorvel a cargal la página pa vel los chambus. '''Mozilla / Firefox / Safari:''' Pursa la tecra ''Shift'' mentris das a ''Recargal'', u pursa ''Ctrl-F5'' u ''Ctrl-R'' (''Command-R'' en Macintosh);
+'clearyourcache'                   => "'''Nota:''' Aluspués d'emburacal el archivu, ebi gorvel a cargal la página pa vel los chambus. '''Mozilla / Firefox / Safari:''' Pursa la tecra ''Shift'' mentris das a ''Recargal'', u pursa ''Ctrl-F5'' u ''Ctrl-R'' (''Command-R'' en Mac);
 '''Konqueror:''' Pursa ''F5'' u ''Recargal'';
 '''Opera:''' Esborra el caché en ''Herramientas→Preferéncias''.
 '''Internet Explorer:''' Mantén ''Ctrl'' mentris pursas ''Atualizal'', u pursa ''Ctrl-F5''.",
@@ -2057,7 +2059,7 @@ $1',
 
 # Media information
 'thumbsize'            => 'Grandol el cuairu:',
-'widthheightpage'      => '$1×$2, $3 {{PLURAL:$3|página|páginas}}',
+'widthheightpage'      => '$1 × $2, $3 {{PLURAL:$3|página|páginas}}',
 'file-info'            => 'grandol el archivu: $1, MIME type: $2',
 'file-info-size'       => '$1 × $2 pixel, grandol el archivu: $3, MIME type: $4',
 'file-nohires'         => '<small>Nu disponibri a mayol resolución.</small>',
@@ -2469,9 +2471,8 @@ Pol favol, confirma si rialmenti quieis gorvel a crial la páhina.",
 'filepath'         => "Ruta d'archivu",
 'filepath-page'    => 'Archivu:',
 'filepath-submit'  => 'Ruta',
-'filepath-summary' => "Esta páhina especial degüervi la ruta compreta dun archivu. Las imahin se muestran a resolución compreta; las demas crasis d'archivu s'ehecutan diretamenti con el su pograma asociau.
-
-Escribi el nombri d'archivu sin el prefihu \"{{ns:file}}:\".",
+'filepath-summary' => "Esta páhina especial degüervi la ruta compreta dun archivu.
+Las imahin se muestran a resolución compreta; las demas crasis d'archivu s'ehecutan diretamenti con el su pograma asociau.",
 
 # Special:FileDuplicateSearch
 'fileduplicatesearch'          => 'Landeal archivus dupricaus',

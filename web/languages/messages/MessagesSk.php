@@ -10,11 +10,13 @@
  * @author Chiak
  * @author Danny B.
  * @author Helix84
+ * @author Kaganer
  * @author Liso
  * @author Maros
  * @author Michawiki
  * @author Mormegil
  * @author Palica
+ * @author Pitr2311
  * @author Ragimiri
  * @author Reedy
  * @author Rudko
@@ -22,6 +24,7 @@
  * @author Tchoř
  * @author Urhixidur
  * @author Valasek
+ * @author Wizzard
  * @author לערי ריינהארט
  */
 
@@ -305,7 +308,7 @@ $messages = array(
 'tog-enotifminoredits'        => 'Upozorniť ma emailom aj na drobné úpravy stránok',
 'tog-enotifrevealaddr'        => 'Zobraziť moju emailovú adresu v emailoch s upozorneniami',
 'tog-shownumberswatching'     => 'Zobraziť počet používateľov sledujúcich stránku',
-'tog-oldsig'                  => 'Náhľad súčasného podpisu:',
+'tog-oldsig'                  => 'Súčasný podpis:',
 'tog-fancysig'                => 'Považovať podpisy za wikitext (bez automatických odkazov)',
 'tog-externaleditor'          => 'Používať štandardne externý editor (iba pre expertov, vyžaduje špeciálne nastavenie vášho počítača. [http://www.mediawiki.org/wiki/Manual:External_editors Ďalšie informácie.])',
 'tog-externaldiff'            => 'Používať štandardne externý diff (iba pre expertov, vyžaduje špeciálne nastavenie vášho počítača. [http://www.mediawiki.org/wiki/Manual:External_editors Ďalšie informácie.])',
@@ -443,7 +446,7 @@ $messages = array(
 'vector-action-move'             => 'Presunúť',
 'vector-action-protect'          => 'Zamknúť',
 'vector-action-undelete'         => 'Obnoviť',
-'vector-action-unprotect'        => 'Odomknúť',
+'vector-action-unprotect'        => 'Zmeniť stav ochrany',
 'vector-simplesearch-preference' => 'Povoliť rozšírené návrhy hľadania (iba pre tému Vector)',
 'vector-view-create'             => 'Vytvoriť',
 'vector-view-edit'               => 'Upraviť',
@@ -479,8 +482,8 @@ $messages = array(
 'protect'           => 'Zamknúť',
 'protect_change'    => 'Zmeniť',
 'protectthispage'   => 'Zamknúť túto stránku',
-'unprotect'         => 'Odomknúť',
-'unprotectthispage' => 'Odomknúť túto stránku',
+'unprotect'         => 'Zmeniť stav ochrany',
+'unprotectthispage' => 'Zmeniť stav ochrany tejto stránky',
 'newpage'           => 'Nová stránka',
 'talkpage'          => 'Diskusia k stránke',
 'talkpagelinktext'  => 'Diskusia',
@@ -699,8 +702,8 @@ Nezabudnite si nastaviť svoje [[Special:Preferences|používateľské nastaveni
 'createaccountmail'          => 'e-mailom',
 'createaccountreason'        => 'Dôvod:',
 'badretype'                  => 'Zadané heslá nie sú rovnaké.',
-'userexists'                 => 'Zadané používateľské meno už používa niekto iný.
-Zadajte iné meno.',
+'userexists'                 => 'Zadané používateľské meno sa už používa.
+Zvoľte si prosím iné meno.',
 'loginerror'                 => 'Chyba pri prihlasovaní',
 'createaccounterror'         => 'Nepodarilo sa vytvoriť účet: $1',
 'nocookiesnew'               => 'Používateľské konto bolo vytvorené, ale nie ste prihlásený. {{SITENAME}} používa cookies na prihlásenie. Máte cookies vypnuté. Zapnite ich a potom sa prihláste pomocou vášho nového používateľského mena a hesla.',
@@ -887,8 +890,12 @@ alebo <span class="plainlinks">[{{fullurl:{{#Special:Log}}|page={{FULLPAGENAMEE}
 'userpage-userdoesnotexist-view'   => 'Používateľský účet „$1“ nie je registrovaný.',
 'blocked-notice-logextract'        => 'Tento používateľ je momentálne zablokovaný.
 Dolu je pre informáciu posledná položka zo záznamu blokovaní:',
-'clearyourcache'                   => "'''Poznámka: Aby sa zmeny prejavili, po uložení musíte vymazať vyrovnávaciu pamäť vášho prehliadača.'''
-'''Mozilla / Firefox / Safari:''' držte stlačený ''Shift'' a kliknite na ''Reload'' alebo stlačte buď ''Ctrl-F5'' alebo ''Ctrl-R'' (''Comand-R'' na Macintosh); '''Konqueror:''': kliknite na tlačidlo ''Reload'' alebo stlačte ''F5''; '''Opera''' vymazať vyrovnávaciu pamäť prehliadača v ponuke ''Tools→Preferences''; '''Internet Explorer:''' držte ''Ctrl'' a kliknite na ''Refresh'' alebo stlačte ''Ctrl-F5'';",
+'clearyourcache'                   => "'''Poznámka:''' Aby sa zmeny prejavili, po uložení musíte vymazať vyrovnávaciu pamäť vášho prehliadača.
+* '''Mozilla / Firefox / Safari:''' Držte stlačený ''Shift'' a kliknite na ''Reload'' alebo stlačte buď ''Ctrl-F5'' alebo ''Ctrl-R'' (''⌘-R'' na Mac)
+* '''Google Chrome:''' Stlačte ''Ctrl-Shift-R'' (''⌘-Shift-R'' na Mac)
+* '''Internet Explorer:''' Držte ''Ctrl'' a kliknite na ''Refresh'' alebo stlačte ''Ctrl-F5''
+* '''Konqueror:''' Kliknite na tlačidlo ''Reload'' alebo stlačte ''F5''
+* '''Opera:''' Vymazať vyrovnávaciu pamäť prehliadača v ponuke ''Tools→Preferences''",
 'usercssyoucanpreview'             => "'''Tip:''' Váš nový CSS pred uložením otestujete stlačením tlačidla „{{int:showpreview}}“.",
 'userjsyoucanpreview'              => "'''Tip:''' Váš nový JS pred uložením otestujete stlačením tlačidla „{{int:showpreview}}“.",
 'usercsspreview'                   => "'''Nezabudnite, že toto je iba náhľad vášho používateľského CSS, ešte nebolo uložené!'''",
@@ -1054,7 +1061,7 @@ Podrobnosti nájdete v [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE
 Ako správca máte stále možnosť [$1 zobraziť túto revíziu] ak chcete.",
 'rev-deleted-text-view'       => "Táto revízia stránky bola '''zmazaná'''.
 Ako správca {{GRAMMAR:genitív|{{SITENAME}}}} si ju môžete prezrieť;
-podrobnosti môžu byť v [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} zázname mazaní].",
+podrobnosti nájdete v [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} zázname mazaní].",
 'rev-suppressed-text-view'    => "Táto revízia stránky bola '''potlačená'''.
 Podrobnosti nájdete v [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} zázname potlačení].",
 'rev-deleted-no-diff'         => "Tento rozdiel nemôžete zobraziť, pretože bol '''zmazaný'''.
@@ -1066,12 +1073,10 @@ Ako správca {{GRAMMAR:genitív|{{SITENAME}}}} si [$1 tento rozdiel môžete pre
 'rev-suppressed-unhide-diff'  => "Jedna z revízií tohto rozdielu bola '''potlačená'''.
 Podrobnosti môžete nájsť v [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} zázname potlačení].
 Ako správca {{GRAMMAR:genitív|{{SITENAME}}}} si [$1 tento rozdiel môžete prezrieť].",
-'rev-deleted-diff-view'       => "jedna z revízií tohto rozdielu bola '''zmazaná'''.
-Ako správca si môžete tento rozdiel zobraziť.
-Podrobnosti môžete nájsť v [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} zázname mazaní].",
-'rev-suppressed-diff-view'    => "jedna z revízií tohto rozdielu bola '''potlačená'''.
-Ako správca si môžete tento rozdiel zobraziť.
-Podrobnosti môžete nájsť v [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} zázname potlačení].",
+'rev-deleted-diff-view'       => "Jedna z revízií tohto rozdielu bola '''zmazaná'''.
+Ako správca si môžete tento rozdiel zobraziť; podrobnosti môžete nájsť v [{{fullurl:{{#Special:Log}}/delete|page={{FULLPAGENAMEE}}}} zázname mazaní].",
+'rev-suppressed-diff-view'    => "Jedna z revízií tohto rozdielu bola '''potlačená'''.
+Ako správca si môžete tento rozdiel zobraziť; podrobnosti môžete nájsť v [{{fullurl:{{#Special:Log}}/suppress|page={{FULLPAGENAMEE}}}} zázname potlačení].",
 'rev-delundel'                => 'zobraziť/skryť',
 'rev-showdeleted'             => 'zobraziť',
 'revisiondelete'              => 'Zmazať/obnoviť revízie',
@@ -1344,7 +1349,7 @@ Túto operáciu nemožno vrátiť.',
 'prefs-registration'            => 'Čas registrácie:',
 'yourrealname'                  => 'Skutočné meno *:',
 'yourlanguage'                  => 'Jazyk:',
-'yourvariant'                   => 'Variant jazyka:',
+'yourvariant'                   => 'Variant jazyka obsahu:',
 'yournick'                      => 'Podpis:',
 'prefs-help-signature'          => 'Komentáre na diskusných stránkach by ste mali podpisovať pomocou „<nowiki>~~~~</nowiki>“, čo sa prevedie na váš podpis a časovú známku.',
 'badsig'                        => 'Neplatný podpis v pôvodnom tvare; skontrolujte HTML značky.',
@@ -1396,7 +1401,7 @@ Musí obsahovať menej ako $1 {{PLURAL:$1|znak|znaky|znakov}}.',
 'userrights-no-interwiki'      => 'Nemáte oprávnenie upravovať práva používateľov na iných wiki.',
 'userrights-nodatabase'        => 'Databáza $1 neexistuje alebo nie je lokálna.',
 'userrights-nologin'           => 'Aby ste mohli prideľovať používateľom oprávnenia, musíte sa [[Special:UserLogin|prihlásiť]] s účtom správcu.',
-'userrights-notallowed'        => 'Váš účet nemá oprávnenia prideľovať používateľom oprávnenia.',
+'userrights-notallowed'        => 'Váš účet nemá oprávnenie prideľovať alebo odoberať používateľom oprávnenia.',
 'userrights-changeable-col'    => 'Skupiny, ktoré môžete zmeniť',
 'userrights-unchangeable-col'  => 'Skupiny, ktoré nemôžete zmeniť',
 
@@ -1763,8 +1768,7 @@ Aby bolo zabezpečenie optimálne, img_auth.php je vypnutý.',
 
 # Special:ListFiles
 'listfiles-summary'     => 'Táto špeciálna stránka zobrazuje všetky nahrané súbory.
-Posledné nahrané súbory sa štandardne zobrazujú na vrchu.
-Kliknutím na hlavičku stĺpca zmeníte poradie triedenia.',
+Pri filtrovaní podľa používateľa sa zobrazia iba súbory, ktorých najnovšiu verziu nahral dotyčný používateľ.',
 'listfiles_search_for'  => 'Hľadať názov súboru:',
 'imgfile'               => 'súbor',
 'listfiles'             => 'Zoznam obrázkov',
@@ -1793,7 +1797,7 @@ Kliknutím na hlavičku stĺpca zmeníte poradie triedenia.',
 'filehist-filesize'         => 'veľkosť súboru',
 'filehist-comment'          => 'komentár',
 'filehist-missing'          => 'Súbor chýba',
-'imagelinks'                => 'Odkazy na súbor',
+'imagelinks'                => 'Použitie súboru',
 'linkstoimage'              => 'Na tento obrázok {{PLURAL:$1|odkazuje nasledujúca stránka|odkazujú nasledujúce $1 stránky|odkazuje nasledujúcich $1 stránok}}:',
 'linkstoimage-more'         => 'Viac ako $1 {{PLURAL:$1|stránka odkazuje|stránky odkazujú|stránok odkazuje}} na tento súbor.
 Nasledovný zoznam zobrazuje {{PLURAL:$1|prvú stránku odkazujúcu|prvé $1 stránky odkazujúce|prvých $1 stránok odkazujúcich}} iba na tento súbor.
@@ -1886,7 +1890,7 @@ Môžete si pozrieť [[Special:WhatLinksHere/$2|úplný zoznam]].',
 'statistics-users-active-desc' => 'Používatelia, ktorí za {{PLURAL:$1|posledný deň|posledné $1 dni|posledných $1 dní}} vykonali nejakú operáciu',
 'statistics-mostpopular'       => 'Najčastejšie prezerané stránky',
 
-'disambiguations'      => 'Stránky na rozlíšenie viacerých významov',
+'disambiguations'      => 'Stránky odkazujúce na rozlišovacie stránky',
 'disambiguationspage'  => 'Template:Rozlišovacia stránka',
 'disambiguations-text' => "Nasledovné stránky odkazujú na '''rozlišovaciu stránku'''.
 Mali by však odkazovať priamo na príslušnú tému.<br />
@@ -1984,8 +1988,8 @@ na ktorý/-ého chcete aplikovať túto funkciu.',
 'booksources-invalid-isbn'  => 'Zdá sa, že dané ISBN nie je platné. Skontrolujte, či ste neurobili chybu pri kopírovaní z pôvodného zdroja.',
 
 # Special:Log
-'specialloguserlabel'  => 'Používateľ:',
-'speciallogtitlelabel' => 'Názov:',
+'specialloguserlabel'  => 'Pôvodca:',
+'speciallogtitlelabel' => 'Cieľ (názov alebo používateľ):',
 'log'                  => 'Záznamy',
 'all-logs-page'        => 'Všetky verejné záznamy',
 'alllogstext'          => 'Kombinované zobrazenie všetkých dostupných záznamov {{GRAMMAR:genitív|{{SITENAME}}}}.
@@ -2025,12 +2029,13 @@ Pozri aj [[Special:WantedCategories|žiadané kategórie]].',
 'sp-deletedcontributions-contribs' => 'príspevky',
 
 # Special:LinkSearch
-'linksearch'       => 'Externé odkazy',
+'linksearch'       => 'Vyhľadávanie externých odkazov',
 'linksearch-pat'   => 'Vyhľadávací vzor:',
 'linksearch-ns'    => 'Menný priestor:',
 'linksearch-ok'    => 'Hľadať',
-'linksearch-text'  => 'Je možné použiť zástupné znaky ako „*.wikipedia.org“.<br />
-Podporované protokoly: <tt>$1</tt>',
+'linksearch-text'  => 'Je možné používať zástupné znaky, napr. „*.wikipedia.org“.
+Povinná je minimálne doména najvyššej úrovne, napr.. „*.org“.<br />
+Podporované protokoly: <tt>$1</tt> (nepridávajte ich do hľadania).',
 'linksearch-line'  => 'Na $1 odkazuje $2',
 'linksearch-error' => 'Zástupné znaky je možné použiť iba na začiatku názvu domény.',
 
@@ -2233,11 +2238,11 @@ Prosím, stlačte "naspäť", obnovte stránku, z ktorej ste sa sem dostali, a s
 
 # Protect
 'protectlogpage'              => 'Záznam zamknutí',
-'protectlogtext'              => 'Nižšie je zoznam zamknutí/odomknutí stránok.
-Môžete si pozrieť aj [[Special:ProtectedPages|zoznam momentálne platných zamknutí]].',
+'protectlogtext'              => 'Nižšie je zoznam zmien stavu ochrany stránok.
+Môžete si pozrieť aj [[Special:ProtectedPages|zoznam momentálne platných ochrán stránok]].',
 'protectedarticle'            => 'zamyká „[[$1]]“',
 'modifiedarticleprotection'   => 'zmenená úroveň ochrany „[[$1]]“',
-'unprotectedarticle'          => 'odomyká „[[$1]]“',
+'unprotectedarticle'          => 'odstránil ochranu stránky „[[$1]]“',
 'movedarticleprotection'      => 'nastavenia zamknutia stránky presunuté z „[[$2]]” na „[[$1]]”',
 'protect-title'               => 'Zamykám „$1“',
 'prot_1movedto2'              => '[[$1]] premiestnená na [[$2]]',
@@ -2384,7 +2389,7 @@ Nižšie si môžete pozrieť najnovšiu položku záznamu blokovaní:',
 'nolinkshere-ns'           => "Žiadne stránky neodkazujú na '''[[:$1]]''' vo zvolenom mennom priestore.",
 'isredirect'               => 'presmerovacia stránka',
 'istemplate'               => 'použitá',
-'isimage'                  => 'odkaz na obrázok',
+'isimage'                  => 'odkaz na súbor',
 'whatlinkshere-prev'       => '{{PLURAL:$1|predchádzajúca|predchádzajúce $1|predchádzajúcich $1}}',
 'whatlinkshere-next'       => '{{PLURAL:$1|nasledujúca|nasledujúce $1|nasledujúcich $1}}',
 'whatlinkshere-links'      => '← odkazy',
@@ -2748,7 +2753,7 @@ Uložte ho na svoj disk a nahrajte sem.',
 'tooltip-ca-viewsource'           => 'Táto stránka je zamknutá. Môžete však vidieť jej zdrojový text.',
 'tooltip-ca-history'              => 'Minulé verzie tejto stránky.',
 'tooltip-ca-protect'              => 'Zamknúť túto stránku',
-'tooltip-ca-unprotect'            => 'Odomknúť túto stránku',
+'tooltip-ca-unprotect'            => 'Zmeniť stav ochrany tejto stránky',
 'tooltip-ca-delete'               => 'Vymazať túto stránku',
 'tooltip-ca-undelete'             => 'Obnoviť úpravy tejto stránky až po dobu, kedy bola vymazaná',
 'tooltip-ca-move'                 => 'Presunúť túto stránku',
@@ -2826,8 +2831,8 @@ Umožnuje do zhrnutia pridanie dôvodu.',
 'vector.js'      => '/* Tu sa nachádzajúci JavaScript sa načíta používateľom vzhľadu Vector */',
 
 # Metadata
-'nodublincore'      => 'Dublin Core RDF metadáta pre tento server vypnuté.',
-'nocreativecommons' => 'Creative Commons RDF metadata pre tento server vypnuté.',
+'nodublincore'      => 'RDF metadáta Dublin Core sú pre tento server vypnuté.',
+'nocreativecommons' => 'RDF metadáta Creative Commons sú pre tento server vypnuté.',
 'notacceptable'     => 'Wiki server nedokáže poskytovať dáta vo formáte, v akom ich váš klient vie čítať.',
 
 # Attribution
@@ -2927,7 +2932,7 @@ $1',
 Jeho spustením môžete kompromitovať svoj systém.",
 'imagemaxsize'         => "Obmedziť veľkosť obrázka:<br />''(na popisnej stránke súboru)''",
 'thumbsize'            => 'Veľkosť náhľadu:',
-'widthheightpage'      => '$1×$2, $3 {{PLURAL:$3|stránka|stránky|stránok}}',
+'widthheightpage'      => '$1 × $2, $3 {{PLURAL:$3|stránka|stránky|stránok}}',
 'file-info'            => 'veľkosť súboru: $1, MIME typ: $2',
 'file-info-size'       => '$1 × $2 pixelov, veľkosť súboru: $3, MIME typ: $4',
 'file-nohires'         => '<small>Nie je dostupné vyššie rozlíšenie.</small>',
@@ -3103,9 +3108,9 @@ Každý ďalší odkaz na rovnakom riadku sa považuje za výnimku, t.j. článk
 'exif-orientation-3' => 'Otočená o 180°',
 'exif-orientation-4' => 'Vertikálne prevrátená',
 'exif-orientation-5' => 'Otočená o 90° proti smeru hodinových ručičiek a vertikálne prevrátená',
-'exif-orientation-6' => 'Otočená o 90° v smere hodinových ručičiek',
+'exif-orientation-6' => 'Otočená o 90° proti smeru hodinových ručičiek',
 'exif-orientation-7' => 'Otočená o 90° v smere hodinových ručičiek a vertikálne prevrátená',
-'exif-orientation-8' => 'Otočená o 90° proti smeru hodinových ručičiek',
+'exif-orientation-8' => 'Otočená o 90° v smere hodinových ručičiek',
 
 'exif-planarconfiguration-1' => 'masívny formát',
 'exif-planarconfiguration-2' => 'rovinný formát',

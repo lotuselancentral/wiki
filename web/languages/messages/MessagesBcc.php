@@ -8,6 +8,7 @@
  * @file
  *
  * @author Huji
+ * @author Kaganer
  * @author Mostafadaneshvar
  * @author ZxxZxxZ
  */
@@ -2557,13 +2558,13 @@ $1',
 'mediawarning'         => "''''هوژاری:'''' ای فایل شاید شامل بد واهین کد بوت،اجرای آیی ته وتی سیستم شاید توافقی بیت.",
 'imagemaxsize'         => "محدودیت تصاویر: <br />''(په صفحات توضیح فایل)''",
 'thumbsize'            => 'اندازه پیج انگشتی',
-'widthheightpage'      => '$1×$2, $3 {{PLURAL:$3|صفحه|صفحات}}',
+'widthheightpage'      => '$1 × $2, $3 {{PLURAL:$3|صفحه|صفحات}}',
 'file-info'            => 'اندازه فایل: $1, مایم نوع: $2',
 'file-info-size'       => '$1 × $2 پیکسل, اندازه فایل: $3, مایم نوع: $4',
 'file-nohires'         => '<small>مزنترین رزلوشن نیست.</small>',
 'svg-long-desc'        => 'اس وی جی  فایل, معمولا $1 × $2 پیکسل, فایل اندازه: $3',
 'show-big-image'       => 'کل صفحه',
-'show-big-image-thumb' => '<small>اندازه ای بازبین:$1× $2 pixels</small>',
+'show-big-image-thumb' => '<small>اندازه ای بازبین:$1 × $2 pixels</small>',
 
 # Special:NewFiles
 'newimages'             => 'گالری نوکین فایلان',
@@ -3153,9 +3154,7 @@ $1',
 'filepath-page'    => 'فایل:',
 'filepath-submit'  => 'مسیر',
 'filepath-summary' => 'ای حاصین صفحه مسیر کامل په یک فایل پیش داریت.
-تصاویر گون وضوح کامل پیش دارگ بنت و دگه نوع فایلان گون وتی برنامه یانش مستقیما پچ بنت.
-
-نام فایل بی پسوند "{{ns:file}}:" وارد کن',
+تصاویر گون وضوح کامل پیش دارگ بنت و دگه نوع فایلان گون وتی برنامه یانش مستقیما پچ بنت.',
 
 # Special:FileDuplicateSearch
 'fileduplicatesearch'          => 'گردگ په کپی  فایلان',
