@@ -142,5 +142,6 @@ $wgGroupPermissions['*']['createaccount'] = false;
 $wgUseAjax=true;
 
 $wgShowExceptionDetails = (bool) getenv('WIKILEC_DEBUG');
+$wgShowDBErrorBacktrace = (bool) getenv('WIKILEC_DEBUG');
 
 ?>
