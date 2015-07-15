@@ -1,0 +1,56 @@
+#!/bin/bash
+
+set -e
+set -u
+set -o pipefail
+
+pw="$WIKILEC_BACKUP_PASSWORD"
+bucket="backups-wiki"
+
+bucketPath="daily"
+dir=`cd $(dirname $0)/.. >/dev/null 2>&1 && pwd`
+basedir="$dir/web"
+dt=$(date --utc "+%Y-%m-%d-%H%M%S")
+
+log() {
+	echo "["$(date --utc "+%Y-%m-%d-%H:%M:%S")"] $1"
+}
+
+if [ $(date --utc "+%d") = "01" ];
+then
+	bucketPath="monthly"
+elif [ $(date --utc "+%u") = "1" ];
+then
+	#bucketPath="weekly"
+	:
+fi
+
+log "Performing $bucketPath backup"
+
+mkdir -p "$dir/backups"
+
+log "Creating database backup"
+exec 3<<< "$pw"
+
+$dir/bin/backup-db "$basedir/config.php" | gzip --best --rsyncable | gpg --no-tty --cipher-algo AES256 --symmetric --passphrase-fd=3 > "$dir/backups/wiki-$dt.sql.gz.gpg"
+log "Done."
+
+log "Uploading database backup to s3://$bucket/$bucketPath/wiki-database.sql.gz.gpg"
+php-cli -ddisable_functions="" -f ~/bin/s3-put.php -- $bucket "$dir/backups/wiki-$dt.sql.gz.gpg" "$bucketPath/wiki-database.sql.gz.gpg"
+log "Done."
+
+
+log "Creating files backup"
+exec 3<<< "$pw"
+
+$dir/bin/backup-fs "$basedir" | gzip --fast --rsyncable | gpg --no-tty --cipher-algo AES256 --symmetric --passphrase-fd=3 > "$dir/backups/wiki-$dt.tar.gz.gpg"
+log "Done".
+
+log "Uploading files backup to s3://$bucket/$bucketPath/wiki-files.tar.gz.gpg"
+php-cli -ddisable_functions="" -f ~/bin/s3-put.php -- $bucket "$dir/backups/wiki-$dt.tar.gz.gpg" "$bucketPath/wiki-files.tar.gz.gpg"
+log "Done."
+
+log "Removing local copies"
+rm "$dir/backups/wiki-$dt.sql.gz.gpg"
+rm "$dir/backups/wiki-$dt.tar.gz.gpg"
+log "Done."

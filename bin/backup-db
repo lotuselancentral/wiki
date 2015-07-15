@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+set -u
+set -o pipefail
+
+mysqldump \
+  --host="$WIKILEC_DB_HOST" \
+  --port="$WKIILEC_DB_PORT" \
+  --user="$WIKILEC_DB_USER" \
+  --password="$WIKILEC_DB_PASSWORD" \
+  --opt \
+  --single-transaction \
+  "$WIKILEC_DB_NAME"
